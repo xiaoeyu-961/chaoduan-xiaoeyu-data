@@ -24,7 +24,7 @@ INDEX_URL = (
 )
 BREADTH_URL = (
     "https://push2.eastmoney.com/api/qt/clist/get"
-    "?pn=1&pz=6000&po=1&np=1&fltt=2&invt=2&fid=f3"
+    "?pn={page}&pz=500&po=1&np=1&fltt=2&invt=2&fid=f3"
     "&fs=m:0+t:6,m:0+t:80,m:1+t:2,m:1+t:23"
     "&fields=f2,f3,f6"
 )
@@ -50,6 +50,22 @@ def get_json(url: str, attempts: int = 3) -> dict:
 
 def date_key(days_ago: int = 0) -> str:
     return (datetime.now(CN_TZ) - timedelta(days=days_ago)).strftime("%Y%m%d")
+
+
+def fetch_breadth() -> list[dict]:
+    rows: list[dict] = []
+    total = 5000
+    page = 1
+    while len(rows) < total and page <= 14:
+        body = get_json(BREADTH_URL.format(page=page))
+        data = body.get("data") or {}
+        batch = data.get("diff") or []
+        if not batch:
+            break
+        rows.extend(batch)
+        total = int(number(data.get("total"), len(rows)))
+        page += 1
+    return rows
 
 
 def latest_pool(kind: str) -> tuple[str, list[dict]]:
@@ -92,7 +108,11 @@ def normalize_stock(item: dict) -> dict:
 def build_payload() -> dict:
     errors: list[str] = []
     index_body = get_json(INDEX_URL)
-    breadth_body = get_json(BREADTH_URL)
+    try:
+        breadth_rows = fetch_breadth()
+    except Exception as exc:
+        breadth_rows = []
+        errors.append(f"breadth: {exc}")
     trade_key, up_pool = latest_pool("limitUp")
     if not trade_key or not up_pool:
         raise RuntimeError("No limit-up pool found for recent trading days")
@@ -112,7 +132,7 @@ def build_payload() -> dict:
 
     up = down = flat = 0
     total_amount = 0.0
-    for item in breadth_body.get("data", {}).get("diff", []):
+    for item in breadth_rows:
         change = number(item.get("f3"))
         total_amount += number(item.get("f6"))
         if change > 0:
