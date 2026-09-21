@@ -1,0 +1,521 @@
+{
+  "meta": {
+    "product": "超短小鳄鱼｜V1.4.1 超短交易研究工作台",
+    "bundle_version": "1.0",
+    "generated_at": "2026-09-21T22:21:00+08:00",
+    "timezone": "Asia/Shanghai",
+    "data_range": [
+      "2026-09-16",
+      "2026-09-21"
+    ],
+    "notes": [
+      "模型样本、实盘交易、研究假设严格分账。",
+      "历史信号冻结后不得事后修改。",
+      "无法可靠确认的数据保留为null或标注data_quality。",
+      "历史辨识度提醒仅作辅助参考，不进入V1.4.1七因子100分评分。"
+    ]
+  },
+  "market_daily": [
+    {
+      "date": "2026-09-16",
+      "shanghai_close": 3891.6,
+      "shanghai_pct": 0.71,
+      "shenzhen_pct": 1.26,
+      "chinext_pct": 1.96,
+      "turnover_cny": 1840000000000,
+      "turnover_change_cny": 226400000000,
+      "up_count": 4100,
+      "down_count": null,
+      "limit_up_count": 89,
+      "limit_down_count": null,
+      "failed_limit_count": 11,
+      "seal_rate_pct": 89.0,
+      "highest_board": 6,
+      "big_cycle": "冰点后强修复/破冰",
+      "mid_cycle": "强修复",
+      "small_cycle": "普涨修复",
+      "primary_theme": "半导体/光通信/CPO/PCB/AI硬件",
+      "secondary_theme": "福建/电力",
+      "data_quality": "conversation_frozen"
+    },
+    {
+      "date": "2026-09-17",
+      "shanghai_close": 3875.6,
+      "shanghai_pct": -0.41,
+      "shenzhen_pct": -0.33,
+      "chinext_pct": -0.4,
+      "turnover_cny": 1820000000000,
+      "turnover_change_cny": -16000000000,
+      "up_count": null,
+      "down_count": 2800,
+      "limit_up_count": 47,
+      "limit_down_count": null,
+      "failed_limit_count": 20,
+      "seal_rate_pct": 70.0,
+      "highest_board": 5,
+      "big_cycle": "破冰后首次明显分歧",
+      "mid_cycle": "强修复后分歧",
+      "small_cycle": "高位分化",
+      "primary_theme": "科技硬件",
+      "secondary_theme": "农业/汽车/创新药",
+      "data_quality": "mixed_public_stats"
+    },
+    {
+      "date": "2026-09-18",
+      "shanghai_close": 3911.87,
+      "shanghai_pct": 0.94,
+      "shenzhen_pct": 1.72,
+      "chinext_pct": 2.25,
+      "turnover_cny": 2090000000000,
+      "turnover_change_cny": 254000000000,
+      "up_count": 4200,
+      "down_count": null,
+      "limit_up_count": 79,
+      "limit_down_count": 1,
+      "failed_limit_count": 26,
+      "seal_rate_pct": 76.0,
+      "highest_board": 4,
+      "big_cycle": "新周期扩张验证",
+      "mid_cycle": "再转强",
+      "small_cycle": "趋势高潮+梯队重构",
+      "primary_theme": "半导体/科技硬件",
+      "secondary_theme": "房地产",
+      "data_quality": "conversation_frozen"
+    },
+    {
+      "date": "2026-09-21",
+      "shanghai_close": 3949.91,
+      "shanghai_pct": 0.97,
+      "shenzhen_pct": 0.65,
+      "chinext_pct": 0.8,
+      "turnover_cny": 2030000000000,
+      "turnover_change_cny": -45600000000,
+      "up_count": 4500,
+      "down_count": null,
+      "limit_up_count": 78,
+      "limit_down_count": null,
+      "failed_limit_count": 25,
+      "seal_rate_pct": 76.0,
+      "highest_board": 5,
+      "big_cycle": "新周期扩张验证中",
+      "mid_cycle": "主升尝试+多主线轮动",
+      "small_cycle": "普涨+高标晋级+热点快速轮动",
+      "primary_theme": "医药/CRO/创新药",
+      "secondary_theme": "房地产",
+      "tertiary_theme": "科技硬件/PCB/半导体",
+      "data_quality": "conversation_frozen"
+    }
+  ],
+  "cycle_timeline": {
+    "big_cycle": [
+      {
+        "date": "2026-09-16",
+        "state": "冰点后强修复/破冰"
+      },
+      {
+        "date": "2026-09-17",
+        "state": "第一次明显分歧"
+      },
+      {
+        "date": "2026-09-18",
+        "state": "再转强/扩张验证"
+      },
+      {
+        "date": "2026-09-21",
+        "state": "新周期扩张验证中"
+      }
+    ],
+    "mid_cycle": [
+      {
+        "date": "2026-09-16",
+        "state": "强修复"
+      },
+      {
+        "date": "2026-09-17",
+        "state": "分歧"
+      },
+      {
+        "date": "2026-09-18",
+        "state": "再转强"
+      },
+      {
+        "date": "2026-09-21",
+        "state": "主升尝试/多主线轮动"
+      }
+    ]
+  },
+  "ladder": {
+    "2026-09-16": {
+      "6": [
+        "闽东电力"
+      ],
+      "5": [],
+      "4": [
+        "澳弘电子"
+      ],
+      "3": [
+        "博汇科技"
+      ],
+      "2_core": [
+        "中晶科技",
+        "西陇科学",
+        "通鼎互联",
+        "华瓷股份"
+      ],
+      "1_core": [
+        "中岩大地",
+        "中瓷电子",
+        "有研新材"
+      ]
+    },
+    "2026-09-17": {
+      "5": [
+        "澳弘电子"
+      ],
+      "4": [],
+      "3": [
+        "中晶科技",
+        "华瓷股份"
+      ],
+      "2_core": [
+        "共达电声",
+        "中岩大地",
+        "万向德农"
+      ],
+      "1_core": [
+        "北特科技",
+        "金石亚药",
+        "科森科技"
+      ]
+    },
+    "2026-09-18": {
+      "4": [
+        "华瓷股份",
+        "锡华科技"
+      ],
+      "3_core": [
+        "世联行",
+        "内蒙新华"
+      ],
+      "2_core": [
+        "华软科技",
+        "金健米业",
+        "南华生物"
+      ],
+      "1_core": [
+        "华天科技",
+        "诚邦股份",
+        "博通集成"
+      ]
+    },
+    "2026-09-21": {
+      "5": [
+        "华瓷股份"
+      ],
+      "4": [
+        "内蒙新华",
+        "世联行"
+      ],
+      "3": [
+        "龙头股份",
+        "南华生物",
+        "金健米业",
+        "华软科技",
+        "华纺股份"
+      ],
+      "2_core": [
+        "瑞康医药",
+        "诚邦股份",
+        "绿地控股"
+      ],
+      "1_core": [
+        "广合科技",
+        "新华制药",
+        "哈药股份"
+      ]
+    }
+  },
+  "signals": [
+    {
+      "id": "A01",
+      "freeze_date": "2026-09-16",
+      "code": null,
+      "name": "中晶科技",
+      "score": 88,
+      "grade": "A",
+      "model": "2→3",
+      "t1_status": "晋级成功",
+      "strategy_trigger": "未触发",
+      "notes": "竞价超冻结允许区间"
+    },
+    {
+      "id": "A02",
+      "freeze_date": "2026-09-16",
+      "code": "003001",
+      "name": "中岩大地",
+      "score": 83,
+      "grade": "A",
+      "model": "1→2补涨",
+      "t1_status": "晋级成功",
+      "strategy_trigger": "有效结构样本",
+      "notes": "分钟级+3/-2先后顺序未完整核验"
+    },
+    {
+      "id": "A03",
+      "freeze_date": "2026-09-16",
+      "code": null,
+      "name": "澳弘电子",
+      "score": 89,
+      "grade": "A",
+      "model": "4→5",
+      "t1_status": "晋级成功",
+      "strategy_trigger": "未触发",
+      "notes": "高开超范围"
+    },
+    {
+      "id": "A04",
+      "freeze_date": "2026-09-17",
+      "code": null,
+      "name": "中晶科技",
+      "score": 88,
+      "grade": "A",
+      "model": "3→4",
+      "t1_status": "晋级失败",
+      "strategy_trigger": "未触发",
+      "notes": "竞价极强，作为F03样本"
+    },
+    {
+      "id": "A05",
+      "freeze_date": "2026-09-17",
+      "code": null,
+      "name": "共达电声",
+      "score": 84,
+      "grade": "A",
+      "model": "2→3",
+      "t1_status": "晋级失败",
+      "strategy_trigger": "分钟级顺序不完整",
+      "notes": null
+    },
+    {
+      "id": "A06",
+      "freeze_date": "2026-09-17",
+      "code": "003001",
+      "name": "中岩大地",
+      "score": 70,
+      "grade": "C",
+      "model": "巨量换手2→3",
+      "t1_status": "晋级失败",
+      "strategy_trigger": "研究样本",
+      "notes": "小周期失败；不等同于用户实盘亏损"
+    },
+    {
+      "id": "A07",
+      "freeze_date": "2026-09-18",
+      "code": "002453",
+      "name": "华软科技",
+      "score": 88,
+      "grade": "A",
+      "model": "科技2→3",
+      "t1_status": "晋级成功",
+      "strategy_trigger": "待分钟级完整核验",
+      "notes": "科技高低切成功"
+    },
+    {
+      "id": "A08",
+      "freeze_date": "2026-09-18",
+      "code": "002285",
+      "name": "世联行",
+      "score": 87,
+      "grade": "A",
+      "model": "地产3→4",
+      "t1_status": "晋级成功",
+      "strategy_trigger": "原标准竞价未满足",
+      "notes": "低于预期竞价+板块修复，F05样本"
+    },
+    {
+      "id": "A09",
+      "freeze_date": "2026-09-18",
+      "code": "001216",
+      "name": "华瓷股份",
+      "score": 89,
+      "grade": "A",
+      "model": "空间4→5",
+      "t1_status": "晋级成功",
+      "strategy_trigger": "只观察",
+      "notes": "不纳入主动交易胜率"
+    },
+    {
+      "id": "A10",
+      "freeze_date": "2026-09-21",
+      "code": "002453",
+      "name": "华软科技",
+      "score": 88,
+      "grade": "A",
+      "model": "科技3→4",
+      "t1_status": "待2026-09-22验证",
+      "strategy_trigger": "待验证",
+      "notes": null
+    },
+    {
+      "id": "A11",
+      "freeze_date": "2026-09-21",
+      "code": "002589",
+      "name": "瑞康医药",
+      "score": 86,
+      "grade": "A",
+      "model": "医药2→3",
+      "t1_status": "待2026-09-22验证",
+      "strategy_trigger": "待验证",
+      "notes": null
+    },
+    {
+      "id": "A12",
+      "freeze_date": "2026-09-21",
+      "code": "002285",
+      "name": "世联行",
+      "score": 91,
+      "grade": "S",
+      "model": "地产4→5",
+      "t1_status": "待2026-09-22验证",
+      "strategy_trigger": "待验证",
+      "notes": "研究优先于主动参与"
+    }
+  ],
+  "hypotheses": [
+    {
+      "id": "F01",
+      "title": "主线延续性",
+      "status": "研究中",
+      "description": "弱市场提前表现的科技方向，在次日强修复时，其核心连板和低位补涨是否显著优于非主线。"
+    },
+    {
+      "id": "F02",
+      "title": "巨量换手晋级",
+      "status": "研究中",
+      "description": "低位主线补涨第一次晋级后，次日深度分歧重新收复前高后的表现。"
+    },
+    {
+      "id": "F03",
+      "title": "极端竞价",
+      "status": "研究中",
+      "description": "比较0-3%、3-5%、5-7%、7-9%、直接涨停竞价与晋级/兑现关系。"
+    },
+    {
+      "id": "F04",
+      "title": "T/R脱钩",
+      "status": "研究中",
+      "description": "产业趋势强不等于连板接力同步强。"
+    },
+    {
+      "id": "F05",
+      "title": "低于预期竞价+板块修复",
+      "status": "研究中",
+      "description": "竞价略低于冻结标准，但板块持续加强后个股完成转强晋级。"
+    },
+    {
+      "id": "F06",
+      "title": "竞价倒U型假设",
+      "status": "研究中",
+      "description": "竞价强度可能存在最优区间，并非越强越好。"
+    }
+  ],
+  "historical_recognition": [
+    {
+      "sector": "医药",
+      "name": "哈药股份",
+      "code": "600664",
+      "role": "近期/跨周期高辨识度容量核心候选",
+      "lookback": "2026-07至2026-09",
+      "trigger": "板块爆发或回流时提醒",
+      "score_impact": 0,
+      "auto_candidate": false,
+      "note": "仅作提醒，不因历史辨识度自动进入核心池或产生买点。"
+    }
+  ],
+  "trades": [
+    {
+      "trade_id": "T001",
+      "code": "003001",
+      "name": "中岩大地",
+      "buy_date": null,
+      "buy_time": null,
+      "buy_price": 18.13,
+      "quantity": null,
+      "sell_date": "2026-09-18",
+      "sell_time": "尾盘",
+      "sell_price": 19.88,
+      "status": "closed",
+      "gross_return_pct": 9.65,
+      "gross_pnl_cny": null,
+      "source": "user_reported",
+      "linked_signal": "A06",
+      "note": "模型A06晋级失败，但用户实盘因低成本仍盈利；二者严格分开。"
+    },
+    {
+      "trade_id": "T002",
+      "code": "300180",
+      "name": "华峰超纤",
+      "buy_date": "2026-09-21",
+      "buy_time": null,
+      "buy_price": 4.663,
+      "quantity": 1700,
+      "sell_date": null,
+      "sell_time": null,
+      "sell_price": null,
+      "status": "open",
+      "snapshot_date": "2026-09-21",
+      "snapshot_market_value_cny": 7922.0,
+      "snapshot_pnl_cny": -5.0,
+      "snapshot_pnl_pct": -0.064,
+      "source": "user_screenshot",
+      "linked_signal": null,
+      "classification": "个人自主交易｜待补买入逻辑"
+    },
+    {
+      "trade_id": "T003",
+      "code": "002285",
+      "name": "世联行",
+      "buy_date": "2026-09-21",
+      "buy_time": null,
+      "buy_price": 2.882,
+      "quantity": 1000,
+      "sell_date": null,
+      "sell_time": null,
+      "sell_price": null,
+      "status": "open",
+      "snapshot_date": "2026-09-21",
+      "snapshot_price": 3.18,
+      "snapshot_market_value_cny": 3180.0,
+      "snapshot_pnl_cny": 298.0,
+      "snapshot_pnl_pct": 10.34,
+      "source": "user_screenshot",
+      "linked_signal": "A12",
+      "classification": "实盘持仓｜地产连板核心",
+      "note": "用户持仓成本与A12次日4→5研究样本分开统计。"
+    }
+  ],
+  "account_snapshot": {
+    "date": "2026-09-21",
+    "total_assets_cny": 11491.49,
+    "stock_market_value_cny": 11102.0,
+    "cash_available_cny": 389.49,
+    "day_pnl_cny": 293.0,
+    "day_pnl_pct": 2.62,
+    "source": "user_screenshot"
+  },
+  "workbench_rules": {
+    "separate_ledgers": [
+      "model_signals",
+      "real_trades"
+    ],
+    "signal_result_fields": [
+      "selection_result",
+      "promotion_result",
+      "strategy_trigger_result"
+    ],
+    "historical_recognition_is_reference_only": true,
+    "min_samples_before_weight_change": 50,
+    "min_samples_before_weight_adjustment_candidate": 100,
+    "v14_is_baseline": true
+  }
+}
