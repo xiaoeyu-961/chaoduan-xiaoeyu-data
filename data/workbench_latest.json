@@ -1,7 +1,8 @@
 {
   "meta": {
     "product": "超短小鳄鱼｜V1.4.1 超短交易研究工作台",
-    "bundle_version": "1.0",
+    "bundle_version": "1.1",
+    "schema_updated_at": "2026-09-21T23:00:00+08:00",
     "generated_at": "2026-09-21T22:21:00+08:00",
     "timezone": "Asia/Shanghai",
     "data_range": [
@@ -517,5 +518,220 @@
     "min_samples_before_weight_change": 50,
     "min_samples_before_weight_adjustment_candidate": 100,
     "v14_is_baseline": true
+  },
+  "trading_journal": {
+    "description": "用户真实交易记录，用于分析个人交易模式，与模型信号严格分离。",
+    "rules": [
+      "实盘交易不影响模型评分",
+      "模型失败但交易盈利必须单独记录",
+      "交易亏损需要记录错误类型",
+      "持仓快照不等于已实现收益"
+    ],
+    "trades": [
+      {
+        "trade_id": "T001",
+        "stock_code": "003001",
+        "stock_name": "中岩大地",
+        "buy": {
+          "date": "2026-09-17",
+          "price": 18.13,
+          "quantity": null,
+          "position_ratio": null
+        },
+        "sell": {
+          "date": "2026-09-18",
+          "price": 19.88,
+          "quantity": null,
+          "reason": "尾盘止盈"
+        },
+        "result": {
+          "status": "closed",
+          "return_pct": 9.65,
+          "profit_loss_cny": null,
+          "holding_days": 1
+        },
+        "market_context": {
+          "big_cycle": "破冰后首次明显分歧至再转强",
+          "small_cycle": "高位分化至趋势高潮与梯队重构",
+          "theme": "基建"
+        },
+        "trade_type": {
+          "mode": "低位补涨",
+          "entry_style": "低成本提前进入",
+          "exit_style": "尾盘盈利止盈"
+        },
+        "linked_model": {
+          "primary_signal_id": "A06",
+          "related_signal_ids": ["A02", "A06"],
+          "entry_day_signal": {
+            "signal_id": "A02",
+            "model_score": 83,
+            "model_result": "晋级成功"
+          },
+          "next_day_signal": {
+            "signal_id": "A06",
+            "model_score": 70,
+            "model_result": "晋级失败"
+          },
+          "separation_note": "A06模型晋级失败不等于T001实盘亏损。"
+        },
+        "self_analysis": {
+          "strength": ["低成本进入", "模型失败时仍能按实盘成本独立兑现"],
+          "weakness": ["是否卖早需要更多闭环样本统计"],
+          "mistake_type": null
+        }
+      },
+      {
+        "trade_id": "T002",
+        "stock_code": "300180",
+        "stock_name": "华峰超纤",
+        "buy": {
+          "date": "2026-09-21",
+          "price": 4.663,
+          "quantity": 1700,
+          "position_ratio": null
+        },
+        "sell": null,
+        "result": {
+          "status": "open",
+          "snapshot_date": "2026-09-21",
+          "market_value_cny": 7922.0,
+          "profit_loss_cny": -5.0,
+          "return_pct": -0.064
+        },
+        "market_context": {
+          "big_cycle": "新周期扩张验证中",
+          "small_cycle": "普涨与热点快速轮动",
+          "theme": null
+        },
+        "trade_type": {
+          "mode": "个人自主交易",
+          "entry_style": null,
+          "exit_style": null
+        },
+        "linked_model": null,
+        "self_analysis": {
+          "strength": [],
+          "weakness": ["买入逻辑待补充", "卖出记录待闭环"],
+          "mistake_type": null
+        }
+      },
+      {
+        "trade_id": "T003",
+        "stock_code": "002285",
+        "stock_name": "世联行",
+        "buy": {
+          "date": "2026-09-21",
+          "price": 2.882,
+          "quantity": 1000,
+          "position_ratio": null
+        },
+        "sell": null,
+        "result": {
+          "status": "open",
+          "snapshot_date": "2026-09-21",
+          "snapshot_price": 3.18,
+          "market_value_cny": 3180.0,
+          "profit_loss_cny": 298.0,
+          "return_pct": 10.34
+        },
+        "market_context": {
+          "big_cycle": "新周期扩张验证中",
+          "small_cycle": "普涨与高标晋级",
+          "theme": "房地产"
+        },
+        "trade_type": {
+          "mode": "连板核心持仓",
+          "entry_style": "模型A12冻结前已持仓",
+          "exit_style": null
+        },
+        "linked_model": {
+          "signal_id": "A12",
+          "model_score": 91,
+          "model_result": "待2026-09-22验证",
+          "separation_note": "已有持仓浮盈不得计入A12模型收益。"
+        },
+        "self_analysis": {
+          "strength": ["持仓成本低于A12次日验证起点"],
+          "weakness": ["卖出记录待闭环"],
+          "mistake_type": null
+        }
+      }
+    ]
+  },
+  "history_memory": {
+    "description": "记录市场历史龙头、阶段核心与资金记忆，用于板块爆发时提醒。",
+    "rules": [
+      "只作为辅助信息",
+      "不直接提高七因子评分",
+      "不替代当前周期判断",
+      "不自动生成交易信号"
+    ],
+    "stocks": [
+      {
+        "code": "600664",
+        "name": "哈药股份",
+        "sector": "医药",
+        "identity_level": "高辨识度",
+        "history_tags": ["阶段龙头", "医药周期核心", "资金记忆股"],
+        "history_period": {
+          "start": "2026-07",
+          "end": "2026-09",
+          "description": "医药行情阶段活跃核心"
+        },
+        "market_memory_score": 85,
+        "trigger_condition": [
+          "医药板块涨停数量超过10只",
+          "医药出现3板以上高度",
+          "资金回流医药"
+        ],
+        "alert_text": "医药板块启动时，检查历史辨识度核心哈药股份是否出现资金回流。",
+        "score_impact": 0,
+        "auto_trade": false
+      }
+    ]
+  },
+  "market_cycle": {
+    "long_cycle": {
+      "period": "60交易日",
+      "state": null,
+      "trend": null,
+      "data_quality": "历史序列不足"
+    },
+    "medium_cycle": {
+      "period": "20交易日",
+      "state": null,
+      "trend": null,
+      "data_quality": "历史序列不足"
+    },
+    "short_cycle": {
+      "period": "5交易日",
+      "state": "新周期扩张验证中",
+      "trend": "冰点修复后经历分歧、再转强，目前为多主线轮动",
+      "data_quality": "基于2026-09-16至2026-09-21冻结复盘"
+    },
+    "current_focus": {
+      "theme": "医药 / 房地产 / 科技硬件",
+      "reason": "医药为当日主线，房地产承担连板高度，科技硬件维持趋势与梯队辨识度。"
+    }
+  },
+  "data_quality": {
+    "as_of_date": "2026-09-21",
+    "market_data": true,
+    "limit_up_data": true,
+    "auction_data": false,
+    "intraday_data": false,
+    "holding_data": true,
+    "history_memory_data": true,
+    "missing_fields": [
+      "部分交易的分钟级买卖时间",
+      "T001成交数量与实际盈亏金额",
+      "T002买入逻辑",
+      "完整20日与60日周期序列",
+      "9月22日竞价与盘中承接数据"
+    ],
+    "analysis_allowed": true,
+    "analysis_scope": "允许盘后结构复盘、历史记录和持仓快照分析；不允许把缺失的竞价与盘中数据补写为已触发。",
+    "intraday_trigger_validation_allowed": false
   }
 }
