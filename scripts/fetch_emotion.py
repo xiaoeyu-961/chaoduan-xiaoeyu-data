@@ -136,9 +136,17 @@ def secid(code: str) -> str:
 def fetch_quotes(codes: list[str]) -> dict[str, dict]:
     result: dict[str, dict] = {}
     unique = list(dict.fromkeys(code for code in codes if code))
-    for start in range(0, len(unique), 70):
-        batch = unique[start:start + 70]
-        body = get_json(QUOTE_URL.format(secids=quote(",".join(secid(code) for code in batch), safe=",.")))
+    for start in range(0, len(unique), 30):
+        batch = unique[start:start + 30]
+        try:
+            body = get_json(
+                QUOTE_URL.format(secids=quote(",".join(secid(code) for code in batch), safe=",.")),
+                attempts=2,
+            )
+        except Exception:
+            # Quote feedback is an enrichment field. A transient upstream error
+            # must not block the factual pool snapshot from being published.
+            continue
         for row in (body.get("data") or {}).get("diff") or []:
             code = str(row.get("f12") or "")
             result[code] = {
