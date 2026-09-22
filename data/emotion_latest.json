@@ -2,7 +2,7 @@
   "schema_version": 1,
   "ok": true,
   "trade_date": "2026-09-22",
-  "updated_at": "2026-09-22T07:20:32.415482Z",
+  "updated_at": "2026-09-22T13:21:16.078550Z",
   "source": "GitHub Actions · 东方财富公开行情",
   "principle": "仅保存事实数据，不在采集层生成周期标签或主观评分。",
   "market_ecology": {
@@ -49,35 +49,43 @@
       "avg_change_pct": 2.47,
       "median_change_pct": 1.31,
       "positive_rate_pct": 59.41,
-      "loss_below_minus_5_rate_pct": 5.94
+      "loss_below_minus_5_rate_pct": 5.94,
+      "carried_forward": true,
+      "as_of": "2026-09-22T07:20:32.415482Z"
     },
     "high_position_feedback": {
       "sample": 3,
       "avg_change_pct": 6.88,
       "median_change_pct": 9.98,
       "positive_rate_pct": 100.0,
-      "loss_below_minus_5_rate_pct": 0.0
+      "loss_below_minus_5_rate_pct": 0.0,
+      "carried_forward": true,
+      "as_of": "2026-09-22T07:20:32.415482Z"
     },
     "middle_position_feedback": {
       "sample": 18,
       "avg_change_pct": 1.49,
       "median_change_pct": 2.04,
       "positive_rate_pct": 55.56,
-      "loss_below_minus_5_rate_pct": 16.67
+      "loss_below_minus_5_rate_pct": 16.67,
+      "carried_forward": true,
+      "as_of": "2026-09-22T07:20:32.415482Z"
     },
     "first_board_feedback": {
       "sample": 80,
       "avg_change_pct": 2.52,
       "median_change_pct": 1.05,
       "positive_rate_pct": 58.75,
-      "loss_below_minus_5_rate_pct": 3.75
+      "loss_below_minus_5_rate_pct": 3.75,
+      "carried_forward": true,
+      "as_of": "2026-09-22T07:20:32.415482Z"
     },
     "market_width": {
       "available": false,
       "up": null,
       "down": null,
       "flat": null,
-      "sample": 1400
+      "sample": 0
     }
   },
   "leader_candidates": [
@@ -820,7 +828,7 @@
     }
   ],
   "intraday": {
-    "snapshot_count": 1,
+    "snapshot_count": 3,
     "timeline_ready": false
   },
   "data_quality": {
