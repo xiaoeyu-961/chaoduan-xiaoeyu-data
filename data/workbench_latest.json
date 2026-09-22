@@ -3,18 +3,20 @@
     "product": "超短小鳄鱼｜V1.4.1 超短交易研究工作台",
     "bundle_version": "1.1",
     "schema_updated_at": "2026-09-21T23:00:00+08:00",
-    "generated_at": "2026-09-21T22:21:00+08:00",
+    "generated_at": "2026-09-22T14:15:27.693760+00:00",
     "timezone": "Asia/Shanghai",
     "data_range": [
       "2026-09-16",
-      "2026-09-21"
+      "2026-09-22"
     ],
     "notes": [
       "模型样本、实盘交易、研究假设严格分账。",
       "历史信号冻结后不得事后修改。",
       "无法可靠确认的数据保留为null或标注data_quality。",
-      "历史辨识度提醒仅作辅助参考，不进入V1.4.1七因子100分评分。"
-    ]
+      "历史辨识度提醒仅作辅助参考，不进入V1.4.1七因子100分评分。",
+      "三层周期基于情绪结构、龙头生态和连续性，不使用指数均线。"
+    ],
+    "market_trade_date": "2026-09-22"
   },
   "market_daily": [
     {
@@ -105,6 +107,33 @@
       "secondary_theme": "房地产",
       "tertiary_theme": "科技硬件/PCB/半导体",
       "data_quality": "conversation_frozen"
+    },
+    {
+      "date": "2026-09-22",
+      "shanghai_close": 3952.13,
+      "shanghai_pct": 0.06,
+      "shenzhen_close": 13723.74,
+      "shenzhen_pct": -0.05,
+      "chinext_close": 3399.93,
+      "chinext_pct": 0.01,
+      "star50_close": 1665.04,
+      "star50_pct": 0.46,
+      "turnover_cny": 2135550409931.125,
+      "up_count": null,
+      "down_count": null,
+      "flat_count": null,
+      "limit_up_count": 63,
+      "limit_down_count": 0,
+      "failed_limit_count": 18,
+      "broken_rate_pct": 22.22,
+      "seal_rate_pct": 77.78,
+      "highest_board": 6,
+      "big_cycle": "分歧",
+      "mid_cycle": "发酵偏分歧",
+      "small_cycle": "震荡",
+      "primary_theme": "家居用品",
+      "structure_label": "龙头强 / 生态弱：龙头抱团 / 生态分歧",
+      "data_quality": "auto_collected_partial"
     }
   ],
   "cycle_timeline": {
@@ -124,6 +153,11 @@
       {
         "date": "2026-09-21",
         "state": "新周期扩张验证中"
+      },
+      {
+        "date": "2026-09-22",
+        "state": "分歧",
+        "score": 63
       }
     ],
     "mid_cycle": [
@@ -142,6 +176,98 @@
       {
         "date": "2026-09-21",
         "state": "主升尝试/多主线轮动"
+      },
+      {
+        "date": "2026-09-22",
+        "theme": "家居用品",
+        "state": "发酵偏分歧",
+        "score": 75
+      }
+    ],
+    "intraday": [
+      {
+        "time": "2026-09-22T07:20:32.415482Z",
+        "limit_up_count": 63,
+        "limit_down_count": 0,
+        "broken_count": 18,
+        "broken_rate_pct": 22.22,
+        "promotion_rate_pct": 23.3,
+        "highest_board": 6,
+        "leader": {
+          "code": "001216",
+          "name": "华瓷股份"
+        },
+        "strongest_theme": "家居用品"
+      },
+      {
+        "time": "2026-09-22T13:11:39.061227Z",
+        "limit_up_count": 63,
+        "limit_down_count": 0,
+        "broken_count": 18,
+        "broken_rate_pct": 22.22,
+        "promotion_rate_pct": 23.3,
+        "highest_board": 6,
+        "leader": {
+          "code": "001216",
+          "name": "华瓷股份"
+        },
+        "strongest_theme": "家居用品"
+      },
+      {
+        "time": "2026-09-22T13:21:16.078550Z",
+        "limit_up_count": 63,
+        "limit_down_count": 0,
+        "broken_count": 18,
+        "broken_rate_pct": 22.22,
+        "promotion_rate_pct": 23.3,
+        "highest_board": 6,
+        "leader": {
+          "code": "001216",
+          "name": "华瓷股份"
+        },
+        "strongest_theme": "家居用品"
+      },
+      {
+        "time": "2026-09-22T13:50:21.660144Z",
+        "limit_up_count": 63,
+        "limit_down_count": 0,
+        "broken_count": 18,
+        "broken_rate_pct": 22.22,
+        "promotion_rate_pct": 23.3,
+        "highest_board": 6,
+        "leader": {
+          "code": "001216",
+          "name": "华瓷股份"
+        },
+        "strongest_theme": "家居用品"
+      },
+      {
+        "time": "2026-09-22T13:53:20.005502Z",
+        "limit_up_count": 63,
+        "limit_down_count": 0,
+        "broken_count": 18,
+        "broken_rate_pct": 22.22,
+        "promotion_rate_pct": 23.3,
+        "highest_board": 6,
+        "leader": {
+          "code": "001216",
+          "name": "华瓷股份"
+        },
+        "strongest_theme": "家居用品"
+      },
+      {
+        "time": "2026-09-22T14:14:46.130578Z",
+        "limit_up_count": 63,
+        "limit_down_count": 0,
+        "broken_count": 18,
+        "broken_rate_pct": 22.22,
+        "promotion_rate_pct": 23.3,
+        "highest_board": 6,
+        "leader": {
+          "code": "001216",
+          "name": "华瓷股份"
+        },
+        "strongest_theme": "家居用品"
       }
     ]
   },
@@ -233,6 +359,713 @@
         "广合科技",
         "新华制药",
         "哈药股份"
+      ]
+    },
+    "2026-09-22": {
+      "6": [
+        {
+          "code": "001216",
+          "name": "华瓷股份",
+          "theme": "家居用品",
+          "height": 6,
+          "first_limit": "92500",
+          "last_limit": "92500",
+          "open_count": 0,
+          "amount": 48414477.0,
+          "seal_amount": 259140452.0
+        }
+      ],
+      "5": [
+        {
+          "code": "603230",
+          "name": "内蒙新华",
+          "theme": "出版",
+          "height": 5,
+          "first_limit": "93436",
+          "last_limit": "94215",
+          "open_count": 3,
+          "amount": 622024368.0,
+          "seal_amount": 64824551.0
+        }
+      ],
+      "4": [
+        {
+          "code": "000504",
+          "name": "南华生物",
+          "theme": "医疗服务",
+          "height": 4,
+          "first_limit": "92500",
+          "last_limit": "92500",
+          "open_count": 0,
+          "amount": 71297625.0,
+          "seal_amount": 272598522.0
+        }
+      ],
+      "3": [
+        {
+          "code": "603068",
+          "name": "博通集成",
+          "theme": "半导体",
+          "height": 3,
+          "first_limit": "95619",
+          "last_limit": "134743",
+          "open_count": 1,
+          "amount": 1374616704.0,
+          "seal_amount": 26671729.0
+        },
+        {
+          "code": "001317",
+          "name": "三羊马",
+          "theme": "铁路公路",
+          "height": 3,
+          "first_limit": "93218",
+          "last_limit": "94518",
+          "open_count": 2,
+          "amount": 494426464.0,
+          "seal_amount": 50305251.0
+        },
+        {
+          "code": "000910",
+          "name": "大亚圣象",
+          "theme": "家居用品",
+          "height": 3,
+          "first_limit": "131215",
+          "last_limit": "131215",
+          "open_count": 0,
+          "amount": 373106272.0,
+          "seal_amount": 18386164.0
+        },
+        {
+          "code": "601811",
+          "name": "新华文轩",
+          "theme": "出版",
+          "height": 3,
+          "first_limit": "92502",
+          "last_limit": "92502",
+          "open_count": 0,
+          "amount": 68201736.0,
+          "seal_amount": 143779042.0
+        }
+      ],
+      "2": [
+        {
+          "code": "600664",
+          "name": "哈药股份",
+          "theme": "化学制药",
+          "height": 2,
+          "first_limit": "93125",
+          "last_limit": "100007",
+          "open_count": 1,
+          "amount": 2779141472.0,
+          "seal_amount": 360169413.0
+        },
+        {
+          "code": "600721",
+          "name": "百花医药",
+          "theme": "医疗服务",
+          "height": 2,
+          "first_limit": "104702",
+          "last_limit": "144217",
+          "open_count": 5,
+          "amount": 2739441728.0,
+          "seal_amount": 9600845.0
+        },
+        {
+          "code": "000756",
+          "name": "新华制药",
+          "theme": "化学制药",
+          "height": 2,
+          "first_limit": "92500",
+          "last_limit": "101027",
+          "open_count": 7,
+          "amount": 1563389472.0,
+          "seal_amount": 61147164.0
+        },
+        {
+          "code": "000560",
+          "name": "我爱我家",
+          "theme": "房地产服",
+          "height": 2,
+          "first_limit": "93203",
+          "last_limit": "130015",
+          "open_count": 6,
+          "amount": 1412921344.0,
+          "seal_amount": 51987599.0
+        },
+        {
+          "code": "300110",
+          "name": "华仁药业",
+          "theme": "化学制药",
+          "height": 2,
+          "first_limit": "105021",
+          "last_limit": "133451",
+          "open_count": 1,
+          "amount": 1285470560.0,
+          "seal_amount": 36394431.0
+        },
+        {
+          "code": "002178",
+          "name": "延华智能",
+          "theme": "软件开发",
+          "height": 2,
+          "first_limit": "93912",
+          "last_limit": "103015",
+          "open_count": 2,
+          "amount": 678728960.0,
+          "seal_amount": 57225372.0
+        },
+        {
+          "code": "603580",
+          "name": "艾艾精工",
+          "theme": "塑料",
+          "height": 2,
+          "first_limit": "94608",
+          "last_limit": "95305",
+          "open_count": 3,
+          "amount": 636186000.0,
+          "seal_amount": 27357036.0
+        },
+        {
+          "code": "600503",
+          "name": "华丽家族",
+          "theme": "房地产开",
+          "height": 2,
+          "first_limit": "144431",
+          "last_limit": "144431",
+          "open_count": 0,
+          "amount": 482275936.0,
+          "seal_amount": 36424262.0
+        },
+        {
+          "code": "002303",
+          "name": "美盈森",
+          "theme": "包装印刷",
+          "height": 2,
+          "first_limit": "93000",
+          "last_limit": "93900",
+          "open_count": 1,
+          "amount": 450105648.0,
+          "seal_amount": 72089130.0
+        },
+        {
+          "code": "603020",
+          "name": "爱普股份",
+          "theme": "化学制品",
+          "height": 2,
+          "first_limit": "93246",
+          "last_limit": "94919",
+          "open_count": 5,
+          "amount": 353265040.0,
+          "seal_amount": 9234291.0
+        },
+        {
+          "code": "002259",
+          "name": "升达林业",
+          "theme": "燃气Ⅱ",
+          "height": 2,
+          "first_limit": "102409",
+          "last_limit": "102454",
+          "open_count": 1,
+          "amount": 305286208.0,
+          "seal_amount": 40606391.0
+        },
+        {
+          "code": "603636",
+          "name": "南威软件",
+          "theme": "IT服务Ⅱ",
+          "height": 2,
+          "first_limit": "92502",
+          "last_limit": "92502",
+          "open_count": 0,
+          "amount": 136712405.0,
+          "seal_amount": 96513162.0
+        },
+        {
+          "code": "001234",
+          "name": "泰慕士",
+          "theme": "服装家纺",
+          "height": 2,
+          "first_limit": "93000",
+          "last_limit": "93000",
+          "open_count": 0,
+          "amount": 126493342.0,
+          "seal_amount": 250279760.0
+        },
+        {
+          "code": "000607",
+          "name": "华媒控股",
+          "theme": "广告营销",
+          "height": 2,
+          "first_limit": "92500",
+          "last_limit": "92500",
+          "open_count": 0,
+          "amount": 99855708.0,
+          "seal_amount": 149326061.0
+        },
+        {
+          "code": "002614",
+          "name": "奥佳华",
+          "theme": "其他家电",
+          "height": 2,
+          "first_limit": "92500",
+          "last_limit": "92500",
+          "open_count": 0,
+          "amount": 82802947.0,
+          "seal_amount": 110766541.0
+        },
+        {
+          "code": "600743",
+          "name": "华远控股",
+          "theme": "房地产服",
+          "height": 2,
+          "first_limit": "92500",
+          "last_limit": "92500",
+          "open_count": 0,
+          "amount": 23129316.0,
+          "seal_amount": 108447260.0
+        },
+        {
+          "code": "600825",
+          "name": "新华传媒",
+          "theme": "出版",
+          "height": 2,
+          "first_limit": "92502",
+          "last_limit": "92502",
+          "open_count": 0,
+          "amount": 22383972.0,
+          "seal_amount": 2146426334.0
+        }
+      ],
+      "1": [
+        {
+          "code": "600418",
+          "name": "江淮汽车",
+          "theme": "商用车",
+          "height": 1,
+          "first_limit": "141404",
+          "last_limit": "141404",
+          "open_count": 0,
+          "amount": 2914330912.0,
+          "seal_amount": 287040434.0
+        },
+        {
+          "code": "600641",
+          "name": "先导基电",
+          "theme": "半导体",
+          "height": 1,
+          "first_limit": "93058",
+          "last_limit": "130016",
+          "open_count": 3,
+          "amount": 2552043488.0,
+          "seal_amount": 183042277.0
+        },
+        {
+          "code": "002141",
+          "name": "贤丰控股",
+          "theme": "元件",
+          "height": 1,
+          "first_limit": "93545",
+          "last_limit": "144103",
+          "open_count": 7,
+          "amount": 2052062960.0,
+          "seal_amount": 27374349.0
+        },
+        {
+          "code": "603039",
+          "name": "泛微网络",
+          "theme": "软件开发",
+          "height": 1,
+          "first_limit": "103229",
+          "last_limit": "142559",
+          "open_count": 3,
+          "amount": 1439688240.0,
+          "seal_amount": 37322962.0
+        },
+        {
+          "code": "605058",
+          "name": "澳弘电子",
+          "theme": "元件",
+          "height": 1,
+          "first_limit": "112227",
+          "last_limit": "144512",
+          "open_count": 5,
+          "amount": 1302590688.0,
+          "seal_amount": 16247350.0
+        },
+        {
+          "code": "000676",
+          "name": "智度股份",
+          "theme": "广告营销",
+          "height": 1,
+          "first_limit": "93033",
+          "last_limit": "101121",
+          "open_count": 8,
+          "amount": 1277652016.0,
+          "seal_amount": 30385048.0
+        },
+        {
+          "code": "600479",
+          "name": "千金药业",
+          "theme": "中药Ⅱ",
+          "height": 1,
+          "first_limit": "145558",
+          "last_limit": "150000",
+          "open_count": 1,
+          "amount": 1254824528.0,
+          "seal_amount": 5429628.0
+        },
+        {
+          "code": "300324",
+          "name": "旋极信息",
+          "theme": "计算机设",
+          "height": 1,
+          "first_limit": "95509",
+          "last_limit": "145051",
+          "open_count": 2,
+          "amount": 1162992704.0,
+          "seal_amount": 18157766.0
+        },
+        {
+          "code": "002768",
+          "name": "国恩股份",
+          "theme": "塑料",
+          "height": 1,
+          "first_limit": "130509",
+          "last_limit": "143812",
+          "open_count": 5,
+          "amount": 997160960.0,
+          "seal_amount": 16725820.0
+        },
+        {
+          "code": "600403",
+          "name": "大有能源",
+          "theme": "煤炭开采",
+          "height": 1,
+          "first_limit": "130204",
+          "last_limit": "130204",
+          "open_count": 0,
+          "amount": 793350768.0,
+          "seal_amount": 54083880.0
+        },
+        {
+          "code": "002912",
+          "name": "中新赛克",
+          "theme": "计算机设",
+          "height": 1,
+          "first_limit": "135542",
+          "last_limit": "140948",
+          "open_count": 2,
+          "amount": 788692592.0,
+          "seal_amount": 7909119.0
+        },
+        {
+          "code": "002757",
+          "name": "南兴股份",
+          "theme": "专用设备",
+          "height": 1,
+          "first_limit": "102936",
+          "last_limit": "102936",
+          "open_count": 0,
+          "amount": 762325872.0,
+          "seal_amount": 111853347.0
+        },
+        {
+          "code": "605179",
+          "name": "一鸣食品",
+          "theme": "饮料乳品",
+          "height": 1,
+          "first_limit": "104302",
+          "last_limit": "104302",
+          "open_count": 0,
+          "amount": 688891872.0,
+          "seal_amount": 49244001.0
+        },
+        {
+          "code": "301234",
+          "name": "五洲医疗",
+          "theme": "医疗器械",
+          "height": 1,
+          "first_limit": "95639",
+          "last_limit": "131912",
+          "open_count": 13,
+          "amount": 682924432.0,
+          "seal_amount": 17257890.0
+        },
+        {
+          "code": "603598",
+          "name": "引力传媒",
+          "theme": "广告营销",
+          "height": 1,
+          "first_limit": "94714",
+          "last_limit": "100705",
+          "open_count": 1,
+          "amount": 625033584.0,
+          "seal_amount": 29585184.0
+        },
+        {
+          "code": "688781",
+          "name": "视涯科技-UW",
+          "theme": "光学光电",
+          "height": 1,
+          "first_limit": "110038",
+          "last_limit": "145135",
+          "open_count": 8,
+          "amount": 576188208.0,
+          "seal_amount": 7259025.0
+        },
+        {
+          "code": "601949",
+          "name": "中国出版",
+          "theme": "出版",
+          "height": 1,
+          "first_limit": "102201",
+          "last_limit": "102201",
+          "open_count": 0,
+          "amount": 568227936.0,
+          "seal_amount": 66955725.0
+        },
+        {
+          "code": "002467",
+          "name": "二六三",
+          "theme": "通信服务",
+          "height": 1,
+          "first_limit": "93245",
+          "last_limit": "93800",
+          "open_count": 1,
+          "amount": 518071168.0,
+          "seal_amount": 86609734.0
+        },
+        {
+          "code": "603221",
+          "name": "爱丽家居",
+          "theme": "家居用品",
+          "height": 1,
+          "first_limit": "94633",
+          "last_limit": "94633",
+          "open_count": 0,
+          "amount": 495512816.0,
+          "seal_amount": 48194575.0
+        },
+        {
+          "code": "600815",
+          "name": "厦工股份",
+          "theme": "工程机械",
+          "height": 1,
+          "first_limit": "130002",
+          "last_limit": "130002",
+          "open_count": 0,
+          "amount": 428779360.0,
+          "seal_amount": 36106013.0
+        },
+        {
+          "code": "920526",
+          "name": "凯华材料",
+          "theme": "电子化学",
+          "height": 1,
+          "first_limit": "95851",
+          "last_limit": "144909",
+          "open_count": 5,
+          "amount": 334439248.0,
+          "seal_amount": 9424620.0
+        },
+        {
+          "code": "001266",
+          "name": "宏英智能",
+          "theme": "自动化设",
+          "height": 1,
+          "first_limit": "93415",
+          "last_limit": "134506",
+          "open_count": 3,
+          "amount": 325215664.0,
+          "seal_amount": 43969690.0
+        },
+        {
+          "code": "605258",
+          "name": "协和电子",
+          "theme": "元件",
+          "height": 1,
+          "first_limit": "112713",
+          "last_limit": "112713",
+          "open_count": 0,
+          "amount": 314011968.0,
+          "seal_amount": 37206200.0
+        },
+        {
+          "code": "000595",
+          "name": "新能股份",
+          "theme": "电力",
+          "height": 1,
+          "first_limit": "135203",
+          "last_limit": "135203",
+          "open_count": 0,
+          "amount": 292121520.0,
+          "seal_amount": 15753465.0
+        },
+        {
+          "code": "603903",
+          "name": "中持股份",
+          "theme": "环境治理",
+          "height": 1,
+          "first_limit": "112336",
+          "last_limit": "142051",
+          "open_count": 1,
+          "amount": 289022448.0,
+          "seal_amount": 25673451.0
+        },
+        {
+          "code": "605178",
+          "name": "时空科技",
+          "theme": "专业工程",
+          "height": 1,
+          "first_limit": "95937",
+          "last_limit": "95937",
+          "open_count": 0,
+          "amount": 287303456.0,
+          "seal_amount": 63972374.0
+        },
+        {
+          "code": "002290",
+          "name": "禾盛新材",
+          "theme": "家电零部",
+          "height": 1,
+          "first_limit": "92500",
+          "last_limit": "92500",
+          "open_count": 0,
+          "amount": 270355616.0,
+          "seal_amount": 308716043.0
+        },
+        {
+          "code": "002301",
+          "name": "齐心集团",
+          "theme": "文娱用品",
+          "height": 1,
+          "first_limit": "95518",
+          "last_limit": "95518",
+          "open_count": 0,
+          "amount": 247296628.0,
+          "seal_amount": 57520007.0
+        },
+        {
+          "code": "001268",
+          "name": "联合精密",
+          "theme": "家电零部",
+          "height": 1,
+          "first_limit": "94330",
+          "last_limit": "105800",
+          "open_count": 1,
+          "amount": 243366479.0,
+          "seal_amount": 100400324.0
+        },
+        {
+          "code": "605398",
+          "name": "新炬网络",
+          "theme": "IT服务Ⅱ",
+          "height": 1,
+          "first_limit": "102052",
+          "last_limit": "102240",
+          "open_count": 1,
+          "amount": 226993226.0,
+          "seal_amount": 55348454.0
+        },
+        {
+          "code": "603216",
+          "name": "梦天家居",
+          "theme": "家居用品",
+          "height": 1,
+          "first_limit": "93623",
+          "last_limit": "95038",
+          "open_count": 3,
+          "amount": 212778852.0,
+          "seal_amount": 23948925.0
+        },
+        {
+          "code": "605218",
+          "name": "伟时电子",
+          "theme": "光学光电",
+          "height": 1,
+          "first_limit": "93017",
+          "last_limit": "93017",
+          "open_count": 0,
+          "amount": 172916000.0,
+          "seal_amount": 3199158.0
+        },
+        {
+          "code": "002313",
+          "name": "日海智能",
+          "theme": "通信设备",
+          "height": 1,
+          "first_limit": "95442",
+          "last_limit": "95727",
+          "open_count": 1,
+          "amount": 165603337.0,
+          "seal_amount": 74761816.0
+        },
+        {
+          "code": "002564",
+          "name": "天沃科技",
+          "theme": "专用设备",
+          "height": 1,
+          "first_limit": "93454",
+          "last_limit": "93454",
+          "open_count": 0,
+          "amount": 136531456.0,
+          "seal_amount": 47351235.0
+        },
+        {
+          "code": "600770",
+          "name": "综艺股份",
+          "theme": "综合Ⅱ",
+          "height": 1,
+          "first_limit": "92501",
+          "last_limit": "92501",
+          "open_count": 0,
+          "amount": 135485349.0,
+          "seal_amount": 133164213.0
+        },
+        {
+          "code": "001260",
+          "name": "坤泰股份",
+          "theme": "汽车零部",
+          "height": 1,
+          "first_limit": "110254",
+          "last_limit": "133236",
+          "open_count": 1,
+          "amount": 119919520.0,
+          "seal_amount": 4733352.0
+        },
+        {
+          "code": "001322",
+          "name": "箭牌家居",
+          "theme": "家居用品",
+          "height": 1,
+          "first_limit": "95115",
+          "last_limit": "100448",
+          "open_count": 1,
+          "amount": 110541571.0,
+          "seal_amount": 25686505.0
+        },
+        {
+          "code": "002238",
+          "name": "天威视讯",
+          "theme": "电视广播",
+          "height": 1,
+          "first_limit": "100936",
+          "last_limit": "100936",
+          "open_count": 0,
+          "amount": 73660723.0,
+          "seal_amount": 30559272.0
+        },
+        {
+          "code": "002672",
+          "name": "东江环保",
+          "theme": "环境治理",
+          "height": 1,
+          "first_limit": "131115",
+          "last_limit": "131115",
+          "open_count": 0,
+          "amount": 64664566.0,
+          "seal_amount": 23168119.0
+        }
       ]
     }
   },
@@ -562,7 +1395,10 @@
         },
         "linked_model": {
           "primary_signal_id": "A06",
-          "related_signal_ids": ["A02", "A06"],
+          "related_signal_ids": [
+            "A02",
+            "A06"
+          ],
           "entry_day_signal": {
             "signal_id": "A02",
             "model_score": 83,
@@ -576,8 +1412,13 @@
           "separation_note": "A06模型晋级失败不等于T001实盘亏损。"
         },
         "self_analysis": {
-          "strength": ["低成本进入", "模型失败时仍能按实盘成本独立兑现"],
-          "weakness": ["是否卖早需要更多闭环样本统计"],
+          "strength": [
+            "低成本进入",
+            "模型失败时仍能按实盘成本独立兑现"
+          ],
+          "weakness": [
+            "是否卖早需要更多闭环样本统计"
+          ],
           "mistake_type": null
         }
       },
@@ -612,7 +1453,10 @@
         "linked_model": null,
         "self_analysis": {
           "strength": [],
-          "weakness": ["买入逻辑待补充", "卖出记录待闭环"],
+          "weakness": [
+            "买入逻辑待补充",
+            "卖出记录待闭环"
+          ],
           "mistake_type": null
         }
       },
@@ -652,8 +1496,12 @@
           "separation_note": "已有持仓浮盈不得计入A12模型收益。"
         },
         "self_analysis": {
-          "strength": ["持仓成本低于A12次日验证起点"],
-          "weakness": ["卖出记录待闭环"],
+          "strength": [
+            "持仓成本低于A12次日验证起点"
+          ],
+          "weakness": [
+            "卖出记录待闭环"
+          ],
           "mistake_type": null
         }
       }
@@ -673,7 +1521,11 @@
         "name": "哈药股份",
         "sector": "医药",
         "identity_level": "高辨识度",
-        "history_tags": ["阶段龙头", "医药周期核心", "资金记忆股"],
+        "history_tags": [
+          "阶段龙头",
+          "医药周期核心",
+          "资金记忆股"
+        ],
         "history_period": {
           "start": "2026-07",
           "end": "2026-09",
@@ -692,46 +1544,4453 @@
     ]
   },
   "market_cycle": {
-    "long_cycle": {
-      "period": "60交易日",
-      "state": null,
-      "trend": null,
-      "data_quality": "历史序列不足"
+    "large_cycle": {
+      "stage": "分歧",
+      "score": 63,
+      "trend": "↑",
+      "method": "评分 + 结构 + 连续性；不使用均线",
+      "continuity": {
+        "limit_up": "up",
+        "seal_rate": "up",
+        "highest_board": "flat"
+      },
+      "supporting_factors": [
+        "最高板6板",
+        "炸板率22.22%可控",
+        "昨日涨停平均反馈2.47%为正",
+        "近端涨停数量改善"
+      ],
+      "pressure_factors": [
+        "晋级率仅23.3%"
+      ],
+      "confidence": "medium",
+      "conclusion": "分歧；龙头强 / 生态弱：龙头抱团 / 生态分歧"
     },
     "medium_cycle": {
-      "period": "20交易日",
-      "state": null,
-      "trend": null,
-      "data_quality": "历史序列不足"
+      "mainline": {
+        "theme": "家居用品",
+        "stage": "发酵偏分歧",
+        "score": 75,
+        "trend": "↑",
+        "subscores": {
+          "leader_strength": 83,
+          "sector_width": 44,
+          "ladder_completeness": 75,
+          "capital_persistence": 100
+        },
+        "facts": {
+          "name": "家居用品",
+          "limit_up_count": 5,
+          "first_board_count": 3,
+          "second_board_count": 0,
+          "third_board_count": 1,
+          "high_board_count": 1,
+          "max_height": 6,
+          "active_days_3": 3,
+          "leaders": [
+            {
+              "code": "001216",
+              "name": "华瓷股份",
+              "height": 6
+            },
+            {
+              "code": "000910",
+              "name": "大亚圣象",
+              "height": 3
+            },
+            {
+              "code": "603221",
+              "name": "爱丽家居",
+              "height": 1
+            },
+            {
+              "code": "603216",
+              "name": "梦天家居",
+              "height": 1
+            }
+          ]
+        },
+        "explanation": {
+          "score": 75,
+          "coverage_pct": 100.0,
+          "components": [
+            {
+              "metric": "龙头强度",
+              "value": 6,
+              "weight": 30,
+              "normalized": 83.33,
+              "contribution": 25.0
+            },
+            {
+              "metric": "板块宽度",
+              "value": 5,
+              "weight": 25,
+              "normalized": 44.44,
+              "contribution": 11.11
+            },
+            {
+              "metric": "梯队完整度",
+              "value": 3,
+              "weight": 25,
+              "normalized": 75.0,
+              "contribution": 18.75
+            },
+            {
+              "metric": "资金持续性",
+              "value": 3,
+              "weight": 20,
+              "normalized": 100,
+              "contribution": 20.0
+            }
+          ],
+          "missing_metrics": []
+        }
+      },
+      "themes": [
+        {
+          "theme": "家居用品",
+          "stage": "发酵偏分歧",
+          "score": 75,
+          "trend": "↑",
+          "subscores": {
+            "leader_strength": 83,
+            "sector_width": 44,
+            "ladder_completeness": 75,
+            "capital_persistence": 100
+          },
+          "facts": {
+            "name": "家居用品",
+            "limit_up_count": 5,
+            "first_board_count": 3,
+            "second_board_count": 0,
+            "third_board_count": 1,
+            "high_board_count": 1,
+            "max_height": 6,
+            "active_days_3": 3,
+            "leaders": [
+              {
+                "code": "001216",
+                "name": "华瓷股份",
+                "height": 6
+              },
+              {
+                "code": "000910",
+                "name": "大亚圣象",
+                "height": 3
+              },
+              {
+                "code": "603221",
+                "name": "爱丽家居",
+                "height": 1
+              },
+              {
+                "code": "603216",
+                "name": "梦天家居",
+                "height": 1
+              }
+            ]
+          },
+          "explanation": {
+            "score": 75,
+            "coverage_pct": 100.0,
+            "components": [
+              {
+                "metric": "龙头强度",
+                "value": 6,
+                "weight": 30,
+                "normalized": 83.33,
+                "contribution": 25.0
+              },
+              {
+                "metric": "板块宽度",
+                "value": 5,
+                "weight": 25,
+                "normalized": 44.44,
+                "contribution": 11.11
+              },
+              {
+                "metric": "梯队完整度",
+                "value": 3,
+                "weight": 25,
+                "normalized": 75.0,
+                "contribution": 18.75
+              },
+              {
+                "metric": "资金持续性",
+                "value": 3,
+                "weight": 20,
+                "normalized": 100,
+                "contribution": 20.0
+              }
+            ],
+            "missing_metrics": []
+          }
+        },
+        {
+          "theme": "出版",
+          "stage": "发酵偏分歧",
+          "score": 73,
+          "trend": "↑",
+          "subscores": {
+            "leader_strength": 67,
+            "sector_width": 33,
+            "ladder_completeness": 100,
+            "capital_persistence": 100
+          },
+          "facts": {
+            "name": "出版",
+            "limit_up_count": 4,
+            "first_board_count": 1,
+            "second_board_count": 1,
+            "third_board_count": 1,
+            "high_board_count": 1,
+            "max_height": 5,
+            "active_days_3": 3,
+            "leaders": [
+              {
+                "code": "603230",
+                "name": "内蒙新华",
+                "height": 5
+              },
+              {
+                "code": "601811",
+                "name": "新华文轩",
+                "height": 3
+              },
+              {
+                "code": "600825",
+                "name": "新华传媒",
+                "height": 2
+              },
+              {
+                "code": "601949",
+                "name": "中国出版",
+                "height": 1
+              }
+            ]
+          },
+          "explanation": {
+            "score": 73,
+            "coverage_pct": 100.0,
+            "components": [
+              {
+                "metric": "龙头强度",
+                "value": 5,
+                "weight": 30,
+                "normalized": 66.67,
+                "contribution": 20.0
+              },
+              {
+                "metric": "板块宽度",
+                "value": 4,
+                "weight": 25,
+                "normalized": 33.33,
+                "contribution": 8.33
+              },
+              {
+                "metric": "梯队完整度",
+                "value": 4,
+                "weight": 25,
+                "normalized": 100.0,
+                "contribution": 25.0
+              },
+              {
+                "metric": "资金持续性",
+                "value": 3,
+                "weight": 20,
+                "normalized": 100,
+                "contribution": 20.0
+              }
+            ],
+            "missing_metrics": []
+          }
+        },
+        {
+          "theme": "医疗服务",
+          "stage": "发酵",
+          "score": 50,
+          "trend": "↑",
+          "subscores": {
+            "leader_strength": 50,
+            "sector_width": 11,
+            "ladder_completeness": 50,
+            "capital_persistence": 100
+          },
+          "facts": {
+            "name": "医疗服务",
+            "limit_up_count": 2,
+            "first_board_count": 0,
+            "second_board_count": 1,
+            "third_board_count": 0,
+            "high_board_count": 1,
+            "max_height": 4,
+            "active_days_3": 3,
+            "leaders": [
+              {
+                "code": "000504",
+                "name": "南华生物",
+                "height": 4
+              },
+              {
+                "code": "600721",
+                "name": "百花医药",
+                "height": 2
+              }
+            ]
+          },
+          "explanation": {
+            "score": 50,
+            "coverage_pct": 100.0,
+            "components": [
+              {
+                "metric": "龙头强度",
+                "value": 4,
+                "weight": 30,
+                "normalized": 50.0,
+                "contribution": 15.0
+              },
+              {
+                "metric": "板块宽度",
+                "value": 2,
+                "weight": 25,
+                "normalized": 11.11,
+                "contribution": 2.78
+              },
+              {
+                "metric": "梯队完整度",
+                "value": 2,
+                "weight": 25,
+                "normalized": 50.0,
+                "contribution": 12.5
+              },
+              {
+                "metric": "资金持续性",
+                "value": 3,
+                "weight": 20,
+                "normalized": 100,
+                "contribution": 20.0
+              }
+            ],
+            "missing_metrics": []
+          }
+        },
+        {
+          "theme": "半导体",
+          "stage": "发酵",
+          "score": 45,
+          "trend": "↑",
+          "subscores": {
+            "leader_strength": 33,
+            "sector_width": 11,
+            "ladder_completeness": 50,
+            "capital_persistence": 100
+          },
+          "facts": {
+            "name": "半导体",
+            "limit_up_count": 2,
+            "first_board_count": 1,
+            "second_board_count": 0,
+            "third_board_count": 1,
+            "high_board_count": 0,
+            "max_height": 3,
+            "active_days_3": 3,
+            "leaders": [
+              {
+                "code": "603068",
+                "name": "博通集成",
+                "height": 3
+              },
+              {
+                "code": "600641",
+                "name": "先导基电",
+                "height": 1
+              }
+            ]
+          },
+          "explanation": {
+            "score": 45,
+            "coverage_pct": 100.0,
+            "components": [
+              {
+                "metric": "龙头强度",
+                "value": 3,
+                "weight": 30,
+                "normalized": 33.33,
+                "contribution": 10.0
+              },
+              {
+                "metric": "板块宽度",
+                "value": 2,
+                "weight": 25,
+                "normalized": 11.11,
+                "contribution": 2.78
+              },
+              {
+                "metric": "梯队完整度",
+                "value": 2,
+                "weight": 25,
+                "normalized": 50.0,
+                "contribution": 12.5
+              },
+              {
+                "metric": "资金持续性",
+                "value": 3,
+                "weight": 20,
+                "normalized": 100,
+                "contribution": 20.0
+              }
+            ],
+            "missing_metrics": []
+          }
+        },
+        {
+          "theme": "广告营销",
+          "stage": "萌芽",
+          "score": 43,
+          "trend": "↑",
+          "subscores": {
+            "leader_strength": 17,
+            "sector_width": 22,
+            "ladder_completeness": 50,
+            "capital_persistence": 100
+          },
+          "facts": {
+            "name": "广告营销",
+            "limit_up_count": 3,
+            "first_board_count": 2,
+            "second_board_count": 1,
+            "third_board_count": 0,
+            "high_board_count": 0,
+            "max_height": 2,
+            "active_days_3": 3,
+            "leaders": [
+              {
+                "code": "000607",
+                "name": "华媒控股",
+                "height": 2
+              },
+              {
+                "code": "000676",
+                "name": "智度股份",
+                "height": 1
+              },
+              {
+                "code": "603598",
+                "name": "引力传媒",
+                "height": 1
+              }
+            ]
+          },
+          "explanation": {
+            "score": 43,
+            "coverage_pct": 100.0,
+            "components": [
+              {
+                "metric": "龙头强度",
+                "value": 2,
+                "weight": 30,
+                "normalized": 16.67,
+                "contribution": 5.0
+              },
+              {
+                "metric": "板块宽度",
+                "value": 3,
+                "weight": 25,
+                "normalized": 22.22,
+                "contribution": 5.56
+              },
+              {
+                "metric": "梯队完整度",
+                "value": 2,
+                "weight": 25,
+                "normalized": 50.0,
+                "contribution": 12.5
+              },
+              {
+                "metric": "资金持续性",
+                "value": 3,
+                "weight": 20,
+                "normalized": 100,
+                "contribution": 20.0
+              }
+            ],
+            "missing_metrics": []
+          }
+        },
+        {
+          "theme": "IT服务Ⅱ",
+          "stage": "萌芽",
+          "score": 40,
+          "trend": "↑",
+          "subscores": {
+            "leader_strength": 17,
+            "sector_width": 11,
+            "ladder_completeness": 50,
+            "capital_persistence": 100
+          },
+          "facts": {
+            "name": "IT服务Ⅱ",
+            "limit_up_count": 2,
+            "first_board_count": 1,
+            "second_board_count": 1,
+            "third_board_count": 0,
+            "high_board_count": 0,
+            "max_height": 2,
+            "active_days_3": 3,
+            "leaders": [
+              {
+                "code": "603636",
+                "name": "南威软件",
+                "height": 2
+              },
+              {
+                "code": "605398",
+                "name": "新炬网络",
+                "height": 1
+              }
+            ]
+          },
+          "explanation": {
+            "score": 40,
+            "coverage_pct": 100.0,
+            "components": [
+              {
+                "metric": "龙头强度",
+                "value": 2,
+                "weight": 30,
+                "normalized": 16.67,
+                "contribution": 5.0
+              },
+              {
+                "metric": "板块宽度",
+                "value": 2,
+                "weight": 25,
+                "normalized": 11.11,
+                "contribution": 2.78
+              },
+              {
+                "metric": "梯队完整度",
+                "value": 2,
+                "weight": 25,
+                "normalized": 50.0,
+                "contribution": 12.5
+              },
+              {
+                "metric": "资金持续性",
+                "value": 3,
+                "weight": 20,
+                "normalized": 100,
+                "contribution": 20.0
+              }
+            ],
+            "missing_metrics": []
+          }
+        },
+        {
+          "theme": "软件开发",
+          "stage": "萌芽",
+          "score": 40,
+          "trend": "↑",
+          "subscores": {
+            "leader_strength": 17,
+            "sector_width": 11,
+            "ladder_completeness": 50,
+            "capital_persistence": 100
+          },
+          "facts": {
+            "name": "软件开发",
+            "limit_up_count": 2,
+            "first_board_count": 1,
+            "second_board_count": 1,
+            "third_board_count": 0,
+            "high_board_count": 0,
+            "max_height": 2,
+            "active_days_3": 3,
+            "leaders": [
+              {
+                "code": "002178",
+                "name": "延华智能",
+                "height": 2
+              },
+              {
+                "code": "603039",
+                "name": "泛微网络",
+                "height": 1
+              }
+            ]
+          },
+          "explanation": {
+            "score": 40,
+            "coverage_pct": 100.0,
+            "components": [
+              {
+                "metric": "龙头强度",
+                "value": 2,
+                "weight": 30,
+                "normalized": 16.67,
+                "contribution": 5.0
+              },
+              {
+                "metric": "板块宽度",
+                "value": 2,
+                "weight": 25,
+                "normalized": 11.11,
+                "contribution": 2.78
+              },
+              {
+                "metric": "梯队完整度",
+                "value": 2,
+                "weight": 25,
+                "normalized": 50.0,
+                "contribution": 12.5
+              },
+              {
+                "metric": "资金持续性",
+                "value": 3,
+                "weight": 20,
+                "normalized": 100,
+                "contribution": 20.0
+              }
+            ],
+            "missing_metrics": []
+          }
+        },
+        {
+          "theme": "铁路公路",
+          "stage": "萌芽",
+          "score": 36,
+          "trend": "↑",
+          "subscores": {
+            "leader_strength": 33,
+            "sector_width": 0,
+            "ladder_completeness": 25,
+            "capital_persistence": 100
+          },
+          "facts": {
+            "name": "铁路公路",
+            "limit_up_count": 1,
+            "first_board_count": 0,
+            "second_board_count": 0,
+            "third_board_count": 1,
+            "high_board_count": 0,
+            "max_height": 3,
+            "active_days_3": 3,
+            "leaders": [
+              {
+                "code": "001317",
+                "name": "三羊马",
+                "height": 3
+              }
+            ]
+          },
+          "explanation": {
+            "score": 36,
+            "coverage_pct": 100.0,
+            "components": [
+              {
+                "metric": "龙头强度",
+                "value": 3,
+                "weight": 30,
+                "normalized": 33.33,
+                "contribution": 10.0
+              },
+              {
+                "metric": "板块宽度",
+                "value": 1,
+                "weight": 25,
+                "normalized": 0,
+                "contribution": 0.0
+              },
+              {
+                "metric": "梯队完整度",
+                "value": 1,
+                "weight": 25,
+                "normalized": 25.0,
+                "contribution": 6.25
+              },
+              {
+                "metric": "资金持续性",
+                "value": 3,
+                "weight": 20,
+                "normalized": 100,
+                "contribution": 20.0
+              }
+            ],
+            "missing_metrics": []
+          }
+        },
+        {
+          "theme": "房地产服",
+          "stage": "萌芽",
+          "score": 34,
+          "trend": "↑",
+          "subscores": {
+            "leader_strength": 17,
+            "sector_width": 11,
+            "ladder_completeness": 25,
+            "capital_persistence": 100
+          },
+          "facts": {
+            "name": "房地产服",
+            "limit_up_count": 2,
+            "first_board_count": 0,
+            "second_board_count": 2,
+            "third_board_count": 0,
+            "high_board_count": 0,
+            "max_height": 2,
+            "active_days_3": 3,
+            "leaders": [
+              {
+                "code": "000560",
+                "name": "我爱我家",
+                "height": 2
+              },
+              {
+                "code": "600743",
+                "name": "华远控股",
+                "height": 2
+              }
+            ]
+          },
+          "explanation": {
+            "score": 34,
+            "coverage_pct": 100.0,
+            "components": [
+              {
+                "metric": "龙头强度",
+                "value": 2,
+                "weight": 30,
+                "normalized": 16.67,
+                "contribution": 5.0
+              },
+              {
+                "metric": "板块宽度",
+                "value": 2,
+                "weight": 25,
+                "normalized": 11.11,
+                "contribution": 2.78
+              },
+              {
+                "metric": "梯队完整度",
+                "value": 1,
+                "weight": 25,
+                "normalized": 25.0,
+                "contribution": 6.25
+              },
+              {
+                "metric": "资金持续性",
+                "value": 3,
+                "weight": 20,
+                "normalized": 100,
+                "contribution": 20.0
+              }
+            ],
+            "missing_metrics": []
+          }
+        },
+        {
+          "theme": "元件",
+          "stage": "萌芽",
+          "score": 32,
+          "trend": "↑",
+          "subscores": {
+            "leader_strength": 0,
+            "sector_width": 22,
+            "ladder_completeness": 25,
+            "capital_persistence": 100
+          },
+          "facts": {
+            "name": "元件",
+            "limit_up_count": 3,
+            "first_board_count": 3,
+            "second_board_count": 0,
+            "third_board_count": 0,
+            "high_board_count": 0,
+            "max_height": 1,
+            "active_days_3": 3,
+            "leaders": [
+              {
+                "code": "002141",
+                "name": "贤丰控股",
+                "height": 1
+              },
+              {
+                "code": "605058",
+                "name": "澳弘电子",
+                "height": 1
+              },
+              {
+                "code": "605258",
+                "name": "协和电子",
+                "height": 1
+              }
+            ]
+          },
+          "explanation": {
+            "score": 32,
+            "coverage_pct": 100.0,
+            "components": [
+              {
+                "metric": "龙头强度",
+                "value": 1,
+                "weight": 30,
+                "normalized": 0,
+                "contribution": 0.0
+              },
+              {
+                "metric": "板块宽度",
+                "value": 3,
+                "weight": 25,
+                "normalized": 22.22,
+                "contribution": 5.56
+              },
+              {
+                "metric": "梯队完整度",
+                "value": 1,
+                "weight": 25,
+                "normalized": 25.0,
+                "contribution": 6.25
+              },
+              {
+                "metric": "资金持续性",
+                "value": 3,
+                "weight": 20,
+                "normalized": 100,
+                "contribution": 20.0
+              }
+            ],
+            "missing_metrics": []
+          }
+        },
+        {
+          "theme": "包装印刷",
+          "stage": "萌芽",
+          "score": 31,
+          "trend": "↑",
+          "subscores": {
+            "leader_strength": 17,
+            "sector_width": 0,
+            "ladder_completeness": 25,
+            "capital_persistence": 100
+          },
+          "facts": {
+            "name": "包装印刷",
+            "limit_up_count": 1,
+            "first_board_count": 0,
+            "second_board_count": 1,
+            "third_board_count": 0,
+            "high_board_count": 0,
+            "max_height": 2,
+            "active_days_3": 3,
+            "leaders": [
+              {
+                "code": "002303",
+                "name": "美盈森",
+                "height": 2
+              }
+            ]
+          },
+          "explanation": {
+            "score": 31,
+            "coverage_pct": 100.0,
+            "components": [
+              {
+                "metric": "龙头强度",
+                "value": 2,
+                "weight": 30,
+                "normalized": 16.67,
+                "contribution": 5.0
+              },
+              {
+                "metric": "板块宽度",
+                "value": 1,
+                "weight": 25,
+                "normalized": 0,
+                "contribution": 0.0
+              },
+              {
+                "metric": "梯队完整度",
+                "value": 1,
+                "weight": 25,
+                "normalized": 25.0,
+                "contribution": 6.25
+              },
+              {
+                "metric": "资金持续性",
+                "value": 3,
+                "weight": 20,
+                "normalized": 100,
+                "contribution": 20.0
+              }
+            ],
+            "missing_metrics": []
+          }
+        },
+        {
+          "theme": "化学制品",
+          "stage": "萌芽",
+          "score": 31,
+          "trend": "↑",
+          "subscores": {
+            "leader_strength": 17,
+            "sector_width": 0,
+            "ladder_completeness": 25,
+            "capital_persistence": 100
+          },
+          "facts": {
+            "name": "化学制品",
+            "limit_up_count": 1,
+            "first_board_count": 0,
+            "second_board_count": 1,
+            "third_board_count": 0,
+            "high_board_count": 0,
+            "max_height": 2,
+            "active_days_3": 3,
+            "leaders": [
+              {
+                "code": "603020",
+                "name": "爱普股份",
+                "height": 2
+              }
+            ]
+          },
+          "explanation": {
+            "score": 31,
+            "coverage_pct": 100.0,
+            "components": [
+              {
+                "metric": "龙头强度",
+                "value": 2,
+                "weight": 30,
+                "normalized": 16.67,
+                "contribution": 5.0
+              },
+              {
+                "metric": "板块宽度",
+                "value": 1,
+                "weight": 25,
+                "normalized": 0,
+                "contribution": 0.0
+              },
+              {
+                "metric": "梯队完整度",
+                "value": 1,
+                "weight": 25,
+                "normalized": 25.0,
+                "contribution": 6.25
+              },
+              {
+                "metric": "资金持续性",
+                "value": 3,
+                "weight": 20,
+                "normalized": 100,
+                "contribution": 20.0
+              }
+            ],
+            "missing_metrics": []
+          }
+        },
+        {
+          "theme": "房地产开",
+          "stage": "萌芽",
+          "score": 31,
+          "trend": "↑",
+          "subscores": {
+            "leader_strength": 17,
+            "sector_width": 0,
+            "ladder_completeness": 25,
+            "capital_persistence": 100
+          },
+          "facts": {
+            "name": "房地产开",
+            "limit_up_count": 1,
+            "first_board_count": 0,
+            "second_board_count": 1,
+            "third_board_count": 0,
+            "high_board_count": 0,
+            "max_height": 2,
+            "active_days_3": 3,
+            "leaders": [
+              {
+                "code": "600503",
+                "name": "华丽家族",
+                "height": 2
+              }
+            ]
+          },
+          "explanation": {
+            "score": 31,
+            "coverage_pct": 100.0,
+            "components": [
+              {
+                "metric": "龙头强度",
+                "value": 2,
+                "weight": 30,
+                "normalized": 16.67,
+                "contribution": 5.0
+              },
+              {
+                "metric": "板块宽度",
+                "value": 1,
+                "weight": 25,
+                "normalized": 0,
+                "contribution": 0.0
+              },
+              {
+                "metric": "梯队完整度",
+                "value": 1,
+                "weight": 25,
+                "normalized": 25.0,
+                "contribution": 6.25
+              },
+              {
+                "metric": "资金持续性",
+                "value": 3,
+                "weight": 20,
+                "normalized": 100,
+                "contribution": 20.0
+              }
+            ],
+            "missing_metrics": []
+          }
+        },
+        {
+          "theme": "服装家纺",
+          "stage": "萌芽",
+          "score": 31,
+          "trend": "↑",
+          "subscores": {
+            "leader_strength": 17,
+            "sector_width": 0,
+            "ladder_completeness": 25,
+            "capital_persistence": 100
+          },
+          "facts": {
+            "name": "服装家纺",
+            "limit_up_count": 1,
+            "first_board_count": 0,
+            "second_board_count": 1,
+            "third_board_count": 0,
+            "high_board_count": 0,
+            "max_height": 2,
+            "active_days_3": 3,
+            "leaders": [
+              {
+                "code": "001234",
+                "name": "泰慕士",
+                "height": 2
+              }
+            ]
+          },
+          "explanation": {
+            "score": 31,
+            "coverage_pct": 100.0,
+            "components": [
+              {
+                "metric": "龙头强度",
+                "value": 2,
+                "weight": 30,
+                "normalized": 16.67,
+                "contribution": 5.0
+              },
+              {
+                "metric": "板块宽度",
+                "value": 1,
+                "weight": 25,
+                "normalized": 0,
+                "contribution": 0.0
+              },
+              {
+                "metric": "梯队完整度",
+                "value": 1,
+                "weight": 25,
+                "normalized": 25.0,
+                "contribution": 6.25
+              },
+              {
+                "metric": "资金持续性",
+                "value": 3,
+                "weight": 20,
+                "normalized": 100,
+                "contribution": 20.0
+              }
+            ],
+            "missing_metrics": []
+          }
+        },
+        {
+          "theme": "塑料",
+          "stage": "萌芽",
+          "score": 30,
+          "trend": "↑",
+          "subscores": {
+            "leader_strength": 17,
+            "sector_width": 11,
+            "ladder_completeness": 50,
+            "capital_persistence": 50
+          },
+          "facts": {
+            "name": "塑料",
+            "limit_up_count": 2,
+            "first_board_count": 1,
+            "second_board_count": 1,
+            "third_board_count": 0,
+            "high_board_count": 0,
+            "max_height": 2,
+            "active_days_3": 2,
+            "leaders": [
+              {
+                "code": "603580",
+                "name": "艾艾精工",
+                "height": 2
+              },
+              {
+                "code": "002768",
+                "name": "国恩股份",
+                "height": 1
+              }
+            ]
+          },
+          "explanation": {
+            "score": 30,
+            "coverage_pct": 100.0,
+            "components": [
+              {
+                "metric": "龙头强度",
+                "value": 2,
+                "weight": 30,
+                "normalized": 16.67,
+                "contribution": 5.0
+              },
+              {
+                "metric": "板块宽度",
+                "value": 2,
+                "weight": 25,
+                "normalized": 11.11,
+                "contribution": 2.78
+              },
+              {
+                "metric": "梯队完整度",
+                "value": 2,
+                "weight": 25,
+                "normalized": 50.0,
+                "contribution": 12.5
+              },
+              {
+                "metric": "资金持续性",
+                "value": 2,
+                "weight": 20,
+                "normalized": 50.0,
+                "contribution": 10.0
+              }
+            ],
+            "missing_metrics": []
+          }
+        },
+        {
+          "theme": "专用设备",
+          "stage": "萌芽",
+          "score": 29,
+          "trend": "↑",
+          "subscores": {
+            "leader_strength": 0,
+            "sector_width": 11,
+            "ladder_completeness": 25,
+            "capital_persistence": 100
+          },
+          "facts": {
+            "name": "专用设备",
+            "limit_up_count": 2,
+            "first_board_count": 2,
+            "second_board_count": 0,
+            "third_board_count": 0,
+            "high_board_count": 0,
+            "max_height": 1,
+            "active_days_3": 3,
+            "leaders": [
+              {
+                "code": "002757",
+                "name": "南兴股份",
+                "height": 1
+              },
+              {
+                "code": "002564",
+                "name": "天沃科技",
+                "height": 1
+              }
+            ]
+          },
+          "explanation": {
+            "score": 29,
+            "coverage_pct": 100.0,
+            "components": [
+              {
+                "metric": "龙头强度",
+                "value": 1,
+                "weight": 30,
+                "normalized": 0,
+                "contribution": 0.0
+              },
+              {
+                "metric": "板块宽度",
+                "value": 2,
+                "weight": 25,
+                "normalized": 11.11,
+                "contribution": 2.78
+              },
+              {
+                "metric": "梯队完整度",
+                "value": 1,
+                "weight": 25,
+                "normalized": 25.0,
+                "contribution": 6.25
+              },
+              {
+                "metric": "资金持续性",
+                "value": 3,
+                "weight": 20,
+                "normalized": 100,
+                "contribution": 20.0
+              }
+            ],
+            "missing_metrics": []
+          }
+        },
+        {
+          "theme": "光学光电",
+          "stage": "萌芽",
+          "score": 29,
+          "trend": "↑",
+          "subscores": {
+            "leader_strength": 0,
+            "sector_width": 11,
+            "ladder_completeness": 25,
+            "capital_persistence": 100
+          },
+          "facts": {
+            "name": "光学光电",
+            "limit_up_count": 2,
+            "first_board_count": 2,
+            "second_board_count": 0,
+            "third_board_count": 0,
+            "high_board_count": 0,
+            "max_height": 1,
+            "active_days_3": 3,
+            "leaders": [
+              {
+                "code": "688781",
+                "name": "视涯科技-UW",
+                "height": 1
+              },
+              {
+                "code": "605218",
+                "name": "伟时电子",
+                "height": 1
+              }
+            ]
+          },
+          "explanation": {
+            "score": 29,
+            "coverage_pct": 100.0,
+            "components": [
+              {
+                "metric": "龙头强度",
+                "value": 1,
+                "weight": 30,
+                "normalized": 0,
+                "contribution": 0.0
+              },
+              {
+                "metric": "板块宽度",
+                "value": 2,
+                "weight": 25,
+                "normalized": 11.11,
+                "contribution": 2.78
+              },
+              {
+                "metric": "梯队完整度",
+                "value": 1,
+                "weight": 25,
+                "normalized": 25.0,
+                "contribution": 6.25
+              },
+              {
+                "metric": "资金持续性",
+                "value": 3,
+                "weight": 20,
+                "normalized": 100,
+                "contribution": 20.0
+              }
+            ],
+            "missing_metrics": []
+          }
+        },
+        {
+          "theme": "计算机设",
+          "stage": "萌芽",
+          "score": 29,
+          "trend": "↑",
+          "subscores": {
+            "leader_strength": 0,
+            "sector_width": 11,
+            "ladder_completeness": 25,
+            "capital_persistence": 100
+          },
+          "facts": {
+            "name": "计算机设",
+            "limit_up_count": 2,
+            "first_board_count": 2,
+            "second_board_count": 0,
+            "third_board_count": 0,
+            "high_board_count": 0,
+            "max_height": 1,
+            "active_days_3": 3,
+            "leaders": [
+              {
+                "code": "300324",
+                "name": "旋极信息",
+                "height": 1
+              },
+              {
+                "code": "002912",
+                "name": "中新赛克",
+                "height": 1
+              }
+            ]
+          },
+          "explanation": {
+            "score": 29,
+            "coverage_pct": 100.0,
+            "components": [
+              {
+                "metric": "龙头强度",
+                "value": 1,
+                "weight": 30,
+                "normalized": 0,
+                "contribution": 0.0
+              },
+              {
+                "metric": "板块宽度",
+                "value": 2,
+                "weight": 25,
+                "normalized": 11.11,
+                "contribution": 2.78
+              },
+              {
+                "metric": "梯队完整度",
+                "value": 1,
+                "weight": 25,
+                "normalized": 25.0,
+                "contribution": 6.25
+              },
+              {
+                "metric": "资金持续性",
+                "value": 3,
+                "weight": 20,
+                "normalized": 100,
+                "contribution": 20.0
+              }
+            ],
+            "missing_metrics": []
+          }
+        },
+        {
+          "theme": "化学制药",
+          "stage": "萌芽",
+          "score": 27,
+          "trend": "↑",
+          "subscores": {
+            "leader_strength": 17,
+            "sector_width": 22,
+            "ladder_completeness": 25,
+            "capital_persistence": 50
+          },
+          "facts": {
+            "name": "化学制药",
+            "limit_up_count": 3,
+            "first_board_count": 0,
+            "second_board_count": 3,
+            "third_board_count": 0,
+            "high_board_count": 0,
+            "max_height": 2,
+            "active_days_3": 2,
+            "leaders": [
+              {
+                "code": "600664",
+                "name": "哈药股份",
+                "height": 2
+              },
+              {
+                "code": "000756",
+                "name": "新华制药",
+                "height": 2
+              },
+              {
+                "code": "300110",
+                "name": "华仁药业",
+                "height": 2
+              }
+            ]
+          },
+          "explanation": {
+            "score": 27,
+            "coverage_pct": 100.0,
+            "components": [
+              {
+                "metric": "龙头强度",
+                "value": 2,
+                "weight": 30,
+                "normalized": 16.67,
+                "contribution": 5.0
+              },
+              {
+                "metric": "板块宽度",
+                "value": 3,
+                "weight": 25,
+                "normalized": 22.22,
+                "contribution": 5.56
+              },
+              {
+                "metric": "梯队完整度",
+                "value": 1,
+                "weight": 25,
+                "normalized": 25.0,
+                "contribution": 6.25
+              },
+              {
+                "metric": "资金持续性",
+                "value": 2,
+                "weight": 20,
+                "normalized": 50.0,
+                "contribution": 10.0
+              }
+            ],
+            "missing_metrics": []
+          }
+        },
+        {
+          "theme": "汽车零部",
+          "stage": "萌芽",
+          "score": 26,
+          "trend": "↑",
+          "subscores": {
+            "leader_strength": 0,
+            "sector_width": 0,
+            "ladder_completeness": 25,
+            "capital_persistence": 100
+          },
+          "facts": {
+            "name": "汽车零部",
+            "limit_up_count": 1,
+            "first_board_count": 1,
+            "second_board_count": 0,
+            "third_board_count": 0,
+            "high_board_count": 0,
+            "max_height": 1,
+            "active_days_3": 3,
+            "leaders": [
+              {
+                "code": "001260",
+                "name": "坤泰股份",
+                "height": 1
+              }
+            ]
+          },
+          "explanation": {
+            "score": 26,
+            "coverage_pct": 100.0,
+            "components": [
+              {
+                "metric": "龙头强度",
+                "value": 1,
+                "weight": 30,
+                "normalized": 0,
+                "contribution": 0.0
+              },
+              {
+                "metric": "板块宽度",
+                "value": 1,
+                "weight": 25,
+                "normalized": 0,
+                "contribution": 0.0
+              },
+              {
+                "metric": "梯队完整度",
+                "value": 1,
+                "weight": 25,
+                "normalized": 25.0,
+                "contribution": 6.25
+              },
+              {
+                "metric": "资金持续性",
+                "value": 3,
+                "weight": 20,
+                "normalized": 100,
+                "contribution": 20.0
+              }
+            ],
+            "missing_metrics": []
+          }
+        },
+        {
+          "theme": "其他家电",
+          "stage": "萌芽",
+          "score": 21,
+          "trend": "↑",
+          "subscores": {
+            "leader_strength": 17,
+            "sector_width": 0,
+            "ladder_completeness": 25,
+            "capital_persistence": 50
+          },
+          "facts": {
+            "name": "其他家电",
+            "limit_up_count": 1,
+            "first_board_count": 0,
+            "second_board_count": 1,
+            "third_board_count": 0,
+            "high_board_count": 0,
+            "max_height": 2,
+            "active_days_3": 2,
+            "leaders": [
+              {
+                "code": "002614",
+                "name": "奥佳华",
+                "height": 2
+              }
+            ]
+          },
+          "explanation": {
+            "score": 21,
+            "coverage_pct": 100.0,
+            "components": [
+              {
+                "metric": "龙头强度",
+                "value": 2,
+                "weight": 30,
+                "normalized": 16.67,
+                "contribution": 5.0
+              },
+              {
+                "metric": "板块宽度",
+                "value": 1,
+                "weight": 25,
+                "normalized": 0,
+                "contribution": 0.0
+              },
+              {
+                "metric": "梯队完整度",
+                "value": 1,
+                "weight": 25,
+                "normalized": 25.0,
+                "contribution": 6.25
+              },
+              {
+                "metric": "资金持续性",
+                "value": 2,
+                "weight": 20,
+                "normalized": 50.0,
+                "contribution": 10.0
+              }
+            ],
+            "missing_metrics": []
+          }
+        },
+        {
+          "theme": "燃气Ⅱ",
+          "stage": "萌芽",
+          "score": 21,
+          "trend": "↑",
+          "subscores": {
+            "leader_strength": 17,
+            "sector_width": 0,
+            "ladder_completeness": 25,
+            "capital_persistence": 50
+          },
+          "facts": {
+            "name": "燃气Ⅱ",
+            "limit_up_count": 1,
+            "first_board_count": 0,
+            "second_board_count": 1,
+            "third_board_count": 0,
+            "high_board_count": 0,
+            "max_height": 2,
+            "active_days_3": 2,
+            "leaders": [
+              {
+                "code": "002259",
+                "name": "升达林业",
+                "height": 2
+              }
+            ]
+          },
+          "explanation": {
+            "score": 21,
+            "coverage_pct": 100.0,
+            "components": [
+              {
+                "metric": "龙头强度",
+                "value": 2,
+                "weight": 30,
+                "normalized": 16.67,
+                "contribution": 5.0
+              },
+              {
+                "metric": "板块宽度",
+                "value": 1,
+                "weight": 25,
+                "normalized": 0,
+                "contribution": 0.0
+              },
+              {
+                "metric": "梯队完整度",
+                "value": 1,
+                "weight": 25,
+                "normalized": 25.0,
+                "contribution": 6.25
+              },
+              {
+                "metric": "资金持续性",
+                "value": 2,
+                "weight": 20,
+                "normalized": 50.0,
+                "contribution": 10.0
+              }
+            ],
+            "missing_metrics": []
+          }
+        },
+        {
+          "theme": "家电零部",
+          "stage": "萌芽",
+          "score": 19,
+          "trend": "↑",
+          "subscores": {
+            "leader_strength": 0,
+            "sector_width": 11,
+            "ladder_completeness": 25,
+            "capital_persistence": 50
+          },
+          "facts": {
+            "name": "家电零部",
+            "limit_up_count": 2,
+            "first_board_count": 2,
+            "second_board_count": 0,
+            "third_board_count": 0,
+            "high_board_count": 0,
+            "max_height": 1,
+            "active_days_3": 2,
+            "leaders": [
+              {
+                "code": "002290",
+                "name": "禾盛新材",
+                "height": 1
+              },
+              {
+                "code": "001268",
+                "name": "联合精密",
+                "height": 1
+              }
+            ]
+          },
+          "explanation": {
+            "score": 19,
+            "coverage_pct": 100.0,
+            "components": [
+              {
+                "metric": "龙头强度",
+                "value": 1,
+                "weight": 30,
+                "normalized": 0,
+                "contribution": 0.0
+              },
+              {
+                "metric": "板块宽度",
+                "value": 2,
+                "weight": 25,
+                "normalized": 11.11,
+                "contribution": 2.78
+              },
+              {
+                "metric": "梯队完整度",
+                "value": 1,
+                "weight": 25,
+                "normalized": 25.0,
+                "contribution": 6.25
+              },
+              {
+                "metric": "资金持续性",
+                "value": 2,
+                "weight": 20,
+                "normalized": 50.0,
+                "contribution": 10.0
+              }
+            ],
+            "missing_metrics": []
+          }
+        },
+        {
+          "theme": "环境治理",
+          "stage": "萌芽",
+          "score": 19,
+          "trend": "↑",
+          "subscores": {
+            "leader_strength": 0,
+            "sector_width": 11,
+            "ladder_completeness": 25,
+            "capital_persistence": 50
+          },
+          "facts": {
+            "name": "环境治理",
+            "limit_up_count": 2,
+            "first_board_count": 2,
+            "second_board_count": 0,
+            "third_board_count": 0,
+            "high_board_count": 0,
+            "max_height": 1,
+            "active_days_3": 2,
+            "leaders": [
+              {
+                "code": "603903",
+                "name": "中持股份",
+                "height": 1
+              },
+              {
+                "code": "002672",
+                "name": "东江环保",
+                "height": 1
+              }
+            ]
+          },
+          "explanation": {
+            "score": 19,
+            "coverage_pct": 100.0,
+            "components": [
+              {
+                "metric": "龙头强度",
+                "value": 1,
+                "weight": 30,
+                "normalized": 0,
+                "contribution": 0.0
+              },
+              {
+                "metric": "板块宽度",
+                "value": 2,
+                "weight": 25,
+                "normalized": 11.11,
+                "contribution": 2.78
+              },
+              {
+                "metric": "梯队完整度",
+                "value": 1,
+                "weight": 25,
+                "normalized": 25.0,
+                "contribution": 6.25
+              },
+              {
+                "metric": "资金持续性",
+                "value": 2,
+                "weight": 20,
+                "normalized": 50.0,
+                "contribution": 10.0
+              }
+            ],
+            "missing_metrics": []
+          }
+        },
+        {
+          "theme": "专业工程",
+          "stage": "萌芽",
+          "score": 16,
+          "trend": "↑",
+          "subscores": {
+            "leader_strength": 0,
+            "sector_width": 0,
+            "ladder_completeness": 25,
+            "capital_persistence": 50
+          },
+          "facts": {
+            "name": "专业工程",
+            "limit_up_count": 1,
+            "first_board_count": 1,
+            "second_board_count": 0,
+            "third_board_count": 0,
+            "high_board_count": 0,
+            "max_height": 1,
+            "active_days_3": 2,
+            "leaders": [
+              {
+                "code": "605178",
+                "name": "时空科技",
+                "height": 1
+              }
+            ]
+          },
+          "explanation": {
+            "score": 16,
+            "coverage_pct": 100.0,
+            "components": [
+              {
+                "metric": "龙头强度",
+                "value": 1,
+                "weight": 30,
+                "normalized": 0,
+                "contribution": 0.0
+              },
+              {
+                "metric": "板块宽度",
+                "value": 1,
+                "weight": 25,
+                "normalized": 0,
+                "contribution": 0.0
+              },
+              {
+                "metric": "梯队完整度",
+                "value": 1,
+                "weight": 25,
+                "normalized": 25.0,
+                "contribution": 6.25
+              },
+              {
+                "metric": "资金持续性",
+                "value": 2,
+                "weight": 20,
+                "normalized": 50.0,
+                "contribution": 10.0
+              }
+            ],
+            "missing_metrics": []
+          }
+        },
+        {
+          "theme": "中药Ⅱ",
+          "stage": "萌芽",
+          "score": 16,
+          "trend": "↑",
+          "subscores": {
+            "leader_strength": 0,
+            "sector_width": 0,
+            "ladder_completeness": 25,
+            "capital_persistence": 50
+          },
+          "facts": {
+            "name": "中药Ⅱ",
+            "limit_up_count": 1,
+            "first_board_count": 1,
+            "second_board_count": 0,
+            "third_board_count": 0,
+            "high_board_count": 0,
+            "max_height": 1,
+            "active_days_3": 2,
+            "leaders": [
+              {
+                "code": "600479",
+                "name": "千金药业",
+                "height": 1
+              }
+            ]
+          },
+          "explanation": {
+            "score": 16,
+            "coverage_pct": 100.0,
+            "components": [
+              {
+                "metric": "龙头强度",
+                "value": 1,
+                "weight": 30,
+                "normalized": 0,
+                "contribution": 0.0
+              },
+              {
+                "metric": "板块宽度",
+                "value": 1,
+                "weight": 25,
+                "normalized": 0,
+                "contribution": 0.0
+              },
+              {
+                "metric": "梯队完整度",
+                "value": 1,
+                "weight": 25,
+                "normalized": 25.0,
+                "contribution": 6.25
+              },
+              {
+                "metric": "资金持续性",
+                "value": 2,
+                "weight": 20,
+                "normalized": 50.0,
+                "contribution": 10.0
+              }
+            ],
+            "missing_metrics": []
+          }
+        },
+        {
+          "theme": "医疗器械",
+          "stage": "萌芽",
+          "score": 16,
+          "trend": "↑",
+          "subscores": {
+            "leader_strength": 0,
+            "sector_width": 0,
+            "ladder_completeness": 25,
+            "capital_persistence": 50
+          },
+          "facts": {
+            "name": "医疗器械",
+            "limit_up_count": 1,
+            "first_board_count": 1,
+            "second_board_count": 0,
+            "third_board_count": 0,
+            "high_board_count": 0,
+            "max_height": 1,
+            "active_days_3": 2,
+            "leaders": [
+              {
+                "code": "301234",
+                "name": "五洲医疗",
+                "height": 1
+              }
+            ]
+          },
+          "explanation": {
+            "score": 16,
+            "coverage_pct": 100.0,
+            "components": [
+              {
+                "metric": "龙头强度",
+                "value": 1,
+                "weight": 30,
+                "normalized": 0,
+                "contribution": 0.0
+              },
+              {
+                "metric": "板块宽度",
+                "value": 1,
+                "weight": 25,
+                "normalized": 0,
+                "contribution": 0.0
+              },
+              {
+                "metric": "梯队完整度",
+                "value": 1,
+                "weight": 25,
+                "normalized": 25.0,
+                "contribution": 6.25
+              },
+              {
+                "metric": "资金持续性",
+                "value": 2,
+                "weight": 20,
+                "normalized": 50.0,
+                "contribution": 10.0
+              }
+            ],
+            "missing_metrics": []
+          }
+        },
+        {
+          "theme": "文娱用品",
+          "stage": "萌芽",
+          "score": 16,
+          "trend": "↑",
+          "subscores": {
+            "leader_strength": 0,
+            "sector_width": 0,
+            "ladder_completeness": 25,
+            "capital_persistence": 50
+          },
+          "facts": {
+            "name": "文娱用品",
+            "limit_up_count": 1,
+            "first_board_count": 1,
+            "second_board_count": 0,
+            "third_board_count": 0,
+            "high_board_count": 0,
+            "max_height": 1,
+            "active_days_3": 2,
+            "leaders": [
+              {
+                "code": "002301",
+                "name": "齐心集团",
+                "height": 1
+              }
+            ]
+          },
+          "explanation": {
+            "score": 16,
+            "coverage_pct": 100.0,
+            "components": [
+              {
+                "metric": "龙头强度",
+                "value": 1,
+                "weight": 30,
+                "normalized": 0,
+                "contribution": 0.0
+              },
+              {
+                "metric": "板块宽度",
+                "value": 1,
+                "weight": 25,
+                "normalized": 0,
+                "contribution": 0.0
+              },
+              {
+                "metric": "梯队完整度",
+                "value": 1,
+                "weight": 25,
+                "normalized": 25.0,
+                "contribution": 6.25
+              },
+              {
+                "metric": "资金持续性",
+                "value": 2,
+                "weight": 20,
+                "normalized": 50.0,
+                "contribution": 10.0
+              }
+            ],
+            "missing_metrics": []
+          }
+        },
+        {
+          "theme": "商用车",
+          "stage": "萌芽",
+          "score": 6,
+          "trend": "→",
+          "subscores": {
+            "leader_strength": 0,
+            "sector_width": 0,
+            "ladder_completeness": 25,
+            "capital_persistence": 0
+          },
+          "facts": {
+            "name": "商用车",
+            "limit_up_count": 1,
+            "first_board_count": 1,
+            "second_board_count": 0,
+            "third_board_count": 0,
+            "high_board_count": 0,
+            "max_height": 1,
+            "active_days_3": 1,
+            "leaders": [
+              {
+                "code": "600418",
+                "name": "江淮汽车",
+                "height": 1
+              }
+            ]
+          },
+          "explanation": {
+            "score": 6,
+            "coverage_pct": 100.0,
+            "components": [
+              {
+                "metric": "龙头强度",
+                "value": 1,
+                "weight": 30,
+                "normalized": 0,
+                "contribution": 0.0
+              },
+              {
+                "metric": "板块宽度",
+                "value": 1,
+                "weight": 25,
+                "normalized": 0,
+                "contribution": 0.0
+              },
+              {
+                "metric": "梯队完整度",
+                "value": 1,
+                "weight": 25,
+                "normalized": 25.0,
+                "contribution": 6.25
+              },
+              {
+                "metric": "资金持续性",
+                "value": 1,
+                "weight": 20,
+                "normalized": 0,
+                "contribution": 0.0
+              }
+            ],
+            "missing_metrics": []
+          }
+        },
+        {
+          "theme": "工程机械",
+          "stage": "萌芽",
+          "score": 6,
+          "trend": "→",
+          "subscores": {
+            "leader_strength": 0,
+            "sector_width": 0,
+            "ladder_completeness": 25,
+            "capital_persistence": 0
+          },
+          "facts": {
+            "name": "工程机械",
+            "limit_up_count": 1,
+            "first_board_count": 1,
+            "second_board_count": 0,
+            "third_board_count": 0,
+            "high_board_count": 0,
+            "max_height": 1,
+            "active_days_3": 1,
+            "leaders": [
+              {
+                "code": "600815",
+                "name": "厦工股份",
+                "height": 1
+              }
+            ]
+          },
+          "explanation": {
+            "score": 6,
+            "coverage_pct": 100.0,
+            "components": [
+              {
+                "metric": "龙头强度",
+                "value": 1,
+                "weight": 30,
+                "normalized": 0,
+                "contribution": 0.0
+              },
+              {
+                "metric": "板块宽度",
+                "value": 1,
+                "weight": 25,
+                "normalized": 0,
+                "contribution": 0.0
+              },
+              {
+                "metric": "梯队完整度",
+                "value": 1,
+                "weight": 25,
+                "normalized": 25.0,
+                "contribution": 6.25
+              },
+              {
+                "metric": "资金持续性",
+                "value": 1,
+                "weight": 20,
+                "normalized": 0,
+                "contribution": 0.0
+              }
+            ],
+            "missing_metrics": []
+          }
+        }
+      ]
     },
-    "short_cycle": {
-      "period": "5交易日",
-      "state": "新周期扩张验证中",
-      "trend": "冰点修复后经历分歧、再转强，目前为多主线轮动",
-      "data_quality": "基于2026-09-16至2026-09-21冻结复盘"
+    "small_cycle": {
+      "stage": "震荡",
+      "score": null,
+      "trend": "→",
+      "timeline_ready": true,
+      "snapshot_count": 6,
+      "timeline": [
+        {
+          "time": "2026-09-22T07:20:32.415482Z",
+          "node": "观察起点",
+          "facts": {
+            "time": "2026-09-22T07:20:32.415482Z",
+            "limit_up_count": 63,
+            "limit_down_count": 0,
+            "broken_count": 18,
+            "broken_rate_pct": 22.22,
+            "promotion_rate_pct": 23.3,
+            "highest_board": 6,
+            "leader": {
+              "code": "001216",
+              "name": "华瓷股份"
+            },
+            "strongest_theme": "家居用品"
+          }
+        },
+        {
+          "time": "2026-09-22T13:11:39.061227Z",
+          "node": "震荡",
+          "facts": {
+            "time": "2026-09-22T13:11:39.061227Z",
+            "limit_up_count": 63,
+            "limit_down_count": 0,
+            "broken_count": 18,
+            "broken_rate_pct": 22.22,
+            "promotion_rate_pct": 23.3,
+            "highest_board": 6,
+            "leader": {
+              "code": "001216",
+              "name": "华瓷股份"
+            },
+            "strongest_theme": "家居用品"
+          }
+        },
+        {
+          "time": "2026-09-22T13:21:16.078550Z",
+          "node": "震荡",
+          "facts": {
+            "time": "2026-09-22T13:21:16.078550Z",
+            "limit_up_count": 63,
+            "limit_down_count": 0,
+            "broken_count": 18,
+            "broken_rate_pct": 22.22,
+            "promotion_rate_pct": 23.3,
+            "highest_board": 6,
+            "leader": {
+              "code": "001216",
+              "name": "华瓷股份"
+            },
+            "strongest_theme": "家居用品"
+          }
+        },
+        {
+          "time": "2026-09-22T13:50:21.660144Z",
+          "node": "震荡",
+          "facts": {
+            "time": "2026-09-22T13:50:21.660144Z",
+            "limit_up_count": 63,
+            "limit_down_count": 0,
+            "broken_count": 18,
+            "broken_rate_pct": 22.22,
+            "promotion_rate_pct": 23.3,
+            "highest_board": 6,
+            "leader": {
+              "code": "001216",
+              "name": "华瓷股份"
+            },
+            "strongest_theme": "家居用品"
+          }
+        },
+        {
+          "time": "2026-09-22T13:53:20.005502Z",
+          "node": "震荡",
+          "facts": {
+            "time": "2026-09-22T13:53:20.005502Z",
+            "limit_up_count": 63,
+            "limit_down_count": 0,
+            "broken_count": 18,
+            "broken_rate_pct": 22.22,
+            "promotion_rate_pct": 23.3,
+            "highest_board": 6,
+            "leader": {
+              "code": "001216",
+              "name": "华瓷股份"
+            },
+            "strongest_theme": "家居用品"
+          }
+        },
+        {
+          "time": "2026-09-22T14:14:46.130578Z",
+          "node": "震荡",
+          "facts": {
+            "time": "2026-09-22T14:14:46.130578Z",
+            "limit_up_count": 63,
+            "limit_down_count": 0,
+            "broken_count": 18,
+            "broken_rate_pct": 22.22,
+            "promotion_rate_pct": 23.3,
+            "highest_board": 6,
+            "leader": {
+              "code": "001216",
+              "name": "华瓷股份"
+            },
+            "strongest_theme": "家居用品"
+          }
+        }
+      ],
+      "note": "日内节点不直接改写大周期。"
     },
-    "current_focus": {
-      "theme": "医药 / 房地产 / 科技硬件",
-      "reason": "医药为当日主线，房地产承担连板高度，科技硬件维持趋势与梯队辨识度。"
-    }
+    "leader_ecology_matrix": {
+      "leader_strength": {
+        "score": 70,
+        "coverage_pct": 100.0,
+        "components": [
+          {
+            "metric": "龙头高度",
+            "value": 6,
+            "weight": 30,
+            "normalized": 80.0,
+            "contribution": 24.0
+          },
+          {
+            "metric": "封板稳定性",
+            "value": 0,
+            "weight": 25,
+            "normalized": 100,
+            "contribution": 25.0
+          },
+          {
+            "metric": "首次封板主动性",
+            "value": "92500",
+            "weight": 20,
+            "normalized": 0,
+            "contribution": 0.0
+          },
+          {
+            "metric": "封单/成交额",
+            "value": 535.25,
+            "weight": 15,
+            "normalized": 100,
+            "contribution": 15.0
+          },
+          {
+            "metric": "龙头所在题材涨停数",
+            "value": 5,
+            "weight": 10,
+            "normalized": 57.14,
+            "contribution": 5.71
+          }
+        ],
+        "missing_metrics": [],
+        "leader": {
+          "code": "001216",
+          "name": "华瓷股份",
+          "theme": "家居用品",
+          "height": 6
+        },
+        "label": "强"
+      },
+      "market_ecology": {
+        "score": 60,
+        "coverage_pct": 94.0,
+        "components": [
+          {
+            "metric": "涨停数量",
+            "value": 63,
+            "weight": 16,
+            "normalized": 53.75,
+            "contribution": 9.15
+          },
+          {
+            "metric": "炸板率",
+            "value": 22.22,
+            "weight": 16,
+            "normalized": 69.45,
+            "contribution": 11.82
+          },
+          {
+            "metric": "连板晋级率",
+            "value": 23.3,
+            "weight": 18,
+            "normalized": 33.25,
+            "contribution": 6.37
+          },
+          {
+            "metric": "昨日涨停平均反馈",
+            "value": 2.47,
+            "weight": 14,
+            "normalized": 64.7,
+            "contribution": 9.64
+          },
+          {
+            "metric": "中位股平均反馈",
+            "value": 1.49,
+            "weight": 12,
+            "normalized": 64.9,
+            "contribution": 8.29
+          },
+          {
+            "metric": "中位股大亏比例",
+            "value": 16.67,
+            "weight": 10,
+            "normalized": 57.28,
+            "contribution": 6.09
+          },
+          {
+            "metric": "跌停数量",
+            "value": 0,
+            "weight": 8,
+            "normalized": 100,
+            "contribution": 8.51
+          },
+          {
+            "metric": "市场上涨宽度",
+            "value": null,
+            "weight": 6,
+            "normalized": null,
+            "contribution": null
+          }
+        ],
+        "missing_metrics": [
+          "市场上涨宽度"
+        ],
+        "label": "弱"
+      },
+      "label": "龙头强 / 生态弱：龙头抱团 / 生态分歧"
+    },
+    "dashboard": {
+      "market_composite": 63,
+      "leader_strength": 70,
+      "market_ecology": 60,
+      "market_width": null,
+      "relay_ecology": 33.25,
+      "mainline_strength": 75,
+      "loss_effect": 43,
+      "structure_label": "龙头强 / 生态弱：龙头抱团 / 生态分歧"
+    },
+    "method": "评分 + 结构 + 连续性；严禁用均线替代情绪结构。"
   },
   "data_quality": {
-    "as_of_date": "2026-09-21",
+    "as_of_date": "2026-09-22",
     "market_data": true,
     "limit_up_data": true,
     "auction_data": false,
-    "intraday_data": false,
+    "intraday_data": true,
     "holding_data": true,
     "history_memory_data": true,
     "missing_fields": [
       "部分交易的分钟级买卖时间",
       "T001成交数量与实际盈亏金额",
       "T002买入逻辑",
-      "完整20日与60日周期序列",
-      "9月22日竞价与盘中承接数据"
+      "市场上涨宽度"
     ],
     "analysis_allowed": true,
-    "analysis_scope": "允许盘后结构复盘、历史记录和持仓快照分析；不允许把缺失的竞价与盘中数据补写为已触发。",
-    "intraday_trigger_validation_allowed": false
+    "analysis_scope": "允许盘后结构与三层周期分析；缺失市场宽度或完整盘中时间轴时降低置信度，不补造。",
+    "intraday_trigger_validation_allowed": true,
+    "market_width_data": false,
+    "cycle_analysis_data": true
+  },
+  "sector_strength": {
+    "date": "2026-09-22",
+    "method": "龙头强度30% + 板块宽度25% + 梯队完整度25% + 资金持续性20%",
+    "sectors": [
+      {
+        "theme": "家居用品",
+        "stage": "发酵偏分歧",
+        "score": 75,
+        "trend": "↑",
+        "subscores": {
+          "leader_strength": 83,
+          "sector_width": 44,
+          "ladder_completeness": 75,
+          "capital_persistence": 100
+        },
+        "facts": {
+          "name": "家居用品",
+          "limit_up_count": 5,
+          "first_board_count": 3,
+          "second_board_count": 0,
+          "third_board_count": 1,
+          "high_board_count": 1,
+          "max_height": 6,
+          "active_days_3": 3,
+          "leaders": [
+            {
+              "code": "001216",
+              "name": "华瓷股份",
+              "height": 6
+            },
+            {
+              "code": "000910",
+              "name": "大亚圣象",
+              "height": 3
+            },
+            {
+              "code": "603221",
+              "name": "爱丽家居",
+              "height": 1
+            },
+            {
+              "code": "603216",
+              "name": "梦天家居",
+              "height": 1
+            }
+          ]
+        },
+        "explanation": {
+          "score": 75,
+          "coverage_pct": 100.0,
+          "components": [
+            {
+              "metric": "龙头强度",
+              "value": 6,
+              "weight": 30,
+              "normalized": 83.33,
+              "contribution": 25.0
+            },
+            {
+              "metric": "板块宽度",
+              "value": 5,
+              "weight": 25,
+              "normalized": 44.44,
+              "contribution": 11.11
+            },
+            {
+              "metric": "梯队完整度",
+              "value": 3,
+              "weight": 25,
+              "normalized": 75.0,
+              "contribution": 18.75
+            },
+            {
+              "metric": "资金持续性",
+              "value": 3,
+              "weight": 20,
+              "normalized": 100,
+              "contribution": 20.0
+            }
+          ],
+          "missing_metrics": []
+        }
+      },
+      {
+        "theme": "出版",
+        "stage": "发酵偏分歧",
+        "score": 73,
+        "trend": "↑",
+        "subscores": {
+          "leader_strength": 67,
+          "sector_width": 33,
+          "ladder_completeness": 100,
+          "capital_persistence": 100
+        },
+        "facts": {
+          "name": "出版",
+          "limit_up_count": 4,
+          "first_board_count": 1,
+          "second_board_count": 1,
+          "third_board_count": 1,
+          "high_board_count": 1,
+          "max_height": 5,
+          "active_days_3": 3,
+          "leaders": [
+            {
+              "code": "603230",
+              "name": "内蒙新华",
+              "height": 5
+            },
+            {
+              "code": "601811",
+              "name": "新华文轩",
+              "height": 3
+            },
+            {
+              "code": "600825",
+              "name": "新华传媒",
+              "height": 2
+            },
+            {
+              "code": "601949",
+              "name": "中国出版",
+              "height": 1
+            }
+          ]
+        },
+        "explanation": {
+          "score": 73,
+          "coverage_pct": 100.0,
+          "components": [
+            {
+              "metric": "龙头强度",
+              "value": 5,
+              "weight": 30,
+              "normalized": 66.67,
+              "contribution": 20.0
+            },
+            {
+              "metric": "板块宽度",
+              "value": 4,
+              "weight": 25,
+              "normalized": 33.33,
+              "contribution": 8.33
+            },
+            {
+              "metric": "梯队完整度",
+              "value": 4,
+              "weight": 25,
+              "normalized": 100.0,
+              "contribution": 25.0
+            },
+            {
+              "metric": "资金持续性",
+              "value": 3,
+              "weight": 20,
+              "normalized": 100,
+              "contribution": 20.0
+            }
+          ],
+          "missing_metrics": []
+        }
+      },
+      {
+        "theme": "医疗服务",
+        "stage": "发酵",
+        "score": 50,
+        "trend": "↑",
+        "subscores": {
+          "leader_strength": 50,
+          "sector_width": 11,
+          "ladder_completeness": 50,
+          "capital_persistence": 100
+        },
+        "facts": {
+          "name": "医疗服务",
+          "limit_up_count": 2,
+          "first_board_count": 0,
+          "second_board_count": 1,
+          "third_board_count": 0,
+          "high_board_count": 1,
+          "max_height": 4,
+          "active_days_3": 3,
+          "leaders": [
+            {
+              "code": "000504",
+              "name": "南华生物",
+              "height": 4
+            },
+            {
+              "code": "600721",
+              "name": "百花医药",
+              "height": 2
+            }
+          ]
+        },
+        "explanation": {
+          "score": 50,
+          "coverage_pct": 100.0,
+          "components": [
+            {
+              "metric": "龙头强度",
+              "value": 4,
+              "weight": 30,
+              "normalized": 50.0,
+              "contribution": 15.0
+            },
+            {
+              "metric": "板块宽度",
+              "value": 2,
+              "weight": 25,
+              "normalized": 11.11,
+              "contribution": 2.78
+            },
+            {
+              "metric": "梯队完整度",
+              "value": 2,
+              "weight": 25,
+              "normalized": 50.0,
+              "contribution": 12.5
+            },
+            {
+              "metric": "资金持续性",
+              "value": 3,
+              "weight": 20,
+              "normalized": 100,
+              "contribution": 20.0
+            }
+          ],
+          "missing_metrics": []
+        }
+      },
+      {
+        "theme": "半导体",
+        "stage": "发酵",
+        "score": 45,
+        "trend": "↑",
+        "subscores": {
+          "leader_strength": 33,
+          "sector_width": 11,
+          "ladder_completeness": 50,
+          "capital_persistence": 100
+        },
+        "facts": {
+          "name": "半导体",
+          "limit_up_count": 2,
+          "first_board_count": 1,
+          "second_board_count": 0,
+          "third_board_count": 1,
+          "high_board_count": 0,
+          "max_height": 3,
+          "active_days_3": 3,
+          "leaders": [
+            {
+              "code": "603068",
+              "name": "博通集成",
+              "height": 3
+            },
+            {
+              "code": "600641",
+              "name": "先导基电",
+              "height": 1
+            }
+          ]
+        },
+        "explanation": {
+          "score": 45,
+          "coverage_pct": 100.0,
+          "components": [
+            {
+              "metric": "龙头强度",
+              "value": 3,
+              "weight": 30,
+              "normalized": 33.33,
+              "contribution": 10.0
+            },
+            {
+              "metric": "板块宽度",
+              "value": 2,
+              "weight": 25,
+              "normalized": 11.11,
+              "contribution": 2.78
+            },
+            {
+              "metric": "梯队完整度",
+              "value": 2,
+              "weight": 25,
+              "normalized": 50.0,
+              "contribution": 12.5
+            },
+            {
+              "metric": "资金持续性",
+              "value": 3,
+              "weight": 20,
+              "normalized": 100,
+              "contribution": 20.0
+            }
+          ],
+          "missing_metrics": []
+        }
+      },
+      {
+        "theme": "广告营销",
+        "stage": "萌芽",
+        "score": 43,
+        "trend": "↑",
+        "subscores": {
+          "leader_strength": 17,
+          "sector_width": 22,
+          "ladder_completeness": 50,
+          "capital_persistence": 100
+        },
+        "facts": {
+          "name": "广告营销",
+          "limit_up_count": 3,
+          "first_board_count": 2,
+          "second_board_count": 1,
+          "third_board_count": 0,
+          "high_board_count": 0,
+          "max_height": 2,
+          "active_days_3": 3,
+          "leaders": [
+            {
+              "code": "000607",
+              "name": "华媒控股",
+              "height": 2
+            },
+            {
+              "code": "000676",
+              "name": "智度股份",
+              "height": 1
+            },
+            {
+              "code": "603598",
+              "name": "引力传媒",
+              "height": 1
+            }
+          ]
+        },
+        "explanation": {
+          "score": 43,
+          "coverage_pct": 100.0,
+          "components": [
+            {
+              "metric": "龙头强度",
+              "value": 2,
+              "weight": 30,
+              "normalized": 16.67,
+              "contribution": 5.0
+            },
+            {
+              "metric": "板块宽度",
+              "value": 3,
+              "weight": 25,
+              "normalized": 22.22,
+              "contribution": 5.56
+            },
+            {
+              "metric": "梯队完整度",
+              "value": 2,
+              "weight": 25,
+              "normalized": 50.0,
+              "contribution": 12.5
+            },
+            {
+              "metric": "资金持续性",
+              "value": 3,
+              "weight": 20,
+              "normalized": 100,
+              "contribution": 20.0
+            }
+          ],
+          "missing_metrics": []
+        }
+      },
+      {
+        "theme": "IT服务Ⅱ",
+        "stage": "萌芽",
+        "score": 40,
+        "trend": "↑",
+        "subscores": {
+          "leader_strength": 17,
+          "sector_width": 11,
+          "ladder_completeness": 50,
+          "capital_persistence": 100
+        },
+        "facts": {
+          "name": "IT服务Ⅱ",
+          "limit_up_count": 2,
+          "first_board_count": 1,
+          "second_board_count": 1,
+          "third_board_count": 0,
+          "high_board_count": 0,
+          "max_height": 2,
+          "active_days_3": 3,
+          "leaders": [
+            {
+              "code": "603636",
+              "name": "南威软件",
+              "height": 2
+            },
+            {
+              "code": "605398",
+              "name": "新炬网络",
+              "height": 1
+            }
+          ]
+        },
+        "explanation": {
+          "score": 40,
+          "coverage_pct": 100.0,
+          "components": [
+            {
+              "metric": "龙头强度",
+              "value": 2,
+              "weight": 30,
+              "normalized": 16.67,
+              "contribution": 5.0
+            },
+            {
+              "metric": "板块宽度",
+              "value": 2,
+              "weight": 25,
+              "normalized": 11.11,
+              "contribution": 2.78
+            },
+            {
+              "metric": "梯队完整度",
+              "value": 2,
+              "weight": 25,
+              "normalized": 50.0,
+              "contribution": 12.5
+            },
+            {
+              "metric": "资金持续性",
+              "value": 3,
+              "weight": 20,
+              "normalized": 100,
+              "contribution": 20.0
+            }
+          ],
+          "missing_metrics": []
+        }
+      },
+      {
+        "theme": "软件开发",
+        "stage": "萌芽",
+        "score": 40,
+        "trend": "↑",
+        "subscores": {
+          "leader_strength": 17,
+          "sector_width": 11,
+          "ladder_completeness": 50,
+          "capital_persistence": 100
+        },
+        "facts": {
+          "name": "软件开发",
+          "limit_up_count": 2,
+          "first_board_count": 1,
+          "second_board_count": 1,
+          "third_board_count": 0,
+          "high_board_count": 0,
+          "max_height": 2,
+          "active_days_3": 3,
+          "leaders": [
+            {
+              "code": "002178",
+              "name": "延华智能",
+              "height": 2
+            },
+            {
+              "code": "603039",
+              "name": "泛微网络",
+              "height": 1
+            }
+          ]
+        },
+        "explanation": {
+          "score": 40,
+          "coverage_pct": 100.0,
+          "components": [
+            {
+              "metric": "龙头强度",
+              "value": 2,
+              "weight": 30,
+              "normalized": 16.67,
+              "contribution": 5.0
+            },
+            {
+              "metric": "板块宽度",
+              "value": 2,
+              "weight": 25,
+              "normalized": 11.11,
+              "contribution": 2.78
+            },
+            {
+              "metric": "梯队完整度",
+              "value": 2,
+              "weight": 25,
+              "normalized": 50.0,
+              "contribution": 12.5
+            },
+            {
+              "metric": "资金持续性",
+              "value": 3,
+              "weight": 20,
+              "normalized": 100,
+              "contribution": 20.0
+            }
+          ],
+          "missing_metrics": []
+        }
+      },
+      {
+        "theme": "铁路公路",
+        "stage": "萌芽",
+        "score": 36,
+        "trend": "↑",
+        "subscores": {
+          "leader_strength": 33,
+          "sector_width": 0,
+          "ladder_completeness": 25,
+          "capital_persistence": 100
+        },
+        "facts": {
+          "name": "铁路公路",
+          "limit_up_count": 1,
+          "first_board_count": 0,
+          "second_board_count": 0,
+          "third_board_count": 1,
+          "high_board_count": 0,
+          "max_height": 3,
+          "active_days_3": 3,
+          "leaders": [
+            {
+              "code": "001317",
+              "name": "三羊马",
+              "height": 3
+            }
+          ]
+        },
+        "explanation": {
+          "score": 36,
+          "coverage_pct": 100.0,
+          "components": [
+            {
+              "metric": "龙头强度",
+              "value": 3,
+              "weight": 30,
+              "normalized": 33.33,
+              "contribution": 10.0
+            },
+            {
+              "metric": "板块宽度",
+              "value": 1,
+              "weight": 25,
+              "normalized": 0,
+              "contribution": 0.0
+            },
+            {
+              "metric": "梯队完整度",
+              "value": 1,
+              "weight": 25,
+              "normalized": 25.0,
+              "contribution": 6.25
+            },
+            {
+              "metric": "资金持续性",
+              "value": 3,
+              "weight": 20,
+              "normalized": 100,
+              "contribution": 20.0
+            }
+          ],
+          "missing_metrics": []
+        }
+      },
+      {
+        "theme": "房地产服",
+        "stage": "萌芽",
+        "score": 34,
+        "trend": "↑",
+        "subscores": {
+          "leader_strength": 17,
+          "sector_width": 11,
+          "ladder_completeness": 25,
+          "capital_persistence": 100
+        },
+        "facts": {
+          "name": "房地产服",
+          "limit_up_count": 2,
+          "first_board_count": 0,
+          "second_board_count": 2,
+          "third_board_count": 0,
+          "high_board_count": 0,
+          "max_height": 2,
+          "active_days_3": 3,
+          "leaders": [
+            {
+              "code": "000560",
+              "name": "我爱我家",
+              "height": 2
+            },
+            {
+              "code": "600743",
+              "name": "华远控股",
+              "height": 2
+            }
+          ]
+        },
+        "explanation": {
+          "score": 34,
+          "coverage_pct": 100.0,
+          "components": [
+            {
+              "metric": "龙头强度",
+              "value": 2,
+              "weight": 30,
+              "normalized": 16.67,
+              "contribution": 5.0
+            },
+            {
+              "metric": "板块宽度",
+              "value": 2,
+              "weight": 25,
+              "normalized": 11.11,
+              "contribution": 2.78
+            },
+            {
+              "metric": "梯队完整度",
+              "value": 1,
+              "weight": 25,
+              "normalized": 25.0,
+              "contribution": 6.25
+            },
+            {
+              "metric": "资金持续性",
+              "value": 3,
+              "weight": 20,
+              "normalized": 100,
+              "contribution": 20.0
+            }
+          ],
+          "missing_metrics": []
+        }
+      },
+      {
+        "theme": "元件",
+        "stage": "萌芽",
+        "score": 32,
+        "trend": "↑",
+        "subscores": {
+          "leader_strength": 0,
+          "sector_width": 22,
+          "ladder_completeness": 25,
+          "capital_persistence": 100
+        },
+        "facts": {
+          "name": "元件",
+          "limit_up_count": 3,
+          "first_board_count": 3,
+          "second_board_count": 0,
+          "third_board_count": 0,
+          "high_board_count": 0,
+          "max_height": 1,
+          "active_days_3": 3,
+          "leaders": [
+            {
+              "code": "002141",
+              "name": "贤丰控股",
+              "height": 1
+            },
+            {
+              "code": "605058",
+              "name": "澳弘电子",
+              "height": 1
+            },
+            {
+              "code": "605258",
+              "name": "协和电子",
+              "height": 1
+            }
+          ]
+        },
+        "explanation": {
+          "score": 32,
+          "coverage_pct": 100.0,
+          "components": [
+            {
+              "metric": "龙头强度",
+              "value": 1,
+              "weight": 30,
+              "normalized": 0,
+              "contribution": 0.0
+            },
+            {
+              "metric": "板块宽度",
+              "value": 3,
+              "weight": 25,
+              "normalized": 22.22,
+              "contribution": 5.56
+            },
+            {
+              "metric": "梯队完整度",
+              "value": 1,
+              "weight": 25,
+              "normalized": 25.0,
+              "contribution": 6.25
+            },
+            {
+              "metric": "资金持续性",
+              "value": 3,
+              "weight": 20,
+              "normalized": 100,
+              "contribution": 20.0
+            }
+          ],
+          "missing_metrics": []
+        }
+      },
+      {
+        "theme": "包装印刷",
+        "stage": "萌芽",
+        "score": 31,
+        "trend": "↑",
+        "subscores": {
+          "leader_strength": 17,
+          "sector_width": 0,
+          "ladder_completeness": 25,
+          "capital_persistence": 100
+        },
+        "facts": {
+          "name": "包装印刷",
+          "limit_up_count": 1,
+          "first_board_count": 0,
+          "second_board_count": 1,
+          "third_board_count": 0,
+          "high_board_count": 0,
+          "max_height": 2,
+          "active_days_3": 3,
+          "leaders": [
+            {
+              "code": "002303",
+              "name": "美盈森",
+              "height": 2
+            }
+          ]
+        },
+        "explanation": {
+          "score": 31,
+          "coverage_pct": 100.0,
+          "components": [
+            {
+              "metric": "龙头强度",
+              "value": 2,
+              "weight": 30,
+              "normalized": 16.67,
+              "contribution": 5.0
+            },
+            {
+              "metric": "板块宽度",
+              "value": 1,
+              "weight": 25,
+              "normalized": 0,
+              "contribution": 0.0
+            },
+            {
+              "metric": "梯队完整度",
+              "value": 1,
+              "weight": 25,
+              "normalized": 25.0,
+              "contribution": 6.25
+            },
+            {
+              "metric": "资金持续性",
+              "value": 3,
+              "weight": 20,
+              "normalized": 100,
+              "contribution": 20.0
+            }
+          ],
+          "missing_metrics": []
+        }
+      },
+      {
+        "theme": "化学制品",
+        "stage": "萌芽",
+        "score": 31,
+        "trend": "↑",
+        "subscores": {
+          "leader_strength": 17,
+          "sector_width": 0,
+          "ladder_completeness": 25,
+          "capital_persistence": 100
+        },
+        "facts": {
+          "name": "化学制品",
+          "limit_up_count": 1,
+          "first_board_count": 0,
+          "second_board_count": 1,
+          "third_board_count": 0,
+          "high_board_count": 0,
+          "max_height": 2,
+          "active_days_3": 3,
+          "leaders": [
+            {
+              "code": "603020",
+              "name": "爱普股份",
+              "height": 2
+            }
+          ]
+        },
+        "explanation": {
+          "score": 31,
+          "coverage_pct": 100.0,
+          "components": [
+            {
+              "metric": "龙头强度",
+              "value": 2,
+              "weight": 30,
+              "normalized": 16.67,
+              "contribution": 5.0
+            },
+            {
+              "metric": "板块宽度",
+              "value": 1,
+              "weight": 25,
+              "normalized": 0,
+              "contribution": 0.0
+            },
+            {
+              "metric": "梯队完整度",
+              "value": 1,
+              "weight": 25,
+              "normalized": 25.0,
+              "contribution": 6.25
+            },
+            {
+              "metric": "资金持续性",
+              "value": 3,
+              "weight": 20,
+              "normalized": 100,
+              "contribution": 20.0
+            }
+          ],
+          "missing_metrics": []
+        }
+      },
+      {
+        "theme": "房地产开",
+        "stage": "萌芽",
+        "score": 31,
+        "trend": "↑",
+        "subscores": {
+          "leader_strength": 17,
+          "sector_width": 0,
+          "ladder_completeness": 25,
+          "capital_persistence": 100
+        },
+        "facts": {
+          "name": "房地产开",
+          "limit_up_count": 1,
+          "first_board_count": 0,
+          "second_board_count": 1,
+          "third_board_count": 0,
+          "high_board_count": 0,
+          "max_height": 2,
+          "active_days_3": 3,
+          "leaders": [
+            {
+              "code": "600503",
+              "name": "华丽家族",
+              "height": 2
+            }
+          ]
+        },
+        "explanation": {
+          "score": 31,
+          "coverage_pct": 100.0,
+          "components": [
+            {
+              "metric": "龙头强度",
+              "value": 2,
+              "weight": 30,
+              "normalized": 16.67,
+              "contribution": 5.0
+            },
+            {
+              "metric": "板块宽度",
+              "value": 1,
+              "weight": 25,
+              "normalized": 0,
+              "contribution": 0.0
+            },
+            {
+              "metric": "梯队完整度",
+              "value": 1,
+              "weight": 25,
+              "normalized": 25.0,
+              "contribution": 6.25
+            },
+            {
+              "metric": "资金持续性",
+              "value": 3,
+              "weight": 20,
+              "normalized": 100,
+              "contribution": 20.0
+            }
+          ],
+          "missing_metrics": []
+        }
+      },
+      {
+        "theme": "服装家纺",
+        "stage": "萌芽",
+        "score": 31,
+        "trend": "↑",
+        "subscores": {
+          "leader_strength": 17,
+          "sector_width": 0,
+          "ladder_completeness": 25,
+          "capital_persistence": 100
+        },
+        "facts": {
+          "name": "服装家纺",
+          "limit_up_count": 1,
+          "first_board_count": 0,
+          "second_board_count": 1,
+          "third_board_count": 0,
+          "high_board_count": 0,
+          "max_height": 2,
+          "active_days_3": 3,
+          "leaders": [
+            {
+              "code": "001234",
+              "name": "泰慕士",
+              "height": 2
+            }
+          ]
+        },
+        "explanation": {
+          "score": 31,
+          "coverage_pct": 100.0,
+          "components": [
+            {
+              "metric": "龙头强度",
+              "value": 2,
+              "weight": 30,
+              "normalized": 16.67,
+              "contribution": 5.0
+            },
+            {
+              "metric": "板块宽度",
+              "value": 1,
+              "weight": 25,
+              "normalized": 0,
+              "contribution": 0.0
+            },
+            {
+              "metric": "梯队完整度",
+              "value": 1,
+              "weight": 25,
+              "normalized": 25.0,
+              "contribution": 6.25
+            },
+            {
+              "metric": "资金持续性",
+              "value": 3,
+              "weight": 20,
+              "normalized": 100,
+              "contribution": 20.0
+            }
+          ],
+          "missing_metrics": []
+        }
+      },
+      {
+        "theme": "塑料",
+        "stage": "萌芽",
+        "score": 30,
+        "trend": "↑",
+        "subscores": {
+          "leader_strength": 17,
+          "sector_width": 11,
+          "ladder_completeness": 50,
+          "capital_persistence": 50
+        },
+        "facts": {
+          "name": "塑料",
+          "limit_up_count": 2,
+          "first_board_count": 1,
+          "second_board_count": 1,
+          "third_board_count": 0,
+          "high_board_count": 0,
+          "max_height": 2,
+          "active_days_3": 2,
+          "leaders": [
+            {
+              "code": "603580",
+              "name": "艾艾精工",
+              "height": 2
+            },
+            {
+              "code": "002768",
+              "name": "国恩股份",
+              "height": 1
+            }
+          ]
+        },
+        "explanation": {
+          "score": 30,
+          "coverage_pct": 100.0,
+          "components": [
+            {
+              "metric": "龙头强度",
+              "value": 2,
+              "weight": 30,
+              "normalized": 16.67,
+              "contribution": 5.0
+            },
+            {
+              "metric": "板块宽度",
+              "value": 2,
+              "weight": 25,
+              "normalized": 11.11,
+              "contribution": 2.78
+            },
+            {
+              "metric": "梯队完整度",
+              "value": 2,
+              "weight": 25,
+              "normalized": 50.0,
+              "contribution": 12.5
+            },
+            {
+              "metric": "资金持续性",
+              "value": 2,
+              "weight": 20,
+              "normalized": 50.0,
+              "contribution": 10.0
+            }
+          ],
+          "missing_metrics": []
+        }
+      },
+      {
+        "theme": "专用设备",
+        "stage": "萌芽",
+        "score": 29,
+        "trend": "↑",
+        "subscores": {
+          "leader_strength": 0,
+          "sector_width": 11,
+          "ladder_completeness": 25,
+          "capital_persistence": 100
+        },
+        "facts": {
+          "name": "专用设备",
+          "limit_up_count": 2,
+          "first_board_count": 2,
+          "second_board_count": 0,
+          "third_board_count": 0,
+          "high_board_count": 0,
+          "max_height": 1,
+          "active_days_3": 3,
+          "leaders": [
+            {
+              "code": "002757",
+              "name": "南兴股份",
+              "height": 1
+            },
+            {
+              "code": "002564",
+              "name": "天沃科技",
+              "height": 1
+            }
+          ]
+        },
+        "explanation": {
+          "score": 29,
+          "coverage_pct": 100.0,
+          "components": [
+            {
+              "metric": "龙头强度",
+              "value": 1,
+              "weight": 30,
+              "normalized": 0,
+              "contribution": 0.0
+            },
+            {
+              "metric": "板块宽度",
+              "value": 2,
+              "weight": 25,
+              "normalized": 11.11,
+              "contribution": 2.78
+            },
+            {
+              "metric": "梯队完整度",
+              "value": 1,
+              "weight": 25,
+              "normalized": 25.0,
+              "contribution": 6.25
+            },
+            {
+              "metric": "资金持续性",
+              "value": 3,
+              "weight": 20,
+              "normalized": 100,
+              "contribution": 20.0
+            }
+          ],
+          "missing_metrics": []
+        }
+      },
+      {
+        "theme": "光学光电",
+        "stage": "萌芽",
+        "score": 29,
+        "trend": "↑",
+        "subscores": {
+          "leader_strength": 0,
+          "sector_width": 11,
+          "ladder_completeness": 25,
+          "capital_persistence": 100
+        },
+        "facts": {
+          "name": "光学光电",
+          "limit_up_count": 2,
+          "first_board_count": 2,
+          "second_board_count": 0,
+          "third_board_count": 0,
+          "high_board_count": 0,
+          "max_height": 1,
+          "active_days_3": 3,
+          "leaders": [
+            {
+              "code": "688781",
+              "name": "视涯科技-UW",
+              "height": 1
+            },
+            {
+              "code": "605218",
+              "name": "伟时电子",
+              "height": 1
+            }
+          ]
+        },
+        "explanation": {
+          "score": 29,
+          "coverage_pct": 100.0,
+          "components": [
+            {
+              "metric": "龙头强度",
+              "value": 1,
+              "weight": 30,
+              "normalized": 0,
+              "contribution": 0.0
+            },
+            {
+              "metric": "板块宽度",
+              "value": 2,
+              "weight": 25,
+              "normalized": 11.11,
+              "contribution": 2.78
+            },
+            {
+              "metric": "梯队完整度",
+              "value": 1,
+              "weight": 25,
+              "normalized": 25.0,
+              "contribution": 6.25
+            },
+            {
+              "metric": "资金持续性",
+              "value": 3,
+              "weight": 20,
+              "normalized": 100,
+              "contribution": 20.0
+            }
+          ],
+          "missing_metrics": []
+        }
+      },
+      {
+        "theme": "计算机设",
+        "stage": "萌芽",
+        "score": 29,
+        "trend": "↑",
+        "subscores": {
+          "leader_strength": 0,
+          "sector_width": 11,
+          "ladder_completeness": 25,
+          "capital_persistence": 100
+        },
+        "facts": {
+          "name": "计算机设",
+          "limit_up_count": 2,
+          "first_board_count": 2,
+          "second_board_count": 0,
+          "third_board_count": 0,
+          "high_board_count": 0,
+          "max_height": 1,
+          "active_days_3": 3,
+          "leaders": [
+            {
+              "code": "300324",
+              "name": "旋极信息",
+              "height": 1
+            },
+            {
+              "code": "002912",
+              "name": "中新赛克",
+              "height": 1
+            }
+          ]
+        },
+        "explanation": {
+          "score": 29,
+          "coverage_pct": 100.0,
+          "components": [
+            {
+              "metric": "龙头强度",
+              "value": 1,
+              "weight": 30,
+              "normalized": 0,
+              "contribution": 0.0
+            },
+            {
+              "metric": "板块宽度",
+              "value": 2,
+              "weight": 25,
+              "normalized": 11.11,
+              "contribution": 2.78
+            },
+            {
+              "metric": "梯队完整度",
+              "value": 1,
+              "weight": 25,
+              "normalized": 25.0,
+              "contribution": 6.25
+            },
+            {
+              "metric": "资金持续性",
+              "value": 3,
+              "weight": 20,
+              "normalized": 100,
+              "contribution": 20.0
+            }
+          ],
+          "missing_metrics": []
+        }
+      },
+      {
+        "theme": "化学制药",
+        "stage": "萌芽",
+        "score": 27,
+        "trend": "↑",
+        "subscores": {
+          "leader_strength": 17,
+          "sector_width": 22,
+          "ladder_completeness": 25,
+          "capital_persistence": 50
+        },
+        "facts": {
+          "name": "化学制药",
+          "limit_up_count": 3,
+          "first_board_count": 0,
+          "second_board_count": 3,
+          "third_board_count": 0,
+          "high_board_count": 0,
+          "max_height": 2,
+          "active_days_3": 2,
+          "leaders": [
+            {
+              "code": "600664",
+              "name": "哈药股份",
+              "height": 2
+            },
+            {
+              "code": "000756",
+              "name": "新华制药",
+              "height": 2
+            },
+            {
+              "code": "300110",
+              "name": "华仁药业",
+              "height": 2
+            }
+          ]
+        },
+        "explanation": {
+          "score": 27,
+          "coverage_pct": 100.0,
+          "components": [
+            {
+              "metric": "龙头强度",
+              "value": 2,
+              "weight": 30,
+              "normalized": 16.67,
+              "contribution": 5.0
+            },
+            {
+              "metric": "板块宽度",
+              "value": 3,
+              "weight": 25,
+              "normalized": 22.22,
+              "contribution": 5.56
+            },
+            {
+              "metric": "梯队完整度",
+              "value": 1,
+              "weight": 25,
+              "normalized": 25.0,
+              "contribution": 6.25
+            },
+            {
+              "metric": "资金持续性",
+              "value": 2,
+              "weight": 20,
+              "normalized": 50.0,
+              "contribution": 10.0
+            }
+          ],
+          "missing_metrics": []
+        }
+      },
+      {
+        "theme": "汽车零部",
+        "stage": "萌芽",
+        "score": 26,
+        "trend": "↑",
+        "subscores": {
+          "leader_strength": 0,
+          "sector_width": 0,
+          "ladder_completeness": 25,
+          "capital_persistence": 100
+        },
+        "facts": {
+          "name": "汽车零部",
+          "limit_up_count": 1,
+          "first_board_count": 1,
+          "second_board_count": 0,
+          "third_board_count": 0,
+          "high_board_count": 0,
+          "max_height": 1,
+          "active_days_3": 3,
+          "leaders": [
+            {
+              "code": "001260",
+              "name": "坤泰股份",
+              "height": 1
+            }
+          ]
+        },
+        "explanation": {
+          "score": 26,
+          "coverage_pct": 100.0,
+          "components": [
+            {
+              "metric": "龙头强度",
+              "value": 1,
+              "weight": 30,
+              "normalized": 0,
+              "contribution": 0.0
+            },
+            {
+              "metric": "板块宽度",
+              "value": 1,
+              "weight": 25,
+              "normalized": 0,
+              "contribution": 0.0
+            },
+            {
+              "metric": "梯队完整度",
+              "value": 1,
+              "weight": 25,
+              "normalized": 25.0,
+              "contribution": 6.25
+            },
+            {
+              "metric": "资金持续性",
+              "value": 3,
+              "weight": 20,
+              "normalized": 100,
+              "contribution": 20.0
+            }
+          ],
+          "missing_metrics": []
+        }
+      },
+      {
+        "theme": "其他家电",
+        "stage": "萌芽",
+        "score": 21,
+        "trend": "↑",
+        "subscores": {
+          "leader_strength": 17,
+          "sector_width": 0,
+          "ladder_completeness": 25,
+          "capital_persistence": 50
+        },
+        "facts": {
+          "name": "其他家电",
+          "limit_up_count": 1,
+          "first_board_count": 0,
+          "second_board_count": 1,
+          "third_board_count": 0,
+          "high_board_count": 0,
+          "max_height": 2,
+          "active_days_3": 2,
+          "leaders": [
+            {
+              "code": "002614",
+              "name": "奥佳华",
+              "height": 2
+            }
+          ]
+        },
+        "explanation": {
+          "score": 21,
+          "coverage_pct": 100.0,
+          "components": [
+            {
+              "metric": "龙头强度",
+              "value": 2,
+              "weight": 30,
+              "normalized": 16.67,
+              "contribution": 5.0
+            },
+            {
+              "metric": "板块宽度",
+              "value": 1,
+              "weight": 25,
+              "normalized": 0,
+              "contribution": 0.0
+            },
+            {
+              "metric": "梯队完整度",
+              "value": 1,
+              "weight": 25,
+              "normalized": 25.0,
+              "contribution": 6.25
+            },
+            {
+              "metric": "资金持续性",
+              "value": 2,
+              "weight": 20,
+              "normalized": 50.0,
+              "contribution": 10.0
+            }
+          ],
+          "missing_metrics": []
+        }
+      },
+      {
+        "theme": "燃气Ⅱ",
+        "stage": "萌芽",
+        "score": 21,
+        "trend": "↑",
+        "subscores": {
+          "leader_strength": 17,
+          "sector_width": 0,
+          "ladder_completeness": 25,
+          "capital_persistence": 50
+        },
+        "facts": {
+          "name": "燃气Ⅱ",
+          "limit_up_count": 1,
+          "first_board_count": 0,
+          "second_board_count": 1,
+          "third_board_count": 0,
+          "high_board_count": 0,
+          "max_height": 2,
+          "active_days_3": 2,
+          "leaders": [
+            {
+              "code": "002259",
+              "name": "升达林业",
+              "height": 2
+            }
+          ]
+        },
+        "explanation": {
+          "score": 21,
+          "coverage_pct": 100.0,
+          "components": [
+            {
+              "metric": "龙头强度",
+              "value": 2,
+              "weight": 30,
+              "normalized": 16.67,
+              "contribution": 5.0
+            },
+            {
+              "metric": "板块宽度",
+              "value": 1,
+              "weight": 25,
+              "normalized": 0,
+              "contribution": 0.0
+            },
+            {
+              "metric": "梯队完整度",
+              "value": 1,
+              "weight": 25,
+              "normalized": 25.0,
+              "contribution": 6.25
+            },
+            {
+              "metric": "资金持续性",
+              "value": 2,
+              "weight": 20,
+              "normalized": 50.0,
+              "contribution": 10.0
+            }
+          ],
+          "missing_metrics": []
+        }
+      },
+      {
+        "theme": "家电零部",
+        "stage": "萌芽",
+        "score": 19,
+        "trend": "↑",
+        "subscores": {
+          "leader_strength": 0,
+          "sector_width": 11,
+          "ladder_completeness": 25,
+          "capital_persistence": 50
+        },
+        "facts": {
+          "name": "家电零部",
+          "limit_up_count": 2,
+          "first_board_count": 2,
+          "second_board_count": 0,
+          "third_board_count": 0,
+          "high_board_count": 0,
+          "max_height": 1,
+          "active_days_3": 2,
+          "leaders": [
+            {
+              "code": "002290",
+              "name": "禾盛新材",
+              "height": 1
+            },
+            {
+              "code": "001268",
+              "name": "联合精密",
+              "height": 1
+            }
+          ]
+        },
+        "explanation": {
+          "score": 19,
+          "coverage_pct": 100.0,
+          "components": [
+            {
+              "metric": "龙头强度",
+              "value": 1,
+              "weight": 30,
+              "normalized": 0,
+              "contribution": 0.0
+            },
+            {
+              "metric": "板块宽度",
+              "value": 2,
+              "weight": 25,
+              "normalized": 11.11,
+              "contribution": 2.78
+            },
+            {
+              "metric": "梯队完整度",
+              "value": 1,
+              "weight": 25,
+              "normalized": 25.0,
+              "contribution": 6.25
+            },
+            {
+              "metric": "资金持续性",
+              "value": 2,
+              "weight": 20,
+              "normalized": 50.0,
+              "contribution": 10.0
+            }
+          ],
+          "missing_metrics": []
+        }
+      },
+      {
+        "theme": "环境治理",
+        "stage": "萌芽",
+        "score": 19,
+        "trend": "↑",
+        "subscores": {
+          "leader_strength": 0,
+          "sector_width": 11,
+          "ladder_completeness": 25,
+          "capital_persistence": 50
+        },
+        "facts": {
+          "name": "环境治理",
+          "limit_up_count": 2,
+          "first_board_count": 2,
+          "second_board_count": 0,
+          "third_board_count": 0,
+          "high_board_count": 0,
+          "max_height": 1,
+          "active_days_3": 2,
+          "leaders": [
+            {
+              "code": "603903",
+              "name": "中持股份",
+              "height": 1
+            },
+            {
+              "code": "002672",
+              "name": "东江环保",
+              "height": 1
+            }
+          ]
+        },
+        "explanation": {
+          "score": 19,
+          "coverage_pct": 100.0,
+          "components": [
+            {
+              "metric": "龙头强度",
+              "value": 1,
+              "weight": 30,
+              "normalized": 0,
+              "contribution": 0.0
+            },
+            {
+              "metric": "板块宽度",
+              "value": 2,
+              "weight": 25,
+              "normalized": 11.11,
+              "contribution": 2.78
+            },
+            {
+              "metric": "梯队完整度",
+              "value": 1,
+              "weight": 25,
+              "normalized": 25.0,
+              "contribution": 6.25
+            },
+            {
+              "metric": "资金持续性",
+              "value": 2,
+              "weight": 20,
+              "normalized": 50.0,
+              "contribution": 10.0
+            }
+          ],
+          "missing_metrics": []
+        }
+      },
+      {
+        "theme": "专业工程",
+        "stage": "萌芽",
+        "score": 16,
+        "trend": "↑",
+        "subscores": {
+          "leader_strength": 0,
+          "sector_width": 0,
+          "ladder_completeness": 25,
+          "capital_persistence": 50
+        },
+        "facts": {
+          "name": "专业工程",
+          "limit_up_count": 1,
+          "first_board_count": 1,
+          "second_board_count": 0,
+          "third_board_count": 0,
+          "high_board_count": 0,
+          "max_height": 1,
+          "active_days_3": 2,
+          "leaders": [
+            {
+              "code": "605178",
+              "name": "时空科技",
+              "height": 1
+            }
+          ]
+        },
+        "explanation": {
+          "score": 16,
+          "coverage_pct": 100.0,
+          "components": [
+            {
+              "metric": "龙头强度",
+              "value": 1,
+              "weight": 30,
+              "normalized": 0,
+              "contribution": 0.0
+            },
+            {
+              "metric": "板块宽度",
+              "value": 1,
+              "weight": 25,
+              "normalized": 0,
+              "contribution": 0.0
+            },
+            {
+              "metric": "梯队完整度",
+              "value": 1,
+              "weight": 25,
+              "normalized": 25.0,
+              "contribution": 6.25
+            },
+            {
+              "metric": "资金持续性",
+              "value": 2,
+              "weight": 20,
+              "normalized": 50.0,
+              "contribution": 10.0
+            }
+          ],
+          "missing_metrics": []
+        }
+      },
+      {
+        "theme": "中药Ⅱ",
+        "stage": "萌芽",
+        "score": 16,
+        "trend": "↑",
+        "subscores": {
+          "leader_strength": 0,
+          "sector_width": 0,
+          "ladder_completeness": 25,
+          "capital_persistence": 50
+        },
+        "facts": {
+          "name": "中药Ⅱ",
+          "limit_up_count": 1,
+          "first_board_count": 1,
+          "second_board_count": 0,
+          "third_board_count": 0,
+          "high_board_count": 0,
+          "max_height": 1,
+          "active_days_3": 2,
+          "leaders": [
+            {
+              "code": "600479",
+              "name": "千金药业",
+              "height": 1
+            }
+          ]
+        },
+        "explanation": {
+          "score": 16,
+          "coverage_pct": 100.0,
+          "components": [
+            {
+              "metric": "龙头强度",
+              "value": 1,
+              "weight": 30,
+              "normalized": 0,
+              "contribution": 0.0
+            },
+            {
+              "metric": "板块宽度",
+              "value": 1,
+              "weight": 25,
+              "normalized": 0,
+              "contribution": 0.0
+            },
+            {
+              "metric": "梯队完整度",
+              "value": 1,
+              "weight": 25,
+              "normalized": 25.0,
+              "contribution": 6.25
+            },
+            {
+              "metric": "资金持续性",
+              "value": 2,
+              "weight": 20,
+              "normalized": 50.0,
+              "contribution": 10.0
+            }
+          ],
+          "missing_metrics": []
+        }
+      },
+      {
+        "theme": "医疗器械",
+        "stage": "萌芽",
+        "score": 16,
+        "trend": "↑",
+        "subscores": {
+          "leader_strength": 0,
+          "sector_width": 0,
+          "ladder_completeness": 25,
+          "capital_persistence": 50
+        },
+        "facts": {
+          "name": "医疗器械",
+          "limit_up_count": 1,
+          "first_board_count": 1,
+          "second_board_count": 0,
+          "third_board_count": 0,
+          "high_board_count": 0,
+          "max_height": 1,
+          "active_days_3": 2,
+          "leaders": [
+            {
+              "code": "301234",
+              "name": "五洲医疗",
+              "height": 1
+            }
+          ]
+        },
+        "explanation": {
+          "score": 16,
+          "coverage_pct": 100.0,
+          "components": [
+            {
+              "metric": "龙头强度",
+              "value": 1,
+              "weight": 30,
+              "normalized": 0,
+              "contribution": 0.0
+            },
+            {
+              "metric": "板块宽度",
+              "value": 1,
+              "weight": 25,
+              "normalized": 0,
+              "contribution": 0.0
+            },
+            {
+              "metric": "梯队完整度",
+              "value": 1,
+              "weight": 25,
+              "normalized": 25.0,
+              "contribution": 6.25
+            },
+            {
+              "metric": "资金持续性",
+              "value": 2,
+              "weight": 20,
+              "normalized": 50.0,
+              "contribution": 10.0
+            }
+          ],
+          "missing_metrics": []
+        }
+      },
+      {
+        "theme": "文娱用品",
+        "stage": "萌芽",
+        "score": 16,
+        "trend": "↑",
+        "subscores": {
+          "leader_strength": 0,
+          "sector_width": 0,
+          "ladder_completeness": 25,
+          "capital_persistence": 50
+        },
+        "facts": {
+          "name": "文娱用品",
+          "limit_up_count": 1,
+          "first_board_count": 1,
+          "second_board_count": 0,
+          "third_board_count": 0,
+          "high_board_count": 0,
+          "max_height": 1,
+          "active_days_3": 2,
+          "leaders": [
+            {
+              "code": "002301",
+              "name": "齐心集团",
+              "height": 1
+            }
+          ]
+        },
+        "explanation": {
+          "score": 16,
+          "coverage_pct": 100.0,
+          "components": [
+            {
+              "metric": "龙头强度",
+              "value": 1,
+              "weight": 30,
+              "normalized": 0,
+              "contribution": 0.0
+            },
+            {
+              "metric": "板块宽度",
+              "value": 1,
+              "weight": 25,
+              "normalized": 0,
+              "contribution": 0.0
+            },
+            {
+              "metric": "梯队完整度",
+              "value": 1,
+              "weight": 25,
+              "normalized": 25.0,
+              "contribution": 6.25
+            },
+            {
+              "metric": "资金持续性",
+              "value": 2,
+              "weight": 20,
+              "normalized": 50.0,
+              "contribution": 10.0
+            }
+          ],
+          "missing_metrics": []
+        }
+      },
+      {
+        "theme": "商用车",
+        "stage": "萌芽",
+        "score": 6,
+        "trend": "→",
+        "subscores": {
+          "leader_strength": 0,
+          "sector_width": 0,
+          "ladder_completeness": 25,
+          "capital_persistence": 0
+        },
+        "facts": {
+          "name": "商用车",
+          "limit_up_count": 1,
+          "first_board_count": 1,
+          "second_board_count": 0,
+          "third_board_count": 0,
+          "high_board_count": 0,
+          "max_height": 1,
+          "active_days_3": 1,
+          "leaders": [
+            {
+              "code": "600418",
+              "name": "江淮汽车",
+              "height": 1
+            }
+          ]
+        },
+        "explanation": {
+          "score": 6,
+          "coverage_pct": 100.0,
+          "components": [
+            {
+              "metric": "龙头强度",
+              "value": 1,
+              "weight": 30,
+              "normalized": 0,
+              "contribution": 0.0
+            },
+            {
+              "metric": "板块宽度",
+              "value": 1,
+              "weight": 25,
+              "normalized": 0,
+              "contribution": 0.0
+            },
+            {
+              "metric": "梯队完整度",
+              "value": 1,
+              "weight": 25,
+              "normalized": 25.0,
+              "contribution": 6.25
+            },
+            {
+              "metric": "资金持续性",
+              "value": 1,
+              "weight": 20,
+              "normalized": 0,
+              "contribution": 0.0
+            }
+          ],
+          "missing_metrics": []
+        }
+      },
+      {
+        "theme": "工程机械",
+        "stage": "萌芽",
+        "score": 6,
+        "trend": "→",
+        "subscores": {
+          "leader_strength": 0,
+          "sector_width": 0,
+          "ladder_completeness": 25,
+          "capital_persistence": 0
+        },
+        "facts": {
+          "name": "工程机械",
+          "limit_up_count": 1,
+          "first_board_count": 1,
+          "second_board_count": 0,
+          "third_board_count": 0,
+          "high_board_count": 0,
+          "max_height": 1,
+          "active_days_3": 1,
+          "leaders": [
+            {
+              "code": "600815",
+              "name": "厦工股份",
+              "height": 1
+            }
+          ]
+        },
+        "explanation": {
+          "score": 6,
+          "coverage_pct": 100.0,
+          "components": [
+            {
+              "metric": "龙头强度",
+              "value": 1,
+              "weight": 30,
+              "normalized": 0,
+              "contribution": 0.0
+            },
+            {
+              "metric": "板块宽度",
+              "value": 1,
+              "weight": 25,
+              "normalized": 0,
+              "contribution": 0.0
+            },
+            {
+              "metric": "梯队完整度",
+              "value": 1,
+              "weight": 25,
+              "normalized": 25.0,
+              "contribution": 6.25
+            },
+            {
+              "metric": "资金持续性",
+              "value": 1,
+              "weight": 20,
+              "normalized": 0,
+              "contribution": 0.0
+            }
+          ],
+          "missing_metrics": []
+        }
+      }
+    ]
   }
 }

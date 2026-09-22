@@ -2,7 +2,7 @@
   "schema_version": 1,
   "ok": true,
   "trade_date": "2026-09-22",
-  "generated_at": "2026-09-22T13:54:01.635443+00:00",
+  "generated_at": "2026-09-22T14:15:27.693760+00:00",
   "principles": [
     "不使用5/10/20日均线判断情绪周期",
     "龙头强度与市场生态分开计算",
@@ -2160,14 +2160,122 @@
     ]
   },
   "small_cycle": {
-    "stage": "数据不足 / 暂无法判断",
+    "stage": "震荡",
     "score": null,
-    "trend": "—",
-    "timeline_ready": false,
-    "snapshot_count": 5,
-    "required_snapshot_count": 6,
-    "timeline": [],
-    "note": "不会用收盘单点反推全天路径。"
+    "trend": "→",
+    "timeline_ready": true,
+    "snapshot_count": 6,
+    "timeline": [
+      {
+        "time": "2026-09-22T07:20:32.415482Z",
+        "node": "观察起点",
+        "facts": {
+          "time": "2026-09-22T07:20:32.415482Z",
+          "limit_up_count": 63,
+          "limit_down_count": 0,
+          "broken_count": 18,
+          "broken_rate_pct": 22.22,
+          "promotion_rate_pct": 23.3,
+          "highest_board": 6,
+          "leader": {
+            "code": "001216",
+            "name": "华瓷股份"
+          },
+          "strongest_theme": "家居用品"
+        }
+      },
+      {
+        "time": "2026-09-22T13:11:39.061227Z",
+        "node": "震荡",
+        "facts": {
+          "time": "2026-09-22T13:11:39.061227Z",
+          "limit_up_count": 63,
+          "limit_down_count": 0,
+          "broken_count": 18,
+          "broken_rate_pct": 22.22,
+          "promotion_rate_pct": 23.3,
+          "highest_board": 6,
+          "leader": {
+            "code": "001216",
+            "name": "华瓷股份"
+          },
+          "strongest_theme": "家居用品"
+        }
+      },
+      {
+        "time": "2026-09-22T13:21:16.078550Z",
+        "node": "震荡",
+        "facts": {
+          "time": "2026-09-22T13:21:16.078550Z",
+          "limit_up_count": 63,
+          "limit_down_count": 0,
+          "broken_count": 18,
+          "broken_rate_pct": 22.22,
+          "promotion_rate_pct": 23.3,
+          "highest_board": 6,
+          "leader": {
+            "code": "001216",
+            "name": "华瓷股份"
+          },
+          "strongest_theme": "家居用品"
+        }
+      },
+      {
+        "time": "2026-09-22T13:50:21.660144Z",
+        "node": "震荡",
+        "facts": {
+          "time": "2026-09-22T13:50:21.660144Z",
+          "limit_up_count": 63,
+          "limit_down_count": 0,
+          "broken_count": 18,
+          "broken_rate_pct": 22.22,
+          "promotion_rate_pct": 23.3,
+          "highest_board": 6,
+          "leader": {
+            "code": "001216",
+            "name": "华瓷股份"
+          },
+          "strongest_theme": "家居用品"
+        }
+      },
+      {
+        "time": "2026-09-22T13:53:20.005502Z",
+        "node": "震荡",
+        "facts": {
+          "time": "2026-09-22T13:53:20.005502Z",
+          "limit_up_count": 63,
+          "limit_down_count": 0,
+          "broken_count": 18,
+          "broken_rate_pct": 22.22,
+          "promotion_rate_pct": 23.3,
+          "highest_board": 6,
+          "leader": {
+            "code": "001216",
+            "name": "华瓷股份"
+          },
+          "strongest_theme": "家居用品"
+        }
+      },
+      {
+        "time": "2026-09-22T14:14:46.130578Z",
+        "node": "震荡",
+        "facts": {
+          "time": "2026-09-22T14:14:46.130578Z",
+          "limit_up_count": 63,
+          "limit_down_count": 0,
+          "broken_count": 18,
+          "broken_rate_pct": 22.22,
+          "promotion_rate_pct": 23.3,
+          "highest_board": 6,
+          "leader": {
+            "code": "001216",
+            "name": "华瓷股份"
+          },
+          "strongest_theme": "家居用品"
+        }
+      }
+    ],
+    "note": "日内节点不直接改写大周期。"
   },
   "leader_ecology_matrix": {
     "leader_strength": {
@@ -2289,10 +2397,9 @@
   },
   "data_quality": {
     "missing": [
-      "完整日内情绪时间轴",
       "市场上涨宽度"
     ],
     "analysis_allowed": true,
-    "small_cycle_allowed": false
+    "small_cycle_allowed": true
   }
 }
