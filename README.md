@@ -8,9 +8,17 @@
 - 市场宽度：上涨、下跌、平盘和成交额
 - 情绪数据：涨停、炸板、跌停、炸板率和最高连板
 - 结构数据：连板梯队、题材聚合与前排股票
+- 情绪结构：连板晋级率、昨日涨停反馈、高位/中位反馈和亏钱效应
+- 板块结构：首板、二板、三板、高位板、持续天数与核心股
+- 日内时间轴：交易时段约每10分钟留存一次情绪快照
 - 更新频率：A股交易时段约每10分钟；收盘后补充快照
 - 数据文件：[data/market_latest.json](data/market_latest.json)
+- 情绪事实：[data/emotion_latest.json](data/emotion_latest.json)
+- 情绪历史：[data/emotion_history.json](data/emotion_history.json)
+- 日内快照：[data/intraday_latest.json](data/intraday_latest.json)
 
 ## 数据边界
 
 数据来自公开行情页面，仅用于研究与复盘，不构成投资建议。GitHub 定时任务可能延迟，工作台会同时显示行情日期、采集时间和过期状态；缺失或过期时不会伪装成实时数据。
+
+采集层只保存事实，不生成大周期、中周期、小周期标签，也不使用指数均线替代情绪结构。周期状态与评分由后续独立判断引擎根据“评分 + 结构 + 连续性”产生。
