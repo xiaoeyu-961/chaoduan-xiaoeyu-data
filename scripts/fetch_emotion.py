@@ -252,6 +252,7 @@ def append_intraday(market: dict, promotion_data: dict | None) -> dict:
 
 def main() -> None:
     market = read_json(MARKET_FILE, {})
+    previous_payload = read_json(EMOTION_FILE, {})
     if not market.get("ok") or not market.get("tradeDate"):
         raise RuntimeError("market_latest.json is unavailable")
     sessions = collect_sessions(market["tradeDate"], 20)
@@ -265,6 +266,19 @@ def main() -> None:
     high_feedback = feedback([row for row in previous["stocks"] if row["height"] >= 4], quote_map) if previous else feedback([], {})
     mid_feedback = feedback([row for row in previous["stocks"] if 2 <= row["height"] <= 3], quote_map) if previous else feedback([], {})
     low_feedback = feedback([row for row in previous["stocks"] if row["height"] == 1], quote_map) if previous else feedback([], {})
+    if previous_payload.get("trade_date") == market["tradeDate"]:
+        old_ecology = previous_payload.get("market_ecology") or {}
+        for current_value, key in (
+            (previous_feedback, "previous_limit_up_feedback"),
+            (high_feedback, "high_position_feedback"),
+            (mid_feedback, "middle_position_feedback"),
+            (low_feedback, "first_board_feedback"),
+        ):
+            old_value = old_ecology.get(key) or {}
+            if current_value["sample"] == 0 and old_value.get("sample", 0) > 0:
+                current_value.update(old_value)
+                current_value["carried_forward"] = True
+                current_value["as_of"] = previous_payload.get("updated_at")
     breadth = market.get("breadth") or {}
     breadth_total = sum(int(number(breadth.get(key))) for key in ("up", "down", "flat"))
     width = {
