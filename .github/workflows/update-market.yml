@@ -33,7 +33,7 @@ jobs:
         run: python scripts/fetch_market.py
       - name: 保存最新快照
         run: |
-          if git diff --quiet -- data/market_latest.json; then
+          if git diff --quiet -- data/market_latest.json data/cycle_latest.json; then
             echo "数据未变化"
             exit 0
           fi
