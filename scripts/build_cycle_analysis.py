@@ -152,7 +152,8 @@ def large_cycle(emotion: dict, history: dict, leader: dict, ecology: dict) -> di
     for ok, positive, negative in checks:
         (supports if ok else pressures).append(positive if ok else negative)
     coverage = min(leader.get("coverage_pct", 0), ecology.get("coverage_pct", 0))
-    confidence = "high" if coverage >= 85 and len(sessions) >= 10 else "medium" if coverage >= 65 and len(sessions) >= 5 else "low"
+    critical_missing = bool(leader.get("missing_metrics") or ecology.get("missing_metrics"))
+    confidence = "high" if coverage >= 85 and len(sessions) >= 10 and not critical_missing else "medium" if coverage >= 65 and len(sessions) >= 5 else "low"
     return {"stage": stage, "score": score, "trend": "↑" if lu_trend == "up" and height_trend != "down" else "↓" if lu_trend == "down" else "→", "method": "评分 + 结构 + 连续性；不使用均线", "continuity": {"limit_up": lu_trend, "seal_rate": seal_trend, "highest_board": height_trend}, "supporting_factors": supports, "pressure_factors": pressures, "confidence": confidence, "conclusion": f"{stage}；{matrix_label(leader, ecology)}"}
 
 
