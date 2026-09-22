@@ -4,47 +4,47 @@
   "source": "GitHub Actions · 东方财富公开行情",
   "sourceMode": "scheduled-snapshot",
   "tradeDate": "2026-09-22",
-  "updatedAt": "2026-09-22T01:27:50.514207Z",
+  "updatedAt": "2026-09-22T01:45:58.994210Z",
   "indices": [
     {
       "code": "000001",
       "name": "上证指数",
-      "price": 3963.81,
-      "change": 0.35,
-      "amount": 9812384259.7
+      "price": 3961.32,
+      "change": 0.29,
+      "amount": 244472392015.3
     },
     {
       "code": "399001",
       "name": "深证成指",
-      "price": 13858.62,
-      "change": 0.94,
-      "amount": 11179715359.1854
+      "price": 13875.58,
+      "change": 1.06,
+      "amount": 278784266554.322
     },
     {
       "code": "399006",
       "name": "创业板指",
-      "price": 3446.33,
-      "change": 1.37,
-      "amount": 4757462595.61
+      "price": 3456.81,
+      "change": 1.68,
+      "amount": 131718169690.07
     },
     {
       "code": "000688",
       "name": "科创50",
-      "price": 1699.05,
-      "change": 2.51,
-      "amount": 1718634884.5
+      "price": 1693.84,
+      "change": 2.19,
+      "amount": 32435930765.8
     }
   ],
   "breadth": {
-    "up": 0,
+    "up": 1400,
     "down": 0,
     "flat": 0,
-    "totalAmount": 0.0
+    "totalAmount": 283844932529.2396
   },
-  "limitUpCount": 12,
-  "brokenCount": 0,
+  "limitUpCount": 27,
+  "brokenCount": 7,
   "limitDownCount": 0,
-  "brokenRate": 0.0,
+  "brokenRate": 20.59,
   "highest": {
     "code": "001216",
     "name": "华瓷股份",
@@ -52,10 +52,10 @@
     "height": 6,
     "firstLimit": "92500",
     "lastLimit": "92500",
-    "amount": 19355711.0,
-    "turnover": 0.29624179005622864,
+    "amount": 30965453.0,
+    "turnover": 0.4739304780960083,
     "change": 10.01662540435791,
-    "sealAmount": 515213879.0,
+    "sealAmount": 498402782.0,
     "openCount": 0
   },
   "limitUps": [
@@ -66,11 +66,24 @@
       "height": 6,
       "firstLimit": "92500",
       "lastLimit": "92500",
-      "amount": 19355711.0,
-      "turnover": 0.29624179005622864,
+      "amount": 30965453.0,
+      "turnover": 0.4739304780960083,
       "change": 10.01662540435791,
-      "sealAmount": 515213879.0,
+      "sealAmount": 498402782.0,
       "openCount": 0
+    },
+    {
+      "code": "603230",
+      "name": "内蒙新华",
+      "theme": "出版",
+      "height": 5,
+      "firstLimit": "93436",
+      "lastLimit": "94215",
+      "amount": 595847264.0,
+      "turnover": 10.568989753723145,
+      "change": 9.97977066040039,
+      "sealAmount": 124399632.0,
+      "openCount": 3
     },
     {
       "code": "000504",
@@ -79,11 +92,24 @@
       "height": 4,
       "firstLimit": "92500",
       "lastLimit": "92500",
-      "amount": 11271988.0,
-      "turnover": 0.2828127145767212,
+      "amount": 61264490.0,
+      "turnover": 1.5371180772781372,
       "change": 9.990917205810547,
-      "sealAmount": 802447352.0,
+      "sealAmount": 576816254.0,
       "openCount": 0
+    },
+    {
+      "code": "001317",
+      "name": "三羊马",
+      "theme": "铁路公路",
+      "height": 3,
+      "firstLimit": "93218",
+      "lastLimit": "94518",
+      "amount": 464128992.0,
+      "turnover": 8.40053653717041,
+      "change": 10.006670951843262,
+      "sealAmount": 119848924.0,
+      "openCount": 2
     },
     {
       "code": "601811",
@@ -92,11 +118,37 @@
       "height": 3,
       "firstLimit": "92502",
       "lastLimit": "92502",
-      "amount": 23537908.0,
-      "turnover": 0.17671336233615875,
+      "amount": 55468996.0,
+      "turnover": 0.416439414024353,
       "change": 10.006540298461914,
-      "sealAmount": 234235320.0,
+      "sealAmount": 237804524.0,
       "openCount": 0
+    },
+    {
+      "code": "600664",
+      "name": "哈药股份",
+      "theme": "化学制药",
+      "height": 2,
+      "firstLimit": "93125",
+      "lastLimit": "93125",
+      "amount": 1575390320.0,
+      "turnover": 6.967539310455322,
+      "change": 10.060606002807617,
+      "sealAmount": 630204664.0,
+      "openCount": 0
+    },
+    {
+      "code": "000560",
+      "name": "我爱我家",
+      "theme": "房地产服",
+      "height": 2,
+      "firstLimit": "93203",
+      "lastLimit": "94027",
+      "amount": 1050417920.0,
+      "turnover": 13.010138511657715,
+      "change": 10.031347274780273,
+      "sealAmount": 147155697.0,
+      "openCount": 4
     },
     {
       "code": "000756",
@@ -104,11 +156,50 @@
       "theme": "化学制药",
       "height": 2,
       "firstLimit": "92500",
-      "lastLimit": "92500",
-      "amount": 115559253.0,
-      "turnover": 1.4351961612701416,
+      "lastLimit": "93842",
+      "amount": 975872352.0,
+      "turnover": 12.133371353149414,
       "change": 10.0204496383667,
-      "sealAmount": 176105073.0,
+      "sealAmount": 223523634.0,
+      "openCount": 4
+    },
+    {
+      "code": "002178",
+      "name": "延华智能",
+      "theme": "软件开发",
+      "height": 2,
+      "firstLimit": "93912",
+      "lastLimit": "94000",
+      "amount": 466714912.0,
+      "turnover": 12.165263175964355,
+      "change": 10.039369583129883,
+      "sealAmount": 59395427.0,
+      "openCount": 1
+    },
+    {
+      "code": "002303",
+      "name": "美盈森",
+      "theme": "包装印刷",
+      "height": 2,
+      "firstLimit": "93000",
+      "lastLimit": "93900",
+      "amount": 333321008.0,
+      "turnover": 4.5317063331604,
+      "change": 10.047846794128418,
+      "sealAmount": 116558250.0,
+      "openCount": 1
+    },
+    {
+      "code": "001234",
+      "name": "泰慕士",
+      "theme": "服装家纺",
+      "height": 2,
+      "firstLimit": "93000",
+      "lastLimit": "93000",
+      "amount": 116366992.0,
+      "turnover": 4.358628749847412,
+      "change": 10.00376033782959,
+      "sealAmount": 299656685.0,
       "openCount": 0
     },
     {
@@ -118,10 +209,10 @@
       "height": 2,
       "firstLimit": "92502",
       "lastLimit": "92502",
-      "amount": 50692887.0,
-      "turnover": 1.0904773473739624,
+      "amount": 110536526.0,
+      "turnover": 2.377800703048706,
       "change": 10.027472496032715,
-      "sealAmount": 168109875.0,
+      "sealAmount": 117399237.0,
       "openCount": 0
     },
     {
@@ -131,10 +222,10 @@
       "height": 2,
       "firstLimit": "92500",
       "lastLimit": "92500",
-      "amount": 28457400.0,
-      "turnover": 0.9373400211334229,
+      "amount": 58584232.0,
+      "turnover": 1.9296683073043823,
       "change": 10.079999923706055,
-      "sealAmount": 120111384.0,
+      "sealAmount": 141468968.0,
       "openCount": 0
     },
     {
@@ -144,10 +235,10 @@
       "height": 2,
       "firstLimit": "92500",
       "lastLimit": "92500",
-      "amount": 14030542.0,
-      "turnover": 0.3183254301548004,
+      "amount": 53109041.0,
+      "turnover": 1.2049397230148315,
       "change": 9.933774948120117,
-      "sealAmount": 231918211.0,
+      "sealAmount": 215114755.0,
       "openCount": 0
     },
     {
@@ -157,10 +248,10 @@
       "height": 2,
       "firstLimit": "92500",
       "lastLimit": "92500",
-      "amount": 4469504.0,
-      "turnover": 0.07441709190607071,
+      "amount": 17597716.0,
+      "turnover": 0.2930013835430145,
       "change": 9.871244430541992,
-      "sealAmount": 236064256.0,
+      "sealAmount": 167596267.0,
       "openCount": 0
     },
     {
@@ -170,10 +261,10 @@
       "height": 2,
       "firstLimit": "92502",
       "lastLimit": "92502",
-      "amount": 3762762.0,
-      "turnover": 0.056092143058776855,
+      "amount": 15970392.0,
+      "turnover": 0.23807339370250702,
       "change": 9.931507110595703,
-      "sealAmount": 9558170472.0,
+      "sealAmount": 4823035272.0,
       "openCount": 0
     },
     {
@@ -182,12 +273,51 @@
       "theme": "计算机设",
       "height": 1,
       "firstLimit": "92500",
-      "lastLimit": "92500",
-      "amount": 320235872.0,
-      "turnover": 0.6083320379257202,
+      "lastLimit": "93300",
+      "amount": 2846525264.0,
+      "turnover": 5.421777725219727,
       "change": 9.97304630279541,
-      "sealAmount": 2160250721.0,
-      "openCount": 0
+      "sealAmount": 2309900519.0,
+      "openCount": 1
+    },
+    {
+      "code": "600641",
+      "name": "先导基电",
+      "theme": "半导体",
+      "height": 1,
+      "firstLimit": "93058",
+      "lastLimit": "93325",
+      "amount": 1431559568.0,
+      "turnover": 3.5410358905792236,
+      "change": 10.01006031036377,
+      "sealAmount": 461968758.0,
+      "openCount": 1
+    },
+    {
+      "code": "002141",
+      "name": "贤丰控股",
+      "theme": "元件",
+      "height": 1,
+      "firstLimit": "93545",
+      "lastLimit": "94057",
+      "amount": 1067300144.0,
+      "turnover": 14.09464168548584,
+      "change": 10.074073791503906,
+      "sealAmount": 440859793.0,
+      "openCount": 2
+    },
+    {
+      "code": "002467",
+      "name": "二六三",
+      "theme": "通信服务",
+      "height": 1,
+      "firstLimit": "93245",
+      "lastLimit": "93800",
+      "amount": 406421472.0,
+      "turnover": 5.882938861846924,
+      "change": 9.935205459594727,
+      "sealAmount": 260310235.0,
+      "openCount": 1
     },
     {
       "code": "002290",
@@ -196,10 +326,75 @@
       "height": 1,
       "firstLimit": "92500",
       "lastLimit": "92500",
-      "amount": 66476115.0,
-      "turnover": 0.3452516794204712,
+      "amount": 171470542.0,
+      "turnover": 0.890552818775177,
       "change": 10.004239082336426,
-      "sealAmount": 498364560.0,
+      "sealAmount": 603020183.0,
+      "openCount": 0
+    },
+    {
+      "code": "002989",
+      "name": "中天精装",
+      "theme": "装修装饰",
+      "height": 1,
+      "firstLimit": "94521",
+      "lastLimit": "94521",
+      "amount": 143977998.0,
+      "turnover": 2.7264089584350586,
+      "change": 9.995969772338867,
+      "sealAmount": 262390621.0,
+      "openCount": 0
+    },
+    {
+      "code": "603216",
+      "name": "梦天家居",
+      "theme": "家居用品",
+      "height": 1,
+      "firstLimit": "93623",
+      "lastLimit": "93623",
+      "amount": 135036168.0,
+      "turnover": 2.720912456512451,
+      "change": 10.009671211242676,
+      "sealAmount": 90012650.0,
+      "openCount": 0
+    },
+    {
+      "code": "002564",
+      "name": "天沃科技",
+      "theme": "专用设备",
+      "height": 1,
+      "firstLimit": "93454",
+      "lastLimit": "93454",
+      "amount": 114512911.0,
+      "turnover": 2.529139280319214,
+      "change": 10.1010103225708,
+      "sealAmount": 172208555.0,
+      "openCount": 0
+    },
+    {
+      "code": "001268",
+      "name": "联合精密",
+      "theme": "家电零部",
+      "height": 1,
+      "firstLimit": "94330",
+      "lastLimit": "94330",
+      "amount": 98806745.0,
+      "turnover": 4.046936988830566,
+      "change": 10.02070426940918,
+      "sealAmount": 67664224.0,
+      "openCount": 0
+    },
+    {
+      "code": "605218",
+      "name": "伟时电子",
+      "theme": "光学光电",
+      "height": 1,
+      "firstLimit": "93017",
+      "lastLimit": "93017",
+      "amount": 93228573.0,
+      "turnover": 2.4184703826904297,
+      "change": 10.006901741027832,
+      "sealAmount": 55696416.0,
       "openCount": 0
     },
     {
@@ -209,21 +404,118 @@
       "height": 1,
       "firstLimit": "92501",
       "lastLimit": "92501",
-      "amount": 29919837.0,
-      "turnover": 0.3471381664276123,
+      "amount": 76882116.0,
+      "turnover": 0.8920074105262756,
       "change": 9.950248718261719,
-      "sealAmount": 856489946.0,
+      "sealAmount": 659226867.0,
       "openCount": 0
     }
   ],
-  "broken": [],
+  "broken": [
+    {
+      "code": "000676",
+      "name": "智度股份",
+      "theme": "广告营销",
+      "height": 1,
+      "firstLimit": "93033",
+      "lastLimit": "",
+      "amount": 637591312.0,
+      "turnover": 6.937270164489746,
+      "change": 5.760709285736084,
+      "sealAmount": 0.0,
+      "openCount": 1
+    },
+    {
+      "code": "001389",
+      "name": "广合科技",
+      "theme": "元件",
+      "height": 1,
+      "firstLimit": "93033",
+      "lastLimit": "",
+      "amount": 2513882368.0,
+      "turnover": 8.103038787841797,
+      "change": 9.180874824523926,
+      "sealAmount": 0.0,
+      "openCount": 8
+    },
+    {
+      "code": "600630",
+      "name": "龙头股份",
+      "theme": "服装家纺",
+      "height": 1,
+      "firstLimit": "93208",
+      "lastLimit": "",
+      "amount": 690561712.0,
+      "turnover": 17.20016098022461,
+      "change": 2.412280559539795,
+      "sealAmount": 0.0,
+      "openCount": 1
+    },
+    {
+      "code": "603020",
+      "name": "爱普股份",
+      "theme": "化学制品",
+      "height": 1,
+      "firstLimit": "93246",
+      "lastLimit": "",
+      "amount": 259535638.0,
+      "turnover": 5.05598783493042,
+      "change": 10.023866653442383,
+      "sealAmount": 0.0,
+      "openCount": 5
+    },
+    {
+      "code": "001266",
+      "name": "宏英智能",
+      "theme": "自动化设",
+      "height": 1,
+      "firstLimit": "93415",
+      "lastLimit": "",
+      "amount": 123977558.0,
+      "turnover": 5.766183376312256,
+      "change": 6.1771559715271,
+      "sealAmount": 0.0,
+      "openCount": 2
+    },
+    {
+      "code": "603256",
+      "name": "宏和科技",
+      "theme": "玻璃玻纤",
+      "height": 1,
+      "firstLimit": "93444",
+      "lastLimit": "",
+      "amount": 3063851856.0,
+      "turnover": 2.0916779041290283,
+      "change": 9.051839828491211,
+      "sealAmount": 0.0,
+      "openCount": 1
+    },
+    {
+      "code": "603353",
+      "name": "和顺石油",
+      "theme": "炼化及贸",
+      "height": 1,
+      "firstLimit": "94130",
+      "lastLimit": "",
+      "amount": 349638512.0,
+      "turnover": 4.1220703125,
+      "change": 9.786591529846191,
+      "sealAmount": 0.0,
+      "openCount": 1
+    }
+  ],
   "limitDown": [],
   "themes": [
     {
       "name": "出版",
-      "limitUpCount": 2,
-      "maxHeight": 3,
+      "limitUpCount": 3,
+      "maxHeight": 5,
       "leaders": [
+        {
+          "name": "内蒙新华",
+          "code": "603230",
+          "height": 5
+        },
         {
           "name": "新华文轩",
           "code": "601811",
@@ -238,13 +530,69 @@
     },
     {
       "name": "家居用品",
-      "limitUpCount": 1,
+      "limitUpCount": 2,
       "maxHeight": 6,
       "leaders": [
         {
           "name": "华瓷股份",
           "code": "001216",
           "height": 6
+        },
+        {
+          "name": "梦天家居",
+          "code": "603216",
+          "height": 1
+        }
+      ]
+    },
+    {
+      "name": "化学制药",
+      "limitUpCount": 2,
+      "maxHeight": 2,
+      "leaders": [
+        {
+          "name": "哈药股份",
+          "code": "600664",
+          "height": 2
+        },
+        {
+          "name": "新华制药",
+          "code": "000756",
+          "height": 2
+        }
+      ]
+    },
+    {
+      "name": "房地产服",
+      "limitUpCount": 2,
+      "maxHeight": 2,
+      "leaders": [
+        {
+          "name": "我爱我家",
+          "code": "000560",
+          "height": 2
+        },
+        {
+          "name": "华远控股",
+          "code": "600743",
+          "height": 2
+        }
+      ]
+    },
+    {
+      "name": "家电零部",
+      "limitUpCount": 2,
+      "maxHeight": 1,
+      "leaders": [
+        {
+          "name": "禾盛新材",
+          "code": "002290",
+          "height": 1
+        },
+        {
+          "name": "联合精密",
+          "code": "001268",
+          "height": 1
         }
       ]
     },
@@ -257,6 +605,18 @@
           "name": "南华生物",
           "code": "000504",
           "height": 4
+        }
+      ]
+    },
+    {
+      "name": "铁路公路",
+      "limitUpCount": 1,
+      "maxHeight": 3,
+      "leaders": [
+        {
+          "name": "三羊马",
+          "code": "001317",
+          "height": 3
         }
       ]
     },
@@ -285,13 +645,13 @@
       ]
     },
     {
-      "name": "化学制药",
+      "name": "包装印刷",
       "limitUpCount": 1,
       "maxHeight": 2,
       "leaders": [
         {
-          "name": "新华制药",
-          "code": "000756",
+          "name": "美盈森",
+          "code": "002303",
           "height": 2
         }
       ]
@@ -309,25 +669,73 @@
       ]
     },
     {
-      "name": "房地产服",
+      "name": "服装家纺",
       "limitUpCount": 1,
       "maxHeight": 2,
       "leaders": [
         {
-          "name": "华远控股",
-          "code": "600743",
+          "name": "泰慕士",
+          "code": "001234",
           "height": 2
         }
       ]
     },
     {
-      "name": "家电零部",
+      "name": "软件开发",
+      "limitUpCount": 1,
+      "maxHeight": 2,
+      "leaders": [
+        {
+          "name": "延华智能",
+          "code": "002178",
+          "height": 2
+        }
+      ]
+    },
+    {
+      "name": "专用设备",
       "limitUpCount": 1,
       "maxHeight": 1,
       "leaders": [
         {
-          "name": "禾盛新材",
-          "code": "002290",
+          "name": "天沃科技",
+          "code": "002564",
+          "height": 1
+        }
+      ]
+    },
+    {
+      "name": "元件",
+      "limitUpCount": 1,
+      "maxHeight": 1,
+      "leaders": [
+        {
+          "name": "贤丰控股",
+          "code": "002141",
+          "height": 1
+        }
+      ]
+    },
+    {
+      "name": "光学光电",
+      "limitUpCount": 1,
+      "maxHeight": 1,
+      "leaders": [
+        {
+          "name": "伟时电子",
+          "code": "605218",
+          "height": 1
+        }
+      ]
+    },
+    {
+      "name": "半导体",
+      "limitUpCount": 1,
+      "maxHeight": 1,
+      "leaders": [
+        {
+          "name": "先导基电",
+          "code": "600641",
           "height": 1
         }
       ]
@@ -345,6 +753,18 @@
       ]
     },
     {
+      "name": "装修装饰",
+      "limitUpCount": 1,
+      "maxHeight": 1,
+      "leaders": [
+        {
+          "name": "中天精装",
+          "code": "002989",
+          "height": 1
+        }
+      ]
+    },
+    {
       "name": "计算机设",
       "limitUpCount": 1,
       "maxHeight": 1,
@@ -355,13 +775,23 @@
           "height": 1
         }
       ]
+    },
+    {
+      "name": "通信服务",
+      "limitUpCount": 1,
+      "maxHeight": 1,
+      "leaders": [
+        {
+          "name": "二六三",
+          "code": "002467",
+          "height": 1
+        }
+      ]
     }
   ],
   "quality": {
-    "complete": false,
-    "errors": [
-      "breadth: 502 Server Error: Bad Gateway for url: https://push2.eastmoney.com/api/qt/clist/get?pn=1&pz=500&po=1&np=1&fltt=2&invt=2&fid=f3&fs=m:0+t:6,m:0+t:80,m:1+t:2,m:1+t:23&fields=f2,f3,f6"
-    ],
+    "complete": true,
+    "errors": [],
     "collector": "github-actions"
   }
 }
