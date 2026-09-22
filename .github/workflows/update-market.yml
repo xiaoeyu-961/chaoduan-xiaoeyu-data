@@ -39,6 +39,6 @@ jobs:
           fi
           git config user.name "market-data-bot"
           git config user.email "market-data-bot@users.noreply.github.com"
-          git add data/market_latest.json
+          git add data/market_latest.json data/cycle_latest.json
           git commit -m "data: update A-share market snapshot"
           git push
