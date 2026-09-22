@@ -1,0 +1,229 @@
+{
+  "schema_version": 1,
+  "ok": true,
+  "source": "东方财富公开行情 · GitHub Actions计算",
+  "calculated_at": "2026-09-22T06:39:22.045133Z",
+  "as_of_date": "2026-09-22",
+  "method": {
+    "long_cycle": "60交易日指数趋势与成交额中枢，权重35%",
+    "medium_cycle": "20交易日指数趋势与短线情绪，权重40%",
+    "short_cycle": "5交易日指数、量能、涨停高度与封板率，权重25%"
+  },
+  "long_cycle": {
+    "period": "60交易日",
+    "state": "下降周期",
+    "trend": "指数位于60日均线下方且中长期回报偏弱",
+    "score": 32
+  },
+  "medium_cycle": {
+    "period": "20交易日",
+    "state": "震荡分化",
+    "trend": "20日指数方向有限，题材轮动主导",
+    "score": 56
+  },
+  "short_cycle": {
+    "period": "5交易日",
+    "state": "强修复 / 扩张",
+    "trend": "近5日指数均值+2.59%，涨停均值75.4家，最高板均值5.2，封板率均值78.3%",
+    "score": 92
+  },
+  "cycle_gate": {
+    "score": 57,
+    "state": "谨慎",
+    "note": "周期总开关只决定策略环境，不代替个股竞价与承接验收。"
+  },
+  "indices": {
+    "shanghai": {
+      "name": "上证指数",
+      "as_of": "2026-09-22",
+      "close": 3946.01,
+      "return_5d_pct": 2.12,
+      "return_20d_pct": 1.45,
+      "return_60d_pct": -4.05,
+      "ma5": 3915.0,
+      "ma10": 3909.86,
+      "ma20": 3928.65,
+      "ma60": 3918.86,
+      "amount_avg_5d": 919231603806.66,
+      "amount_avg_20d": 897720348333.42,
+      "amount_avg_60d": 1083326339816.83,
+      "above_ma5": true,
+      "above_ma20": true,
+      "above_ma60": true
+    },
+    "shenzhen": {
+      "name": "深证成指",
+      "as_of": "2026-09-22",
+      "close": 13694.15,
+      "return_5d_pct": 3.06,
+      "return_20d_pct": -0.38,
+      "return_60d_pct": -15.04,
+      "ma5": 13585.94,
+      "ma10": 13541.45,
+      "ma20": 13668.85,
+      "ma60": 14123.59,
+      "amount_avg_5d": 1021382400371.1,
+      "amount_avg_20d": 1007656130190.37,
+      "amount_avg_60d": 1227741352134.34,
+      "above_ma5": true,
+      "above_ma20": true,
+      "above_ma60": false
+    },
+    "chinext": {
+      "name": "创业板指",
+      "as_of": "2026-09-22",
+      "close": 3390.88,
+      "return_5d_pct": 4.4,
+      "return_20d_pct": -0.2,
+      "return_60d_pct": -20.42,
+      "ma5": 3354.59,
+      "ma10": 3332.19,
+      "ma20": 3356.82,
+      "ma60": 3537.25,
+      "amount_avg_5d": 490814352969.49,
+      "amount_avg_20d": 474101695791.15,
+      "amount_avg_60d": 584175127972.08,
+      "above_ma5": true,
+      "above_ma20": true,
+      "above_ma60": false
+    }
+  },
+  "turnover": {
+    "avg_5d": 1940614004177.76,
+    "avg_20d": 1905376478523.79,
+    "avg_60d": 2311067691951.17,
+    "ratio_5d_to_20d": 1.018,
+    "ratio_5d_to_60d": 0.84
+  },
+  "sentiment_history": [
+    {
+      "date": "2026-09-02",
+      "limit_up_count": 52,
+      "broken_count": 15,
+      "limit_down_count": 0,
+      "highest_board": 4,
+      "seal_rate_pct": 77.61
+    },
+    {
+      "date": "2026-09-03",
+      "limit_up_count": 44,
+      "broken_count": 33,
+      "limit_down_count": 0,
+      "highest_board": 5,
+      "seal_rate_pct": 57.14
+    },
+    {
+      "date": "2026-09-04",
+      "limit_up_count": 39,
+      "broken_count": 48,
+      "limit_down_count": 0,
+      "highest_board": 5,
+      "seal_rate_pct": 44.83
+    },
+    {
+      "date": "2026-09-07",
+      "limit_up_count": 93,
+      "broken_count": 19,
+      "limit_down_count": 0,
+      "highest_board": 6,
+      "seal_rate_pct": 83.04
+    },
+    {
+      "date": "2026-09-08",
+      "limit_up_count": 73,
+      "broken_count": 37,
+      "limit_down_count": 0,
+      "highest_board": 4,
+      "seal_rate_pct": 66.36
+    },
+    {
+      "date": "2026-09-09",
+      "limit_up_count": 48,
+      "broken_count": 27,
+      "limit_down_count": 0,
+      "highest_board": 5,
+      "seal_rate_pct": 64.0
+    },
+    {
+      "date": "2026-09-10",
+      "limit_up_count": 35,
+      "broken_count": 22,
+      "limit_down_count": 0,
+      "highest_board": 4,
+      "seal_rate_pct": 61.4
+    },
+    {
+      "date": "2026-09-11",
+      "limit_up_count": 40,
+      "broken_count": 18,
+      "limit_down_count": 0,
+      "highest_board": 4,
+      "seal_rate_pct": 68.97
+    },
+    {
+      "date": "2026-09-14",
+      "limit_up_count": 55,
+      "broken_count": 30,
+      "limit_down_count": 0,
+      "highest_board": 4,
+      "seal_rate_pct": 64.71
+    },
+    {
+      "date": "2026-09-15",
+      "limit_up_count": 32,
+      "broken_count": 24,
+      "limit_down_count": 0,
+      "highest_board": 5,
+      "seal_rate_pct": 57.14
+    },
+    {
+      "date": "2026-09-16",
+      "limit_up_count": 89,
+      "broken_count": 11,
+      "limit_down_count": 0,
+      "highest_board": 6,
+      "seal_rate_pct": 89.0
+    },
+    {
+      "date": "2026-09-17",
+      "limit_up_count": 47,
+      "broken_count": 20,
+      "limit_down_count": 0,
+      "highest_board": 5,
+      "seal_rate_pct": 70.15
+    },
+    {
+      "date": "2026-09-18",
+      "limit_up_count": 78,
+      "broken_count": 25,
+      "limit_down_count": 0,
+      "highest_board": 4,
+      "seal_rate_pct": 75.73
+    },
+    {
+      "date": "2026-09-21",
+      "limit_up_count": 103,
+      "broken_count": 25,
+      "limit_down_count": 0,
+      "highest_board": 5,
+      "seal_rate_pct": 80.47
+    },
+    {
+      "date": "2026-09-22",
+      "limit_up_count": 60,
+      "broken_count": 19,
+      "limit_down_count": 0,
+      "highest_board": 6,
+      "seal_rate_pct": 75.95
+    }
+  ],
+  "data_quality": {
+    "index_sessions": 60,
+    "sentiment_sessions": 15,
+    "breadth_history_available": false,
+    "complete": true,
+    "missing": [
+      "历史每日上涨/下跌家数"
+    ]
+  }
+}
