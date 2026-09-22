@@ -23,7 +23,7 @@ INDEXES = {
 }
 KLINE_URL = (
     "https://push2his.eastmoney.com/api/qt/stock/kline/get"
-    "?secid={secid}&klt=101&fqt=1&lmt=90"
+    "?secid={secid}&klt=101&fqt=1&lmt=90&beg=0&end=20500000"
     "&fields1=f1,f2,f3,f4,f5,f6"
     "&fields2=f51,f52,f53,f54,f55,f56,f57,f58,f59,f60,f61"
 )
