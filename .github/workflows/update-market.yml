@@ -21,7 +21,7 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
-    timeout-minutes: 8
+    timeout-minutes: 12
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -30,9 +30,19 @@ jobs:
           cache: pip
       - run: pip install -r requirements.txt
       - name: 采集并校验
-        run: python scripts/fetch_market.py
+        run: |
+          for attempt in 1 2 3; do
+            python scripts/fetch_market.py && break
+            test "$attempt" = 3 && exit 1
+            sleep 10
+          done
       - name: 采集情绪结构与盘中时间轴
-        run: python scripts/fetch_emotion.py
+        run: |
+          for attempt in 1 2; do
+            python scripts/fetch_emotion.py && break
+            test "$attempt" = 2 && exit 1
+            sleep 10
+          done
       - name: 生成三层周期与龙头生态判断
         run: python scripts/build_cycle_analysis.py
       - name: 合并工作台主数据
