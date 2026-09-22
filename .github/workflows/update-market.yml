@@ -31,16 +31,16 @@ jobs:
       - run: pip install -r requirements.txt
       - name: 采集并校验
         run: python scripts/fetch_market.py
-      - name: 计算60/20/5交易日周期
-        run: python scripts/fetch_cycle.py
+      - name: 采集情绪结构与盘中时间轴
+        run: python scripts/fetch_emotion.py
       - name: 保存最新快照
         run: |
-          if git diff --quiet -- data/market_latest.json data/cycle_latest.json; then
+          if git diff --quiet -- data/market_latest.json data/emotion_latest.json data/emotion_history.json data/intraday_latest.json; then
             echo "数据未变化"
             exit 0
           fi
           git config user.name "market-data-bot"
           git config user.email "market-data-bot@users.noreply.github.com"
-          git add data/market_latest.json data/cycle_latest.json
+          git add data/market_latest.json data/emotion_latest.json data/emotion_history.json data/intraday_latest.json
           git commit -m "data: update market and cycle snapshots"
           git push
