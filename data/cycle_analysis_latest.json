@@ -2,7 +2,7 @@
   "schema_version": 1,
   "ok": true,
   "trade_date": "2026-09-23",
-  "generated_at": "2026-09-23T01:56:51.054007+00:00",
+  "generated_at": "2026-09-23T02:13:38.980507+00:00",
   "principles": [
     "不使用5/10/20日均线判断情绪周期",
     "龙头强度与市场生态分开计算",
@@ -10,18 +10,18 @@
     "缺失数据不补造、不按0分处理"
   ],
   "dashboard": {
-    "market_composite": 46,
-    "leader_strength": 37,
-    "market_ecology": 49,
+    "market_composite": 45,
+    "leader_strength": 53,
+    "market_ecology": 42,
     "market_width": null,
-    "relay_ecology": 14.67,
-    "mainline_strength": 51,
-    "loss_effect": 50,
+    "relay_ecology": 10.72,
+    "mainline_strength": 50,
+    "loss_effect": 80,
     "structure_label": "龙头弱 / 生态弱：退潮风险"
   },
   "large_cycle": {
     "stage": "启动",
-    "score": 46,
+    "score": 45,
     "trend": "↓",
     "method": "评分 + 结构 + 连续性；不使用均线",
     "continuity": {
@@ -30,12 +30,12 @@
       "highest_board": "flat"
     },
     "supporting_factors": [
-      "最高板5板",
-      "炸板率19.44%可控",
-      "昨日涨停平均反馈1.2%为正"
+      "炸板率24.44%可控",
+      "昨日涨停平均反馈0.51%为正"
     ],
     "pressure_factors": [
-      "晋级率仅15.87%",
+      "最高板高度不足",
+      "晋级率仅14.29%",
       "近端涨停数量未形成上升趋势"
     ],
     "confidence": "medium",
@@ -43,65 +43,55 @@
   },
   "medium_cycle": {
     "mainline": {
-      "theme": "房地产开",
+      "theme": "出版",
       "stage": "发酵",
-      "score": 51,
+      "score": 50,
       "trend": "↑",
       "subscores": {
-        "leader_strength": 33,
-        "sector_width": 33,
+        "leader_strength": 50,
+        "sector_width": 11,
         "ladder_completeness": 50,
         "capital_persistence": 100
       },
       "facts": {
-        "name": "房地产开",
-        "limit_up_count": 4,
-        "first_board_count": 3,
+        "name": "出版",
+        "limit_up_count": 2,
+        "first_board_count": 0,
         "second_board_count": 0,
         "third_board_count": 1,
-        "high_board_count": 0,
-        "max_height": 3,
+        "high_board_count": 1,
+        "max_height": 4,
         "active_days_3": 3,
         "leaders": [
           {
-            "code": "600503",
-            "name": "华丽家族",
+            "code": "601811",
+            "name": "新华文轩",
+            "height": 4
+          },
+          {
+            "code": "600825",
+            "name": "新华传媒",
             "height": 3
-          },
-          {
-            "code": "000002",
-            "name": "万  科Ａ",
-            "height": 1
-          },
-          {
-            "code": "002146",
-            "name": "荣盛发展",
-            "height": 1
-          },
-          {
-            "code": "600675",
-            "name": "中华企业",
-            "height": 1
           }
         ]
       },
       "explanation": {
-        "score": 51,
+        "score": 50,
         "coverage_pct": 100.0,
         "components": [
           {
             "metric": "龙头强度",
-            "value": 3,
+            "value": 4,
             "weight": 30,
-            "normalized": 33.33,
-            "contribution": 10.0
+            "normalized": 50.0,
+            "contribution": 15.0
           },
           {
             "metric": "板块宽度",
-            "value": 4,
+            "value": 2,
             "weight": 25,
-            "normalized": 33.33,
-            "contribution": 8.33
+            "normalized": 11.11,
+            "contribution": 2.78
           },
           {
             "metric": "梯队完整度",
@@ -122,85 +112,6 @@
       }
     },
     "themes": [
-      {
-        "theme": "房地产开",
-        "stage": "发酵",
-        "score": 51,
-        "trend": "↑",
-        "subscores": {
-          "leader_strength": 33,
-          "sector_width": 33,
-          "ladder_completeness": 50,
-          "capital_persistence": 100
-        },
-        "facts": {
-          "name": "房地产开",
-          "limit_up_count": 4,
-          "first_board_count": 3,
-          "second_board_count": 0,
-          "third_board_count": 1,
-          "high_board_count": 0,
-          "max_height": 3,
-          "active_days_3": 3,
-          "leaders": [
-            {
-              "code": "600503",
-              "name": "华丽家族",
-              "height": 3
-            },
-            {
-              "code": "000002",
-              "name": "万  科Ａ",
-              "height": 1
-            },
-            {
-              "code": "002146",
-              "name": "荣盛发展",
-              "height": 1
-            },
-            {
-              "code": "600675",
-              "name": "中华企业",
-              "height": 1
-            }
-          ]
-        },
-        "explanation": {
-          "score": 51,
-          "coverage_pct": 100.0,
-          "components": [
-            {
-              "metric": "龙头强度",
-              "value": 3,
-              "weight": 30,
-              "normalized": 33.33,
-              "contribution": 10.0
-            },
-            {
-              "metric": "板块宽度",
-              "value": 4,
-              "weight": 25,
-              "normalized": 33.33,
-              "contribution": 8.33
-            },
-            {
-              "metric": "梯队完整度",
-              "value": 2,
-              "weight": 25,
-              "normalized": 50.0,
-              "contribution": 12.5
-            },
-            {
-              "metric": "资金持续性",
-              "value": 3,
-              "weight": 20,
-              "normalized": 100,
-              "contribution": 20.0
-            }
-          ],
-          "missing_metrics": []
-        }
-      },
       {
         "theme": "出版",
         "stage": "发酵",
@@ -345,57 +256,62 @@
         }
       },
       {
-        "theme": "医疗服务",
-        "stage": "发酵偏分歧",
-        "score": 46,
+        "theme": "房地产开",
+        "stage": "发酵",
+        "score": 45,
         "trend": "↑",
         "subscores": {
-          "leader_strength": 67,
-          "sector_width": 0,
-          "ladder_completeness": 25,
+          "leader_strength": 33,
+          "sector_width": 11,
+          "ladder_completeness": 50,
           "capital_persistence": 100
         },
         "facts": {
-          "name": "医疗服务",
-          "limit_up_count": 1,
-          "first_board_count": 0,
+          "name": "房地产开",
+          "limit_up_count": 2,
+          "first_board_count": 1,
           "second_board_count": 0,
-          "third_board_count": 0,
-          "high_board_count": 1,
-          "max_height": 5,
+          "third_board_count": 1,
+          "high_board_count": 0,
+          "max_height": 3,
           "active_days_3": 3,
           "leaders": [
             {
-              "code": "000504",
-              "name": "南华生物",
-              "height": 5
+              "code": "600503",
+              "name": "华丽家族",
+              "height": 3
+            },
+            {
+              "code": "600675",
+              "name": "中华企业",
+              "height": 1
             }
           ]
         },
         "explanation": {
-          "score": 46,
+          "score": 45,
           "coverage_pct": 100.0,
           "components": [
             {
               "metric": "龙头强度",
-              "value": 5,
+              "value": 3,
               "weight": 30,
-              "normalized": 66.67,
-              "contribution": 20.0
+              "normalized": 33.33,
+              "contribution": 10.0
             },
             {
               "metric": "板块宽度",
-              "value": 1,
+              "value": 2,
               "weight": 25,
-              "normalized": 0,
-              "contribution": 0.0
+              "normalized": 11.11,
+              "contribution": 2.78
             },
             {
               "metric": "梯队完整度",
-              "value": 1,
+              "value": 2,
               "weight": 25,
-              "normalized": 25.0,
-              "contribution": 6.25
+              "normalized": 50.0,
+              "contribution": 12.5
             },
             {
               "metric": "资金持续性",
@@ -622,13 +538,82 @@
           "active_days_3": 3,
           "leaders": [
             {
-              "code": "003036",
-              "name": "泰坦股份",
+              "code": "300931",
+              "name": "通用电梯",
               "height": 1
             },
             {
               "code": "600843",
               "name": "上工申贝",
+              "height": 1
+            }
+          ]
+        },
+        "explanation": {
+          "score": 29,
+          "coverage_pct": 100.0,
+          "components": [
+            {
+              "metric": "龙头强度",
+              "value": 1,
+              "weight": 30,
+              "normalized": 0,
+              "contribution": 0.0
+            },
+            {
+              "metric": "板块宽度",
+              "value": 2,
+              "weight": 25,
+              "normalized": 11.11,
+              "contribution": 2.78
+            },
+            {
+              "metric": "梯队完整度",
+              "value": 1,
+              "weight": 25,
+              "normalized": 25.0,
+              "contribution": 6.25
+            },
+            {
+              "metric": "资金持续性",
+              "value": 3,
+              "weight": 20,
+              "normalized": 100,
+              "contribution": 20.0
+            }
+          ],
+          "missing_metrics": []
+        }
+      },
+      {
+        "theme": "医疗器械",
+        "stage": "萌芽",
+        "score": 29,
+        "trend": "↑",
+        "subscores": {
+          "leader_strength": 0,
+          "sector_width": 11,
+          "ladder_completeness": 25,
+          "capital_persistence": 100
+        },
+        "facts": {
+          "name": "医疗器械",
+          "limit_up_count": 2,
+          "first_board_count": 2,
+          "second_board_count": 0,
+          "third_board_count": 0,
+          "high_board_count": 0,
+          "max_height": 1,
+          "active_days_3": 3,
+          "leaders": [
+            {
+              "code": "603222",
+              "name": "济民健康",
+              "height": 1
+            },
+            {
+              "code": "688656",
+              "name": "浩欧博",
               "height": 1
             }
           ]
@@ -693,70 +678,6 @@
             {
               "code": "600230",
               "name": "沧州大化",
-              "height": 1
-            }
-          ]
-        },
-        "explanation": {
-          "score": 26,
-          "coverage_pct": 100.0,
-          "components": [
-            {
-              "metric": "龙头强度",
-              "value": 1,
-              "weight": 30,
-              "normalized": 0,
-              "contribution": 0.0
-            },
-            {
-              "metric": "板块宽度",
-              "value": 1,
-              "weight": 25,
-              "normalized": 0,
-              "contribution": 0.0
-            },
-            {
-              "metric": "梯队完整度",
-              "value": 1,
-              "weight": 25,
-              "normalized": 25.0,
-              "contribution": 6.25
-            },
-            {
-              "metric": "资金持续性",
-              "value": 3,
-              "weight": 20,
-              "normalized": 100,
-              "contribution": 20.0
-            }
-          ],
-          "missing_metrics": []
-        }
-      },
-      {
-        "theme": "医疗器械",
-        "stage": "萌芽",
-        "score": 26,
-        "trend": "↑",
-        "subscores": {
-          "leader_strength": 0,
-          "sector_width": 0,
-          "ladder_completeness": 25,
-          "capital_persistence": 100
-        },
-        "facts": {
-          "name": "医疗器械",
-          "limit_up_count": 1,
-          "first_board_count": 1,
-          "second_board_count": 0,
-          "third_board_count": 0,
-          "high_board_count": 0,
-          "max_height": 1,
-          "active_days_3": 3,
-          "leaders": [
-            {
-              "code": "688656",
-              "name": "浩欧博",
               "height": 1
             }
           ]
@@ -990,6 +911,208 @@
         }
       },
       {
+        "theme": "一般零售",
+        "stage": "萌芽",
+        "score": 19,
+        "trend": "↑",
+        "subscores": {
+          "leader_strength": 0,
+          "sector_width": 11,
+          "ladder_completeness": 25,
+          "capital_persistence": 50
+        },
+        "facts": {
+          "name": "一般零售",
+          "limit_up_count": 2,
+          "first_board_count": 2,
+          "second_board_count": 0,
+          "third_board_count": 0,
+          "high_board_count": 0,
+          "max_height": 1,
+          "active_days_3": 2,
+          "leaders": [
+            {
+              "code": "600605",
+              "name": "汇通能源",
+              "height": 1
+            },
+            {
+              "code": "600790",
+              "name": "轻纺城",
+              "height": 1
+            }
+          ]
+        },
+        "explanation": {
+          "score": 19,
+          "coverage_pct": 100.0,
+          "components": [
+            {
+              "metric": "龙头强度",
+              "value": 1,
+              "weight": 30,
+              "normalized": 0,
+              "contribution": 0.0
+            },
+            {
+              "metric": "板块宽度",
+              "value": 2,
+              "weight": 25,
+              "normalized": 11.11,
+              "contribution": 2.78
+            },
+            {
+              "metric": "梯队完整度",
+              "value": 1,
+              "weight": 25,
+              "normalized": 25.0,
+              "contribution": 6.25
+            },
+            {
+              "metric": "资金持续性",
+              "value": 2,
+              "weight": 20,
+              "normalized": 50.0,
+              "contribution": 10.0
+            }
+          ],
+          "missing_metrics": []
+        }
+      },
+      {
+        "theme": "非白酒",
+        "stage": "萌芽",
+        "score": 19,
+        "trend": "↑",
+        "subscores": {
+          "leader_strength": 0,
+          "sector_width": 11,
+          "ladder_completeness": 25,
+          "capital_persistence": 50
+        },
+        "facts": {
+          "name": "非白酒",
+          "limit_up_count": 2,
+          "first_board_count": 2,
+          "second_board_count": 0,
+          "third_board_count": 0,
+          "high_board_count": 0,
+          "max_height": 1,
+          "active_days_3": 2,
+          "leaders": [
+            {
+              "code": "600059",
+              "name": "古越龙山",
+              "height": 1
+            },
+            {
+              "code": "600616",
+              "name": "金枫酒业",
+              "height": 1
+            }
+          ]
+        },
+        "explanation": {
+          "score": 19,
+          "coverage_pct": 100.0,
+          "components": [
+            {
+              "metric": "龙头强度",
+              "value": 1,
+              "weight": 30,
+              "normalized": 0,
+              "contribution": 0.0
+            },
+            {
+              "metric": "板块宽度",
+              "value": 2,
+              "weight": 25,
+              "normalized": 11.11,
+              "contribution": 2.78
+            },
+            {
+              "metric": "梯队完整度",
+              "value": 1,
+              "weight": 25,
+              "normalized": 25.0,
+              "contribution": 6.25
+            },
+            {
+              "metric": "资金持续性",
+              "value": 2,
+              "weight": 20,
+              "normalized": 50.0,
+              "contribution": 10.0
+            }
+          ],
+          "missing_metrics": []
+        }
+      },
+      {
+        "theme": "农产品加",
+        "stage": "萌芽",
+        "score": 16,
+        "trend": "↑",
+        "subscores": {
+          "leader_strength": 0,
+          "sector_width": 0,
+          "ladder_completeness": 25,
+          "capital_persistence": 50
+        },
+        "facts": {
+          "name": "农产品加",
+          "limit_up_count": 1,
+          "first_board_count": 1,
+          "second_board_count": 0,
+          "third_board_count": 0,
+          "high_board_count": 0,
+          "max_height": 1,
+          "active_days_3": 2,
+          "leaders": [
+            {
+              "code": "002286",
+              "name": "保龄宝",
+              "height": 1
+            }
+          ]
+        },
+        "explanation": {
+          "score": 16,
+          "coverage_pct": 100.0,
+          "components": [
+            {
+              "metric": "龙头强度",
+              "value": 1,
+              "weight": 30,
+              "normalized": 0,
+              "contribution": 0.0
+            },
+            {
+              "metric": "板块宽度",
+              "value": 1,
+              "weight": 25,
+              "normalized": 0,
+              "contribution": 0.0
+            },
+            {
+              "metric": "梯队完整度",
+              "value": 1,
+              "weight": 25,
+              "normalized": 25.0,
+              "contribution": 6.25
+            },
+            {
+              "metric": "资金持续性",
+              "value": 2,
+              "weight": 20,
+              "normalized": 50.0,
+              "contribution": 10.0
+            }
+          ],
+          "missing_metrics": []
+        }
+      },
+      {
         "theme": "商用车",
         "stage": "萌芽",
         "score": 16,
@@ -1118,6 +1241,70 @@
         }
       },
       {
+        "theme": "白酒Ⅱ",
+        "stage": "萌芽",
+        "score": 16,
+        "trend": "↑",
+        "subscores": {
+          "leader_strength": 0,
+          "sector_width": 0,
+          "ladder_completeness": 25,
+          "capital_persistence": 50
+        },
+        "facts": {
+          "name": "白酒Ⅱ",
+          "limit_up_count": 1,
+          "first_board_count": 1,
+          "second_board_count": 0,
+          "third_board_count": 0,
+          "high_board_count": 0,
+          "max_height": 1,
+          "active_days_3": 2,
+          "leaders": [
+            {
+              "code": "002646",
+              "name": "天佑德酒",
+              "height": 1
+            }
+          ]
+        },
+        "explanation": {
+          "score": 16,
+          "coverage_pct": 100.0,
+          "components": [
+            {
+              "metric": "龙头强度",
+              "value": 1,
+              "weight": 30,
+              "normalized": 0,
+              "contribution": 0.0
+            },
+            {
+              "metric": "板块宽度",
+              "value": 1,
+              "weight": 25,
+              "normalized": 0,
+              "contribution": 0.0
+            },
+            {
+              "metric": "梯队完整度",
+              "value": 1,
+              "weight": 25,
+              "normalized": 25.0,
+              "contribution": 6.25
+            },
+            {
+              "metric": "资金持续性",
+              "value": 2,
+              "weight": 20,
+              "normalized": 50.0,
+              "contribution": 10.0
+            }
+          ],
+          "missing_metrics": []
+        }
+      },
+      {
         "theme": "纺织制造",
         "stage": "萌芽",
         "score": 16,
@@ -1182,35 +1369,40 @@
         }
       },
       {
-        "theme": "非白酒",
+        "theme": "水泥",
         "stage": "萌芽",
-        "score": 16,
-        "trend": "↑",
+        "score": 9,
+        "trend": "→",
         "subscores": {
           "leader_strength": 0,
-          "sector_width": 0,
+          "sector_width": 11,
           "ladder_completeness": 25,
-          "capital_persistence": 50
+          "capital_persistence": 0
         },
         "facts": {
-          "name": "非白酒",
-          "limit_up_count": 1,
-          "first_board_count": 1,
+          "name": "水泥",
+          "limit_up_count": 2,
+          "first_board_count": 2,
           "second_board_count": 0,
           "third_board_count": 0,
           "high_board_count": 0,
           "max_height": 1,
-          "active_days_3": 2,
+          "active_days_3": 1,
           "leaders": [
             {
-              "code": "600059",
-              "name": "古越龙山",
+              "code": "600802",
+              "name": "福建水泥",
+              "height": 1
+            },
+            {
+              "code": "002205",
+              "name": "国统股份",
               "height": 1
             }
           ]
         },
         "explanation": {
-          "score": 16,
+          "score": 9,
           "coverage_pct": 100.0,
           "components": [
             {
@@ -1222,10 +1414,10 @@
             },
             {
               "metric": "板块宽度",
-              "value": 1,
+              "value": 2,
               "weight": 25,
-              "normalized": 0,
-              "contribution": 0.0
+              "normalized": 11.11,
+              "contribution": 2.78
             },
             {
               "metric": "梯队完整度",
@@ -1236,10 +1428,10 @@
             },
             {
               "metric": "资金持续性",
-              "value": 2,
+              "value": 1,
               "weight": 20,
-              "normalized": 50.0,
-              "contribution": 10.0
+              "normalized": 0,
+              "contribution": 0.0
             }
           ],
           "missing_metrics": []
@@ -1267,13 +1459,13 @@
           "active_days_3": 1,
           "leaders": [
             {
-              "code": "002635",
-              "name": "安洁科技",
+              "code": "002426",
+              "name": "胜利精密",
               "height": 1
             },
             {
-              "code": "002426",
-              "name": "胜利精密",
+              "code": "002635",
+              "name": "安洁科技",
               "height": 1
             }
           ]
@@ -1379,7 +1571,7 @@
         }
       },
       {
-        "theme": "水泥",
+        "theme": "普钢",
         "stage": "萌芽",
         "score": 6,
         "trend": "→",
@@ -1390,7 +1582,7 @@
           "capital_persistence": 0
         },
         "facts": {
-          "name": "水泥",
+          "name": "普钢",
           "limit_up_count": 1,
           "first_board_count": 1,
           "second_board_count": 0,
@@ -1400,8 +1592,8 @@
           "active_days_3": 1,
           "leaders": [
             {
-              "code": "002205",
-              "name": "国统股份",
+              "code": "600231",
+              "name": "凌钢股份",
               "height": 1
             }
           ]
@@ -1513,106 +1705,106 @@
     "score": null,
     "trend": "—",
     "timeline_ready": false,
-    "snapshot_count": 3,
+    "snapshot_count": 4,
     "required_snapshot_count": 6,
     "timeline": [],
     "note": "不会用收盘单点反推全天路径。"
   },
   "leader_ecology_matrix": {
     "leader_strength": {
-      "score": 37,
+      "score": 53,
       "coverage_pct": 100.0,
       "components": [
         {
           "metric": "龙头高度",
-          "value": 5,
+          "value": 4,
           "weight": 30,
-          "normalized": 60.0,
-          "contribution": 18.0
+          "normalized": 40.0,
+          "contribution": 12.0
         },
         {
           "metric": "封板稳定性",
-          "value": 2,
+          "value": 0,
           "weight": 25,
-          "normalized": 60.0,
-          "contribution": 15.0
+          "normalized": 100,
+          "contribution": 25.0
         },
         {
           "metric": "首次封板主动性",
-          "value": "93433",
+          "value": "93016",
           "weight": 20,
           "normalized": 0,
           "contribution": 0.0
         },
         {
           "metric": "封单/成交额",
-          "value": 14.46,
+          "value": 67.01,
           "weight": 15,
-          "normalized": 27.47,
-          "contribution": 4.12
+          "normalized": 100,
+          "contribution": 15.0
         },
         {
           "metric": "龙头所在题材涨停数",
-          "value": 1,
+          "value": 2,
           "weight": 10,
-          "normalized": 0,
-          "contribution": 0.0
+          "normalized": 14.29,
+          "contribution": 1.43
         }
       ],
       "missing_metrics": [],
       "leader": {
-        "code": "000504",
-        "name": "南华生物",
-        "theme": "医疗服务",
-        "height": 5
+        "code": "601811",
+        "name": "新华文轩",
+        "theme": "出版",
+        "height": 4
       },
       "label": "弱"
     },
     "market_ecology": {
-      "score": 49,
+      "score": 42,
       "coverage_pct": 94.0,
       "components": [
         {
           "metric": "涨停数量",
-          "value": 29,
+          "value": 34,
           "weight": 16,
-          "normalized": 11.25,
-          "contribution": 1.91
+          "normalized": 17.5,
+          "contribution": 2.98
         },
         {
           "metric": "炸板率",
-          "value": 19.44,
+          "value": 24.44,
           "weight": 16,
-          "normalized": 76.4,
-          "contribution": 13.0
+          "normalized": 63.9,
+          "contribution": 10.88
         },
         {
           "metric": "连板晋级率",
-          "value": 15.87,
+          "value": 14.29,
           "weight": 18,
-          "normalized": 14.67,
-          "contribution": 2.81
+          "normalized": 10.72,
+          "contribution": 2.05
         },
         {
           "metric": "昨日涨停平均反馈",
-          "value": 1.2,
+          "value": 0.51,
           "weight": 14,
-          "normalized": 52.0,
-          "contribution": 7.74
+          "normalized": 45.1,
+          "contribution": 6.72
         },
         {
           "metric": "中位股平均反馈",
-          "value": 2.78,
+          "value": 2.04,
           "weight": 12,
-          "normalized": 77.8,
-          "contribution": 9.93
+          "normalized": 70.4,
+          "contribution": 8.99
         },
         {
           "metric": "中位股大亏比例",
-          "value": 19.05,
+          "value": 28.57,
           "weight": 10,
-          "normalized": 49.84,
-          "contribution": 5.3
+          "normalized": 20.09,
+          "contribution": 2.14
         },
         {
           "metric": "跌停数量",
