@@ -3,7 +3,7 @@
     "product": "超短小鳄鱼｜V1.4.1 超短交易研究工作台",
     "bundle_version": "1.1",
     "schema_updated_at": "2026-09-21T23:00:00+08:00",
-    "generated_at": "2026-09-23T03:40:23.160376+00:00",
+    "generated_at": "2026-09-23T03:43:16.787914+00:00",
     "timezone": "Asia/Shanghai",
     "data_range": [
       "2026-09-16",
@@ -189,7 +189,7 @@
       {
         "date": "2026-09-23",
         "state": "分歧",
-        "score": 44
+        "score": 47
       }
     ],
     "mid_cycle": [
@@ -351,6 +351,20 @@
       },
       {
         "time": "2026-09-23T03:39:50.076918Z",
+        "limit_up_count": 37,
+        "limit_down_count": 0,
+        "broken_count": 22,
+        "broken_rate_pct": 37.29,
+        "promotion_rate_pct": 14.29,
+        "highest_board": 4,
+        "leader": {
+          "code": "601811",
+          "name": "新华文轩"
+        },
+        "strongest_theme": "通用设备"
+      },
+      {
+        "time": "2026-09-23T03:42:45.791729Z",
         "limit_up_count": 37,
         "limit_down_count": 0,
         "broken_count": 22,
@@ -2242,7 +2256,7 @@
   "market_cycle": {
     "large_cycle": {
       "stage": "分歧",
-      "score": 44,
+      "score": 47,
       "trend": "↓",
       "method": "评分 + 结构 + 连续性；不使用均线",
       "continuity": {
@@ -2250,12 +2264,13 @@
         "seal_rate": "down",
         "highest_board": "flat"
       },
-      "supporting_factors": [],
+      "supporting_factors": [
+        "昨日涨停平均反馈1.33%为正"
+      ],
       "pressure_factors": [
         "最高板高度不足",
         "晋级率仅14.29%",
         "炸板率37.29%偏高",
-        "昨日涨停平均反馈-0.29%偏弱",
         "近端涨停数量未形成上升趋势"
       ],
       "confidence": "medium",
@@ -4175,7 +4190,7 @@
         "label": "强"
       },
       "market_ecology": {
-        "score": 35,
+        "score": 39,
         "coverage_pct": 94.0,
         "components": [
           {
@@ -4201,24 +4216,24 @@
           },
           {
             "metric": "昨日涨停平均反馈",
-            "value": -0.29,
+            "value": 1.33,
             "weight": 14,
-            "normalized": 37.1,
-            "contribution": 5.53
+            "normalized": 53.3,
+            "contribution": 7.94
           },
           {
             "metric": "中位股平均反馈",
-            "value": 1.41,
+            "value": 2.19,
             "weight": 12,
-            "normalized": 64.1,
-            "contribution": 8.18
+            "normalized": 71.9,
+            "contribution": 9.18
           },
           {
             "metric": "中位股大亏比例",
-            "value": 28.57,
+            "value": 26.67,
             "weight": 10,
-            "normalized": 20.09,
-            "contribution": 2.14
+            "normalized": 26.03,
+            "contribution": 2.77
           },
           {
             "metric": "跌停数量",
@@ -4243,13 +4258,13 @@
       "label": "龙头强 / 生态弱：龙头抱团 / 生态分歧"
     },
     "dashboard": {
-      "market_composite": 44,
+      "market_composite": 47,
       "leader_strength": 67,
-      "market_ecology": 35,
+      "market_ecology": 39,
       "market_width": null,
       "relay_ecology": 10.72,
       "mainline_strength": 50,
-      "loss_effect": 80,
+      "loss_effect": 74,
       "structure_label": "龙头强 / 生态弱：龙头抱团 / 生态分歧"
     },
     "method": "评分 + 结构 + 连续性；严禁用均线替代情绪结构。"
