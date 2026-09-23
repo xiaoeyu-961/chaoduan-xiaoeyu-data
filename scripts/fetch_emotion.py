@@ -270,12 +270,15 @@ def theme_structure(sessions: list[dict]) -> list[dict]:
 def append_intraday(market: dict, promotion_data: dict | None) -> dict:
     trade_date = market["tradeDate"]
     old = read_json(INTRADAY_FILE, {})
-    snapshots = (old.get("snapshots", []) if old.get("trade_date") == trade_date
+    snapshots = ([row for row in old.get("snapshots", [])
+                  if row.get("source") == market.get("source")]
+                 if old.get("trade_date") == trade_date
                  and old.get("source") == market.get("source") else [])
     timestamp = market.get("updatedAt") or datetime.now(CN_TZ).isoformat()
     minute = timestamp[:16]
     snapshot = {
         "time": timestamp,
+        "source": market.get("source"),
         "limit_up_count": market.get("limitUpCount"),
         "limit_down_count": market.get("limitDownCount"),
         "broken_count": market.get("brokenCount"),
