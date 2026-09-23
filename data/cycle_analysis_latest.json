@@ -2,7 +2,7 @@
   "schema_version": 1,
   "ok": true,
   "trade_date": "2026-09-23",
-  "generated_at": "2026-09-23T06:59:33.632129+00:00",
+  "generated_at": "2026-09-23T07:22:12.503313+00:00",
   "principles": [
     "不使用5/10/20日均线判断情绪周期",
     "龙头强度与市场生态分开计算",
@@ -11,7 +11,7 @@
   ],
   "dashboard": {
     "market_composite": 40,
-    "leader_strength": 49,
+    "leader_strength": 51,
     "market_ecology": 36,
     "market_width": null,
     "relay_ecology": 22.62,
@@ -34,7 +34,7 @@
       "最高板高度不足",
       "晋级率仅19.05%",
       "炸板率33.77%偏高",
-      "昨日涨停平均反馈-0.13%偏弱",
+      "昨日涨停平均反馈-0.17%偏弱",
       "近端涨停数量未形成上升趋势"
     ],
     "confidence": "medium",
@@ -56,7 +56,7 @@
   },
   "leader_ecology_matrix": {
     "leader_strength": {
-      "score": 49,
+      "score": 51,
       "coverage_pct": 65.0,
       "components": [
         {
@@ -82,10 +82,10 @@
         },
         {
           "metric": "封单/成交额",
-          "value": 0.0,
+          "value": 4.22,
           "weight": 15,
-          "normalized": 0,
-          "contribution": 0.0
+          "normalized": 6.56,
+          "contribution": 1.51
         },
         {
           "metric": "龙头所在题材涨停数",
@@ -134,17 +134,17 @@
         },
         {
           "metric": "昨日涨停平均反馈",
-          "value": -0.13,
+          "value": -0.17,
           "weight": 14,
-          "normalized": 38.7,
-          "contribution": 5.76
+          "normalized": 38.3,
+          "contribution": 5.7
         },
         {
           "metric": "中位股平均反馈",
-          "value": 0.93,
+          "value": 0.9,
           "weight": 12,
-          "normalized": 59.3,
-          "contribution": 7.57
+          "normalized": 59.0,
+          "contribution": 7.53
         },
         {
           "metric": "中位股大亏比例",
@@ -155,10 +155,10 @@
         },
         {
           "metric": "跌停数量",
-          "value": 14,
+          "value": 13,
           "weight": 8,
-          "normalized": 30.0,
-          "contribution": 2.55
+          "normalized": 35.0,
+          "contribution": 2.98
         },
         {
           "metric": "市场上涨宽度",

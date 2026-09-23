@@ -2,12 +2,12 @@
   "schema_version": 1,
   "ok": true,
   "trade_date": "2026-09-23",
-  "updated_at": "2026-09-23T06:58:37.018977+00:00",
+  "updated_at": "2026-09-23T07:21:23.121868+00:00",
   "source": "同花顺官方 Financial-API",
   "principle": "仅保存事实数据，不在采集层生成周期标签或主观评分。",
   "market_ecology": {
     "limit_up_count": 51,
-    "limit_down_count": 14,
+    "limit_down_count": 13,
     "broken_count": 26,
     "broken_rate_pct": 33.77,
     "seal_rate_pct": 66.23,
@@ -51,31 +51,31 @@
     },
     "previous_limit_up_feedback": {
       "sample": 63,
-      "avg_change_pct": -0.13,
+      "avg_change_pct": -0.17,
       "median_change_pct": -1.42,
       "positive_rate_pct": 41.27,
-      "loss_below_minus_5_rate_pct": 19.05
+      "loss_below_minus_5_rate_pct": 17.46
     },
     "high_position_feedback": {
       "sample": 3,
-      "avg_change_pct": 4.65,
-      "median_change_pct": 4.62,
+      "avg_change_pct": 5.09,
+      "median_change_pct": 5.37,
       "positive_rate_pct": 100.0,
       "loss_below_minus_5_rate_pct": 0.0
     },
     "middle_position_feedback": {
       "sample": 21,
-      "avg_change_pct": 0.93,
+      "avg_change_pct": 0.9,
       "median_change_pct": -1.42,
       "positive_rate_pct": 42.86,
       "loss_below_minus_5_rate_pct": 28.57
     },
     "first_board_feedback": {
       "sample": 39,
-      "avg_change_pct": -1.07,
-      "median_change_pct": -1.67,
+      "avg_change_pct": -1.15,
+      "median_change_pct": -2.56,
       "positive_rate_pct": 35.9,
-      "loss_below_minus_5_rate_pct": 15.38
+      "loss_below_minus_5_rate_pct": 12.82
     },
     "market_width": {
       "available": false,
@@ -94,8 +94,8 @@
       "first_limit": "09:30",
       "last_limit": "09:30",
       "open_count": null,
-      "seal_amount": 0,
-      "amount": 224033180
+      "seal_amount": 9454534,
+      "amount": 224213590
     },
     {
       "code": "601811",
@@ -105,8 +105,8 @@
       "first_limit": "09:30",
       "last_limit": "09:30",
       "open_count": null,
-      "seal_amount": 141872060,
-      "amount": 306037930
+      "seal_amount": 11516250,
+      "amount": 306609580
     },
     {
       "code": "001234",
@@ -116,8 +116,8 @@
       "first_limit": "09:25",
       "last_limit": "09:25",
       "open_count": null,
-      "seal_amount": 0,
-      "amount": 89477455
+      "seal_amount": 4421532,
+      "amount": 89602957
     },
     {
       "code": "600825",
@@ -127,8 +127,8 @@
       "first_limit": "09:25",
       "last_limit": "09:25",
       "open_count": null,
-      "seal_amount": 1908971800,
-      "amount": 32207014
+      "seal_amount": 68527890,
+      "amount": 32333388
     },
     {
       "code": "603636",
@@ -138,8 +138,8 @@
       "first_limit": "09:25",
       "last_limit": "09:25",
       "open_count": null,
-      "seal_amount": 54859377,
-      "amount": 641501280
+      "seal_amount": 3883448,
+      "amount": 642502980
     },
     {
       "code": "000560",
@@ -149,8 +149,8 @@
       "first_limit": "09:30",
       "last_limit": "09:30",
       "open_count": null,
-      "seal_amount": 0,
-      "amount": 1207705630
+      "seal_amount": 5987246,
+      "amount": 1210342790
     },
     {
       "code": "600743",
@@ -160,8 +160,8 @@
       "first_limit": "09:30",
       "last_limit": "09:30",
       "open_count": null,
-      "seal_amount": 130309287,
-      "amount": 275958630
+      "seal_amount": 7283214,
+      "amount": 276179430
     },
     {
       "code": "002614",
@@ -171,8 +171,8 @@
       "first_limit": "09:31",
       "last_limit": "09:31",
       "open_count": null,
-      "seal_amount": 0,
-      "amount": 990701910
+      "seal_amount": 4769100,
+      "amount": 991041810
     },
     {
       "code": "600503",
@@ -182,8 +182,8 @@
       "first_limit": "09:43",
       "last_limit": "09:43",
       "open_count": null,
-      "seal_amount": 13052735.6,
-      "amount": 1178276300
+      "seal_amount": 1435014,
+      "amount": 1181594380
     },
     {
       "code": "002238",
@@ -193,13 +193,13 @@
       "first_limit": "09:25",
       "last_limit": "09:25",
       "open_count": null,
-      "seal_amount": 0,
-      "amount": 87462746
+      "seal_amount": 7456244,
+      "amount": 87635096
     }
   ],
   "themes": [],
   "intraday": {
-    "snapshot_count": 7,
+    "snapshot_count": 8,
     "timeline_ready": false
   },
   "data_quality": {
