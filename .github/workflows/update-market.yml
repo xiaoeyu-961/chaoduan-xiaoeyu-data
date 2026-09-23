@@ -8,8 +8,13 @@ on:
       - "requirements.txt"
       - ".github/workflows/update-market.yml"
   schedule:
-    - cron: "17,27,37,47,57 1-2,5-6 * * 1-5"
-    - cron: "7,17,27 3,7 * * 1-5"
+    # GitHub Actions 使用 UTC；以下对应北京时间 09:35、10:30、11:30、13:45、14:30、15:00
+    - cron: "35 1 * * 1-5"
+    - cron: "30 2 * * 1-5"
+    - cron: "30 3 * * 1-5"
+    - cron: "45 5 * * 1-5"
+    - cron: "30 6 * * 1-5"
+    - cron: "0 7 * * 1-5"
 
 permissions:
   contents: write
