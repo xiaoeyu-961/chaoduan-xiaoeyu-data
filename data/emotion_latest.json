@@ -1,84 +1,81 @@
 {
   "schema_version": 1,
   "ok": true,
-  "trade_date": "2026-09-22",
-  "updated_at": "2026-09-22T14:14:46.130578Z",
+  "trade_date": "2026-09-23",
+  "updated_at": "2026-09-23T01:28:33.345439Z",
   "source": "GitHub Actions · 东方财富公开行情",
   "principle": "仅保存事实数据，不在采集层生成周期标签或主观评分。",
   "market_ecology": {
-    "limit_up_count": 63,
+    "limit_up_count": 4,
     "limit_down_count": 0,
-    "broken_count": 18,
-    "broken_rate_pct": 22.22,
-    "seal_rate_pct": 77.78,
-    "highest_board": 6,
+    "broken_count": 0,
+    "broken_rate_pct": 0.0,
+    "seal_rate_pct": 100.0,
+    "highest_board": 3,
     "promotion": {
-      "eligible": 103,
-      "promoted": 24,
-      "rate_pct": 23.3,
+      "eligible": 63,
+      "promoted": 4,
+      "rate_pct": 6.35,
       "by_height": {
         "1": {
-          "eligible": 82,
-          "promoted": 17,
-          "rate_pct": 20.73
+          "eligible": 39,
+          "promoted": 1,
+          "rate_pct": 2.56
         },
         "2": {
-          "eligible": 13,
-          "promoted": 4,
-          "rate_pct": 30.77
+          "eligible": 17,
+          "promoted": 3,
+          "rate_pct": 17.65
         },
         "3": {
-          "eligible": 5,
-          "promoted": 1,
-          "rate_pct": 20.0
+          "eligible": 4,
+          "promoted": 0,
+          "rate_pct": 0.0
         },
         "4": {
-          "eligible": 2,
-          "promoted": 1,
-          "rate_pct": 50.0
+          "eligible": 1,
+          "promoted": 0,
+          "rate_pct": 0.0
         },
         "5": {
           "eligible": 1,
-          "promoted": 1,
-          "rate_pct": 100.0
+          "promoted": 0,
+          "rate_pct": 0.0
+        },
+        "6": {
+          "eligible": 1,
+          "promoted": 0,
+          "rate_pct": 0.0
         }
       }
     },
     "previous_limit_up_feedback": {
-      "sample": 101,
-      "avg_change_pct": 2.47,
-      "median_change_pct": 1.31,
-      "positive_rate_pct": 59.41,
-      "loss_below_minus_5_rate_pct": 5.94,
-      "carried_forward": true,
-      "as_of": "2026-09-22T13:53:20.005502Z"
+      "sample": 0,
+      "avg_change_pct": null,
+      "median_change_pct": null,
+      "positive_rate_pct": null,
+      "loss_below_minus_5_rate_pct": null
     },
     "high_position_feedback": {
-      "sample": 3,
-      "avg_change_pct": 6.88,
-      "median_change_pct": 9.98,
-      "positive_rate_pct": 100.0,
-      "loss_below_minus_5_rate_pct": 0.0,
-      "carried_forward": true,
-      "as_of": "2026-09-22T13:53:20.005502Z"
+      "sample": 0,
+      "avg_change_pct": null,
+      "median_change_pct": null,
+      "positive_rate_pct": null,
+      "loss_below_minus_5_rate_pct": null
     },
     "middle_position_feedback": {
-      "sample": 18,
-      "avg_change_pct": 1.49,
-      "median_change_pct": 2.04,
-      "positive_rate_pct": 55.56,
-      "loss_below_minus_5_rate_pct": 16.67,
-      "carried_forward": true,
-      "as_of": "2026-09-22T13:53:20.005502Z"
+      "sample": 0,
+      "avg_change_pct": null,
+      "median_change_pct": null,
+      "positive_rate_pct": null,
+      "loss_below_minus_5_rate_pct": null
     },
     "first_board_feedback": {
-      "sample": 80,
-      "avg_change_pct": 2.52,
-      "median_change_pct": 1.05,
-      "positive_rate_pct": 58.75,
-      "loss_below_minus_5_rate_pct": 3.75,
-      "carried_forward": true,
-      "as_of": "2026-09-22T13:53:20.005502Z"
+      "sample": 0,
+      "avg_change_pct": null,
+      "median_change_pct": null,
+      "positive_rate_pct": null,
+      "loss_below_minus_5_rate_pct": null
     },
     "market_width": {
       "available": false,
@@ -90,506 +87,70 @@
   },
   "leader_candidates": [
     {
-      "code": "001216",
-      "name": "华瓷股份",
-      "theme": "家居用品",
-      "height": 6,
+      "code": "001234",
+      "name": "泰慕士",
+      "theme": "服装家纺",
+      "height": 3,
       "first_limit": "92500",
       "last_limit": "92500",
       "open_count": 0,
-      "seal_amount": 259140452.0,
-      "amount": 48414477.0
+      "seal_amount": 361386870.0,
+      "amount": 39666033.0
     },
     {
-      "code": "603230",
-      "name": "内蒙新华",
+      "code": "600825",
+      "name": "新华传媒",
       "theme": "出版",
-      "height": 5,
-      "first_limit": "93436",
-      "last_limit": "94215",
-      "open_count": 3,
-      "seal_amount": 64824551.0,
-      "amount": 622024368.0
-    },
-    {
-      "code": "000504",
-      "name": "南华生物",
-      "theme": "医疗服务",
-      "height": 4,
+      "height": 3,
       "first_limit": "92500",
       "last_limit": "92500",
       "open_count": 0,
-      "seal_amount": 272598522.0,
-      "amount": 71297625.0
+      "seal_amount": 9945907050.0,
+      "amount": 9192826.0
     },
     {
-      "code": "000910",
-      "name": "大亚圣象",
-      "theme": "家居用品",
+      "code": "603636",
+      "name": "南威软件",
+      "theme": "IT服务Ⅱ",
       "height": 3,
-      "first_limit": "131215",
-      "last_limit": "131215",
+      "first_limit": "92501",
+      "last_limit": "92501",
       "open_count": 0,
-      "seal_amount": 18386164.0,
-      "amount": 373106272.0
+      "seal_amount": 181185244.0,
+      "amount": 29030166.0
     },
     {
-      "code": "601811",
-      "name": "新华文轩",
-      "theme": "出版",
-      "height": 3,
-      "first_limit": "92502",
-      "last_limit": "92502",
+      "code": "002238",
+      "name": "天威视讯",
+      "theme": "电视广播",
+      "height": 2,
+      "first_limit": "92500",
+      "last_limit": "92500",
       "open_count": 0,
-      "seal_amount": 143779042.0,
-      "amount": 68201736.0
-    },
-    {
-      "code": "001317",
-      "name": "三羊马",
-      "theme": "铁路公路",
-      "height": 3,
-      "first_limit": "93218",
-      "last_limit": "94518",
-      "open_count": 2,
-      "seal_amount": 50305251.0,
-      "amount": 494426464.0
-    },
-    {
-      "code": "603068",
-      "name": "博通集成",
-      "theme": "半导体",
-      "height": 3,
-      "first_limit": "95619",
-      "last_limit": "134743",
-      "open_count": 1,
-      "seal_amount": 26671729.0,
-      "amount": 1374616704.0
-    },
-    {
-      "code": "002259",
-      "name": "升达林业",
-      "theme": "燃气Ⅱ",
-      "height": 2,
-      "first_limit": "102409",
-      "last_limit": "102454",
-      "open_count": 1,
-      "seal_amount": 40606391.0,
-      "amount": 305286208.0
-    },
-    {
-      "code": "600721",
-      "name": "百花医药",
-      "theme": "医疗服务",
-      "height": 2,
-      "first_limit": "104702",
-      "last_limit": "144217",
-      "open_count": 5,
-      "seal_amount": 9600845.0,
-      "amount": 2739441728.0
-    },
-    {
-      "code": "300110",
-      "name": "华仁药业",
-      "theme": "化学制药",
-      "height": 2,
-      "first_limit": "105021",
-      "last_limit": "133451",
-      "open_count": 1,
-      "seal_amount": 36394431.0,
-      "amount": 1285470560.0
+      "seal_amount": 169887624.0,
+      "amount": 19305184.0
     }
   ],
   "themes": [
     {
-      "name": "家居用品",
-      "limit_up_count": 5,
-      "first_board_count": 3,
-      "second_board_count": 0,
-      "third_board_count": 1,
-      "high_board_count": 1,
-      "max_height": 6,
-      "active_days_3": 3,
-      "leaders": [
-        {
-          "code": "001216",
-          "name": "华瓷股份",
-          "height": 6
-        },
-        {
-          "code": "000910",
-          "name": "大亚圣象",
-          "height": 3
-        },
-        {
-          "code": "603221",
-          "name": "爱丽家居",
-          "height": 1
-        },
-        {
-          "code": "603216",
-          "name": "梦天家居",
-          "height": 1
-        }
-      ]
-    },
-    {
-      "name": "出版",
-      "limit_up_count": 4,
-      "first_board_count": 1,
-      "second_board_count": 1,
-      "third_board_count": 1,
-      "high_board_count": 1,
-      "max_height": 5,
-      "active_days_3": 3,
-      "leaders": [
-        {
-          "code": "603230",
-          "name": "内蒙新华",
-          "height": 5
-        },
-        {
-          "code": "601811",
-          "name": "新华文轩",
-          "height": 3
-        },
-        {
-          "code": "600825",
-          "name": "新华传媒",
-          "height": 2
-        },
-        {
-          "code": "601949",
-          "name": "中国出版",
-          "height": 1
-        }
-      ]
-    },
-    {
-      "name": "化学制药",
-      "limit_up_count": 3,
+      "name": "IT服务Ⅱ",
+      "limit_up_count": 1,
       "first_board_count": 0,
-      "second_board_count": 3,
-      "third_board_count": 0,
-      "high_board_count": 0,
-      "max_height": 2,
-      "active_days_3": 2,
-      "leaders": [
-        {
-          "code": "600664",
-          "name": "哈药股份",
-          "height": 2
-        },
-        {
-          "code": "000756",
-          "name": "新华制药",
-          "height": 2
-        },
-        {
-          "code": "300110",
-          "name": "华仁药业",
-          "height": 2
-        }
-      ]
-    },
-    {
-      "name": "广告营销",
-      "limit_up_count": 3,
-      "first_board_count": 2,
-      "second_board_count": 1,
-      "third_board_count": 0,
-      "high_board_count": 0,
-      "max_height": 2,
-      "active_days_3": 3,
-      "leaders": [
-        {
-          "code": "000607",
-          "name": "华媒控股",
-          "height": 2
-        },
-        {
-          "code": "000676",
-          "name": "智度股份",
-          "height": 1
-        },
-        {
-          "code": "603598",
-          "name": "引力传媒",
-          "height": 1
-        }
-      ]
-    },
-    {
-      "name": "元件",
-      "limit_up_count": 3,
-      "first_board_count": 3,
-      "second_board_count": 0,
-      "third_board_count": 0,
-      "high_board_count": 0,
-      "max_height": 1,
-      "active_days_3": 3,
-      "leaders": [
-        {
-          "code": "002141",
-          "name": "贤丰控股",
-          "height": 1
-        },
-        {
-          "code": "605058",
-          "name": "澳弘电子",
-          "height": 1
-        },
-        {
-          "code": "605258",
-          "name": "协和电子",
-          "height": 1
-        }
-      ]
-    },
-    {
-      "name": "医疗服务",
-      "limit_up_count": 2,
-      "first_board_count": 0,
-      "second_board_count": 1,
-      "third_board_count": 0,
-      "high_board_count": 1,
-      "max_height": 4,
-      "active_days_3": 3,
-      "leaders": [
-        {
-          "code": "000504",
-          "name": "南华生物",
-          "height": 4
-        },
-        {
-          "code": "600721",
-          "name": "百花医药",
-          "height": 2
-        }
-      ]
-    },
-    {
-      "name": "半导体",
-      "limit_up_count": 2,
-      "first_board_count": 1,
       "second_board_count": 0,
       "third_board_count": 1,
       "high_board_count": 0,
       "max_height": 3,
-      "active_days_3": 3,
-      "leaders": [
-        {
-          "code": "603068",
-          "name": "博通集成",
-          "height": 3
-        },
-        {
-          "code": "600641",
-          "name": "先导基电",
-          "height": 1
-        }
-      ]
-    },
-    {
-      "name": "IT服务Ⅱ",
-      "limit_up_count": 2,
-      "first_board_count": 1,
-      "second_board_count": 1,
-      "third_board_count": 0,
-      "high_board_count": 0,
-      "max_height": 2,
       "active_days_3": 3,
       "leaders": [
         {
           "code": "603636",
           "name": "南威软件",
-          "height": 2
-        },
-        {
-          "code": "605398",
-          "name": "新炬网络",
-          "height": 1
+          "height": 3
         }
       ]
     },
     {
-      "name": "塑料",
-      "limit_up_count": 2,
-      "first_board_count": 1,
-      "second_board_count": 1,
-      "third_board_count": 0,
-      "high_board_count": 0,
-      "max_height": 2,
-      "active_days_3": 2,
-      "leaders": [
-        {
-          "code": "603580",
-          "name": "艾艾精工",
-          "height": 2
-        },
-        {
-          "code": "002768",
-          "name": "国恩股份",
-          "height": 1
-        }
-      ]
-    },
-    {
-      "name": "房地产服",
-      "limit_up_count": 2,
-      "first_board_count": 0,
-      "second_board_count": 2,
-      "third_board_count": 0,
-      "high_board_count": 0,
-      "max_height": 2,
-      "active_days_3": 3,
-      "leaders": [
-        {
-          "code": "000560",
-          "name": "我爱我家",
-          "height": 2
-        },
-        {
-          "code": "600743",
-          "name": "华远控股",
-          "height": 2
-        }
-      ]
-    },
-    {
-      "name": "软件开发",
-      "limit_up_count": 2,
-      "first_board_count": 1,
-      "second_board_count": 1,
-      "third_board_count": 0,
-      "high_board_count": 0,
-      "max_height": 2,
-      "active_days_3": 3,
-      "leaders": [
-        {
-          "code": "002178",
-          "name": "延华智能",
-          "height": 2
-        },
-        {
-          "code": "603039",
-          "name": "泛微网络",
-          "height": 1
-        }
-      ]
-    },
-    {
-      "name": "专用设备",
-      "limit_up_count": 2,
-      "first_board_count": 2,
-      "second_board_count": 0,
-      "third_board_count": 0,
-      "high_board_count": 0,
-      "max_height": 1,
-      "active_days_3": 3,
-      "leaders": [
-        {
-          "code": "002757",
-          "name": "南兴股份",
-          "height": 1
-        },
-        {
-          "code": "002564",
-          "name": "天沃科技",
-          "height": 1
-        }
-      ]
-    },
-    {
-      "name": "光学光电",
-      "limit_up_count": 2,
-      "first_board_count": 2,
-      "second_board_count": 0,
-      "third_board_count": 0,
-      "high_board_count": 0,
-      "max_height": 1,
-      "active_days_3": 3,
-      "leaders": [
-        {
-          "code": "688781",
-          "name": "视涯科技-UW",
-          "height": 1
-        },
-        {
-          "code": "605218",
-          "name": "伟时电子",
-          "height": 1
-        }
-      ]
-    },
-    {
-      "name": "家电零部",
-      "limit_up_count": 2,
-      "first_board_count": 2,
-      "second_board_count": 0,
-      "third_board_count": 0,
-      "high_board_count": 0,
-      "max_height": 1,
-      "active_days_3": 2,
-      "leaders": [
-        {
-          "code": "002290",
-          "name": "禾盛新材",
-          "height": 1
-        },
-        {
-          "code": "001268",
-          "name": "联合精密",
-          "height": 1
-        }
-      ]
-    },
-    {
-      "name": "环境治理",
-      "limit_up_count": 2,
-      "first_board_count": 2,
-      "second_board_count": 0,
-      "third_board_count": 0,
-      "high_board_count": 0,
-      "max_height": 1,
-      "active_days_3": 2,
-      "leaders": [
-        {
-          "code": "603903",
-          "name": "中持股份",
-          "height": 1
-        },
-        {
-          "code": "002672",
-          "name": "东江环保",
-          "height": 1
-        }
-      ]
-    },
-    {
-      "name": "计算机设",
-      "limit_up_count": 2,
-      "first_board_count": 2,
-      "second_board_count": 0,
-      "third_board_count": 0,
-      "high_board_count": 0,
-      "max_height": 1,
-      "active_days_3": 3,
-      "leaders": [
-        {
-          "code": "300324",
-          "name": "旋极信息",
-          "height": 1
-        },
-        {
-          "code": "002912",
-          "name": "中新赛克",
-          "height": 1
-        }
-      ]
-    },
-    {
-      "name": "铁路公路",
+      "name": "出版",
       "limit_up_count": 1,
       "first_board_count": 0,
       "second_board_count": 0,
@@ -599,77 +160,9 @@
       "active_days_3": 3,
       "leaders": [
         {
-          "code": "001317",
-          "name": "三羊马",
+          "code": "600825",
+          "name": "新华传媒",
           "height": 3
-        }
-      ]
-    },
-    {
-      "name": "其他家电",
-      "limit_up_count": 1,
-      "first_board_count": 0,
-      "second_board_count": 1,
-      "third_board_count": 0,
-      "high_board_count": 0,
-      "max_height": 2,
-      "active_days_3": 2,
-      "leaders": [
-        {
-          "code": "002614",
-          "name": "奥佳华",
-          "height": 2
-        }
-      ]
-    },
-    {
-      "name": "包装印刷",
-      "limit_up_count": 1,
-      "first_board_count": 0,
-      "second_board_count": 1,
-      "third_board_count": 0,
-      "high_board_count": 0,
-      "max_height": 2,
-      "active_days_3": 3,
-      "leaders": [
-        {
-          "code": "002303",
-          "name": "美盈森",
-          "height": 2
-        }
-      ]
-    },
-    {
-      "name": "化学制品",
-      "limit_up_count": 1,
-      "first_board_count": 0,
-      "second_board_count": 1,
-      "third_board_count": 0,
-      "high_board_count": 0,
-      "max_height": 2,
-      "active_days_3": 3,
-      "leaders": [
-        {
-          "code": "603020",
-          "name": "爱普股份",
-          "height": 2
-        }
-      ]
-    },
-    {
-      "name": "房地产开",
-      "limit_up_count": 1,
-      "first_board_count": 0,
-      "second_board_count": 1,
-      "third_board_count": 0,
-      "high_board_count": 0,
-      "max_height": 2,
-      "active_days_3": 3,
-      "leaders": [
-        {
-          "code": "600503",
-          "name": "华丽家族",
-          "height": 2
         }
       ]
     },
@@ -677,21 +170,21 @@
       "name": "服装家纺",
       "limit_up_count": 1,
       "first_board_count": 0,
-      "second_board_count": 1,
-      "third_board_count": 0,
+      "second_board_count": 0,
+      "third_board_count": 1,
       "high_board_count": 0,
-      "max_height": 2,
+      "max_height": 3,
       "active_days_3": 3,
       "leaders": [
         {
           "code": "001234",
           "name": "泰慕士",
-          "height": 2
+          "height": 3
         }
       ]
     },
     {
-      "name": "燃气Ⅱ",
+      "name": "电视广播",
       "limit_up_count": 1,
       "first_board_count": 0,
       "second_board_count": 1,
@@ -701,142 +194,25 @@
       "active_days_3": 2,
       "leaders": [
         {
-          "code": "002259",
-          "name": "升达林业",
+          "code": "002238",
+          "name": "天威视讯",
           "height": 2
-        }
-      ]
-    },
-    {
-      "name": "专业工程",
-      "limit_up_count": 1,
-      "first_board_count": 1,
-      "second_board_count": 0,
-      "third_board_count": 0,
-      "high_board_count": 0,
-      "max_height": 1,
-      "active_days_3": 2,
-      "leaders": [
-        {
-          "code": "605178",
-          "name": "时空科技",
-          "height": 1
-        }
-      ]
-    },
-    {
-      "name": "中药Ⅱ",
-      "limit_up_count": 1,
-      "first_board_count": 1,
-      "second_board_count": 0,
-      "third_board_count": 0,
-      "high_board_count": 0,
-      "max_height": 1,
-      "active_days_3": 2,
-      "leaders": [
-        {
-          "code": "600479",
-          "name": "千金药业",
-          "height": 1
-        }
-      ]
-    },
-    {
-      "name": "医疗器械",
-      "limit_up_count": 1,
-      "first_board_count": 1,
-      "second_board_count": 0,
-      "third_board_count": 0,
-      "high_board_count": 0,
-      "max_height": 1,
-      "active_days_3": 2,
-      "leaders": [
-        {
-          "code": "301234",
-          "name": "五洲医疗",
-          "height": 1
-        }
-      ]
-    },
-    {
-      "name": "商用车",
-      "limit_up_count": 1,
-      "first_board_count": 1,
-      "second_board_count": 0,
-      "third_board_count": 0,
-      "high_board_count": 0,
-      "max_height": 1,
-      "active_days_3": 1,
-      "leaders": [
-        {
-          "code": "600418",
-          "name": "江淮汽车",
-          "height": 1
-        }
-      ]
-    },
-    {
-      "name": "工程机械",
-      "limit_up_count": 1,
-      "first_board_count": 1,
-      "second_board_count": 0,
-      "third_board_count": 0,
-      "high_board_count": 0,
-      "max_height": 1,
-      "active_days_3": 1,
-      "leaders": [
-        {
-          "code": "600815",
-          "name": "厦工股份",
-          "height": 1
-        }
-      ]
-    },
-    {
-      "name": "文娱用品",
-      "limit_up_count": 1,
-      "first_board_count": 1,
-      "second_board_count": 0,
-      "third_board_count": 0,
-      "high_board_count": 0,
-      "max_height": 1,
-      "active_days_3": 2,
-      "leaders": [
-        {
-          "code": "002301",
-          "name": "齐心集团",
-          "height": 1
-        }
-      ]
-    },
-    {
-      "name": "汽车零部",
-      "limit_up_count": 1,
-      "first_board_count": 1,
-      "second_board_count": 0,
-      "third_board_count": 0,
-      "high_board_count": 0,
-      "max_height": 1,
-      "active_days_3": 3,
-      "leaders": [
-        {
-          "code": "001260",
-          "name": "坤泰股份",
-          "height": 1
         }
       ]
     }
   ],
   "intraday": {
-    "snapshot_count": 6,
-    "timeline_ready": true
+    "snapshot_count": 1,
+    "timeline_ready": false
   },
   "data_quality": {
     "daily_sessions": 15,
     "complete": false,
     "missing": [
-      "全市场上涨/下跌家数"
+      "全市场上涨/下跌家数",
+      "昨日涨停次日反馈",
+      "完整日内情绪时间轴"
     ],
-    "confidence": "medium"
+    "confidence": "low"
   }
 }
