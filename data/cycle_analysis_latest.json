@@ -2,7 +2,7 @@
   "schema_version": 1,
   "ok": true,
   "trade_date": "2026-09-23",
-  "generated_at": "2026-09-23T02:47:35.334641+00:00",
+  "generated_at": "2026-09-23T02:58:45.970036+00:00",
   "principles": [
     "不使用5/10/20日均线判断情绪周期",
     "龙头强度与市场生态分开计算",
@@ -10,9 +10,9 @@
     "缺失数据不补造、不按0分处理"
   ],
   "dashboard": {
-    "market_composite": 40,
+    "market_composite": 39,
     "leader_strength": 53,
-    "market_ecology": 35,
+    "market_ecology": 34,
     "market_width": null,
     "relay_ecology": 10.72,
     "mainline_strength": 50,
@@ -20,8 +20,8 @@
     "structure_label": "龙头弱 / 生态弱：退潮风险"
   },
   "large_cycle": {
-    "stage": "混沌",
-    "score": 40,
+    "stage": "退潮",
+    "score": 39,
     "trend": "↓",
     "method": "评分 + 结构 + 连续性；不使用均线",
     "continuity": {
@@ -29,17 +29,16 @@
       "seal_rate": "down",
       "highest_board": "flat"
     },
-    "supporting_factors": [
-      "昨日涨停平均反馈0.08%为正"
-    ],
+    "supporting_factors": [],
     "pressure_factors": [
       "最高板高度不足",
       "晋级率仅14.29%",
-      "炸板率37.74%偏高",
+      "炸板率38.89%偏高",
+      "昨日涨停平均反馈-0.13%偏弱",
       "近端涨停数量未形成上升趋势"
     ],
     "confidence": "medium",
-    "conclusion": "混沌；龙头弱 / 生态弱：退潮风险"
+    "conclusion": "退潮；龙头弱 / 生态弱：退潮风险"
   },
   "medium_cycle": {
     "mainline": {
@@ -1818,7 +1817,7 @@
     "score": null,
     "trend": "→",
     "timeline_ready": true,
-    "snapshot_count": 6,
+    "snapshot_count": 7,
     "timeline": [
       {
         "time": "2026-09-23T01:28:33.345439Z",
@@ -1927,6 +1926,24 @@
           },
           "strongest_theme": "出版"
         }
+      },
+      {
+        "time": "2026-09-23T02:58:26.446462Z",
+        "node": "震荡",
+        "facts": {
+          "time": "2026-09-23T02:58:26.446462Z",
+          "limit_up_count": 33,
+          "limit_down_count": 0,
+          "broken_count": 21,
+          "broken_rate_pct": 38.89,
+          "promotion_rate_pct": 14.29,
+          "highest_board": 4,
+          "leader": {
+            "code": "601811",
+            "name": "新华文轩"
+          },
+          "strongest_theme": "出版"
+        }
       }
     ],
     "note": "日内节点不直接改写大周期。"
@@ -1959,7 +1976,7 @@
         },
         {
           "metric": "封单/成交额",
-          "value": 65.69,
+          "value": 63.84,
           "weight": 15,
           "normalized": 100,
           "contribution": 15.0
@@ -1982,7 +1999,7 @@
       "label": "弱"
     },
     "market_ecology": {
-      "score": 35,
+      "score": 34,
       "coverage_pct": 94.0,
       "components": [
         {
@@ -1994,10 +2011,10 @@
         },
         {
           "metric": "炸板率",
-          "value": 37.74,
+          "value": 38.89,
           "weight": 16,
-          "normalized": 30.65,
-          "contribution": 5.22
+          "normalized": 27.77,
+          "contribution": 4.73
         },
         {
           "metric": "连板晋级率",
@@ -2008,17 +2025,17 @@
         },
         {
           "metric": "昨日涨停平均反馈",
-          "value": 0.08,
+          "value": -0.13,
           "weight": 14,
-          "normalized": 40.8,
-          "contribution": 6.08
+          "normalized": 38.7,
+          "contribution": 5.76
         },
         {
           "metric": "中位股平均反馈",
-          "value": 1.81,
+          "value": 1.57,
           "weight": 12,
-          "normalized": 68.1,
-          "contribution": 8.69
+          "normalized": 65.7,
+          "contribution": 8.39
         },
         {
           "metric": "中位股大亏比例",
