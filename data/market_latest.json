@@ -4,35 +4,35 @@
   "source": "GitHub Actions · 东方财富公开行情",
   "sourceMode": "scheduled-snapshot",
   "tradeDate": "2026-09-23",
-  "updatedAt": "2026-09-23T01:28:33.345439Z",
+  "updatedAt": "2026-09-23T01:45:51.406794Z",
   "indices": [
     {
       "code": "000001",
       "name": "上证指数",
-      "price": 3951.37,
-      "change": -0.02,
-      "amount": 6255472603.0
+      "price": 3947.61,
+      "change": -0.11,
+      "amount": 182077952028.2
     },
     {
       "code": "399001",
       "name": "深证成指",
-      "price": 13742.55,
-      "change": 0.14,
-      "amount": 7440092756.648
+      "price": 13708.14,
+      "change": -0.11,
+      "amount": 207379775194.4356
     },
     {
       "code": "399006",
       "name": "创业板指",
-      "price": 3412.53,
-      "change": 0.37,
-      "amount": 2993226929.43
+      "price": 3395.94,
+      "change": -0.12,
+      "amount": 96801819300.45
     },
     {
       "code": "000688",
       "name": "科创50",
-      "price": 1671.77,
-      "change": 0.4,
-      "amount": 486759585.8
+      "price": 1670.97,
+      "change": 0.36,
+      "amount": 15202220578.6
     }
   ],
   "breadth": {
@@ -41,36 +41,75 @@
     "flat": 0,
     "totalAmount": 0.0
   },
-  "limitUpCount": 4,
-  "brokenCount": 0,
+  "limitUpCount": 23,
+  "brokenCount": 7,
   "limitDownCount": 0,
-  "brokenRate": 0.0,
+  "brokenRate": 23.33,
   "highest": {
-    "code": "001234",
-    "name": "泰慕士",
-    "theme": "服装家纺",
-    "height": 3,
-    "firstLimit": "92500",
-    "lastLimit": "92500",
-    "amount": 39666033.0,
-    "turnover": 1.3465259075164795,
-    "change": 10.017093658447266,
-    "sealAmount": 361386870.0,
-    "openCount": 0
+    "code": "001216",
+    "name": "华瓷股份",
+    "theme": "家居用品",
+    "height": 7,
+    "firstLimit": "93433",
+    "lastLimit": "94548",
+    "amount": 1020768016.0,
+    "turnover": 14.525901794433594,
+    "change": 10.011333465576172,
+    "sealAmount": 10935142.0,
+    "openCount": 2
   },
   "limitUps": [
     {
-      "code": "001234",
-      "name": "泰慕士",
-      "theme": "服装家纺",
-      "height": 3,
-      "firstLimit": "92500",
-      "lastLimit": "92500",
-      "amount": 39666033.0,
-      "turnover": 1.3465259075164795,
-      "change": 10.017093658447266,
-      "sealAmount": 361386870.0,
+      "code": "001216",
+      "name": "华瓷股份",
+      "theme": "家居用品",
+      "height": 7,
+      "firstLimit": "93433",
+      "lastLimit": "94548",
+      "amount": 1020768016.0,
+      "turnover": 14.525901794433594,
+      "change": 10.011333465576172,
+      "sealAmount": 10935142.0,
+      "openCount": 2
+    },
+    {
+      "code": "601811",
+      "name": "新华文轩",
+      "theme": "出版",
+      "height": 4,
+      "firstLimit": "93016",
+      "lastLimit": "93016",
+      "amount": 278801488.0,
+      "turnover": 1.9105031490325928,
+      "change": 9.98810863494873,
+      "sealAmount": 196723450.0,
       "openCount": 0
+    },
+    {
+      "code": "000910",
+      "name": "大亚圣象",
+      "theme": "家居用品",
+      "height": 4,
+      "firstLimit": "93039",
+      "lastLimit": "93039",
+      "amount": 191767359.0,
+      "turnover": 4.729599475860596,
+      "change": 10.014513969421387,
+      "sealAmount": 179831475.0,
+      "openCount": 0
+    },
+    {
+      "code": "000560",
+      "name": "我爱我家",
+      "theme": "房地产服",
+      "height": 3,
+      "firstLimit": "93021",
+      "lastLimit": "93233",
+      "amount": 783252160.0,
+      "turnover": 8.72624683380127,
+      "change": 9.97150993347168,
+      "sealAmount": 325869807.0,
+      "openCount": 2
     },
     {
       "code": "603636",
@@ -78,11 +117,50 @@
       "theme": "IT服务Ⅱ",
       "height": 3,
       "firstLimit": "92501",
-      "lastLimit": "92501",
-      "amount": 29030166.0,
-      "turnover": 0.5677742958068848,
+      "lastLimit": "93855",
+      "amount": 501158576.0,
+      "turnover": 9.85044002532959,
       "change": 9.987516403198242,
-      "sealAmount": 181185244.0,
+      "sealAmount": 158225838.0,
+      "openCount": 2
+    },
+    {
+      "code": "600503",
+      "name": "华丽家族",
+      "theme": "房地产开",
+      "height": 3,
+      "firstLimit": "94356",
+      "lastLimit": "94356",
+      "amount": 445970112.0,
+      "turnover": 9.956480026245117,
+      "change": 10.112359046936035,
+      "sealAmount": 192492678.0,
+      "openCount": 0
+    },
+    {
+      "code": "600743",
+      "name": "华远控股",
+      "theme": "房地产服",
+      "height": 3,
+      "firstLimit": "93010",
+      "lastLimit": "93010",
+      "amount": 254166848.0,
+      "turnover": 3.8745462894439697,
+      "change": 10.15625,
+      "sealAmount": 372041889.0,
+      "openCount": 0
+    },
+    {
+      "code": "001234",
+      "name": "泰慕士",
+      "theme": "服装家纺",
+      "height": 3,
+      "firstLimit": "92500",
+      "lastLimit": "92500",
+      "amount": 74368945.0,
+      "turnover": 2.524570941925049,
+      "change": 10.017093658447266,
+      "sealAmount": 367948372.0,
       "openCount": 0
     },
     {
@@ -92,10 +170,10 @@
       "height": 3,
       "firstLimit": "92500",
       "lastLimit": "92500",
-      "amount": 9192826.0,
-      "turnover": 0.12461624294519424,
+      "amount": 22389378.0,
+      "turnover": 0.3035062551498413,
       "change": 9.968847274780273,
-      "sealAmount": 9945907050.0,
+      "sealAmount": 4504176189.0,
       "openCount": 0
     },
     {
@@ -105,16 +183,367 @@
       "height": 2,
       "firstLimit": "92500",
       "lastLimit": "92500",
-      "amount": 19305184.0,
-      "turnover": 0.3140278160572052,
+      "amount": 70897996.0,
+      "turnover": 1.1532623767852783,
       "change": 10.05747127532959,
-      "sealAmount": 169887624.0,
+      "sealAmount": 160116566.0,
+      "openCount": 0
+    },
+    {
+      "code": "603773",
+      "name": "沃格光电",
+      "theme": "光学光电",
+      "height": 1,
+      "firstLimit": "93307",
+      "lastLimit": "93307",
+      "amount": 2068986288.0,
+      "turnover": 9.117666244506836,
+      "change": 10.00214672088623,
+      "sealAmount": 1655428402.0,
+      "openCount": 0
+    },
+    {
+      "code": "002285",
+      "name": "世联行",
+      "theme": "房地产服",
+      "height": 1,
+      "firstLimit": "94130",
+      "lastLimit": "94206",
+      "amount": 657293792.0,
+      "turnover": 9.875396728515625,
+      "change": 10.0,
+      "sealAmount": 284247050.0,
+      "openCount": 1
+    },
+    {
+      "code": "002426",
+      "name": "胜利精密",
+      "theme": "消费电子",
+      "height": 1,
+      "firstLimit": "93351",
+      "lastLimit": "93351",
+      "amount": 422289168.0,
+      "turnover": 4.571274280548096,
+      "change": 10.037175178527832,
+      "sealAmount": 742633485.0,
+      "openCount": 0
+    },
+    {
+      "code": "003036",
+      "name": "泰坦股份",
+      "theme": "专用设备",
+      "height": 1,
+      "firstLimit": "94209",
+      "lastLimit": "94209",
+      "amount": 367090400.0,
+      "turnover": 2.9197838306427,
+      "change": 9.996344566345215,
+      "sealAmount": 434203076.0,
+      "openCount": 0
+    },
+    {
+      "code": "300155",
+      "name": "安居宝",
+      "theme": "计算机设",
+      "height": 1,
+      "firstLimit": "94133",
+      "lastLimit": "94133",
+      "amount": 173786516.0,
+      "turnover": 10.140454292297363,
+      "change": 19.911502838134766,
+      "sealAmount": 241536663.0,
+      "openCount": 0
+    },
+    {
+      "code": "000868",
+      "name": "安凯客车",
+      "theme": "商用车",
+      "height": 1,
+      "firstLimit": "93803",
+      "lastLimit": "93803",
+      "amount": 167851521.0,
+      "turnover": 4.279870510101318,
+      "change": 9.898476600646973,
+      "sealAmount": 398513658.0,
+      "openCount": 0
+    },
+    {
+      "code": "600293",
+      "name": "三峡新材",
+      "theme": "玻璃玻纤",
+      "height": 1,
+      "firstLimit": "93216",
+      "lastLimit": "93216",
+      "amount": 157527246.0,
+      "turnover": 3.774678945541382,
+      "change": 10.119048118591309,
+      "sealAmount": 292423391.0,
+      "openCount": 0
+    },
+    {
+      "code": "600675",
+      "name": "中华企业",
+      "theme": "房地产开",
+      "height": 1,
+      "firstLimit": "93916",
+      "lastLimit": "93916",
+      "amount": 154991797.0,
+      "turnover": 0.9985945224761963,
+      "change": 9.91735553741455,
+      "sealAmount": 381923598.0,
+      "openCount": 0
+    },
+    {
+      "code": "603396",
+      "name": "金辰股份",
+      "theme": "光伏设备",
+      "height": 1,
+      "firstLimit": "93739",
+      "lastLimit": "93739",
+      "amount": 132946037.0,
+      "turnover": 3.0581347942352295,
+      "change": 10.016977310180664,
+      "sealAmount": 169051082.0,
+      "openCount": 0
+    },
+    {
+      "code": "000850",
+      "name": "华茂股份",
+      "theme": "纺织制造",
+      "height": 1,
+      "firstLimit": "93136",
+      "lastLimit": "93136",
+      "amount": 74595761.0,
+      "turnover": 1.7486604452133179,
+      "change": 9.929078102111816,
+      "sealAmount": 199336897.0,
+      "openCount": 0
+    },
+    {
+      "code": "600843",
+      "name": "上工申贝",
+      "theme": "专用设备",
+      "height": 1,
+      "firstLimit": "93047",
+      "lastLimit": "93047",
+      "amount": 67790513.0,
+      "turnover": 1.9150208234786987,
+      "change": 9.971098899841309,
+      "sealAmount": 180002374.0,
+      "openCount": 0
+    },
+    {
+      "code": "600653",
+      "name": "申华控股",
+      "theme": "汽车服务",
+      "height": 1,
+      "firstLimit": "94509",
+      "lastLimit": "94509",
+      "amount": 38137090.0,
+      "turnover": 1.1147820949554443,
+      "change": 10.0,
+      "sealAmount": 88889328.0,
+      "openCount": 0
+    },
+    {
+      "code": "002205",
+      "name": "国统股份",
+      "theme": "水泥",
+      "height": 1,
+      "firstLimit": "94224",
+      "lastLimit": "94224",
+      "amount": 27286775.0,
+      "turnover": 1.2902164459228516,
+      "change": 10.02759838104248,
+      "sealAmount": 114276843.0,
       "openCount": 0
     }
   ],
-  "broken": [],
+  "broken": [
+    {
+      "code": "002614",
+      "name": "奥佳华",
+      "theme": "其他家电",
+      "height": 1,
+      "firstLimit": "93109",
+      "lastLimit": "",
+      "amount": 609113280.0,
+      "turnover": 18.353229522705078,
+      "change": 9.738371849060059,
+      "sealAmount": 0.0,
+      "openCount": 1
+    },
+    {
+      "code": "000504",
+      "name": "南华生物",
+      "theme": "医疗服务",
+      "height": 1,
+      "firstLimit": "93433",
+      "lastLimit": "",
+      "amount": 811605360.0,
+      "turnover": 19.25018882751465,
+      "change": 6.688687324523926,
+      "sealAmount": 0.0,
+      "openCount": 2
+    },
+    {
+      "code": "600641",
+      "name": "先导基电",
+      "theme": "半导体",
+      "height": 1,
+      "firstLimit": "93453",
+      "lastLimit": "",
+      "amount": 3277369088.0,
+      "turnover": 7.469324111938477,
+      "change": 8.962048530578613,
+      "sealAmount": 0.0,
+      "openCount": 2
+    },
+    {
+      "code": "002564",
+      "name": "天沃科技",
+      "theme": "专用设备",
+      "height": 1,
+      "firstLimit": "93457",
+      "lastLimit": "",
+      "amount": 457515728.0,
+      "turnover": 9.103678703308105,
+      "change": 6.788990497589111,
+      "sealAmount": 0.0,
+      "openCount": 2
+    },
+    {
+      "code": "600059",
+      "name": "古越龙山",
+      "theme": "非白酒",
+      "height": 1,
+      "firstLimit": "94233",
+      "lastLimit": "",
+      "amount": 632346512.0,
+      "turnover": 6.043881416320801,
+      "change": 9.731232643127441,
+      "sealAmount": 0.0,
+      "openCount": 1
+    },
+    {
+      "code": "002757",
+      "name": "南兴股份",
+      "theme": "专用设备",
+      "height": 1,
+      "firstLimit": "94424",
+      "lastLimit": "",
+      "amount": 847644864.0,
+      "turnover": 14.482733726501465,
+      "change": 6.898287773132324,
+      "sealAmount": 0.0,
+      "openCount": 1
+    },
+    {
+      "code": "603949",
+      "name": "雪龙集团",
+      "theme": "汽车零部",
+      "height": 1,
+      "firstLimit": "94526",
+      "lastLimit": "",
+      "amount": 34779034.0,
+      "turnover": 1.1165276765823364,
+      "change": 9.813753128051758,
+      "sealAmount": 0.0,
+      "openCount": 1
+    }
+  ],
   "limitDown": [],
   "themes": [
+    {
+      "name": "房地产服",
+      "limitUpCount": 3,
+      "maxHeight": 3,
+      "leaders": [
+        {
+          "name": "我爱我家",
+          "code": "000560",
+          "height": 3
+        },
+        {
+          "name": "华远控股",
+          "code": "600743",
+          "height": 3
+        },
+        {
+          "name": "世联行",
+          "code": "002285",
+          "height": 1
+        }
+      ]
+    },
+    {
+      "name": "家居用品",
+      "limitUpCount": 2,
+      "maxHeight": 7,
+      "leaders": [
+        {
+          "name": "华瓷股份",
+          "code": "001216",
+          "height": 7
+        },
+        {
+          "name": "大亚圣象",
+          "code": "000910",
+          "height": 4
+        }
+      ]
+    },
+    {
+      "name": "出版",
+      "limitUpCount": 2,
+      "maxHeight": 4,
+      "leaders": [
+        {
+          "name": "新华文轩",
+          "code": "601811",
+          "height": 4
+        },
+        {
+          "name": "新华传媒",
+          "code": "600825",
+          "height": 3
+        }
+      ]
+    },
+    {
+      "name": "房地产开",
+      "limitUpCount": 2,
+      "maxHeight": 3,
+      "leaders": [
+        {
+          "name": "华丽家族",
+          "code": "600503",
+          "height": 3
+        },
+        {
+          "name": "中华企业",
+          "code": "600675",
+          "height": 1
+        }
+      ]
+    },
+    {
+      "name": "专用设备",
+      "limitUpCount": 2,
+      "maxHeight": 1,
+      "leaders": [
+        {
+          "name": "泰坦股份",
+          "code": "003036",
+          "height": 1
+        },
+        {
+          "name": "上工申贝",
+          "code": "600843",
+          "height": 1
+        }
+      ]
+    },
     {
       "name": "IT服务Ⅱ",
       "limitUpCount": 1,
@@ -123,18 +552,6 @@
         {
           "name": "南威软件",
           "code": "603636",
-          "height": 3
-        }
-      ]
-    },
-    {
-      "name": "出版",
-      "limitUpCount": 1,
-      "maxHeight": 3,
-      "leaders": [
-        {
-          "name": "新华传媒",
-          "code": "600825",
           "height": 3
         }
       ]
@@ -162,12 +579,120 @@
           "height": 2
         }
       ]
+    },
+    {
+      "name": "光伏设备",
+      "limitUpCount": 1,
+      "maxHeight": 1,
+      "leaders": [
+        {
+          "name": "金辰股份",
+          "code": "603396",
+          "height": 1
+        }
+      ]
+    },
+    {
+      "name": "光学光电",
+      "limitUpCount": 1,
+      "maxHeight": 1,
+      "leaders": [
+        {
+          "name": "沃格光电",
+          "code": "603773",
+          "height": 1
+        }
+      ]
+    },
+    {
+      "name": "商用车",
+      "limitUpCount": 1,
+      "maxHeight": 1,
+      "leaders": [
+        {
+          "name": "安凯客车",
+          "code": "000868",
+          "height": 1
+        }
+      ]
+    },
+    {
+      "name": "水泥",
+      "limitUpCount": 1,
+      "maxHeight": 1,
+      "leaders": [
+        {
+          "name": "国统股份",
+          "code": "002205",
+          "height": 1
+        }
+      ]
+    },
+    {
+      "name": "汽车服务",
+      "limitUpCount": 1,
+      "maxHeight": 1,
+      "leaders": [
+        {
+          "name": "申华控股",
+          "code": "600653",
+          "height": 1
+        }
+      ]
+    },
+    {
+      "name": "消费电子",
+      "limitUpCount": 1,
+      "maxHeight": 1,
+      "leaders": [
+        {
+          "name": "胜利精密",
+          "code": "002426",
+          "height": 1
+        }
+      ]
+    },
+    {
+      "name": "玻璃玻纤",
+      "limitUpCount": 1,
+      "maxHeight": 1,
+      "leaders": [
+        {
+          "name": "三峡新材",
+          "code": "600293",
+          "height": 1
+        }
+      ]
+    },
+    {
+      "name": "纺织制造",
+      "limitUpCount": 1,
+      "maxHeight": 1,
+      "leaders": [
+        {
+          "name": "华茂股份",
+          "code": "000850",
+          "height": 1
+        }
+      ]
+    },
+    {
+      "name": "计算机设",
+      "limitUpCount": 1,
+      "maxHeight": 1,
+      "leaders": [
+        {
+          "name": "安居宝",
+          "code": "300155",
+          "height": 1
+        }
+      ]
     }
   ],
   "quality": {
     "complete": false,
     "errors": [
-      "breadth: 502 Server Error: Bad Gateway for url: https://push2.eastmoney.com/api/qt/clist/get?pn=5&pz=500&po=1&np=1&fltt=2&invt=2&fid=f3&fs=m:0+t:6,m:0+t:80,m:1+t:2,m:1+t:23&fields=f2,f3,f6"
+      "breadth: 502 Server Error: Bad Gateway for url: https://push2.eastmoney.com/api/qt/clist/get?pn=13&pz=500&po=1&np=1&fltt=2&invt=2&fid=f3&fs=m:0+t:6,m:0+t:80,m:1+t:2,m:1+t:23&fields=f2,f3,f6"
     ],
     "collector": "github-actions"
   }
