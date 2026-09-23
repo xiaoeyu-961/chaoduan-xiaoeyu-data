@@ -2,35 +2,35 @@
   "schema_version": 1,
   "ok": true,
   "trade_date": "2026-09-23",
-  "updated_at": "2026-09-23T06:42:11.189488+00:00",
+  "updated_at": "2026-09-23T06:58:37.018977+00:00",
   "source": "同花顺官方 Financial-API",
   "principle": "仅保存事实数据，不在采集层生成周期标签或主观评分。",
   "market_ecology": {
-    "limit_up_count": 22,
+    "limit_up_count": 51,
     "limit_down_count": 14,
-    "broken_count": 25,
-    "broken_rate_pct": 53.19,
-    "seal_rate_pct": 46.81,
+    "broken_count": 26,
+    "broken_rate_pct": 33.77,
+    "seal_rate_pct": 66.23,
     "highest_board": 4,
     "promotion": {
       "eligible": 63,
-      "promoted": 5,
-      "rate_pct": 7.94,
+      "promoted": 12,
+      "rate_pct": 19.05,
       "by_height": {
         "1": {
           "eligible": 39,
-          "promoted": 1,
-          "rate_pct": 2.56
+          "promoted": 3,
+          "rate_pct": 7.69
         },
         "2": {
           "eligible": 17,
-          "promoted": 3,
-          "rate_pct": 17.65
+          "promoted": 7,
+          "rate_pct": 41.18
         },
         "3": {
           "eligible": 4,
-          "promoted": 1,
-          "rate_pct": 25.0
+          "promoted": 2,
+          "rate_pct": 50.0
         },
         "4": {
           "eligible": 1,
@@ -51,31 +51,31 @@
     },
     "previous_limit_up_feedback": {
       "sample": 63,
-      "avg_change_pct": -0.09,
-      "median_change_pct": -0.95,
+      "avg_change_pct": -0.13,
+      "median_change_pct": -1.42,
       "positive_rate_pct": 41.27,
-      "loss_below_minus_5_rate_pct": 20.63
+      "loss_below_minus_5_rate_pct": 19.05
     },
     "high_position_feedback": {
       "sample": 3,
-      "avg_change_pct": 4.62,
-      "median_change_pct": 3.47,
+      "avg_change_pct": 4.65,
+      "median_change_pct": 4.62,
       "positive_rate_pct": 100.0,
       "loss_below_minus_5_rate_pct": 0.0
     },
     "middle_position_feedback": {
       "sample": 21,
       "avg_change_pct": 0.93,
-      "median_change_pct": -1.77,
-      "positive_rate_pct": 47.62,
+      "median_change_pct": -1.42,
+      "positive_rate_pct": 42.86,
       "loss_below_minus_5_rate_pct": 28.57
     },
     "first_board_feedback": {
       "sample": 39,
-      "avg_change_pct": -1.0,
-      "median_change_pct": -1.38,
-      "positive_rate_pct": 33.33,
-      "loss_below_minus_5_rate_pct": 17.95
+      "avg_change_pct": -1.07,
+      "median_change_pct": -1.67,
+      "positive_rate_pct": 35.9,
+      "loss_below_minus_5_rate_pct": 15.38
     },
     "market_width": {
       "available": false,
@@ -94,8 +94,19 @@
       "first_limit": "09:30",
       "last_limit": "09:30",
       "open_count": null,
-      "seal_amount": 99258220,
-      "amount": 221259660
+      "seal_amount": 0,
+      "amount": 224033180
+    },
+    {
+      "code": "601811",
+      "name": "新华文轩",
+      "theme": null,
+      "height": 4,
+      "first_limit": "09:30",
+      "last_limit": "09:30",
+      "open_count": null,
+      "seal_amount": 141872060,
+      "amount": 306037930
     },
     {
       "code": "001234",
@@ -105,8 +116,30 @@
       "first_limit": "09:25",
       "last_limit": "09:25",
       "open_count": null,
-      "seal_amount": 344920360,
-      "amount": 89026935
+      "seal_amount": 0,
+      "amount": 89477455
+    },
+    {
+      "code": "600825",
+      "name": "新华传媒",
+      "theme": null,
+      "height": 3,
+      "first_limit": "09:25",
+      "last_limit": "09:25",
+      "open_count": null,
+      "seal_amount": 1908971800,
+      "amount": 32207014
+    },
+    {
+      "code": "603636",
+      "name": "南威软件",
+      "theme": null,
+      "height": 3,
+      "first_limit": "09:25",
+      "last_limit": "09:25",
+      "open_count": null,
+      "seal_amount": 54859377,
+      "amount": 641501280
     },
     {
       "code": "000560",
@@ -116,8 +149,19 @@
       "first_limit": "09:30",
       "last_limit": "09:30",
       "open_count": null,
-      "seal_amount": 97774742,
-      "amount": 1194716350
+      "seal_amount": 0,
+      "amount": 1207705630
+    },
+    {
+      "code": "600743",
+      "name": "华远控股",
+      "theme": null,
+      "height": 3,
+      "first_limit": "09:30",
+      "last_limit": "09:30",
+      "open_count": null,
+      "seal_amount": 130309287,
+      "amount": 275958630
     },
     {
       "code": "002614",
@@ -127,8 +171,19 @@
       "first_limit": "09:31",
       "last_limit": "09:31",
       "open_count": null,
-      "seal_amount": 92160019,
-      "amount": 988105400
+      "seal_amount": 0,
+      "amount": 990701910
+    },
+    {
+      "code": "600503",
+      "name": "华丽家族",
+      "theme": null,
+      "height": 3,
+      "first_limit": "09:43",
+      "last_limit": "09:43",
+      "open_count": null,
+      "seal_amount": 13052735.6,
+      "amount": 1178276300
     },
     {
       "code": "002238",
@@ -138,68 +193,13 @@
       "first_limit": "09:25",
       "last_limit": "09:25",
       "open_count": null,
-      "seal_amount": 132071008,
-      "amount": 86578782
-    },
-    {
-      "code": "000850",
-      "name": "华茂股份",
-      "theme": null,
-      "height": 1,
-      "first_limit": "09:31",
-      "last_limit": "09:31",
-      "open_count": null,
-      "seal_amount": 89087099,
-      "amount": 116095774
-    },
-    {
-      "code": "002426",
-      "name": "胜利精密",
-      "theme": null,
-      "height": 1,
-      "first_limit": "09:33",
-      "last_limit": "09:33",
-      "open_count": null,
-      "seal_amount": 140007990,
-      "amount": 673341090
-    },
-    {
-      "code": "002205",
-      "name": "国统股份",
-      "theme": null,
-      "height": 1,
-      "first_limit": "09:42",
-      "last_limit": "09:42",
-      "open_count": null,
-      "seal_amount": 4432376,
-      "amount": 78451308
-    },
-    {
-      "code": "002635",
-      "name": "安洁科技",
-      "theme": null,
-      "height": 1,
-      "first_limit": "09:49",
-      "last_limit": "09:49",
-      "open_count": null,
-      "seal_amount": 162700810,
-      "amount": 521679230
-    },
-    {
-      "code": "300931",
-      "name": "通用电梯",
-      "theme": null,
-      "height": 1,
-      "first_limit": "09:59",
-      "last_limit": "09:59",
-      "open_count": null,
-      "seal_amount": 2560693,
-      "amount": 855991340
+      "seal_amount": 0,
+      "amount": 87462746
     }
   ],
   "themes": [],
   "intraday": {
-    "snapshot_count": 6,
+    "snapshot_count": 7,
     "timeline_ready": false
   },
   "data_quality": {
