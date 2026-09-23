@@ -2,7 +2,7 @@
   "schema_version": 1,
   "ok": true,
   "trade_date": "2026-09-23",
-  "generated_at": "2026-09-23T05:48:32.273937+00:00",
+  "generated_at": "2026-09-23T05:58:16.917002+00:00",
   "principles": [
     "不使用5/10/20日均线判断情绪周期",
     "龙头强度与市场生态分开计算",
@@ -10,31 +10,31 @@
     "缺失数据不补造、不按0分处理"
   ],
   "dashboard": {
-    "market_composite": 42,
+    "market_composite": 44,
     "leader_strength": 72,
-    "market_ecology": 31,
+    "market_ecology": 33,
     "market_width": null,
-    "relay_ecology": 10.72,
+    "relay_ecology": 14.67,
     "mainline_strength": null,
     "loss_effect": 95,
     "structure_label": "龙头强 / 生态弱：龙头抱团 / 生态分歧"
   },
   "large_cycle": {
     "stage": "分歧",
-    "score": 42,
+    "score": 44,
     "trend": "↓",
     "method": "评分 + 结构 + 连续性；不使用均线",
     "continuity": {
       "limit_up": "down",
-      "seal_rate": "down",
+      "seal_rate": "flat",
       "highest_board": "flat"
     },
     "supporting_factors": [],
     "pressure_factors": [
       "最高板高度不足",
-      "晋级率仅14.29%",
-      "炸板率36.23%偏高",
-      "昨日涨停平均反馈-0.12%偏弱",
+      "晋级率仅15.87%",
+      "炸板率32.86%偏高",
+      "昨日涨停平均反馈-0.1%偏弱",
       "近端涨停数量未形成上升趋势"
     ],
     "confidence": "medium",
@@ -49,7 +49,7 @@
     "score": null,
     "trend": "—",
     "timeline_ready": false,
-    "snapshot_count": 2,
+    "snapshot_count": 3,
     "required_snapshot_count": 6,
     "timeline": [],
     "note": "不会用收盘单点反推全天路径。"
@@ -82,10 +82,10 @@
         },
         {
           "metric": "封单/成交额",
-          "value": 51.32,
+          "value": 49.25,
           "weight": 15,
-          "normalized": 100,
-          "contribution": 23.08
+          "normalized": 98.48,
+          "contribution": 22.73
         },
         {
           "metric": "龙头所在题材涨停数",
@@ -108,43 +108,43 @@
       "label": "强"
     },
     "market_ecology": {
-      "score": 31,
+      "score": 33,
       "coverage_pct": 94.0,
       "components": [
         {
           "metric": "涨停数量",
-          "value": 44,
+          "value": 47,
           "weight": 16,
-          "normalized": 30.0,
-          "contribution": 5.11
+          "normalized": 33.75,
+          "contribution": 5.74
         },
         {
           "metric": "炸板率",
-          "value": 36.23,
+          "value": 32.86,
           "weight": 16,
-          "normalized": 34.43,
-          "contribution": 5.86
+          "normalized": 42.85,
+          "contribution": 7.29
         },
         {
           "metric": "连板晋级率",
-          "value": 14.29,
+          "value": 15.87,
           "weight": 18,
-          "normalized": 10.72,
-          "contribution": 2.05
+          "normalized": 14.67,
+          "contribution": 2.81
         },
         {
           "metric": "昨日涨停平均反馈",
-          "value": -0.12,
+          "value": -0.1,
           "weight": 14,
-          "normalized": 38.8,
-          "contribution": 5.78
+          "normalized": 39.0,
+          "contribution": 5.81
         },
         {
           "metric": "中位股平均反馈",
-          "value": 0.93,
+          "value": 0.75,
           "weight": 12,
-          "normalized": 59.3,
-          "contribution": 7.57
+          "normalized": 57.5,
+          "contribution": 7.34
         },
         {
           "metric": "中位股大亏比例",
@@ -155,10 +155,10 @@
         },
         {
           "metric": "跌停数量",
-          "value": 11,
+          "value": 12,
           "weight": 8,
-          "normalized": 45.0,
-          "contribution": 3.83
+          "normalized": 40.0,
+          "contribution": 3.4
         },
         {
           "metric": "市场上涨宽度",
