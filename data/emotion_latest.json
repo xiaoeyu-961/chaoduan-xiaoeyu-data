@@ -2,20 +2,20 @@
   "schema_version": 1,
   "ok": true,
   "trade_date": "2026-09-23",
-  "updated_at": "2026-09-23T02:30:24.829894Z",
+  "updated_at": "2026-09-23T02:47:20.103237Z",
   "source": "GitHub Actions · 东方财富公开行情",
   "principle": "仅保存事实数据，不在采集层生成周期标签或主观评分。",
   "market_ecology": {
-    "limit_up_count": 32,
+    "limit_up_count": 33,
     "limit_down_count": 0,
-    "broken_count": 17,
-    "broken_rate_pct": 34.69,
-    "seal_rate_pct": 65.31,
+    "broken_count": 20,
+    "broken_rate_pct": 37.74,
+    "seal_rate_pct": 62.26,
     "highest_board": 4,
     "promotion": {
       "eligible": 63,
-      "promoted": 8,
-      "rate_pct": 12.7,
+      "promoted": 9,
+      "rate_pct": 14.29,
       "by_height": {
         "1": {
           "eligible": 39,
@@ -24,8 +24,8 @@
         },
         "2": {
           "eligible": 17,
-          "promoted": 5,
-          "rate_pct": 29.41
+          "promoted": 6,
+          "rate_pct": 35.29
         },
         "3": {
           "eligible": 4,
@@ -51,46 +51,38 @@
     },
     "previous_limit_up_feedback": {
       "sample": 62,
-      "avg_change_pct": 0.51,
-      "median_change_pct": -0.45,
-      "positive_rate_pct": 50.0,
-      "loss_below_minus_5_rate_pct": 14.52,
-      "carried_forward": true,
-      "as_of": "2026-09-23T02:13:23.411881Z"
+      "avg_change_pct": 0.08,
+      "median_change_pct": -1.06,
+      "positive_rate_pct": 40.32,
+      "loss_below_minus_5_rate_pct": 19.35
     },
     "high_position_feedback": {
       "sample": 3,
-      "avg_change_pct": 6.11,
-      "median_change_pct": 6.85,
+      "avg_change_pct": 5.04,
+      "median_change_pct": 6.28,
       "positive_rate_pct": 100.0,
-      "loss_below_minus_5_rate_pct": 0.0,
-      "carried_forward": true,
-      "as_of": "2026-09-23T02:13:23.411881Z"
+      "loss_below_minus_5_rate_pct": 0.0
     },
     "middle_position_feedback": {
       "sample": 21,
-      "avg_change_pct": 2.04,
-      "median_change_pct": 0.67,
-      "positive_rate_pct": 57.14,
-      "loss_below_minus_5_rate_pct": 28.57,
-      "carried_forward": true,
-      "as_of": "2026-09-23T02:13:23.411881Z"
+      "avg_change_pct": 1.81,
+      "median_change_pct": -0.29,
+      "positive_rate_pct": 47.62,
+      "loss_below_minus_5_rate_pct": 28.57
     },
     "first_board_feedback": {
       "sample": 38,
-      "avg_change_pct": -0.77,
-      "median_change_pct": -2.08,
-      "positive_rate_pct": 42.11,
-      "loss_below_minus_5_rate_pct": 7.89,
-      "carried_forward": true,
-      "as_of": "2026-09-23T02:13:23.411881Z"
+      "avg_change_pct": -1.27,
+      "median_change_pct": -2.83,
+      "positive_rate_pct": 31.58,
+      "loss_below_minus_5_rate_pct": 15.79
     },
     "market_width": {
       "available": false,
       "up": null,
       "down": null,
       "flat": null,
-      "sample": 0
+      "sample": 1400
     }
   },
   "leader_candidates": [
@@ -102,8 +94,8 @@
       "first_limit": "93016",
       "last_limit": "93016",
       "open_count": 0,
-      "seal_amount": 191210450.0,
-      "amount": 287896096.0
+      "seal_amount": 190870050.0,
+      "amount": 290561936.0
     },
     {
       "code": "000910",
@@ -113,8 +105,8 @@
       "first_limit": "93039",
       "last_limit": "93039",
       "open_count": 0,
-      "seal_amount": 160932041.0,
-      "amount": 204150267.0
+      "seal_amount": 154173713.0,
+      "amount": 206424267.0
     },
     {
       "code": "001234",
@@ -124,8 +116,8 @@
       "first_limit": "92500",
       "last_limit": "92500",
       "open_count": 0,
-      "seal_amount": 359845448.0,
-      "amount": 78745425.0
+      "seal_amount": 358143126.0,
+      "amount": 80476709.0
     },
     {
       "code": "600825",
@@ -135,8 +127,8 @@
       "first_limit": "92500",
       "last_limit": "92500",
       "open_count": 0,
-      "seal_amount": 3662338965.0,
-      "amount": 26172126.0
+      "seal_amount": 3527427336.0,
+      "amount": 26799054.0
     },
     {
       "code": "603636",
@@ -146,8 +138,8 @@
       "first_limit": "92501",
       "last_limit": "95837",
       "open_count": 3,
-      "seal_amount": 97316000.0,
-      "amount": 612310752.0
+      "seal_amount": 92459575.0,
+      "amount": 616513488.0
     },
     {
       "code": "600743",
@@ -157,8 +149,19 @@
       "first_limit": "93010",
       "last_limit": "93010",
       "open_count": 0,
-      "seal_amount": 340434765.0,
-      "amount": 263101172.0
+      "seal_amount": 333436371.0,
+      "amount": 264101426.0
+    },
+    {
+      "code": "000560",
+      "name": "我爱我家",
+      "theme": "房地产服",
+      "height": 3,
+      "first_limit": "93021",
+      "last_limit": "103139",
+      "open_count": 4,
+      "seal_amount": 229538065.0,
+      "amount": 1107051360.0
     },
     {
       "code": "002614",
@@ -168,8 +171,8 @@
       "first_limit": "93109",
       "last_limit": "102051",
       "open_count": 7,
-      "seal_amount": 99220701.0,
-      "amount": 958221168.0
+      "seal_amount": 94133661.0,
+      "amount": 962005408.0
     },
     {
       "code": "002238",
@@ -179,8 +182,8 @@
       "first_limit": "92500",
       "last_limit": "92500",
       "open_count": 0,
-      "seal_amount": 154613346.0,
-      "amount": 79190221.0
+      "seal_amount": 151137238.0,
+      "amount": 80666303.0
     },
     {
       "code": "600802",
@@ -190,19 +193,8 @@
       "first_limit": "100124",
       "last_limit": "100124",
       "open_count": 0,
-      "seal_amount": 158291023.0,
-      "amount": 171108069.0
-    },
-    {
-      "code": "600616",
-      "name": "金枫酒业",
-      "theme": "非白酒",
-      "height": 1,
-      "first_limit": "100656",
-      "last_limit": "100711",
-      "open_count": 1,
-      "seal_amount": 128896733.0,
-      "amount": 403723104.0
+      "seal_amount": 147589781.0,
+      "amount": 174526917.0
     }
   ],
   "themes": [
@@ -229,24 +221,24 @@
       ]
     },
     {
-      "name": "家居用品",
+      "name": "房地产服",
       "limit_up_count": 2,
-      "first_board_count": 1,
+      "first_board_count": 0,
       "second_board_count": 0,
-      "third_board_count": 0,
-      "high_board_count": 1,
-      "max_height": 4,
+      "third_board_count": 2,
+      "high_board_count": 0,
+      "max_height": 3,
       "active_days_3": 3,
       "leaders": [
         {
-          "code": "000910",
-          "name": "大亚圣象",
-          "height": 4
+          "code": "000560",
+          "name": "我爱我家",
+          "height": 3
         },
         {
-          "code": "605268",
-          "name": "王力安防",
-          "height": 1
+          "code": "600743",
+          "name": "华远控股",
+          "height": 3
         }
       ]
     },
@@ -268,6 +260,28 @@
         {
           "code": "600790",
           "name": "轻纺城",
+          "height": 1
+        }
+      ]
+    },
+    {
+      "name": "化学制品",
+      "limit_up_count": 2,
+      "first_board_count": 2,
+      "second_board_count": 0,
+      "third_board_count": 0,
+      "high_board_count": 0,
+      "max_height": 1,
+      "active_days_3": 3,
+      "leaders": [
+        {
+          "code": "002909",
+          "name": "集泰股份",
+          "height": 1
+        },
+        {
+          "code": "600230",
+          "name": "沧州大化",
           "height": 1
         }
       ]
@@ -339,24 +353,19 @@
       ]
     },
     {
-      "name": "非白酒",
-      "limit_up_count": 2,
-      "first_board_count": 2,
+      "name": "家居用品",
+      "limit_up_count": 1,
+      "first_board_count": 0,
       "second_board_count": 0,
       "third_board_count": 0,
-      "high_board_count": 0,
-      "max_height": 1,
-      "active_days_3": 2,
+      "high_board_count": 1,
+      "max_height": 4,
+      "active_days_3": 3,
       "leaders": [
         {
-          "code": "600059",
-          "name": "古越龙山",
-          "height": 1
-        },
-        {
-          "code": "600616",
-          "name": "金枫酒业",
-          "height": 1
+          "code": "000910",
+          "name": "大亚圣象",
+          "height": 4
         }
       ]
     },
@@ -390,23 +399,6 @@
         {
           "code": "002614",
           "name": "奥佳华",
-          "height": 3
-        }
-      ]
-    },
-    {
-      "name": "房地产服",
-      "limit_up_count": 1,
-      "first_board_count": 0,
-      "second_board_count": 0,
-      "third_board_count": 1,
-      "high_board_count": 0,
-      "max_height": 3,
-      "active_days_3": 3,
-      "leaders": [
-        {
-          "code": "600743",
-          "name": "华远控股",
           "height": 3
         }
       ]
@@ -514,23 +506,6 @@
       ]
     },
     {
-      "name": "化学制品",
-      "limit_up_count": 1,
-      "first_board_count": 1,
-      "second_board_count": 0,
-      "third_board_count": 0,
-      "high_board_count": 0,
-      "max_height": 1,
-      "active_days_3": 3,
-      "leaders": [
-        {
-          "code": "600230",
-          "name": "沧州大化",
-          "height": 1
-        }
-      ]
-    },
-    {
       "name": "商用车",
       "limit_up_count": 1,
       "first_board_count": 1,
@@ -633,6 +608,23 @@
       ]
     },
     {
+      "name": "电池",
+      "limit_up_count": 1,
+      "first_board_count": 1,
+      "second_board_count": 0,
+      "third_board_count": 0,
+      "high_board_count": 0,
+      "max_height": 1,
+      "active_days_3": 1,
+      "leaders": [
+        {
+          "code": "301150",
+          "name": "中一科技",
+          "height": 1
+        }
+      ]
+    },
+    {
       "name": "纺织制造",
       "limit_up_count": 1,
       "first_board_count": 1,
@@ -665,18 +657,34 @@
           "height": 1
         }
       ]
+    },
+    {
+      "name": "非白酒",
+      "limit_up_count": 1,
+      "first_board_count": 1,
+      "second_board_count": 0,
+      "third_board_count": 0,
+      "high_board_count": 0,
+      "max_height": 1,
+      "active_days_3": 2,
+      "leaders": [
+        {
+          "code": "600059",
+          "name": "古越龙山",
+          "height": 1
+        }
+      ]
     }
   ],
   "intraday": {
-    "snapshot_count": 5,
-    "timeline_ready": false
+    "snapshot_count": 6,
+    "timeline_ready": true
   },
   "data_quality": {
     "daily_sessions": 15,
     "complete": false,
     "missing": [
-      "全市场上涨/下跌家数",
-      "完整日内情绪时间轴"
+      "全市场上涨/下跌家数"
     ],
     "confidence": "medium"
   }
