@@ -2,7 +2,7 @@
   "schema_version": 1,
   "ok": true,
   "trade_date": "2026-09-23",
-  "generated_at": "2026-09-23T02:58:45.970036+00:00",
+  "generated_at": "2026-09-23T03:20:39.856946+00:00",
   "principles": [
     "不使用5/10/20日均线判断情绪周期",
     "龙头强度与市场生态分开计算",
@@ -10,9 +10,9 @@
     "缺失数据不补造、不按0分处理"
   ],
   "dashboard": {
-    "market_composite": 39,
+    "market_composite": 40,
     "leader_strength": 53,
-    "market_ecology": 34,
+    "market_ecology": 35,
     "market_width": null,
     "relay_ecology": 10.72,
     "mainline_strength": 50,
@@ -20,8 +20,8 @@
     "structure_label": "龙头弱 / 生态弱：退潮风险"
   },
   "large_cycle": {
-    "stage": "退潮",
-    "score": 39,
+    "stage": "混沌",
+    "score": 40,
     "trend": "↓",
     "method": "评分 + 结构 + 连续性；不使用均线",
     "continuity": {
@@ -33,12 +33,12 @@
     "pressure_factors": [
       "最高板高度不足",
       "晋级率仅14.29%",
-      "炸板率38.89%偏高",
-      "昨日涨停平均反馈-0.13%偏弱",
+      "炸板率37.93%偏高",
+      "昨日涨停平均反馈-0.29%偏弱",
       "近端涨停数量未形成上升趋势"
     ],
     "confidence": "medium",
-    "conclusion": "退潮；龙头弱 / 生态弱：退潮风险"
+    "conclusion": "混沌；龙头弱 / 生态弱：退潮风险"
   },
   "medium_cycle": {
     "mainline": {
@@ -772,7 +772,7 @@
         }
       },
       {
-        "theme": "房地产开",
+        "theme": "光学光电",
         "stage": "萌芽",
         "score": 26,
         "trend": "↑",
@@ -783,7 +783,7 @@
           "capital_persistence": 100
         },
         "facts": {
-          "name": "房地产开",
+          "name": "光学光电",
           "limit_up_count": 1,
           "first_board_count": 1,
           "second_board_count": 0,
@@ -793,8 +793,72 @@
           "active_days_3": 3,
           "leaders": [
             {
-              "code": "600675",
-              "name": "中华企业",
+              "code": "603773",
+              "name": "沃格光电",
+              "height": 1
+            }
+          ]
+        },
+        "explanation": {
+          "score": 26,
+          "coverage_pct": 100.0,
+          "components": [
+            {
+              "metric": "龙头强度",
+              "value": 1,
+              "weight": 30,
+              "normalized": 0,
+              "contribution": 0.0
+            },
+            {
+              "metric": "板块宽度",
+              "value": 1,
+              "weight": 25,
+              "normalized": 0,
+              "contribution": 0.0
+            },
+            {
+              "metric": "梯队完整度",
+              "value": 1,
+              "weight": 25,
+              "normalized": 25.0,
+              "contribution": 6.25
+            },
+            {
+              "metric": "资金持续性",
+              "value": 3,
+              "weight": 20,
+              "normalized": 100,
+              "contribution": 20.0
+            }
+          ],
+          "missing_metrics": []
+        }
+      },
+      {
+        "theme": "半导体",
+        "stage": "萌芽",
+        "score": 26,
+        "trend": "↑",
+        "subscores": {
+          "leader_strength": 0,
+          "sector_width": 0,
+          "ladder_completeness": 25,
+          "capital_persistence": 100
+        },
+        "facts": {
+          "name": "半导体",
+          "limit_up_count": 1,
+          "first_board_count": 1,
+          "second_board_count": 0,
+          "third_board_count": 0,
+          "high_board_count": 0,
+          "max_height": 1,
+          "active_days_3": 3,
+          "leaders": [
+            {
+              "code": "002119",
+              "name": "康强电子",
               "height": 1
             }
           ]
@@ -894,6 +958,85 @@
               "weight": 20,
               "normalized": 100,
               "contribution": 20.0
+            }
+          ],
+          "missing_metrics": []
+        }
+      },
+      {
+        "theme": "通用设备",
+        "stage": "萌芽",
+        "score": 25,
+        "trend": "↑",
+        "subscores": {
+          "leader_strength": 0,
+          "sector_width": 33,
+          "ladder_completeness": 25,
+          "capital_persistence": 50
+        },
+        "facts": {
+          "name": "通用设备",
+          "limit_up_count": 4,
+          "first_board_count": 4,
+          "second_board_count": 0,
+          "third_board_count": 0,
+          "high_board_count": 0,
+          "max_height": 1,
+          "active_days_3": 2,
+          "leaders": [
+            {
+              "code": "688628",
+              "name": "优利德",
+              "height": 1
+            },
+            {
+              "code": "002849",
+              "name": "威星智能",
+              "height": 1
+            },
+            {
+              "code": "002819",
+              "name": "东方中科",
+              "height": 1
+            },
+            {
+              "code": "002633",
+              "name": "申科股份",
+              "height": 1
+            }
+          ]
+        },
+        "explanation": {
+          "score": 25,
+          "coverage_pct": 100.0,
+          "components": [
+            {
+              "metric": "龙头强度",
+              "value": 1,
+              "weight": 30,
+              "normalized": 0,
+              "contribution": 0.0
+            },
+            {
+              "metric": "板块宽度",
+              "value": 4,
+              "weight": 25,
+              "normalized": 33.33,
+              "contribution": 8.33
+            },
+            {
+              "metric": "梯队完整度",
+              "value": 1,
+              "weight": 25,
+              "normalized": 25.0,
+              "contribution": 6.25
+            },
+            {
+              "metric": "资金持续性",
+              "value": 2,
+              "weight": 20,
+              "normalized": 50.0,
+              "contribution": 10.0
             }
           ],
           "missing_metrics": []
@@ -1097,70 +1240,6 @@
         }
       },
       {
-        "theme": "商用车",
-        "stage": "萌芽",
-        "score": 16,
-        "trend": "↑",
-        "subscores": {
-          "leader_strength": 0,
-          "sector_width": 0,
-          "ladder_completeness": 25,
-          "capital_persistence": 50
-        },
-        "facts": {
-          "name": "商用车",
-          "limit_up_count": 1,
-          "first_board_count": 1,
-          "second_board_count": 0,
-          "third_board_count": 0,
-          "high_board_count": 0,
-          "max_height": 1,
-          "active_days_3": 2,
-          "leaders": [
-            {
-              "code": "000868",
-              "name": "安凯客车",
-              "height": 1
-            }
-          ]
-        },
-        "explanation": {
-          "score": 16,
-          "coverage_pct": 100.0,
-          "components": [
-            {
-              "metric": "龙头强度",
-              "value": 1,
-              "weight": 30,
-              "normalized": 0,
-              "contribution": 0.0
-            },
-            {
-              "metric": "板块宽度",
-              "value": 1,
-              "weight": 25,
-              "normalized": 0,
-              "contribution": 0.0
-            },
-            {
-              "metric": "梯队完整度",
-              "value": 1,
-              "weight": 25,
-              "normalized": 25.0,
-              "contribution": 6.25
-            },
-            {
-              "metric": "资金持续性",
-              "value": 2,
-              "weight": 20,
-              "normalized": 50.0,
-              "contribution": 10.0
-            }
-          ],
-          "missing_metrics": []
-        }
-      },
-      {
         "theme": "玻璃玻纤",
         "stage": "萌芽",
         "score": 16,
@@ -1248,134 +1327,6 @@
             {
               "code": "000850",
               "name": "华茂股份",
-              "height": 1
-            }
-          ]
-        },
-        "explanation": {
-          "score": 16,
-          "coverage_pct": 100.0,
-          "components": [
-            {
-              "metric": "龙头强度",
-              "value": 1,
-              "weight": 30,
-              "normalized": 0,
-              "contribution": 0.0
-            },
-            {
-              "metric": "板块宽度",
-              "value": 1,
-              "weight": 25,
-              "normalized": 0,
-              "contribution": 0.0
-            },
-            {
-              "metric": "梯队完整度",
-              "value": 1,
-              "weight": 25,
-              "normalized": 25.0,
-              "contribution": 6.25
-            },
-            {
-              "metric": "资金持续性",
-              "value": 2,
-              "weight": 20,
-              "normalized": 50.0,
-              "contribution": 10.0
-            }
-          ],
-          "missing_metrics": []
-        }
-      },
-      {
-        "theme": "通用设备",
-        "stage": "萌芽",
-        "score": 16,
-        "trend": "↑",
-        "subscores": {
-          "leader_strength": 0,
-          "sector_width": 0,
-          "ladder_completeness": 25,
-          "capital_persistence": 50
-        },
-        "facts": {
-          "name": "通用设备",
-          "limit_up_count": 1,
-          "first_board_count": 1,
-          "second_board_count": 0,
-          "third_board_count": 0,
-          "high_board_count": 0,
-          "max_height": 1,
-          "active_days_3": 2,
-          "leaders": [
-            {
-              "code": "002849",
-              "name": "威星智能",
-              "height": 1
-            }
-          ]
-        },
-        "explanation": {
-          "score": 16,
-          "coverage_pct": 100.0,
-          "components": [
-            {
-              "metric": "龙头强度",
-              "value": 1,
-              "weight": 30,
-              "normalized": 0,
-              "contribution": 0.0
-            },
-            {
-              "metric": "板块宽度",
-              "value": 1,
-              "weight": 25,
-              "normalized": 0,
-              "contribution": 0.0
-            },
-            {
-              "metric": "梯队完整度",
-              "value": 1,
-              "weight": 25,
-              "normalized": 25.0,
-              "contribution": 6.25
-            },
-            {
-              "metric": "资金持续性",
-              "value": 2,
-              "weight": 20,
-              "normalized": 50.0,
-              "contribution": 10.0
-            }
-          ],
-          "missing_metrics": []
-        }
-      },
-      {
-        "theme": "非白酒",
-        "stage": "萌芽",
-        "score": 16,
-        "trend": "↑",
-        "subscores": {
-          "leader_strength": 0,
-          "sector_width": 0,
-          "ladder_completeness": 25,
-          "capital_persistence": 50
-        },
-        "facts": {
-          "name": "非白酒",
-          "limit_up_count": 1,
-          "first_board_count": 1,
-          "second_board_count": 0,
-          "third_board_count": 0,
-          "high_board_count": 0,
-          "max_height": 1,
-          "active_days_3": 2,
-          "leaders": [
-            {
-              "code": "600059",
-              "name": "古越龙山",
               "height": 1
             }
           ]
@@ -1809,15 +1760,79 @@
           ],
           "missing_metrics": []
         }
+      },
+      {
+        "theme": "非白酒",
+        "stage": "萌芽",
+        "score": 6,
+        "trend": "→",
+        "subscores": {
+          "leader_strength": 0,
+          "sector_width": 0,
+          "ladder_completeness": 25,
+          "capital_persistence": 0
+        },
+        "facts": {
+          "name": "非白酒",
+          "limit_up_count": 1,
+          "first_board_count": 1,
+          "second_board_count": 0,
+          "third_board_count": 0,
+          "high_board_count": 0,
+          "max_height": 1,
+          "active_days_3": 1,
+          "leaders": [
+            {
+              "code": "600059",
+              "name": "古越龙山",
+              "height": 1
+            }
+          ]
+        },
+        "explanation": {
+          "score": 6,
+          "coverage_pct": 100.0,
+          "components": [
+            {
+              "metric": "龙头强度",
+              "value": 1,
+              "weight": 30,
+              "normalized": 0,
+              "contribution": 0.0
+            },
+            {
+              "metric": "板块宽度",
+              "value": 1,
+              "weight": 25,
+              "normalized": 0,
+              "contribution": 0.0
+            },
+            {
+              "metric": "梯队完整度",
+              "value": 1,
+              "weight": 25,
+              "normalized": 25.0,
+              "contribution": 6.25
+            },
+            {
+              "metric": "资金持续性",
+              "value": 1,
+              "weight": 20,
+              "normalized": 0,
+              "contribution": 0.0
+            }
+          ],
+          "missing_metrics": []
+        }
       }
     ]
   },
   "small_cycle": {
-    "stage": "震荡",
+    "stage": "修复",
     "score": null,
     "trend": "→",
     "timeline_ready": true,
-    "snapshot_count": 7,
+    "snapshot_count": 8,
     "timeline": [
       {
         "time": "2026-09-23T01:28:33.345439Z",
@@ -1944,6 +1959,24 @@
           },
           "strongest_theme": "出版"
         }
+      },
+      {
+        "time": "2026-09-23T03:20:22.239440Z",
+        "node": "修复",
+        "facts": {
+          "time": "2026-09-23T03:20:22.239440Z",
+          "limit_up_count": 36,
+          "limit_down_count": 0,
+          "broken_count": 22,
+          "broken_rate_pct": 37.93,
+          "promotion_rate_pct": 14.29,
+          "highest_board": 4,
+          "leader": {
+            "code": "601811",
+            "name": "新华文轩"
+          },
+          "strongest_theme": "通用设备"
+        }
       }
     ],
     "note": "日内节点不直接改写大周期。"
@@ -1976,7 +2009,7 @@
         },
         {
           "metric": "封单/成交额",
-          "value": 63.84,
+          "value": 61.77,
           "weight": 15,
           "normalized": 100,
           "contribution": 15.0
@@ -1999,22 +2032,22 @@
       "label": "弱"
     },
     "market_ecology": {
-      "score": 34,
+      "score": 35,
       "coverage_pct": 94.0,
       "components": [
         {
           "metric": "涨停数量",
-          "value": 33,
+          "value": 36,
           "weight": 16,
-          "normalized": 16.25,
-          "contribution": 2.77
+          "normalized": 20.0,
+          "contribution": 3.4
         },
         {
           "metric": "炸板率",
-          "value": 38.89,
+          "value": 37.93,
           "weight": 16,
-          "normalized": 27.77,
-          "contribution": 4.73
+          "normalized": 30.18,
+          "contribution": 5.14
         },
         {
           "metric": "连板晋级率",
@@ -2025,17 +2058,17 @@
         },
         {
           "metric": "昨日涨停平均反馈",
-          "value": -0.13,
+          "value": -0.29,
           "weight": 14,
-          "normalized": 38.7,
-          "contribution": 5.76
+          "normalized": 37.1,
+          "contribution": 5.53
         },
         {
           "metric": "中位股平均反馈",
-          "value": 1.57,
+          "value": 1.41,
           "weight": 12,
-          "normalized": 65.7,
-          "contribution": 8.39
+          "normalized": 64.1,
+          "contribution": 8.18
         },
         {
           "metric": "中位股大亏比例",
