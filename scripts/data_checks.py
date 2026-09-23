@@ -1,0 +1,33 @@
+"""Conservative quality gates shared by collection and analysis."""
+from datetime import datetime, timedelta, timezone
+
+CN = timezone(timedelta(hours=8))
+
+
+def intraday_quality(rows, trade_date):
+    accepted = {}
+    for row in rows:
+        try:
+            stamp = datetime.fromisoformat(row['time'].replace('Z', '+00:00'))
+            if stamp.tzinfo is None:
+                continue
+            stamp = stamp.astimezone(CN)
+        except (KeyError, ValueError, TypeError):
+            continue
+        minute = stamp.hour * 60 + stamp.minute
+        if stamp.date().isoformat() != trade_date or not (570 <= minute <= 690 or 780 <= minute <= 900):
+            continue
+        if any(row.get(k) is None for k in ('limit_up_count', 'broken_rate_pct', 'promotion_rate_pct', 'limit_down_count')):
+            continue
+        accepted[minute] = row
+    minutes = sorted(accepted)
+    # Six samples alone cannot establish a full-day path.
+    ready = (len(minutes) >= 6 and minutes[0] <= 600 and minutes[-1] >= 890
+             and any(660 <= m <= 690 for m in minutes)
+             and any(780 <= m <= 810 for m in minutes))
+    return [accepted[m] for m in minutes], {
+        'snapshot_count': len(rows), 'valid_snapshot_count': len(minutes),
+        'excluded_snapshot_count': len(rows) - len(minutes),
+        'timeline_ready': ready,
+        'note': '仅接受同日北京时间交易时段的有效分钟快照；还须覆盖开盘、午前、午后及尾盘。',
+    }

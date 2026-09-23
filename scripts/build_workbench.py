@@ -36,7 +36,9 @@ def build_daily(market: dict, emotion: dict, cycle: dict) -> dict:
         "shenzhen_close": sz.get("price"), "shenzhen_pct": sz.get("change"),
         "chinext_close": cy.get("price"), "chinext_pct": cy.get("change"),
         "star50_close": kc.get("price"), "star50_pct": kc.get("change"),
-        "turnover_cny": (sh.get("amount") or 0) + (sz.get("amount") or 0) or None,
+        "turnover_cny": ((market.get("breadth") or {}).get("totalAmount")
+                         if market.get("source") == "同花顺官方 Financial-API"
+                         else (sh.get("amount") or 0) + (sz.get("amount") or 0) or None),
         "up_count": breadth.get("up") if breadth.get("available") else None,
         "down_count": breadth.get("down") if breadth.get("available") else None,
         "flat_count": breadth.get("flat") if breadth.get("available") else None,
@@ -55,8 +57,11 @@ def build_daily(market: dict, emotion: dict, cycle: dict) -> dict:
     }
 
 
-def build_ladder(market: dict) -> dict:
+def build_ladder(market: dict, details: dict | None = None) -> dict:
     grouped: dict[str, list[dict]] = {}
+    details = details or {}
+    auction = {r.get("ticker"): r for r in (details.get("auction") or {}).get("items") or []}
+    anomaly = {r.get("thscode"): r for r in details.get("anomaly_analysis") or []}
     for row in market.get("limitUps") or []:
         height = str(row.get("height") or 1)
         grouped.setdefault(height, []).append({
@@ -64,6 +69,10 @@ def build_ladder(market: dict) -> dict:
             "height": row.get("height"), "first_limit": row.get("firstLimit"),
             "last_limit": row.get("lastLimit"), "open_count": row.get("openCount"),
             "amount": row.get("amount"), "seal_amount": row.get("sealAmount"),
+            "limit_reason": row.get("limitReason"), "price": row.get("price"),
+            "auction": auction.get(row.get("code")),
+            "anomaly_analysis": anomaly.get(row.get("thscode")),
+            "data_source": market.get("source"),
         })
     return {key: grouped[key] for key in sorted(grouped, key=int, reverse=True)}
 
@@ -72,6 +81,7 @@ def main() -> None:
     workbench = load("workbench_latest.json")
     market, emotion = load("market_latest.json"), load("emotion_latest.json")
     cycle, intraday = load("cycle_analysis_latest.json"), load("intraday_latest.json")
+    details = load("hithink_latest.json") if market.get("source") == "同花顺官方 Financial-API" else {}
     date = market["tradeDate"]
 
     workbench.setdefault("meta", {})["generated_at"] = cycle.get("generated_at")
@@ -105,11 +115,14 @@ def main() -> None:
     timeline["mid_cycle"] = sorted(mid, key=lambda row: row["date"])
     timeline["intraday"] = intraday.get("snapshots") or []
 
-    workbench.setdefault("ladder", {})[date] = build_ladder(market)
+    workbench.setdefault("ladder", {})[date] = build_ladder(market, details)
+    if details:
+        workbench["hithink_facts"] = details
     workbench["sector_strength"] = {
         "date": date,
         "method": "龙头强度30% + 板块宽度25% + 梯队完整度25% + 资金持续性20%",
         "sectors": (cycle.get("medium_cycle") or {}).get("themes", []),
+        "official_sector_facts": details.get("sectors") if details else None,
     }
 
     old_quality = workbench.get("data_quality") or {}
@@ -127,7 +140,7 @@ def main() -> None:
         "cycle_analysis_data": True,
         "missing_fields": list(dict.fromkeys(missing)),
         "analysis_allowed": bool((cycle.get("data_quality") or {}).get("analysis_allowed")),
-        "intraday_trigger_validation_allowed": bool((cycle.get("data_quality") or {}).get("small_cycle_allowed")),
+        "intraday_trigger_validation_allowed": False,
         "analysis_scope": "允许盘后结构与三层周期分析；缺失市场宽度或完整盘中时间轴时降低置信度，不补造。",
     }
     save("workbench_latest.json", workbench)

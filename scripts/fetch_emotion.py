@@ -13,9 +13,12 @@ from collections import Counter, defaultdict
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timedelta
 from pathlib import Path
+from data_checks import intraday_quality
 from urllib.parse import quote
 
 from fetch_market import CN_TZ, POOL_URLS, get_json, normalize_stock, number
+from hithink_client import get as hithink_get, pool as hithink_pool
+from fetch_hithink import normalize_stock as hithink_stock
 
 DATA_DIR = Path("data")
 MARKET_FILE = DATA_DIR / "market_latest.json"
@@ -101,6 +104,59 @@ def collect_sessions(end_date: str, target: int = 20) -> list[dict]:
             "stocks": stocks,
         })
     return sessions
+
+
+def collect_hithink_sessions(end_date: str, today: dict, target: int = 8) -> list[dict]:
+    """Build a source-consistent recent history; unavailable dates stay missing."""
+    end = datetime.strptime(end_date, "%Y-%m-%d").replace(tzinfo=CN_TZ)
+    sessions = []
+    for offset in reversed(range(12)):
+        date = (end - timedelta(days=offset)).strftime("%Y-%m-%d")
+        if date == end_date:
+            up = today.get("limitUps") or []
+            broken_count = today.get("brokenCount")
+            down_count = today.get("limitDownCount")
+        else:
+            try:
+                up = [hithink_stock(row) for row in hithink_pool("limitUp", date)]
+                if not up:
+                    continue
+                broken_count = len(hithink_pool("broken", date))
+                down_count = len(hithink_pool("limitDown", date))
+            except Exception:
+                continue
+        if not up or broken_count is None or down_count is None:
+            continue
+        heights = Counter(int(r["height"]) for r in up if r.get("height") is not None)
+        total = len(up) + broken_count
+        sessions.append({"date": date, "limit_up_count": len(up),
+                         "broken_count": broken_count, "limit_down_count": down_count,
+                         "seal_rate_pct": round(len(up) / total * 100, 2) if total else None,
+                         "highest_board": max(heights, default=0),
+                         "height_counts": {str(k): v for k, v in heights.items()},
+                         "stocks": up})
+    return sessions[-target:]
+
+
+def hithink_quotes(codes: list[str]) -> dict[str, dict]:
+    result = {}
+    for start in range(0, len(codes), 100):
+        batch = codes[start:start + 100]
+        if not batch:
+            continue
+        try:
+            data = hithink_get("/api/a-share/prices/snapshot", {
+                "thscodes": ",".join(("%s.SH" if c.startswith(("6", "9")) else
+                                      "%s.BJ" if c.startswith(("4", "8")) else "%s.SZ") % c
+                                     for c in batch)})
+        except Exception:
+            continue
+        for row in data.get("item") or []:
+            code = row.get("ticker")
+            result[code] = {"code": code, "price": row.get("last_price"),
+                            "change_pct": row.get("price_change_ratio_pct"),
+                            "amount": row.get("turnover")}
+    return result
 
 
 def promotion(prev: dict, current: dict) -> dict:
@@ -246,6 +302,7 @@ def append_intraday(market: dict, promotion_data: dict | None) -> dict:
             "note": "至少6个盘中快照后才允许判断完整日内路径。",
         },
     }
+    _, payload['data_quality'] = intraday_quality(payload['snapshots'], trade_date)
     write_json(INTRADAY_FILE, payload)
     return payload
 
@@ -255,18 +312,22 @@ def main() -> None:
     previous_payload = read_json(EMOTION_FILE, {})
     if not market.get("ok") or not market.get("tradeDate"):
         raise RuntimeError("market_latest.json is unavailable")
-    sessions = collect_sessions(market["tradeDate"], 20)
+    hithink = market.get("source") == "同花顺官方 Financial-API"
+    sessions = (collect_hithink_sessions(market["tradeDate"], market) if hithink
+                else collect_sessions(market["tradeDate"], 20))
     if not sessions:
         raise RuntimeError("No sentiment sessions collected")
 
     promotion_data = promotion(sessions[-2], sessions[-1]) if len(sessions) >= 2 else None
     previous = sessions[-2] if len(sessions) >= 2 else None
-    quote_map = fetch_quotes([row["code"] for row in previous["stocks"]]) if previous else {}
+    quote_map = (hithink_quotes([row["code"] for row in previous["stocks"]]) if hithink
+                 else fetch_quotes([row["code"] for row in previous["stocks"]])) if previous else {}
     previous_feedback = feedback(previous["stocks"], quote_map) if previous else feedback([], {})
     high_feedback = feedback([row for row in previous["stocks"] if row["height"] >= 4], quote_map) if previous else feedback([], {})
     mid_feedback = feedback([row for row in previous["stocks"] if 2 <= row["height"] <= 3], quote_map) if previous else feedback([], {})
     low_feedback = feedback([row for row in previous["stocks"] if row["height"] == 1], quote_map) if previous else feedback([], {})
-    if previous_payload.get("trade_date") == market["tradeDate"]:
+    if (previous_payload.get("trade_date") == market["tradeDate"]
+            and previous_payload.get("source") == market.get("source")):
         old_ecology = previous_payload.get("market_ecology") or {}
         for current_value, key in (
             (previous_feedback, "previous_limit_up_feedback"),
@@ -280,12 +341,12 @@ def main() -> None:
                 current_value["carried_forward"] = True
                 current_value["as_of"] = previous_payload.get("updated_at")
     breadth = market.get("breadth") or {}
-    breadth_total = sum(int(number(breadth.get(key))) for key in ("up", "down", "flat"))
+    breadth_total = sum(int(number(breadth.get(key))) for key in ("known_up", "known_down", "known_flat")) if hithink else sum(int(number(breadth.get(key))) for key in ("up", "down", "flat"))
     width = {
-        "available": breadth_total >= 3000,
-        "up": breadth.get("up") if breadth_total >= 3000 else None,
-        "down": breadth.get("down") if breadth_total >= 3000 else None,
-        "flat": breadth.get("flat") if breadth_total >= 3000 else None,
+        "available": breadth.get('complete') is True,
+        "up": breadth.get("up") if breadth.get('complete') is True else None,
+        "down": breadth.get("down") if breadth.get('complete') is True else None,
+        "flat": breadth.get("flat") if breadth.get('complete') is True else None,
         "sample": breadth_total,
     }
     missing = []
@@ -293,6 +354,10 @@ def main() -> None:
         missing.append("全市场上涨/下跌家数")
     if previous_feedback["sample"] == 0:
         missing.append("昨日涨停次日反馈")
+    if hithink:
+        missing.append("概念板块成分股涨停扩散与持续性")
+        if len(sessions) < 20:
+            missing.append("同源20交易日情绪序列")
     intraday = append_intraday(market, promotion_data)
     if not intraday["data_quality"]["timeline_ready"]:
         missing.append("完整日内情绪时间轴")
@@ -330,7 +395,7 @@ def main() -> None:
         "principle": "仅保存事实数据，不在采集层生成周期标签或主观评分。",
         "market_ecology": ecology,
         "leader_candidates": leaders,
-        "themes": theme_structure(sessions),
+        "themes": [] if hithink else theme_structure(sessions),
         "intraday": {
             "snapshot_count": intraday["data_quality"]["snapshot_count"],
             "timeline_ready": intraday["data_quality"]["timeline_ready"],

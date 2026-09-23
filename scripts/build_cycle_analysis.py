@@ -6,6 +6,7 @@ import json
 import statistics
 from datetime import datetime, timezone
 from pathlib import Path
+from data_checks import intraday_quality
 
 DATA = Path("data")
 EMOTION = DATA / "emotion_latest.json"
@@ -74,7 +75,9 @@ def leader_strength(emotion: dict) -> dict:
     amount = leader.get("amount") or 0
     seal_ratio = leader.get("seal_amount") / amount * 100 if leader.get("seal_amount") is not None and amount else None
     first = str(leader.get("first_limit") or "")
-    first_minutes = int(first[:2]) * 60 + int(first[2:4]) if len(first) >= 4 and first.isdigit() else None
+    compact_first = first.replace(":", "")
+    first_minutes = (int(compact_first[:2]) * 60 + int(compact_first[2:4])
+                     if len(compact_first) == 4 and compact_first.isdigit() else None)
     theme_count = next((t.get("limit_up_count") for t in emotion.get("themes", []) if t.get("name") == leader.get("theme")), None)
     result = weighted([
         {"metric": "龙头高度", "value": leader.get("height"), "weight": 30, "normalized": rising(leader.get("height"), 2, 7)},
@@ -83,7 +86,9 @@ def leader_strength(emotion: dict) -> dict:
         {"metric": "封单/成交额", "value": None if seal_ratio is None else round(seal_ratio, 2), "weight": 15, "normalized": rising(seal_ratio, 1, 50)},
         {"metric": "龙头所在题材涨停数", "value": theme_count, "weight": 10, "normalized": rising(theme_count, 1, 8)},
     ])
-    result.update({"leader": {key: leader.get(key) for key in ("code", "name", "theme", "height")}, "label": "强" if result["score"] >= 65 else "弱"})
+    result.update({"leader": {key: leader.get(key) for key in ("code", "name", "theme", "height")},
+                   "label": "数据不足" if result["score"] is None or result["coverage_pct"] < 65
+                   else "强" if result["score"] >= 65 else "弱"})
     return result
 
 
@@ -105,11 +110,14 @@ def market_ecology(emotion: dict) -> dict:
         {"metric": "跌停数量", "value": ecology.get("limit_down_count"), "weight": 8, "normalized": falling(ecology.get("limit_down_count"), 0, 20)},
         {"metric": "市场上涨宽度", "value": None if width_value is None else round(width_value, 2), "weight": 6, "normalized": rising(width_value, 25, 75)},
     ])
-    result["label"] = "强" if result["score"] is not None and result["score"] >= 65 else "弱"
+    result["label"] = ("数据不足" if result["score"] is None or result["coverage_pct"] < 65
+                       else "强" if result["score"] >= 65 else "弱")
     return result
 
 
 def matrix_label(leader: dict, ecology: dict) -> str:
+    if leader.get("label") not in ("强", "弱") or ecology.get("label") not in ("强", "弱"):
+        return "结构数据不足 / 暂无法判断"
     strong = (leader.get("label") == "强", ecology.get("label") == "强")
     return {(True, True): "龙头强 / 生态强：健康主升", (True, False): "龙头强 / 生态弱：龙头抱团 / 生态分歧", (False, True): "龙头弱 / 生态强：高低切 / 新旧切换", (False, False): "龙头弱 / 生态弱：退潮风险"}[strong]
 
@@ -125,7 +133,7 @@ def large_cycle(emotion: dict, history: dict, leader: dict, ecology: dict) -> di
     promotion = (e.get("promotion") or {}).get("rate_pct")
     broken = e.get("broken_rate_pct")
     feedback = (e.get("previous_limit_up_feedback") or {}).get("avg_change_pct")
-    if score is None:
+    if score is None or leader.get("label") == "数据不足" or ecology.get("label") == "数据不足" or len(sessions) < 3:
         stage = "数据缺失 / 暂无法判断"
     elif leader["label"] == "强" and ecology["label"] == "弱":
         stage = "分歧"
@@ -183,8 +191,8 @@ def theme_cycles(emotion: dict) -> list[dict]:
 
 
 def small_cycle(intraday: dict) -> dict:
-    snapshots = intraday.get("snapshots") or []
-    ready = bool((intraday.get("data_quality") or {}).get("timeline_ready")) and len(snapshots) >= 6
+    snapshots, quality = intraday_quality(intraday.get("snapshots") or [], intraday.get("trade_date"))
+    ready = quality['timeline_ready']
     if not ready:
         return {"stage": "数据不足 / 暂无法判断", "score": None, "trend": "—", "timeline_ready": False, "snapshot_count": len(snapshots), "required_snapshot_count": 6, "timeline": [], "note": "不会用收盘单点反推全天路径。"}
     timeline, previous = [], None
