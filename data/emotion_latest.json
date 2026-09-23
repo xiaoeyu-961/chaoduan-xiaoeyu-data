@@ -2,16 +2,16 @@
   "schema_version": 1,
   "ok": true,
   "trade_date": "2026-09-23",
-  "updated_at": "2026-09-23T01:45:51.406794Z",
+  "updated_at": "2026-09-23T01:56:28.859058Z",
   "source": "GitHub Actions · 东方财富公开行情",
   "principle": "仅保存事实数据，不在采集层生成周期标签或主观评分。",
   "market_ecology": {
-    "limit_up_count": 24,
+    "limit_up_count": 29,
     "limit_down_count": 0,
     "broken_count": 7,
-    "broken_rate_pct": 22.58,
-    "seal_rate_pct": 77.42,
-    "highest_board": 7,
+    "broken_rate_pct": 19.44,
+    "seal_rate_pct": 80.56,
+    "highest_board": 5,
     "promotion": {
       "eligible": 63,
       "promoted": 10,
@@ -34,8 +34,8 @@
         },
         "4": {
           "eligible": 1,
-          "promoted": 0,
-          "rate_pct": 0.0
+          "promoted": 1,
+          "rate_pct": 100.0
         },
         "5": {
           "eligible": 1,
@@ -44,58 +44,58 @@
         },
         "6": {
           "eligible": 1,
-          "promoted": 1,
-          "rate_pct": 100.0
+          "promoted": 0,
+          "rate_pct": 0.0
         }
       }
     },
     "previous_limit_up_feedback": {
+      "sample": 62,
+      "avg_change_pct": 1.2,
+      "median_change_pct": -0.44,
+      "positive_rate_pct": 48.39,
+      "loss_below_minus_5_rate_pct": 11.29
+    },
+    "high_position_feedback": {
       "sample": 3,
-      "avg_change_pct": 4.47,
-      "median_change_pct": 6.47,
+      "avg_change_pct": 5.85,
+      "median_change_pct": 8.65,
       "positive_rate_pct": 66.67,
       "loss_below_minus_5_rate_pct": 0.0
     },
-    "high_position_feedback": {
-      "sample": 0,
-      "avg_change_pct": null,
-      "median_change_pct": null,
-      "positive_rate_pct": null,
-      "loss_below_minus_5_rate_pct": null
-    },
     "middle_position_feedback": {
-      "sample": 1,
-      "avg_change_pct": 10.11,
-      "median_change_pct": 10.11,
-      "positive_rate_pct": 100.0,
-      "loss_below_minus_5_rate_pct": 0.0
+      "sample": 21,
+      "avg_change_pct": 2.78,
+      "median_change_pct": 3.56,
+      "positive_rate_pct": 57.14,
+      "loss_below_minus_5_rate_pct": 19.05
     },
     "first_board_feedback": {
-      "sample": 2,
-      "avg_change_pct": 1.65,
-      "median_change_pct": 1.65,
-      "positive_rate_pct": 50.0,
-      "loss_below_minus_5_rate_pct": 0.0
+      "sample": 38,
+      "avg_change_pct": -0.04,
+      "median_change_pct": -0.98,
+      "positive_rate_pct": 42.11,
+      "loss_below_minus_5_rate_pct": 7.89
     },
     "market_width": {
       "available": false,
       "up": null,
       "down": null,
       "flat": null,
-      "sample": 0
+      "sample": 1400
     }
   },
   "leader_candidates": [
     {
-      "code": "001216",
-      "name": "华瓷股份",
-      "theme": "家居用品",
-      "height": 7,
+      "code": "000504",
+      "name": "南华生物",
+      "theme": "医疗服务",
+      "height": 5,
       "first_limit": "93433",
-      "last_limit": "94548",
+      "last_limit": "95609",
       "open_count": 2,
-      "seal_amount": 1467648.0,
-      "amount": 1043517200.0
+      "seal_amount": 138150897.0,
+      "amount": 955376992.0
     },
     {
       "code": "601811",
@@ -105,8 +105,8 @@
       "first_limit": "93016",
       "last_limit": "93016",
       "open_count": 0,
-      "seal_amount": 196956550.0,
-      "amount": 278816288.0
+      "seal_amount": 191338100.0,
+      "amount": 283578192.0
     },
     {
       "code": "000910",
@@ -116,8 +116,8 @@
       "first_limit": "93039",
       "last_limit": "93039",
       "open_count": 0,
-      "seal_amount": 179990655.0,
-      "amount": 191767359.0
+      "seal_amount": 176418959.0,
+      "amount": 194711431.0
     },
     {
       "code": "001234",
@@ -127,8 +127,8 @@
       "first_limit": "92500",
       "last_limit": "92500",
       "open_count": 0,
-      "seal_amount": 367932282.0,
-      "amount": 74368945.0
+      "seal_amount": 365431896.0,
+      "amount": 75791301.0
     },
     {
       "code": "600825",
@@ -138,8 +138,8 @@
       "first_limit": "92500",
       "last_limit": "92500",
       "open_count": 0,
-      "seal_amount": 4503966536.0,
-      "amount": 22471980.0
+      "seal_amount": 4198917378.0,
+      "amount": 23666532.0
     },
     {
       "code": "603636",
@@ -149,8 +149,8 @@
       "first_limit": "92501",
       "last_limit": "93855",
       "open_count": 2,
-      "seal_amount": 158288389.0,
-      "amount": 501267824.0
+      "seal_amount": 132668909.0,
+      "amount": 546989424.0
     },
     {
       "code": "600743",
@@ -160,8 +160,8 @@
       "first_limit": "93010",
       "last_limit": "93010",
       "open_count": 0,
-      "seal_amount": 372880275.0,
-      "amount": 254171360.0
+      "seal_amount": 383756451.0,
+      "amount": 259599014.0
     },
     {
       "code": "000560",
@@ -171,8 +171,8 @@
       "first_limit": "93021",
       "last_limit": "93233",
       "open_count": 2,
-      "seal_amount": 325605783.0,
-      "amount": 783257168.0
+      "seal_amount": 323662397.0,
+      "amount": 792131968.0
     },
     {
       "code": "600503",
@@ -182,8 +182,8 @@
       "first_limit": "94356",
       "last_limit": "94356",
       "open_count": 0,
-      "seal_amount": 186569166.0,
-      "amount": 446078896.0
+      "seal_amount": 149905602.0,
+      "amount": 479216528.0
     },
     {
       "code": "002238",
@@ -193,11 +193,43 @@
       "first_limit": "92500",
       "last_limit": "92500",
       "open_count": 0,
-      "seal_amount": 160014688.0,
-      "amount": 70910252.0
+      "seal_amount": 159627582.0,
+      "amount": 73996741.0
     }
   ],
   "themes": [
+    {
+      "name": "房地产开",
+      "limit_up_count": 4,
+      "first_board_count": 3,
+      "second_board_count": 0,
+      "third_board_count": 1,
+      "high_board_count": 0,
+      "max_height": 3,
+      "active_days_3": 3,
+      "leaders": [
+        {
+          "code": "600503",
+          "name": "华丽家族",
+          "height": 3
+        },
+        {
+          "code": "000002",
+          "name": "万  科Ａ",
+          "height": 1
+        },
+        {
+          "code": "002146",
+          "name": "荣盛发展",
+          "height": 1
+        },
+        {
+          "code": "600675",
+          "name": "中华企业",
+          "height": 1
+        }
+      ]
+    },
     {
       "name": "房地产服",
       "limit_up_count": 3,
@@ -226,28 +258,6 @@
       ]
     },
     {
-      "name": "家居用品",
-      "limit_up_count": 2,
-      "first_board_count": 0,
-      "second_board_count": 0,
-      "third_board_count": 0,
-      "high_board_count": 2,
-      "max_height": 7,
-      "active_days_3": 3,
-      "leaders": [
-        {
-          "code": "001216",
-          "name": "华瓷股份",
-          "height": 7
-        },
-        {
-          "code": "000910",
-          "name": "大亚圣象",
-          "height": 4
-        }
-      ]
-    },
-    {
       "name": "出版",
       "limit_up_count": 2,
       "first_board_count": 0,
@@ -270,28 +280,6 @@
       ]
     },
     {
-      "name": "房地产开",
-      "limit_up_count": 2,
-      "first_board_count": 1,
-      "second_board_count": 0,
-      "third_board_count": 1,
-      "high_board_count": 0,
-      "max_height": 3,
-      "active_days_3": 3,
-      "leaders": [
-        {
-          "code": "600503",
-          "name": "华丽家族",
-          "height": 3
-        },
-        {
-          "code": "600675",
-          "name": "中华企业",
-          "height": 1
-        }
-      ]
-    },
-    {
       "name": "专用设备",
       "limit_up_count": 2,
       "first_board_count": 2,
@@ -310,6 +298,62 @@
           "code": "600843",
           "name": "上工申贝",
           "height": 1
+        }
+      ]
+    },
+    {
+      "name": "消费电子",
+      "limit_up_count": 2,
+      "first_board_count": 2,
+      "second_board_count": 0,
+      "third_board_count": 0,
+      "high_board_count": 0,
+      "max_height": 1,
+      "active_days_3": 1,
+      "leaders": [
+        {
+          "code": "002635",
+          "name": "安洁科技",
+          "height": 1
+        },
+        {
+          "code": "002426",
+          "name": "胜利精密",
+          "height": 1
+        }
+      ]
+    },
+    {
+      "name": "医疗服务",
+      "limit_up_count": 1,
+      "first_board_count": 0,
+      "second_board_count": 0,
+      "third_board_count": 0,
+      "high_board_count": 1,
+      "max_height": 5,
+      "active_days_3": 3,
+      "leaders": [
+        {
+          "code": "000504",
+          "name": "南华生物",
+          "height": 5
+        }
+      ]
+    },
+    {
+      "name": "家居用品",
+      "limit_up_count": 1,
+      "first_board_count": 0,
+      "second_board_count": 0,
+      "third_board_count": 0,
+      "high_board_count": 1,
+      "max_height": 4,
+      "active_days_3": 3,
+      "leaders": [
+        {
+          "code": "000910",
+          "name": "大亚圣象",
+          "height": 4
         }
       ]
     },
@@ -382,7 +426,7 @@
       ]
     },
     {
-      "name": "光学光电",
+      "name": "化学制品",
       "limit_up_count": 1,
       "first_board_count": 1,
       "second_board_count": 0,
@@ -392,8 +436,25 @@
       "active_days_3": 3,
       "leaders": [
         {
-          "code": "603773",
-          "name": "沃格光电",
+          "code": "600230",
+          "name": "沧州大化",
+          "height": 1
+        }
+      ]
+    },
+    {
+      "name": "医疗器械",
+      "limit_up_count": 1,
+      "first_board_count": 1,
+      "second_board_count": 0,
+      "third_board_count": 0,
+      "high_board_count": 0,
+      "max_height": 1,
+      "active_days_3": 3,
+      "leaders": [
+        {
+          "code": "688656",
+          "name": "浩欧博",
           "height": 1
         }
       ]
@@ -467,23 +528,6 @@
       ]
     },
     {
-      "name": "消费电子",
-      "limit_up_count": 1,
-      "first_board_count": 1,
-      "second_board_count": 0,
-      "third_board_count": 0,
-      "high_board_count": 0,
-      "max_height": 1,
-      "active_days_3": 1,
-      "leaders": [
-        {
-          "code": "002426",
-          "name": "胜利精密",
-          "height": 1
-        }
-      ]
-    },
-    {
       "name": "玻璃玻纤",
       "limit_up_count": 1,
       "first_board_count": 1,
@@ -533,10 +577,27 @@
           "height": 1
         }
       ]
+    },
+    {
+      "name": "非白酒",
+      "limit_up_count": 1,
+      "first_board_count": 1,
+      "second_board_count": 0,
+      "third_board_count": 0,
+      "high_board_count": 0,
+      "max_height": 1,
+      "active_days_3": 2,
+      "leaders": [
+        {
+          "code": "600059",
+          "name": "古越龙山",
+          "height": 1
+        }
+      ]
     }
   ],
   "intraday": {
-    "snapshot_count": 2,
+    "snapshot_count": 3,
     "timeline_ready": false
   },
   "data_quality": {
