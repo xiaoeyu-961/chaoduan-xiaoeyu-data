@@ -2,15 +2,15 @@
   "schema_version": 1,
   "ok": true,
   "trade_date": "2026-09-23",
-  "updated_at": "2026-09-23T05:57:33.112968+00:00",
+  "updated_at": "2026-09-23T06:21:04.659954+00:00",
   "source": "同花顺官方 Financial-API",
   "principle": "仅保存事实数据，不在采集层生成周期标签或主观评分。",
   "market_ecology": {
-    "limit_up_count": 47,
-    "limit_down_count": 12,
-    "broken_count": 23,
-    "broken_rate_pct": 32.86,
-    "seal_rate_pct": 67.14,
+    "limit_up_count": 51,
+    "limit_down_count": 14,
+    "broken_count": 25,
+    "broken_rate_pct": 32.89,
+    "seal_rate_pct": 67.11,
     "highest_board": 4,
     "promotion": {
       "eligible": 63,
@@ -51,30 +51,30 @@
     },
     "previous_limit_up_feedback": {
       "sample": 63,
-      "avg_change_pct": -0.1,
-      "median_change_pct": -0.55,
-      "positive_rate_pct": 44.44,
-      "loss_below_minus_5_rate_pct": 22.22
+      "avg_change_pct": -0.01,
+      "median_change_pct": -0.72,
+      "positive_rate_pct": 47.62,
+      "loss_below_minus_5_rate_pct": 20.63
     },
     "high_position_feedback": {
       "sample": 3,
-      "avg_change_pct": 3.99,
-      "median_change_pct": 4.79,
-      "positive_rate_pct": 66.67,
+      "avg_change_pct": 4.72,
+      "median_change_pct": 4.71,
+      "positive_rate_pct": 100.0,
       "loss_below_minus_5_rate_pct": 0.0
     },
     "middle_position_feedback": {
       "sample": 21,
-      "avg_change_pct": 0.75,
-      "median_change_pct": -0.43,
+      "avg_change_pct": 0.68,
+      "median_change_pct": -0.94,
       "positive_rate_pct": 47.62,
-      "loss_below_minus_5_rate_pct": 33.33
+      "loss_below_minus_5_rate_pct": 28.57
     },
     "first_board_feedback": {
       "sample": 39,
-      "avg_change_pct": -0.88,
-      "median_change_pct": -1.61,
-      "positive_rate_pct": 41.03,
+      "avg_change_pct": -0.74,
+      "median_change_pct": -1.51,
+      "positive_rate_pct": 43.59,
       "loss_below_minus_5_rate_pct": 17.95
     },
     "market_width": {
@@ -94,8 +94,8 @@
       "first_limit": "09:30",
       "last_limit": "09:30",
       "open_count": null,
-      "seal_amount": 107798212,
-      "amount": 218863260
+      "seal_amount": 105670142,
+      "amount": 220439510
     },
     {
       "code": "601811",
@@ -105,8 +105,8 @@
       "first_limit": "09:30",
       "last_limit": "09:30",
       "open_count": null,
-      "seal_amount": 175209800,
-      "amount": 300805390
+      "seal_amount": 172704900,
+      "amount": 302081890
     },
     {
       "code": "001234",
@@ -116,8 +116,8 @@
       "first_limit": "09:25",
       "last_limit": "09:25",
       "open_count": null,
-      "seal_amount": 348769090,
-      "amount": 85326235
+      "seal_amount": 346661300,
+      "amount": 87855583
     },
     {
       "code": "600825",
@@ -127,8 +127,8 @@
       "first_limit": "09:25",
       "last_limit": "09:25",
       "open_count": null,
-      "seal_amount": 2990309600,
-      "amount": 30526028
+      "seal_amount": 2775474500,
+      "amount": 30713118
     },
     {
       "code": "603636",
@@ -138,8 +138,8 @@
       "first_limit": "09:25",
       "last_limit": "09:25",
       "open_count": null,
-      "seal_amount": 76757513,
-      "amount": 635398600
+      "seal_amount": 73769161,
+      "amount": 637403750
     },
     {
       "code": "000560",
@@ -149,8 +149,8 @@
       "first_limit": "09:30",
       "last_limit": "09:30",
       "open_count": null,
-      "seal_amount": 105204099,
-      "amount": 1183918750
+      "seal_amount": 100537745,
+      "amount": 1191106460
     },
     {
       "code": "600743",
@@ -160,8 +160,8 @@
       "first_limit": "09:30",
       "last_limit": "09:30",
       "open_count": null,
-      "seal_amount": 251539250,
-      "amount": 273208700
+      "seal_amount": 238218980,
+      "amount": 273809080
     },
     {
       "code": "002614",
@@ -171,8 +171,8 @@
       "first_limit": "09:31",
       "last_limit": "09:31",
       "open_count": null,
-      "seal_amount": 100184741,
-      "amount": 978861150
+      "seal_amount": 95229654,
+      "amount": 984542200
     },
     {
       "code": "002238",
@@ -182,8 +182,8 @@
       "first_limit": "09:25",
       "last_limit": "09:25",
       "open_count": null,
-      "seal_amount": 136468610,
-      "amount": 85560768
+      "seal_amount": 134211212,
+      "amount": 86240976
     },
     {
       "code": "605058",
@@ -193,13 +193,13 @@
       "first_limit": "13:51",
       "last_limit": "13:51",
       "open_count": null,
-      "seal_amount": 76935706,
-      "amount": 1216057880
+      "seal_amount": 75705106,
+      "amount": 1227643100
     }
   ],
   "themes": [],
   "intraday": {
-    "snapshot_count": 4,
+    "snapshot_count": 5,
     "timeline_ready": false
   },
   "data_quality": {
