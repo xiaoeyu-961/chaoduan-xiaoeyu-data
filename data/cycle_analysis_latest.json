@@ -2,7 +2,7 @@
   "schema_version": 1,
   "ok": true,
   "trade_date": "2026-09-23",
-  "generated_at": "2026-09-23T03:37:33.061023+00:00",
+  "generated_at": "2026-09-23T03:40:23.160376+00:00",
   "principles": [
     "不使用5/10/20日均线判断情绪周期",
     "龙头强度与市场生态分开计算",
@@ -10,18 +10,18 @@
     "缺失数据不补造、不按0分处理"
   ],
   "dashboard": {
-    "market_composite": 40,
-    "leader_strength": 53,
+    "market_composite": 44,
+    "leader_strength": 67,
     "market_ecology": 35,
     "market_width": null,
     "relay_ecology": 10.72,
     "mainline_strength": 50,
     "loss_effect": 80,
-    "structure_label": "龙头弱 / 生态弱：退潮风险"
+    "structure_label": "龙头强 / 生态弱：龙头抱团 / 生态分歧"
   },
   "large_cycle": {
-    "stage": "混沌",
-    "score": 40,
+    "stage": "分歧",
+    "score": 44,
     "trend": "↓",
     "method": "评分 + 结构 + 连续性；不使用均线",
     "continuity": {
@@ -38,7 +38,7 @@
       "近端涨停数量未形成上升趋势"
     ],
     "confidence": "medium",
-    "conclusion": "混沌；龙头弱 / 生态弱：退潮风险"
+    "conclusion": "分歧；龙头强 / 生态弱：龙头抱团 / 生态分歧"
   },
   "medium_cycle": {
     "mainline": {
@@ -1892,226 +1892,66 @@
     ]
   },
   "small_cycle": {
-    "stage": "回流",
+    "stage": "数据不足 / 暂无法判断",
     "score": null,
-    "trend": "→",
-    "timeline_ready": true,
-    "snapshot_count": 9,
-    "timeline": [
-      {
-        "time": "2026-09-23T01:28:33.345439Z",
-        "node": "观察起点",
-        "facts": {
-          "time": "2026-09-23T01:28:33.345439Z",
-          "limit_up_count": 4,
-          "limit_down_count": 0,
-          "broken_count": 0,
-          "broken_rate_pct": 0.0,
-          "promotion_rate_pct": 6.35,
-          "highest_board": 3,
-          "leader": {
-            "code": "001234",
-            "name": "泰慕士"
-          },
-          "strongest_theme": "IT服务Ⅱ"
-        }
-      },
-      {
-        "time": "2026-09-23T01:45:51.406794Z",
-        "node": "转弱",
-        "facts": {
-          "time": "2026-09-23T01:45:51.406794Z",
-          "limit_up_count": 23,
-          "limit_down_count": 0,
-          "broken_count": 7,
-          "broken_rate_pct": 23.33,
-          "promotion_rate_pct": 15.87,
-          "highest_board": 7,
-          "leader": {
-            "code": "001216",
-            "name": "华瓷股份"
-          },
-          "strongest_theme": "房地产服"
-        }
-      },
-      {
-        "time": "2026-09-23T01:56:28.859058Z",
-        "node": "一致",
-        "facts": {
-          "time": "2026-09-23T01:56:28.859058Z",
-          "limit_up_count": 29,
-          "limit_down_count": 0,
-          "broken_count": 7,
-          "broken_rate_pct": 19.44,
-          "promotion_rate_pct": 15.87,
-          "highest_board": 5,
-          "leader": {
-            "code": "000504",
-            "name": "南华生物"
-          },
-          "strongest_theme": "房地产开"
-        }
-      },
-      {
-        "time": "2026-09-23T02:13:23.411881Z",
-        "node": "分歧",
-        "facts": {
-          "time": "2026-09-23T02:13:23.411881Z",
-          "limit_up_count": 34,
-          "limit_down_count": 0,
-          "broken_count": 11,
-          "broken_rate_pct": 24.44,
-          "promotion_rate_pct": 14.29,
-          "highest_board": 4,
-          "leader": {
-            "code": "601811",
-            "name": "新华文轩"
-          },
-          "strongest_theme": "房地产服"
-        }
-      },
-      {
-        "time": "2026-09-23T02:30:24.829894Z",
-        "node": "分歧",
-        "facts": {
-          "time": "2026-09-23T02:30:24.829894Z",
-          "limit_up_count": 32,
-          "limit_down_count": 0,
-          "broken_count": 18,
-          "broken_rate_pct": 36.0,
-          "promotion_rate_pct": 12.7,
-          "highest_board": 4,
-          "leader": {
-            "code": "601811",
-            "name": "新华文轩"
-          },
-          "strongest_theme": "出版"
-        }
-      },
-      {
-        "time": "2026-09-23T02:47:20.103237Z",
-        "node": "震荡",
-        "facts": {
-          "time": "2026-09-23T02:47:20.103237Z",
-          "limit_up_count": 33,
-          "limit_down_count": 0,
-          "broken_count": 20,
-          "broken_rate_pct": 37.74,
-          "promotion_rate_pct": 14.29,
-          "highest_board": 4,
-          "leader": {
-            "code": "601811",
-            "name": "新华文轩"
-          },
-          "strongest_theme": "出版"
-        }
-      },
-      {
-        "time": "2026-09-23T02:58:26.446462Z",
-        "node": "震荡",
-        "facts": {
-          "time": "2026-09-23T02:58:26.446462Z",
-          "limit_up_count": 33,
-          "limit_down_count": 0,
-          "broken_count": 21,
-          "broken_rate_pct": 38.89,
-          "promotion_rate_pct": 14.29,
-          "highest_board": 4,
-          "leader": {
-            "code": "601811",
-            "name": "新华文轩"
-          },
-          "strongest_theme": "出版"
-        }
-      },
-      {
-        "time": "2026-09-23T03:20:22.239440Z",
-        "node": "修复",
-        "facts": {
-          "time": "2026-09-23T03:20:22.239440Z",
-          "limit_up_count": 36,
-          "limit_down_count": 0,
-          "broken_count": 22,
-          "broken_rate_pct": 37.93,
-          "promotion_rate_pct": 14.29,
-          "highest_board": 4,
-          "leader": {
-            "code": "601811",
-            "name": "新华文轩"
-          },
-          "strongest_theme": "通用设备"
-        }
-      },
-      {
-        "time": "2026-09-23T03:36:44.884936Z",
-        "node": "回流",
-        "facts": {
-          "time": "2026-09-23T03:36:44.884936Z",
-          "limit_up_count": 37,
-          "limit_down_count": 0,
-          "broken_count": 22,
-          "broken_rate_pct": 37.29,
-          "promotion_rate_pct": 14.29,
-          "highest_board": 4,
-          "leader": {
-            "code": "601811",
-            "name": "新华文轩"
-          },
-          "strongest_theme": "通用设备"
-        }
-      }
-    ],
-    "note": "日内节点不直接改写大周期。"
+    "trend": "—",
+    "timeline_ready": false,
+    "snapshot_count": 7,
+    "required_snapshot_count": 6,
+    "timeline": [],
+    "note": "不会用收盘单点反推全天路径。"
   },
   "leader_ecology_matrix": {
     "leader_strength": {
-      "score": 53,
-      "coverage_pct": 100.0,
+      "score": 67,
+      "coverage_pct": 80.0,
       "components": [
         {
           "metric": "龙头高度",
           "value": 4,
           "weight": 30,
           "normalized": 40.0,
-          "contribution": 12.0
+          "contribution": 15.0
         },
         {
           "metric": "封板稳定性",
           "value": 0,
           "weight": 25,
           "normalized": 100,
-          "contribution": 25.0
+          "contribution": 31.25
         },
         {
           "metric": "首次封板主动性",
           "value": "93016",
           "weight": 20,
-          "normalized": 0,
-          "contribution": 0.0
+          "normalized": null,
+          "contribution": null
         },
         {
           "metric": "封单/成交额",
           "value": 62.18,
           "weight": 15,
           "normalized": 100,
-          "contribution": 15.0
+          "contribution": 18.75
         },
         {
           "metric": "龙头所在题材涨停数",
           "value": 2,
           "weight": 10,
           "normalized": 14.29,
-          "contribution": 1.43
+          "contribution": 1.79
         }
       ],
-      "missing_metrics": [],
+      "missing_metrics": [
+        "首次封板主动性"
+      ],
       "leader": {
         "code": "601811",
         "name": "新华文轩",
         "theme": "出版",
         "height": 4
       },
-      "label": "弱"
+      "label": "强"
     },
     "market_ecology": {
       "score": 35,
@@ -2179,13 +2019,15 @@
       ],
       "label": "弱"
     },
-    "label": "龙头弱 / 生态弱：退潮风险"
+    "label": "龙头强 / 生态弱：龙头抱团 / 生态分歧"
   },
   "data_quality": {
     "missing": [
-      "市场上涨宽度"
+      "完整日内情绪时间轴",
+      "市场上涨宽度",
+      "首次封板主动性"
     ],
     "analysis_allowed": true,
-    "small_cycle_allowed": true
+    "small_cycle_allowed": false
   }
 }

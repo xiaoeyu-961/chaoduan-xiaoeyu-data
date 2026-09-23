@@ -3,7 +3,7 @@
     "product": "超短小鳄鱼｜V1.4.1 超短交易研究工作台",
     "bundle_version": "1.1",
     "schema_updated_at": "2026-09-21T23:00:00+08:00",
-    "generated_at": "2026-09-23T03:37:33.061023+00:00",
+    "generated_at": "2026-09-23T03:40:23.160376+00:00",
     "timezone": "Asia/Shanghai",
     "data_range": [
       "2026-09-16",
@@ -155,11 +155,11 @@
       "broken_rate_pct": 37.29,
       "seal_rate_pct": 62.71,
       "highest_board": 4,
-      "big_cycle": "混沌",
+      "big_cycle": "分歧",
       "mid_cycle": "发酵",
-      "small_cycle": "回流",
+      "small_cycle": "数据不足 / 暂无法判断",
       "primary_theme": "出版",
-      "structure_label": "龙头弱 / 生态弱：退潮风险",
+      "structure_label": "龙头强 / 生态弱：龙头抱团 / 生态分歧",
       "data_quality": "auto_collected_partial"
     }
   ],
@@ -188,8 +188,8 @@
       },
       {
         "date": "2026-09-23",
-        "state": "混沌",
-        "score": 40
+        "state": "分歧",
+        "score": 44
       }
     ],
     "mid_cycle": [
@@ -337,6 +337,20 @@
       },
       {
         "time": "2026-09-23T03:36:44.884936Z",
+        "limit_up_count": 37,
+        "limit_down_count": 0,
+        "broken_count": 22,
+        "broken_rate_pct": 37.29,
+        "promotion_rate_pct": 14.29,
+        "highest_board": 4,
+        "leader": {
+          "code": "601811",
+          "name": "新华文轩"
+        },
+        "strongest_theme": "通用设备"
+      },
+      {
+        "time": "2026-09-23T03:39:50.076918Z",
         "limit_up_count": 37,
         "limit_down_count": 0,
         "broken_count": 22,
@@ -1159,7 +1173,12 @@
           "last_limit": "93016",
           "open_count": 0,
           "amount": 295390432.0,
-          "seal_amount": 183680950.0
+          "seal_amount": 183680950.0,
+          "limit_reason": null,
+          "price": null,
+          "auction": null,
+          "anomaly_analysis": null,
+          "data_source": "GitHub Actions · 东方财富公开行情"
         },
         {
           "code": "000910",
@@ -1170,7 +1189,12 @@
           "last_limit": "93039",
           "open_count": 0,
           "amount": 209608080.0,
-          "seal_amount": 144695468.0
+          "seal_amount": 144695468.0,
+          "limit_reason": null,
+          "price": null,
+          "auction": null,
+          "anomaly_analysis": null,
+          "data_source": "GitHub Actions · 东方财富公开行情"
         }
       ],
       "3": [
@@ -1183,7 +1207,12 @@
           "last_limit": "103139",
           "open_count": 4,
           "amount": 1119141344.0,
-          "seal_amount": 190765434.0
+          "seal_amount": 190765434.0,
+          "limit_reason": null,
+          "price": null,
+          "auction": null,
+          "anomaly_analysis": null,
+          "data_source": "GitHub Actions · 东方财富公开行情"
         },
         {
           "code": "002614",
@@ -1194,7 +1223,12 @@
           "last_limit": "102051",
           "open_count": 7,
           "amount": 966511840.0,
-          "seal_amount": 88084474.0
+          "seal_amount": 88084474.0,
+          "limit_reason": null,
+          "price": null,
+          "auction": null,
+          "anomaly_analysis": null,
+          "data_source": "GitHub Actions · 东方财富公开行情"
         },
         {
           "code": "603636",
@@ -1205,7 +1239,12 @@
           "last_limit": "95837",
           "open_count": 3,
           "amount": 626863472.0,
-          "seal_amount": 80043642.0
+          "seal_amount": 80043642.0,
+          "limit_reason": null,
+          "price": null,
+          "auction": null,
+          "anomaly_analysis": null,
+          "data_source": "GitHub Actions · 东方财富公开行情"
         },
         {
           "code": "600743",
@@ -1216,7 +1255,12 @@
           "last_limit": "93010",
           "open_count": 0,
           "amount": 267982680.0,
-          "seal_amount": 279093473.0
+          "seal_amount": 279093473.0,
+          "limit_reason": null,
+          "price": null,
+          "auction": null,
+          "anomaly_analysis": null,
+          "data_source": "GitHub Actions · 东方财富公开行情"
         },
         {
           "code": "001234",
@@ -1227,7 +1271,12 @@
           "last_limit": "92500",
           "open_count": 0,
           "amount": 81860449.0,
-          "seal_amount": 355623432.0
+          "seal_amount": 355623432.0,
+          "limit_reason": null,
+          "price": null,
+          "auction": null,
+          "anomaly_analysis": null,
+          "data_source": "GitHub Actions · 东方财富公开行情"
         },
         {
           "code": "600825",
@@ -1238,7 +1287,12 @@
           "last_limit": "92500",
           "open_count": 0,
           "amount": 29591284.0,
-          "seal_amount": 3405667752.0
+          "seal_amount": 3405667752.0,
+          "limit_reason": null,
+          "price": null,
+          "auction": null,
+          "anomaly_analysis": null,
+          "data_source": "GitHub Actions · 东方财富公开行情"
         }
       ],
       "2": [
@@ -1251,7 +1305,12 @@
           "last_limit": "92500",
           "open_count": 0,
           "amount": 82128138.0,
-          "seal_amount": 148999026.0
+          "seal_amount": 148999026.0,
+          "limit_reason": null,
+          "price": null,
+          "auction": null,
+          "anomaly_analysis": null,
+          "data_source": "GitHub Actions · 东方财富公开行情"
         }
       ],
       "1": [
@@ -1264,7 +1323,12 @@
           "last_limit": "110359",
           "open_count": 2,
           "amount": 4882166016.0,
-          "seal_amount": 1137278500.0
+          "seal_amount": 1137278500.0,
+          "limit_reason": null,
+          "price": null,
+          "auction": null,
+          "anomaly_analysis": null,
+          "data_source": "GitHub Actions · 东方财富公开行情"
         },
         {
           "code": "301150",
@@ -1275,7 +1339,12 @@
           "last_limit": "103451",
           "open_count": 2,
           "amount": 1902042544.0,
-          "seal_amount": 350803872.0
+          "seal_amount": 350803872.0,
+          "limit_reason": null,
+          "price": null,
+          "auction": null,
+          "anomaly_analysis": null,
+          "data_source": "GitHub Actions · 东方财富公开行情"
         },
         {
           "code": "002119",
@@ -1286,7 +1355,12 @@
           "last_limit": "110703",
           "open_count": 0,
           "amount": 1349197040.0,
-          "seal_amount": 1025287422.0
+          "seal_amount": 1025287422.0,
+          "limit_reason": null,
+          "price": null,
+          "auction": null,
+          "anomaly_analysis": null,
+          "data_source": "GitHub Actions · 东方财富公开行情"
         },
         {
           "code": "688628",
@@ -1297,7 +1371,12 @@
           "last_limit": "110432",
           "open_count": 1,
           "amount": 1268234240.0,
-          "seal_amount": 191919427.0
+          "seal_amount": 191919427.0,
+          "limit_reason": null,
+          "price": null,
+          "auction": null,
+          "anomaly_analysis": null,
+          "data_source": "GitHub Actions · 东方财富公开行情"
         },
         {
           "code": "603328",
@@ -1308,7 +1387,12 @@
           "last_limit": "101837",
           "open_count": 0,
           "amount": 918663984.0,
-          "seal_amount": 557797424.0
+          "seal_amount": 557797424.0,
+          "limit_reason": null,
+          "price": null,
+          "auction": null,
+          "anomaly_analysis": null,
+          "data_source": "GitHub Actions · 东方财富公开行情"
         },
         {
           "code": "600059",
@@ -1319,7 +1403,12 @@
           "last_limit": "94651",
           "open_count": 1,
           "amount": 853334256.0,
-          "seal_amount": 203378039.0
+          "seal_amount": 203378039.0,
+          "limit_reason": null,
+          "price": null,
+          "auction": null,
+          "anomaly_analysis": null,
+          "data_source": "GitHub Actions · 东方财富公开行情"
         },
         {
           "code": "002426",
@@ -1330,7 +1419,12 @@
           "last_limit": "93351",
           "open_count": 0,
           "amount": 630202336.0,
-          "seal_amount": 223030080.0
+          "seal_amount": 223030080.0,
+          "limit_reason": null,
+          "price": null,
+          "auction": null,
+          "anomaly_analysis": null,
+          "data_source": "GitHub Actions · 东方财富公开行情"
         },
         {
           "code": "002909",
@@ -1341,7 +1435,12 @@
           "last_limit": "104621",
           "open_count": 2,
           "amount": 524327616.0,
-          "seal_amount": 116180844.0
+          "seal_amount": 116180844.0,
+          "limit_reason": null,
+          "price": null,
+          "auction": null,
+          "anomaly_analysis": null,
+          "data_source": "GitHub Actions · 东方财富公开行情"
         },
         {
           "code": "002635",
@@ -1352,7 +1451,12 @@
           "last_limit": "95345",
           "open_count": 1,
           "amount": 509409104.0,
-          "seal_amount": 219388885.0
+          "seal_amount": 219388885.0,
+          "limit_reason": null,
+          "price": null,
+          "auction": null,
+          "anomaly_analysis": null,
+          "data_source": "GitHub Actions · 东方财富公开行情"
         },
         {
           "code": "002989",
@@ -1363,7 +1467,12 @@
           "last_limit": "112557",
           "open_count": 0,
           "amount": 509232528.0,
-          "seal_amount": 262678216.0
+          "seal_amount": 262678216.0,
+          "limit_reason": null,
+          "price": null,
+          "auction": null,
+          "anomaly_analysis": null,
+          "data_source": "GitHub Actions · 东方财富公开行情"
         },
         {
           "code": "002849",
@@ -1374,7 +1483,12 @@
           "last_limit": "101742",
           "open_count": 1,
           "amount": 471150112.0,
-          "seal_amount": 231586172.0
+          "seal_amount": 231586172.0,
+          "limit_reason": null,
+          "price": null,
+          "auction": null,
+          "anomaly_analysis": null,
+          "data_source": "GitHub Actions · 东方财富公开行情"
         },
         {
           "code": "600605",
@@ -1385,7 +1499,12 @@
           "last_limit": "110311",
           "open_count": 3,
           "amount": 389122016.0,
-          "seal_amount": 105798670.0
+          "seal_amount": 105798670.0,
+          "limit_reason": null,
+          "price": null,
+          "auction": null,
+          "anomaly_analysis": null,
+          "data_source": "GitHub Actions · 东方财富公开行情"
         },
         {
           "code": "002286",
@@ -1396,7 +1515,12 @@
           "last_limit": "101254",
           "open_count": 0,
           "amount": 323261520.0,
-          "seal_amount": 88019732.0
+          "seal_amount": 88019732.0,
+          "limit_reason": null,
+          "price": null,
+          "auction": null,
+          "anomaly_analysis": null,
+          "data_source": "GitHub Actions · 东方财富公开行情"
         },
         {
           "code": "600230",
@@ -1407,7 +1531,12 @@
           "last_limit": "100119",
           "open_count": 1,
           "amount": 304775824.0,
-          "seal_amount": 171464436.0
+          "seal_amount": 171464436.0,
+          "limit_reason": null,
+          "price": null,
+          "auction": null,
+          "anomaly_analysis": null,
+          "data_source": "GitHub Actions · 东方财富公开行情"
         },
         {
           "code": "603222",
@@ -1418,7 +1547,12 @@
           "last_limit": "95752",
           "open_count": 0,
           "amount": 255569796.0,
-          "seal_amount": 92367186.0
+          "seal_amount": 92367186.0,
+          "limit_reason": null,
+          "price": null,
+          "auction": null,
+          "anomaly_analysis": null,
+          "data_source": "GitHub Actions · 东方财富公开行情"
         },
         {
           "code": "688656",
@@ -1429,7 +1563,12 @@
           "last_limit": "95555",
           "open_count": 1,
           "amount": 228124348.0,
-          "seal_amount": 53061645.0
+          "seal_amount": 53061645.0,
+          "limit_reason": null,
+          "price": null,
+          "auction": null,
+          "anomaly_analysis": null,
+          "data_source": "GitHub Actions · 东方财富公开行情"
         },
         {
           "code": "600293",
@@ -1440,7 +1579,12 @@
           "last_limit": "93216",
           "open_count": 0,
           "amount": 211649181.0,
-          "seal_amount": 158984930.0
+          "seal_amount": 158984930.0,
+          "limit_reason": null,
+          "price": null,
+          "auction": null,
+          "anomaly_analysis": null,
+          "data_source": "GitHub Actions · 东方财富公开行情"
         },
         {
           "code": "600790",
@@ -1451,7 +1595,12 @@
           "last_limit": "100944",
           "open_count": 1,
           "amount": 205922539.0,
-          "seal_amount": 66822232.0
+          "seal_amount": 66822232.0,
+          "limit_reason": null,
+          "price": null,
+          "auction": null,
+          "anomaly_analysis": null,
+          "data_source": "GitHub Actions · 东方财富公开行情"
         },
         {
           "code": "600802",
@@ -1462,7 +1611,12 @@
           "last_limit": "100124",
           "open_count": 0,
           "amount": 182750478.0,
-          "seal_amount": 120054060.0
+          "seal_amount": 120054060.0,
+          "limit_reason": null,
+          "price": null,
+          "auction": null,
+          "anomaly_analysis": null,
+          "data_source": "GitHub Actions · 东方财富公开行情"
         },
         {
           "code": "002819",
@@ -1473,7 +1627,12 @@
           "last_limit": "111212",
           "open_count": 0,
           "amount": 167283311.0,
-          "seal_amount": 184434645.0
+          "seal_amount": 184434645.0,
+          "limit_reason": null,
+          "price": null,
+          "auction": null,
+          "anomaly_analysis": null,
+          "data_source": "GitHub Actions · 东方财富公开行情"
         },
         {
           "code": "603396",
@@ -1484,7 +1643,12 @@
           "last_limit": "93739",
           "open_count": 0,
           "amount": 164808197.0,
-          "seal_amount": 102815762.0
+          "seal_amount": 102815762.0,
+          "limit_reason": null,
+          "price": null,
+          "auction": null,
+          "anomaly_analysis": null,
+          "data_source": "GitHub Actions · 东方财富公开行情"
         },
         {
           "code": "600843",
@@ -1495,7 +1659,12 @@
           "last_limit": "93047",
           "open_count": 0,
           "amount": 130809273.0,
-          "seal_amount": 32568357.0
+          "seal_amount": 32568357.0,
+          "limit_reason": null,
+          "price": null,
+          "auction": null,
+          "anomaly_analysis": null,
+          "data_source": "GitHub Actions · 东方财富公开行情"
         },
         {
           "code": "603937",
@@ -1506,7 +1675,12 @@
           "last_limit": "102730",
           "open_count": 0,
           "amount": 126575709.0,
-          "seal_amount": 85416399.0
+          "seal_amount": 85416399.0,
+          "limit_reason": null,
+          "price": null,
+          "auction": null,
+          "anomaly_analysis": null,
+          "data_source": "GitHub Actions · 东方财富公开行情"
         },
         {
           "code": "600653",
@@ -1517,7 +1691,12 @@
           "last_limit": "94509",
           "open_count": 0,
           "amount": 122910812.0,
-          "seal_amount": 42165134.0
+          "seal_amount": 42165134.0,
+          "limit_reason": null,
+          "price": null,
+          "auction": null,
+          "anomaly_analysis": null,
+          "data_source": "GitHub Actions · 东方财富公开行情"
         },
         {
           "code": "000850",
@@ -1528,7 +1707,12 @@
           "last_limit": "93136",
           "open_count": 0,
           "amount": 104757912.0,
-          "seal_amount": 120383226.0
+          "seal_amount": 120383226.0,
+          "limit_reason": null,
+          "price": null,
+          "auction": null,
+          "anomaly_analysis": null,
+          "data_source": "GitHub Actions · 东方财富公开行情"
         },
         {
           "code": "002633",
@@ -1539,7 +1723,12 @@
           "last_limit": "111709",
           "open_count": 0,
           "amount": 99505982.0,
-          "seal_amount": 80559294.0
+          "seal_amount": 80559294.0,
+          "limit_reason": null,
+          "price": null,
+          "auction": null,
+          "anomaly_analysis": null,
+          "data_source": "GitHub Actions · 东方财富公开行情"
         },
         {
           "code": "002205",
@@ -1550,7 +1739,12 @@
           "last_limit": "94224",
           "open_count": 0,
           "amount": 61944224.0,
-          "seal_amount": 13847288.0
+          "seal_amount": 13847288.0,
+          "limit_reason": null,
+          "price": null,
+          "auction": null,
+          "anomaly_analysis": null,
+          "data_source": "GitHub Actions · 东方财富公开行情"
         },
         {
           "code": "603949",
@@ -1561,7 +1755,12 @@
           "last_limit": "94550",
           "open_count": 1,
           "amount": 55212598.0,
-          "seal_amount": 75686492.0
+          "seal_amount": 75686492.0,
+          "limit_reason": null,
+          "price": null,
+          "auction": null,
+          "anomaly_analysis": null,
+          "data_source": "GitHub Actions · 东方财富公开行情"
         }
       ]
     }
@@ -2042,8 +2241,8 @@
   },
   "market_cycle": {
     "large_cycle": {
-      "stage": "混沌",
-      "score": 40,
+      "stage": "分歧",
+      "score": 44,
       "trend": "↓",
       "method": "评分 + 结构 + 连续性；不使用均线",
       "continuity": {
@@ -2060,7 +2259,7 @@
         "近端涨停数量未形成上升趋势"
       ],
       "confidence": "medium",
-      "conclusion": "混沌；龙头弱 / 生态弱：退潮风险"
+      "conclusion": "分歧；龙头强 / 生态弱：龙头抱团 / 生态分歧"
     },
     "medium_cycle": {
       "mainline": {
@@ -3914,226 +4113,66 @@
       ]
     },
     "small_cycle": {
-      "stage": "回流",
+      "stage": "数据不足 / 暂无法判断",
       "score": null,
-      "trend": "→",
-      "timeline_ready": true,
-      "snapshot_count": 9,
-      "timeline": [
-        {
-          "time": "2026-09-23T01:28:33.345439Z",
-          "node": "观察起点",
-          "facts": {
-            "time": "2026-09-23T01:28:33.345439Z",
-            "limit_up_count": 4,
-            "limit_down_count": 0,
-            "broken_count": 0,
-            "broken_rate_pct": 0.0,
-            "promotion_rate_pct": 6.35,
-            "highest_board": 3,
-            "leader": {
-              "code": "001234",
-              "name": "泰慕士"
-            },
-            "strongest_theme": "IT服务Ⅱ"
-          }
-        },
-        {
-          "time": "2026-09-23T01:45:51.406794Z",
-          "node": "转弱",
-          "facts": {
-            "time": "2026-09-23T01:45:51.406794Z",
-            "limit_up_count": 23,
-            "limit_down_count": 0,
-            "broken_count": 7,
-            "broken_rate_pct": 23.33,
-            "promotion_rate_pct": 15.87,
-            "highest_board": 7,
-            "leader": {
-              "code": "001216",
-              "name": "华瓷股份"
-            },
-            "strongest_theme": "房地产服"
-          }
-        },
-        {
-          "time": "2026-09-23T01:56:28.859058Z",
-          "node": "一致",
-          "facts": {
-            "time": "2026-09-23T01:56:28.859058Z",
-            "limit_up_count": 29,
-            "limit_down_count": 0,
-            "broken_count": 7,
-            "broken_rate_pct": 19.44,
-            "promotion_rate_pct": 15.87,
-            "highest_board": 5,
-            "leader": {
-              "code": "000504",
-              "name": "南华生物"
-            },
-            "strongest_theme": "房地产开"
-          }
-        },
-        {
-          "time": "2026-09-23T02:13:23.411881Z",
-          "node": "分歧",
-          "facts": {
-            "time": "2026-09-23T02:13:23.411881Z",
-            "limit_up_count": 34,
-            "limit_down_count": 0,
-            "broken_count": 11,
-            "broken_rate_pct": 24.44,
-            "promotion_rate_pct": 14.29,
-            "highest_board": 4,
-            "leader": {
-              "code": "601811",
-              "name": "新华文轩"
-            },
-            "strongest_theme": "房地产服"
-          }
-        },
-        {
-          "time": "2026-09-23T02:30:24.829894Z",
-          "node": "分歧",
-          "facts": {
-            "time": "2026-09-23T02:30:24.829894Z",
-            "limit_up_count": 32,
-            "limit_down_count": 0,
-            "broken_count": 18,
-            "broken_rate_pct": 36.0,
-            "promotion_rate_pct": 12.7,
-            "highest_board": 4,
-            "leader": {
-              "code": "601811",
-              "name": "新华文轩"
-            },
-            "strongest_theme": "出版"
-          }
-        },
-        {
-          "time": "2026-09-23T02:47:20.103237Z",
-          "node": "震荡",
-          "facts": {
-            "time": "2026-09-23T02:47:20.103237Z",
-            "limit_up_count": 33,
-            "limit_down_count": 0,
-            "broken_count": 20,
-            "broken_rate_pct": 37.74,
-            "promotion_rate_pct": 14.29,
-            "highest_board": 4,
-            "leader": {
-              "code": "601811",
-              "name": "新华文轩"
-            },
-            "strongest_theme": "出版"
-          }
-        },
-        {
-          "time": "2026-09-23T02:58:26.446462Z",
-          "node": "震荡",
-          "facts": {
-            "time": "2026-09-23T02:58:26.446462Z",
-            "limit_up_count": 33,
-            "limit_down_count": 0,
-            "broken_count": 21,
-            "broken_rate_pct": 38.89,
-            "promotion_rate_pct": 14.29,
-            "highest_board": 4,
-            "leader": {
-              "code": "601811",
-              "name": "新华文轩"
-            },
-            "strongest_theme": "出版"
-          }
-        },
-        {
-          "time": "2026-09-23T03:20:22.239440Z",
-          "node": "修复",
-          "facts": {
-            "time": "2026-09-23T03:20:22.239440Z",
-            "limit_up_count": 36,
-            "limit_down_count": 0,
-            "broken_count": 22,
-            "broken_rate_pct": 37.93,
-            "promotion_rate_pct": 14.29,
-            "highest_board": 4,
-            "leader": {
-              "code": "601811",
-              "name": "新华文轩"
-            },
-            "strongest_theme": "通用设备"
-          }
-        },
-        {
-          "time": "2026-09-23T03:36:44.884936Z",
-          "node": "回流",
-          "facts": {
-            "time": "2026-09-23T03:36:44.884936Z",
-            "limit_up_count": 37,
-            "limit_down_count": 0,
-            "broken_count": 22,
-            "broken_rate_pct": 37.29,
-            "promotion_rate_pct": 14.29,
-            "highest_board": 4,
-            "leader": {
-              "code": "601811",
-              "name": "新华文轩"
-            },
-            "strongest_theme": "通用设备"
-          }
-        }
-      ],
-      "note": "日内节点不直接改写大周期。"
+      "trend": "—",
+      "timeline_ready": false,
+      "snapshot_count": 7,
+      "required_snapshot_count": 6,
+      "timeline": [],
+      "note": "不会用收盘单点反推全天路径。"
     },
     "leader_ecology_matrix": {
       "leader_strength": {
-        "score": 53,
-        "coverage_pct": 100.0,
+        "score": 67,
+        "coverage_pct": 80.0,
         "components": [
           {
             "metric": "龙头高度",
             "value": 4,
             "weight": 30,
             "normalized": 40.0,
-            "contribution": 12.0
+            "contribution": 15.0
           },
           {
             "metric": "封板稳定性",
             "value": 0,
             "weight": 25,
             "normalized": 100,
-            "contribution": 25.0
+            "contribution": 31.25
           },
           {
             "metric": "首次封板主动性",
             "value": "93016",
             "weight": 20,
-            "normalized": 0,
-            "contribution": 0.0
+            "normalized": null,
+            "contribution": null
           },
           {
             "metric": "封单/成交额",
             "value": 62.18,
             "weight": 15,
             "normalized": 100,
-            "contribution": 15.0
+            "contribution": 18.75
           },
           {
             "metric": "龙头所在题材涨停数",
             "value": 2,
             "weight": 10,
             "normalized": 14.29,
-            "contribution": 1.43
+            "contribution": 1.79
           }
         ],
-        "missing_metrics": [],
+        "missing_metrics": [
+          "首次封板主动性"
+        ],
         "leader": {
           "code": "601811",
           "name": "新华文轩",
           "theme": "出版",
           "height": 4
         },
-        "label": "弱"
+        "label": "强"
       },
       "market_ecology": {
         "score": 35,
@@ -4201,17 +4240,17 @@
         ],
         "label": "弱"
       },
-      "label": "龙头弱 / 生态弱：退潮风险"
+      "label": "龙头强 / 生态弱：龙头抱团 / 生态分歧"
     },
     "dashboard": {
-      "market_composite": 40,
-      "leader_strength": 53,
+      "market_composite": 44,
+      "leader_strength": 67,
       "market_ecology": 35,
       "market_width": null,
       "relay_ecology": 10.72,
       "mainline_strength": 50,
       "loss_effect": 80,
-      "structure_label": "龙头弱 / 生态弱：退潮风险"
+      "structure_label": "龙头强 / 生态弱：龙头抱团 / 生态分歧"
     },
     "method": "评分 + 结构 + 连续性；严禁用均线替代情绪结构。"
   },
@@ -4220,7 +4259,7 @@
     "market_data": true,
     "limit_up_data": true,
     "auction_data": false,
-    "intraday_data": true,
+    "intraday_data": false,
     "holding_data": true,
     "history_memory_data": true,
     "missing_fields": [
@@ -4232,11 +4271,12 @@
       "中位股平均反馈",
       "完整日内情绪时间轴",
       "昨日涨停平均反馈",
-      "9月22日完整盘中情绪时间轴"
+      "9月22日完整盘中情绪时间轴",
+      "首次封板主动性"
     ],
     "analysis_allowed": true,
     "analysis_scope": "允许盘后结构与三层周期分析；缺失市场宽度或完整盘中时间轴时降低置信度，不补造。",
-    "intraday_trigger_validation_allowed": true,
+    "intraday_trigger_validation_allowed": false,
     "market_width_data": false,
     "cycle_analysis_data": true
   },
@@ -6022,6 +6062,7 @@
           "missing_metrics": []
         }
       }
-    ]
+    ],
+    "official_sector_facts": null
   }
 }
