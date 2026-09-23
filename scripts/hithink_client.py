@@ -6,6 +6,7 @@ from __future__ import annotations
 
 import os
 import time
+from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timedelta, timezone
 
 import requests
@@ -88,21 +89,30 @@ def pool(kind: str, date: str) -> list[dict]:
 
 def all_quotes(limit: int = 100) -> tuple[list[dict], int]:
     """Read every page. The API's total is a code count, not active quote count."""
+    path = "/api/a-share/prices/snapshot"
+    first = get(path, {"limit": limit, "offset": 0})
+    total = first.get("total")
+    if not isinstance(total, int) or total < 1 or total > 10000:
+        raise HithinkError("market snapshot has invalid universe count")
+    pages = {0: first}
+    offsets = range(limit, total, limit)
+    # A small concurrency limit keeps the daily snapshot inside the scheduled
+    # job window without placing a large burst on the provider.
+    with ThreadPoolExecutor(max_workers=3) as executor:
+        futures = {offset: executor.submit(get, path, {"limit": limit, "offset": offset})
+                   for offset in offsets}
+        for offset, future in futures.items():
+            pages[offset] = future.result()
     rows: list[dict] = []
-    total: int | None = None
-    for offset in range(0, 10000, limit):
-        data = get("/api/a-share/prices/snapshot", {"limit": limit, "offset": offset})
+    for offset in range(0, total, limit):
+        data = pages[offset]
         batch = data.get("item")
         if not isinstance(batch, list) or not isinstance(data.get("total"), int):
             raise HithinkError("market snapshot missing pagination fields")
-        if total is None:
-            total = data["total"]
-        elif data["total"] != total:
+        if data["total"] != total:
             raise HithinkError("stock universe changed during pagination")
         rows.extend(batch)
-        if offset + limit >= total:
-            break
-    if total is None or len(rows) != total:
+    if len(rows) != total:
         raise HithinkError(f"incomplete market snapshot: {len(rows)}/{total}")
     codes = [r.get("thscode") for r in rows]
     if len(set(codes)) != total or not all(codes):
