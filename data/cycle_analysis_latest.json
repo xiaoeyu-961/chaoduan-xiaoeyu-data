@@ -2,7 +2,7 @@
   "schema_version": 1,
   "ok": true,
   "trade_date": "2026-09-23",
-  "generated_at": "2026-09-23T07:22:12.503313+00:00",
+  "generated_at": "2026-09-23T07:38:06.122964+00:00",
   "principles": [
     "不使用5/10/20日均线判断情绪周期",
     "龙头强度与市场生态分开计算",
@@ -10,8 +10,8 @@
     "缺失数据不补造、不按0分处理"
   ],
   "dashboard": {
-    "market_composite": 40,
-    "leader_strength": 51,
+    "market_composite": 44,
+    "leader_strength": 64,
     "market_ecology": 36,
     "market_width": null,
     "relay_ecology": 22.62,
@@ -21,7 +21,7 @@
   },
   "large_cycle": {
     "stage": "混沌",
-    "score": 40,
+    "score": 44,
     "trend": "↓",
     "method": "评分 + 结构 + 连续性；不使用均线",
     "continuity": {
@@ -56,7 +56,7 @@
   },
   "leader_ecology_matrix": {
     "leader_strength": {
-      "score": 51,
+      "score": 64,
       "coverage_pct": 65.0,
       "components": [
         {
@@ -82,10 +82,10 @@
         },
         {
           "metric": "封单/成交额",
-          "value": 4.22,
+          "value": 31.57,
           "weight": 15,
-          "normalized": 6.56,
-          "contribution": 1.51
+          "normalized": 62.38,
+          "contribution": 14.4
         },
         {
           "metric": "龙头所在题材涨停数",
