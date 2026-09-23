@@ -270,7 +270,8 @@ def theme_structure(sessions: list[dict]) -> list[dict]:
 def append_intraday(market: dict, promotion_data: dict | None) -> dict:
     trade_date = market["tradeDate"]
     old = read_json(INTRADAY_FILE, {})
-    snapshots = old.get("snapshots", []) if old.get("trade_date") == trade_date else []
+    snapshots = (old.get("snapshots", []) if old.get("trade_date") == trade_date
+                 and old.get("source") == market.get("source") else [])
     timestamp = market.get("updatedAt") or datetime.now(CN_TZ).isoformat()
     minute = timestamp[:16]
     snapshot = {

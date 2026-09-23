@@ -33,6 +33,7 @@ class SourceIntegrity(unittest.TestCase):
         self.assertEqual(market["breadth"]["unknown"], 1)
         self.assertIsNone(facts["market_amount_cny"])
         self.assertEqual(market["limitUps"][0]["limitReason"], "测试")
+        self.assertEqual(market["limitUps"][0]["amount"], 100)
 
 
 if __name__ == "__main__":

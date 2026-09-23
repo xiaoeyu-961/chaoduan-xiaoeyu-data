@@ -74,7 +74,13 @@ def build_market(date: str) -> tuple[dict, dict]:
     # current price. Keep those as unknown, never call them flat/zero-volume.
     breadth_complete = missing_changes == 0
     turnover_complete = turnover_missing == 0
-    limit_ups = sorted((normalize_stock(r) for r in up_raw),
+    quote_by_code = {row.get("thscode"): row for row in quotes}
+    limit_ups = [normalize_stock(r) for r in up_raw]
+    for row in limit_ups:
+        quote = quote_by_code.get(row.get("thscode")) or {}
+        if row["amount"] is None:
+            row["amount"] = quote.get("turnover")
+    limit_ups = sorted(limit_ups,
                        key=lambda r: (-(r["height"] or 0), r["code"] or ""))
     broken = [normalize_stock(r, "broken") for r in broken_raw]
     limit_down = [normalize_stock(r, "limitDown") for r in down_raw]
