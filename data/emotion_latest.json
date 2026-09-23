@@ -2,15 +2,15 @@
   "schema_version": 1,
   "ok": true,
   "trade_date": "2026-09-23",
-  "updated_at": "2026-09-23T03:20:22.239440Z",
+  "updated_at": "2026-09-23T03:36:44.884936Z",
   "source": "GitHub Actions · 东方财富公开行情",
   "principle": "仅保存事实数据，不在采集层生成周期标签或主观评分。",
   "market_ecology": {
-    "limit_up_count": 36,
+    "limit_up_count": 37,
     "limit_down_count": 0,
     "broken_count": 22,
-    "broken_rate_pct": 37.93,
-    "seal_rate_pct": 62.07,
+    "broken_rate_pct": 37.29,
+    "seal_rate_pct": 62.71,
     "highest_board": 4,
     "promotion": {
       "eligible": 63,
@@ -54,35 +54,43 @@
       "avg_change_pct": -0.29,
       "median_change_pct": -2.29,
       "positive_rate_pct": 40.32,
-      "loss_below_minus_5_rate_pct": 19.35
+      "loss_below_minus_5_rate_pct": 19.35,
+      "carried_forward": true,
+      "as_of": "2026-09-23T03:20:22.239440Z"
     },
     "high_position_feedback": {
       "sample": 3,
       "avg_change_pct": 5.28,
       "median_change_pct": 6.19,
       "positive_rate_pct": 100.0,
-      "loss_below_minus_5_rate_pct": 0.0
+      "loss_below_minus_5_rate_pct": 0.0,
+      "carried_forward": true,
+      "as_of": "2026-09-23T03:20:22.239440Z"
     },
     "middle_position_feedback": {
       "sample": 21,
       "avg_change_pct": 1.41,
       "median_change_pct": -0.14,
       "positive_rate_pct": 47.62,
-      "loss_below_minus_5_rate_pct": 28.57
+      "loss_below_minus_5_rate_pct": 28.57,
+      "carried_forward": true,
+      "as_of": "2026-09-23T03:20:22.239440Z"
     },
     "first_board_feedback": {
       "sample": 38,
       "avg_change_pct": -1.67,
       "median_change_pct": -3.37,
       "positive_rate_pct": 31.58,
-      "loss_below_minus_5_rate_pct": 15.79
+      "loss_below_minus_5_rate_pct": 15.79,
+      "carried_forward": true,
+      "as_of": "2026-09-23T03:20:22.239440Z"
     },
     "market_width": {
       "available": false,
       "up": null,
       "down": null,
       "flat": null,
-      "sample": 0
+      "sample": 1400
     }
   },
   "leader_candidates": [
@@ -94,8 +102,8 @@
       "first_limit": "93016",
       "last_limit": "93016",
       "open_count": 0,
-      "seal_amount": 182182450.0,
-      "amount": 294926096.0
+      "seal_amount": 183680950.0,
+      "amount": 295390432.0
     },
     {
       "code": "000910",
@@ -105,8 +113,8 @@
       "first_limit": "93039",
       "last_limit": "93039",
       "open_count": 0,
-      "seal_amount": 145959267.0,
-      "amount": 209144729.0
+      "seal_amount": 144695468.0,
+      "amount": 209608080.0
     },
     {
       "code": "001234",
@@ -116,8 +124,8 @@
       "first_limit": "92500",
       "last_limit": "92500",
       "open_count": 0,
-      "seal_amount": 356823746.0,
-      "amount": 81503251.0
+      "seal_amount": 355623432.0,
+      "amount": 81860449.0
     },
     {
       "code": "600825",
@@ -127,8 +135,8 @@
       "first_limit": "92500",
       "last_limit": "92500",
       "open_count": 0,
-      "seal_amount": 3437250690.0,
-      "amount": 29289116.0
+      "seal_amount": 3405667752.0,
+      "amount": 29591284.0
     },
     {
       "code": "603636",
@@ -138,8 +146,8 @@
       "first_limit": "92501",
       "last_limit": "95837",
       "open_count": 3,
-      "seal_amount": 85244185.0,
-      "amount": 624451296.0
+      "seal_amount": 80043642.0,
+      "amount": 626863472.0
     },
     {
       "code": "600743",
@@ -149,8 +157,8 @@
       "first_limit": "93010",
       "last_limit": "93010",
       "open_count": 0,
-      "seal_amount": 299006057.0,
-      "amount": 265877832.0
+      "seal_amount": 279093473.0,
+      "amount": 267982680.0
     },
     {
       "code": "000560",
@@ -160,8 +168,8 @@
       "first_limit": "93021",
       "last_limit": "103139",
       "open_count": 4,
-      "seal_amount": 190086074.0,
-      "amount": 1115865744.0
+      "seal_amount": 190765434.0,
+      "amount": 1119141344.0
     },
     {
       "code": "002614",
@@ -171,8 +179,8 @@
       "first_limit": "93109",
       "last_limit": "102051",
       "open_count": 7,
-      "seal_amount": 94125334.0,
-      "amount": 965899424.0
+      "seal_amount": 88084474.0,
+      "amount": 966511840.0
     },
     {
       "code": "002238",
@@ -182,8 +190,8 @@
       "first_limit": "92500",
       "last_limit": "92500",
       "open_count": 0,
-      "seal_amount": 148791440.0,
-      "amount": 82015536.0
+      "seal_amount": 148999026.0,
+      "amount": 82128138.0
     },
     {
       "code": "600802",
@@ -193,8 +201,8 @@
       "first_limit": "100124",
       "last_limit": "100124",
       "open_count": 0,
-      "seal_amount": 123269342.0,
-      "amount": 181994968.0
+      "seal_amount": 120054060.0,
+      "amount": 182750478.0
     }
   ],
   "themes": [
@@ -674,6 +682,23 @@
       ]
     },
     {
+      "name": "装修装饰",
+      "limit_up_count": 1,
+      "first_board_count": 1,
+      "second_board_count": 0,
+      "third_board_count": 0,
+      "high_board_count": 0,
+      "max_height": 1,
+      "active_days_3": 2,
+      "leaders": [
+        {
+          "code": "002989",
+          "name": "中天精装",
+          "height": 1
+        }
+      ]
+    },
+    {
       "name": "非白酒",
       "limit_up_count": 1,
       "first_board_count": 1,
@@ -681,7 +706,7 @@
       "third_board_count": 0,
       "high_board_count": 0,
       "max_height": 1,
-      "active_days_3": 1,
+      "active_days_3": 2,
       "leaders": [
         {
           "code": "600059",
@@ -692,7 +717,7 @@
     }
   ],
   "intraday": {
-    "snapshot_count": 8,
+    "snapshot_count": 9,
     "timeline_ready": true
   },
   "data_quality": {

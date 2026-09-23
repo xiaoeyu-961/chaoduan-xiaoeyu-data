@@ -2,7 +2,7 @@
   "schema_version": 1,
   "ok": true,
   "trade_date": "2026-09-23",
-  "generated_at": "2026-09-23T03:20:39.856946+00:00",
+  "generated_at": "2026-09-23T03:37:33.061023+00:00",
   "principles": [
     "不使用5/10/20日均线判断情绪周期",
     "龙头强度与市场生态分开计算",
@@ -33,7 +33,7 @@
     "pressure_factors": [
       "最高板高度不足",
       "晋级率仅14.29%",
-      "炸板率37.93%偏高",
+      "炸板率37.29%偏高",
       "昨日涨停平均反馈-0.29%偏弱",
       "近端涨停数量未形成上升趋势"
     ],
@@ -1368,6 +1368,134 @@
         }
       },
       {
+        "theme": "装修装饰",
+        "stage": "萌芽",
+        "score": 16,
+        "trend": "↑",
+        "subscores": {
+          "leader_strength": 0,
+          "sector_width": 0,
+          "ladder_completeness": 25,
+          "capital_persistence": 50
+        },
+        "facts": {
+          "name": "装修装饰",
+          "limit_up_count": 1,
+          "first_board_count": 1,
+          "second_board_count": 0,
+          "third_board_count": 0,
+          "high_board_count": 0,
+          "max_height": 1,
+          "active_days_3": 2,
+          "leaders": [
+            {
+              "code": "002989",
+              "name": "中天精装",
+              "height": 1
+            }
+          ]
+        },
+        "explanation": {
+          "score": 16,
+          "coverage_pct": 100.0,
+          "components": [
+            {
+              "metric": "龙头强度",
+              "value": 1,
+              "weight": 30,
+              "normalized": 0,
+              "contribution": 0.0
+            },
+            {
+              "metric": "板块宽度",
+              "value": 1,
+              "weight": 25,
+              "normalized": 0,
+              "contribution": 0.0
+            },
+            {
+              "metric": "梯队完整度",
+              "value": 1,
+              "weight": 25,
+              "normalized": 25.0,
+              "contribution": 6.25
+            },
+            {
+              "metric": "资金持续性",
+              "value": 2,
+              "weight": 20,
+              "normalized": 50.0,
+              "contribution": 10.0
+            }
+          ],
+          "missing_metrics": []
+        }
+      },
+      {
+        "theme": "非白酒",
+        "stage": "萌芽",
+        "score": 16,
+        "trend": "↑",
+        "subscores": {
+          "leader_strength": 0,
+          "sector_width": 0,
+          "ladder_completeness": 25,
+          "capital_persistence": 50
+        },
+        "facts": {
+          "name": "非白酒",
+          "limit_up_count": 1,
+          "first_board_count": 1,
+          "second_board_count": 0,
+          "third_board_count": 0,
+          "high_board_count": 0,
+          "max_height": 1,
+          "active_days_3": 2,
+          "leaders": [
+            {
+              "code": "600059",
+              "name": "古越龙山",
+              "height": 1
+            }
+          ]
+        },
+        "explanation": {
+          "score": 16,
+          "coverage_pct": 100.0,
+          "components": [
+            {
+              "metric": "龙头强度",
+              "value": 1,
+              "weight": 30,
+              "normalized": 0,
+              "contribution": 0.0
+            },
+            {
+              "metric": "板块宽度",
+              "value": 1,
+              "weight": 25,
+              "normalized": 0,
+              "contribution": 0.0
+            },
+            {
+              "metric": "梯队完整度",
+              "value": 1,
+              "weight": 25,
+              "normalized": 25.0,
+              "contribution": 6.25
+            },
+            {
+              "metric": "资金持续性",
+              "value": 2,
+              "weight": 20,
+              "normalized": 50.0,
+              "contribution": 10.0
+            }
+          ],
+          "missing_metrics": []
+        }
+      },
+      {
         "theme": "水泥",
         "stage": "萌芽",
         "score": 9,
@@ -1760,79 +1888,15 @@
           ],
           "missing_metrics": []
         }
-      },
-      {
-        "theme": "非白酒",
-        "stage": "萌芽",
-        "score": 6,
-        "trend": "→",
-        "subscores": {
-          "leader_strength": 0,
-          "sector_width": 0,
-          "ladder_completeness": 25,
-          "capital_persistence": 0
-        },
-        "facts": {
-          "name": "非白酒",
-          "limit_up_count": 1,
-          "first_board_count": 1,
-          "second_board_count": 0,
-          "third_board_count": 0,
-          "high_board_count": 0,
-          "max_height": 1,
-          "active_days_3": 1,
-          "leaders": [
-            {
-              "code": "600059",
-              "name": "古越龙山",
-              "height": 1
-            }
-          ]
-        },
-        "explanation": {
-          "score": 6,
-          "coverage_pct": 100.0,
-          "components": [
-            {
-              "metric": "龙头强度",
-              "value": 1,
-              "weight": 30,
-              "normalized": 0,
-              "contribution": 0.0
-            },
-            {
-              "metric": "板块宽度",
-              "value": 1,
-              "weight": 25,
-              "normalized": 0,
-              "contribution": 0.0
-            },
-            {
-              "metric": "梯队完整度",
-              "value": 1,
-              "weight": 25,
-              "normalized": 25.0,
-              "contribution": 6.25
-            },
-            {
-              "metric": "资金持续性",
-              "value": 1,
-              "weight": 20,
-              "normalized": 0,
-              "contribution": 0.0
-            }
-          ],
-          "missing_metrics": []
-        }
       }
     ]
   },
   "small_cycle": {
-    "stage": "修复",
+    "stage": "回流",
     "score": null,
     "trend": "→",
     "timeline_ready": true,
-    "snapshot_count": 8,
+    "snapshot_count": 9,
     "timeline": [
       {
         "time": "2026-09-23T01:28:33.345439Z",
@@ -1977,6 +2041,24 @@
           },
           "strongest_theme": "通用设备"
         }
+      },
+      {
+        "time": "2026-09-23T03:36:44.884936Z",
+        "node": "回流",
+        "facts": {
+          "time": "2026-09-23T03:36:44.884936Z",
+          "limit_up_count": 37,
+          "limit_down_count": 0,
+          "broken_count": 22,
+          "broken_rate_pct": 37.29,
+          "promotion_rate_pct": 14.29,
+          "highest_board": 4,
+          "leader": {
+            "code": "601811",
+            "name": "新华文轩"
+          },
+          "strongest_theme": "通用设备"
+        }
       }
     ],
     "note": "日内节点不直接改写大周期。"
@@ -2009,7 +2091,7 @@
         },
         {
           "metric": "封单/成交额",
-          "value": 61.77,
+          "value": 62.18,
           "weight": 15,
           "normalized": 100,
           "contribution": 15.0
@@ -2037,17 +2119,17 @@
       "components": [
         {
           "metric": "涨停数量",
-          "value": 36,
+          "value": 37,
           "weight": 16,
-          "normalized": 20.0,
-          "contribution": 3.4
+          "normalized": 21.25,
+          "contribution": 3.62
         },
         {
           "metric": "炸板率",
-          "value": 37.93,
+          "value": 37.29,
           "weight": 16,
-          "normalized": 30.18,
-          "contribution": 5.14
+          "normalized": 31.78,
+          "contribution": 5.41
         },
         {
           "metric": "连板晋级率",
