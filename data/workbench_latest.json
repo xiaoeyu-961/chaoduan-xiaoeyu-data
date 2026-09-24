@@ -3,7 +3,7 @@
     "product": "超短小鳄鱼｜V1.4.1 超短交易研究工作台",
     "bundle_version": "1.1",
     "schema_updated_at": "2026-09-21T23:00:00+08:00",
-    "generated_at": "2026-09-24T07:07:04.216701+00:00",
+    "generated_at": "2026-09-24T07:14:54.877983+00:00",
     "timezone": "Asia/Shanghai",
     "data_range": [
       "2026-09-16",
@@ -177,16 +177,16 @@
       "down_count": 4306,
       "flat_count": 131,
       "limit_up_count": 51,
-      "limit_down_count": 13,
-      "failed_limit_count": 9,
-      "broken_rate_pct": 15.0,
-      "seal_rate_pct": 85.0,
+      "limit_down_count": 12,
+      "failed_limit_count": 10,
+      "broken_rate_pct": 16.39,
+      "seal_rate_pct": 83.61,
       "highest_board": 5,
-      "big_cycle": "分歧",
+      "big_cycle": "启动",
       "mid_cycle": "发酵",
       "small_cycle": "数据不足 / 暂无法判断",
       "primary_theme": "福建自贸区",
-      "structure_label": "龙头强 / 生态弱：龙头抱团 / 生态分歧",
+      "structure_label": "龙头弱 / 生态弱：退潮风险",
       "data_quality": "auto_collected_partial",
       "turnover_change_cny": -111619053639.12012,
       "turnover_comparison": {
@@ -232,8 +232,8 @@
       },
       {
         "date": "2026-09-24",
-        "state": "分歧",
-        "score": 54
+        "state": "启动",
+        "score": 48
       }
     ],
     "mid_cycle": [
@@ -487,6 +487,34 @@
         "limit_down_count": 13,
         "broken_count": 9,
         "broken_rate_pct": 15.0,
+        "promotion_rate_pct": 25.49,
+        "highest_board": 5,
+        "leader": {
+          "code": "601811",
+          "name": "新华文轩"
+        },
+        "strongest_theme": "中船系",
+        "slot": "15:00",
+        "turnover_cny": 1653357360000,
+        "amount_comparison": {
+          "status": "ready",
+          "time": "15:00",
+          "previousTradeDate": "2026-09-23",
+          "current": 1653357362390.0898,
+          "previous": 1764976416029.21,
+          "difference": -111619053639.12012,
+          "changePct": -6.32,
+          "direction": "缩量",
+          "source": "腾讯行情沪深指数5日分时（同源累计）"
+        }
+      },
+      {
+        "time": "2026-09-24T07:13:41.706474+00:00",
+        "source": "同花顺官方 Financial-API",
+        "limit_up_count": 51,
+        "limit_down_count": 12,
+        "broken_count": 10,
+        "broken_rate_pct": 16.39,
         "promotion_rate_pct": 25.49,
         "highest_board": 5,
         "leader": {
@@ -3475,7 +3503,7 @@
           "last_limit": "09:30",
           "open_count": null,
           "amount": 252607610,
-          "seal_amount": 135765310,
+          "seal_amount": 11682935,
           "limit_reason": "拟收购民族出版社+教科书发行+数字教育+“华”字辈",
           "price": 20.35,
           "auction": {
@@ -3520,7 +3548,7 @@
           "last_limit": "09:25",
           "open_count": null,
           "amount": 80434535,
-          "seal_amount": 360840630,
+          "seal_amount": 2867400,
           "limit_reason": "针织服装+贴牌加工+广州国资",
           "price": 35.4,
           "auction": {
@@ -3562,7 +3590,7 @@
           "last_limit": "09:30",
           "open_count": null,
           "amount": 463388110,
-          "seal_amount": 103658628,
+          "seal_amount": 10135944,
           "limit_reason": "股份转让+具身智能+按摩椅",
           "price": 8.33,
           "auction": {
@@ -3604,7 +3632,7 @@
           "last_limit": "09:25",
           "open_count": null,
           "amount": 46504942,
-          "seal_amount": 1761208900,
+          "seal_amount": 58927680,
           "limit_reason": "拟收购界面财联社+上海国资+“华”字辈",
           "price": 7.77,
           "auction": {
@@ -3648,7 +3676,7 @@
           "last_limit": "09:30",
           "open_count": null,
           "amount": 722575320,
-          "seal_amount": 12686711.6,
+          "seal_amount": 3035643,
           "limit_reason": "广电网络+网络安全+数据中心",
           "price": 8.43,
           "auction": {
@@ -3692,7 +3720,7 @@
           "last_limit": "09:25",
           "open_count": null,
           "amount": 70141112,
-          "seal_amount": 160092490,
+          "seal_amount": 7952896,
           "limit_reason": "纺织主业+矿业整合+国企改革+“华”字辈",
           "price": 5.12,
           "auction": {
@@ -3735,7 +3763,7 @@
           "last_limit": "09:33",
           "open_count": null,
           "amount": 3358508100,
-          "seal_amount": 143093940,
+          "seal_amount": 9205749,
           "limit_reason": "半导体封装材料+存储芯片+产能扩建",
           "price": 29.61,
           "auction": {
@@ -3777,7 +3805,7 @@
           "last_limit": "09:30",
           "open_count": null,
           "amount": 493825160,
-          "seal_amount": 97599594,
+          "seal_amount": 6968924,
           "limit_reason": "网络分析仪+半导体测试+具身智能",
           "price": 26.66,
           "auction": {
@@ -3819,7 +3847,7 @@
           "last_limit": "09:35",
           "open_count": null,
           "amount": 611961230,
-          "seal_amount": 89284129,
+          "seal_amount": 3138594,
           "limit_reason": "PCB三防漆+液冷硅油+胶粘剂涂料+新能源用胶",
           "price": 8.29,
           "auction": {
@@ -3862,7 +3890,7 @@
           "last_limit": "14:24",
           "open_count": null,
           "amount": 418892410,
-          "seal_amount": 76295573,
+          "seal_amount": 7927450,
           "limit_reason": "水泥熟料+房地产产业链+福建国资",
           "price": 6.62,
           "auction": {
@@ -3904,7 +3932,7 @@
           "last_limit": "10:04",
           "open_count": null,
           "amount": 447214950,
-          "seal_amount": 13278084.3,
+          "seal_amount": 5628825,
           "limit_reason": "缝制设备+机器人缝制+轻型飞机",
           "price": 8.37,
           "auction": {
@@ -3946,7 +3974,7 @@
           "last_limit": "09:34",
           "open_count": null,
           "amount": 383309980,
-          "seal_amount": 72841139,
+          "seal_amount": 4173444,
           "limit_reason": "半导体装备+玻璃基封装+光伏设备",
           "price": 35.64,
           "auction": {
@@ -3988,7 +4016,7 @@
           "last_limit": "09:30",
           "open_count": null,
           "amount": 75458139,
-          "seal_amount": 78925298,
+          "seal_amount": 7324460,
           "limit_reason": "商用车热管理+新能源风扇+间接投资宇树科技",
           "price": 16.9,
           "auction": {
@@ -4032,7 +4060,7 @@
           "last_limit": "09:25",
           "open_count": null,
           "amount": 314302750,
-          "seal_amount": 59982095,
+          "seal_amount": 6660785,
           "limit_reason": "大股东增持+基建工程+海外业务",
           "price": 5.65,
           "auction": {
@@ -4074,7 +4102,7 @@
           "last_limit": "14:23",
           "open_count": null,
           "amount": 2717291100,
-          "seal_amount": 356540940,
+          "seal_amount": 28469150,
           "limit_reason": "海峡两岸+平潭开发+林板一体化",
           "price": 8.78,
           "auction": {
@@ -4116,7 +4144,7 @@
           "last_limit": "09:37",
           "open_count": null,
           "amount": 256643530,
-          "seal_amount": 38513216,
+          "seal_amount": 1829520,
           "limit_reason": "机器人轴承+汽车轴承+湖北国资",
           "price": 9.68,
           "auction": {
@@ -4158,7 +4186,7 @@
           "last_limit": "09:32",
           "open_count": null,
           "amount": 306196900,
-          "seal_amount": 43684377,
+          "seal_amount": 2346231,
           "limit_reason": "AI医疗+基因检测+三代测序",
           "price": 11.01,
           "auction": {
@@ -4200,7 +4228,7 @@
           "last_limit": "14:39",
           "open_count": null,
           "amount": 445872840,
-          "seal_amount": 79515980,
+          "seal_amount": 2772370,
           "limit_reason": "海峡两岸+福建国资+绿色电力",
           "price": 5.35,
           "auction": {
@@ -4242,7 +4270,7 @@
           "last_limit": "09:33",
           "open_count": null,
           "amount": 154808990,
-          "seal_amount": 86277204,
+          "seal_amount": 2183688,
           "limit_reason": "中药大健康+独家中药+定增审核",
           "price": 4.68,
           "auction": {
@@ -4284,7 +4312,7 @@
           "last_limit": "14:39",
           "open_count": null,
           "amount": 389999400,
-          "seal_amount": 118476753,
+          "seal_amount": 2003202,
           "limit_reason": "海峡两岸+港口物流+资产重组",
           "price": 9.81,
           "auction": {
@@ -4326,7 +4354,7 @@
           "last_limit": "09:37",
           "open_count": null,
           "amount": 565685530,
-          "seal_amount": 25589084,
+          "seal_amount": 1966824,
           "limit_reason": "投资半导体及机器人+男装夹克+海峡两岸",
           "price": 9.26,
           "auction": {
@@ -4368,7 +4396,7 @@
           "last_limit": "09:50",
           "open_count": null,
           "amount": 921657310,
-          "seal_amount": 24716050,
+          "seal_amount": 1179318,
           "limit_reason": "股东增持+机器人减速器+定增扩产",
           "price": 13.06,
           "auction": {
@@ -4410,7 +4438,7 @@
           "last_limit": "14:17",
           "open_count": null,
           "amount": 201473190,
-          "seal_amount": 41144456,
+          "seal_amount": 4130496,
           "limit_reason": "风电混塔+PCCP管道+央企控股",
           "price": 12.78,
           "auction": {
@@ -4452,7 +4480,7 @@
           "last_limit": "14:50",
           "open_count": null,
           "amount": 742802880,
-          "seal_amount": 68454592,
+          "seal_amount": 8386095,
           "limit_reason": "海峡两岸+AI营销+酒类运营",
           "price": 8.13,
           "auction": {
@@ -4494,7 +4522,7 @@
           "last_limit": "09:30",
           "open_count": null,
           "amount": 255370810,
-          "seal_amount": 40973727,
+          "seal_amount": 4771540,
           "limit_reason": "控制权变更+鸭业全产业链+羽绒出口",
           "price": 2.27,
           "auction": {
@@ -4536,7 +4564,7 @@
           "last_limit": "09:35",
           "open_count": null,
           "amount": 232050740,
-          "seal_amount": 31754546,
+          "seal_amount": 1465415,
           "limit_reason": "合成革+光学级PMMA+足球革",
           "price": 14.05,
           "auction": {
@@ -4578,7 +4606,7 @@
           "last_limit": "09:31",
           "open_count": null,
           "amount": 1977372500,
-          "seal_amount": 106051987,
+          "seal_amount": 4998084,
           "limit_reason": "商业航天+卫星智算+存储芯片+股权激励",
           "price": 8.97,
           "auction": {
@@ -4621,7 +4649,7 @@
           "last_limit": "09:36",
           "open_count": null,
           "amount": 139841300,
-          "seal_amount": 35267836,
+          "seal_amount": 1411680,
           "limit_reason": "口腔医疗+连锁服务+半年报减亏",
           "price": 2.72,
           "auction": {
@@ -4663,7 +4691,7 @@
           "last_limit": "14:45",
           "open_count": null,
           "amount": 275290870,
-          "seal_amount": 65311200,
+          "seal_amount": 1952388,
           "limit_reason": "海峡两岸+福建国资+林业主业",
           "price": 11.58,
           "auction": {
@@ -4705,7 +4733,7 @@
           "last_limit": "10:26",
           "open_count": null,
           "amount": 286117120,
-          "seal_amount": 28292166,
+          "seal_amount": 1042950,
           "limit_reason": "烟标印刷+员工持股+多元化布局",
           "price": 12.27,
           "auction": {
@@ -4747,7 +4775,7 @@
           "last_limit": "14:24",
           "open_count": null,
           "amount": 1604221000,
-          "seal_amount": 97693332,
+          "seal_amount": 13483313,
           "limit_reason": "海峡两岸+平潭国资+智慧城市",
           "price": 10.81,
           "auction": {
@@ -4789,7 +4817,7 @@
           "last_limit": "14:02",
           "open_count": null,
           "amount": 569676280,
-          "seal_amount": 6911206.3,
+          "seal_amount": 436914,
           "limit_reason": "中船系+智能物流+仓储软件+央企背景",
           "price": 17.98,
           "auction": {
@@ -4832,7 +4860,7 @@
           "last_limit": "13:40",
           "open_count": null,
           "amount": 2532466800,
-          "seal_amount": 1448356,
+          "seal_amount": 201312,
           "limit_reason": "矢量网络分析仪+光模块测试+电子测量仪器",
           "price": 83.88,
           "auction": {
@@ -4874,7 +4902,7 @@
           "last_limit": "09:42",
           "open_count": null,
           "amount": 867521290,
-          "seal_amount": 108161938,
+          "seal_amount": 8980958,
           "limit_reason": "航空轴承+机器人轴承+风电轴承+次新股",
           "price": 35.54,
           "auction": {
@@ -4917,7 +4945,7 @@
           "last_limit": "10:35",
           "open_count": null,
           "amount": 341477430,
-          "seal_amount": 40469675,
+          "seal_amount": 1050140,
           "limit_reason": "园林剥离+天然矿泉水+全国扩张",
           "price": 9.1,
           "auction": {
@@ -4959,7 +4987,7 @@
           "last_limit": "09:43",
           "open_count": null,
           "amount": 194636470,
-          "seal_amount": 14241084,
+          "seal_amount": 698984,
           "limit_reason": "互联网营销+饮用水+跨境电商",
           "price": 5.72,
           "auction": {
@@ -5001,7 +5029,7 @@
           "last_limit": "09:39",
           "open_count": null,
           "amount": 1020598470,
-          "seal_amount": 59100450,
+          "seal_amount": 13926810,
           "limit_reason": "焦炭+钢企直供+销量增长",
           "price": 5.7,
           "auction": {
@@ -5043,8 +5071,8 @@
           "last_limit": "09:58",
           "open_count": null,
           "amount": 1335809330,
-          "seal_amount": 19591380,
-          "limit_reason": "工程机械+盾构机+智能矿卡",
+          "seal_amount": 1072290,
+          "limit_reason": "海峡两岸+工程机械+盾构机+智能矿卡",
           "price": 4.65,
           "auction": {
             "thscode": "600815.SH",
@@ -5086,7 +5114,7 @@
           "last_limit": "10:02",
           "open_count": null,
           "amount": 788504270,
-          "seal_amount": 37167900,
+          "seal_amount": 3447400,
           "limit_reason": "风电铸件+风电轴承+半年报增长",
           "price": 5.5,
           "auction": {
@@ -5128,7 +5156,7 @@
           "last_limit": "09:25",
           "open_count": null,
           "amount": 208136110,
-          "seal_amount": 234273390,
+          "seal_amount": 13875875,
           "limit_reason": "数据中心+变压器+海外配电",
           "price": 16.25,
           "auction": {
@@ -5170,7 +5198,7 @@
           "last_limit": "10:43",
           "open_count": null,
           "amount": 1042459180,
-          "seal_amount": 36482856,
+          "seal_amount": 1268021,
           "limit_reason": "光纤光缆+扭亏为盈+6G通信",
           "price": 18.73,
           "auction": {
@@ -5212,7 +5240,7 @@
           "last_limit": "09:58",
           "open_count": null,
           "amount": 704826050,
-          "seal_amount": 89086385,
+          "seal_amount": 4907032,
           "limit_reason": "磷化铟衬底+光稳定剂",
           "price": 16.27,
           "auction": {
@@ -5253,7 +5281,7 @@
           "last_limit": "14:48",
           "open_count": null,
           "amount": 1067561960,
-          "seal_amount": 23349027,
+          "seal_amount": 2984507,
           "limit_reason": "海峡两岸+AI医疗+体外诊断",
           "price": 14.93,
           "auction": {
@@ -5295,7 +5323,7 @@
           "last_limit": "09:34",
           "open_count": null,
           "amount": 1311807280,
-          "seal_amount": 16643317,
+          "seal_amount": 1553327,
           "limit_reason": "出版发行+教材教辅+文化消费+“华”字辈",
           "price": 18.47,
           "auction": {
@@ -5338,7 +5366,7 @@
           "last_limit": "09:37",
           "open_count": null,
           "amount": 155895110,
-          "seal_amount": 46766776,
+          "seal_amount": 2509780,
           "limit_reason": "人形机器人+胎圈钢丝+全球销售",
           "price": 9.8,
           "auction": {
@@ -5380,7 +5408,7 @@
           "last_limit": "13:42",
           "open_count": null,
           "amount": 345029350,
-          "seal_amount": 68472965,
+          "seal_amount": 1226325,
           "limit_reason": "模拟芯片+电子雷管+低空经济",
           "price": 49.25,
           "auction": {
@@ -5422,7 +5450,7 @@
           "last_limit": "09:32",
           "open_count": null,
           "amount": 143607980,
-          "seal_amount": 78088043,
+          "seal_amount": 2464330,
           "limit_reason": "铁路扣件合同+电容配件+半年报增长",
           "price": 10.42,
           "auction": {
@@ -5464,7 +5492,7 @@
           "last_limit": "09:40",
           "open_count": null,
           "amount": 157461540,
-          "seal_amount": 71913512,
+          "seal_amount": 1841026,
           "limit_reason": "减速器+汽车变速器+农机齿轮",
           "price": 14.74,
           "auction": {
@@ -5506,7 +5534,7 @@
           "last_limit": "13:56",
           "open_count": null,
           "amount": 90254673,
-          "seal_amount": 34516420,
+          "seal_amount": 2212506,
           "limit_reason": "农药流通+作物解决方案+海外市场+“华”字辈",
           "price": 12.17,
           "auction": {
@@ -5549,7 +5577,7 @@
           "last_limit": "09:46",
           "open_count": null,
           "amount": 95819597,
-          "seal_amount": 36697570,
+          "seal_amount": 1677858,
           "limit_reason": "人形机器人+汽车零部件+新能源定点",
           "price": 12.74,
           "auction": {
@@ -5591,7 +5619,7 @@
           "last_limit": "09:39",
           "open_count": null,
           "amount": 222120490,
-          "seal_amount": 11694777.4,
+          "seal_amount": 2650791.9,
           "limit_reason": "卫星测量+商业航天+电磁CAE仿真软件+半年报增长",
           "price": 37.94,
           "auction": {
@@ -6093,8 +6121,8 @@
   },
   "market_cycle": {
     "large_cycle": {
-      "stage": "分歧",
-      "score": 54,
+      "stage": "启动",
+      "score": 48,
       "trend": "↓",
       "method": "评分 + 结构 + 连续性；不使用均线",
       "continuity": {
@@ -6104,7 +6132,7 @@
       },
       "supporting_factors": [
         "最高板5板",
-        "炸板率15.0%可控",
+        "炸板率16.39%可控",
         "昨日涨停平均反馈0.55%为正"
       ],
       "pressure_factors": [
@@ -6112,7 +6140,7 @@
         "近端涨停数量未形成上升趋势"
       ],
       "confidence": "medium",
-      "conclusion": "分歧；龙头强 / 生态弱：龙头抱团 / 生态分歧"
+      "conclusion": "启动；龙头弱 / 生态弱：退潮风险"
     },
     "medium_cycle": {
       "mainline": {
@@ -6966,7 +6994,7 @@
     },
     "leader_ecology_matrix": {
       "leader_strength": {
-        "score": 82,
+        "score": 60,
         "coverage_pct": 65.0,
         "components": [
           {
@@ -6992,10 +7020,10 @@
           },
           {
             "metric": "封单/成交额",
-            "value": 53.75,
+            "value": 4.62,
             "weight": 15,
-            "normalized": 100,
-            "contribution": 23.08
+            "normalized": 7.4,
+            "contribution": 1.71
           },
           {
             "metric": "龙头所在题材涨停数",
@@ -7015,7 +7043,7 @@
           "theme": null,
           "height": 5
         },
-        "label": "强"
+        "label": "弱"
       },
       "market_ecology": {
         "score": 43,
@@ -7030,10 +7058,10 @@
           },
           {
             "metric": "炸板率",
-            "value": 15.0,
+            "value": 16.39,
             "weight": 16,
-            "normalized": 87.5,
-            "contribution": 14.0
+            "normalized": 84.02,
+            "contribution": 13.44
           },
           {
             "metric": "连板晋级率",
@@ -7065,10 +7093,10 @@
           },
           {
             "metric": "跌停数量",
-            "value": 13,
+            "value": 12,
             "weight": 8,
-            "normalized": 35.0,
-            "contribution": 2.8
+            "normalized": 40.0,
+            "contribution": 3.2
           },
           {
             "metric": "市场上涨宽度",
@@ -7081,17 +7109,17 @@
         "missing_metrics": [],
         "label": "弱"
       },
-      "label": "龙头强 / 生态弱：龙头抱团 / 生态分歧"
+      "label": "龙头弱 / 生态弱：退潮风险"
     },
     "dashboard": {
-      "market_composite": 54,
-      "leader_strength": 82,
+      "market_composite": 48,
+      "leader_strength": 60,
       "market_ecology": 43,
       "market_width": 0,
       "relay_ecology": 38.73,
       "mainline_strength": 60,
       "loss_effect": 100,
-      "structure_label": "龙头强 / 生态弱：龙头抱团 / 生态分歧"
+      "structure_label": "龙头弱 / 生态弱：退潮风险"
     },
     "method": "评分 + 结构 + 连续性；严禁用均线替代情绪结构。"
   },
@@ -8129,18 +8157,18 @@
   "hithink_facts": {
     "source": "同花顺官方 Financial-API",
     "trade_date": "2026-09-24",
-    "updated_at": "2026-09-24T07:06:07.321231+00:00",
+    "updated_at": "2026-09-24T07:13:41.706474+00:00",
     "market_quote_total": 5578,
     "limit_up": {
       "count": 51,
       "complete": true
     },
     "broken": {
-      "count": 9,
+      "count": 10,
       "complete": true
     },
     "limit_down": {
-      "count": 13,
+      "count": 12,
       "complete": true
     },
     "auction": {
