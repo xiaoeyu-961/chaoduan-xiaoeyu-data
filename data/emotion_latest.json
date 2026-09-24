@@ -2,15 +2,15 @@
   "schema_version": 1,
   "ok": true,
   "trade_date": "2026-09-24",
-  "updated_at": "2026-09-24T06:49:20.067349+00:00",
+  "updated_at": "2026-09-24T07:06:07.321231+00:00",
   "source": "同花顺官方 Financial-API",
   "principle": "仅保存事实数据，不在采集层生成周期标签或主观评分。",
   "market_ecology": {
-    "limit_up_count": 49,
-    "limit_down_count": 11,
-    "broken_count": 10,
-    "broken_rate_pct": 16.95,
-    "seal_rate_pct": 83.05,
+    "limit_up_count": 51,
+    "limit_down_count": 13,
+    "broken_count": 9,
+    "broken_rate_pct": 15.0,
+    "seal_rate_pct": 85.0,
     "highest_board": 5,
     "promotion": {
       "eligible": 51,
@@ -41,29 +41,29 @@
     },
     "previous_limit_up_feedback": {
       "sample": 51,
-      "avg_change_pct": 0.56,
-      "median_change_pct": 0.3,
+      "avg_change_pct": 0.55,
+      "median_change_pct": 0.26,
       "positive_rate_pct": 50.98,
       "loss_below_minus_5_rate_pct": 33.33
     },
     "high_position_feedback": {
       "sample": 2,
-      "avg_change_pct": 5.33,
-      "median_change_pct": 5.33,
+      "avg_change_pct": 5.13,
+      "median_change_pct": 5.13,
       "positive_rate_pct": 100.0,
       "loss_below_minus_5_rate_pct": 0.0
     },
     "middle_position_feedback": {
       "sample": 10,
-      "avg_change_pct": 0.73,
-      "median_change_pct": -0.14,
+      "avg_change_pct": 0.65,
+      "median_change_pct": 0.26,
       "positive_rate_pct": 50.0,
       "loss_below_minus_5_rate_pct": 40.0
     },
     "first_board_feedback": {
       "sample": 39,
-      "avg_change_pct": 0.27,
-      "median_change_pct": -0.13,
+      "avg_change_pct": 0.29,
+      "median_change_pct": -0.06,
       "positive_rate_pct": 48.72,
       "loss_below_minus_5_rate_pct": 33.33
     },
@@ -71,9 +71,9 @@
       "available": true,
       "complete": false,
       "coverage_pct": 99.62,
-      "up": 1100,
-      "down": 4296,
-      "flat": 161,
+      "up": 1120,
+      "down": 4306,
+      "flat": 131,
       "sample": 5557
     }
   },
@@ -86,8 +86,8 @@
       "first_limit": "09:30",
       "last_limit": "09:30",
       "open_count": null,
-      "seal_amount": 175808000,
-      "amount": 247660530
+      "seal_amount": 135765310,
+      "amount": 252607610
     },
     {
       "code": "001234",
@@ -97,8 +97,8 @@
       "first_limit": "09:25",
       "last_limit": "09:25",
       "open_count": null,
-      "seal_amount": 362667270,
-      "amount": 78979595
+      "seal_amount": 360840630,
+      "amount": 80434535
     },
     {
       "code": "600825",
@@ -108,8 +108,8 @@
       "first_limit": "09:25",
       "last_limit": "09:25",
       "open_count": null,
-      "seal_amount": 2372984500,
-      "amount": 45454438
+      "seal_amount": 1761208900,
+      "amount": 46504942
     },
     {
       "code": "002614",
@@ -119,8 +119,8 @@
       "first_limit": "09:30",
       "last_limit": "09:30",
       "open_count": null,
-      "seal_amount": 114894965,
-      "amount": 461997000
+      "seal_amount": 103658628,
+      "amount": 463388110
     },
     {
       "code": "002238",
@@ -130,8 +130,8 @@
       "first_limit": "09:30",
       "last_limit": "09:30",
       "open_count": null,
-      "seal_amount": 13643955,
-      "amount": 719891610
+      "seal_amount": 12686711.6,
+      "amount": 722575320
     },
     {
       "code": "000850",
@@ -141,8 +141,8 @@
       "first_limit": "09:25",
       "last_limit": "09:25",
       "open_count": null,
-      "seal_amount": 199263560,
-      "amount": 69338296
+      "seal_amount": 160092490,
+      "amount": 70141112
     },
     {
       "code": "002819",
@@ -152,8 +152,8 @@
       "first_limit": "09:30",
       "last_limit": "09:30",
       "open_count": null,
-      "seal_amount": 107114548,
-      "amount": 492220230
+      "seal_amount": 97599594,
+      "amount": 493825160
     },
     {
       "code": "603949",
@@ -163,8 +163,8 @@
       "first_limit": "09:30",
       "last_limit": "09:30",
       "open_count": null,
-      "seal_amount": 93853068,
-      "amount": 75084649
+      "seal_amount": 78925298,
+      "amount": 75458139
     },
     {
       "code": "002119",
@@ -174,8 +174,8 @@
       "first_limit": "09:33",
       "last_limit": "09:33",
       "open_count": null,
-      "seal_amount": 158532590,
-      "amount": 3325066600
+      "seal_amount": 143093940,
+      "amount": 3358508100
     },
     {
       "code": "603396",
@@ -185,16 +185,16 @@
       "first_limit": "09:34",
       "last_limit": "09:34",
       "open_count": null,
-      "seal_amount": 107144639,
-      "amount": 378224150
+      "seal_amount": 72841139,
+      "amount": 383309980
     }
   ],
   "themes": [
     {
       "code": "885860.TI",
       "name": "中船系",
-      "change_pct": 1.612419,
-      "turnover_cny": 5334143900,
+      "change_pct": 1.531477,
+      "turnover_cny": 5748895300,
       "member_count": 10,
       "limit_up_count": 1,
       "first_board_count": 1,
@@ -213,10 +213,69 @@
       "source": "同花顺概念指数与成分股涨停交集"
     },
     {
+      "code": "885792.TI",
+      "name": "赛马概念",
+      "change_pct": 1.330958,
+      "turnover_cny": 978377570,
+      "member_count": 4,
+      "limit_up_count": 1,
+      "first_board_count": 1,
+      "second_board_count": 0,
+      "third_board_count": 0,
+      "high_board_count": 0,
+      "max_height": 1,
+      "active_days_3": null,
+      "leaders": [
+        {
+          "code": "002264",
+          "name": "新 华 都",
+          "height": 1
+        }
+      ],
+      "source": "同花顺概念指数与成分股涨停交集"
+    },
+    {
+      "code": "885617.TI",
+      "name": "福建自贸区",
+      "change_pct": 0.527668,
+      "turnover_cny": 49330016000,
+      "member_count": 127,
+      "limit_up_count": 6,
+      "first_board_count": 4,
+      "second_board_count": 1,
+      "third_board_count": 0,
+      "high_board_count": 1,
+      "max_height": 4,
+      "active_days_3": null,
+      "leaders": [
+        {
+          "code": "000592",
+          "name": "平潭发展",
+          "height": 1
+        },
+        {
+          "code": "000905",
+          "name": "厦门港务",
+          "height": 1
+        },
+        {
+          "code": "002264",
+          "name": "新 华 都",
+          "height": 1
+        },
+        {
+          "code": "002614",
+          "name": "奥佳华",
+          "height": 4
+        }
+      ],
+      "source": "同花顺概念指数与成分股涨停交集"
+    },
+    {
       "code": "885733.TI",
       "name": "航运概念",
-      "change_pct": 0.428202,
-      "turnover_cny": 20587404000,
+      "change_pct": 0.354173,
+      "turnover_cny": 22144216000,
       "member_count": 87,
       "limit_up_count": 1,
       "first_board_count": 1,
@@ -235,47 +294,10 @@
       "source": "同花顺概念指数与成分股涨停交集"
     },
     {
-      "code": "885617.TI",
-      "name": "福建自贸区",
-      "change_pct": 0.381892,
-      "turnover_cny": 45725889000,
-      "member_count": 127,
-      "limit_up_count": 4,
-      "first_board_count": 2,
-      "second_board_count": 1,
-      "third_board_count": 0,
-      "high_board_count": 1,
-      "max_height": 4,
-      "active_days_3": null,
-      "leaders": [
-        {
-          "code": "000592",
-          "name": "平潭发展",
-          "height": 1
-        },
-        {
-          "code": "000905",
-          "name": "厦门港务",
-          "height": 1
-        },
-        {
-          "code": "002614",
-          "name": "奥佳华",
-          "height": 4
-        },
-        {
-          "code": "600802",
-          "name": "福建水泥",
-          "height": 2
-        }
-      ],
-      "source": "同花顺概念指数与成分股涨停交集"
-    },
-    {
       "code": "885988.TI",
       "name": "统一大市场",
-      "change_pct": 0.201655,
-      "turnover_cny": 15213261000,
+      "change_pct": 0.271432,
+      "turnover_cny": 16509187000,
       "member_count": 120,
       "limit_up_count": 3,
       "first_board_count": 3,
@@ -291,8 +313,8 @@
           "height": 1
         },
         {
-          "code": "001317",
-          "name": "三羊马",
+          "code": "002264",
+          "name": "新 华 都",
           "height": 1
         },
         {
@@ -306,8 +328,8 @@
     {
       "code": "886018.TI",
       "name": "高压氧舱",
-      "change_pct": 0.191495,
-      "turnover_cny": 2045848400,
+      "change_pct": 0.19082,
+      "turnover_cny": 2184339900,
       "member_count": 11,
       "limit_up_count": 1,
       "first_board_count": 1,
@@ -326,37 +348,10 @@
       "source": "同花顺概念指数与成分股涨停交集"
     },
     {
-      "code": "885764.TI",
-      "name": "自由贸易港",
-      "change_pct": 0.15275,
-      "turnover_cny": 9180651400,
-      "member_count": 47,
-      "limit_up_count": 2,
-      "first_board_count": 1,
-      "second_board_count": 1,
-      "third_board_count": 0,
-      "high_board_count": 0,
-      "max_height": 2,
-      "active_days_3": null,
-      "leaders": [
-        {
-          "code": "000905",
-          "name": "厦门港务",
-          "height": 1
-        },
-        {
-          "code": "002119",
-          "name": "康强电子",
-          "height": 2
-        }
-      ],
-      "source": "同花顺概念指数与成分股涨停交集"
-    },
-    {
       "code": "885580.TI",
       "name": "足球概念",
-      "change_pct": 0.136079,
-      "turnover_cny": 8529040500,
+      "change_pct": 0.184219,
+      "turnover_cny": 9060519000,
       "member_count": 40,
       "limit_up_count": 2,
       "first_board_count": 1,
@@ -382,8 +377,8 @@
     {
       "code": "885768.TI",
       "name": "无人零售",
-      "change_pct": 0.030775,
-      "turnover_cny": 2834768600,
+      "change_pct": 0.080887,
+      "turnover_cny": 3086781500,
       "member_count": 26,
       "limit_up_count": 1,
       "first_board_count": 0,
@@ -402,13 +397,40 @@
       "source": "同花顺概念指数与成分股涨停交集"
     },
     {
+      "code": "885764.TI",
+      "name": "自由贸易港",
+      "change_pct": 0.07428,
+      "turnover_cny": 9584656300,
+      "member_count": 47,
+      "limit_up_count": 2,
+      "first_board_count": 1,
+      "second_board_count": 1,
+      "third_board_count": 0,
+      "high_board_count": 0,
+      "max_height": 2,
+      "active_days_3": null,
+      "leaders": [
+        {
+          "code": "000905",
+          "name": "厦门港务",
+          "height": 1
+        },
+        {
+          "code": "002119",
+          "name": "康强电子",
+          "height": 2
+        }
+      ],
+      "source": "同花顺概念指数与成分股涨停交集"
+    },
+    {
       "code": "886043.TI",
       "name": "太赫兹",
-      "change_pct": 0.023502,
-      "turnover_cny": 24203887000,
+      "change_pct": 0.070556,
+      "turnover_cny": 25918130000,
       "member_count": 24,
-      "limit_up_count": 1,
-      "first_board_count": 1,
+      "limit_up_count": 2,
+      "first_board_count": 2,
       "second_board_count": 0,
       "third_board_count": 0,
       "high_board_count": 0,
@@ -419,29 +441,18 @@
           "code": "002413",
           "name": "雷科防务",
           "height": 1
+        },
+        {
+          "code": "301689",
+          "name": "电科思仪",
+          "height": 1
         }
       ],
-      "source": "同花顺概念指数与成分股涨停交集"
-    },
-    {
-      "code": "886101.TI",
-      "name": "兵装重组概念",
-      "change_pct": -0.0697,
-      "turnover_cny": 1152198310,
-      "member_count": 7,
-      "limit_up_count": 0,
-      "first_board_count": 0,
-      "second_board_count": 0,
-      "third_board_count": 0,
-      "high_board_count": 0,
-      "max_height": 0,
-      "active_days_3": null,
-      "leaders": [],
       "source": "同花顺概念指数与成分股涨停交集"
     }
   ],
   "intraday": {
-    "snapshot_count": 9,
+    "snapshot_count": 10,
     "timeline_ready": false
   },
   "data_quality": {
