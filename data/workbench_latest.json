@@ -3,7 +3,7 @@
     "product": "超短小鳄鱼｜V1.4.1 超短交易研究工作台",
     "bundle_version": "1.1",
     "schema_updated_at": "2026-09-21T23:00:00+08:00",
-    "generated_at": "2026-09-24T02:36:35.993383+00:00",
+    "generated_at": "2026-09-24T03:00:10.951989+00:00",
     "timezone": "Asia/Shanghai",
     "data_range": [
       "2026-09-16",
@@ -164,28 +164,28 @@
     },
     {
       "date": "2026-09-24",
-      "shanghai_close": 3915.33,
-      "shanghai_pct": -0.538293,
-      "shenzhen_close": 13454.036,
-      "shenzhen_pct": -1.334974,
-      "chinext_close": 3334.7692,
-      "chinext_pct": -1.326801,
-      "star50_close": 1643.03,
-      "star50_pct": -1.072945,
-      "turnover_cny": 825909540000,
-      "up_count": 1595,
-      "down_count": 3739,
-      "flat_count": 222,
-      "limit_up_count": 37,
-      "limit_down_count": 2,
+      "shanghai_close": 3911.95,
+      "shanghai_pct": -0.624155,
+      "shenzhen_close": 13458.08,
+      "shenzhen_pct": -1.305317,
+      "chinext_close": 3335.2601,
+      "chinext_pct": -1.312276,
+      "star50_close": 1645.28,
+      "star50_pct": -0.937472,
+      "turnover_cny": 931821750000,
+      "up_count": 1510,
+      "down_count": 3856,
+      "flat_count": 190,
+      "limit_up_count": 43,
+      "limit_down_count": 4,
       "failed_limit_count": 7,
-      "broken_rate_pct": 15.91,
-      "seal_rate_pct": 84.09,
+      "broken_rate_pct": 14.0,
+      "seal_rate_pct": 86.0,
       "highest_board": 5,
       "big_cycle": "分歧",
-      "mid_cycle": "发酵偏分歧",
+      "mid_cycle": "萌芽",
       "small_cycle": "数据不足 / 暂无法判断",
-      "primary_theme": "高股息精选",
+      "primary_theme": "足球概念",
       "structure_label": "龙头强 / 生态弱：龙头抱团 / 生态分歧",
       "data_quality": "auto_collected_partial"
     }
@@ -221,7 +221,7 @@
       {
         "date": "2026-09-24",
         "state": "分歧",
-        "score": 53
+        "score": 56
       }
     ],
     "mid_cycle": [
@@ -255,9 +255,9 @@
       },
       {
         "date": "2026-09-24",
-        "theme": "高股息精选",
-        "state": "发酵偏分歧",
-        "score": 44
+        "theme": "足球概念",
+        "state": "萌芽",
+        "score": 35
       }
     ],
     "intraday": [
@@ -309,6 +309,24 @@
         "strongest_theme": "高压氧舱",
         "slot": "10:30",
         "turnover_cny": 825909540000
+      },
+      {
+        "time": "2026-09-24T02:58:30.025387+00:00",
+        "source": "同花顺官方 Financial-API",
+        "limit_up_count": 43,
+        "limit_down_count": 4,
+        "broken_count": 7,
+        "broken_rate_pct": 14.0,
+        "promotion_rate_pct": 23.53,
+        "highest_board": 5,
+        "leader": {
+          "code": "601811",
+          "name": "新华文轩"
+        },
+        "strongest_theme": "高压氧舱",
+        "slot": null,
+        "turnover_cny": 931821750000,
+        "amount_comparison": null
       }
     ]
   },
@@ -3271,13 +3289,13 @@
         {
           "code": "601811",
           "name": "新华文轩",
-          "theme": "高股息精选",
+          "theme": null,
           "height": 5,
           "first_limit": "09:30",
           "last_limit": "09:30",
           "open_count": null,
-          "amount": 233466400,
-          "seal_amount": 204951240,
+          "amount": 236150570,
+          "seal_amount": 199857630,
           "limit_reason": "拟收购民族出版社+教科书发行+数字教育+“华”字辈",
           "price": 20.35,
           "auction": {
@@ -3321,8 +3339,8 @@
           "first_limit": "09:25",
           "last_limit": "09:25",
           "open_count": null,
-          "amount": 71627015,
-          "seal_amount": 373846590,
+          "amount": 72101375,
+          "seal_amount": 372989910,
           "limit_reason": "针织服装+贴牌加工+广州国资",
           "price": 35.4,
           "auction": {
@@ -3363,8 +3381,8 @@
           "first_limit": "09:30",
           "last_limit": "09:30",
           "open_count": null,
-          "amount": 439715330,
-          "seal_amount": 159096190,
+          "amount": 443359700,
+          "seal_amount": 155744200,
           "limit_reason": "股份转让+具身智能+按摩椅",
           "price": 8.33,
           "auction": {
@@ -3405,8 +3423,8 @@
           "first_limit": "09:25",
           "last_limit": "09:25",
           "open_count": null,
-          "amount": 38642479,
-          "seal_amount": 3648113000,
+          "amount": 39383737,
+          "seal_amount": 3455824100,
           "limit_reason": "拟收购界面财联社+上海国资+“华”字辈",
           "price": 7.77,
           "auction": {
@@ -3440,17 +3458,61 @@
           "data_source": "同花顺官方 Financial-API"
         }
       ],
+      "3": [
+        {
+          "code": "002238",
+          "name": "天威视讯",
+          "theme": "足球概念",
+          "height": 3,
+          "first_limit": "09:30",
+          "last_limit": "09:30",
+          "open_count": null,
+          "amount": 581466540,
+          "seal_amount": 98418159,
+          "limit_reason": "广电网络+网络安全+数据中心",
+          "price": 8.43,
+          "auction": {
+            "thscode": "002238.SZ",
+            "ticker": "002238",
+            "name": "天威视讯",
+            "auction_price": 8.3,
+            "auction_pct": 8.3551,
+            "auction_volume": 83790.0,
+            "auction_amount": 69545700.0,
+            "auction_unmatched": -2634.95,
+            "auction_turnover_pct": 1.044,
+            "auction_yesterday_ratio_pct": 73.2391,
+            "auction_volume_ratio": 3.3247,
+            "pre_close_price": 7.66,
+            "open_price": 8.3,
+            "last_price": 8.43,
+            "float_market_cap": 6765573718.8
+          },
+          "anomaly_analysis": {
+            "stock_name": "天威视讯",
+            "analysis_content": "1、据2026年8月28日半年报，公司主营通信与广电服务，建成覆盖深圳的千兆全光网络，并拥有自有数据中心和云计算机房资源\n2、据2026年1月27日公告，公司拟与中资网安建设安全运营分中心，为国资国企及政务云、关键基础设施等提供网络安全运营支撑\n3、据2026年5月25日投资者关系活动记录表，公司深汕数据中心客户为互联网行业大型企业，目前主要提供机柜租赁，暂未涉及算力租赁\n\n（免责声明：本内容由AI技术搜集公开信息总结生成，仅供参考，不构成投资建议，以上市公司公告为准）",
+            "keyword_list": [
+              "广电网络",
+              "网络安全",
+              "数据中心"
+            ],
+            "thscode": "002238.SZ",
+            "tag_name": "涨停"
+          },
+          "data_source": "同花顺官方 Financial-API"
+        }
+      ],
       "2": [
         {
           "code": "000850",
           "name": "华茂股份",
-          "theme": "参股保险",
+          "theme": null,
           "height": 2,
           "first_limit": "09:25",
           "last_limit": "09:25",
           "open_count": null,
-          "amount": 60599552,
-          "seal_amount": 272967940,
+          "amount": 63906560,
+          "seal_amount": 266999040,
           "limit_reason": "纺织主业+矿业整合+国企改革+“华”字辈",
           "price": 5.12,
           "auction": {
@@ -3492,9 +3554,9 @@
           "first_limit": "09:33",
           "last_limit": "09:33",
           "open_count": null,
-          "amount": 3001085100,
-          "seal_amount": 547806530,
-          "limit_reason": null,
+          "amount": 3106646700,
+          "seal_amount": 313616150,
+          "limit_reason": "半导体封装材料+存储芯片+产能扩建",
           "price": 29.61,
           "auction": {
             "thscode": "002119.SZ",
@@ -3534,8 +3596,8 @@
           "first_limit": "09:30",
           "last_limit": "09:30",
           "open_count": null,
-          "amount": 470812250,
-          "seal_amount": 160810450,
+          "amount": 474040780,
+          "seal_amount": 154713310,
           "limit_reason": "网络分析仪+半导体测试+具身智能",
           "price": 26.66,
           "auction": {
@@ -3576,8 +3638,8 @@
           "first_limit": "09:35",
           "last_limit": "09:35",
           "open_count": null,
-          "amount": 595890240,
-          "seal_amount": 136098590,
+          "amount": 599774930,
+          "seal_amount": 129148252,
           "limit_reason": "PCB三防漆+液冷硅油+胶粘剂涂料+新能源用胶",
           "price": 8.29,
           "auction": {
@@ -3619,8 +3681,8 @@
           "first_limit": "10:04",
           "last_limit": "10:04",
           "open_count": null,
-          "amount": 382212320,
-          "seal_amount": 96163457,
+          "amount": 388936780,
+          "seal_amount": 87936584,
           "limit_reason": "缝制设备+机器人缝制+轻型飞机",
           "price": 8.37,
           "auction": {
@@ -3661,8 +3723,8 @@
           "first_limit": "09:34",
           "last_limit": "09:34",
           "open_count": null,
-          "amount": 361238130,
-          "seal_amount": 161666710,
+          "amount": 364018050,
+          "seal_amount": 157707110,
           "limit_reason": "半导体装备+玻璃基封装+光伏设备",
           "price": 35.64,
           "auction": {
@@ -3703,8 +3765,8 @@
           "first_limit": "09:30",
           "last_limit": "09:30",
           "open_count": null,
-          "amount": 69796639,
-          "seal_amount": 108529028,
+          "amount": 70688959,
+          "seal_amount": 111457798,
           "limit_reason": "商用车热管理+新能源风扇+间接投资宇树科技",
           "price": 16.9,
           "auction": {
@@ -3742,13 +3804,13 @@
         {
           "code": "000498",
           "name": "山东路桥",
-          "theme": "高股息精选",
+          "theme": null,
           "height": 1,
           "first_limit": "09:25",
           "last_limit": "09:25",
           "open_count": null,
-          "amount": 293289270,
-          "seal_amount": 69378045,
+          "amount": 299733660,
+          "seal_amount": 67923735,
           "limit_reason": "大股东增持+基建工程+海外业务",
           "price": 5.65,
           "auction": {
@@ -3789,8 +3851,8 @@
           "first_limit": "10:23",
           "last_limit": "10:23",
           "open_count": null,
-          "amount": 1126953440,
-          "seal_amount": 121750064,
+          "amount": 1254237010,
+          "seal_amount": 57133814,
           "limit_reason": "细胞医疗+再生资源+中报扭亏+“华”字辈",
           "price": 14.04,
           "auction": {
@@ -3832,8 +3894,8 @@
           "first_limit": "09:37",
           "last_limit": "09:37",
           "open_count": null,
-          "amount": 189493730,
-          "seal_amount": 232553550,
+          "amount": 195638600,
+          "seal_amount": 203355770,
           "limit_reason": "机器人轴承+汽车轴承+湖北国资",
           "price": 9.68,
           "auction": {
@@ -3874,8 +3936,8 @@
           "first_limit": "09:32",
           "last_limit": "09:32",
           "open_count": null,
-          "amount": 245449220,
-          "seal_amount": 275508740,
+          "amount": 257355440,
+          "seal_amount": 247674350,
           "limit_reason": "AI医疗+基因检测+三代测序",
           "price": 11.01,
           "auction": {
@@ -3916,8 +3978,8 @@
           "first_limit": "09:33",
           "last_limit": "09:33",
           "open_count": null,
-          "amount": 119423525,
-          "seal_amount": 221394870,
+          "amount": 129127266,
+          "seal_amount": 210932970,
           "limit_reason": "中药大健康+独家中药+定增审核",
           "price": 4.68,
           "auction": {
@@ -3958,8 +4020,8 @@
           "first_limit": "10:16",
           "last_limit": "10:16",
           "open_count": null,
-          "amount": 716759720,
-          "seal_amount": 113378235,
+          "amount": 727633140,
+          "seal_amount": 99078711,
           "limit_reason": "“羊”字辈+汽车物流+多式联运+国际物流",
           "price": 65.3,
           "auction": {
@@ -3996,13 +4058,13 @@
         {
           "code": "002029",
           "name": "七 匹 狼",
-          "theme": "参股保险",
+          "theme": null,
           "height": 1,
           "first_limit": "09:37",
           "last_limit": "09:37",
           "open_count": null,
-          "amount": 502685070,
-          "seal_amount": 123324486,
+          "amount": 536944480,
+          "seal_amount": 81760050,
           "limit_reason": "投资半导体及机器人+男装夹克+海峡两岸",
           "price": 9.26,
           "auction": {
@@ -4031,6 +4093,90 @@
               "海峡两岸"
             ],
             "thscode": "002029.SZ",
+            "tag_name": "大涨"
+          },
+          "data_source": "同花顺官方 Financial-API"
+        },
+        {
+          "code": "002082",
+          "name": "ST万邦",
+          "theme": null,
+          "height": 1,
+          "first_limit": "10:12",
+          "last_limit": "10:12",
+          "open_count": null,
+          "amount": 241701850,
+          "seal_amount": 23819040,
+          "limit_reason": null,
+          "price": 12.51,
+          "auction": {
+            "thscode": "002082.SZ",
+            "ticker": "002082",
+            "name": "ST万邦",
+            "auction_price": 11.56,
+            "auction_pct": 1.6711,
+            "auction_volume": 3141.0,
+            "auction_amount": 3630996.0,
+            "auction_unmatched": -13.0,
+            "auction_turnover_pct": 0.0553,
+            "auction_yesterday_ratio_pct": 1.2694,
+            "auction_volume_ratio": 0.7269,
+            "pre_close_price": 11.37,
+            "open_price": 11.56,
+            "last_price": 12.51,
+            "float_market_cap": 7103777504.22
+          },
+          "anomaly_analysis": {
+            "stock_name": "ST万邦",
+            "analysis_content": "1、据2026年5月13日业绩说明会，公司重点投入创新药研发，聚焦神经系统疾病，阿尔茨海默病关键注册临床积极推进，重症肌无力新药获美国食品药品监督管理局孤儿药认定及中美临床许可。\n2、据2026年8月27日半年度报告，公司依托自主知识产权核心产品，推进老药新用、剂型创新及国际化布局，并应用人工智能辅助药物研发。\n3、据2026年8月27日半年度报告，公司上半年营收5.89亿元，同比增长1.77%；归母净利润6327.72万元，同比增长369.99%。\n\n（免责声明：本内容由AI技术搜集公开信息总结生成，仅供参考，不构成投资建议，以上市公司公告为准）",
+            "keyword_list": [
+              "创新药",
+              "神经用药",
+              "中报增长"
+            ],
+            "thscode": "002082.SZ",
+            "tag_name": "涨停"
+          },
+          "data_source": "同花顺官方 Financial-API"
+        },
+        {
+          "code": "002164",
+          "name": "宁波东力",
+          "theme": "减速器",
+          "height": 1,
+          "first_limit": "09:50",
+          "last_limit": "09:50",
+          "open_count": null,
+          "amount": 750513570,
+          "seal_amount": 146750000,
+          "limit_reason": "股东增持+机器人减速器+定增扩产",
+          "price": 13.06,
+          "auction": {
+            "thscode": "002164.SZ",
+            "ticker": "002164",
+            "name": "宁波东力",
+            "auction_price": 12.21,
+            "auction_pct": 2.8644,
+            "auction_volume": 3419.0,
+            "auction_amount": 4174599.0,
+            "auction_unmatched": 20.0,
+            "auction_turnover_pct": 0.0713,
+            "auction_yesterday_ratio_pct": 0.7888,
+            "auction_volume_ratio": 0.2658,
+            "pre_close_price": 11.87,
+            "open_price": 12.21,
+            "last_price": 13.06,
+            "float_market_cap": 6265863367.58
+          },
+          "anomaly_analysis": {
+            "stock_name": "宁波东力",
+            "analysis_content": "行业原因：\n1、9月23日，特斯拉CEO埃隆·马斯克在接受央视财经专访时表示，预测10年内或不到10年，人形机器人至少有10亿台；未来15年或许达100亿台；未来20年可能会达1000亿台。\n2、据21世纪经济报道援引产业链人士消息，特斯拉相关团队已于9月16日落地宁波，并于17日开启新一轮针对旗下机器人业务的量产审厂。\n公司原因：\n1、据2026年9月24日公告，控股股东计划在6个月内增持公司股份1亿元至2亿元，增持比例不超过总股本2%，并取得不超过1.5亿元专项贷款承诺。\n2、据2026年5月8日业绩说明会，公司精密减速机已切入具身智能、工业自动化等应用场景，已获订单并实现小批量供货。\n3、据2026年8月27日向特定对象发行股票预案，公司拟建设精密减速器产业化项目，布局谐波减速器与精密行星减速器。\n\n（免责声明：本内容由AI技术搜集公开信息总结生成，仅供参考，不构成投资建议，以上市公司公告为准）",
+            "keyword_list": [
+              "股东增持",
+              "机器人减速器",
+              "定增扩产"
+            ],
+            "thscode": "002164.SZ",
             "tag_name": "涨停"
           },
           "data_source": "同花顺官方 Financial-API"
@@ -4043,8 +4189,8 @@
           "first_limit": "09:33",
           "last_limit": "09:33",
           "open_count": null,
-          "amount": 600917930,
-          "seal_amount": 441852750,
+          "amount": 662433700,
+          "seal_amount": 296253970,
           "limit_reason": "AI视频+微短剧+体育传媒",
           "price": 10.03,
           "auction": {
@@ -4085,8 +4231,8 @@
           "first_limit": "09:30",
           "last_limit": "09:30",
           "open_count": null,
-          "amount": 174186530,
-          "seal_amount": 193226020,
+          "amount": 184181340,
+          "seal_amount": 160523040,
           "limit_reason": "控制权变更+鸭业全产业链+羽绒出口",
           "price": 2.27,
           "auction": {
@@ -4127,8 +4273,8 @@
           "first_limit": "09:35",
           "last_limit": "09:35",
           "open_count": null,
-          "amount": 201168980,
-          "seal_amount": 134865950,
+          "amount": 208720850,
+          "seal_amount": 103400975,
           "limit_reason": "合成革+光学级PMMA+足球革",
           "price": 14.05,
           "auction": {
@@ -4169,8 +4315,8 @@
           "first_limit": "09:31",
           "last_limit": "09:31",
           "open_count": null,
-          "amount": 1471385300,
-          "seal_amount": 762869220,
+          "amount": 1553187400,
+          "seal_amount": 612712000,
           "limit_reason": "商业航天+卫星智算+存储芯片+股权激励",
           "price": 8.97,
           "auction": {
@@ -4212,8 +4358,8 @@
           "first_limit": "09:36",
           "last_limit": "09:36",
           "open_count": null,
-          "amount": 119865553,
-          "seal_amount": 123701090,
+          "amount": 121703239,
+          "seal_amount": 114929036,
           "limit_reason": "口腔医疗+连锁服务+半年报减亏",
           "price": 2.72,
           "auction": {
@@ -4254,9 +4400,9 @@
           "first_limit": "10:26",
           "last_limit": "10:26",
           "open_count": null,
-          "amount": 259992620,
-          "seal_amount": 108408726,
-          "limit_reason": null,
+          "amount": 268274970,
+          "seal_amount": 94646596,
+          "limit_reason": "烟标印刷+员工持股+多元化布局",
           "price": 12.27,
           "auction": {
             "thscode": "002836.SZ",
@@ -4296,8 +4442,8 @@
           "first_limit": "09:42",
           "last_limit": "09:42",
           "open_count": null,
-          "amount": 831178870,
-          "seal_amount": 335588720,
+          "amount": 843522160,
+          "seal_amount": 312412840,
           "limit_reason": "航空轴承+机器人轴承+风电轴承+次新股",
           "price": 35.54,
           "auction": {
@@ -4319,7 +4465,7 @@
           },
           "anomaly_analysis": {
             "stock_name": "洛轴股份",
-            "analysis_content": "1、据2026年9月23日公告，公司拟投资3.89亿元建设民用航空轴承项目、3.81亿元建设高铁及城市轨道交通轴承项目，建设周期均为3年。\n2、据2026年9月17日互动易，公司机器人轴承部分产品已开展客户验证及小批量供货，但尚未形成大规模销售收入。\n3、据2026年9月21日互动易，公司可研制生产600千瓦至20兆瓦以上风电轴承，20兆瓦级海上风电主轴轴承获河南省首台套认定。\n4、洛轴股份于2026年9月9日上市，公司主营业务为轴承及相关零部件的研发、生产和销售。\n（免责声明：本内容由AI技术搜集公开信息总结生成，仅供参考，不构成投资建议，以上市公司公告为准）",
+            "analysis_content": "行业原因：\n1、9月23日，特斯拉CEO埃隆·马斯克在接受央视财经专访时表示，预测10年内或不到10年，人形机器人至少有10亿台；未来15年或许达100亿台；未来20年可能会达1000亿台。\n2、据21世纪经济报道援引产业链人士消息，特斯拉相关团队已于9月16日落地宁波，并于17日开启新一轮针对旗下机器人业务的量产审厂。\n公司原因：\n1、据2026年9月24日公告，公司拟投资3.89亿元建设民用航空轴承项目、3.81亿元建设高铁及城市轨道交通轴承项目，建设周期均为3年。\n2、据2026年9月17日互动易，公司机器人轴承部分产品已开展客户验证及小批量供货，但尚未形成大规模销售收入。\n3、据2026年9月21日互动易，公司可研制生产600千瓦至20兆瓦以上风电轴承，20兆瓦级海上风电主轴轴承获河南省首台套认定。\n4、洛轴股份于2026年9月9日上市，公司主营业务为轴承及相关零部件的研发、生产和销售。\n（免责声明：本内容由AI技术搜集公开信息总结生成，仅供参考，不构成投资建议，以上市公司公告为准）",
             "keyword_list": [
               "航空轴承",
               "机器人轴承",
@@ -4339,8 +4485,8 @@
           "first_limit": "09:31",
           "last_limit": "09:31",
           "open_count": null,
-          "amount": 388238310,
-          "seal_amount": 141083780,
+          "amount": 408146160,
+          "seal_amount": 102839650,
           "limit_reason": "算力租赁+重组审核+苎麻纺织+“华”字辈",
           "price": 9.25,
           "auction": {
@@ -4375,6 +4521,48 @@
           "data_source": "同花顺官方 Financial-API"
         },
         {
+          "code": "600189",
+          "name": "泉阳泉",
+          "theme": null,
+          "height": 1,
+          "first_limit": "10:35",
+          "last_limit": "10:35",
+          "open_count": null,
+          "amount": 249825680,
+          "seal_amount": 84559375,
+          "limit_reason": "园林剥离+天然矿泉水+全国扩张",
+          "price": 9.1,
+          "auction": {
+            "thscode": "600189.SH",
+            "ticker": "600189",
+            "name": "泉阳泉",
+            "auction_price": 8.35,
+            "auction_pct": 0.9674,
+            "auction_volume": 1049.0,
+            "auction_amount": 875915.0,
+            "auction_unmatched": -33.0,
+            "auction_turnover_pct": 0.0147,
+            "auction_yesterday_ratio_pct": 0.5781,
+            "auction_volume_ratio": 0.2352,
+            "pre_close_price": 8.27,
+            "open_price": 8.35,
+            "last_price": 9.1,
+            "float_market_cap": 6508300089.2
+          },
+          "anomaly_analysis": {
+            "stock_name": "泉阳泉",
+            "analysis_content": "1、据2026年9月22日公告，公司拟挂牌转让园区园林100%股权，挂牌底价总额3.21亿元，股权拆分为51%、30%、19%三部分，相关事项已获国资监管单位批准，尚需股东会审议。 \n2、据2026年8月25日半年报，公司上半年营收7.77亿元，同比增长13.54%，归母净利润3873.11万元，同比增长65.03%，矿泉水主业保持增长。 \n3、据2026年5月19日互动易，公司持续推进全国布局，深耕吉林核心市场，重点发展辽黑市场，并以北京为突破口向南方拓展，巩固中石化、中石油、南方航空、盒马鲜生等客户。\n\n（免责声明：本内容由AI技术搜集公开信息总结生成，仅供参考，不构成投资建议，以上市公司公告为准）",
+            "keyword_list": [
+              "园林剥离",
+              "天然矿泉水",
+              "全国扩张"
+            ],
+            "thscode": "600189.SH",
+            "tag_name": "涨停"
+          },
+          "data_source": "同花顺官方 Financial-API"
+        },
+        {
           "code": "600358",
           "name": "国旅联合",
           "theme": null,
@@ -4382,8 +4570,8 @@
           "first_limit": "09:43",
           "last_limit": "09:43",
           "open_count": null,
-          "amount": 186095370,
-          "seal_amount": 40332864,
+          "amount": 187038590,
+          "seal_amount": 38130092,
           "limit_reason": "互联网营销+饮用水+跨境电商",
           "price": 5.72,
           "auction": {
@@ -4417,6 +4605,48 @@
           "data_source": "同花顺官方 Financial-API"
         },
         {
+          "code": "600699",
+          "name": "均胜电子",
+          "theme": null,
+          "height": 1,
+          "first_limit": "10:36",
+          "last_limit": "10:36",
+          "open_count": null,
+          "amount": 2050935200,
+          "seal_amount": 977666780,
+          "limit_reason": "特斯拉机器人+智能驾驶+数据中心",
+          "price": 23.68,
+          "auction": {
+            "thscode": "600699.SH",
+            "ticker": "600699",
+            "name": "均胜电子",
+            "auction_price": 21.52,
+            "auction_pct": -0.0464,
+            "auction_volume": 4260.0,
+            "auction_amount": 9167520.0,
+            "auction_unmatched": -177.0,
+            "auction_turnover_pct": 0.0305,
+            "auction_yesterday_ratio_pct": 0.5806,
+            "auction_volume_ratio": 1.4549,
+            "pre_close_price": 21.53,
+            "open_price": 21.52,
+            "last_price": 23.68,
+            "float_market_cap": 33049478931.84
+          },
+          "anomaly_analysis": {
+            "stock_name": "均胜电子",
+            "analysis_content": "行业原因：\n1、9月23日，特斯拉CEO埃隆·马斯克在接受央视财经专访时表示，预测10年内或不到10年，人形机器人至少有10亿台；未来15年或许达100亿台；未来20年可能会达1000亿台。\n2、据21世纪经济报道援引产业链人士消息，特斯拉相关团队已于9月16日落地宁波，并于17日开启新一轮针对旗下机器人业务的量产审厂。\n公司原因：\n1、据2026年9月17日财闻报道，特斯拉加速推进Optimus供应链审厂。此外，据2026年9月17日21世纪经济报，此轮审厂涉及的公司包括拓普集团、三花智控、浙江荣泰、新泉股份、均胜电子等传统特斯拉汽车供应链企业。相关企业也一直被认为正配合特斯拉人形机器人的量产工作；据2026年6月10日互动易，公司已推出机器人头部、胸腔及底盘总成等产品，北美相关业务积极推进中。\n2、据2026年8月5日互动易，公司已布局L3、L4级自动驾驶，并发布新一代L3自动驾驶域控制器。 \n3、据2026年9月7日业绩说明会，在智算中心领域，针对 AIDC 对高可靠供配电、能源管理、热管理及系统集成提出的更高要求，公司正在加快研发交流/直流电源转换单元、高功率直流/直流电源转换单元、全浸没式液冷电源机柜、冷液分配单元等产品及集成解决方案，预计于2026 年 9 月推出样品并逐步推向市场。\n\n（免责声明：本内容由AI技术搜集公开信息总结生成，仅供参考，不构成投资建议，以上市公司公告为准）",
+            "keyword_list": [
+              "特斯拉机器人",
+              "智能驾驶",
+              "数据中心"
+            ],
+            "thscode": "600699.SH",
+            "tag_name": "涨停"
+          },
+          "data_source": "同花顺官方 Financial-API"
+        },
+        {
           "code": "600792",
           "name": "云煤能源",
           "theme": null,
@@ -4424,8 +4654,8 @@
           "first_limit": "09:39",
           "last_limit": "09:39",
           "open_count": null,
-          "amount": 872486250,
-          "seal_amount": 318445890,
+          "amount": 958545990,
+          "seal_amount": 171347700,
           "limit_reason": "焦炭+钢企直供+销量增长",
           "price": 5.7,
           "auction": {
@@ -4466,8 +4696,8 @@
           "first_limit": "09:58",
           "last_limit": "09:58",
           "open_count": null,
-          "amount": 587246610,
-          "seal_amount": 107577764,
+          "amount": 614968070,
+          "seal_amount": 82575630,
           "limit_reason": "工程机械+盾构机+智能矿卡",
           "price": 4.65,
           "auction": {
@@ -4508,8 +4738,8 @@
           "first_limit": "10:02",
           "last_limit": "10:02",
           "open_count": null,
-          "amount": 716719680,
-          "seal_amount": 331992710,
+          "amount": 732139720,
+          "seal_amount": 271284570,
           "limit_reason": "风电铸件+风电轴承+半年报增长",
           "price": 5.5,
           "auction": {
@@ -4550,8 +4780,8 @@
           "first_limit": "09:25",
           "last_limit": "09:25",
           "open_count": null,
-          "amount": 164501580,
-          "seal_amount": 369455550,
+          "amount": 169693450,
+          "seal_amount": 363405670,
           "limit_reason": "数据中心+变压器+海外配电",
           "price": 16.25,
           "auction": {
@@ -4585,6 +4815,48 @@
           "data_source": "同花顺官方 Financial-API"
         },
         {
+          "code": "603042",
+          "name": "华脉科技",
+          "theme": null,
+          "height": 1,
+          "first_limit": "10:43",
+          "last_limit": "10:43",
+          "open_count": null,
+          "amount": 919486880,
+          "seal_amount": 253245780,
+          "limit_reason": null,
+          "price": 18.73,
+          "auction": {
+            "thscode": "603042.SH",
+            "ticker": "603042",
+            "name": "华脉科技",
+            "auction_price": 16.96,
+            "auction_pct": -0.411,
+            "auction_volume": 3048.0,
+            "auction_amount": 5169408.0,
+            "auction_unmatched": 152.0,
+            "auction_turnover_pct": 0.146,
+            "auction_yesterday_ratio_pct": 0.7807,
+            "auction_volume_ratio": 0.2877,
+            "pre_close_price": 17.03,
+            "open_price": 16.96,
+            "last_price": 18.73,
+            "float_market_cap": 3910202014.16
+          },
+          "anomaly_analysis": {
+            "stock_name": "华脉科技",
+            "analysis_content": "1、据2026年9月18日业绩说明会，公司上半年受益于光纤光缆市场价格持续走高、产品毛利提升，并通过降本增效实现归母净利润1854.33万元，同比扭亏为盈。\n2、据2026年9月18日业绩说明会，公司以1亿元取得芯慧微6.4103%股权，双方面向6G通信和人工智能开展技术储备与产品开发探索。\n3、据2026年8月21日半年度报告，公司主营信息通信网络基础设施业务，产品涵盖ODN、光无源器件、光缆及无线通信产品，下游客户包括电信运营商等。\n\n（免责声明：本内容由AI技术搜集公开信息总结生成，仅供参考，不构成投资建议，以上市公司公告为准）",
+            "keyword_list": [
+              "光纤光缆",
+              "扭亏为盈",
+              "6G通信"
+            ],
+            "thscode": "603042.SH",
+            "tag_name": "涨停"
+          },
+          "data_source": "同花顺官方 Financial-API"
+        },
+        {
           "code": "603065",
           "name": "宿迁联盛",
           "theme": null,
@@ -4592,8 +4864,8 @@
           "first_limit": "09:58",
           "last_limit": "09:58",
           "open_count": null,
-          "amount": 633402380,
-          "seal_amount": 261906330,
+          "amount": 644708400,
+          "seal_amount": 208897040,
           "limit_reason": "磷化铟衬底+光稳定剂",
           "price": 16.27,
           "auction": {
@@ -4633,8 +4905,8 @@
           "first_limit": "09:37",
           "last_limit": "09:37",
           "open_count": null,
-          "amount": 132038973,
-          "seal_amount": 93477496,
+          "amount": 135938390,
+          "seal_amount": 90571796,
           "limit_reason": "人形机器人+胎圈钢丝+全球销售",
           "price": 9.8,
           "auction": {
@@ -4675,8 +4947,8 @@
           "first_limit": "09:32",
           "last_limit": "09:32",
           "open_count": null,
-          "amount": 118736525,
-          "seal_amount": 115918853,
+          "amount": 120444363,
+          "seal_amount": 113021051,
           "limit_reason": "铁路扣件合同+电容配件+半年报增长",
           "price": 10.42,
           "auction": {
@@ -4717,8 +4989,8 @@
           "first_limit": "09:40",
           "last_limit": "09:40",
           "open_count": null,
-          "amount": 142854200,
-          "seal_amount": 180149330,
+          "amount": 145399800,
+          "seal_amount": 171004640,
           "limit_reason": "减速器+汽车变速器+农机齿轮",
           "price": 14.74,
           "auction": {
@@ -4754,13 +5026,13 @@
         {
           "code": "605018",
           "name": "长华集团",
-          "theme": null,
+          "theme": "一体化压铸",
           "height": 1,
           "first_limit": "09:46",
           "last_limit": "09:46",
           "open_count": null,
-          "amount": 85512937,
-          "seal_amount": 92263080,
+          "amount": 87430307,
+          "seal_amount": 91539448,
           "limit_reason": "人形机器人+汽车零部件+新能源定点",
           "price": 12.74,
           "auction": {
@@ -4801,8 +5073,8 @@
           "first_limit": "09:39",
           "last_limit": "09:39",
           "open_count": null,
-          "amount": 178072070,
-          "seal_amount": 57067223,
+          "amount": 181635740,
+          "seal_amount": 49992590,
           "limit_reason": "卫星测量+商业航天+电磁仿真+半年报增长",
           "price": 37.94,
           "auction": {
@@ -5316,7 +5588,7 @@
   "market_cycle": {
     "large_cycle": {
       "stage": "分歧",
-      "score": 53,
+      "score": 56,
       "trend": "↓",
       "method": "评分 + 结构 + 连续性；不使用均线",
       "continuity": {
@@ -5326,11 +5598,11 @@
       },
       "supporting_factors": [
         "最高板5板",
-        "炸板率15.91%可控",
-        "昨日涨停平均反馈0.64%为正"
+        "炸板率14.0%可控",
+        "昨日涨停平均反馈1.01%为正"
       ],
       "pressure_factors": [
-        "晋级率仅21.57%",
+        "晋级率仅23.53%",
         "近端涨停数量未形成上升趋势"
       ],
       "confidence": "medium",
@@ -5338,60 +5610,65 @@
     },
     "medium_cycle": {
       "mainline": {
-        "theme": "高股息精选",
-        "stage": "发酵偏分歧",
-        "score": 44,
+        "theme": "足球概念",
+        "stage": "萌芽",
+        "score": 35,
         "trend": "→",
         "subscores": {
-          "leader_strength": 67,
-          "sector_width": 11,
+          "leader_strength": 33,
+          "sector_width": 22,
           "ladder_completeness": 50,
           "capital_persistence": 0
         },
         "facts": {
-          "code": "886072.TI",
-          "name": "高股息精选",
-          "change_pct": 0.178725,
-          "turnover_cny": 32185687000,
-          "member_count": 285,
-          "limit_up_count": 2,
-          "first_board_count": 1,
+          "code": "885580.TI",
+          "name": "足球概念",
+          "change_pct": 0.555707,
+          "turnover_cny": 5036076400,
+          "member_count": 40,
+          "limit_up_count": 3,
+          "first_board_count": 2,
           "second_board_count": 0,
-          "third_board_count": 0,
-          "high_board_count": 1,
-          "max_height": 5,
+          "third_board_count": 1,
+          "high_board_count": 0,
+          "max_height": 3,
           "active_days_3": null,
           "leaders": [
             {
-              "code": "000498",
-              "name": "山东路桥",
+              "code": "002181",
+              "name": "粤 传 媒",
               "height": 1
             },
             {
-              "code": "601811",
-              "name": "新华文轩",
-              "height": 5
+              "code": "002238",
+              "name": "天威视讯",
+              "height": 3
+            },
+            {
+              "code": "002395",
+              "name": "双象股份",
+              "height": 1
             }
           ],
           "source": "同花顺概念指数与成分股涨停交集"
         },
         "explanation": {
-          "score": 44,
+          "score": 35,
           "coverage_pct": 80.0,
           "components": [
             {
               "metric": "龙头强度",
-              "value": 5,
+              "value": 3,
               "weight": 30,
-              "normalized": 66.67,
-              "contribution": 25.0
+              "normalized": 33.33,
+              "contribution": 12.5
             },
             {
               "metric": "板块宽度",
-              "value": 2,
+              "value": 3,
               "weight": 25,
-              "normalized": 11.11,
-              "contribution": 3.47
+              "normalized": 22.22,
+              "contribution": 6.94
             },
             {
               "metric": "梯队完整度",
@@ -5415,60 +5692,65 @@
       },
       "themes": [
         {
-          "theme": "高股息精选",
-          "stage": "发酵偏分歧",
-          "score": 44,
+          "theme": "足球概念",
+          "stage": "萌芽",
+          "score": 35,
           "trend": "→",
           "subscores": {
-            "leader_strength": 67,
-            "sector_width": 11,
+            "leader_strength": 33,
+            "sector_width": 22,
             "ladder_completeness": 50,
             "capital_persistence": 0
           },
           "facts": {
-            "code": "886072.TI",
-            "name": "高股息精选",
-            "change_pct": 0.178725,
-            "turnover_cny": 32185687000,
-            "member_count": 285,
-            "limit_up_count": 2,
-            "first_board_count": 1,
+            "code": "885580.TI",
+            "name": "足球概念",
+            "change_pct": 0.555707,
+            "turnover_cny": 5036076400,
+            "member_count": 40,
+            "limit_up_count": 3,
+            "first_board_count": 2,
             "second_board_count": 0,
-            "third_board_count": 0,
-            "high_board_count": 1,
-            "max_height": 5,
+            "third_board_count": 1,
+            "high_board_count": 0,
+            "max_height": 3,
             "active_days_3": null,
             "leaders": [
               {
-                "code": "000498",
-                "name": "山东路桥",
+                "code": "002181",
+                "name": "粤 传 媒",
                 "height": 1
               },
               {
-                "code": "601811",
-                "name": "新华文轩",
-                "height": 5
+                "code": "002238",
+                "name": "天威视讯",
+                "height": 3
+              },
+              {
+                "code": "002395",
+                "name": "双象股份",
+                "height": 1
               }
             ],
             "source": "同花顺概念指数与成分股涨停交集"
           },
           "explanation": {
-            "score": 44,
+            "score": 35,
             "coverage_pct": 80.0,
             "components": [
               {
                 "metric": "龙头强度",
-                "value": 5,
+                "value": 3,
                 "weight": 30,
-                "normalized": 66.67,
-                "contribution": 25.0
+                "normalized": 33.33,
+                "contribution": 12.5
               },
               {
                 "metric": "板块宽度",
-                "value": 2,
+                "value": 3,
                 "weight": 25,
-                "normalized": 11.11,
-                "contribution": 3.47
+                "normalized": 22.22,
+                "contribution": 6.94
               },
               {
                 "metric": "梯队完整度",
@@ -5504,8 +5786,8 @@
           "facts": {
             "code": "885768.TI",
             "name": "无人零售",
-            "change_pct": 0.371103,
-            "turnover_cny": 1371164900,
+            "change_pct": 0.390215,
+            "turnover_cny": 1552588200,
             "member_count": 26,
             "limit_up_count": 1,
             "first_board_count": 0,
@@ -5562,100 +5844,24 @@
           }
         },
         {
-          "theme": "参股保险",
-          "stage": "萌芽",
-          "score": 25,
-          "trend": "→",
-          "subscores": {
-            "leader_strength": 17,
-            "sector_width": 11,
-            "ladder_completeness": 50,
-            "capital_persistence": 0
-          },
-          "facts": {
-            "code": "885623.TI",
-            "name": "参股保险",
-            "change_pct": 0.095704,
-            "turnover_cny": 4213651200,
-            "member_count": 48,
-            "limit_up_count": 2,
-            "first_board_count": 1,
-            "second_board_count": 1,
-            "third_board_count": 0,
-            "high_board_count": 0,
-            "max_height": 2,
-            "active_days_3": null,
-            "leaders": [
-              {
-                "code": "000850",
-                "name": "华茂股份",
-                "height": 2
-              },
-              {
-                "code": "002029",
-                "name": "七 匹 狼",
-                "height": 1
-              }
-            ],
-            "source": "同花顺概念指数与成分股涨停交集"
-          },
-          "explanation": {
-            "score": 25,
-            "coverage_pct": 80.0,
-            "components": [
-              {
-                "metric": "龙头强度",
-                "value": 2,
-                "weight": 30,
-                "normalized": 16.67,
-                "contribution": 6.25
-              },
-              {
-                "metric": "板块宽度",
-                "value": 2,
-                "weight": 25,
-                "normalized": 11.11,
-                "contribution": 3.47
-              },
-              {
-                "metric": "梯队完整度",
-                "value": 2,
-                "weight": 25,
-                "normalized": 50.0,
-                "contribution": 15.62
-              },
-              {
-                "metric": "资金持续性",
-                "value": null,
-                "weight": 20,
-                "normalized": null,
-                "contribution": null
-              }
-            ],
-            "missing_metrics": [
-              "资金持续性"
-            ]
-          }
-        },
-        {
           "theme": "减速器",
           "stage": "萌芽",
-          "score": 11,
+          "score": 15,
           "trend": "→",
           "subscores": {
             "leader_strength": 0,
-            "sector_width": 11,
+            "sector_width": 22,
             "ladder_completeness": 25,
             "capital_persistence": 0
           },
           "facts": {
             "code": "886008.TI",
             "name": "减速器",
-            "change_pct": 0.690703,
-            "turnover_cny": 18171757000,
+            "change_pct": 0.630299,
+            "turnover_cny": 20639918000,
             "member_count": 139,
-            "limit_up_count": 2,
-            "first_board_count": 2,
+            "limit_up_count": 3,
+            "first_board_count": 3,
             "second_board_count": 0,
             "third_board_count": 0,
             "high_board_count": 0,
@@ -5668,6 +5874,11 @@
                 "height": 1
               },
               {
+                "code": "002164",
+                "name": "宁波东力",
+                "height": 1
+              },
+              {
                 "code": "603767",
                 "name": "中马传动",
                 "height": 1
@@ -5676,7 +5887,7 @@
             "source": "同花顺概念指数与成分股涨停交集"
           },
           "explanation": {
-            "score": 11,
+            "score": 15,
             "coverage_pct": 80.0,
             "components": [
               {
@@ -5688,10 +5899,10 @@
               },
               {
                 "metric": "板块宽度",
-                "value": 2,
+                "value": 3,
                 "weight": 25,
-                "normalized": 11.11,
-                "contribution": 3.47
+                "normalized": 22.22,
+                "contribution": 6.94
               },
               {
                 "metric": "梯队完整度",
@@ -5714,24 +5925,24 @@
           }
         },
         {
-          "theme": "足球概念",
+          "theme": "一体化压铸",
           "stage": "萌芽",
-          "score": 11,
+          "score": 8,
           "trend": "→",
           "subscores": {
             "leader_strength": 0,
-            "sector_width": 11,
+            "sector_width": 0,
             "ladder_completeness": 25,
             "capital_persistence": 0
           },
           "facts": {
-            "code": "885580.TI",
-            "name": "足球概念",
-            "change_pct": 0.541062,
-            "turnover_cny": 4442225500,
-            "member_count": 40,
-            "limit_up_count": 2,
-            "first_board_count": 2,
+            "code": "886000.TI",
+            "name": "一体化压铸",
+            "change_pct": 0.137374,
+            "turnover_cny": 7627560500,
+            "member_count": 54,
+            "limit_up_count": 1,
+            "first_board_count": 1,
             "second_board_count": 0,
             "third_board_count": 0,
             "high_board_count": 0,
@@ -5739,20 +5950,15 @@
             "active_days_3": null,
             "leaders": [
               {
-                "code": "002181",
-                "name": "粤 传 媒",
-                "height": 1
-              },
-              {
-                "code": "002395",
-                "name": "双象股份",
+                "code": "605018",
+                "name": "长华集团",
                 "height": 1
               }
             ],
             "source": "同花顺概念指数与成分股涨停交集"
           },
           "explanation": {
-            "score": 11,
+            "score": 8,
             "coverage_pct": 80.0,
             "components": [
               {
@@ -5764,10 +5970,10 @@
               },
               {
                 "metric": "板块宽度",
-                "value": 2,
+                "value": 1,
                 "weight": 25,
-                "normalized": 11.11,
-                "contribution": 3.47
+                "normalized": 0,
+                "contribution": 0.0
               },
               {
                 "metric": "梯队完整度",
@@ -5803,8 +6009,8 @@
           "facts": {
             "code": "885829.TI",
             "name": "丙烯酸",
-            "change_pct": 0.192735,
-            "turnover_cny": 3315067300,
+            "change_pct": 0.098081,
+            "turnover_cny": 3710244500,
             "member_count": 20,
             "limit_up_count": 1,
             "first_board_count": 1,
@@ -5874,8 +6080,8 @@
           "facts": {
             "code": "886043.TI",
             "name": "太赫兹",
-            "change_pct": 0.476165,
-            "turnover_cny": 13774938000,
+            "change_pct": 0.699342,
+            "turnover_cny": 14972320000,
             "member_count": 24,
             "limit_up_count": 1,
             "first_board_count": 1,
@@ -5945,8 +6151,8 @@
           "facts": {
             "code": "886018.TI",
             "name": "高压氧舱",
-            "change_pct": 0.946583,
-            "turnover_cny": 1354381900,
+            "change_pct": 0.756186,
+            "turnover_cny": 1478297000,
             "member_count": 11,
             "limit_up_count": 1,
             "first_board_count": 1,
@@ -6016,8 +6222,8 @@
           "facts": {
             "code": "885888.TI",
             "name": "C2M概念",
-            "change_pct": 0.134973,
-            "turnover_cny": 3139054600,
+            "change_pct": 0.161633,
+            "turnover_cny": 3539399100,
             "member_count": 39,
             "limit_up_count": 0,
             "first_board_count": 0,
@@ -6081,9 +6287,74 @@
           "facts": {
             "code": "885860.TI",
             "name": "中船系",
-            "change_pct": 0.141744,
-            "turnover_cny": 2548727200,
+            "change_pct": 0.364485,
+            "turnover_cny": 2876435000,
             "member_count": 10,
+            "limit_up_count": 0,
+            "first_board_count": 0,
+            "second_board_count": 0,
+            "third_board_count": 0,
+            "high_board_count": 0,
+            "max_height": 0,
+            "active_days_3": null,
+            "leaders": [],
+            "source": "同花顺概念指数与成分股涨停交集"
+          },
+          "explanation": {
+            "score": 0,
+            "coverage_pct": 80.0,
+            "components": [
+              {
+                "metric": "龙头强度",
+                "value": 0,
+                "weight": 30,
+                "normalized": 0,
+                "contribution": 0.0
+              },
+              {
+                "metric": "板块宽度",
+                "value": 0,
+                "weight": 25,
+                "normalized": 0,
+                "contribution": 0.0
+              },
+              {
+                "metric": "梯队完整度",
+                "value": 0,
+                "weight": 25,
+                "normalized": 0.0,
+                "contribution": 0.0
+              },
+              {
+                "metric": "资金持续性",
+                "value": null,
+                "weight": 20,
+                "normalized": null,
+                "contribution": null
+              }
+            ],
+            "missing_metrics": [
+              "资金持续性"
+            ]
+          }
+        },
+        {
+          "theme": "兵装重组概念",
+          "stage": "萌芽",
+          "score": 0,
+          "trend": "→",
+          "subscores": {
+            "leader_strength": 0,
+            "sector_width": 0,
+            "ladder_completeness": 0,
+            "capital_persistence": 0
+          },
+          "facts": {
+            "code": "886101.TI",
+            "name": "兵装重组概念",
+            "change_pct": 0.486112,
+            "turnover_cny": 734047720,
+            "member_count": 7,
             "limit_up_count": 0,
             "first_board_count": 0,
             "second_board_count": 0,
@@ -6139,22 +6410,22 @@
       "score": null,
       "trend": "—",
       "timeline_ready": false,
-      "snapshot_count": 3,
+      "snapshot_count": 4,
       "required_snapshot_count": 6,
       "timeline": [],
       "note": "不会用收盘单点反推全天路径。"
     },
     "leader_ecology_matrix": {
       "leader_strength": {
-        "score": 73,
-        "coverage_pct": 75.0,
+        "score": 82,
+        "coverage_pct": 65.0,
         "components": [
           {
             "metric": "龙头高度",
             "value": 5,
             "weight": 30,
             "normalized": 60.0,
-            "contribution": 24.0
+            "contribution": 27.69
           },
           {
             "metric": "封板稳定性",
@@ -6168,93 +6439,94 @@
             "value": "09:30",
             "weight": 20,
             "normalized": 100,
-            "contribution": 26.67
+            "contribution": 30.77
           },
           {
             "metric": "封单/成交额",
-            "value": 87.79,
+            "value": 84.63,
             "weight": 15,
             "normalized": 100,
-            "contribution": 20.0
+            "contribution": 23.08
           },
           {
             "metric": "龙头所在题材涨停数",
-            "value": 2,
+            "value": null,
             "weight": 10,
-            "normalized": 14.29,
-            "contribution": 1.9
+            "normalized": null,
+            "contribution": null
           }
         ],
         "missing_metrics": [
-          "封板稳定性"
+          "封板稳定性",
+          "龙头所在题材涨停数"
         ],
         "leader": {
           "code": "601811",
           "name": "新华文轩",
-          "theme": "高股息精选",
+          "theme": null,
           "height": 5
         },
         "label": "强"
       },
       "market_ecology": {
-        "score": 45,
+        "score": 46,
         "coverage_pct": 100.0,
         "components": [
           {
             "metric": "涨停数量",
-            "value": 37,
+            "value": 43,
             "weight": 16,
-            "normalized": 21.25,
-            "contribution": 3.4
+            "normalized": 28.75,
+            "contribution": 4.6
           },
           {
             "metric": "炸板率",
-            "value": 15.91,
+            "value": 14.0,
             "weight": 16,
-            "normalized": 85.23,
-            "contribution": 13.64
+            "normalized": 90.0,
+            "contribution": 14.4
           },
           {
             "metric": "连板晋级率",
-            "value": 21.57,
+            "value": 23.53,
             "weight": 18,
-            "normalized": 28.93,
-            "contribution": 5.21
+            "normalized": 33.83,
+            "contribution": 6.09
           },
           {
             "metric": "昨日涨停平均反馈",
-            "value": 0.64,
+            "value": 1.01,
             "weight": 14,
-            "normalized": 46.4,
-            "contribution": 6.5
+            "normalized": 50.1,
+            "contribution": 7.01
           },
           {
             "metric": "中位股平均反馈",
-            "value": 0.83,
+            "value": 0.99,
             "weight": 12,
-            "normalized": 58.3,
-            "contribution": 7.0
+            "normalized": 59.9,
+            "contribution": 7.19
           },
           {
             "metric": "中位股大亏比例",
-            "value": 30.0,
+            "value": 40.0,
             "weight": 10,
-            "normalized": 15.62,
-            "contribution": 1.56
+            "normalized": 0,
+            "contribution": 0.0
           },
           {
             "metric": "跌停数量",
-            "value": 2,
+            "value": 4,
             "weight": 8,
-            "normalized": 90.0,
-            "contribution": 7.2
+            "normalized": 80.0,
+            "contribution": 6.4
           },
           {
             "metric": "市场上涨宽度",
-            "value": 29.9,
+            "value": 28.14,
             "weight": 6,
-            "normalized": 9.81,
-            "contribution": 0.59
+            "normalized": 6.28,
+            "contribution": 0.38
           }
         ],
         "missing_metrics": [],
@@ -6263,13 +6535,13 @@
       "label": "龙头强 / 生态弱：龙头抱团 / 生态分歧"
     },
     "dashboard": {
-      "market_composite": 53,
-      "leader_strength": 73,
-      "market_ecology": 45,
-      "market_width": 9.81,
-      "relay_ecology": 28.93,
-      "mainline_strength": 44,
-      "loss_effect": 84,
+      "market_composite": 56,
+      "leader_strength": 82,
+      "market_ecology": 46,
+      "market_width": 6.28,
+      "relay_ecology": 33.83,
+      "mainline_strength": 35,
+      "loss_effect": 100,
       "structure_label": "龙头强 / 生态弱：龙头抱团 / 生态分歧"
     },
     "method": "评分 + 结构 + 连续性；严禁用均线替代情绪结构。"
@@ -6287,7 +6559,8 @@
       "T001成交数量与实际盈亏金额",
       "T002买入逻辑",
       "完整日内情绪时间轴",
-      "封板稳定性"
+      "封板稳定性",
+      "龙头所在题材涨停数"
     ],
     "analysis_allowed": true,
     "analysis_scope": "允许盘后结构与三层周期分析；缺失市场宽度或完整盘中时间轴时降低置信度，不补造。",
@@ -6300,60 +6573,65 @@
     "method": "龙头强度30% + 板块宽度25% + 梯队完整度25% + 资金持续性20%",
     "sectors": [
       {
-        "theme": "高股息精选",
-        "stage": "发酵偏分歧",
-        "score": 44,
+        "theme": "足球概念",
+        "stage": "萌芽",
+        "score": 35,
         "trend": "→",
         "subscores": {
-          "leader_strength": 67,
-          "sector_width": 11,
+          "leader_strength": 33,
+          "sector_width": 22,
           "ladder_completeness": 50,
           "capital_persistence": 0
         },
         "facts": {
-          "code": "886072.TI",
-          "name": "高股息精选",
-          "change_pct": 0.178725,
-          "turnover_cny": 32185687000,
-          "member_count": 285,
-          "limit_up_count": 2,
-          "first_board_count": 1,
+          "code": "885580.TI",
+          "name": "足球概念",
+          "change_pct": 0.555707,
+          "turnover_cny": 5036076400,
+          "member_count": 40,
+          "limit_up_count": 3,
+          "first_board_count": 2,
           "second_board_count": 0,
-          "third_board_count": 0,
-          "high_board_count": 1,
-          "max_height": 5,
+          "third_board_count": 1,
+          "high_board_count": 0,
+          "max_height": 3,
           "active_days_3": null,
           "leaders": [
             {
-              "code": "000498",
-              "name": "山东路桥",
+              "code": "002181",
+              "name": "粤 传 媒",
               "height": 1
             },
             {
-              "code": "601811",
-              "name": "新华文轩",
-              "height": 5
+              "code": "002238",
+              "name": "天威视讯",
+              "height": 3
+            },
+            {
+              "code": "002395",
+              "name": "双象股份",
+              "height": 1
             }
           ],
           "source": "同花顺概念指数与成分股涨停交集"
         },
         "explanation": {
-          "score": 44,
+          "score": 35,
           "coverage_pct": 80.0,
           "components": [
             {
               "metric": "龙头强度",
-              "value": 5,
+              "value": 3,
               "weight": 30,
-              "normalized": 66.67,
-              "contribution": 25.0
+              "normalized": 33.33,
+              "contribution": 12.5
             },
             {
               "metric": "板块宽度",
-              "value": 2,
+              "value": 3,
               "weight": 25,
-              "normalized": 11.11,
-              "contribution": 3.47
+              "normalized": 22.22,
+              "contribution": 6.94
             },
             {
               "metric": "梯队完整度",
@@ -6389,8 +6667,8 @@
         "facts": {
           "code": "885768.TI",
           "name": "无人零售",
-          "change_pct": 0.371103,
-          "turnover_cny": 1371164900,
+          "change_pct": 0.390215,
+          "turnover_cny": 1552588200,
           "member_count": 26,
           "limit_up_count": 1,
           "first_board_count": 0,
@@ -6447,100 +6725,24 @@
         }
       },
       {
-        "theme": "参股保险",
-        "stage": "萌芽",
-        "score": 25,
-        "trend": "→",
-        "subscores": {
-          "leader_strength": 17,
-          "sector_width": 11,
-          "ladder_completeness": 50,
-          "capital_persistence": 0
-        },
-        "facts": {
-          "code": "885623.TI",
-          "name": "参股保险",
-          "change_pct": 0.095704,
-          "turnover_cny": 4213651200,
-          "member_count": 48,
-          "limit_up_count": 2,
-          "first_board_count": 1,
-          "second_board_count": 1,
-          "third_board_count": 0,
-          "high_board_count": 0,
-          "max_height": 2,
-          "active_days_3": null,
-          "leaders": [
-            {
-              "code": "000850",
-              "name": "华茂股份",
-              "height": 2
-            },
-            {
-              "code": "002029",
-              "name": "七 匹 狼",
-              "height": 1
-            }
-          ],
-          "source": "同花顺概念指数与成分股涨停交集"
-        },
-        "explanation": {
-          "score": 25,
-          "coverage_pct": 80.0,
-          "components": [
-            {
-              "metric": "龙头强度",
-              "value": 2,
-              "weight": 30,
-              "normalized": 16.67,
-              "contribution": 6.25
-            },
-            {
-              "metric": "板块宽度",
-              "value": 2,
-              "weight": 25,
-              "normalized": 11.11,
-              "contribution": 3.47
-            },
-            {
-              "metric": "梯队完整度",
-              "value": 2,
-              "weight": 25,
-              "normalized": 50.0,
-              "contribution": 15.62
-            },
-            {
-              "metric": "资金持续性",
-              "value": null,
-              "weight": 20,
-              "normalized": null,
-              "contribution": null
-            }
-          ],
-          "missing_metrics": [
-            "资金持续性"
-          ]
-        }
-      },
-      {
         "theme": "减速器",
         "stage": "萌芽",
-        "score": 11,
+        "score": 15,
         "trend": "→",
         "subscores": {
           "leader_strength": 0,
-          "sector_width": 11,
+          "sector_width": 22,
           "ladder_completeness": 25,
           "capital_persistence": 0
         },
         "facts": {
           "code": "886008.TI",
           "name": "减速器",
-          "change_pct": 0.690703,
-          "turnover_cny": 18171757000,
+          "change_pct": 0.630299,
+          "turnover_cny": 20639918000,
           "member_count": 139,
-          "limit_up_count": 2,
-          "first_board_count": 2,
+          "limit_up_count": 3,
+          "first_board_count": 3,
           "second_board_count": 0,
           "third_board_count": 0,
           "high_board_count": 0,
@@ -6553,6 +6755,11 @@
               "height": 1
             },
             {
+              "code": "002164",
+              "name": "宁波东力",
+              "height": 1
+            },
+            {
               "code": "603767",
               "name": "中马传动",
               "height": 1
@@ -6561,7 +6768,7 @@
           "source": "同花顺概念指数与成分股涨停交集"
         },
         "explanation": {
-          "score": 11,
+          "score": 15,
           "coverage_pct": 80.0,
           "components": [
             {
@@ -6573,10 +6780,10 @@
             },
             {
               "metric": "板块宽度",
-              "value": 2,
+              "value": 3,
               "weight": 25,
-              "normalized": 11.11,
-              "contribution": 3.47
+              "normalized": 22.22,
+              "contribution": 6.94
             },
             {
               "metric": "梯队完整度",
@@ -6599,24 +6806,24 @@
         }
       },
       {
-        "theme": "足球概念",
+        "theme": "一体化压铸",
         "stage": "萌芽",
-        "score": 11,
+        "score": 8,
         "trend": "→",
         "subscores": {
           "leader_strength": 0,
-          "sector_width": 11,
+          "sector_width": 0,
           "ladder_completeness": 25,
           "capital_persistence": 0
         },
         "facts": {
-          "code": "885580.TI",
-          "name": "足球概念",
-          "change_pct": 0.541062,
-          "turnover_cny": 4442225500,
-          "member_count": 40,
-          "limit_up_count": 2,
-          "first_board_count": 2,
+          "code": "886000.TI",
+          "name": "一体化压铸",
+          "change_pct": 0.137374,
+          "turnover_cny": 7627560500,
+          "member_count": 54,
+          "limit_up_count": 1,
+          "first_board_count": 1,
           "second_board_count": 0,
           "third_board_count": 0,
           "high_board_count": 0,
@@ -6624,20 +6831,15 @@
           "active_days_3": null,
           "leaders": [
             {
-              "code": "002181",
-              "name": "粤 传 媒",
-              "height": 1
-            },
-            {
-              "code": "002395",
-              "name": "双象股份",
+              "code": "605018",
+              "name": "长华集团",
               "height": 1
             }
           ],
           "source": "同花顺概念指数与成分股涨停交集"
         },
         "explanation": {
-          "score": 11,
+          "score": 8,
           "coverage_pct": 80.0,
           "components": [
             {
@@ -6649,10 +6851,10 @@
             },
             {
               "metric": "板块宽度",
-              "value": 2,
+              "value": 1,
               "weight": 25,
-              "normalized": 11.11,
-              "contribution": 3.47
+              "normalized": 0,
+              "contribution": 0.0
             },
             {
               "metric": "梯队完整度",
@@ -6688,8 +6890,8 @@
         "facts": {
           "code": "885829.TI",
           "name": "丙烯酸",
-          "change_pct": 0.192735,
-          "turnover_cny": 3315067300,
+          "change_pct": 0.098081,
+          "turnover_cny": 3710244500,
           "member_count": 20,
           "limit_up_count": 1,
           "first_board_count": 1,
@@ -6759,8 +6961,8 @@
         "facts": {
           "code": "886043.TI",
           "name": "太赫兹",
-          "change_pct": 0.476165,
-          "turnover_cny": 13774938000,
+          "change_pct": 0.699342,
+          "turnover_cny": 14972320000,
           "member_count": 24,
           "limit_up_count": 1,
           "first_board_count": 1,
@@ -6830,8 +7032,8 @@
         "facts": {
           "code": "886018.TI",
           "name": "高压氧舱",
-          "change_pct": 0.946583,
-          "turnover_cny": 1354381900,
+          "change_pct": 0.756186,
+          "turnover_cny": 1478297000,
           "member_count": 11,
           "limit_up_count": 1,
           "first_board_count": 1,
@@ -6901,8 +7103,8 @@
         "facts": {
           "code": "885888.TI",
           "name": "C2M概念",
-          "change_pct": 0.134973,
-          "turnover_cny": 3139054600,
+          "change_pct": 0.161633,
+          "turnover_cny": 3539399100,
           "member_count": 39,
           "limit_up_count": 0,
           "first_board_count": 0,
@@ -6966,9 +7168,74 @@
         "facts": {
           "code": "885860.TI",
           "name": "中船系",
-          "change_pct": 0.141744,
-          "turnover_cny": 2548727200,
+          "change_pct": 0.364485,
+          "turnover_cny": 2876435000,
           "member_count": 10,
+          "limit_up_count": 0,
+          "first_board_count": 0,
+          "second_board_count": 0,
+          "third_board_count": 0,
+          "high_board_count": 0,
+          "max_height": 0,
+          "active_days_3": null,
+          "leaders": [],
+          "source": "同花顺概念指数与成分股涨停交集"
+        },
+        "explanation": {
+          "score": 0,
+          "coverage_pct": 80.0,
+          "components": [
+            {
+              "metric": "龙头强度",
+              "value": 0,
+              "weight": 30,
+              "normalized": 0,
+              "contribution": 0.0
+            },
+            {
+              "metric": "板块宽度",
+              "value": 0,
+              "weight": 25,
+              "normalized": 0,
+              "contribution": 0.0
+            },
+            {
+              "metric": "梯队完整度",
+              "value": 0,
+              "weight": 25,
+              "normalized": 0.0,
+              "contribution": 0.0
+            },
+            {
+              "metric": "资金持续性",
+              "value": null,
+              "weight": 20,
+              "normalized": null,
+              "contribution": null
+            }
+          ],
+          "missing_metrics": [
+            "资金持续性"
+          ]
+        }
+      },
+      {
+        "theme": "兵装重组概念",
+        "stage": "萌芽",
+        "score": 0,
+        "trend": "→",
+        "subscores": {
+          "leader_strength": 0,
+          "sector_width": 0,
+          "ladder_completeness": 0,
+          "capital_persistence": 0
+        },
+        "facts": {
+          "code": "886101.TI",
+          "name": "兵装重组概念",
+          "change_pct": 0.486112,
+          "turnover_cny": 734047720,
+          "member_count": 7,
           "limit_up_count": 0,
           "first_board_count": 0,
           "second_board_count": 0,
@@ -7026,8 +7293,8 @@
         {
           "code": "886018.TI",
           "name": "高压氧舱",
-          "change_pct": 0.946583,
-          "turnover_cny": 1354381900,
+          "change_pct": 0.756186,
+          "turnover_cny": 1478297000,
           "member_count": 11,
           "limit_up_count": 1,
           "board_counts": {
@@ -7043,58 +7310,10 @@
           "source": "同花顺概念指数及当前成分股"
         },
         {
-          "code": "886008.TI",
-          "name": "减速器",
-          "change_pct": 0.690703,
-          "turnover_cny": 18171757000,
-          "member_count": 139,
-          "limit_up_count": 2,
-          "board_counts": {
-            "1": 2
-          },
-          "limit_up_stocks": [
-            {
-              "code": "000678",
-              "name": "襄阳轴承",
-              "height": 1
-            },
-            {
-              "code": "603767",
-              "name": "中马传动",
-              "height": 1
-            }
-          ],
-          "source": "同花顺概念指数及当前成分股"
-        },
-        {
-          "code": "885580.TI",
-          "name": "足球概念",
-          "change_pct": 0.541062,
-          "turnover_cny": 4442225500,
-          "member_count": 40,
-          "limit_up_count": 2,
-          "board_counts": {
-            "1": 2
-          },
-          "limit_up_stocks": [
-            {
-              "code": "002181",
-              "name": "粤 传 媒",
-              "height": 1
-            },
-            {
-              "code": "002395",
-              "name": "双象股份",
-              "height": 1
-            }
-          ],
-          "source": "同花顺概念指数及当前成分股"
-        },
-        {
           "code": "886043.TI",
           "name": "太赫兹",
-          "change_pct": 0.476165,
-          "turnover_cny": 13774938000,
+          "change_pct": 0.699342,
+          "turnover_cny": 14972320000,
           "member_count": 24,
           "limit_up_count": 1,
           "board_counts": {
@@ -7110,10 +7329,80 @@
           "source": "同花顺概念指数及当前成分股"
         },
         {
+          "code": "886008.TI",
+          "name": "减速器",
+          "change_pct": 0.630299,
+          "turnover_cny": 20639918000,
+          "member_count": 139,
+          "limit_up_count": 3,
+          "board_counts": {
+            "1": 3
+          },
+          "limit_up_stocks": [
+            {
+              "code": "000678",
+              "name": "襄阳轴承",
+              "height": 1
+            },
+            {
+              "code": "002164",
+              "name": "宁波东力",
+              "height": 1
+            },
+            {
+              "code": "603767",
+              "name": "中马传动",
+              "height": 1
+            }
+          ],
+          "source": "同花顺概念指数及当前成分股"
+        },
+        {
+          "code": "885580.TI",
+          "name": "足球概念",
+          "change_pct": 0.555707,
+          "turnover_cny": 5036076400,
+          "member_count": 40,
+          "limit_up_count": 3,
+          "board_counts": {
+            "1": 2,
+            "3": 1
+          },
+          "limit_up_stocks": [
+            {
+              "code": "002181",
+              "name": "粤 传 媒",
+              "height": 1
+            },
+            {
+              "code": "002238",
+              "name": "天威视讯",
+              "height": 3
+            },
+            {
+              "code": "002395",
+              "name": "双象股份",
+              "height": 1
+            }
+          ],
+          "source": "同花顺概念指数及当前成分股"
+        },
+        {
+          "code": "886101.TI",
+          "name": "兵装重组概念",
+          "change_pct": 0.486112,
+          "turnover_cny": 734047720,
+          "member_count": 7,
+          "limit_up_count": 0,
+          "board_counts": {},
+          "limit_up_stocks": [],
+          "source": "同花顺概念指数及当前成分股"
+        },
+        {
           "code": "885768.TI",
           "name": "无人零售",
-          "change_pct": 0.371103,
-          "turnover_cny": 1371164900,
+          "change_pct": 0.390215,
+          "turnover_cny": 1552588200,
           "member_count": 26,
           "limit_up_count": 1,
           "board_counts": {
@@ -7129,10 +7418,51 @@
           "source": "同花顺概念指数及当前成分股"
         },
         {
+          "code": "885860.TI",
+          "name": "中船系",
+          "change_pct": 0.364485,
+          "turnover_cny": 2876435000,
+          "member_count": 10,
+          "limit_up_count": 0,
+          "board_counts": {},
+          "limit_up_stocks": [],
+          "source": "同花顺概念指数及当前成分股"
+        },
+        {
+          "code": "885888.TI",
+          "name": "C2M概念",
+          "change_pct": 0.161633,
+          "turnover_cny": 3539399100,
+          "member_count": 39,
+          "limit_up_count": 0,
+          "board_counts": {},
+          "limit_up_stocks": [],
+          "source": "同花顺概念指数及当前成分股"
+        },
+        {
+          "code": "886000.TI",
+          "name": "一体化压铸",
+          "change_pct": 0.137374,
+          "turnover_cny": 7627560500,
+          "member_count": 54,
+          "limit_up_count": 1,
+          "board_counts": {
+            "1": 1
+          },
+          "limit_up_stocks": [
+            {
+              "code": "605018",
+              "name": "长华集团",
+              "height": 1
+            }
+          ],
+          "source": "同花顺概念指数及当前成分股"
+        },
+        {
           "code": "885829.TI",
           "name": "丙烯酸",
-          "change_pct": 0.192735,
-          "turnover_cny": 3315067300,
+          "change_pct": 0.098081,
+          "turnover_cny": 3710244500,
           "member_count": 20,
           "limit_up_count": 1,
           "board_counts": {
@@ -7146,78 +7476,6 @@
             }
           ],
           "source": "同花顺概念指数及当前成分股"
-        },
-        {
-          "code": "886072.TI",
-          "name": "高股息精选",
-          "change_pct": 0.178725,
-          "turnover_cny": 32185687000,
-          "member_count": 285,
-          "limit_up_count": 2,
-          "board_counts": {
-            "1": 1,
-            "5": 1
-          },
-          "limit_up_stocks": [
-            {
-              "code": "000498",
-              "name": "山东路桥",
-              "height": 1
-            },
-            {
-              "code": "601811",
-              "name": "新华文轩",
-              "height": 5
-            }
-          ],
-          "source": "同花顺概念指数及当前成分股"
-        },
-        {
-          "code": "885860.TI",
-          "name": "中船系",
-          "change_pct": 0.141744,
-          "turnover_cny": 2548727200,
-          "member_count": 10,
-          "limit_up_count": 0,
-          "board_counts": {},
-          "limit_up_stocks": [],
-          "source": "同花顺概念指数及当前成分股"
-        },
-        {
-          "code": "885888.TI",
-          "name": "C2M概念",
-          "change_pct": 0.134973,
-          "turnover_cny": 3139054600,
-          "member_count": 39,
-          "limit_up_count": 0,
-          "board_counts": {},
-          "limit_up_stocks": [],
-          "source": "同花顺概念指数及当前成分股"
-        },
-        {
-          "code": "885623.TI",
-          "name": "参股保险",
-          "change_pct": 0.095704,
-          "turnover_cny": 4213651200,
-          "member_count": 48,
-          "limit_up_count": 2,
-          "board_counts": {
-            "2": 1,
-            "1": 1
-          },
-          "limit_up_stocks": [
-            {
-              "code": "000850",
-              "name": "华茂股份",
-              "height": 2
-            },
-            {
-              "code": "002029",
-              "name": "七 匹 狼",
-              "height": 1
-            }
-          ],
-          "source": "同花顺概念指数及当前成分股"
         }
       ],
       "strength_ready": false,
@@ -7227,10 +7485,10 @@
   "hithink_facts": {
     "source": "同花顺官方 Financial-API",
     "trade_date": "2026-09-24",
-    "updated_at": "2026-09-24T02:35:34.781823+00:00",
+    "updated_at": "2026-09-24T02:58:30.025387+00:00",
     "market_quote_total": 5578,
     "limit_up": {
-      "count": 37,
+      "count": 43,
       "complete": true
     },
     "broken": {
@@ -7238,7 +7496,7 @@
       "complete": true
     },
     "limit_down": {
-      "count": 2,
+      "count": 4,
       "complete": true
     },
     "auction": {
@@ -7312,6 +7570,23 @@
           "open_price": 7.77,
           "last_price": 7.77,
           "float_market_cap": 8118778594.5
+        },
+        {
+          "thscode": "002238.SZ",
+          "ticker": "002238",
+          "name": "天威视讯",
+          "auction_price": 8.3,
+          "auction_pct": 8.3551,
+          "auction_volume": 83790.0,
+          "auction_amount": 69545700.0,
+          "auction_unmatched": -2634.95,
+          "auction_turnover_pct": 1.044,
+          "auction_yesterday_ratio_pct": 73.2391,
+          "auction_volume_ratio": 3.3247,
+          "pre_close_price": 7.66,
+          "open_price": 8.3,
+          "last_price": 8.43,
+          "float_market_cap": 6765573718.8
         },
         {
           "thscode": "000850.SZ",
@@ -7552,6 +7827,40 @@
           "float_market_cap": 6161659180.34
         },
         {
+          "thscode": "002082.SZ",
+          "ticker": "002082",
+          "name": "ST万邦",
+          "auction_price": 11.56,
+          "auction_pct": 1.6711,
+          "auction_volume": 3141.0,
+          "auction_amount": 3630996.0,
+          "auction_unmatched": -13.0,
+          "auction_turnover_pct": 0.0553,
+          "auction_yesterday_ratio_pct": 1.2694,
+          "auction_volume_ratio": 0.7269,
+          "pre_close_price": 11.37,
+          "open_price": 11.56,
+          "last_price": 12.51,
+          "float_market_cap": 7103777504.22
+        },
+        {
+          "thscode": "002164.SZ",
+          "ticker": "002164",
+          "name": "宁波东力",
+          "auction_price": 12.21,
+          "auction_pct": 2.8644,
+          "auction_volume": 3419.0,
+          "auction_amount": 4174599.0,
+          "auction_unmatched": 20.0,
+          "auction_turnover_pct": 0.0713,
+          "auction_yesterday_ratio_pct": 0.7888,
+          "auction_volume_ratio": 0.2658,
+          "pre_close_price": 11.87,
+          "open_price": 12.21,
+          "last_price": 13.06,
+          "float_market_cap": 6265863367.58
+        },
+        {
           "thscode": "002181.SZ",
           "ticker": "002181",
           "name": "粤传媒",
@@ -7688,6 +7997,23 @@
           "float_market_cap": 3719523993.5
         },
         {
+          "thscode": "600189.SH",
+          "ticker": "600189",
+          "name": "泉阳泉",
+          "auction_price": 8.35,
+          "auction_pct": 0.9674,
+          "auction_volume": 1049.0,
+          "auction_amount": 875915.0,
+          "auction_unmatched": -33.0,
+          "auction_turnover_pct": 0.0147,
+          "auction_yesterday_ratio_pct": 0.5781,
+          "auction_volume_ratio": 0.2352,
+          "pre_close_price": 8.27,
+          "open_price": 8.35,
+          "last_price": 9.1,
+          "float_market_cap": 6508300089.2
+        },
+        {
           "thscode": "600358.SH",
           "ticker": "600358",
           "name": "国旅联合",
@@ -7703,6 +8029,23 @@
           "open_price": 5.21,
           "last_price": 5.72,
           "float_market_cap": 2888237695.2
+        },
+        {
+          "thscode": "600699.SH",
+          "ticker": "600699",
+          "name": "均胜电子",
+          "auction_price": 21.52,
+          "auction_pct": -0.0464,
+          "auction_volume": 4260.0,
+          "auction_amount": 9167520.0,
+          "auction_unmatched": -177.0,
+          "auction_turnover_pct": 0.0305,
+          "auction_yesterday_ratio_pct": 0.5806,
+          "auction_volume_ratio": 1.4549,
+          "pre_close_price": 21.53,
+          "open_price": 21.52,
+          "last_price": 23.68,
+          "float_market_cap": 33049478931.84
         },
         {
           "thscode": "600792.SH",
@@ -7771,6 +8114,23 @@
           "open_price": 16.25,
           "last_price": 16.25,
           "float_market_cap": 22834652750
+        },
+        {
+          "thscode": "603042.SH",
+          "ticker": "603042",
+          "name": "华脉科技",
+          "auction_price": 16.96,
+          "auction_pct": -0.411,
+          "auction_volume": 3048.0,
+          "auction_amount": 5169408.0,
+          "auction_unmatched": 152.0,
+          "auction_turnover_pct": 0.146,
+          "auction_yesterday_ratio_pct": 0.7807,
+          "auction_volume_ratio": 0.2877,
+          "pre_close_price": 17.03,
+          "open_price": 16.96,
+          "last_price": 18.73,
+          "float_market_cap": 3910202014.16
         },
         {
           "thscode": "603065.SH",
@@ -7884,8 +8244,8 @@
         {
           "code": "886018.TI",
           "name": "高压氧舱",
-          "change_pct": 0.946583,
-          "turnover_cny": 1354381900,
+          "change_pct": 0.756186,
+          "turnover_cny": 1478297000,
           "member_count": 11,
           "limit_up_count": 1,
           "board_counts": {
@@ -7901,58 +8261,10 @@
           "source": "同花顺概念指数及当前成分股"
         },
         {
-          "code": "886008.TI",
-          "name": "减速器",
-          "change_pct": 0.690703,
-          "turnover_cny": 18171757000,
-          "member_count": 139,
-          "limit_up_count": 2,
-          "board_counts": {
-            "1": 2
-          },
-          "limit_up_stocks": [
-            {
-              "code": "000678",
-              "name": "襄阳轴承",
-              "height": 1
-            },
-            {
-              "code": "603767",
-              "name": "中马传动",
-              "height": 1
-            }
-          ],
-          "source": "同花顺概念指数及当前成分股"
-        },
-        {
-          "code": "885580.TI",
-          "name": "足球概念",
-          "change_pct": 0.541062,
-          "turnover_cny": 4442225500,
-          "member_count": 40,
-          "limit_up_count": 2,
-          "board_counts": {
-            "1": 2
-          },
-          "limit_up_stocks": [
-            {
-              "code": "002181",
-              "name": "粤 传 媒",
-              "height": 1
-            },
-            {
-              "code": "002395",
-              "name": "双象股份",
-              "height": 1
-            }
-          ],
-          "source": "同花顺概念指数及当前成分股"
-        },
-        {
           "code": "886043.TI",
           "name": "太赫兹",
-          "change_pct": 0.476165,
-          "turnover_cny": 13774938000,
+          "change_pct": 0.699342,
+          "turnover_cny": 14972320000,
           "member_count": 24,
           "limit_up_count": 1,
           "board_counts": {
@@ -7968,10 +8280,80 @@
           "source": "同花顺概念指数及当前成分股"
         },
         {
+          "code": "886008.TI",
+          "name": "减速器",
+          "change_pct": 0.630299,
+          "turnover_cny": 20639918000,
+          "member_count": 139,
+          "limit_up_count": 3,
+          "board_counts": {
+            "1": 3
+          },
+          "limit_up_stocks": [
+            {
+              "code": "000678",
+              "name": "襄阳轴承",
+              "height": 1
+            },
+            {
+              "code": "002164",
+              "name": "宁波东力",
+              "height": 1
+            },
+            {
+              "code": "603767",
+              "name": "中马传动",
+              "height": 1
+            }
+          ],
+          "source": "同花顺概念指数及当前成分股"
+        },
+        {
+          "code": "885580.TI",
+          "name": "足球概念",
+          "change_pct": 0.555707,
+          "turnover_cny": 5036076400,
+          "member_count": 40,
+          "limit_up_count": 3,
+          "board_counts": {
+            "1": 2,
+            "3": 1
+          },
+          "limit_up_stocks": [
+            {
+              "code": "002181",
+              "name": "粤 传 媒",
+              "height": 1
+            },
+            {
+              "code": "002238",
+              "name": "天威视讯",
+              "height": 3
+            },
+            {
+              "code": "002395",
+              "name": "双象股份",
+              "height": 1
+            }
+          ],
+          "source": "同花顺概念指数及当前成分股"
+        },
+        {
+          "code": "886101.TI",
+          "name": "兵装重组概念",
+          "change_pct": 0.486112,
+          "turnover_cny": 734047720,
+          "member_count": 7,
+          "limit_up_count": 0,
+          "board_counts": {},
+          "limit_up_stocks": [],
+          "source": "同花顺概念指数及当前成分股"
+        },
+        {
           "code": "885768.TI",
           "name": "无人零售",
-          "change_pct": 0.371103,
-          "turnover_cny": 1371164900,
+          "change_pct": 0.390215,
+          "turnover_cny": 1552588200,
           "member_count": 26,
           "limit_up_count": 1,
           "board_counts": {
@@ -7987,10 +8369,51 @@
           "source": "同花顺概念指数及当前成分股"
         },
         {
+          "code": "885860.TI",
+          "name": "中船系",
+          "change_pct": 0.364485,
+          "turnover_cny": 2876435000,
+          "member_count": 10,
+          "limit_up_count": 0,
+          "board_counts": {},
+          "limit_up_stocks": [],
+          "source": "同花顺概念指数及当前成分股"
+        },
+        {
+          "code": "885888.TI",
+          "name": "C2M概念",
+          "change_pct": 0.161633,
+          "turnover_cny": 3539399100,
+          "member_count": 39,
+          "limit_up_count": 0,
+          "board_counts": {},
+          "limit_up_stocks": [],
+          "source": "同花顺概念指数及当前成分股"
+        },
+        {
+          "code": "886000.TI",
+          "name": "一体化压铸",
+          "change_pct": 0.137374,
+          "turnover_cny": 7627560500,
+          "member_count": 54,
+          "limit_up_count": 1,
+          "board_counts": {
+            "1": 1
+          },
+          "limit_up_stocks": [
+            {
+              "code": "605018",
+              "name": "长华集团",
+              "height": 1
+            }
+          ],
+          "source": "同花顺概念指数及当前成分股"
+        },
+        {
           "code": "885829.TI",
           "name": "丙烯酸",
-          "change_pct": 0.192735,
-          "turnover_cny": 3315067300,
+          "change_pct": 0.098081,
+          "turnover_cny": 3710244500,
           "member_count": 20,
           "limit_up_count": 1,
           "board_counts": {
@@ -8004,84 +8427,12 @@
             }
           ],
           "source": "同花顺概念指数及当前成分股"
-        },
-        {
-          "code": "886072.TI",
-          "name": "高股息精选",
-          "change_pct": 0.178725,
-          "turnover_cny": 32185687000,
-          "member_count": 285,
-          "limit_up_count": 2,
-          "board_counts": {
-            "1": 1,
-            "5": 1
-          },
-          "limit_up_stocks": [
-            {
-              "code": "000498",
-              "name": "山东路桥",
-              "height": 1
-            },
-            {
-              "code": "601811",
-              "name": "新华文轩",
-              "height": 5
-            }
-          ],
-          "source": "同花顺概念指数及当前成分股"
-        },
-        {
-          "code": "885860.TI",
-          "name": "中船系",
-          "change_pct": 0.141744,
-          "turnover_cny": 2548727200,
-          "member_count": 10,
-          "limit_up_count": 0,
-          "board_counts": {},
-          "limit_up_stocks": [],
-          "source": "同花顺概念指数及当前成分股"
-        },
-        {
-          "code": "885888.TI",
-          "name": "C2M概念",
-          "change_pct": 0.134973,
-          "turnover_cny": 3139054600,
-          "member_count": 39,
-          "limit_up_count": 0,
-          "board_counts": {},
-          "limit_up_stocks": [],
-          "source": "同花顺概念指数及当前成分股"
-        },
-        {
-          "code": "885623.TI",
-          "name": "参股保险",
-          "change_pct": 0.095704,
-          "turnover_cny": 4213651200,
-          "member_count": 48,
-          "limit_up_count": 2,
-          "board_counts": {
-            "2": 1,
-            "1": 1
-          },
-          "limit_up_stocks": [
-            {
-              "code": "000850",
-              "name": "华茂股份",
-              "height": 2
-            },
-            {
-              "code": "002029",
-              "name": "七 匹 狼",
-              "height": 1
-            }
-          ],
-          "source": "同花顺概念指数及当前成分股"
         }
       ],
       "strength_ready": false,
       "missing": "仅覆盖当日涨幅前10概念；板块持续性和完整强弱排行待补。"
     },
-    "market_amount_cny": 825909540000,
+    "market_amount_cny": 931821750000,
     "market_amount_scope": "上证指数成交额 + 深证成指成交额",
     "limit_up_ladder": {
       "window": {
@@ -8189,7 +8540,16 @@
                 "sign_level": 0
               }
             ],
-            "three_board": [],
+            "three_board": [
+              {
+                "thscode": "002238.SZ",
+                "ticker": "002238",
+                "name": "天威视讯",
+                "board_num": 3,
+                "seal_nextday": null,
+                "sign_level": 0
+              }
+            ],
             "four_board": [
               {
                 "thscode": "002614.SZ",
@@ -8239,7 +8599,7 @@
                 "ticker": "002238",
                 "name": "天威视讯",
                 "board_num": 2,
-                "seal_nextday": false,
+                "seal_nextday": true,
                 "sign_level": 0
               },
               {
@@ -11624,6 +11984,17 @@
         "tag_name": "涨停"
       },
       {
+        "stock_name": "天威视讯",
+        "analysis_content": "1、据2026年8月28日半年报，公司主营通信与广电服务，建成覆盖深圳的千兆全光网络，并拥有自有数据中心和云计算机房资源\n2、据2026年1月27日公告，公司拟与中资网安建设安全运营分中心，为国资国企及政务云、关键基础设施等提供网络安全运营支撑\n3、据2026年5月25日投资者关系活动记录表，公司深汕数据中心客户为互联网行业大型企业，目前主要提供机柜租赁，暂未涉及算力租赁\n\n（免责声明：本内容由AI技术搜集公开信息总结生成，仅供参考，不构成投资建议，以上市公司公告为准）",
+        "keyword_list": [
+          "广电网络",
+          "网络安全",
+          "数据中心"
+        ],
+        "thscode": "002238.SZ",
+        "tag_name": "涨停"
+      },
+      {
         "stock_name": "华茂股份",
         "analysis_content": "1、据2025年年报，公司拥有纺纱、织造、面料、无纺布完整产业链，产品销往欧洲、亚洲及香港地区。\n2、据2026年半年报，公司正与昆明市东川区政府及金沙矿业协商，推进老明槽矿业资产整合。\n3、据公司资料，公司控股股东为安徽华茂集团，实际控制人为安庆市财政局。\n4、据2026年9月21日据证券时报报道，早盘带“华”字个股大面积涨停。批量 “华”字股涨停属于典型纯名字情绪炒作，历史上曾出现炒 “龙”、炒 “凤”、炒 “中”、炒 “国” 字个股。\n\n（免责声明：本内容由AI技术搜集公开信息总结生成，仅供参考，不构成投资建议，以上市公司公告为准）",
         "keyword_list": [
@@ -11779,6 +12150,28 @@
           "海峡两岸"
         ],
         "thscode": "002029.SZ",
+        "tag_name": "大涨"
+      },
+      {
+        "stock_name": "ST万邦",
+        "analysis_content": "1、据2026年5月13日业绩说明会，公司重点投入创新药研发，聚焦神经系统疾病，阿尔茨海默病关键注册临床积极推进，重症肌无力新药获美国食品药品监督管理局孤儿药认定及中美临床许可。\n2、据2026年8月27日半年度报告，公司依托自主知识产权核心产品，推进老药新用、剂型创新及国际化布局，并应用人工智能辅助药物研发。\n3、据2026年8月27日半年度报告，公司上半年营收5.89亿元，同比增长1.77%；归母净利润6327.72万元，同比增长369.99%。\n\n（免责声明：本内容由AI技术搜集公开信息总结生成，仅供参考，不构成投资建议，以上市公司公告为准）",
+        "keyword_list": [
+          "创新药",
+          "神经用药",
+          "中报增长"
+        ],
+        "thscode": "002082.SZ",
+        "tag_name": "涨停"
+      },
+      {
+        "stock_name": "宁波东力",
+        "analysis_content": "行业原因：\n1、9月23日，特斯拉CEO埃隆·马斯克在接受央视财经专访时表示，预测10年内或不到10年，人形机器人至少有10亿台；未来15年或许达100亿台；未来20年可能会达1000亿台。\n2、据21世纪经济报道援引产业链人士消息，特斯拉相关团队已于9月16日落地宁波，并于17日开启新一轮针对旗下机器人业务的量产审厂。\n公司原因：\n1、据2026年9月24日公告，控股股东计划在6个月内增持公司股份1亿元至2亿元，增持比例不超过总股本2%，并取得不超过1.5亿元专项贷款承诺。\n2、据2026年5月8日业绩说明会，公司精密减速机已切入具身智能、工业自动化等应用场景，已获订单并实现小批量供货。\n3、据2026年8月27日向特定对象发行股票预案，公司拟建设精密减速器产业化项目，布局谐波减速器与精密行星减速器。\n\n（免责声明：本内容由AI技术搜集公开信息总结生成，仅供参考，不构成投资建议，以上市公司公告为准）",
+        "keyword_list": [
+          "股东增持",
+          "机器人减速器",
+          "定增扩产"
+        ],
+        "thscode": "002164.SZ",
         "tag_name": "涨停"
       },
       {
@@ -11850,7 +12243,7 @@
       },
       {
         "stock_name": "洛轴股份",
-        "analysis_content": "1、据2026年9月23日公告，公司拟投资3.89亿元建设民用航空轴承项目、3.81亿元建设高铁及城市轨道交通轴承项目，建设周期均为3年。\n2、据2026年9月17日互动易，公司机器人轴承部分产品已开展客户验证及小批量供货，但尚未形成大规模销售收入。\n3、据2026年9月21日互动易，公司可研制生产600千瓦至20兆瓦以上风电轴承，20兆瓦级海上风电主轴轴承获河南省首台套认定。\n4、洛轴股份于2026年9月9日上市，公司主营业务为轴承及相关零部件的研发、生产和销售。\n（免责声明：本内容由AI技术搜集公开信息总结生成，仅供参考，不构成投资建议，以上市公司公告为准）",
+        "analysis_content": "行业原因：\n1、9月23日，特斯拉CEO埃隆·马斯克在接受央视财经专访时表示，预测10年内或不到10年，人形机器人至少有10亿台；未来15年或许达100亿台；未来20年可能会达1000亿台。\n2、据21世纪经济报道援引产业链人士消息，特斯拉相关团队已于9月16日落地宁波，并于17日开启新一轮针对旗下机器人业务的量产审厂。\n公司原因：\n1、据2026年9月24日公告，公司拟投资3.89亿元建设民用航空轴承项目、3.81亿元建设高铁及城市轨道交通轴承项目，建设周期均为3年。\n2、据2026年9月17日互动易，公司机器人轴承部分产品已开展客户验证及小批量供货，但尚未形成大规模销售收入。\n3、据2026年9月21日互动易，公司可研制生产600千瓦至20兆瓦以上风电轴承，20兆瓦级海上风电主轴轴承获河南省首台套认定。\n4、洛轴股份于2026年9月9日上市，公司主营业务为轴承及相关零部件的研发、生产和销售。\n（免责声明：本内容由AI技术搜集公开信息总结生成，仅供参考，不构成投资建议，以上市公司公告为准）",
         "keyword_list": [
           "航空轴承",
           "机器人轴承",
@@ -11873,6 +12266,17 @@
         "tag_name": "涨停"
       },
       {
+        "stock_name": "泉阳泉",
+        "analysis_content": "1、据2026年9月22日公告，公司拟挂牌转让园区园林100%股权，挂牌底价总额3.21亿元，股权拆分为51%、30%、19%三部分，相关事项已获国资监管单位批准，尚需股东会审议。 \n2、据2026年8月25日半年报，公司上半年营收7.77亿元，同比增长13.54%，归母净利润3873.11万元，同比增长65.03%，矿泉水主业保持增长。 \n3、据2026年5月19日互动易，公司持续推进全国布局，深耕吉林核心市场，重点发展辽黑市场，并以北京为突破口向南方拓展，巩固中石化、中石油、南方航空、盒马鲜生等客户。\n\n（免责声明：本内容由AI技术搜集公开信息总结生成，仅供参考，不构成投资建议，以上市公司公告为准）",
+        "keyword_list": [
+          "园林剥离",
+          "天然矿泉水",
+          "全国扩张"
+        ],
+        "thscode": "600189.SH",
+        "tag_name": "涨停"
+      },
+      {
         "stock_name": "国旅联合",
         "analysis_content": "1、据2026年9月21日特定对象调研，公司保留新线中视互联网数字营销业务，2026年上半年基本实现盈亏平衡，并将为润田提供营销推广赋能。\n2、据2026年9月21日特定对象调研，润田拥有含硒及高偏硅酸矿泉水资源，深耕饮用水三十年，渠道覆盖多个省份。\n3、据2026年8月29日半年报，公司已完成润田实业100%股份过户及新增股份登记，形成包装饮用水为龙头、互联网数字营销和跨境电商为两翼的业务格局。\n\n（免责声明：本内容由AI技术搜集公开信息总结生成，仅供参考，不构成投资建议，以上市公司公告为准）",
         "keyword_list": [
@@ -11881,6 +12285,17 @@
           "跨境电商"
         ],
         "thscode": "600358.SH",
+        "tag_name": "涨停"
+      },
+      {
+        "stock_name": "均胜电子",
+        "analysis_content": "行业原因：\n1、9月23日，特斯拉CEO埃隆·马斯克在接受央视财经专访时表示，预测10年内或不到10年，人形机器人至少有10亿台；未来15年或许达100亿台；未来20年可能会达1000亿台。\n2、据21世纪经济报道援引产业链人士消息，特斯拉相关团队已于9月16日落地宁波，并于17日开启新一轮针对旗下机器人业务的量产审厂。\n公司原因：\n1、据2026年9月17日财闻报道，特斯拉加速推进Optimus供应链审厂。此外，据2026年9月17日21世纪经济报，此轮审厂涉及的公司包括拓普集团、三花智控、浙江荣泰、新泉股份、均胜电子等传统特斯拉汽车供应链企业。相关企业也一直被认为正配合特斯拉人形机器人的量产工作；据2026年6月10日互动易，公司已推出机器人头部、胸腔及底盘总成等产品，北美相关业务积极推进中。\n2、据2026年8月5日互动易，公司已布局L3、L4级自动驾驶，并发布新一代L3自动驾驶域控制器。 \n3、据2026年9月7日业绩说明会，在智算中心领域，针对 AIDC 对高可靠供配电、能源管理、热管理及系统集成提出的更高要求，公司正在加快研发交流/直流电源转换单元、高功率直流/直流电源转换单元、全浸没式液冷电源机柜、冷液分配单元等产品及集成解决方案，预计于2026 年 9 月推出样品并逐步推向市场。\n\n（免责声明：本内容由AI技术搜集公开信息总结生成，仅供参考，不构成投资建议，以上市公司公告为准）",
+        "keyword_list": [
+          "特斯拉机器人",
+          "智能驾驶",
+          "数据中心"
+        ],
+        "thscode": "600699.SH",
         "tag_name": "涨停"
       },
       {
@@ -11925,6 +12340,17 @@
           "海外配电"
         ],
         "thscode": "601567.SH",
+        "tag_name": "涨停"
+      },
+      {
+        "stock_name": "华脉科技",
+        "analysis_content": "1、据2026年9月18日业绩说明会，公司上半年受益于光纤光缆市场价格持续走高、产品毛利提升，并通过降本增效实现归母净利润1854.33万元，同比扭亏为盈。\n2、据2026年9月18日业绩说明会，公司以1亿元取得芯慧微6.4103%股权，双方面向6G通信和人工智能开展技术储备与产品开发探索。\n3、据2026年8月21日半年度报告，公司主营信息通信网络基础设施业务，产品涵盖ODN、光无源器件、光缆及无线通信产品，下游客户包括电信运营商等。\n\n（免责声明：本内容由AI技术搜集公开信息总结生成，仅供参考，不构成投资建议，以上市公司公告为准）",
+        "keyword_list": [
+          "光纤光缆",
+          "扭亏为盈",
+          "6G通信"
+        ],
+        "thscode": "603042.SH",
         "tag_name": "涨停"
       },
       {
