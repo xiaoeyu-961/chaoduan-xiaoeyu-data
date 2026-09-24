@@ -64,8 +64,9 @@ def build_market(date: str) -> tuple[dict, dict]:
                           else None)
 
     up = down = flat = 0
-    # Symbols lost to a small live pagination shift remain unknown; they are
-    # never silently counted as flat or as zero turnover.
+    # Missing changes normally represent suspended, delisted or otherwise
+    # non-trading symbols. They are excluded from the advance/decline base,
+    # never counted as flat.
     missing_changes = max(universe - len(quotes), 0)
     total_turnover = 0
     turnover_missing = max(universe - len(quotes), 0)
@@ -84,9 +85,8 @@ def build_market(date: str) -> tuple[dict, dict]:
             turnover_missing += 1
         else:
             total_turnover += amount
-    # A complete code universe can still include suspended securities with no
-    # current price. Keep those as unknown, never call them flat/zero-volume.
-    breadth_complete = missing_changes == 0
+    counted_universe = up + down + flat
+    breadth_complete = counted_universe > 0
     turnover_complete = turnover_missing == 0
     quote_by_code = {row.get("thscode"): row for row in quotes}
     limit_ups = [normalize_stock(r) for r in up_raw]
@@ -110,6 +110,8 @@ def build_market(date: str) -> tuple[dict, dict]:
                     "flat": flat if breadth_complete else None,
                     "known_up": up, "known_down": down, "known_flat": flat,
                     "unknown": missing_changes, "universe": universe,
+                    "countedUniverse": counted_universe,
+                    "excludedNoChange": missing_changes,
                     "complete": breadth_complete,
                     "coverage_pct": round((universe - missing_changes) / universe * 100, 2),
                     "usable": universe > 0 and (universe - missing_changes) / universe >= .98,
@@ -124,7 +126,7 @@ def build_market(date: str) -> tuple[dict, dict]:
         "themes": [],
         "quality": {"complete": breadth_complete and turnover_complete,
                     "errors": [], "collector": "hithink-finance",
-                    "notes": ["缺少涨跌幅的停牌/未就绪标的保留为未知，不计入平盘。",
+                    "notes": ["缺少有效涨跌幅的停牌、退市或未交易标的从涨跌家数统计母体中剔除，不计入平盘。",
                               "涨停原因不是概念板块归属；板块需单独使用成分股接口。"]},
     }
     facts = {"source": market["source"], "trade_date": date, "updated_at": generated,

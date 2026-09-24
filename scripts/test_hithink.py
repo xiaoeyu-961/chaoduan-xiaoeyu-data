@@ -18,7 +18,7 @@ class SourceIntegrity(unittest.TestCase):
             with self.assertRaises(HithinkError):
                 pool("limitUp", "2026-09-22")
 
-    def test_missing_quote_is_unknown_not_flat(self):
+    def test_missing_quote_is_excluded_not_flat(self):
         index = [{"thscode": code, "ticker": code[:6], "turnover": 1}
                  for code in ("000001.SH", "399001.SZ", "399006.SZ", "000688.SH")]
         quote_rows = [{"thscode": "123456.SZ", "price_change_ratio_pct": 1, "turnover": 100},
@@ -29,8 +29,12 @@ class SourceIntegrity(unittest.TestCase):
              patch("fetch_hithink.all_quotes", return_value=(quote_rows, 2)), \
              patch("fetch_hithink.get", return_value={"item": index}):
             market, facts = build_market("2026-09-22")
-        self.assertIsNone(market["breadth"]["flat"])
+        self.assertEqual(market["breadth"]["flat"], 0)
+        self.assertEqual(market["breadth"]["up"], 1)
         self.assertEqual(market["breadth"]["unknown"], 1)
+        self.assertEqual(market["breadth"]["excludedNoChange"], 1)
+        self.assertEqual(market["breadth"]["countedUniverse"], 1)
+        self.assertTrue(market["breadth"]["complete"])
         self.assertEqual(facts["market_amount_cny"], 2)
         self.assertEqual(market["limitUps"][0]["limitReason"], "测试")
         self.assertEqual(market["limitUps"][0]["amount"], 100)
