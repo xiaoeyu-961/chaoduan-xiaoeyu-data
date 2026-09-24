@@ -30,6 +30,12 @@ QUOTE_URL = (
     "https://push2.eastmoney.com/api/qt/ulist.np/get"
     "?fltt=2&fields=f12,f14,f2,f3,f6&secids={secids}"
 )
+TREND_URL = (
+    "https://push2his.eastmoney.com/api/qt/stock/trends2/get"
+    "?fields1=f1,f2,f3,f4,f5,f6,f7,f8,f9,f10,f11,f12,f13"
+    "&fields2=f51,f52,f53,f54,f55,f56,f57,f58&ndays=5&iscr=0&iscca=0"
+    "&ut=7eea3edcaed734bea9cbfc24409ed989&secid={secid}"
+)
 
 
 def read_json(path: Path, default):
@@ -303,6 +309,59 @@ def snapshot_slot(timestamp: str) -> str | None:
     return slots[nearest] if abs(nearest - minute) <= 20 else None
 
 
+def same_time_amount_comparison(trade_date: str, timestamp: str) -> dict | None:
+    """Backfill current/previous cumulative turnover from one minute source."""
+    try:
+        stamp = datetime.fromisoformat(timestamp.replace("Z", "+00:00")).astimezone(CN_TZ)
+        clock = f"{stamp.hour:02d}:{stamp.minute:02d}"
+        if clock < "09:30":
+            clock = "09:30"
+        elif "11:30" < clock < "13:00":
+            clock = "11:30"
+        elif clock > "15:00":
+            clock = "15:00"
+
+        markets = []
+        for secid in ("1.000001", "0.399001"):
+            body = get_json(TREND_URL.format(secid=secid), attempts=2)
+            rows = []
+            for raw in (body.get("data") or {}).get("trends") or []:
+                fields = raw.split(",")
+                if len(fields) < 7 or " " not in fields[0]:
+                    continue
+                date, time = fields[0].split(" ", 1)
+                amount = number(fields[6], None)
+                if date and time and amount is not None:
+                    rows.append({"date": date, "time": time, "amount": amount})
+            markets.append(rows)
+        common_dates = sorted(set(row["date"] for row in markets[0]) &
+                              set(row["date"] for row in markets[1]))
+        previous_date = next((date for date in reversed(common_dates) if date < trade_date), None)
+        if not previous_date:
+            return None
+
+        def cumulative(rows, date):
+            values = [row["amount"] for row in rows
+                      if row["date"] == date and row["time"] <= clock]
+            return sum(values) if values else None
+
+        current_parts = [cumulative(rows, trade_date) for rows in markets]
+        previous_parts = [cumulative(rows, previous_date) for rows in markets]
+        if any(value is None for value in current_parts + previous_parts):
+            return None
+        current, previous = sum(current_parts), sum(previous_parts)
+        difference = current - previous
+        return {
+            "status": "ready", "time": clock, "previousTradeDate": previous_date,
+            "current": current, "previous": previous, "difference": difference,
+            "changePct": round(difference / previous * 100, 2) if previous else None,
+            "direction": "增量" if difference > 0 else "缩量" if difference < 0 else "持平",
+            "source": "东方财富沪深指数5日分时（同源累计）",
+        }
+    except Exception:
+        return None
+
+
 def append_intraday(market: dict, promotion_data: dict | None) -> dict:
     trade_date = market["tradeDate"]
     old = read_json(INTRADAY_FILE, {})
@@ -312,6 +371,7 @@ def append_intraday(market: dict, promotion_data: dict | None) -> dict:
                  and old.get("source") == market.get("source") else [])
     timestamp = market.get("updatedAt") or datetime.now(CN_TZ).isoformat()
     slot = snapshot_slot(timestamp)
+    public_comparison = same_time_amount_comparison(trade_date, timestamp)
     minute = timestamp[:16]
     snapshot = {
         "time": timestamp,
@@ -329,6 +389,7 @@ def append_intraday(market: dict, promotion_data: dict | None) -> dict:
         "strongest_theme": (market.get("themes") or [{}])[0].get("name"),
         "slot": slot,
         "turnover_cny": (market.get("breadth") or {}).get("totalAmount"),
+        "amount_comparison": public_comparison,
     }
     snapshots = [row for row in snapshots if str(row.get("time", ""))[:16] != minute]
     snapshots.append(snapshot)
@@ -358,13 +419,13 @@ def append_intraday(market: dict, promotion_data: dict | None) -> dict:
         previous_row = next((row for row in days.get(previous_date, []) if row.get("slot") == slot), None)
         current_amount = snapshot.get("turnover_cny")
         previous_amount = (previous_row or {}).get("turnover_cny")
-        if current_amount is not None and previous_amount is not None:
+        if not snapshot.get("amount_comparison") and current_amount is not None and previous_amount is not None:
             difference = current_amount - previous_amount
             snapshot["amount_comparison"] = {
-                "status": "ready", "time": slot, "previous_trade_date": previous_date,
+                "status": "ready", "time": slot, "previousTradeDate": previous_date,
                 "current": current_amount, "previous": previous_amount,
                 "difference": difference,
-                "change_pct": round(difference / previous_amount * 100, 2) if previous_amount else None,
+                "changePct": round(difference / previous_amount * 100, 2) if previous_amount else None,
                 "direction": "增量" if difference > 0 else "缩量" if difference < 0 else "持平",
             }
             days[trade_date] = snapshots[-80:]
@@ -434,7 +495,7 @@ def main() -> None:
             missing.append("同源20交易日情绪序列")
     intraday = append_intraday(market, promotion_data)
     latest_comparison = next((row.get("amount_comparison") for row in reversed(intraday.get("snapshots") or [])
-                              if row.get("amount_comparison")), None)
+                              if (row.get("amount_comparison") or {}).get("status") == "ready"), None)
     if latest_comparison:
         market["amountComparison"] = latest_comparison
         write_json(MARKET_FILE, market)
