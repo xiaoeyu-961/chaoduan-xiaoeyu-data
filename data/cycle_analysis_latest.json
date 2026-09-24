@@ -2,7 +2,7 @@
   "schema_version": 1,
   "ok": true,
   "trade_date": "2026-09-24",
-  "generated_at": "2026-09-24T02:25:54.123047+00:00",
+  "generated_at": "2026-09-24T02:36:35.993383+00:00",
   "principles": [
     "不使用5/10/20日均线判断情绪周期",
     "龙头强度与市场生态分开计算",
@@ -13,7 +13,7 @@
     "market_composite": 53,
     "leader_strength": 73,
     "market_ecology": 45,
-    "market_width": 14.54,
+    "market_width": 9.81,
     "relay_ecology": 28.93,
     "mainline_strength": 44,
     "loss_effect": 84,
@@ -31,8 +31,8 @@
     },
     "supporting_factors": [
       "最高板5板",
-      "炸板率17.07%可控",
-      "昨日涨停平均反馈0.85%为正"
+      "炸板率15.91%可控",
+      "昨日涨停平均反馈0.64%为正"
     ],
     "pressure_factors": [
       "晋级率仅21.57%",
@@ -56,8 +56,8 @@
       "facts": {
         "code": "886072.TI",
         "name": "高股息精选",
-        "change_pct": 0.227884,
-        "turnover_cny": 28860293000,
+        "change_pct": 0.178725,
+        "turnover_cny": 32185687000,
         "member_count": 285,
         "limit_up_count": 2,
         "first_board_count": 1,
@@ -133,8 +133,8 @@
         "facts": {
           "code": "886072.TI",
           "name": "高股息精选",
-          "change_pct": 0.227884,
-          "turnover_cny": 28860293000,
+          "change_pct": 0.178725,
+          "turnover_cny": 32185687000,
           "member_count": 285,
           "limit_up_count": 2,
           "first_board_count": 1,
@@ -196,87 +196,6 @@
         }
       },
       {
-        "theme": "足球概念",
-        "stage": "萌芽",
-        "score": 35,
-        "trend": "→",
-        "subscores": {
-          "leader_strength": 33,
-          "sector_width": 22,
-          "ladder_completeness": 50,
-          "capital_persistence": 0
-        },
-        "facts": {
-          "code": "885580.TI",
-          "name": "足球概念",
-          "change_pct": 0.822035,
-          "turnover_cny": 4009273500,
-          "member_count": 40,
-          "limit_up_count": 3,
-          "first_board_count": 2,
-          "second_board_count": 0,
-          "third_board_count": 1,
-          "high_board_count": 0,
-          "max_height": 3,
-          "active_days_3": null,
-          "leaders": [
-            {
-              "code": "002181",
-              "name": "粤 传 媒",
-              "height": 1
-            },
-            {
-              "code": "002238",
-              "name": "天威视讯",
-              "height": 3
-            },
-            {
-              "code": "002395",
-              "name": "双象股份",
-              "height": 1
-            }
-          ],
-          "source": "同花顺概念指数与成分股涨停交集"
-        },
-        "explanation": {
-          "score": 35,
-          "coverage_pct": 80.0,
-          "components": [
-            {
-              "metric": "龙头强度",
-              "value": 3,
-              "weight": 30,
-              "normalized": 33.33,
-              "contribution": 12.5
-            },
-            {
-              "metric": "板块宽度",
-              "value": 3,
-              "weight": 25,
-              "normalized": 22.22,
-              "contribution": 6.94
-            },
-            {
-              "metric": "梯队完整度",
-              "value": 2,
-              "weight": 25,
-              "normalized": 50.0,
-              "contribution": 15.62
-            },
-            {
-              "metric": "资金持续性",
-              "value": null,
-              "weight": 20,
-              "normalized": null,
-              "contribution": null
-            }
-          ],
-          "missing_metrics": [
-            "资金持续性"
-          ]
-        }
-      },
-      {
         "theme": "无人零售",
         "stage": "萌芽",
         "score": 27,
@@ -290,8 +209,8 @@
         "facts": {
           "code": "885768.TI",
           "name": "无人零售",
-          "change_pct": 0.489311,
-          "turnover_cny": 1266383610,
+          "change_pct": 0.371103,
+          "turnover_cny": 1371164900,
           "member_count": 26,
           "limit_up_count": 1,
           "first_board_count": 0,
@@ -348,6 +267,82 @@
         }
       },
       {
+        "theme": "参股保险",
+        "stage": "萌芽",
+        "score": 25,
+        "trend": "→",
+        "subscores": {
+          "leader_strength": 17,
+          "sector_width": 11,
+          "ladder_completeness": 50,
+          "capital_persistence": 0
+        },
+        "facts": {
+          "code": "885623.TI",
+          "name": "参股保险",
+          "change_pct": 0.095704,
+          "turnover_cny": 4213651200,
+          "member_count": 48,
+          "limit_up_count": 2,
+          "first_board_count": 1,
+          "second_board_count": 1,
+          "third_board_count": 0,
+          "high_board_count": 0,
+          "max_height": 2,
+          "active_days_3": null,
+          "leaders": [
+            {
+              "code": "000850",
+              "name": "华茂股份",
+              "height": 2
+            },
+            {
+              "code": "002029",
+              "name": "七 匹 狼",
+              "height": 1
+            }
+          ],
+          "source": "同花顺概念指数与成分股涨停交集"
+        },
+        "explanation": {
+          "score": 25,
+          "coverage_pct": 80.0,
+          "components": [
+            {
+              "metric": "龙头强度",
+              "value": 2,
+              "weight": 30,
+              "normalized": 16.67,
+              "contribution": 6.25
+            },
+            {
+              "metric": "板块宽度",
+              "value": 2,
+              "weight": 25,
+              "normalized": 11.11,
+              "contribution": 3.47
+            },
+            {
+              "metric": "梯队完整度",
+              "value": 2,
+              "weight": 25,
+              "normalized": 50.0,
+              "contribution": 15.62
+            },
+            {
+              "metric": "资金持续性",
+              "value": null,
+              "weight": 20,
+              "normalized": null,
+              "contribution": null
+            }
+          ],
+          "missing_metrics": [
+            "资金持续性"
+          ]
+        }
+      },
+      {
         "theme": "减速器",
         "stage": "萌芽",
         "score": 11,
@@ -361,8 +356,8 @@
         "facts": {
           "code": "886008.TI",
           "name": "减速器",
-          "change_pct": 0.639885,
-          "turnover_cny": 16394514000,
+          "change_pct": 0.690703,
+          "turnover_cny": 18171757000,
           "member_count": 139,
           "limit_up_count": 2,
           "first_board_count": 2,
@@ -424,6 +419,82 @@
         }
       },
       {
+        "theme": "足球概念",
+        "stage": "萌芽",
+        "score": 11,
+        "trend": "→",
+        "subscores": {
+          "leader_strength": 0,
+          "sector_width": 11,
+          "ladder_completeness": 25,
+          "capital_persistence": 0
+        },
+        "facts": {
+          "code": "885580.TI",
+          "name": "足球概念",
+          "change_pct": 0.541062,
+          "turnover_cny": 4442225500,
+          "member_count": 40,
+          "limit_up_count": 2,
+          "first_board_count": 2,
+          "second_board_count": 0,
+          "third_board_count": 0,
+          "high_board_count": 0,
+          "max_height": 1,
+          "active_days_3": null,
+          "leaders": [
+            {
+              "code": "002181",
+              "name": "粤 传 媒",
+              "height": 1
+            },
+            {
+              "code": "002395",
+              "name": "双象股份",
+              "height": 1
+            }
+          ],
+          "source": "同花顺概念指数与成分股涨停交集"
+        },
+        "explanation": {
+          "score": 11,
+          "coverage_pct": 80.0,
+          "components": [
+            {
+              "metric": "龙头强度",
+              "value": 1,
+              "weight": 30,
+              "normalized": 0,
+              "contribution": 0.0
+            },
+            {
+              "metric": "板块宽度",
+              "value": 2,
+              "weight": 25,
+              "normalized": 11.11,
+              "contribution": 3.47
+            },
+            {
+              "metric": "梯队完整度",
+              "value": 1,
+              "weight": 25,
+              "normalized": 25.0,
+              "contribution": 7.81
+            },
+            {
+              "metric": "资金持续性",
+              "value": null,
+              "weight": 20,
+              "normalized": null,
+              "contribution": null
+            }
+          ],
+          "missing_metrics": [
+            "资金持续性"
+          ]
+        }
+      },
+      {
         "theme": "丙烯酸",
         "stage": "萌芽",
         "score": 8,
@@ -437,8 +508,8 @@
         "facts": {
           "code": "885829.TI",
           "name": "丙烯酸",
-          "change_pct": 0.331787,
-          "turnover_cny": 3076807000,
+          "change_pct": 0.192735,
+          "turnover_cny": 3315067300,
           "member_count": 20,
           "limit_up_count": 1,
           "first_board_count": 1,
@@ -508,8 +579,8 @@
         "facts": {
           "code": "886043.TI",
           "name": "太赫兹",
-          "change_pct": 0.818829,
-          "turnover_cny": 12676472400,
+          "change_pct": 0.476165,
+          "turnover_cny": 13774938000,
           "member_count": 24,
           "limit_up_count": 1,
           "first_board_count": 1,
@@ -579,8 +650,8 @@
         "facts": {
           "code": "886018.TI",
           "name": "高压氧舱",
-          "change_pct": 0.877517,
-          "turnover_cny": 1203605030,
+          "change_pct": 0.946583,
+          "turnover_cny": 1354381900,
           "member_count": 11,
           "limit_up_count": 1,
           "first_board_count": 1,
@@ -650,8 +721,8 @@
         "facts": {
           "code": "885888.TI",
           "name": "C2M概念",
-          "change_pct": 0.220477,
-          "turnover_cny": 2889519100,
+          "change_pct": 0.134973,
+          "turnover_cny": 3139054600,
           "member_count": 39,
           "limit_up_count": 0,
           "first_board_count": 0,
@@ -715,74 +786,9 @@
         "facts": {
           "code": "885860.TI",
           "name": "中船系",
-          "change_pct": 0.257741,
-          "turnover_cny": 2358572900,
+          "change_pct": 0.141744,
+          "turnover_cny": 2548727200,
           "member_count": 10,
-          "limit_up_count": 0,
-          "first_board_count": 0,
-          "second_board_count": 0,
-          "third_board_count": 0,
-          "high_board_count": 0,
-          "max_height": 0,
-          "active_days_3": null,
-          "leaders": [],
-          "source": "同花顺概念指数与成分股涨停交集"
-        },
-        "explanation": {
-          "score": 0,
-          "coverage_pct": 80.0,
-          "components": [
-            {
-              "metric": "龙头强度",
-              "value": 0,
-              "weight": 30,
-              "normalized": 0,
-              "contribution": 0.0
-            },
-            {
-              "metric": "板块宽度",
-              "value": 0,
-              "weight": 25,
-              "normalized": 0,
-              "contribution": 0.0
-            },
-            {
-              "metric": "梯队完整度",
-              "value": 0,
-              "weight": 25,
-              "normalized": 0.0,
-              "contribution": 0.0
-            },
-            {
-              "metric": "资金持续性",
-              "value": null,
-              "weight": 20,
-              "normalized": null,
-              "contribution": null
-            }
-          ],
-          "missing_metrics": [
-            "资金持续性"
-          ]
-        }
-      },
-      {
-        "theme": "兵装重组概念",
-        "stage": "萌芽",
-        "score": 0,
-        "trend": "→",
-        "subscores": {
-          "leader_strength": 0,
-          "sector_width": 0,
-          "ladder_completeness": 0,
-          "capital_persistence": 0
-        },
-        "facts": {
-          "code": "886101.TI",
-          "name": "兵装重组概念",
-          "change_pct": 0.36483,
-          "turnover_cny": 573640160,
-          "member_count": 7,
           "limit_up_count": 0,
           "first_board_count": 0,
           "second_board_count": 0,
@@ -838,7 +844,7 @@
     "score": null,
     "trend": "—",
     "timeline_ready": false,
-    "snapshot_count": 2,
+    "snapshot_count": 3,
     "required_snapshot_count": 6,
     "timeline": [],
     "note": "不会用收盘单点反推全天路径。"
@@ -871,7 +877,7 @@
         },
         {
           "metric": "封单/成交额",
-          "value": 87.7,
+          "value": 87.79,
           "weight": 15,
           "normalized": 100,
           "contribution": 20.0
@@ -901,17 +907,17 @@
       "components": [
         {
           "metric": "涨停数量",
-          "value": 34,
+          "value": 37,
           "weight": 16,
-          "normalized": 17.5,
-          "contribution": 2.8
+          "normalized": 21.25,
+          "contribution": 3.4
         },
         {
           "metric": "炸板率",
-          "value": 17.07,
+          "value": 15.91,
           "weight": 16,
-          "normalized": 82.33,
-          "contribution": 13.17
+          "normalized": 85.23,
+          "contribution": 13.64
         },
         {
           "metric": "连板晋级率",
@@ -922,17 +928,17 @@
         },
         {
           "metric": "昨日涨停平均反馈",
-          "value": 0.85,
+          "value": 0.64,
           "weight": 14,
-          "normalized": 48.5,
-          "contribution": 6.79
+          "normalized": 46.4,
+          "contribution": 6.5
         },
         {
           "metric": "中位股平均反馈",
-          "value": 1.21,
+          "value": 0.83,
           "weight": 12,
-          "normalized": 62.1,
-          "contribution": 7.45
+          "normalized": 58.3,
+          "contribution": 7.0
         },
         {
           "metric": "中位股大亏比例",
@@ -943,17 +949,17 @@
         },
         {
           "metric": "跌停数量",
-          "value": 3,
+          "value": 2,
           "weight": 8,
-          "normalized": 85.0,
-          "contribution": 6.8
+          "normalized": 90.0,
+          "contribution": 7.2
         },
         {
           "metric": "市场上涨宽度",
-          "value": 32.27,
+          "value": 29.9,
           "weight": 6,
-          "normalized": 14.54,
-          "contribution": 0.87
+          "normalized": 9.81,
+          "contribution": 0.59
         }
       ],
       "missing_metrics": [],
