@@ -94,6 +94,11 @@ def main() -> None:
         notes.append(note)
 
     daily = build_daily(market, emotion, cycle)
+    comparisons = [row.get("amount_comparison") for row in intraday.get("snapshots") or []
+                   if (row.get("amount_comparison") or {}).get("status") == "ready"]
+    if comparisons:
+        daily["turnover_change_cny"] = comparisons[-1].get("difference")
+        daily["turnover_comparison"] = comparisons[-1]
     rows = [row for row in workbench.get("market_daily", []) if row.get("date") != date]
     workbench["market_daily"] = sorted(rows + [daily], key=lambda row: row.get("date") or "")
 
@@ -126,17 +131,21 @@ def main() -> None:
     }
 
     old_quality = workbench.get("data_quality") or {}
-    missing = list(dict.fromkeys((old_quality.get("missing_fields") or []) + (cycle.get("data_quality") or {}).get("missing", [])))
-    missing = [item for item in missing if item not in ("完整20日与60日周期序列", "9月22日竞价与盘中承接数据")]
-    if not (cycle.get("small_cycle") or {}).get("timeline_ready"):
-        missing.append("9月22日完整盘中情绪时间轴")
+    # Do not carry resolved market gaps forever. Only user-owned trading fields
+    # persist; current market/cycle gaps are rebuilt from this run.
+    personal_missing = [item for item in old_quality.get("missing_fields") or []
+                        if item.startswith("T00") or "交易的分钟级买卖时间" in item]
+    missing = list(dict.fromkeys(personal_missing + (cycle.get("data_quality") or {}).get("missing", [])))
+    width_ready = bool(((emotion.get("market_ecology") or {}).get("market_width") or {}).get("available"))
+    auction_ready = bool(((details.get("auction") or {}).get("items") or []))
     workbench["data_quality"] = {
         **old_quality,
         "as_of_date": date,
         "market_data": True,
         "limit_up_data": True,
+        "auction_data": auction_ready,
         "intraday_data": bool((cycle.get("small_cycle") or {}).get("timeline_ready")),
-        "market_width_data": not ("市场上涨宽度" in missing),
+        "market_width_data": width_ready,
         "cycle_analysis_data": True,
         "missing_fields": list(dict.fromkeys(missing)),
         "analysis_allowed": bool((cycle.get("data_quality") or {}).get("analysis_allowed")),
