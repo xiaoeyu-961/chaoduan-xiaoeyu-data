@@ -30,12 +30,7 @@ QUOTE_URL = (
     "https://push2.eastmoney.com/api/qt/ulist.np/get"
     "?fltt=2&fields=f12,f14,f2,f3,f6&secids={secids}"
 )
-TREND_URL = (
-    "https://push2his.eastmoney.com/api/qt/stock/trends2/get"
-    "?fields1=f1,f2,f3,f4,f5,f6,f7,f8,f9,f10,f11,f12,f13"
-    "&fields2=f51,f52,f53,f54,f55,f56,f57,f58&ndays=5&iscr=0&iscca=0"
-    "&ut=7eea3edcaed734bea9cbfc24409ed989&secid={secid}"
-)
+TREND_URL = "https://web.ifzq.gtimg.cn/appstock/app/day/query?code={code}"
 
 
 def read_json(path: Path, default):
@@ -321,19 +316,26 @@ def same_time_amount_comparison(trade_date: str, timestamp: str) -> dict | None:
         elif clock > "15:00":
             clock = "15:00"
 
-        markets = []
-        for secid in ("1.000001", "0.399001"):
-            body = get_json(TREND_URL.format(secid=secid), attempts=2)
+        compact_clock = clock.replace(":", "")
+
+        def load_market(code: str) -> list[dict]:
+            body = get_json(TREND_URL.format(code=code), attempts=2)
+            days = (((body.get("data") or {}).get(code) or {}).get("data") or [])
             rows = []
-            for raw in (body.get("data") or {}).get("trends") or []:
-                fields = raw.split(",")
-                if len(fields) < 7 or " " not in fields[0]:
+            for day in days:
+                raw_date = str(day.get("date") or "")
+                if len(raw_date) != 8:
                     continue
-                date, time = fields[0].split(" ", 1)
-                amount = number(fields[6], None)
-                if date and time and amount is not None:
-                    rows.append({"date": date, "time": time, "amount": amount})
-            markets.append(rows)
+                date = f"{raw_date[:4]}-{raw_date[4:6]}-{raw_date[6:]}"
+                for raw in day.get("data") or []:
+                    fields = raw.split()
+                    amount = number(fields[3], None) if len(fields) >= 4 else None
+                    if amount is not None:
+                        rows.append({"date": date, "time": fields[0], "amount": amount})
+            return rows
+
+        with ThreadPoolExecutor(max_workers=2) as executor:
+            markets = list(executor.map(load_market, ("sh000001", "sz399001")))
         common_dates = sorted(set(row["date"] for row in markets[0]) &
                               set(row["date"] for row in markets[1]))
         previous_date = next((date for date in reversed(common_dates) if date < trade_date), None)
@@ -342,8 +344,8 @@ def same_time_amount_comparison(trade_date: str, timestamp: str) -> dict | None:
 
         def cumulative(rows, date):
             values = [row["amount"] for row in rows
-                      if row["date"] == date and row["time"] <= clock]
-            return sum(values) if values else None
+                      if row["date"] == date and row["time"] <= compact_clock]
+            return values[-1] if values else None
 
         current_parts = [cumulative(rows, trade_date) for rows in markets]
         previous_parts = [cumulative(rows, previous_date) for rows in markets]
@@ -356,7 +358,7 @@ def same_time_amount_comparison(trade_date: str, timestamp: str) -> dict | None:
             "current": current, "previous": previous, "difference": difference,
             "changePct": round(difference / previous * 100, 2) if previous else None,
             "direction": "增量" if difference > 0 else "缩量" if difference < 0 else "持平",
-            "source": "东方财富沪深指数5日分时（同源累计）",
+            "source": "腾讯行情沪深指数5日分时（同源累计）",
         }
     except Exception:
         return None
