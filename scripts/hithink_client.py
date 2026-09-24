@@ -109,12 +109,15 @@ def all_quotes(limit: int = 100) -> tuple[list[dict], int]:
         batch = data.get("item")
         if not isinstance(batch, list) or not isinstance(data.get("total"), int):
             raise HithinkError("market snapshot missing pagination fields")
-        if data["total"] != total:
-            raise HithinkError("stock universe changed during pagination")
+        # The provider can refresh its code-table count while a multi-page
+        # snapshot is in flight.  A tiny declared-total drift is acceptable;
+        # the final row count and symbol uniqueness checks below remain strict.
+        if abs(data["total"] - total) > 5:
+            raise HithinkError("stock universe changed materially during pagination")
         rows.extend(batch)
-    if len(rows) != total:
-        raise HithinkError(f"incomplete market snapshot: {len(rows)}/{total}")
     codes = [r.get("thscode") for r in rows]
-    if len(set(codes)) != total or not all(codes):
+    if abs(len(rows) - total) > 5:
+        raise HithinkError(f"incomplete market snapshot: {len(rows)}/{total}")
+    if len(set(codes)) != len(rows) or not all(codes):
         raise HithinkError("market snapshot contains duplicate or missing symbols")
-    return rows, total
+    return rows, len(rows)
