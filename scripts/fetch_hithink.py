@@ -63,9 +63,11 @@ def build_market(date: str) -> tuple[dict, dict]:
                           else None)
 
     up = down = flat = 0
-    missing_changes = 0
+    # Symbols lost to a small live pagination shift remain unknown; they are
+    # never silently counted as flat or as zero turnover.
+    missing_changes = max(universe - len(quotes), 0)
     total_turnover = 0
-    turnover_missing = 0
+    turnover_missing = max(universe - len(quotes), 0)
     for quote in quotes:
         change = quote.get("price_change_ratio_pct")
         amount = quote.get("turnover")
