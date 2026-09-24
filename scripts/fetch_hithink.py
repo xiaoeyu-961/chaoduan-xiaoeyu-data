@@ -50,6 +50,17 @@ def build_market(date: str) -> tuple[dict, dict]:
                for r in indices_raw.get("item", []) if r.get("thscode") in index_names]
     if len(indices) != len(index_names):
         raise HithinkError("index snapshot lacks required indices")
+    # The two broad-market index snapshots are the authoritative exchange
+    # turnover totals.  Summing every security is stricter than necessary and
+    # becomes null as soon as a suspended symbol has no quote.
+    exchange_amounts = {
+        row["name"]: row.get("amount") for row in indices
+        if row.get("name") in ("上证指数", "深证成指")
+    }
+    index_total_amount = (sum(exchange_amounts.values())
+                          if len(exchange_amounts) == 2
+                          and all(value is not None for value in exchange_amounts.values())
+                          else None)
 
     up = down = flat = 0
     missing_changes = 0
@@ -97,7 +108,10 @@ def build_market(date: str) -> tuple[dict, dict]:
                     "known_up": up, "known_down": down, "known_flat": flat,
                     "unknown": missing_changes, "universe": universe,
                     "complete": breadth_complete,
-                    "totalAmount": total_turnover if turnover_complete else None,
+                    "coverage_pct": round((universe - missing_changes) / universe * 100, 2),
+                    "usable": universe > 0 and (universe - missing_changes) / universe >= .98,
+                    "totalAmount": index_total_amount,
+                    "stockAmount": total_turnover if turnover_complete else None,
                     "source": "同花顺全市场行情快照"},
         "limitUpCount": len(limit_ups), "brokenCount": len(broken),
         "limitDownCount": len(limit_down),
@@ -116,13 +130,21 @@ def build_market(date: str) -> tuple[dict, dict]:
              "broken": {"count": len(broken_raw), "complete": True},
              "limit_down": {"count": len(down_raw), "complete": True},
              "auction": None, "sectors": None,
-             "market_amount_cny": total_turnover if turnover_complete else None,
-             "market_amount_scope": "A股行情快照逐股成交额合计"}
+             "market_amount_cny": index_total_amount,
+             "market_amount_scope": "上证指数成交额 + 深证成指成交额"}
     return market, facts
 
 
 def enrich(date: str, market: dict, facts: dict) -> None:
     # Optional requests cannot silently replace core verified market data.
+    try:
+        ladder = get("/api/a-share/special-data/limit-up-ladder")
+        facts["limit_up_ladder"] = {
+            "window": ladder.get("window") or {},
+            "items": ladder.get("item") or [],
+        }
+    except HithinkError as exc:
+        facts.setdefault("missing", []).append(f"limit_up_ladder: {exc}")
     codes = [r["thscode"] for r in market["limitUps"][:100] if r.get("thscode")]
     if codes:
         try:
@@ -160,6 +182,9 @@ def enrich(date: str, market: dict, facts: dict) -> None:
                 members = get("/api/a-share-index/constituents/ths-stock-list", {
                     "thscode": thscode}).get("item") or []
                 winners = [up_codes[row["thscode"]] for row in members if row.get("thscode") in up_codes]
+                for winner in winners:
+                    if not winner.get("theme"):
+                        winner["theme"] = names[thscode]
                 heights = Counter(row["height"] for row in winners)
                 sectors.append({"code": thscode, "name": names[thscode],
                                 "change_pct": leader.get("price_change_ratio_pct"),
@@ -175,6 +200,17 @@ def enrich(date: str, market: dict, facts: dict) -> None:
                             "quotes_count": len(quotes), "top_by_change_pct": sectors,
                             "strength_ready": False,
                             "missing": "仅覆盖当日涨幅前10概念；板块持续性和完整强弱排行待补。"}
+        # Feed the verified sector/member intersection into the normal market
+        # contract so the emotion builder does not discard official sectors.
+        market["themes"] = [{
+            "code": row["code"], "name": row["name"],
+            "change_pct": row.get("change_pct"),
+            "turnover_cny": row.get("turnover_cny"),
+            "member_count": row.get("member_count"),
+            "limitUpCount": row.get("limit_up_count"),
+            "maxHeight": max((stock.get("height") or 0 for stock in row.get("limit_up_stocks", [])), default=0),
+            "leaders": row.get("limit_up_stocks", []),
+        } for row in sectors]
     except HithinkError as exc:
         facts.setdefault("missing", []).append(f"sector_catalog: {exc}")
 
