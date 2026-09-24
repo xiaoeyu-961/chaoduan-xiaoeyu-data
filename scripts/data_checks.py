@@ -24,10 +24,10 @@ def intraday_quality(rows, trade_date):
     # Six samples alone cannot establish a full-day path.
     ready = (len(minutes) >= 6 and minutes[0] <= 600 and minutes[-1] >= 890
              and any(660 <= m <= 690 for m in minutes)
-             and any(780 <= m <= 810 for m in minutes))
+             and any(810 <= m <= 840 for m in minutes))
     return [accepted[m] for m in minutes], {
         'snapshot_count': len(rows), 'valid_snapshot_count': len(minutes),
         'excluded_snapshot_count': len(rows) - len(minutes),
         'timeline_ready': ready,
-        'note': '仅接受同日北京时间交易时段的有效分钟快照；还须覆盖开盘、午前、午后及尾盘。',
+        'note': '仅接受同日北京时间交易时段的有效分钟快照；需覆盖09:35、午前、13:45附近及尾盘。',
     }
