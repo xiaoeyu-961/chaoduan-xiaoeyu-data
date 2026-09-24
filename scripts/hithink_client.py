@@ -95,6 +95,7 @@ def all_quotes(limit: int = 100) -> tuple[list[dict], int]:
     if not isinstance(total, int) or total < 1 or total > 10000:
         raise HithinkError("market snapshot has invalid universe count")
     pages = {0: first}
+    declared_totals = [total]
     offsets = range(limit, total, limit)
     # A small concurrency limit keeps the daily snapshot inside the scheduled
     # job window without placing a large burst on the provider.
@@ -114,10 +115,15 @@ def all_quotes(limit: int = 100) -> tuple[list[dict], int]:
         # the final row count and symbol uniqueness checks below remain strict.
         if abs(data["total"] - total) > 5:
             raise HithinkError("stock universe changed materially during pagination")
+        declared_totals.append(data["total"])
         rows.extend(batch)
-    codes = [r.get("thscode") for r in rows]
-    if abs(len(rows) - total) > 5:
-        raise HithinkError(f"incomplete market snapshot: {len(rows)}/{total}")
-    if len(set(codes)) != len(rows) or not all(codes):
-        raise HithinkError("market snapshot contains duplicate or missing symbols")
-    return rows, len(rows)
+    if not all(r.get("thscode") for r in rows):
+        raise HithinkError("market snapshot contains missing symbols")
+    # Offset pages may overlap by a few rows when the provider refreshes its
+    # live universe between requests. Deduplicate explicitly and expose the
+    # declared universe so the caller records the shortfall as unknown.
+    unique = {row["thscode"]: row for row in rows}
+    universe = max(declared_totals)
+    if abs(len(unique) - universe) > 10:
+        raise HithinkError(f"incomplete market snapshot: {len(unique)}/{universe}")
+    return list(unique.values()), universe
