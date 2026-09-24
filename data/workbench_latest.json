@@ -3,7 +3,7 @@
     "product": "超短小鳄鱼｜V1.4.1 超短交易研究工作台",
     "bundle_version": "1.1",
     "schema_updated_at": "2026-09-21T23:00:00+08:00",
-    "generated_at": "2026-09-24T08:09:05.989897+00:00",
+    "generated_at": "2026-09-24T12:06:10.815907+00:00",
     "timezone": "Asia/Shanghai",
     "data_range": [
       "2026-09-16",
@@ -184,7 +184,7 @@
       "highest_board": 5,
       "big_cycle": "分歧",
       "mid_cycle": "发酵",
-      "small_cycle": "数据不足 / 暂无法判断",
+      "small_cycle": "回流",
       "primary_theme": "福建自贸区",
       "structure_label": "龙头强 / 生态弱：龙头抱团 / 生态分歧",
       "data_quality": "auto_collected_partial",
@@ -538,6 +538,34 @@
       },
       {
         "time": "2026-09-24T08:08:11.405384+00:00",
+        "source": "同花顺官方 Financial-API",
+        "limit_up_count": 51,
+        "limit_down_count": 13,
+        "broken_count": 10,
+        "broken_rate_pct": 16.39,
+        "promotion_rate_pct": 25.49,
+        "highest_board": 5,
+        "leader": {
+          "code": "601811",
+          "name": "新华文轩"
+        },
+        "strongest_theme": "中船系",
+        "slot": null,
+        "turnover_cny": 1653357360000,
+        "amount_comparison": {
+          "status": "ready",
+          "time": "15:00",
+          "previousTradeDate": "2026-09-23",
+          "current": 1653357362390.0898,
+          "previous": 1764976416029.21,
+          "difference": -111619053639.12012,
+          "changePct": -6.32,
+          "direction": "缩量",
+          "source": "腾讯行情沪深指数5日分时（同源累计）"
+        }
+      },
+      {
+        "time": "2026-09-24T12:05:16.956683+00:00",
         "source": "同花顺官方 Financial-API",
         "limit_up_count": 51,
         "limit_down_count": 13,
@@ -7014,14 +7042,225 @@
       ]
     },
     "small_cycle": {
-      "stage": "数据不足 / 暂无法判断",
+      "stage": "回流",
       "score": null,
-      "trend": "—",
-      "timeline_ready": false,
+      "trend": "→",
+      "timeline_ready": true,
       "snapshot_count": 8,
-      "required_snapshot_count": 6,
-      "timeline": [],
-      "note": "不会用收盘单点反推全天路径。"
+      "timeline": [
+        {
+          "time": "2026-09-24T01:47:13.897995+00:00",
+          "node": "观察起点",
+          "facts": {
+            "time": "2026-09-24T01:47:13.897995+00:00",
+            "source": "同花顺官方 Financial-API",
+            "limit_up_count": 28,
+            "limit_down_count": 1,
+            "broken_count": 5,
+            "broken_rate_pct": 15.15,
+            "promotion_rate_pct": 19.61,
+            "highest_board": 5,
+            "leader": {
+              "code": "601811",
+              "name": "新华文轩"
+            },
+            "strongest_theme": null
+          }
+        },
+        {
+          "time": "2026-09-24T02:24:57.189229+00:00",
+          "node": "震荡",
+          "facts": {
+            "time": "2026-09-24T02:24:57.189229+00:00",
+            "source": "同花顺官方 Financial-API",
+            "limit_up_count": 34,
+            "limit_down_count": 3,
+            "broken_count": 7,
+            "broken_rate_pct": 17.07,
+            "promotion_rate_pct": 21.57,
+            "highest_board": 5,
+            "leader": {
+              "code": "601811",
+              "name": "新华文轩"
+            },
+            "strongest_theme": "高压氧舱",
+            "slot": "10:30",
+            "turnover_cny": 757371240000
+          }
+        },
+        {
+          "time": "2026-09-24T02:35:34.781823+00:00",
+          "node": "一致",
+          "facts": {
+            "time": "2026-09-24T02:35:34.781823+00:00",
+            "source": "同花顺官方 Financial-API",
+            "limit_up_count": 37,
+            "limit_down_count": 2,
+            "broken_count": 7,
+            "broken_rate_pct": 15.91,
+            "promotion_rate_pct": 21.57,
+            "highest_board": 5,
+            "leader": {
+              "code": "601811",
+              "name": "新华文轩"
+            },
+            "strongest_theme": "高压氧舱",
+            "slot": "10:30",
+            "turnover_cny": 825909540000
+          }
+        },
+        {
+          "time": "2026-09-24T02:58:30.025387+00:00",
+          "node": "一致",
+          "facts": {
+            "time": "2026-09-24T02:58:30.025387+00:00",
+            "source": "同花顺官方 Financial-API",
+            "limit_up_count": 43,
+            "limit_down_count": 4,
+            "broken_count": 7,
+            "broken_rate_pct": 14.0,
+            "promotion_rate_pct": 23.53,
+            "highest_board": 5,
+            "leader": {
+              "code": "601811",
+              "name": "新华文轩"
+            },
+            "strongest_theme": "高压氧舱",
+            "slot": null,
+            "turnover_cny": 931821750000,
+            "amount_comparison": null
+          }
+        },
+        {
+          "time": "2026-09-24T03:09:24.795993+00:00",
+          "node": "分歧",
+          "facts": {
+            "time": "2026-09-24T03:09:24.795993+00:00",
+            "source": "同花顺官方 Financial-API",
+            "limit_up_count": 39,
+            "limit_down_count": 4,
+            "broken_count": 9,
+            "broken_rate_pct": 18.75,
+            "promotion_rate_pct": 23.53,
+            "highest_board": 5,
+            "leader": {
+              "code": "601811",
+              "name": "新华文轩"
+            },
+            "strongest_theme": "高压氧舱",
+            "slot": null,
+            "turnover_cny": 976121140000,
+            "amount_comparison": {
+              "status": "ready",
+              "time": "11:09",
+              "previousTradeDate": "2026-09-23",
+              "current": 974719008543.57,
+              "previous": 1083172076767.06,
+              "difference": -108453068223.49011,
+              "changePct": -10.01,
+              "direction": "缩量",
+              "source": "腾讯行情沪深指数5日分时（同源累计）"
+            }
+          }
+        },
+        {
+          "time": "2026-09-24T05:52:32.676754+00:00",
+          "node": "震荡",
+          "facts": {
+            "time": "2026-09-24T05:52:32.676754+00:00",
+            "source": "同花顺官方 Financial-API",
+            "limit_up_count": 39,
+            "limit_down_count": 9,
+            "broken_count": 11,
+            "broken_rate_pct": 22.0,
+            "promotion_rate_pct": 23.53,
+            "highest_board": 5,
+            "leader": {
+              "code": "601811",
+              "name": "新华文轩"
+            },
+            "strongest_theme": "中船系",
+            "slot": "13:45",
+            "turnover_cny": 1276225060000,
+            "amount_comparison": {
+              "status": "ready",
+              "time": "13:52",
+              "previousTradeDate": "2026-09-23",
+              "current": 1274708611603.49,
+              "previous": 1387912701179.43,
+              "difference": -113204089575.93994,
+              "changePct": -8.16,
+              "direction": "缩量",
+              "source": "腾讯行情沪深指数5日分时（同源累计）"
+            }
+          }
+        },
+        {
+          "time": "2026-09-24T06:40:19.160420+00:00",
+          "node": "一致",
+          "facts": {
+            "time": "2026-09-24T06:40:19.160420+00:00",
+            "source": "同花顺官方 Financial-API",
+            "limit_up_count": 47,
+            "limit_down_count": 11,
+            "broken_count": 10,
+            "broken_rate_pct": 17.54,
+            "promotion_rate_pct": 25.49,
+            "highest_board": 5,
+            "leader": {
+              "code": "601811",
+              "name": "新华文轩"
+            },
+            "strongest_theme": "中船系",
+            "slot": "14:30",
+            "turnover_cny": 1493058130000,
+            "amount_comparison": {
+              "status": "ready",
+              "time": "14:40",
+              "previousTradeDate": "2026-09-23",
+              "current": 1490608590470.06,
+              "previous": 1596038499990.3398,
+              "difference": -105429909520.27979,
+              "changePct": -6.61,
+              "direction": "缩量",
+              "source": "腾讯行情沪深指数5日分时（同源累计）"
+            }
+          }
+        },
+        {
+          "time": "2026-09-24T06:49:20.067349+00:00",
+          "node": "回流",
+          "facts": {
+            "time": "2026-09-24T06:49:20.067349+00:00",
+            "source": "同花顺官方 Financial-API",
+            "limit_up_count": 49,
+            "limit_down_count": 11,
+            "broken_count": 10,
+            "broken_rate_pct": 16.95,
+            "promotion_rate_pct": 25.49,
+            "highest_board": 5,
+            "leader": {
+              "code": "601811",
+              "name": "新华文轩"
+            },
+            "strongest_theme": "中船系",
+            "slot": "15:00",
+            "turnover_cny": 1554223440000,
+            "amount_comparison": {
+              "status": "ready",
+              "time": "14:49",
+              "previousTradeDate": "2026-09-23",
+              "current": 1551813265364.99,
+              "previous": 1660809495137.04,
+              "difference": -108996229772.05005,
+              "changePct": -6.56,
+              "direction": "缩量",
+              "source": "腾讯行情沪深指数5日分时（同源累计）"
+            }
+          }
+        }
+      ],
+      "note": "日内节点不直接改写大周期。"
     },
     "leader_ecology_matrix": {
       "leader_strength": {
@@ -7159,14 +7398,13 @@
     "market_data": true,
     "limit_up_data": true,
     "auction_data": true,
-    "intraday_data": false,
+    "intraday_data": true,
     "holding_data": true,
     "history_memory_data": true,
     "missing_fields": [
       "部分交易的分钟级买卖时间",
       "T001成交数量与实际盈亏金额",
       "T002买入逻辑",
-      "完整日内情绪时间轴",
       "封板稳定性",
       "龙头所在题材涨停数"
     ],
@@ -8188,7 +8426,7 @@
   "hithink_facts": {
     "source": "同花顺官方 Financial-API",
     "trade_date": "2026-09-24",
-    "updated_at": "2026-09-24T08:08:11.405384+00:00",
+    "updated_at": "2026-09-24T12:05:16.956683+00:00",
     "market_quote_total": 5578,
     "limit_up": {
       "count": 51,

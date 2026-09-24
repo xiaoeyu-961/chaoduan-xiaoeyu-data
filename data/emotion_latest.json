@@ -2,7 +2,7 @@
   "schema_version": 1,
   "ok": true,
   "trade_date": "2026-09-24",
-  "updated_at": "2026-09-24T08:08:11.405384+00:00",
+  "updated_at": "2026-09-24T12:05:16.956683+00:00",
   "source": "同花顺官方 Financial-API",
   "principle": "仅保存事实数据，不在采集层生成周期标签或主观评分。",
   "market_ecology": {
@@ -452,15 +452,14 @@
     }
   ],
   "intraday": {
-    "snapshot_count": 12,
-    "timeline_ready": false
+    "snapshot_count": 13,
+    "timeline_ready": true
   },
   "data_quality": {
     "daily_sessions": 8,
     "complete": false,
     "missing": [
-      "同源20交易日情绪序列",
-      "完整日内情绪时间轴"
+      "同源20交易日情绪序列"
     ],
     "confidence": "medium"
   }
