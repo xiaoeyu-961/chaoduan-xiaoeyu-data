@@ -2,7 +2,7 @@
   "schema_version": 1,
   "ok": true,
   "trade_date": "2026-09-24",
-  "generated_at": "2026-09-24T07:14:54.877983+00:00",
+  "generated_at": "2026-09-24T08:09:05.989897+00:00",
   "principles": [
     "不使用5/10/20日均线判断情绪周期",
     "龙头强度与市场生态分开计算",
@@ -10,18 +10,18 @@
     "缺失数据不补造、不按0分处理"
   ],
   "dashboard": {
-    "market_composite": 48,
-    "leader_strength": 60,
+    "market_composite": 54,
+    "leader_strength": 82,
     "market_ecology": 43,
     "market_width": 0,
     "relay_ecology": 38.73,
     "mainline_strength": 60,
     "loss_effect": 100,
-    "structure_label": "龙头弱 / 生态弱：退潮风险"
+    "structure_label": "龙头强 / 生态弱：龙头抱团 / 生态分歧"
   },
   "large_cycle": {
-    "stage": "启动",
-    "score": 48,
+    "stage": "分歧",
+    "score": 54,
     "trend": "↓",
     "method": "评分 + 结构 + 连续性；不使用均线",
     "continuity": {
@@ -39,7 +39,7 @@
       "近端涨停数量未形成上升趋势"
     ],
     "confidence": "medium",
-    "conclusion": "启动；龙头弱 / 生态弱：退潮风险"
+    "conclusion": "分歧；龙头强 / 生态弱：龙头抱团 / 生态分歧"
   },
   "medium_cycle": {
     "mainline": {
@@ -893,7 +893,7 @@
   },
   "leader_ecology_matrix": {
     "leader_strength": {
-      "score": 60,
+      "score": 82,
       "coverage_pct": 65.0,
       "components": [
         {
@@ -919,10 +919,10 @@
         },
         {
           "metric": "封单/成交额",
-          "value": 4.62,
+          "value": 53.75,
           "weight": 15,
-          "normalized": 7.4,
-          "contribution": 1.71
+          "normalized": 100,
+          "contribution": 23.08
         },
         {
           "metric": "龙头所在题材涨停数",
@@ -942,7 +942,7 @@
         "theme": null,
         "height": 5
       },
-      "label": "弱"
+      "label": "强"
     },
     "market_ecology": {
       "score": 43,
@@ -992,10 +992,10 @@
         },
         {
           "metric": "跌停数量",
-          "value": 12,
+          "value": 13,
           "weight": 8,
-          "normalized": 40.0,
-          "contribution": 3.2
+          "normalized": 35.0,
+          "contribution": 2.8
         },
         {
           "metric": "市场上涨宽度",
@@ -1008,7 +1008,7 @@
       "missing_metrics": [],
       "label": "弱"
     },
-    "label": "龙头弱 / 生态弱：退潮风险"
+    "label": "龙头强 / 生态弱：龙头抱团 / 生态分歧"
   },
   "data_quality": {
     "missing": [
