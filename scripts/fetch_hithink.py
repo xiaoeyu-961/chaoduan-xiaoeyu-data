@@ -9,6 +9,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from hithink_client import CN_TZ, HithinkError, all_quotes, get, pool
+from snapshot_store import persist_failure, persist_snapshot
 
 DATA = Path("data")
 
@@ -219,15 +220,25 @@ def enrich(date: str, market: dict, facts: dict) -> None:
 
 def main() -> None:
     date = os.environ.get("MARKET_TRADE_DATE") or datetime.now(CN_TZ).strftime("%Y-%m-%d")
-    market, facts = build_market(date)
-    enrich(date, market, facts)
-    save(Path(os.environ.get("MARKET_OUTPUT", DATA / "market_latest.json")), market)
-    save(Path(os.environ.get("HITHINK_OUTPUT", DATA / "hithink_latest.json")), facts)
+    try:
+        market, facts = build_market(date)
+        enrich(date, market, facts)
+        save(Path(os.environ.get("MARKET_OUTPUT", DATA / "market_latest.json")), market)
+        save(Path(os.environ.get("HITHINK_OUTPUT", DATA / "hithink_latest.json")), facts)
+        health = persist_snapshot(market, {
+            "collector": "hithink-finance", "market": market,
+            "source_facts": facts,
+        })
+    except Exception as exc:
+        persist_failure(exc, date)
+        raise
     print(json.dumps({"trade_date": date, "source": market["source"],
                       "limit_up_count": market["limitUpCount"],
                       "quote_universe": facts["market_quote_total"],
                       "breadth_complete": market["breadth"]["complete"],
-                      "optional_missing": facts.get("missing", [])}, ensure_ascii=False))
+                      "optional_missing": facts.get("missing", []),
+                      "snapshot_id": health["latest_snapshot_id"],
+                      "snapshot_status": health["status"]}, ensure_ascii=False))
 
 
 if __name__ == "__main__":

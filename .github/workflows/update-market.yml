@@ -35,27 +35,42 @@ jobs:
           cache: pip
       - run: pip install -r requirements.txt
       - name: 采集并校验
+        id: collect
+        continue-on-error: true
         env:
           HITHINK_FINANCE_API_KEY: ${{ secrets.HITHINK_FINANCE_API_KEY }}
         run: python scripts/fetch_hithink.py
+      - name: 保存采集失败记录
+        if: steps.collect.outcome == 'failure'
+        run: |
+          git config user.name "market-data-bot"
+          git config user.email "market-data-bot@users.noreply.github.com"
+          git add data/raw/ data/status_latest.json
+          git commit -m "data: record failed market snapshot"
+          git pull --rebase origin main
+          git push
+          exit 1
       - name: 采集情绪结构与盘中时间轴
+        if: steps.collect.outcome == 'success'
         env:
           HITHINK_FINANCE_API_KEY: ${{ secrets.HITHINK_FINANCE_API_KEY }}
         run: python scripts/fetch_emotion.py
       - name: 生成三层周期与龙头生态判断
+        if: steps.collect.outcome == 'success'
         run: python scripts/build_cycle_analysis.py
       - name: 合并工作台主数据
+        if: steps.collect.outcome == 'success'
         run: python scripts/build_workbench.py
       - name: 保存最新快照
+        if: steps.collect.outcome == 'success'
         run: |
-          if git diff --quiet -- data/market_latest.json data/hithink_latest.json data/emotion_latest.json data/emotion_history.json data/intraday_latest.json data/intraday_history.json data/cycle_analysis_latest.json data/workbench_latest.json; then
+          if git diff --quiet -- data/; then
             echo "数据未变化"
             exit 0
           fi
           git config user.name "market-data-bot"
           git config user.email "market-data-bot@users.noreply.github.com"
-          git add data/market_latest.json data/emotion_latest.json data/emotion_history.json data/intraday_latest.json data/intraday_history.json data/cycle_analysis_latest.json data/workbench_latest.json
-          if [ -f data/hithink_latest.json ]; then git add data/hithink_latest.json; fi
+          git add data/
           git commit -m "data: update market and cycle snapshots"
           git pull --rebase origin main
           git push

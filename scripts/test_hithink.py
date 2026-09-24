@@ -31,7 +31,7 @@ class SourceIntegrity(unittest.TestCase):
             market, facts = build_market("2026-09-22")
         self.assertIsNone(market["breadth"]["flat"])
         self.assertEqual(market["breadth"]["unknown"], 1)
-        self.assertIsNone(facts["market_amount_cny"])
+        self.assertEqual(facts["market_amount_cny"], 2)
         self.assertEqual(market["limitUps"][0]["limitReason"], "测试")
         self.assertEqual(market["limitUps"][0]["amount"], 100)
 
