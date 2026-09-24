@@ -37,12 +37,7 @@ jobs:
       - name: 采集并校验
         env:
           HITHINK_FINANCE_API_KEY: ${{ secrets.HITHINK_FINANCE_API_KEY }}
-        run: |
-          if [ -n "$HITHINK_FINANCE_API_KEY" ]; then
-            python scripts/fetch_hithink.py
-          else
-            python scripts/fetch_market.py
-          fi
+        run: python scripts/fetch_hithink.py
       - name: 采集情绪结构与盘中时间轴
         env:
           HITHINK_FINANCE_API_KEY: ${{ secrets.HITHINK_FINANCE_API_KEY }}
