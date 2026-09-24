@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "ok": true,
-  "trade_date": "2026-09-23",
-  "generated_at": "2026-09-23T14:07:55.343563+00:00",
+  "trade_date": "2026-09-24",
+  "generated_at": "2026-09-24T01:47:57.231089+00:00",
   "principles": [
     "不使用5/10/20日均线判断情绪周期",
     "龙头强度与市场生态分开计算",
@@ -10,18 +10,18 @@
     "缺失数据不补造、不按0分处理"
   ],
   "dashboard": {
-    "market_composite": 44,
-    "leader_strength": 64,
-    "market_ecology": 36,
+    "market_composite": 55,
+    "leader_strength": 82,
+    "market_ecology": 45,
     "market_width": null,
-    "relay_ecology": 22.62,
+    "relay_ecology": 24.02,
     "mainline_strength": null,
-    "loss_effect": 80,
-    "structure_label": "龙头弱 / 生态弱：退潮风险"
+    "loss_effect": 84,
+    "structure_label": "龙头强 / 生态弱：龙头抱团 / 生态分歧"
   },
   "large_cycle": {
-    "stage": "混沌",
-    "score": 44,
+    "stage": "分歧",
+    "score": 55,
     "trend": "↓",
     "method": "评分 + 结构 + 连续性；不使用均线",
     "continuity": {
@@ -29,16 +29,17 @@
       "seal_rate": "flat",
       "highest_board": "flat"
     },
-    "supporting_factors": [],
+    "supporting_factors": [
+      "最高板5板",
+      "炸板率15.15%可控",
+      "昨日涨停平均反馈0.28%为正"
+    ],
     "pressure_factors": [
-      "最高板高度不足",
-      "晋级率仅19.05%",
-      "炸板率33.77%偏高",
-      "昨日涨停平均反馈-0.17%偏弱",
+      "晋级率仅19.61%",
       "近端涨停数量未形成上升趋势"
     ],
     "confidence": "medium",
-    "conclusion": "混沌；龙头弱 / 生态弱：退潮风险"
+    "conclusion": "分歧；龙头强 / 生态弱：龙头抱团 / 生态分歧"
   },
   "medium_cycle": {
     "mainline": null,
@@ -49,22 +50,22 @@
     "score": null,
     "trend": "—",
     "timeline_ready": false,
-    "snapshot_count": 6,
+    "snapshot_count": 1,
     "required_snapshot_count": 6,
     "timeline": [],
     "note": "不会用收盘单点反推全天路径。"
   },
   "leader_ecology_matrix": {
     "leader_strength": {
-      "score": 64,
+      "score": 82,
       "coverage_pct": 65.0,
       "components": [
         {
           "metric": "龙头高度",
-          "value": 4,
+          "value": 5,
           "weight": 30,
-          "normalized": 40.0,
-          "contribution": 18.46
+          "normalized": 60.0,
+          "contribution": 27.69
         },
         {
           "metric": "封板稳定性",
@@ -82,10 +83,10 @@
         },
         {
           "metric": "封单/成交额",
-          "value": 31.57,
+          "value": 96.71,
           "weight": 15,
-          "normalized": 62.38,
-          "contribution": 14.4
+          "normalized": 100,
+          "contribution": 23.08
         },
         {
           "metric": "龙头所在题材涨停数",
@@ -100,65 +101,65 @@
         "龙头所在题材涨停数"
       ],
       "leader": {
-        "code": "000910",
-        "name": "大亚圣象",
+        "code": "601811",
+        "name": "新华文轩",
         "theme": null,
-        "height": 4
+        "height": 5
       },
-      "label": "弱"
+      "label": "强"
     },
     "market_ecology": {
-      "score": 36,
+      "score": 45,
       "coverage_pct": 94.0,
       "components": [
         {
           "metric": "涨停数量",
-          "value": 51,
+          "value": 28,
           "weight": 16,
-          "normalized": 38.75,
-          "contribution": 6.6
+          "normalized": 10.0,
+          "contribution": 1.7
         },
         {
           "metric": "炸板率",
-          "value": 33.77,
+          "value": 15.15,
           "weight": 16,
-          "normalized": 40.57,
-          "contribution": 6.91
+          "normalized": 87.13,
+          "contribution": 14.83
         },
         {
           "metric": "连板晋级率",
-          "value": 19.05,
+          "value": 19.61,
           "weight": 18,
-          "normalized": 22.62,
-          "contribution": 4.33
+          "normalized": 24.02,
+          "contribution": 4.6
         },
         {
           "metric": "昨日涨停平均反馈",
-          "value": -0.17,
+          "value": 0.28,
           "weight": 14,
-          "normalized": 38.3,
-          "contribution": 5.7
+          "normalized": 42.8,
+          "contribution": 6.37
         },
         {
           "metric": "中位股平均反馈",
-          "value": 0.9,
+          "value": 1.43,
           "weight": 12,
-          "normalized": 59.0,
-          "contribution": 7.53
+          "normalized": 64.3,
+          "contribution": 8.21
         },
         {
           "metric": "中位股大亏比例",
-          "value": 28.57,
+          "value": 30.0,
           "weight": 10,
-          "normalized": 20.09,
-          "contribution": 2.14
+          "normalized": 15.62,
+          "contribution": 1.66
         },
         {
           "metric": "跌停数量",
-          "value": 13,
+          "value": 1,
           "weight": 8,
-          "normalized": 35.0,
-          "contribution": 2.98
+          "normalized": 95.0,
+          "contribution": 8.09
         },
         {
           "metric": "市场上涨宽度",
@@ -173,7 +174,7 @@
       ],
       "label": "弱"
     },
-    "label": "龙头弱 / 生态弱：退潮风险"
+    "label": "龙头强 / 生态弱：龙头抱团 / 生态分歧"
   },
   "data_quality": {
     "missing": [
