@@ -25,6 +25,7 @@ MARKET_FILE = DATA_DIR / "market_latest.json"
 EMOTION_FILE = DATA_DIR / "emotion_latest.json"
 HISTORY_FILE = DATA_DIR / "emotion_history.json"
 INTRADAY_FILE = DATA_DIR / "intraday_latest.json"
+INTRADAY_HISTORY_FILE = DATA_DIR / "intraday_history.json"
 QUOTE_URL = (
     "https://push2.eastmoney.com/api/qt/ulist.np/get"
     "?fltt=2&fields=f12,f14,f2,f3,f6&secids={secids}"
@@ -267,6 +268,41 @@ def theme_structure(sessions: list[dict]) -> list[dict]:
     return sorted(result, key=lambda row: (-row["limit_up_count"], -row["max_height"], row["name"]))[:30]
 
 
+def official_theme_structure(market: dict) -> list[dict]:
+    """Normalize verified concept/member intersections into cycle inputs."""
+    result = []
+    for theme in market.get("themes") or []:
+        leaders = theme.get("leaders") or []
+        heights = Counter(int(row.get("height") or 1) for row in leaders)
+        result.append({
+            "code": theme.get("code"), "name": theme.get("name"),
+            "change_pct": theme.get("change_pct"),
+            "turnover_cny": theme.get("turnover_cny"),
+            "member_count": theme.get("member_count"),
+            "limit_up_count": theme.get("limitUpCount") or 0,
+            "first_board_count": heights.get(1, 0),
+            "second_board_count": heights.get(2, 0),
+            "third_board_count": heights.get(3, 0),
+            "high_board_count": sum(v for k, v in heights.items() if k >= 4),
+            "max_height": theme.get("maxHeight") or 0,
+            "active_days_3": None,
+            "leaders": leaders[:4],
+            "source": "同花顺概念指数与成分股涨停交集",
+        })
+    return result
+
+
+def snapshot_slot(timestamp: str) -> str | None:
+    try:
+        stamp = datetime.fromisoformat(timestamp.replace("Z", "+00:00")).astimezone(CN_TZ)
+    except (ValueError, TypeError):
+        return None
+    minute = stamp.hour * 60 + stamp.minute
+    slots = {575: "09:35", 630: "10:30", 690: "11:30", 825: "13:45", 870: "14:30", 900: "15:00"}
+    nearest = min(slots, key=lambda value: abs(value - minute))
+    return slots[nearest] if abs(nearest - minute) <= 20 else None
+
+
 def append_intraday(market: dict, promotion_data: dict | None) -> dict:
     trade_date = market["tradeDate"]
     old = read_json(INTRADAY_FILE, {})
@@ -275,6 +311,7 @@ def append_intraday(market: dict, promotion_data: dict | None) -> dict:
                  if old.get("trade_date") == trade_date
                  and old.get("source") == market.get("source") else [])
     timestamp = market.get("updatedAt") or datetime.now(CN_TZ).isoformat()
+    slot = snapshot_slot(timestamp)
     minute = timestamp[:16]
     snapshot = {
         "time": timestamp,
@@ -290,6 +327,8 @@ def append_intraday(market: dict, promotion_data: dict | None) -> dict:
             "name": (market.get("highest") or {}).get("name"),
         } if market.get("highest") else None,
         "strongest_theme": (market.get("themes") or [{}])[0].get("name"),
+        "slot": slot,
+        "turnover_cny": (market.get("breadth") or {}).get("totalAmount"),
     }
     snapshots = [row for row in snapshots if str(row.get("time", ""))[:16] != minute]
     snapshots.append(snapshot)
@@ -308,6 +347,31 @@ def append_intraday(market: dict, promotion_data: dict | None) -> dict:
     }
     _, payload['data_quality'] = intraday_quality(payload['snapshots'], trade_date)
     write_json(INTRADAY_FILE, payload)
+
+    history = read_json(INTRADAY_HISTORY_FILE, {"schema_version": 1, "days": {}})
+    days = history.setdefault("days", {})
+    days[trade_date] = snapshots[-80:]
+    for old_date in sorted(days)[:-30]:
+        days.pop(old_date, None)
+    if slot:
+        previous_date = next((value for value in reversed(sorted(days)) if value < trade_date), None)
+        previous_row = next((row for row in days.get(previous_date, []) if row.get("slot") == slot), None)
+        current_amount = snapshot.get("turnover_cny")
+        previous_amount = (previous_row or {}).get("turnover_cny")
+        if current_amount is not None and previous_amount is not None:
+            difference = current_amount - previous_amount
+            snapshot["amount_comparison"] = {
+                "status": "ready", "time": slot, "previous_trade_date": previous_date,
+                "current": current_amount, "previous": previous_amount,
+                "difference": difference,
+                "change_pct": round(difference / previous_amount * 100, 2) if previous_amount else None,
+                "direction": "增量" if difference > 0 else "缩量" if difference < 0 else "持平",
+            }
+            days[trade_date] = snapshots[-80:]
+            payload["snapshots"] = snapshots[-80:]
+            write_json(INTRADAY_FILE, payload)
+    history["updated_at"] = timestamp
+    write_json(INTRADAY_HISTORY_FILE, history)
     return payload
 
 
@@ -346,11 +410,16 @@ def main() -> None:
                 current_value["as_of"] = previous_payload.get("updated_at")
     breadth = market.get("breadth") or {}
     breadth_total = sum(int(number(breadth.get(key))) for key in ("known_up", "known_down", "known_flat")) if hithink else sum(int(number(breadth.get(key))) for key in ("up", "down", "flat"))
+    coverage = ((breadth_total / breadth.get("universe") * 100)
+                if hithink and breadth.get("universe") else 100 if breadth_total else 0)
+    usable_width = breadth.get('complete') is True or (hithink and coverage >= 98)
     width = {
-        "available": breadth.get('complete') is True,
-        "up": breadth.get("up") if breadth.get('complete') is True else None,
-        "down": breadth.get("down") if breadth.get('complete') is True else None,
-        "flat": breadth.get("flat") if breadth.get('complete') is True else None,
+        "available": usable_width,
+        "complete": breadth.get('complete') is True,
+        "coverage_pct": round(coverage, 2),
+        "up": breadth.get("known_up") if hithink and usable_width else breadth.get("up") if usable_width else None,
+        "down": breadth.get("known_down") if hithink and usable_width else breadth.get("down") if usable_width else None,
+        "flat": breadth.get("known_flat") if hithink and usable_width else breadth.get("flat") if usable_width else None,
         "sample": breadth_total,
     }
     missing = []
@@ -359,10 +428,16 @@ def main() -> None:
     if previous_feedback["sample"] == 0:
         missing.append("昨日涨停次日反馈")
     if hithink:
-        missing.append("概念板块成分股涨停扩散与持续性")
+        if not market.get("themes"):
+            missing.append("概念板块成分股涨停扩散与持续性")
         if len(sessions) < 20:
             missing.append("同源20交易日情绪序列")
     intraday = append_intraday(market, promotion_data)
+    latest_comparison = next((row.get("amount_comparison") for row in reversed(intraday.get("snapshots") or [])
+                              if row.get("amount_comparison")), None)
+    if latest_comparison:
+        market["amountComparison"] = latest_comparison
+        write_json(MARKET_FILE, market)
     if not intraday["data_quality"]["timeline_ready"]:
         missing.append("完整日内情绪时间轴")
 
@@ -399,7 +474,7 @@ def main() -> None:
         "principle": "仅保存事实数据，不在采集层生成周期标签或主观评分。",
         "market_ecology": ecology,
         "leader_candidates": leaders,
-        "themes": [] if hithink else theme_structure(sessions),
+        "themes": official_theme_structure(market) if hithink else theme_structure(sessions),
         "intraday": {
             "snapshot_count": intraday["data_quality"]["snapshot_count"],
             "timeline_ready": intraday["data_quality"]["timeline_ready"],
