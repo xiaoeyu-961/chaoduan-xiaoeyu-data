@@ -2,15 +2,15 @@
   "schema_version": 1,
   "ok": true,
   "trade_date": "2026-09-24",
-  "updated_at": "2026-09-24T02:58:30.025387+00:00",
+  "updated_at": "2026-09-24T03:09:24.795993+00:00",
   "source": "同花顺官方 Financial-API",
   "principle": "仅保存事实数据，不在采集层生成周期标签或主观评分。",
   "market_ecology": {
-    "limit_up_count": 43,
+    "limit_up_count": 39,
     "limit_down_count": 4,
-    "broken_count": 7,
-    "broken_rate_pct": 14.0,
-    "seal_rate_pct": 86.0,
+    "broken_count": 9,
+    "broken_rate_pct": 18.75,
+    "seal_rate_pct": 81.25,
     "highest_board": 5,
     "promotion": {
       "eligible": 51,
@@ -41,40 +41,40 @@
     },
     "previous_limit_up_feedback": {
       "sample": 51,
-      "avg_change_pct": 1.01,
-      "median_change_pct": 0.1,
-      "positive_rate_pct": 50.98,
+      "avg_change_pct": 0.82,
+      "median_change_pct": -0.63,
+      "positive_rate_pct": 47.06,
       "loss_below_minus_5_rate_pct": 25.49
     },
     "high_position_feedback": {
       "sample": 2,
-      "avg_change_pct": 8.76,
-      "median_change_pct": 8.76,
+      "avg_change_pct": 7.97,
+      "median_change_pct": 7.97,
       "positive_rate_pct": 100.0,
       "loss_below_minus_5_rate_pct": 0.0
     },
     "middle_position_feedback": {
       "sample": 10,
-      "avg_change_pct": 0.99,
-      "median_change_pct": 0.21,
+      "avg_change_pct": 0.72,
+      "median_change_pct": 0.09,
       "positive_rate_pct": 50.0,
       "loss_below_minus_5_rate_pct": 40.0
     },
     "first_board_feedback": {
       "sample": 39,
-      "avg_change_pct": 0.62,
-      "median_change_pct": -0.4,
-      "positive_rate_pct": 48.72,
+      "avg_change_pct": 0.47,
+      "median_change_pct": -0.8,
+      "positive_rate_pct": 43.59,
       "loss_below_minus_5_rate_pct": 23.08
     },
     "market_width": {
       "available": true,
       "complete": false,
-      "coverage_pct": 99.61,
-      "up": 1510,
-      "down": 3856,
-      "flat": 190,
-      "sample": 5556
+      "coverage_pct": 99.62,
+      "up": 1407,
+      "down": 3977,
+      "flat": 173,
+      "sample": 5557
     }
   },
   "leader_candidates": [
@@ -86,8 +86,8 @@
       "first_limit": "09:30",
       "last_limit": "09:30",
       "open_count": null,
-      "seal_amount": 199857630,
-      "amount": 236150570
+      "seal_amount": 199605290,
+      "amount": 238004450
     },
     {
       "code": "001234",
@@ -97,8 +97,8 @@
       "first_limit": "09:25",
       "last_limit": "09:25",
       "open_count": null,
-      "seal_amount": 372989910,
-      "amount": 72101375
+      "seal_amount": 372140310,
+      "amount": 72172175
     },
     {
       "code": "600825",
@@ -108,8 +108,8 @@
       "first_limit": "09:25",
       "last_limit": "09:25",
       "open_count": null,
-      "seal_amount": 3455824100,
-      "amount": 39383737
+      "seal_amount": 3422878600,
+      "amount": 39588865
     },
     {
       "code": "002614",
@@ -119,8 +119,8 @@
       "first_limit": "09:30",
       "last_limit": "09:30",
       "open_count": null,
-      "seal_amount": 155744200,
-      "amount": 443359700
+      "seal_amount": 153186060,
+      "amount": 445293100
     },
     {
       "code": "002238",
@@ -130,8 +130,8 @@
       "first_limit": "09:30",
       "last_limit": "09:30",
       "open_count": null,
-      "seal_amount": 98418159,
-      "amount": 581466540
+      "seal_amount": 96972608,
+      "amount": 583414520
     },
     {
       "code": "000850",
@@ -141,19 +141,19 @@
       "first_limit": "09:25",
       "last_limit": "09:25",
       "open_count": null,
-      "seal_amount": 266999040,
-      "amount": 63906560
+      "seal_amount": 266333950,
+      "amount": 64217344
     },
     {
       "code": "002819",
       "name": "东方中科",
-      "theme": null,
+      "theme": "数字水印",
       "height": 2,
       "first_limit": "09:30",
       "last_limit": "09:30",
       "open_count": null,
-      "seal_amount": 154713310,
-      "amount": 474040780
+      "seal_amount": 156003660,
+      "amount": 474840580
     },
     {
       "code": "603949",
@@ -163,8 +163,8 @@
       "first_limit": "09:30",
       "last_limit": "09:30",
       "open_count": null,
-      "seal_amount": 111457798,
-      "amount": 70688959
+      "seal_amount": 109691748,
+      "amount": 71094559
     },
     {
       "code": "002119",
@@ -174,8 +174,8 @@
       "first_limit": "09:33",
       "last_limit": "09:33",
       "open_count": null,
-      "seal_amount": 313616150,
-      "amount": 3106646700
+      "seal_amount": 312872940,
+      "amount": 3119204300
     },
     {
       "code": "603396",
@@ -185,16 +185,16 @@
       "first_limit": "09:34",
       "last_limit": "09:34",
       "open_count": null,
-      "seal_amount": 157707110,
-      "amount": 364018050
+      "seal_amount": 156409810,
+      "amount": 364862720
     }
   ],
   "themes": [
     {
       "code": "886018.TI",
       "name": "高压氧舱",
-      "change_pct": 0.756186,
-      "turnover_cny": 1478297000,
+      "change_pct": 0.736935,
+      "turnover_cny": 1519270200,
       "member_count": 11,
       "limit_up_count": 1,
       "first_board_count": 1,
@@ -215,8 +215,8 @@
     {
       "code": "886043.TI",
       "name": "太赫兹",
-      "change_pct": 0.699342,
-      "turnover_cny": 14972320000,
+      "change_pct": 0.565648,
+      "turnover_cny": 15557662000,
       "member_count": 24,
       "limit_up_count": 1,
       "first_board_count": 1,
@@ -235,10 +235,59 @@
       "source": "同花顺概念指数与成分股涨停交集"
     },
     {
+      "code": "885580.TI",
+      "name": "足球概念",
+      "change_pct": 0.420035,
+      "turnover_cny": 5456868700,
+      "member_count": 40,
+      "limit_up_count": 2,
+      "first_board_count": 1,
+      "second_board_count": 0,
+      "third_board_count": 1,
+      "high_board_count": 0,
+      "max_height": 3,
+      "active_days_3": null,
+      "leaders": [
+        {
+          "code": "002238",
+          "name": "天威视讯",
+          "height": 3
+        },
+        {
+          "code": "002395",
+          "name": "双象股份",
+          "height": 1
+        }
+      ],
+      "source": "同花顺概念指数与成分股涨停交集"
+    },
+    {
+      "code": "885768.TI",
+      "name": "无人零售",
+      "change_pct": 0.386227,
+      "turnover_cny": 1625438500,
+      "member_count": 26,
+      "limit_up_count": 1,
+      "first_board_count": 0,
+      "second_board_count": 0,
+      "third_board_count": 0,
+      "high_board_count": 1,
+      "max_height": 4,
+      "active_days_3": null,
+      "leaders": [
+        {
+          "code": "600825",
+          "name": "新华传媒",
+          "height": 4
+        }
+      ],
+      "source": "同花顺概念指数与成分股涨停交集"
+    },
+    {
       "code": "886008.TI",
       "name": "减速器",
-      "change_pct": 0.630299,
-      "turnover_cny": 20639918000,
+      "change_pct": 0.361447,
+      "turnover_cny": 21467624000,
       "member_count": 139,
       "limit_up_count": 3,
       "first_board_count": 3,
@@ -267,43 +316,11 @@
       "source": "同花顺概念指数与成分股涨停交集"
     },
     {
-      "code": "885580.TI",
-      "name": "足球概念",
-      "change_pct": 0.555707,
-      "turnover_cny": 5036076400,
-      "member_count": 40,
-      "limit_up_count": 3,
-      "first_board_count": 2,
-      "second_board_count": 0,
-      "third_board_count": 1,
-      "high_board_count": 0,
-      "max_height": 3,
-      "active_days_3": null,
-      "leaders": [
-        {
-          "code": "002181",
-          "name": "粤 传 媒",
-          "height": 1
-        },
-        {
-          "code": "002238",
-          "name": "天威视讯",
-          "height": 3
-        },
-        {
-          "code": "002395",
-          "name": "双象股份",
-          "height": 1
-        }
-      ],
-      "source": "同花顺概念指数与成分股涨停交集"
-    },
-    {
-      "code": "886101.TI",
-      "name": "兵装重组概念",
-      "change_pct": 0.486112,
-      "turnover_cny": 734047720,
-      "member_count": 7,
+      "code": "885860.TI",
+      "name": "中船系",
+      "change_pct": 0.303737,
+      "turnover_cny": 3026107500,
+      "member_count": 10,
       "limit_up_count": 0,
       "first_board_count": 0,
       "second_board_count": 0,
@@ -315,33 +332,11 @@
       "source": "同花顺概念指数与成分股涨停交集"
     },
     {
-      "code": "885768.TI",
-      "name": "无人零售",
-      "change_pct": 0.390215,
-      "turnover_cny": 1552588200,
-      "member_count": 26,
-      "limit_up_count": 1,
-      "first_board_count": 0,
-      "second_board_count": 0,
-      "third_board_count": 0,
-      "high_board_count": 1,
-      "max_height": 4,
-      "active_days_3": null,
-      "leaders": [
-        {
-          "code": "600825",
-          "name": "新华传媒",
-          "height": 4
-        }
-      ],
-      "source": "同花顺概念指数与成分股涨停交集"
-    },
-    {
-      "code": "885860.TI",
-      "name": "中船系",
-      "change_pct": 0.364485,
-      "turnover_cny": 2876435000,
-      "member_count": 10,
+      "code": "886101.TI",
+      "name": "兵装重组概念",
+      "change_pct": 0.298254,
+      "turnover_cny": 752060290,
+      "member_count": 7,
       "limit_up_count": 0,
       "first_board_count": 0,
       "second_board_count": 0,
@@ -355,8 +350,8 @@
     {
       "code": "885888.TI",
       "name": "C2M概念",
-      "change_pct": 0.161633,
-      "turnover_cny": 3539399100,
+      "change_pct": 0.088039,
+      "turnover_cny": 3704286100,
       "member_count": 39,
       "limit_up_count": 0,
       "first_board_count": 0,
@@ -369,32 +364,10 @@
       "source": "同花顺概念指数与成分股涨停交集"
     },
     {
-      "code": "886000.TI",
-      "name": "一体化压铸",
-      "change_pct": 0.137374,
-      "turnover_cny": 7627560500,
-      "member_count": 54,
-      "limit_up_count": 1,
-      "first_board_count": 1,
-      "second_board_count": 0,
-      "third_board_count": 0,
-      "high_board_count": 0,
-      "max_height": 1,
-      "active_days_3": null,
-      "leaders": [
-        {
-          "code": "605018",
-          "name": "长华集团",
-          "height": 1
-        }
-      ],
-      "source": "同花顺概念指数与成分股涨停交集"
-    },
-    {
       "code": "885829.TI",
       "name": "丙烯酸",
-      "change_pct": 0.098081,
-      "turnover_cny": 3710244500,
+      "change_pct": 0.03084,
+      "turnover_cny": 3890042800,
       "member_count": 20,
       "limit_up_count": 1,
       "first_board_count": 1,
@@ -411,10 +384,32 @@
         }
       ],
       "source": "同花顺概念指数与成分股涨停交集"
+    },
+    {
+      "code": "886034.TI",
+      "name": "数字水印",
+      "change_pct": -0.031177,
+      "turnover_cny": 5521171900,
+      "member_count": 29,
+      "limit_up_count": 1,
+      "first_board_count": 0,
+      "second_board_count": 1,
+      "third_board_count": 0,
+      "high_board_count": 0,
+      "max_height": 2,
+      "active_days_3": null,
+      "leaders": [
+        {
+          "code": "002819",
+          "name": "东方中科",
+          "height": 2
+        }
+      ],
+      "source": "同花顺概念指数与成分股涨停交集"
     }
   ],
   "intraday": {
-    "snapshot_count": 4,
+    "snapshot_count": 5,
     "timeline_ready": false
   },
   "data_quality": {
