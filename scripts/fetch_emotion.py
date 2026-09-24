@@ -9,15 +9,15 @@ from __future__ import annotations
 
 import json
 import statistics
+import time
 from collections import Counter, defaultdict
-from concurrent.futures import ThreadPoolExecutor, as_completed
+from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timedelta
 from pathlib import Path
 from data_checks import intraday_quality
-from urllib.parse import quote
+import requests
 
-from fetch_market import CN_TZ, POOL_URLS, get_json, normalize_stock, number
-from hithink_client import get as hithink_get, pool as hithink_pool
+from hithink_client import CN_TZ, get as hithink_get, pool as hithink_pool
 from fetch_hithink import normalize_stock as hithink_stock
 
 DATA_DIR = Path("data")
@@ -26,11 +26,27 @@ EMOTION_FILE = DATA_DIR / "emotion_latest.json"
 HISTORY_FILE = DATA_DIR / "emotion_history.json"
 INTRADAY_FILE = DATA_DIR / "intraday_latest.json"
 INTRADAY_HISTORY_FILE = DATA_DIR / "intraday_history.json"
-QUOTE_URL = (
-    "https://push2.eastmoney.com/api/qt/ulist.np/get"
-    "?fltt=2&fields=f12,f14,f2,f3,f6&secids={secids}"
-)
 TREND_URL = "https://web.ifzq.gtimg.cn/appstock/app/day/query?code={code}"
+
+
+def number(value, default=0.0):
+    try:
+        return float(value)
+    except (TypeError, ValueError):
+        return default
+
+
+def get_json(url: str, attempts: int = 3) -> dict:
+    last: Exception | None = None
+    for attempt in range(attempts):
+        try:
+            response = requests.get(url, headers={"User-Agent": "Mozilla/5.0"}, timeout=18)
+            response.raise_for_status()
+            return response.json()
+        except Exception as exc:
+            last = exc
+            time.sleep(attempt + 1)
+    raise RuntimeError(str(last))
 
 
 def read_json(path: Path, default):
@@ -45,67 +61,6 @@ def write_json(path: Path, payload: dict) -> None:
     temp = path.with_suffix(".tmp")
     temp.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
     temp.replace(path)
-
-
-def day_key(value: str) -> str:
-    return value.replace("-", "")
-
-
-def fetch_pool(kind: str, date: str) -> list[dict]:
-    # Historical backfill favors a fast explicit miss over multiplying retries
-    # across dozens of dates.  The next scheduled run can fill transient gaps.
-    body = get_json(f"{POOL_URLS[kind]}&date={day_key(date)}", attempts=1)
-    pool = (body.get("data") or {}).get("pool") or []
-    return pool if isinstance(pool, list) else []
-
-
-def collect_sessions(end_date: str, target: int = 20) -> list[dict]:
-    end = datetime.strptime(end_date, "%Y-%m-%d").replace(tzinfo=CN_TZ)
-    dates = [(end - timedelta(days=offset)).strftime("%Y-%m-%d") for offset in range(40)]
-    up_by_date: dict[str, list[dict]] = {}
-    with ThreadPoolExecutor(max_workers=10) as executor:
-        futures = {executor.submit(fetch_pool, "limitUp", date): date for date in dates}
-        for future in as_completed(futures):
-            date = futures[future]
-            try:
-                rows = future.result()
-                if rows:
-                    up_by_date[date] = rows
-            except Exception:
-                continue
-    selected = sorted(up_by_date)[-target:]
-    auxiliary: dict[tuple[str, str], list[dict]] = {}
-    with ThreadPoolExecutor(max_workers=10) as executor:
-        futures = {
-            executor.submit(fetch_pool, kind, date): (kind, date)
-            for date in selected
-            for kind in ("broken", "limitDown")
-        }
-        for future in as_completed(futures):
-            key = futures[future]
-            try:
-                auxiliary[key] = future.result()
-            except Exception:
-                auxiliary[key] = []
-    sessions: list[dict] = []
-    for date in selected:
-        up = up_by_date[date]
-        broken = auxiliary.get(("broken", date), [])
-        down = auxiliary.get(("limitDown", date), [])
-        stocks = [normalize_stock(row) for row in up]
-        height_counts = Counter(int(row["height"]) for row in stocks)
-        denominator = len(stocks) + len(broken)
-        sessions.append({
-            "date": date,
-            "limit_up_count": len(stocks),
-            "broken_count": len(broken),
-            "limit_down_count": len(down),
-            "seal_rate_pct": round(len(stocks) / denominator * 100, 2) if denominator else None,
-            "highest_board": max(height_counts, default=0),
-            "height_counts": {str(key): height_counts[key] for key in sorted(height_counts)},
-            "stocks": stocks,
-        })
-    return sessions
 
 
 def collect_hithink_sessions(end_date: str, today: dict, target: int = 8) -> list[dict]:
@@ -185,36 +140,6 @@ def promotion(prev: dict, current: dict) -> dict:
         "rate_pct": round(promoted_total / total * 100, 2) if total else None,
         "by_height": by_height,
     }
-
-
-def secid(code: str) -> str:
-    return ("1." if code.startswith(("5", "6", "9")) else "0.") + code
-
-
-def fetch_quotes(codes: list[str]) -> dict[str, dict]:
-    result: dict[str, dict] = {}
-    unique = list(dict.fromkeys(code for code in codes if code))
-    for start in range(0, len(unique), 30):
-        batch = unique[start:start + 30]
-        try:
-            body = get_json(
-                QUOTE_URL.format(secids=quote(",".join(secid(code) for code in batch), safe=",.")),
-                attempts=2,
-            )
-        except Exception:
-            # Quote feedback is an enrichment field. A transient upstream error
-            # must not block the factual pool snapshot from being published.
-            continue
-        for row in (body.get("data") or {}).get("diff") or []:
-            code = str(row.get("f12") or "")
-            result[code] = {
-                "code": code,
-                "name": str(row.get("f14") or ""),
-                "price": number(row.get("f2"), None),
-                "change_pct": number(row.get("f3"), None),
-                "amount": number(row.get("f6"), None),
-            }
-    return result
 
 
 def feedback(rows: list[dict], quotes: dict[str, dict]) -> dict:
@@ -443,16 +368,16 @@ def main() -> None:
     previous_payload = read_json(EMOTION_FILE, {})
     if not market.get("ok") or not market.get("tradeDate"):
         raise RuntimeError("market_latest.json is unavailable")
-    hithink = market.get("source") == "同花顺官方 Financial-API"
-    sessions = (collect_hithink_sessions(market["tradeDate"], market) if hithink
-                else collect_sessions(market["tradeDate"], 20))
+    if market.get("source") != "同花顺官方 Financial-API":
+        raise RuntimeError("Only Tonghuashun Financial-API market snapshots are accepted")
+    hithink = True
+    sessions = collect_hithink_sessions(market["tradeDate"], market)
     if not sessions:
         raise RuntimeError("No sentiment sessions collected")
 
     promotion_data = promotion(sessions[-2], sessions[-1]) if len(sessions) >= 2 else None
     previous = sessions[-2] if len(sessions) >= 2 else None
-    quote_map = (hithink_quotes([row["code"] for row in previous["stocks"]]) if hithink
-                 else fetch_quotes([row["code"] for row in previous["stocks"]])) if previous else {}
+    quote_map = hithink_quotes([row["code"] for row in previous["stocks"]]) if previous else {}
     previous_feedback = feedback(previous["stocks"], quote_map) if previous else feedback([], {})
     high_feedback = feedback([row for row in previous["stocks"] if row["height"] >= 4], quote_map) if previous else feedback([], {})
     mid_feedback = feedback([row for row in previous["stocks"] if 2 <= row["height"] <= 3], quote_map) if previous else feedback([], {})
