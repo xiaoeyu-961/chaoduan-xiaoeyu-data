@@ -19,6 +19,18 @@ def save(name: str, payload: dict) -> None:
     temp.replace(path)
 
 
+def public_intraday_snapshots(intraday: dict) -> list[dict]:
+    """Do not expose legacy cross-source turnover comparisons in served data."""
+    snapshots: list[dict] = []
+    for source_row in intraday.get("snapshots") or []:
+        row = dict(source_row)
+        comparison = row.get("amount_comparison") or {}
+        if comparison.get("source") != "同花顺历史快照同时间比较":
+            row["amount_comparison"] = None
+        snapshots.append(row)
+    return snapshots
+
+
 def index_map(market: dict) -> dict:
     return {row.get("name"): row for row in market.get("indices") or []}
 
@@ -94,7 +106,8 @@ def main() -> None:
         notes.append(note)
 
     daily = build_daily(market, emotion, cycle)
-    comparisons = [row.get("amount_comparison") for row in intraday.get("snapshots") or []
+    public_intraday = public_intraday_snapshots(intraday)
+    comparisons = [row.get("amount_comparison") for row in public_intraday
                    if (row.get("amount_comparison") or {}).get("status") == "ready"
                    and (row.get("amount_comparison") or {}).get("source") == "同花顺历史快照同时间比较"]
     if comparisons:
@@ -123,7 +136,7 @@ def main() -> None:
     mid = [row for row in timeline.get("mid_cycle", []) if row.get("date") != date]
     mid.append({"date": date, "theme": (mainline or {}).get("theme"), "state": (mainline or {}).get("stage"), "score": (mainline or {}).get("score")})
     timeline["mid_cycle"] = sorted(mid, key=lambda row: row["date"])
-    timeline["intraday"] = intraday.get("snapshots") or []
+    timeline["intraday"] = public_intraday
 
     workbench.setdefault("ladder", {})[date] = build_ladder(market, details)
     if details:
