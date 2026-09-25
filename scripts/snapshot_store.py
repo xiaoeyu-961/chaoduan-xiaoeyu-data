@@ -138,15 +138,40 @@ def persist_failure(error: Exception, trade_date: str,
         "error": f"{type(error).__name__}: {str(error)[:500]}", "payload": None,
     }
     _write(raw_dir / f"{snapshot_id}.json", raw)
-    health = {
-        "schema_version": "market_status_v1", "market_date": trade_date,
-        "latest_snapshot_id": snapshot_id, "latest_snapshot": stamp.isoformat(),
-        "session": session_for(stamp), "source": "同花顺官方 Financial-API",
-        "status": "unavailable", "missing_fields": ["market"],
-        "last_error": raw["error"],
-        "datasets": {"market": {"status": "unavailable",
-                                  "updated_at": stamp.isoformat(),
-                                  "missing_fields": ["market"]}},
-    }
+    try:
+        latest_clean = json.loads((DATA / "clean" / "latest.json").read_text(encoding="utf-8"))
+    except (FileNotFoundError, json.JSONDecodeError):
+        latest_clean = {}
+    has_frozen_market = bool(latest_clean.get("snapshot_id") and latest_clean.get("market_date"))
+    if has_frozen_market:
+        # A failed refresh must not turn an existing frozen trading-day snapshot
+        # into "no data". Keep the failed raw attempt for audit and expose the
+        # last valid market as stale until a fresh successful snapshot arrives.
+        health = {
+            "schema_version": "market_status_v1",
+            "market_date": latest_clean["market_date"],
+            "latest_snapshot_id": latest_clean["snapshot_id"],
+            "latest_snapshot": latest_clean.get("captured_at"),
+            "session": latest_clean.get("session"),
+            "source": latest_clean.get("source") or "同花顺官方 Financial-API",
+            "status": "stale", "missing_fields": latest_clean.get("missing_fields") or [],
+            "last_error": raw["error"],
+            "last_attempt": {"snapshot_id": snapshot_id, "market_date": trade_date,
+                             "captured_at": stamp.isoformat(), "status": "failed"},
+            "datasets": {"market": {"status": "stale",
+                                      "updated_at": latest_clean.get("captured_at"),
+                                      "missing_fields": latest_clean.get("missing_fields") or []}},
+        }
+    else:
+        health = {
+            "schema_version": "market_status_v1", "market_date": trade_date,
+            "latest_snapshot_id": snapshot_id, "latest_snapshot": stamp.isoformat(),
+            "session": session_for(stamp), "source": "同花顺官方 Financial-API",
+            "status": "unavailable", "missing_fields": ["market"],
+            "last_error": raw["error"],
+            "datasets": {"market": {"status": "unavailable",
+                                      "updated_at": stamp.isoformat(),
+                                      "missing_fields": ["market"]}},
+        }
     _write(DATA / "status_latest.json", health)
     return health

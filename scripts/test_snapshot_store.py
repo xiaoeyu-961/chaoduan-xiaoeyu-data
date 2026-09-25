@@ -31,6 +31,24 @@ class SnapshotStoreTests(unittest.TestCase):
             self.assertEqual(raw["supersedes"], "2026-09-24-150000-r0")
             self.assertEqual(len(raw["payload_checksum"]), 64)
 
+    def test_failed_refresh_preserves_last_frozen_market(self):
+        market = {"tradeDate": "2026-09-24", "source": "同花顺官方 Financial-API",
+                  "indices": [{"code": "000001"}],
+                  "breadth": {"up": 1, "down": 1, "flat": 1, "totalAmount": 3},
+                  "limitUpCount": 1, "limitDownCount": 1, "brokenCount": 0,
+                  "limitUps": [{"code": "000001"}]}
+        cn = timezone(timedelta(hours=8))
+        with tempfile.TemporaryDirectory() as tmp, patch.object(snapshot_store, "DATA", Path(tmp)):
+            valid = snapshot_store.persist_snapshot(
+                market, {"value": 1}, datetime(2026, 9, 24, 15, 0, tzinfo=cn))
+            health = snapshot_store.persist_failure(
+                RuntimeError("timeout"), "2026-09-25",
+                datetime(2026, 9, 25, 9, 35, tzinfo=cn))
+            self.assertEqual(health["status"], "stale")
+            self.assertEqual(health["market_date"], "2026-09-24")
+            self.assertEqual(health["latest_snapshot_id"], valid["latest_snapshot_id"])
+            self.assertEqual(health["last_attempt"]["market_date"], "2026-09-25")
+
 
 if __name__ == "__main__":
     unittest.main()
