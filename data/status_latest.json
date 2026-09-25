@@ -1,22 +1,24 @@
 {
   "schema_version": "market_status_v1",
-  "market_date": "2026-09-25",
-  "latest_snapshot_id": "2026-09-25-162243-r0",
-  "latest_snapshot": "2026-09-25T16:22:43.971791+08:00",
+  "market_date": "2026-09-24",
+  "latest_snapshot_id": "2026-09-24-160834-r0",
+  "latest_snapshot": "2026-09-24T16:08:34.220535+08:00",
   "session": "manual",
   "source": "同花顺官方 Financial-API",
-  "status": "unavailable",
-  "missing_fields": [
-    "market"
-  ],
-  "last_error": "HithinkError: /api/a-share/prices/snapshot: ReadTimeout: HTTPSConnectionPool(host='fuyao.aicubes.cn', port=443): Read timed out. (read timeout=18)",
+  "status": "stale",
+  "missing_fields": [],
+  "last_error": null,
+  "last_attempt": {
+    "market_date": "2026-09-25",
+    "captured_at": "2026-09-25T17:12:10.772324+08:00",
+    "status": "skipped",
+    "reason": "non_trading_or_stale_provider"
+  },
   "datasets": {
     "market": {
-      "status": "unavailable",
-      "updated_at": "2026-09-25T16:22:43.971791+08:00",
-      "missing_fields": [
-        "market"
-      ]
+      "status": "stale",
+      "updated_at": "2026-09-24T16:08:34.220535+08:00",
+      "missing_fields": []
     }
   }
 }
