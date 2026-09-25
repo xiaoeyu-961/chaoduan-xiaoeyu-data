@@ -175,3 +175,32 @@ def persist_failure(error: Exception, trade_date: str,
         }
     _write(DATA / "status_latest.json", health)
     return health
+
+
+def persist_skipped(trade_date: str, reason: str,
+                    captured_at: datetime | None = None) -> dict:
+    """Keep the latest frozen market visible when a newer date is skipped."""
+    stamp = (captured_at or datetime.now(CN)).astimezone(CN)
+    try:
+        latest_clean = json.loads((DATA / "clean" / "latest.json").read_text(encoding="utf-8"))
+    except (FileNotFoundError, json.JSONDecodeError):
+        latest_clean = {}
+    if not (latest_clean.get("snapshot_id") and latest_clean.get("market_date")):
+        return persist_failure(RuntimeError(reason), trade_date, stamp)
+    health = {
+        "schema_version": "market_status_v1",
+        "market_date": latest_clean["market_date"],
+        "latest_snapshot_id": latest_clean["snapshot_id"],
+        "latest_snapshot": latest_clean.get("captured_at"),
+        "session": latest_clean.get("session"),
+        "source": latest_clean.get("source") or "同花顺官方 Financial-API",
+        "status": "stale", "missing_fields": latest_clean.get("missing_fields") or [],
+        "last_error": None,
+        "last_attempt": {"market_date": trade_date, "captured_at": stamp.isoformat(),
+                         "status": "skipped", "reason": reason},
+        "datasets": {"market": {"status": "stale",
+                                  "updated_at": latest_clean.get("captured_at"),
+                                  "missing_fields": latest_clean.get("missing_fields") or []}},
+    }
+    _write(DATA / "status_latest.json", health)
+    return health

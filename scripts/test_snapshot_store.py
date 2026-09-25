@@ -49,6 +49,25 @@ class SnapshotStoreTests(unittest.TestCase):
             self.assertEqual(health["latest_snapshot_id"], valid["latest_snapshot_id"])
             self.assertEqual(health["last_attempt"]["market_date"], "2026-09-25")
 
+    def test_skipped_refresh_heals_old_unavailable_status(self):
+        market = {"tradeDate": "2026-09-24", "source": "同花顺官方 Financial-API",
+                  "indices": [{"code": "000001"}],
+                  "breadth": {"up": 1, "down": 1, "flat": 1, "totalAmount": 3},
+                  "limitUpCount": 1, "limitDownCount": 1, "brokenCount": 0,
+                  "limitUps": [{"code": "000001"}]}
+        cn = timezone(timedelta(hours=8))
+        with tempfile.TemporaryDirectory() as tmp, patch.object(snapshot_store, "DATA", Path(tmp)):
+            snapshot_store.persist_snapshot(
+                market, {"value": 1}, datetime(2026, 9, 24, 15, 0, tzinfo=cn))
+            Path(tmp, "status_latest.json").write_text(
+                json.dumps({"status": "unavailable"}), encoding="utf-8")
+            health = snapshot_store.persist_skipped(
+                "2026-09-25", "non_trading_or_stale_provider",
+                datetime(2026, 9, 25, 16, 0, tzinfo=cn))
+            self.assertEqual(health["status"], "stale")
+            self.assertEqual(health["market_date"], "2026-09-24")
+            self.assertEqual(health["last_attempt"]["status"], "skipped")
+
 
 if __name__ == "__main__":
     unittest.main()

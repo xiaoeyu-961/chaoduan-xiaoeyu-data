@@ -9,7 +9,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from hithink_client import CN_TZ, HithinkError, all_quotes, get, pool
-from snapshot_store import persist_failure, persist_snapshot
+from snapshot_store import persist_failure, persist_skipped, persist_snapshot
 
 DATA = Path("data")
 
@@ -258,6 +258,7 @@ def main() -> None:
             # Holiday or stale-provider response: preserve the last valid trade
             # date and do not create a false zero-market snapshot.
             mark_github_output("market_skipped", "true")
+            persist_skipped(date, "non_trading_or_stale_provider")
             print(json.dumps({"trade_date": date, "skipped": True,
                               "reason": "non_trading_or_stale_provider",
                               "preserved_trade_date": previous_market.get("tradeDate")}, ensure_ascii=False))
