@@ -3,7 +3,7 @@
     "product": "超短小鳄鱼｜V1.4.1 超短交易研究工作台",
     "bundle_version": "1.1",
     "schema_updated_at": "2026-09-21T23:00:00+08:00",
-    "generated_at": "2026-09-25T13:22:34.446813+00:00",
+    "generated_at": "2026-09-25T13:26:12.619008+00:00",
     "timezone": "Asia/Shanghai",
     "data_range": [
       "2026-09-16",
@@ -17083,7 +17083,7 @@
         "confidence": "medium"
       },
       "C": {
-        "score": 85,
+        "score": 80,
         "coverage_pct": 100.0,
         "components": [
           {
@@ -17097,9 +17097,10 @@
             "metric": "封板稳定性",
             "value": 53.75,
             "weight": 25,
-            "normalized": 100.0,
+            "normalized": 80.0,
             "basis": "收盘仍封住+封单额/成交额代理",
-            "contribution": 25.0
+            "proxy": true,
+            "contribution": 20.0
           },
           {
             "metric": "首次封板主动性",
@@ -17240,7 +17241,7 @@
     },
     "leader_ecology_matrix": {
       "leader_strength": {
-        "score": 85,
+        "score": 80,
         "coverage_pct": 100.0,
         "components": [
           {
@@ -17254,9 +17255,10 @@
             "metric": "封板稳定性",
             "value": 53.75,
             "weight": 25,
-            "normalized": 100.0,
+            "normalized": 80.0,
             "basis": "收盘仍封住+封单额/成交额代理",
-            "contribution": 25.0
+            "proxy": true,
+            "contribution": 20.0
           },
           {
             "metric": "首次封板主动性",
@@ -17360,7 +17362,7 @@
     },
     "dashboard": {
       "market_composite": 31,
-      "leader_strength": 85,
+      "leader_strength": 80,
       "market_ecology": 43,
       "market_width": 0,
       "relay_ecology": 61,
