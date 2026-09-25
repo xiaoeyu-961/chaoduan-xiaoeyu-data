@@ -40,12 +40,13 @@ def _next_revision(directory: Path, base_id: str) -> tuple[int, str | None]:
 
 
 def _missing_fields(market: dict) -> list[str]:
+    breadth = market.get("breadth") or {}
     required = {
         "indices": market.get("indices"),
-        "breadth.up": (market.get("breadth") or {}).get("up"),
-        "breadth.down": (market.get("breadth") or {}).get("down"),
-        "breadth.flat": (market.get("breadth") or {}).get("flat"),
-        "breadth.totalAmount": (market.get("breadth") or {}).get("totalAmount"),
+        "breadth.up": breadth.get("up") if breadth.get("up") is not None else breadth.get("known_up"),
+        "breadth.down": breadth.get("down") if breadth.get("down") is not None else breadth.get("known_down"),
+        "breadth.flat": breadth.get("flat") if breadth.get("flat") is not None else breadth.get("known_flat"),
+        "breadth.totalAmount": breadth.get("totalAmount"),
         "limitUpCount": market.get("limitUpCount"),
         "limitDownCount": market.get("limitDownCount"),
         "brokenCount": market.get("brokenCount"),

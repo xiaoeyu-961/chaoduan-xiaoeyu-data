@@ -15,11 +15,14 @@ def intraday_quality(rows, trade_date):
         except (KeyError, ValueError, TypeError):
             continue
         minute = stamp.hour * 60 + stamp.minute
-        if stamp.date().isoformat() != trade_date or not (570 <= minute <= 690 or 780 <= minute <= 900):
+        # GitHub Actions may start the 15:00 task a few minutes late. The
+        # market pools are already frozen after 15:00, so 15:00-15:20 is
+        # normalized to the close slot instead of being discarded.
+        if stamp.date().isoformat() != trade_date or not (570 <= minute <= 690 or 780 <= minute <= 920):
             continue
         if any(row.get(k) is None for k in ('limit_up_count', 'broken_rate_pct', 'promotion_rate_pct', 'limit_down_count')):
             continue
-        accepted[minute] = row
+        accepted[min(minute, 900)] = row
     minutes = sorted(accepted)
     # Six samples alone cannot establish a full-day path. Treat 14:45+ as
     # valid tail coverage because scheduled close collection can arrive one

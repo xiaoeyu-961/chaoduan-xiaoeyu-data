@@ -95,7 +95,8 @@ def main() -> None:
 
     daily = build_daily(market, emotion, cycle)
     comparisons = [row.get("amount_comparison") for row in intraday.get("snapshots") or []
-                   if (row.get("amount_comparison") or {}).get("status") == "ready"]
+                   if (row.get("amount_comparison") or {}).get("status") == "ready"
+                   and (row.get("amount_comparison") or {}).get("source") == "同花顺历史快照同时间比较"]
     if comparisons:
         daily["turnover_change_cny"] = comparisons[-1].get("difference")
         daily["turnover_comparison"] = comparisons[-1]
@@ -105,11 +106,15 @@ def main() -> None:
     mainline = (cycle.get("medium_cycle") or {}).get("mainline")
     workbench["market_cycle"] = {
         "large_cycle": cycle.get("large_cycle"),
+        "cycle": cycle.get("cycle"),
         "medium_cycle": {"mainline": mainline, "themes": (cycle.get("medium_cycle") or {}).get("themes", [])},
         "small_cycle": cycle.get("small_cycle"),
+        "factors": cycle.get("factors"),
+        "exposure": cycle.get("exposure"),
+        "market_switch": cycle.get("market_switch"),
         "leader_ecology_matrix": cycle.get("leader_ecology_matrix"),
         "dashboard": cycle.get("dashboard"),
-        "method": "评分 + 结构 + 连续性；严禁用均线替代情绪结构。",
+        "method": "状态机 + 结构门槛 + 连续性；严禁用单一评分或均线替代情绪结构。",
     }
     timeline = workbench.setdefault("cycle_timeline", {})
     big = [row for row in timeline.get("big_cycle", []) if row.get("date") != date]

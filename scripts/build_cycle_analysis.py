@@ -205,27 +205,180 @@ def small_cycle(intraday: dict) -> dict:
             elif delta_up <= -3 or delta_broken >= 5: node = "分歧" if (row.get("limit_up_count") or 0) >= 30 else "转弱"
             elif delta_up > 0 and delta_broken < 0: node = "回流"
             else: node = "震荡"
-        timeline.append({"time": row.get("time"), "node": node, "facts": row})
+        facts = dict(row)
+        comparison = facts.get("amount_comparison") or {}
+        if comparison.get("source") != "同花顺历史快照同时间比较":
+            facts["amount_comparison"] = None
+        timeline.append({"time": row.get("time"), "node": node, "facts": facts})
         previous = row
     return {"stage": timeline[-1]["node"], "score": None, "trend": "→", "timeline_ready": True, "snapshot_count": len(snapshots), "timeline": timeline, "note": "日内节点不直接改写大周期。"}
+
+
+def factor_pack(emotion: dict, history: dict, leader: dict,
+                ecology: dict, themes: list[dict]) -> dict:
+    """Build the seven factual dimensions used by the state machine."""
+    raw = emotion.get("market_ecology") or {}
+    promotion = raw.get("promotion") or {}
+    by_height = promotion.get("by_height") or {}
+    sessions = history.get("sessions") or []
+    current = sessions[-1] if sessions else {}
+    counts = current.get("height_counts") or {}
+    ladder_layers = sum(bool(sum(int(v) for k, v in counts.items()
+                                 if (int(k) >= 5 if level == 5 else int(k) == level)))
+                        for level in (2, 3, 4, 5))
+    def tier_rate(height):
+        if height < 4:
+            return (by_height.get(str(height)) or {}).get("rate_pct")
+        eligible = promoted = 0
+        for key, value in by_height.items():
+            if int(key) >= 4:
+                eligible += value.get("eligible") or 0
+                promoted += value.get("promoted") or 0
+        return promoted / eligible * 100 if eligible else None
+    relay = weighted([
+        {"metric": "1进2晋级率", "value": tier_rate(1), "weight": 15, "normalized": rising(tier_rate(1), 10, 55)},
+        {"metric": "2进3晋级率", "value": tier_rate(2), "weight": 20, "normalized": rising(tier_rate(2), 10, 55)},
+        {"metric": "3进4晋级率", "value": tier_rate(3), "weight": 20, "normalized": rising(tier_rate(3), 10, 55)},
+        {"metric": "4板以上晋级率", "value": tier_rate(4), "weight": 15, "normalized": rising(tier_rate(4), 10, 55)},
+        {"metric": "梯队完整度", "value": ladder_layers, "weight": 15, "normalized": ladder_layers / 4 * 100},
+        {"metric": "连板数量趋势", "value": series_trend([sum(int(v) for k, v in (row.get("height_counts") or {}).items() if int(k) >= 2) for row in sessions]), "weight": 10, "normalized": {"up": 80, "flat": 50, "down": 20}.get(series_trend([sum(int(v) for k, v in (row.get("height_counts") or {}).items() if int(k) >= 2) for row in sessions]))},
+        {"metric": "最高板趋势", "value": series_trend([row.get("highest_board") for row in sessions]), "weight": 5, "normalized": {"up": 80, "flat": 50, "down": 20}.get(series_trend([row.get("highest_board") for row in sessions]))},
+    ])
+    previous = raw.get("previous_limit_up_feedback") or {}
+    middle = raw.get("middle_position_feedback") or {}
+    high = raw.get("high_position_feedback") or {}
+    profit = weighted([
+        {"metric": "昨日涨停中位收益", "value": previous.get("median_change_pct"), "weight": 20, "normalized": rising(previous.get("median_change_pct"), -4, 5)},
+        {"metric": "昨日涨停红盘率", "value": previous.get("positive_rate_pct"), "weight": 15, "normalized": rising(previous.get("positive_rate_pct"), 30, 70)},
+        {"metric": "昨日涨停平均收益", "value": previous.get("avg_change_pct"), "weight": 10, "normalized": rising(previous.get("avg_change_pct"), -4, 5)},
+        {"metric": "中位股中位收益", "value": middle.get("median_change_pct"), "weight": 20, "normalized": rising(middle.get("median_change_pct"), -5, 5)},
+        {"metric": "高位核心反馈", "value": high.get("avg_change_pct"), "weight": 15, "normalized": rising(high.get("avg_change_pct"), -5, 7)},
+        {"metric": "炸板股次日修复", "value": None, "weight": 10, "normalized": None},
+        {"metric": "封板质量", "value": raw.get("seal_rate_pct"), "weight": 10, "normalized": rising(raw.get("seal_rate_pct"), 50, 90)},
+    ])
+    loss = weighted([
+        {"metric": "昨日涨停大亏率", "value": previous.get("loss_below_minus_5_rate_pct"), "weight": 20, "normalized": rising(previous.get("loss_below_minus_5_rate_pct"), 3, 35)},
+        {"metric": "中位股大亏率", "value": middle.get("loss_below_minus_5_rate_pct"), "weight": 25, "normalized": rising(middle.get("loss_below_minus_5_rate_pct"), 3, 40)},
+        {"metric": "高位核心负反馈", "value": high.get("loss_below_minus_5_rate_pct"), "weight": 20, "normalized": rising(high.get("loss_below_minus_5_rate_pct"), 0, 35)},
+        {"metric": "跌停数量", "value": raw.get("limit_down_count"), "weight": 15, "normalized": rising(raw.get("limit_down_count"), 0, 20)},
+        {"metric": "天地板及严重亏损", "value": None, "weight": 10, "normalized": None},
+        {"metric": "炸板股次日负反馈", "value": None, "weight": 10, "normalized": None},
+    ])
+    width = raw.get("market_width") or {}
+    width_pct = (width.get("up") / (width.get("up") + width.get("down")) * 100
+                 if width.get("available") and (width.get("up") or 0) + (width.get("down") or 0) else None)
+    mainline = themes[0] if themes else None
+    seal = weighted([
+        {"metric": "封板率", "value": raw.get("seal_rate_pct"), "weight": 60, "normalized": rising(raw.get("seal_rate_pct"), 50, 90)},
+        {"metric": "炸板率", "value": raw.get("broken_rate_pct"), "weight": 40, "normalized": falling(raw.get("broken_rate_pct"), 10, 50)},
+    ])
+    packs = {
+        "R": relay, "P": profit, "L": loss,
+        "C": leader,
+        "M": ({"score": mainline.get("score"), "coverage_pct": (mainline.get("explanation") or {}).get("coverage_pct", 0), "components": (mainline.get("explanation") or {}).get("components", []), "missing_metrics": (mainline.get("explanation") or {}).get("missing_metrics", [])} if mainline else {"score": None, "coverage_pct": 0, "components": [], "missing_metrics": ["主线结构"]}),
+        "W": {"score": None if width_pct is None else round(rising(width_pct, 25, 75)), "coverage_pct": 100 if width_pct is not None else 0, "components": [{"metric": "上涨家数占比", "value": width_pct}], "missing_metrics": [] if width_pct is not None else ["市场宽度"]},
+        "S": seal,
+    }
+    names = {"R": "接力生态", "P": "赚钱效应", "L": "亏钱风险", "C": "龙头状态", "M": "主线强度", "W": "市场宽度", "S": "封板质量"}
+    for key, value in packs.items():
+        value.update({"name": names[key], "valid": value.get("score") is not None,
+                      "confidence": "high" if value.get("coverage_pct", 0) >= 85 else "medium" if value.get("coverage_pct", 0) >= 65 else "low"})
+    return packs
+
+
+def cycle_state(factors: dict, history: dict, small: dict) -> tuple[dict, list[str]]:
+    score = lambda key: factors.get(key, {}).get("score")
+    r, p, l, c, m = (score(key) for key in ("R", "P", "L", "C", "M"))
+    valid = sum(value is not None for value in (r, p, l, c, m))
+    sessions = history.get("sessions") or []
+    tags = []
+    if valid < 3:
+        return {"confirmed_large_cycle": None, "stage": "数据不足 / 暂无法判断", "candidate_large_cycle": None, "candidate_stage": None, "confirmation_progress": {"current": 0, "required": 3, "stage": "insufficient_data"}, "confidence": "low", "trend": "—"}, tags
+    extreme_risk = (l or 0) >= 75 or ((sessions[-1].get("limit_down_count", 0) if sessions else 0) >= 15 and (r or 100) < 40)
+    if extreme_risk or ((l or 0) >= 60 and (r or 100) < 45 and (p or 100) < 45):
+        large, stage, trend = "下降退潮", "退潮加速" if extreme_risk else "退潮确认", "↓"
+    elif (c or 0) >= 62 and (m or 0) >= 52 and (r or 0) >= 48 and (p or 0) >= 50 and (l or 100) < 55:
+        large, trend = "上升周期", "↑"
+        if (c or 0) >= 75 and (m or 0) >= 68 and (r or 0) >= 65 and (p or 0) >= 65:
+            stage = "主升"
+        elif (m or 0) >= 60 and (r or 0) >= 55:
+            stage = "发酵"
+        else:
+            stage = "启动确认"
+    elif (c or 0) >= 60 and ((r or 100) < 48 or (p or 100) < 48):
+        large, stage, trend = "高位震荡", "首次分歧", "↓"
+        tags.append("核心抱团")
+    else:
+        large, trend = "低位混沌", "→"
+        improving = sum(value is not None and value >= 52 for value in (r, p, c, m))
+        stage = "新周期试错" if improving >= 3 and (l or 100) < 60 else "方向不明"
+        if stage == "新周期试错": tags.append("新周期试错")
+    if sessions:
+        current_up = sessions[-1].get("limit_up_count")
+        prior = sorted(row.get("limit_up_count") for row in sessions[:-1] if row.get("limit_up_count") is not None)
+        if prior and current_up is not None and current_up <= prior[max(0, int(len(prior) * .2) - 1)] and (l or 0) >= 55:
+            tags.append("冰点")
+    confidence = "high" if len(sessions) >= 20 and valid == 5 else "medium" if len(sessions) >= 10 and valid >= 4 else "low"
+    return {"confirmed_large_cycle": large, "stage": stage, "candidate_large_cycle": None, "candidate_stage": None, "confirmation_progress": {"current": 3 if confidence == "high" else 2 if confidence == "medium" else 1, "required": 3, "stage": "confirmed" if confidence == "high" else "history_accumulating"}, "confidence": confidence, "trend": trend}, tags
+
+
+def exposure_and_switch(cycle: dict, small: dict, factors: dict) -> tuple[dict, dict]:
+    key = (cycle.get("confirmed_large_cycle"), cycle.get("stage"))
+    bands = {
+        ("下降退潮", "退潮加速"): ([0, 10], 10, 5),
+        ("下降退潮", "退潮确认"): ([0, 20], 20, 15),
+        ("下降退潮", "止跌修复"): ([10, 20], 25, 20),
+        ("低位混沌", "方向不明"): ([10, 30], 35, 25),
+        ("低位混沌", "新周期试错"): ([20, 35], 40, 35),
+        ("上升周期", "启动确认"): ([35, 55], 60, 50),
+        ("上升周期", "发酵"): ([50, 70], 75, 65),
+        ("上升周期", "主升"): ([65, 85], 90, 78),
+        ("高位震荡", "首次分歧"): ([40, 60], 65, 52),
+    }
+    base, hard_cap, base_switch = bands.get(key, ([0, 0], 0, 0))
+    small_adjust = {"强修复": 8, "修复": 4, "弱修复": 4, "回流": 8, "一致": 3, "弱分歧": -5, "分歧": -5, "强分歧": -10, "转弱": -12, "恐慌释放": -8}.get(small.get("stage"), 0)
+    structural = [factors.get(name, {}).get("score") for name in ("R", "P", "C", "M")]
+    good = sum(value is not None and value >= 60 for value in structural)
+    weak = sum(value is not None and value < 40 for value in structural)
+    structure_adjust = 8 if good == 4 else 5 if good == 3 else 2 if good == 2 else -8 if weak >= 3 else -4 if weak >= 2 else 0
+    loss = factors.get("L", {}).get("score")
+    risk_penalty = 20 if loss is not None and loss >= 75 else 10 if loss is not None and loss >= 60 else 0
+    switch = round(clamp(base_switch + small_adjust + structure_adjust - risk_penalty))
+    final_low = max(0, min(hard_cap, base[0] + min(small_adjust, 0)))
+    final_high = max(final_low, min(hard_cap, base[1] + small_adjust - risk_penalty))
+    confidence_cap = 100 if cycle.get("confidence") == "high" else 70 if cycle.get("confidence") == "medium" else 40
+    hard_cap = min(hard_cap, confidence_cap)
+    final_low, final_high = min(final_low, hard_cap), min(final_high, hard_cap)
+    level = "防守" if switch <= 15 else "谨慎" if switch <= 30 else "试错" if switch <= 45 else "可参与" if switch <= 60 else "积极" if switch <= 75 else "强势" if switch <= 90 else "极端一致"
+    exposure = {"base_range": base, "small_cycle_adjustment": small_adjust, "structure_adjustment": structure_adjust, "risk_penalty": risk_penalty, "confidence_cap": confidence_cap, "final_range": [final_low, final_high], "hard_cap": hard_cap}
+    market_switch = {"value": switch, "level": level, "model_version": "cycle_switch_v1", "confidence": cycle.get("confidence"), "limiting_reasons": [name for name, value in (("亏钱效应偏高", loss is not None and loss >= 60), ("历史样本不足20日", cycle.get("confidence") != "high")) if value]}
+    return exposure, market_switch
 
 
 def main() -> None:
     emotion, history, intraday = read(EMOTION), read(HISTORY), read(INTRADAY)
     leader, ecology = leader_strength(emotion), market_ecology(emotion)
     themes = theme_cycles(emotion)
-    large, small = large_cycle(emotion, history, leader, ecology), small_cycle(intraday)
+    legacy_large, small = large_cycle(emotion, history, leader, ecology), small_cycle(intraday)
     mainline = themes[0] if themes else None
+    factors = factor_pack(emotion, history, leader, ecology, themes)
+    cycle, tags = cycle_state(factors, history, small)
+    exposure, market_switch = exposure_and_switch(cycle, small, factors)
+    large = {**cycle, "score": market_switch.get("value"), "method": "状态机 + 结构门槛 + 连续性；不使用均线", "tags": tags,
+             "supporting_factors": legacy_large.get("supporting_factors", []), "pressure_factors": legacy_large.get("pressure_factors", []),
+             "conclusion": f"{cycle.get('confirmed_large_cycle') or '数据不足'}·{cycle.get('stage')}"}
     missing = sorted(set(leader.get("missing_metrics", []) + ecology.get("missing_metrics", []) + ([] if small.get("timeline_ready") else ["完整日内情绪时间轴"])))
     def component(name):
         return next((c.get("normalized") for c in ecology.get("components", []) if c.get("metric") == name), None)
     payload = {
-        "schema_version": 1, "ok": True, "trade_date": emotion.get("trade_date"), "generated_at": datetime.now(timezone.utc).isoformat(),
+        "schema_version": 2, "ok": True, "trade_date": emotion.get("trade_date"), "generated_at": datetime.now(timezone.utc).isoformat(),
         "principles": ["不使用5/10/20日均线判断情绪周期", "龙头强度与市场生态分开计算", "周期切换采用评分、结构、连续性三层确认", "缺失数据不补造、不按0分处理"],
-        "dashboard": {"market_composite": large.get("score"), "leader_strength": leader.get("score"), "market_ecology": ecology.get("score"), "market_width": component("市场上涨宽度"), "relay_ecology": component("连板晋级率"), "mainline_strength": mainline.get("score") if mainline else None, "loss_effect": None if component("中位股大亏比例") is None else round(100 - component("中位股大亏比例")), "structure_label": matrix_label(leader, ecology)},
+        "dashboard": {"market_composite": market_switch.get("value"), "leader_strength": leader.get("score"), "market_ecology": ecology.get("score"), "market_width": factors["W"].get("score"), "relay_ecology": factors["R"].get("score"), "mainline_strength": factors["M"].get("score"), "loss_effect": factors["L"].get("score"), "structure_label": matrix_label(leader, ecology)},
         "large_cycle": large, "medium_cycle": {"mainline": mainline, "themes": themes}, "small_cycle": small,
+        "cycle": {**cycle, "small_cycle_state": small.get("stage"), "small_cycle_path": [row.get("node") for row in small.get("timeline", [])], "tags": tags},
+        "factors": factors, "exposure": exposure, "market_switch": market_switch,
         "leader_ecology_matrix": {"leader_strength": leader, "market_ecology": ecology, "label": matrix_label(leader, ecology)},
-        "data_quality": {"missing": missing, "analysis_allowed": bool(large.get("score") is not None and mainline), "small_cycle_allowed": bool(small.get("timeline_ready"))},
+        "data_quality": {"missing": missing, "analysis_allowed": sum(factors[k].get("valid", False) for k in ("R", "P", "L", "C", "M")) >= 3, "small_cycle_allowed": bool(small.get("timeline_ready")), "complete_trading_days": len(history.get("sessions") or [])},
     }
     write(OUTPUT, payload)
     print(json.dumps({"trade_date": payload["trade_date"], "large_cycle": large.get("stage"), "structure": payload["dashboard"]["structure_label"], "mainline": mainline.get("theme") if mainline else None, "small_cycle": small.get("stage"), "missing": missing}, ensure_ascii=False))

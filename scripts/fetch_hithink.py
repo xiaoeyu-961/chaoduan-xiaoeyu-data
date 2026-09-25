@@ -14,6 +14,33 @@ from snapshot_store import persist_failure, persist_snapshot
 DATA = Path("data")
 
 
+def read_json(path: Path, default=None):
+    try:
+        return json.loads(path.read_text(encoding="utf-8"))
+    except (FileNotFoundError, json.JSONDecodeError):
+        return {} if default is None else default
+
+
+def same_market_fingerprint(previous: dict, current: dict) -> bool:
+    """Detect a provider response that is still frozen on the prior session."""
+    old_indices = {
+        row.get("name"): (row.get("price"), row.get("change"), row.get("amount"))
+        for row in previous.get("indices") or []
+    }
+    new_indices = {
+        row.get("name"): (row.get("price"), row.get("change"), row.get("amount"))
+        for row in current.get("indices") or []
+    }
+    return bool(old_indices and old_indices == new_indices)
+
+
+def mark_github_output(name: str, value: str) -> None:
+    output = os.environ.get("GITHUB_OUTPUT")
+    if output:
+        with open(output, "a", encoding="utf-8") as handle:
+            handle.write(f"{name}={value}\n")
+
+
 def save(path: Path, payload: dict) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     tmp = path.with_suffix(".tmp")
@@ -178,7 +205,7 @@ def enrich(date: str, market: dict, facts: dict) -> None:
         names = {row["thscode"]: row["name"] for row in items}
         leaders = sorted(quotes, key=lambda row: row.get("price_change_ratio_pct")
                          if row.get("price_change_ratio_pct") is not None else float("-inf"),
-                         reverse=True)[:10]
+                         reverse=True)[:30]
         up_codes = {row["thscode"]: row for row in market["limitUps"]}
         sectors = []
         for leader in leaders:
@@ -204,7 +231,7 @@ def enrich(date: str, market: dict, facts: dict) -> None:
         facts["sectors"] = {"category": "cn_concept", "catalog_count": len(items),
                             "quotes_count": len(quotes), "top_by_change_pct": sectors,
                             "strength_ready": False,
-                            "missing": "仅覆盖当日涨幅前10概念；板块持续性和完整强弱排行待补。"}
+                            "missing": "覆盖当日涨幅前30概念；全量涨停交集、概念聚类与跨日持续性待补。"}
         # Feed the verified sector/member intersection into the normal market
         # contract so the emotion builder does not discard official sectors.
         market["themes"] = [{
@@ -223,7 +250,18 @@ def enrich(date: str, market: dict, facts: dict) -> None:
 def main() -> None:
     date = os.environ.get("MARKET_TRADE_DATE") or datetime.now(CN_TZ).strftime("%Y-%m-%d")
     try:
+        previous_market = read_json(DATA / "market_latest.json")
         market, facts = build_market(date)
+        empty_pools = not market["limitUps"] and not market["broken"] and not market["limitDown"]
+        requested_new_date = bool(previous_market.get("tradeDate") and previous_market.get("tradeDate") < date)
+        if requested_new_date and empty_pools and same_market_fingerprint(previous_market, market):
+            # Holiday or stale-provider response: preserve the last valid trade
+            # date and do not create a false zero-market snapshot.
+            mark_github_output("market_skipped", "true")
+            print(json.dumps({"trade_date": date, "skipped": True,
+                              "reason": "non_trading_or_stale_provider",
+                              "preserved_trade_date": previous_market.get("tradeDate")}, ensure_ascii=False))
+            return
         enrich(date, market, facts)
         save(Path(os.environ.get("MARKET_OUTPUT", DATA / "market_latest.json")), market)
         save(Path(os.environ.get("HITHINK_OUTPUT", DATA / "hithink_latest.json")), facts)
