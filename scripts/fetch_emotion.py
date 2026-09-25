@@ -8,6 +8,7 @@ and an intraday timeline.  Missing fields stay null and are listed explicitly.
 from __future__ import annotations
 
 import json
+import re
 import statistics
 from collections import Counter, defaultdict
 from datetime import datetime
@@ -273,13 +274,23 @@ def official_theme_structure(market: dict) -> list[dict]:
     return result
 
 
+def reason_tokens(reason: str | None) -> list[str]:
+    """Split the provider's compound limit-up reason into usable theme tags."""
+    return [token.strip() for token in re.split(r"[+＋]", str(reason or ""))
+            if token.strip()]
+
+
+def reason_theme_counts(market: dict) -> Counter:
+    return Counter(token for row in market.get("limitUps") or []
+                   for token in reason_tokens(row.get("limitReason")))
+
+
 def reason_theme_structure(market: dict) -> list[dict]:
     """Fallback breadth grouped by the provider's official limit-up reason."""
     grouped: dict[str, list[dict]] = defaultdict(list)
     for row in market.get("limitUps") or []:
-        reason = str(row.get("limitReason") or "").strip()
-        if reason:
-            grouped[reason].append(row)
+        for token in reason_tokens(row.get("limitReason")):
+            grouped[token].append(row)
     result = []
     for reason, rows in grouped.items():
         heights = Counter(int(row.get("height") or 1) for row in rows)
@@ -503,10 +514,15 @@ def main() -> None:
         "first_board_feedback": low_feedback,
         "market_width": width,
     }
+    reason_counts = reason_theme_counts(market)
     leaders = [
         {
             "code": row["code"], "name": row["name"],
-            "theme": row.get("theme") or row.get("limitReason"),
+            "theme": row.get("theme") or max(
+                reason_tokens(row.get("limitReason")),
+                key=lambda token: (reason_counts[token],
+                                   -reason_tokens(row.get("limitReason")).index(token)),
+                default=None),
             "theme_source": "concept_membership" if row.get("theme") else "limit_up_reason",
             "height": row["height"], "first_limit": row["firstLimit"],
             "last_limit": row["lastLimit"], "open_count": row["openCount"],

@@ -81,14 +81,24 @@ def leader_strength(emotion: dict) -> dict:
     theme_count = next((t.get("limit_up_count") for t in emotion.get("themes", []) if t.get("name") == leader.get("theme")), None)
     open_count = leader.get("open_count")
     retention = leader.get("seal_retention_pct")
-    stability_value = open_count if open_count is not None else retention
-    stability_score = (falling(open_count, 0, 5) if open_count is not None
-                       else rising(retention, 20, 100))
+    if open_count is not None:
+        stability_value, stability_score, stability_basis = open_count, falling(open_count, 0, 5), "开板次数"
+    elif retention is not None:
+        stability_value, stability_score, stability_basis = retention, rising(retention, 20, 100), "当前封单额/峰值封单额"
+    elif seal_ratio is not None:
+        # Historical limit-up responses may expose max_seal_money as null.
+        # The stock is still in the closing limit-up pool, so use a disclosed
+        # proxy rather than pretending an unavailable open-count is zero.
+        stability_value = round(seal_ratio, 2)
+        stability_score = 40 + rising(seal_ratio, 1, 50) * .6
+        stability_basis = "收盘仍封住+封单额/成交额代理"
+    else:
+        stability_value, stability_score, stability_basis = None, None, "数据缺失"
     result = weighted([
         {"metric": "龙头高度", "value": leader.get("height"), "weight": 30, "normalized": rising(leader.get("height"), 2, 7)},
         {"metric": "封板稳定性", "value": stability_value, "weight": 25,
          "normalized": stability_score,
-         "basis": "开板次数" if open_count is not None else "当前封单额/峰值封单额"},
+         "basis": stability_basis},
         {"metric": "首次封板主动性", "value": leader.get("first_limit"), "weight": 20, "normalized": falling(first_minutes, 570, 870)},
         {"metric": "封单/成交额", "value": None if seal_ratio is None else round(seal_ratio, 2), "weight": 15, "normalized": rising(seal_ratio, 1, 50)},
         {"metric": "龙头所在题材涨停数", "value": theme_count, "weight": 10, "normalized": rising(theme_count, 1, 8)},

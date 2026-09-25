@@ -53,8 +53,8 @@ class SourceIntegrity(unittest.TestCase):
 
     def test_leader_quality_uses_seal_retention_and_reason_breadth(self):
         market = {"themes": [], "limitUps": [
-            {"code": "1", "name": "甲", "height": 4, "limitReason": "机器人"},
-            {"code": "2", "name": "乙", "height": 1, "limitReason": "机器人"},
+            {"code": "1", "name": "甲", "height": 4, "limitReason": "收购+机器人"},
+            {"code": "2", "name": "乙", "height": 1, "limitReason": "机器人+扩产"},
         ]}
         themes = merged_theme_structure(market)
         emotion = {"themes": themes, "leader_candidates": [{
