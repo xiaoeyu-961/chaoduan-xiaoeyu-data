@@ -273,6 +273,42 @@ def official_theme_structure(market: dict) -> list[dict]:
     return result
 
 
+def reason_theme_structure(market: dict) -> list[dict]:
+    """Fallback breadth grouped by the provider's official limit-up reason."""
+    grouped: dict[str, list[dict]] = defaultdict(list)
+    for row in market.get("limitUps") or []:
+        reason = str(row.get("limitReason") or "").strip()
+        if reason:
+            grouped[reason].append(row)
+    result = []
+    for reason, rows in grouped.items():
+        heights = Counter(int(row.get("height") or 1) for row in rows)
+        result.append({
+            "code": None, "name": reason, "change_pct": None,
+            "turnover_cny": None, "member_count": None,
+            "limit_up_count": len(rows),
+            "first_board_count": heights.get(1, 0),
+            "second_board_count": heights.get(2, 0),
+            "third_board_count": heights.get(3, 0),
+            "high_board_count": sum(v for k, v in heights.items() if k >= 4),
+            "max_height": max(heights, default=0), "active_days_3": None,
+            "leaders": [{"code": row.get("code"), "name": row.get("name"),
+                         "height": row.get("height")} for row in sorted(
+                             rows, key=lambda item: -(item.get("height") or 0))[:4]],
+            "source": "同花顺涨停原因聚合",
+        })
+    return result
+
+
+def merged_theme_structure(market: dict) -> list[dict]:
+    official = official_theme_structure(market)
+    known = {row.get("name") for row in official}
+    fallback = [row for row in reason_theme_structure(market) if row.get("name") not in known]
+    return sorted(official + fallback,
+                  key=lambda row: (-(row.get("limit_up_count") or 0),
+                                   -(row.get("max_height") or 0), row.get("name") or ""))
+
+
 def snapshot_slot(timestamp: str) -> str | None:
     try:
         stamp = datetime.fromisoformat(timestamp.replace("Z", "+00:00")).astimezone(CN_TZ)
@@ -469,10 +505,17 @@ def main() -> None:
     }
     leaders = [
         {
-            "code": row["code"], "name": row["name"], "theme": row["theme"],
+            "code": row["code"], "name": row["name"],
+            "theme": row.get("theme") or row.get("limitReason"),
+            "theme_source": "concept_membership" if row.get("theme") else "limit_up_reason",
             "height": row["height"], "first_limit": row["firstLimit"],
             "last_limit": row["lastLimit"], "open_count": row["openCount"],
-            "seal_amount": row["sealAmount"], "amount": row["amount"],
+            "seal_amount": row["sealAmount"],
+            "max_seal_amount": row.get("maxSealAmount"),
+            "seal_retention_pct": (round(row["sealAmount"] / row["maxSealAmount"] * 100, 2)
+                                   if row.get("sealAmount") is not None
+                                   and row.get("maxSealAmount") else None),
+            "amount": row["amount"],
         }
         for row in sorted(latest["stocks"], key=lambda item: (-item["height"], item["firstLimit"]))[:10]
     ]
@@ -485,7 +528,7 @@ def main() -> None:
         "principle": "仅保存事实数据，不在采集层生成周期标签或主观评分。",
         "market_ecology": ecology,
         "leader_candidates": leaders,
-        "themes": official_theme_structure(market) if hithink else theme_structure(sessions),
+        "themes": merged_theme_structure(market) if hithink else theme_structure(sessions),
         "intraday": {
             "snapshot_count": intraday["data_quality"]["snapshot_count"],
             "timeline_ready": intraday["data_quality"]["timeline_ready"],

@@ -3,7 +3,8 @@ from unittest.mock import patch
 
 from hithink_client import HithinkError, all_quotes, pool
 from fetch_hithink import build_market
-from fetch_emotion import normalize_trading_dates
+from fetch_emotion import merged_theme_structure, normalize_trading_dates
+from build_cycle_analysis import leader_strength
 
 
 class SourceIntegrity(unittest.TestCase):
@@ -34,7 +35,8 @@ class SourceIntegrity(unittest.TestCase):
                       {"thscode": "654321.SZ", "price_change_ratio_pct": None, "turnover": None}]
         with patch("fetch_hithink.pool", side_effect=[[{
                 "ticker": "123456", "thscode": "123456.SZ", "name": "甲",
-                "continue_day_cnt": 2, "limit_up_reason": "测试", "limit_up_time": "09:40"}], [], []]), \
+                "continue_day_cnt": 2, "limit_up_reason": "测试", "limit_up_time": "09:40",
+                "seal_money": 80, "max_seal_money": 100}], [], []]), \
              patch("fetch_hithink.all_quotes", return_value=(quote_rows, 2)), \
              patch("fetch_hithink.get", return_value={"item": index}):
             market, facts = build_market("2026-09-22")
@@ -46,7 +48,24 @@ class SourceIntegrity(unittest.TestCase):
         self.assertTrue(market["breadth"]["complete"])
         self.assertEqual(facts["market_amount_cny"], 2)
         self.assertEqual(market["limitUps"][0]["limitReason"], "测试")
+        self.assertEqual(market["limitUps"][0]["maxSealAmount"], 100)
         self.assertEqual(market["limitUps"][0]["amount"], 100)
+
+    def test_leader_quality_uses_seal_retention_and_reason_breadth(self):
+        market = {"themes": [], "limitUps": [
+            {"code": "1", "name": "甲", "height": 4, "limitReason": "机器人"},
+            {"code": "2", "name": "乙", "height": 1, "limitReason": "机器人"},
+        ]}
+        themes = merged_theme_structure(market)
+        emotion = {"themes": themes, "leader_candidates": [{
+            "code": "1", "name": "甲", "theme": "机器人", "height": 4,
+            "open_count": None, "seal_retention_pct": 80,
+            "first_limit": "09:35", "seal_amount": 80, "amount": 100,
+        }]}
+        result = leader_strength(emotion)
+        self.assertNotIn("封板稳定性", result["missing_metrics"])
+        self.assertNotIn("龙头所在题材涨停数", result["missing_metrics"])
+        self.assertEqual(next(row for row in themes if row["name"] == "机器人")["limit_up_count"], 2)
 
 
 if __name__ == "__main__":

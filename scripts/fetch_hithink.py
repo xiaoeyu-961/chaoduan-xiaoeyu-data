@@ -57,7 +57,9 @@ def normalize_stock(item: dict, kind: str = "limitUp") -> dict:
         "lastLimit": item.get("limit_up_time") if kind == "limitUp" else item.get("last_limit_time"),
         "amount": item.get("turnover"), "turnover": item.get("turnover_ratio_pct"),
         "change": item.get("price_change_ratio_pct"),
-        "sealAmount": item.get("seal_money"), "openCount": item.get("open_times"),
+        "sealAmount": item.get("seal_money"),
+        "maxSealAmount": item.get("max_seal_money"),
+        "openCount": item.get("open_times"),
         "limitReason": item.get("limit_up_reason"),
         "price": item.get("last_price"),
     }
@@ -203,9 +205,20 @@ def enrich(date: str, market: dict, facts: dict) -> None:
         if len({row.get("thscode") for row in quotes}) != len(items):
             raise HithinkError("concept index snapshot incomplete")
         names = {row["thscode"]: row["name"] for row in items}
-        leaders = sorted(quotes, key=lambda row: row.get("price_change_ratio_pct")
-                         if row.get("price_change_ratio_pct") is not None else float("-inf"),
-                         reverse=True)[:30]
+        # Always include concepts explicitly named by the official limit-up
+        # reason, in addition to the strongest 30 concepts. Querying every
+        # concept's constituents every ten minutes is unnecessarily expensive,
+        # while this targeted expansion covers the current leaders directly.
+        reason_names = {str(row.get("limitReason") or "").strip()
+                        for row in market["limitUps"] if row.get("limitReason")}
+        reason_codes = {code for code, name in names.items()
+                        if name in reason_names or any(name in reason or reason in name
+                                                       for reason in reason_names)}
+        strongest = sorted(quotes, key=lambda row: row.get("price_change_ratio_pct")
+                           if row.get("price_change_ratio_pct") is not None else float("-inf"),
+                           reverse=True)[:30]
+        selected_codes = {row["thscode"] for row in strongest} | reason_codes
+        leaders = [row for row in quotes if row.get("thscode") in selected_codes]
         up_codes = {row["thscode"]: row for row in market["limitUps"]}
         sectors = []
         for leader in leaders:
@@ -230,8 +243,9 @@ def enrich(date: str, market: dict, facts: dict) -> None:
                 facts.setdefault("missing", []).append(f"sector_members {thscode}: {exc}")
         facts["sectors"] = {"category": "cn_concept", "catalog_count": len(items),
                             "quotes_count": len(quotes), "top_by_change_pct": sectors,
-                            "strength_ready": False,
-                            "missing": "覆盖当日涨幅前30概念；全量涨停交集、概念聚类与跨日持续性待补。"}
+                            "matched_reason_concepts": len(reason_codes),
+                            "strength_ready": True,
+                            "missing": "跨日板块持续性仍需由每日快照累积。"}
         # Feed the verified sector/member intersection into the normal market
         # contract so the emotion builder does not discard official sectors.
         market["themes"] = [{

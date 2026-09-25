@@ -79,9 +79,16 @@ def leader_strength(emotion: dict) -> dict:
     first_minutes = (int(compact_first[:2]) * 60 + int(compact_first[2:4])
                      if len(compact_first) == 4 and compact_first.isdigit() else None)
     theme_count = next((t.get("limit_up_count") for t in emotion.get("themes", []) if t.get("name") == leader.get("theme")), None)
+    open_count = leader.get("open_count")
+    retention = leader.get("seal_retention_pct")
+    stability_value = open_count if open_count is not None else retention
+    stability_score = (falling(open_count, 0, 5) if open_count is not None
+                       else rising(retention, 20, 100))
     result = weighted([
         {"metric": "龙头高度", "value": leader.get("height"), "weight": 30, "normalized": rising(leader.get("height"), 2, 7)},
-        {"metric": "封板稳定性", "value": leader.get("open_count"), "weight": 25, "normalized": falling(leader.get("open_count"), 0, 5)},
+        {"metric": "封板稳定性", "value": stability_value, "weight": 25,
+         "normalized": stability_score,
+         "basis": "开板次数" if open_count is not None else "当前封单额/峰值封单额"},
         {"metric": "首次封板主动性", "value": leader.get("first_limit"), "weight": 20, "normalized": falling(first_minutes, 570, 870)},
         {"metric": "封单/成交额", "value": None if seal_ratio is None else round(seal_ratio, 2), "weight": 15, "normalized": rising(seal_ratio, 1, 50)},
         {"metric": "龙头所在题材涨停数", "value": theme_count, "weight": 10, "normalized": rising(theme_count, 1, 8)},
