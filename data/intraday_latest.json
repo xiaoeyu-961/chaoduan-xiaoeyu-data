@@ -66,12 +66,36 @@
         "changePct": 54.86,
         "direction": "增量"
       }
+    },
+    {
+      "time": "2026-09-25T05:52:47.762285+00:00",
+      "source": "同花顺官方 Financial-API",
+      "limit_up_count": 0,
+      "limit_down_count": 0,
+      "broken_count": 0,
+      "broken_rate_pct": null,
+      "promotion_rate_pct": 25.49,
+      "highest_board": null,
+      "leader": null,
+      "strongest_theme": "中船系",
+      "slot": "13:45",
+      "turnover_cny": 1653357360000,
+      "amount_comparison": {
+        "status": "ready",
+        "time": "13:45",
+        "previousTradeDate": "2026-09-24",
+        "current": 1653357360000,
+        "previous": 1276225060000,
+        "difference": 377132300000,
+        "changePct": 29.55,
+        "direction": "增量"
+      }
     }
   ],
   "data_quality": {
-    "snapshot_count": 3,
+    "snapshot_count": 4,
     "valid_snapshot_count": 0,
-    "excluded_snapshot_count": 3,
+    "excluded_snapshot_count": 4,
     "timeline_ready": false,
     "note": "仅接受同日北京时间交易时段的有效分钟快照；需覆盖09:35、午前、13:45附近及14:45后的尾盘。"
   }
