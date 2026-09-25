@@ -1,18 +1,22 @@
 {
   "schema_version": "market_status_v1",
-  "market_date": "2026-09-24",
-  "latest_snapshot_id": "2026-09-24-200540-r0",
-  "latest_snapshot": "2026-09-24T20:05:40.425820+08:00",
-  "session": "manual",
+  "market_date": "2026-09-25",
+  "latest_snapshot_id": "2026-09-25-094615-r0",
+  "latest_snapshot": "2026-09-25T09:46:15.804044+08:00",
+  "session": "open_check",
   "source": "同花顺官方 Financial-API",
-  "status": "complete",
-  "missing_fields": [],
+  "status": "partial",
+  "missing_fields": [
+    "limitUps"
+  ],
   "last_error": null,
   "datasets": {
     "market": {
-      "status": "complete",
-      "updated_at": "2026-09-24T20:05:40.425820+08:00",
-      "missing_fields": []
+      "status": "partial",
+      "updated_at": "2026-09-25T09:46:15.804044+08:00",
+      "missing_fields": [
+        "limitUps"
+      ]
     }
   }
 }
