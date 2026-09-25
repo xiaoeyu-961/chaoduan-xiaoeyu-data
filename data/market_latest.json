@@ -4,7 +4,7 @@
   "source": "同花顺官方 Financial-API",
   "sourceMode": "scheduled-snapshot",
   "tradeDate": "2026-09-25",
-  "updatedAt": "2026-09-25T01:46:00.169708+00:00",
+  "updatedAt": "2026-09-25T02:35:51.708672+00:00",
   "indices": [
     {
       "code": "1A0001",
@@ -175,5 +175,15 @@
       "缺少有效涨跌幅的停牌、退市或未交易标的从涨跌家数统计母体中剔除，不计入平盘。",
       "涨停原因不是概念板块归属；板块需单独使用成分股接口。"
     ]
+  },
+  "amountComparison": {
+    "status": "ready",
+    "time": "10:30",
+    "previousTradeDate": "2026-09-24",
+    "current": 1653357360000,
+    "previous": 757371240000,
+    "difference": 895986120000,
+    "changePct": 118.3,
+    "direction": "增量"
   }
 }
