@@ -2,7 +2,7 @@
   "schema_version": 2,
   "ok": true,
   "trade_date": "2026-09-24",
-  "generated_at": "2026-09-25T08:19:19.329671+00:00",
+  "generated_at": "2026-09-25T09:05:26.472344+00:00",
   "principles": [
     "不使用5/10/20日均线判断情绪周期",
     "龙头强度与市场生态分开计算",
@@ -25,11 +25,11 @@
     "candidate_large_cycle": null,
     "candidate_stage": null,
     "confirmation_progress": {
-      "current": 1,
+      "current": 3,
       "required": 3,
-      "stage": "history_accumulating"
+      "stage": "confirmed"
     },
-    "confidence": "low",
+    "confidence": "high",
     "trend": "→",
     "score": 31,
     "method": "状态机 + 结构门槛 + 连续性；不使用均线",
@@ -1097,11 +1097,11 @@
     "candidate_large_cycle": null,
     "candidate_stage": null,
     "confirmation_progress": {
-      "current": 1,
+      "current": 3,
       "required": 3,
-      "stage": "history_accumulating"
+      "stage": "confirmed"
     },
-    "confidence": "low",
+    "confidence": "high",
     "trend": "→",
     "small_cycle_state": "回流",
     "small_cycle_path": [
@@ -1435,7 +1435,7 @@
     "small_cycle_adjustment": 8,
     "structure_adjustment": 8,
     "risk_penalty": 10,
-    "confidence_cap": 40,
+    "confidence_cap": 100,
     "final_range": [
       10,
       28
@@ -1446,10 +1446,9 @@
     "value": 31,
     "level": "试错",
     "model_version": "cycle_switch_v1",
-    "confidence": "low",
+    "confidence": "high",
     "limiting_reasons": [
-      "亏钱效应偏高",
-      "历史样本不足20日"
+      "亏钱效应偏高"
     ]
   },
   "leader_ecology_matrix": {
@@ -1581,6 +1580,6 @@
     ],
     "analysis_allowed": true,
     "small_cycle_allowed": true,
-    "complete_trading_days": 8
+    "complete_trading_days": 20
   }
 }

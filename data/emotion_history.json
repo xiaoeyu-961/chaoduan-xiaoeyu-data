@@ -2,7 +2,233 @@
   "schema_version": 1,
   "ok": true,
   "updated_at": "2026-09-24T08:08:11.405384+00:00",
+  "collection": {
+    "date_source": "同花顺交易日历",
+    "requested_dates": [
+      "2026-08-28",
+      "2026-08-31",
+      "2026-09-01",
+      "2026-09-02",
+      "2026-09-03",
+      "2026-09-04",
+      "2026-09-07",
+      "2026-09-08",
+      "2026-09-09",
+      "2026-09-10",
+      "2026-09-11",
+      "2026-09-14",
+      "2026-09-15",
+      "2026-09-16",
+      "2026-09-17",
+      "2026-09-18",
+      "2026-09-21",
+      "2026-09-22",
+      "2026-09-23",
+      "2026-09-24"
+    ],
+    "requested_count": 20,
+    "collected_count": 20,
+    "failed_dates": {},
+    "complete": true
+  },
   "sessions": [
+    {
+      "date": "2026-08-28",
+      "limit_up_count": 81,
+      "broken_count": 16,
+      "limit_down_count": 2,
+      "seal_rate_pct": 83.51,
+      "highest_board": 7,
+      "ladder_highest_board": 7,
+      "ladder_listed_stocks": 17,
+      "height_counts": {
+        "1": 64,
+        "2": 9,
+        "3": 3,
+        "4": 3,
+        "7": 1,
+        "5": 1
+      }
+    },
+    {
+      "date": "2026-08-31",
+      "limit_up_count": 87,
+      "broken_count": 30,
+      "limit_down_count": 13,
+      "seal_rate_pct": 74.36,
+      "highest_board": 6,
+      "ladder_highest_board": 6,
+      "ladder_listed_stocks": 18,
+      "height_counts": {
+        "1": 69,
+        "3": 4,
+        "2": 10,
+        "5": 2,
+        "4": 1,
+        "6": 1
+      }
+    },
+    {
+      "date": "2026-09-01",
+      "limit_up_count": 83,
+      "broken_count": 6,
+      "limit_down_count": 0,
+      "seal_rate_pct": 93.26,
+      "highest_board": 7,
+      "ladder_highest_board": 7,
+      "ladder_listed_stocks": 18,
+      "height_counts": {
+        "1": 65,
+        "2": 9,
+        "3": 5,
+        "6": 2,
+        "7": 1,
+        "4": 1
+      }
+    },
+    {
+      "date": "2026-09-02",
+      "limit_up_count": 51,
+      "broken_count": 15,
+      "limit_down_count": 8,
+      "seal_rate_pct": 77.27,
+      "highest_board": 4,
+      "ladder_highest_board": 4,
+      "ladder_listed_stocks": 13,
+      "height_counts": {
+        "1": 37,
+        "2": 8,
+        "4": 2,
+        "3": 4
+      }
+    },
+    {
+      "date": "2026-09-03",
+      "limit_up_count": 46,
+      "broken_count": 33,
+      "limit_down_count": 16,
+      "seal_rate_pct": 58.23,
+      "highest_board": 5,
+      "ladder_highest_board": 5,
+      "ladder_listed_stocks": 9,
+      "height_counts": {
+        "1": 37,
+        "2": 6,
+        "4": 2,
+        "5": 1
+      }
+    },
+    {
+      "date": "2026-09-04",
+      "limit_up_count": 40,
+      "broken_count": 48,
+      "limit_down_count": 9,
+      "seal_rate_pct": 45.45,
+      "highest_board": 5,
+      "ladder_highest_board": 5,
+      "ladder_listed_stocks": 7,
+      "height_counts": {
+        "1": 33,
+        "2": 6,
+        "5": 1
+      }
+    },
+    {
+      "date": "2026-09-07",
+      "limit_up_count": 94,
+      "broken_count": 19,
+      "limit_down_count": 2,
+      "seal_rate_pct": 83.19,
+      "highest_board": 6,
+      "ladder_highest_board": 6,
+      "ladder_listed_stocks": 13,
+      "height_counts": {
+        "1": 81,
+        "6": 1,
+        "2": 9,
+        "3": 3
+      }
+    },
+    {
+      "date": "2026-09-08",
+      "limit_up_count": 73,
+      "broken_count": 37,
+      "limit_down_count": 0,
+      "seal_rate_pct": 66.36,
+      "highest_board": 4,
+      "ladder_highest_board": 4,
+      "ladder_listed_stocks": 18,
+      "height_counts": {
+        "2": 12,
+        "1": 55,
+        "4": 3,
+        "3": 3
+      }
+    },
+    {
+      "date": "2026-09-09",
+      "limit_up_count": 49,
+      "broken_count": 27,
+      "limit_down_count": 7,
+      "seal_rate_pct": 64.47,
+      "highest_board": 5,
+      "ladder_highest_board": 5,
+      "ladder_listed_stocks": 15,
+      "height_counts": {
+        "1": 34,
+        "3": 4,
+        "5": 1,
+        "2": 10
+      }
+    },
+    {
+      "date": "2026-09-10",
+      "limit_up_count": 39,
+      "broken_count": 22,
+      "limit_down_count": 13,
+      "seal_rate_pct": 63.93,
+      "highest_board": 4,
+      "ladder_highest_board": 4,
+      "ladder_listed_stocks": 9,
+      "height_counts": {
+        "1": 30,
+        "2": 6,
+        "4": 1,
+        "3": 2
+      }
+    },
+    {
+      "date": "2026-09-11",
+      "limit_up_count": 40,
+      "broken_count": 18,
+      "limit_down_count": 21,
+      "seal_rate_pct": 68.97,
+      "highest_board": 4,
+      "ladder_highest_board": 4,
+      "ladder_listed_stocks": 7,
+      "height_counts": {
+        "1": 33,
+        "2": 4,
+        "3": 2,
+        "4": 1
+      }
+    },
+    {
+      "date": "2026-09-14",
+      "limit_up_count": 56,
+      "broken_count": 30,
+      "limit_down_count": 18,
+      "seal_rate_pct": 65.12,
+      "highest_board": 4,
+      "ladder_highest_board": 4,
+      "ladder_listed_stocks": 11,
+      "height_counts": {
+        "1": 45,
+        "2": 7,
+        "3": 3,
+        "4": 1
+      }
+    },
     {
       "date": "2026-09-15",
       "limit_up_count": 32,
@@ -10,6 +236,8 @@
       "limit_down_count": 33,
       "seal_rate_pct": 57.14,
       "highest_board": 5,
+      "ladder_highest_board": 5,
+      "ladder_listed_stocks": 7,
       "height_counts": {
         "1": 25,
         "3": 2,
@@ -25,6 +253,8 @@
       "limit_down_count": 4,
       "seal_rate_pct": 89.22,
       "highest_board": 6,
+      "ladder_highest_board": 6,
+      "ladder_listed_stocks": 12,
       "height_counts": {
         "1": 79,
         "2": 9,
@@ -40,6 +270,8 @@
       "limit_down_count": 2,
       "seal_rate_pct": 71.01,
       "highest_board": 5,
+      "ladder_highest_board": 5,
+      "ladder_listed_stocks": 9,
       "height_counts": {
         "1": 40,
         "5": 1,
@@ -54,6 +286,8 @@
       "limit_down_count": 1,
       "seal_rate_pct": 75.73,
       "highest_board": 4,
+      "ladder_highest_board": 4,
+      "ladder_listed_stocks": 12,
       "height_counts": {
         "1": 66,
         "2": 8,
@@ -68,6 +302,8 @@
       "limit_down_count": 2,
       "seal_rate_pct": 80.47,
       "highest_board": 5,
+      "ladder_highest_board": 5,
+      "ladder_listed_stocks": 21,
       "height_counts": {
         "1": 82,
         "2": 13,
@@ -83,6 +319,8 @@
       "limit_down_count": 5,
       "seal_rate_pct": 77.78,
       "highest_board": 6,
+      "ladder_highest_board": 6,
+      "ladder_listed_stocks": 24,
       "height_counts": {
         "1": 39,
         "2": 17,
@@ -99,6 +337,8 @@
       "limit_down_count": 13,
       "seal_rate_pct": 66.23,
       "highest_board": 4,
+      "ladder_highest_board": 4,
+      "ladder_listed_stocks": 12,
       "height_counts": {
         "1": 39,
         "2": 3,
@@ -113,6 +353,8 @@
       "limit_down_count": 13,
       "seal_rate_pct": 83.61,
       "highest_board": 5,
+      "ladder_highest_board": 5,
+      "ladder_listed_stocks": 13,
       "height_counts": {
         "5": 1,
         "4": 3,
