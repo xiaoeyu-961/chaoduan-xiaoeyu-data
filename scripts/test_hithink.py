@@ -3,9 +3,18 @@ from unittest.mock import patch
 
 from hithink_client import HithinkError, all_quotes, pool
 from fetch_hithink import build_market
+from fetch_emotion import normalize_trading_dates
 
 
 class SourceIntegrity(unittest.TestCase):
+    def test_history_uses_exact_trading_dates(self):
+        items = [{"date": value} for value in (
+            "20260921", "20260922", "20260923", "20260924", "bad")]
+        self.assertEqual(
+            normalize_trading_dates(items, "2026-09-23", 2),
+            ["2026-09-22", "2026-09-23"],
+        )
+
     def test_pool_requires_all_pages(self):
         first = {"pagination": {"total": 3, "pages": 2},
                  "item": [{"thscode": "a"}, {"thscode": "b"}]}

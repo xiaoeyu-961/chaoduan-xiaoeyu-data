@@ -10,12 +10,11 @@ from __future__ import annotations
 import json
 import statistics
 from collections import Counter, defaultdict
-from concurrent.futures import ThreadPoolExecutor
-from datetime import datetime, timedelta
+from datetime import datetime
 from pathlib import Path
 from data_checks import intraday_quality
 
-from hithink_client import CN_TZ, get as hithink_get, pool as hithink_pool
+from hithink_client import CN_TZ, HithinkError, get as hithink_get, pool as hithink_pool
 from fetch_hithink import normalize_stock as hithink_stock
 
 DATA_DIR = Path("data")
@@ -24,6 +23,7 @@ EMOTION_FILE = DATA_DIR / "emotion_latest.json"
 HISTORY_FILE = DATA_DIR / "emotion_history.json"
 INTRADAY_FILE = DATA_DIR / "intraday_latest.json"
 INTRADAY_HISTORY_FILE = DATA_DIR / "intraday_history.json"
+HITHINK_FILE = DATA_DIR / "hithink_latest.json"
 
 
 def number(value, default=0.0):
@@ -47,11 +47,63 @@ def write_json(path: Path, payload: dict) -> None:
     temp.replace(path)
 
 
-def collect_hithink_sessions(end_date: str, today: dict, target: int = 20) -> list[dict]:
-    """Build a source-consistent recent history; unavailable dates stay missing."""
-    end = datetime.strptime(end_date, "%Y-%m-%d").replace(tzinfo=CN_TZ)
-    dates = [(end - timedelta(days=offset)).strftime("%Y-%m-%d")
-             for offset in reversed(range(45))]
+def normalize_trading_dates(items: list[dict], end_date: str, target: int) -> list[str]:
+    dates = []
+    for row in items:
+        raw = str(row.get("date") or "").strip()
+        if len(raw) == 8 and raw.isdigit():
+            raw = f"{raw[:4]}-{raw[4:6]}-{raw[6:]}"
+        try:
+            parsed = datetime.strptime(raw, "%Y-%m-%d").strftime("%Y-%m-%d")
+        except ValueError:
+            continue
+        if parsed <= end_date:
+            dates.append(parsed)
+    return sorted(set(dates))[-target:]
+
+
+def requested_trading_dates(end_date: str, target: int = 20) -> tuple[list[str], str]:
+    """Resolve exact trading dates instead of probing weekends and holidays."""
+    try:
+        calendar = hithink_get("/api/a-share/calendar/trading-days")
+        dates = normalize_trading_dates(calendar.get("item") or [], end_date, target)
+        if len(dates) == target:
+            return dates, "同花顺交易日历"
+    except HithinkError:
+        dates = []
+
+    # The already collected ladder carries a verified 30-trading-day window
+    # and is a safe fallback when the calendar endpoint is temporarily down.
+    facts = read_json(HITHINK_FILE, {})
+    ladder_dates = (((facts.get("limit_up_ladder") or {}).get("window") or {})
+                    .get("date_list") or [])
+    normalized = normalize_trading_dates(
+        [{"date": value} for value in ladder_dates], end_date, target)
+    if len(normalized) == target:
+        return normalized, "同花顺30日连板天梯日期窗"
+    raise RuntimeError(f"Only {len(dates or normalized)} verified trading dates available")
+
+
+def ladder_summary_by_date() -> dict[str, dict]:
+    facts = read_json(HITHINK_FILE, {})
+    items = (facts.get("limit_up_ladder") or {}).get("items") or []
+    result = {}
+    for row in items:
+        boards = row.get("boards") or {}
+        stocks = [stock for values in boards.values() for stock in (values or [])]
+        result[str(row.get("date"))] = {
+            "highest_board": max((int(stock.get("board_num") or 0) for stock in stocks), default=1),
+            "listed_stocks": len(stocks),
+        }
+    return result
+
+
+def collect_hithink_sessions(end_date: str, today: dict,
+                              target: int = 20) -> tuple[list[dict], dict]:
+    """Build a source-consistent 20-session history with explicit diagnostics."""
+    dates, date_source = requested_trading_dates(end_date, target)
+    ladder = ladder_summary_by_date()
+    errors: dict[str, str] = {}
 
     def collect(date: str):
         if date == end_date:
@@ -62,26 +114,40 @@ def collect_hithink_sessions(end_date: str, today: dict, target: int = 20) -> li
             try:
                 up = [hithink_stock(row) for row in hithink_pool("limitUp", date)]
                 if not up:
+                    errors[date] = "limit-up-pool returned no rows"
                     return None
                 broken_count = len(hithink_pool("broken", date))
                 down_count = len(hithink_pool("limitDown", date))
-            except Exception:
+            except Exception as exc:
+                errors[date] = f"{type(exc).__name__}: {str(exc)[:180]}"
                 return None
         if not up or broken_count is None or down_count is None:
             return None
         heights = Counter(int(r["height"]) for r in up if r.get("height") is not None)
         total = len(up) + broken_count
+        ladder_day = ladder.get(date) or {}
         return {"date": date, "limit_up_count": len(up),
                 "broken_count": broken_count, "limit_down_count": down_count,
                 "seal_rate_pct": round(len(up) / total * 100, 2) if total else None,
                 "highest_board": max(heights, default=0),
+                "ladder_highest_board": ladder_day.get("highest_board"),
+                "ladder_listed_stocks": ladder_day.get("listed_stocks"),
                 "height_counts": {str(k): v for k, v in heights.items()},
                 "stocks": up}
 
-    with ThreadPoolExecutor(max_workers=3) as executor:
-        sessions = [row for row in executor.map(collect, dates) if row]
+    # Sequential collection is intentional: 20 dates x 3 pools is modest and
+    # avoids losing older sessions to burst rate limiting.
+    sessions = [row for date in dates if (row := collect(date))]
     sessions.sort(key=lambda row: row["date"])
-    return sessions[-target:]
+    diagnostics = {
+        "date_source": date_source,
+        "requested_dates": dates,
+        "requested_count": len(dates),
+        "collected_count": len(sessions),
+        "failed_dates": errors,
+        "complete": len(sessions) == target and not errors,
+    }
+    return sessions[-target:], diagnostics
 
 
 def hithink_quotes(codes: list[str]) -> dict[str, dict]:
@@ -328,7 +394,7 @@ def main() -> None:
     if market.get("source") != "同花顺官方 Financial-API":
         raise RuntimeError("Only Tonghuashun Financial-API market snapshots are accepted")
     hithink = True
-    sessions = collect_hithink_sessions(market["tradeDate"], market)
+    sessions, history_collection = collect_hithink_sessions(market["tradeDate"], market)
     if not sessions:
         raise RuntimeError("No sentiment sessions collected")
 
@@ -426,6 +492,7 @@ def main() -> None:
         },
         "data_quality": {
             "daily_sessions": len(sessions),
+            "history_collection": history_collection,
             "complete": not missing,
             "missing": missing,
             "confidence": "high" if not missing else ("medium" if len(missing) <= 2 else "low"),
@@ -435,6 +502,7 @@ def main() -> None:
         "schema_version": 1,
         "ok": True,
         "updated_at": market.get("updatedAt"),
+        "collection": history_collection,
         "sessions": [
             {key: value for key, value in session.items() if key != "stocks"}
             for session in sessions

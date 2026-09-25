@@ -2,6 +2,12 @@ name: 更新A股市场数据
 
 on:
   workflow_dispatch:
+    inputs:
+      backfill_history:
+        description: "即使当日休市，也使用最后有效交易日补齐20日历史"
+        required: false
+        default: true
+        type: boolean
   push:
     paths:
       - "scripts/**"
@@ -27,7 +33,7 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
-    timeout-minutes: 8
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -52,18 +58,34 @@ jobs:
           git push
           exit 1
       - name: 采集情绪结构与盘中时间轴
-        if: steps.collect.outcome == 'success' && steps.collect.outputs.market_skipped != 'true'
+        if: >-
+          steps.collect.outcome == 'success' &&
+          (steps.collect.outputs.market_skipped != 'true' ||
+           github.event_name == 'push' ||
+           inputs.backfill_history == true)
         env:
           HITHINK_FINANCE_API_KEY: ${{ secrets.HITHINK_FINANCE_API_KEY }}
         run: python scripts/fetch_emotion.py
       - name: 生成三层周期与龙头生态判断
-        if: steps.collect.outcome == 'success' && steps.collect.outputs.market_skipped != 'true'
+        if: >-
+          steps.collect.outcome == 'success' &&
+          (steps.collect.outputs.market_skipped != 'true' ||
+           github.event_name == 'push' ||
+           inputs.backfill_history == true)
         run: python scripts/build_cycle_analysis.py
       - name: 合并工作台主数据
-        if: steps.collect.outcome == 'success' && steps.collect.outputs.market_skipped != 'true'
+        if: >-
+          steps.collect.outcome == 'success' &&
+          (steps.collect.outputs.market_skipped != 'true' ||
+           github.event_name == 'push' ||
+           inputs.backfill_history == true)
         run: python scripts/build_workbench.py
       - name: 保存最新快照
-        if: steps.collect.outcome == 'success' && steps.collect.outputs.market_skipped != 'true'
+        if: >-
+          steps.collect.outcome == 'success' &&
+          (steps.collect.outputs.market_skipped != 'true' ||
+           github.event_name == 'push' ||
+           inputs.backfill_history == true)
         run: |
           if git diff --quiet -- data/; then
             echo "数据未变化"
