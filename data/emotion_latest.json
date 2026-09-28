@@ -2,15 +2,15 @@
   "schema_version": 1,
   "ok": true,
   "trade_date": "2026-09-28",
-  "updated_at": "2026-09-28T03:57:06.838340+00:00",
+  "updated_at": "2026-09-28T05:18:07.633947+00:00",
   "source": "同花顺官方 Financial-API",
   "principle": "仅保存事实数据，不在采集层生成周期标签或主观评分。",
   "market_ecology": {
     "limit_up_count": 24,
-    "limit_down_count": 39,
-    "broken_count": 13,
-    "broken_rate_pct": 35.14,
-    "seal_rate_pct": 64.86,
+    "limit_down_count": 48,
+    "broken_count": 14,
+    "broken_rate_pct": 36.84,
+    "seal_rate_pct": 63.16,
     "highest_board": 5,
     "promotion": {
       "eligible": 51,
@@ -46,39 +46,39 @@
     },
     "previous_limit_up_feedback": {
       "sample": 51,
-      "avg_change_pct": -2.48,
-      "median_change_pct": -4.41,
-      "positive_rate_pct": 33.33,
-      "loss_below_minus_5_rate_pct": 45.1
+      "avg_change_pct": -2.31,
+      "median_change_pct": -2.79,
+      "positive_rate_pct": 35.29,
+      "loss_below_minus_5_rate_pct": 39.22
     },
     "high_position_feedback": {
       "sample": 4,
-      "avg_change_pct": -0.38,
-      "median_change_pct": -0.79,
+      "avg_change_pct": -1.1,
+      "median_change_pct": -2.21,
       "positive_rate_pct": 25.0,
       "loss_below_minus_5_rate_pct": 25.0
     },
     "middle_position_feedback": {
       "sample": 9,
-      "avg_change_pct": -0.54,
-      "median_change_pct": -5.47,
-      "positive_rate_pct": 44.44,
-      "loss_below_minus_5_rate_pct": 55.56
+      "avg_change_pct": 0.01,
+      "median_change_pct": 0.98,
+      "positive_rate_pct": 55.56,
+      "loss_below_minus_5_rate_pct": 44.44
     },
     "first_board_feedback": {
       "sample": 38,
-      "avg_change_pct": -3.16,
-      "median_change_pct": -4.53,
+      "avg_change_pct": -2.99,
+      "median_change_pct": -3.37,
       "positive_rate_pct": 31.58,
-      "loss_below_minus_5_rate_pct": 44.74
+      "loss_below_minus_5_rate_pct": 39.47
     },
     "market_width": {
       "available": true,
       "complete": true,
       "coverage_pct": 99.62,
-      "up": 676,
-      "down": 4803,
-      "flat": 78,
+      "up": 710,
+      "down": 4774,
+      "flat": 73,
       "sample": 5557
     }
   },
@@ -92,10 +92,10 @@
       "first_limit": "09:25",
       "last_limit": "09:25",
       "open_count": null,
-      "seal_amount": 4023294800,
+      "seal_amount": 3847010000,
       "max_seal_amount": 9984555765.0,
-      "seal_retention_pct": 40.3,
-      "amount": 39271099
+      "seal_retention_pct": 38.53,
+      "amount": 39872164
     },
     {
       "code": "603396",
@@ -106,10 +106,10 @@
       "first_limit": "09:30",
       "last_limit": "09:30",
       "open_count": null,
-      "seal_amount": 142263070,
+      "seal_amount": 129029152,
       "max_seal_amount": 374955918.4,
-      "seal_retention_pct": 37.94,
-      "amount": 310077310
+      "seal_retention_pct": 34.41,
+      "amount": 313538670
     },
     {
       "code": "603949",
@@ -120,10 +120,10 @@
       "first_limit": "09:30",
       "last_limit": "09:30",
       "open_count": null,
-      "seal_amount": 79192154,
+      "seal_amount": 76174997,
       "max_seal_amount": 148203198.0,
-      "seal_retention_pct": 53.43,
-      "amount": 289108800
+      "seal_retention_pct": 51.4,
+      "amount": 292101790
     },
     {
       "code": "600802",
@@ -134,10 +134,10 @@
       "first_limit": "09:34",
       "last_limit": "09:34",
       "open_count": null,
-      "seal_amount": 111241458,
+      "seal_amount": 97826667,
       "max_seal_amount": 309850129.68,
-      "seal_retention_pct": 35.9,
-      "amount": 556642440
+      "seal_retention_pct": 31.57,
+      "amount": 569289920
     },
     {
       "code": "000678",
@@ -148,10 +148,10 @@
       "first_limit": "09:30",
       "last_limit": "09:30",
       "open_count": null,
-      "seal_amount": 103497041,
+      "seal_amount": 107556821,
       "max_seal_amount": 175715415.0,
-      "seal_retention_pct": 58.9,
-      "amount": 348818310
+      "seal_retention_pct": 61.21,
+      "amount": 352908970
     },
     {
       "code": "001330",
@@ -162,10 +162,10 @@
       "first_limit": "09:25",
       "last_limit": "09:25",
       "open_count": null,
-      "seal_amount": 431834460,
+      "seal_amount": 425973080,
       "max_seal_amount": 805708968.0,
-      "seal_retention_pct": 53.6,
-      "amount": 238302200
+      "seal_retention_pct": 52.87,
+      "amount": 245403780
     },
     {
       "code": "002640",
@@ -176,10 +176,10 @@
       "first_limit": "09:30",
       "last_limit": "09:30",
       "open_count": null,
-      "seal_amount": 374115140,
+      "seal_amount": 325573850,
       "max_seal_amount": 718414963.2,
-      "seal_retention_pct": 52.08,
-      "amount": 1004418160
+      "seal_retention_pct": 45.32,
+      "amount": 1016230840
     },
     {
       "code": "002912",
@@ -190,10 +190,10 @@
       "first_limit": "09:30",
       "last_limit": "09:30",
       "open_count": null,
-      "seal_amount": 365239360,
+      "seal_amount": 344301590,
       "max_seal_amount": 487952162.26,
-      "seal_retention_pct": 74.85,
-      "amount": 197140930
+      "seal_retention_pct": 70.56,
+      "amount": 199502050
     },
     {
       "code": "000503",
@@ -204,10 +204,10 @@
       "first_limit": "09:31",
       "last_limit": "09:31",
       "open_count": null,
-      "seal_amount": 81444996,
+      "seal_amount": 79331292,
       "max_seal_amount": 310901232.0,
-      "seal_retention_pct": 26.2,
-      "amount": 347202820
+      "seal_retention_pct": 25.52,
+      "amount": 350260660
     },
     {
       "code": "002242",
@@ -218,55 +218,18 @@
       "first_limit": "09:31",
       "last_limit": "09:31",
       "open_count": null,
-      "seal_amount": 152482280,
+      "seal_amount": 153593780,
       "max_seal_amount": 232288644.0,
-      "seal_retention_pct": 65.64,
-      "amount": 241537150
+      "seal_retention_pct": 66.12,
+      "amount": 244240510
     }
   ],
   "themes": [
     {
-      "code": "885783.TI",
-      "name": "工业互联网",
-      "change_pct": -2.455171,
-      "turnover_cny": 115974449000,
-      "member_count": 442,
-      "limit_up_count": 4,
-      "first_board_count": 4,
-      "second_board_count": 0,
-      "third_board_count": 0,
-      "high_board_count": 0,
-      "max_height": 1,
-      "active_days_3": null,
-      "leaders": [
-        {
-          "code": "002232",
-          "name": "启明信息",
-          "height": 1
-        },
-        {
-          "code": "002347",
-          "name": "泰尔股份",
-          "height": 1
-        },
-        {
-          "code": "002912",
-          "name": "中新赛克",
-          "height": 1
-        },
-        {
-          "code": "600418",
-          "name": "江淮汽车",
-          "height": 1
-        }
-      ],
-      "source": "同花顺概念指数与成分股涨停交集"
-    },
-    {
       "code": "885936.TI",
       "name": "绿色电力",
-      "change_pct": -1.638463,
-      "turnover_cny": 78925321000,
+      "change_pct": -1.739672,
+      "turnover_cny": 84307692000,
       "member_count": 430,
       "limit_up_count": 4,
       "first_board_count": 4,
@@ -300,42 +263,10 @@
       "source": "同花顺概念指数与成分股涨停交集"
     },
     {
-      "code": "886078.TI",
-      "name": "商业航天",
-      "change_pct": -3.517711,
-      "turnover_cny": 178607980000,
-      "member_count": 508,
-      "limit_up_count": 3,
-      "first_board_count": 3,
-      "second_board_count": 0,
-      "third_board_count": 0,
-      "high_board_count": 0,
-      "max_height": 1,
-      "active_days_3": null,
-      "leaders": [
-        {
-          "code": "002342",
-          "name": "巨力索具",
-          "height": 1
-        },
-        {
-          "code": "002347",
-          "name": "泰尔股份",
-          "height": 1
-        },
-        {
-          "code": "688244",
-          "name": "永信至诚",
-          "height": 1
-        }
-      ],
-      "source": "同花顺概念指数与成分股涨停交集"
-    },
-    {
       "code": "885942.TI",
       "name": "数据安全",
-      "change_pct": -1.728139,
-      "turnover_cny": 48753918000,
+      "change_pct": -1.811299,
+      "turnover_cny": 51894567000,
       "member_count": 176,
       "limit_up_count": 3,
       "first_board_count": 3,
@@ -366,8 +297,8 @@
     {
       "code": "885459.TI",
       "name": "网络安全",
-      "change_pct": -2.04732,
-      "turnover_cny": 55616080000,
+      "change_pct": -2.105665,
+      "turnover_cny": 58596297000,
       "member_count": 195,
       "limit_up_count": 3,
       "first_board_count": 3,
@@ -423,10 +354,37 @@
       "source": "同花顺涨停原因聚合"
     },
     {
+      "code": "885856.TI",
+      "name": "仿制药一致性评价",
+      "change_pct": -0.409326,
+      "turnover_cny": 20168675000,
+      "member_count": 145,
+      "limit_up_count": 2,
+      "first_board_count": 2,
+      "second_board_count": 0,
+      "third_board_count": 0,
+      "high_board_count": 0,
+      "max_height": 1,
+      "active_days_3": null,
+      "leaders": [
+        {
+          "code": "000513",
+          "name": "丽珠集团",
+          "height": 1
+        },
+        {
+          "code": "600488",
+          "name": "津药药业",
+          "height": 1
+        }
+      ],
+      "source": "同花顺概念指数与成分股涨停交集"
+    },
+    {
       "code": "885697.TI",
       "name": "深圳国企改革",
-      "change_pct": 0.062578,
-      "turnover_cny": 5320548800,
+      "change_pct": -0.094417,
+      "turnover_cny": 5569212400,
       "member_count": 29,
       "limit_up_count": 2,
       "first_board_count": 2,
@@ -452,8 +410,8 @@
     {
       "code": "885915.TI",
       "name": "物业管理",
-      "change_pct": -1.574859,
-      "turnover_cny": 23375571000,
+      "change_pct": -1.621554,
+      "turnover_cny": 24854555000,
       "member_count": 183,
       "limit_up_count": 2,
       "first_board_count": 2,
@@ -477,11 +435,11 @@
       "source": "同花顺概念指数与成分股涨停交集"
     },
     {
-      "code": "885641.TI",
-      "name": "风电",
-      "change_pct": -2.28141,
-      "turnover_cny": 111476437000,
-      "member_count": 445,
+      "code": "885909.TI",
+      "name": "辅助生殖",
+      "change_pct": -0.71235,
+      "turnover_cny": 12363871600,
+      "member_count": 74,
       "limit_up_count": 2,
       "first_board_count": 2,
       "second_board_count": 0,
@@ -491,13 +449,13 @@
       "active_days_3": null,
       "leaders": [
         {
-          "code": "002342",
-          "name": "巨力索具",
+          "code": "000513",
+          "name": "丽珠集团",
           "height": 1
         },
         {
-          "code": "600032",
-          "name": "浙江新能",
+          "code": "600488",
+          "name": "津药药业",
           "height": 1
         }
       ],
@@ -682,8 +640,8 @@
     {
       "code": "885939.TI",
       "name": "海峡两岸",
-      "change_pct": -3.174149,
-      "turnover_cny": 103720446000,
+      "change_pct": -3.230967,
+      "turnover_cny": 110910511000,
       "member_count": 321,
       "limit_up_count": 1,
       "first_board_count": 0,
@@ -924,8 +882,8 @@
     {
       "code": "885947.TI",
       "name": "DRG/DIP",
-      "change_pct": -0.695163,
-      "turnover_cny": 2123645600,
+      "change_pct": -0.827527,
+      "turnover_cny": 2257742100,
       "member_count": 22,
       "limit_up_count": 1,
       "first_board_count": 1,
@@ -989,6 +947,28 @@
     },
     {
       "code": null,
+      "name": "一汽配套",
+      "change_pct": null,
+      "turnover_cny": null,
+      "member_count": null,
+      "limit_up_count": 1,
+      "first_board_count": 1,
+      "second_board_count": 0,
+      "third_board_count": 0,
+      "high_board_count": 0,
+      "max_height": 1,
+      "active_days_3": null,
+      "leaders": [
+        {
+          "code": "002232",
+          "name": "启明信息",
+          "height": 1
+        }
+      ],
+      "source": "同花顺涨停原因聚合"
+    },
+    {
+      "code": null,
       "name": "个人医保云",
       "change_pct": null,
       "turnover_cny": null,
@@ -1030,28 +1010,6 @@
         }
       ],
       "source": "同花顺涨停原因聚合"
-    },
-    {
-      "code": "885856.TI",
-      "name": "仿制药一致性评价",
-      "change_pct": -0.564213,
-      "turnover_cny": 18340499000,
-      "member_count": 145,
-      "limit_up_count": 1,
-      "first_board_count": 1,
-      "second_board_count": 0,
-      "third_board_count": 0,
-      "high_board_count": 0,
-      "max_height": 1,
-      "active_days_3": null,
-      "leaders": [
-        {
-          "code": "000513",
-          "name": "丽珠集团",
-          "height": 1
-        }
-      ],
-      "source": "同花顺概念指数与成分股涨停交集"
     },
     {
       "code": null,
@@ -1100,8 +1058,8 @@
     {
       "code": "886015.TI",
       "name": "创新药",
-      "change_pct": -0.914198,
-      "turnover_cny": 45098062000,
+      "change_pct": -0.880238,
+      "turnover_cny": 48638812000,
       "member_count": 277,
       "limit_up_count": 1,
       "first_board_count": 1,
@@ -1231,6 +1189,28 @@
     },
     {
       "code": null,
+      "name": "国际化布局",
+      "change_pct": null,
+      "turnover_cny": null,
+      "member_count": null,
+      "limit_up_count": 1,
+      "first_board_count": 1,
+      "second_board_count": 0,
+      "third_board_count": 0,
+      "high_board_count": 0,
+      "max_height": 1,
+      "active_days_3": null,
+      "leaders": [
+        {
+          "code": "600488",
+          "name": "津药药业",
+          "height": 1
+        }
+      ],
+      "source": "同花顺涨停原因聚合"
+    },
+    {
+      "code": null,
       "name": "太空科技",
       "change_pct": null,
       "turnover_cny": null,
@@ -1276,8 +1256,8 @@
     {
       "code": "886012.TI",
       "name": "宠物经济",
-      "change_pct": -0.857245,
-      "turnover_cny": 13909697000,
+      "change_pct": -0.800072,
+      "turnover_cny": 15101483000,
       "member_count": 127,
       "limit_up_count": 1,
       "first_board_count": 1,
@@ -1298,8 +1278,8 @@
     {
       "code": "885981.TI",
       "name": "家庭医生",
-      "change_pct": -0.167928,
-      "turnover_cny": 6713559800,
+      "change_pct": -0.360029,
+      "turnover_cny": 7179650400,
       "member_count": 26,
       "limit_up_count": 1,
       "first_board_count": 1,
@@ -1473,6 +1453,28 @@
     },
     {
       "code": null,
+      "name": "氨基酸制剂",
+      "change_pct": null,
+      "turnover_cny": null,
+      "member_count": null,
+      "limit_up_count": 1,
+      "first_board_count": 1,
+      "second_board_count": 0,
+      "third_board_count": 0,
+      "high_board_count": 0,
+      "max_height": 1,
+      "active_days_3": null,
+      "leaders": [
+        {
+          "code": "600488",
+          "name": "津药药业",
+          "height": 1
+        }
+      ],
+      "source": "同花顺涨停原因聚合"
+    },
+    {
+      "code": null,
       "name": "汽车整车",
       "change_pct": null,
       "turnover_cny": null,
@@ -1518,8 +1520,8 @@
     {
       "code": "885879.TI",
       "name": "流感",
-      "change_pct": -0.686735,
-      "turnover_cny": 21950536000,
+      "change_pct": -0.565542,
+      "turnover_cny": 23685084000,
       "member_count": 163,
       "limit_up_count": 1,
       "first_board_count": 1,
@@ -1627,28 +1629,6 @@
     },
     {
       "code": null,
-      "name": "深海系泊",
-      "change_pct": null,
-      "turnover_cny": null,
-      "member_count": null,
-      "limit_up_count": 1,
-      "first_board_count": 1,
-      "second_board_count": 0,
-      "third_board_count": 0,
-      "high_board_count": 0,
-      "max_height": 1,
-      "active_days_3": null,
-      "leaders": [
-        {
-          "code": "002342",
-          "name": "巨力索具",
-          "height": 1
-        }
-      ],
-      "source": "同花顺涨停原因聚合"
-    },
-    {
-      "code": null,
       "name": "清洁能源",
       "change_pct": null,
       "turnover_cny": null,
@@ -1716,8 +1696,8 @@
     {
       "code": "885573.TI",
       "name": "猪肉",
-      "change_pct": 0.366444,
-      "turnover_cny": 4175728300,
+      "change_pct": 0.465132,
+      "turnover_cny": 4580493700,
       "member_count": 32,
       "limit_up_count": 1,
       "first_board_count": 1,
@@ -1738,8 +1718,8 @@
     {
       "code": "885994.TI",
       "name": "猴痘概念",
-      "change_pct": -0.928511,
-      "turnover_cny": 12926950900,
+      "change_pct": -0.881767,
+      "turnover_cny": 13853343000,
       "member_count": 75,
       "limit_up_count": 1,
       "first_board_count": 1,
@@ -1782,8 +1762,8 @@
     {
       "code": "885845.TI",
       "name": "生物疫苗",
-      "change_pct": -0.429423,
-      "turnover_cny": 8223387700,
+      "change_pct": -0.387539,
+      "turnover_cny": 8802641500,
       "member_count": 62,
       "limit_up_count": 1,
       "first_board_count": 1,
@@ -1824,50 +1804,6 @@
       "source": "同花顺涨停原因聚合"
     },
     {
-      "code": "885525.TI",
-      "name": "白酒概念",
-      "change_pct": -0.737842,
-      "turnover_cny": 10286755300,
-      "member_count": 48,
-      "limit_up_count": 1,
-      "first_board_count": 1,
-      "second_board_count": 0,
-      "third_board_count": 0,
-      "high_board_count": 0,
-      "max_height": 1,
-      "active_days_3": null,
-      "leaders": [
-        {
-          "code": "002342",
-          "name": "巨力索具",
-          "height": 1
-        }
-      ],
-      "source": "同花顺概念指数与成分股涨停交集"
-    },
-    {
-      "code": null,
-      "name": "索具龙头",
-      "change_pct": null,
-      "turnover_cny": null,
-      "member_count": null,
-      "limit_up_count": 1,
-      "first_board_count": 1,
-      "second_board_count": 0,
-      "third_board_count": 0,
-      "high_board_count": 0,
-      "max_height": 1,
-      "active_days_3": null,
-      "leaders": [
-        {
-          "code": "002342",
-          "name": "巨力索具",
-          "height": 1
-        }
-      ],
-      "source": "同花顺涨停原因聚合"
-    },
-    {
       "code": null,
       "name": "网络靶场",
       "change_pct": null,
@@ -1890,11 +1826,11 @@
       "source": "同花顺涨停原因聚合"
     },
     {
-      "code": "885580.TI",
-      "name": "足球概念",
-      "change_pct": -1.023217,
-      "turnover_cny": 7536556700,
-      "member_count": 40,
+      "code": null,
+      "name": "药品注册",
+      "change_pct": null,
+      "turnover_cny": null,
+      "member_count": null,
       "limit_up_count": 1,
       "first_board_count": 1,
       "second_board_count": 0,
@@ -1904,18 +1840,18 @@
       "active_days_3": null,
       "leaders": [
         {
-          "code": "002342",
-          "name": "巨力索具",
+          "code": "600488",
+          "name": "津药药业",
           "height": 1
         }
       ],
-      "source": "同花顺概念指数与成分股涨停交集"
+      "source": "同花顺涨停原因聚合"
     },
     {
       "code": "885642.TI",
       "name": "跨境电商",
-      "change_pct": -1.855103,
-      "turnover_cny": 48330885000,
+      "change_pct": -1.950248,
+      "turnover_cny": 51830958000,
       "member_count": 343,
       "limit_up_count": 1,
       "first_board_count": 1,
@@ -1954,50 +1890,6 @@
         }
       ],
       "source": "同花顺涨停原因聚合"
-    },
-    {
-      "code": null,
-      "name": "车路云",
-      "change_pct": null,
-      "turnover_cny": null,
-      "member_count": null,
-      "limit_up_count": 1,
-      "first_board_count": 1,
-      "second_board_count": 0,
-      "third_board_count": 0,
-      "high_board_count": 0,
-      "max_height": 1,
-      "active_days_3": null,
-      "leaders": [
-        {
-          "code": "002232",
-          "name": "启明信息",
-          "height": 1
-        }
-      ],
-      "source": "同花顺涨停原因聚合"
-    },
-    {
-      "code": "885909.TI",
-      "name": "辅助生殖",
-      "change_pct": -0.924871,
-      "turnover_cny": 11331122600,
-      "member_count": 74,
-      "limit_up_count": 1,
-      "first_board_count": 1,
-      "second_board_count": 0,
-      "third_board_count": 0,
-      "high_board_count": 0,
-      "max_height": 1,
-      "active_days_3": null,
-      "leaders": [
-        {
-          "code": "000513",
-          "name": "丽珠集团",
-          "height": 1
-        }
-      ],
-      "source": "同花顺概念指数与成分股涨停交集"
     },
     {
       "code": null,
@@ -2046,8 +1938,8 @@
     {
       "code": "885955.TI",
       "name": "重组蛋白",
-      "change_pct": -0.71733,
-      "turnover_cny": 12869402700,
+      "change_pct": -0.800011,
+      "turnover_cny": 13702820000,
       "member_count": 64,
       "limit_up_count": 1,
       "first_board_count": 1,
@@ -2132,6 +2024,28 @@
       "source": "同花顺涨停原因聚合"
     },
     {
+      "code": "885641.TI",
+      "name": "风电",
+      "change_pct": -2.4076,
+      "turnover_cny": 118367375000,
+      "member_count": 445,
+      "limit_up_count": 1,
+      "first_board_count": 1,
+      "second_board_count": 0,
+      "third_board_count": 0,
+      "high_board_count": 0,
+      "max_height": 1,
+      "active_days_3": null,
+      "leaders": [
+        {
+          "code": "600032",
+          "name": "浙江新能",
+          "height": 1
+        }
+      ],
+      "source": "同花顺概念指数与成分股涨停交集"
+    },
+    {
       "code": null,
       "name": "首部AI电影上映",
       "change_pct": null,
@@ -2178,8 +2092,8 @@
     {
       "code": "885591.TI",
       "name": "中韩自贸区",
-      "change_pct": -0.897185,
-      "turnover_cny": 1964879500,
+      "change_pct": -0.952671,
+      "turnover_cny": 2104232300,
       "member_count": 17,
       "limit_up_count": 0,
       "first_board_count": 0,
@@ -2194,8 +2108,8 @@
     {
       "code": "885462.TI",
       "name": "乳业",
-      "change_pct": -0.845909,
-      "turnover_cny": 3393434800,
+      "change_pct": -0.674448,
+      "turnover_cny": 3621949600,
       "member_count": 36,
       "limit_up_count": 0,
       "first_board_count": 0,
@@ -2210,8 +2124,8 @@
     {
       "code": "886101.TI",
       "name": "兵装重组概念",
-      "change_pct": -0.856443,
-      "turnover_cny": 989741930,
+      "change_pct": -0.828485,
+      "turnover_cny": 1048426210,
       "member_count": 7,
       "limit_up_count": 0,
       "first_board_count": 0,
@@ -2226,8 +2140,8 @@
     {
       "code": "885808.TI",
       "name": "养鸡",
-      "change_pct": -0.361727,
-      "turnover_cny": 2266689800,
+      "change_pct": -0.320877,
+      "turnover_cny": 2469905800,
       "member_count": 22,
       "limit_up_count": 0,
       "first_board_count": 0,
@@ -2242,8 +2156,8 @@
     {
       "code": "885661.TI",
       "name": "医药电商",
-      "change_pct": -0.763541,
-      "turnover_cny": 19751789000,
+      "change_pct": -0.663156,
+      "turnover_cny": 21488204000,
       "member_count": 186,
       "limit_up_count": 0,
       "first_board_count": 0,
@@ -2258,9 +2172,25 @@
     {
       "code": "886045.TI",
       "name": "同花顺中特估100",
-      "change_pct": -0.847817,
-      "turnover_cny": 50778287000,
+      "change_pct": -0.821902,
+      "turnover_cny": 55344605000,
       "member_count": 100,
+      "limit_up_count": 0,
+      "first_board_count": 0,
+      "second_board_count": 0,
+      "third_board_count": 0,
+      "high_board_count": 0,
+      "max_height": 0,
+      "active_days_3": null,
+      "leaders": [],
+      "source": "同花顺概念指数与成分股涨停交集"
+    },
+    {
+      "code": "885780.TI",
+      "name": "啤酒概念",
+      "change_pct": -0.953023,
+      "turnover_cny": 2613611100,
+      "member_count": 29,
       "limit_up_count": 0,
       "first_board_count": 0,
       "second_board_count": 0,
@@ -2274,9 +2204,25 @@
     {
       "code": "885952.TI",
       "name": "幽门螺杆菌概念",
-      "change_pct": -0.906091,
-      "turnover_cny": 6483748300,
+      "change_pct": -0.714072,
+      "turnover_cny": 7072258600,
       "member_count": 74,
+      "limit_up_count": 0,
+      "first_board_count": 0,
+      "second_board_count": 0,
+      "third_board_count": 0,
+      "high_board_count": 0,
+      "max_height": 0,
+      "active_days_3": null,
+      "leaders": [],
+      "source": "同花顺概念指数与成分股涨停交集"
+    },
+    {
+      "code": "885525.TI",
+      "name": "白酒概念",
+      "change_pct": -0.70684,
+      "turnover_cny": 11186975000,
+      "member_count": 48,
       "limit_up_count": 0,
       "first_board_count": 0,
       "second_board_count": 0,
@@ -2290,8 +2236,8 @@
     {
       "code": "885508.TI",
       "name": "禽流感",
-      "change_pct": -0.825709,
-      "turnover_cny": 1586046400,
+      "change_pct": -0.617983,
+      "turnover_cny": 1730697700,
       "member_count": 23,
       "limit_up_count": 0,
       "first_board_count": 0,
@@ -2306,8 +2252,8 @@
     {
       "code": "886081.TI",
       "name": "维生素",
-      "change_pct": -0.945643,
-      "turnover_cny": 9928480400,
+      "change_pct": -0.815571,
+      "turnover_cny": 10861839800,
       "member_count": 77,
       "limit_up_count": 0,
       "first_board_count": 0,
@@ -2322,8 +2268,8 @@
     {
       "code": "885989.TI",
       "name": "肝炎概念",
-      "change_pct": -0.73319,
-      "turnover_cny": 18807833000,
+      "change_pct": -0.662025,
+      "turnover_cny": 20363196000,
       "member_count": 140,
       "limit_up_count": 0,
       "first_board_count": 0,
@@ -2338,8 +2284,8 @@
     {
       "code": "885805.TI",
       "name": "芬太尼",
-      "change_pct": -0.478326,
-      "turnover_cny": 424406550,
+      "change_pct": -0.390468,
+      "turnover_cny": 486053270,
       "member_count": 8,
       "limit_up_count": 0,
       "first_board_count": 0,
@@ -2354,8 +2300,8 @@
     {
       "code": "885663.TI",
       "name": "证金持股",
-      "change_pct": -0.261729,
-      "turnover_cny": 18119014000,
+      "change_pct": -0.297643,
+      "turnover_cny": 20047648000,
       "member_count": 33,
       "limit_up_count": 0,
       "first_board_count": 0,
@@ -2370,8 +2316,8 @@
     {
       "code": "885761.TI",
       "name": "超级品牌",
-      "change_pct": -0.793729,
-      "turnover_cny": 16085097000,
+      "change_pct": -0.693153,
+      "turnover_cny": 17364157000,
       "member_count": 49,
       "limit_up_count": 0,
       "first_board_count": 0,
@@ -2386,8 +2332,8 @@
     {
       "code": "886056.TI",
       "name": "阿尔茨海默概念",
-      "change_pct": 0.038651,
-      "turnover_cny": 7443492600,
+      "change_pct": -0.104932,
+      "turnover_cny": 8192684500,
       "member_count": 45,
       "limit_up_count": 0,
       "first_board_count": 0,
@@ -2402,8 +2348,8 @@
     {
       "code": "885852.TI",
       "name": "青蒿素",
-      "change_pct": -0.935003,
-      "turnover_cny": 2053615600,
+      "change_pct": -0.707263,
+      "turnover_cny": 2273241100,
       "member_count": 11,
       "limit_up_count": 0,
       "first_board_count": 0,
@@ -2418,8 +2364,8 @@
     {
       "code": "886072.TI",
       "name": "高股息精选",
-      "change_pct": -0.718149,
-      "turnover_cny": 50171831000,
+      "change_pct": -0.707416,
+      "turnover_cny": 55087391000,
       "member_count": 285,
       "limit_up_count": 0,
       "first_board_count": 0,
@@ -2433,7 +2379,7 @@
     }
   ],
   "intraday": {
-    "snapshot_count": 9,
+    "snapshot_count": 10,
     "timeline_ready": false
   },
   "data_quality": {
