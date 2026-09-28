@@ -261,11 +261,39 @@
         "direction": "增量",
         "source": "同花顺历史快照同时间比较"
       }
+    },
+    {
+      "time": "2026-09-28T05:55:18.199992+00:00",
+      "source": "同花顺官方 Financial-API",
+      "limit_up_count": 27,
+      "limit_down_count": 58,
+      "broken_count": 13,
+      "broken_rate_pct": 32.5,
+      "promotion_rate_pct": 11.76,
+      "highest_board": 5,
+      "leader": {
+        "code": "600825",
+        "name": "新华传媒"
+      },
+      "strongest_theme": "流感",
+      "slot": "13:45",
+      "turnover_cny": 1378161470000,
+      "amount_comparison": {
+        "status": "ready",
+        "time": "13:45",
+        "previousTradeDate": "2026-09-24",
+        "current": 1378161470000,
+        "previous": 1276225060000,
+        "difference": 101936410000,
+        "changePct": 7.99,
+        "direction": "增量",
+        "source": "同花顺历史快照同时间比较"
+      }
     }
   ],
   "data_quality": {
-    "snapshot_count": 11,
-    "valid_snapshot_count": 9,
+    "snapshot_count": 12,
+    "valid_snapshot_count": 10,
     "excluded_snapshot_count": 2,
     "timeline_ready": false,
     "note": "仅接受同日北京时间交易时段的有效分钟快照；需覆盖09:35、午前、13:45附近及14:45后的尾盘。"
