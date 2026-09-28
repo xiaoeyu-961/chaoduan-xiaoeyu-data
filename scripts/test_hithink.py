@@ -2,7 +2,7 @@ import unittest
 from unittest.mock import patch
 
 from hithink_client import HithinkError, all_quotes, pool
-from fetch_hithink import build_market
+from fetch_hithink import build_market, enrich
 from fetch_emotion import merged_theme_structure, normalize_trading_dates
 from build_cycle_analysis import leader_strength
 
@@ -83,6 +83,44 @@ class SourceIntegrity(unittest.TestCase):
         self.assertNotIn("封板稳定性", result["missing_metrics"])
         self.assertNotIn("龙头所在题材涨停数", result["missing_metrics"])
         self.assertEqual(next(row for row in themes if row["name"] == "机器人")["limit_up_count"], 2)
+
+    def test_industry_catalog_is_used_for_stock_classification(self):
+        market = {"limitUps": [{"code": "1", "thscode": "000001.SZ", "name": "甲",
+                                "height": 2, "theme": None, "industry": None,
+                                "industrySource": None, "limitReason": "机器人"}],
+                  "themes": []}
+        facts = {"sectors": None}
+
+        def fake_get(path, params=None):
+            if path.endswith("limit-up-ladder"):
+                return {"item": []}
+            if path.endswith("auction/snapshot") or path.endswith("anomaly-analysis-stock"):
+                return {"item": []}
+            if path.endswith("ths-index-list"):
+                self.assertEqual(params, {"tag": "industry"})
+                return {"item": [{"thscode": "881001.TI", "name": "电子"}]}
+            if path.endswith("prices/snapshot"):
+                return {"item": [{"thscode": "881001.TI", "price_change_ratio_pct": 1.2,
+                                   "turnover": 100}]}
+            if path.endswith("ths-stock-list"):
+                return {"item": [{"thscode": "000001.SZ"}]}
+            raise AssertionError(path)
+
+        with patch("fetch_hithink.get", side_effect=fake_get):
+            enrich("2026-09-28", market, facts)
+        self.assertEqual(facts["sectors"]["category"], "industry")
+        self.assertEqual(facts["sectors"]["classification"], "ths_level_1_industry")
+        self.assertEqual(market["limitUps"][0]["industry"], "电子")
+        self.assertEqual(market["limitUps"][0]["theme"], "电子")
+        self.assertEqual(market["themes"][0]["name"], "电子")
+
+    def test_reason_themes_do_not_mix_into_official_industries(self):
+        market = {"themes": [{"code": "881001.TI", "name": "电子", "leaders": [],
+                              "limitUpCount": 1, "maxHeight": 1}],
+                  "limitUps": [{"code": "1", "name": "甲", "height": 1,
+                                "limitReason": "机器人"}]}
+        rows = merged_theme_structure(market)
+        self.assertEqual([row["name"] for row in rows], ["电子"])
 
 
 if __name__ == "__main__":

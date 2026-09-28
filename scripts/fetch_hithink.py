@@ -51,7 +51,8 @@ def save(path: Path, payload: dict) -> None:
 def normalize_stock(item: dict, kind: str = "limitUp") -> dict:
     return {
         "code": item.get("ticker"), "thscode": item.get("thscode"),
-        "name": item.get("name"), "theme": None,
+        "name": item.get("name"), "theme": None, "industry": None,
+        "industrySource": None,
         "height": item.get("continue_day_cnt") if kind == "limitUp" else None,
         "firstLimit": item.get("limit_up_time") if kind == "limitUp" else item.get("first_limit_time"),
         "lastLimit": item.get("limit_up_time") if kind == "limitUp" else item.get("last_limit_time"),
@@ -166,7 +167,7 @@ def build_market(date: str) -> tuple[dict, dict]:
                     "errors": ([f"broken_pool: {broken_error}"] if broken_error else []),
                     "collector": "hithink-finance",
                     "notes": ["缺少有效涨跌幅的停牌、退市或未交易标的从涨跌家数统计母体中剔除，不计入平盘。",
-                              "涨停原因不是概念板块归属；板块需单独使用成分股接口。"]},
+                              "涨停原因不是行业归属；行业统一使用同花顺行业指数成分股接口。"]},
     }
     facts = {"source": market["source"], "trade_date": date, "updated_at": generated,
              "market_quote_total": universe,
@@ -210,54 +211,60 @@ def enrich(date: str, market: dict, facts: dict) -> None:
         except HithinkError as exc:
             facts.setdefault("missing", []).append(f"anomaly_analysis: {exc}")
     try:
-        catalog = get("/api/a-share-index/catalog/ths-index-list", {"tag": "cn_concept"})
+        # Industry attribution must use Tonghuashun's official industry index
+        # membership.  Limit-up reasons are event/theme descriptions and must
+        # never be treated as an industry classification.
+        catalog = get("/api/a-share-index/catalog/ths-index-list", {"tag": "industry"})
         items = catalog.get("item") or []
         quotes = []
         for start in range(0, len(items), 50):
             codes = ",".join(row["thscode"] for row in items[start:start + 50])
             quotes.extend(get("/api/a-share-index/prices/snapshot", {"thscodes": codes}).get("item") or [])
         if len({row.get("thscode") for row in quotes}) != len(items):
-            raise HithinkError("concept index snapshot incomplete")
+            raise HithinkError("industry index snapshot incomplete")
         names = {row["thscode"]: row["name"] for row in items}
-        # Always include concepts explicitly named by the official limit-up
-        # reason, in addition to the strongest 30 concepts. Querying every
-        # concept's constituents every ten minutes is unnecessarily expensive,
-        # while this targeted expansion covers the current leaders directly.
-        reason_names = {str(row.get("limitReason") or "").strip()
-                        for row in market["limitUps"] if row.get("limitReason")}
-        reason_codes = {code for code, name in names.items()
-                        if name in reason_names or any(name in reason or reason in name
-                                                       for reason in reason_names)}
+        # The industry catalogue is much smaller than the concept catalogue.
+        # Read every industry's constituents so every limit-up stock receives
+        # the same official classification, including weak industries outside
+        # the top performers.
         strongest = sorted(quotes, key=lambda row: row.get("price_change_ratio_pct")
                            if row.get("price_change_ratio_pct") is not None else float("-inf"),
                            reverse=True)[:30]
-        selected_codes = {row["thscode"] for row in strongest} | reason_codes
-        leaders = [row for row in quotes if row.get("thscode") in selected_codes]
+        quote_by_index = {row["thscode"]: row for row in quotes}
         up_codes = {row["thscode"]: row for row in market["limitUps"]}
         sectors = []
-        for leader in leaders:
-            thscode = leader["thscode"]
+        strongest_codes = {row["thscode"] for row in strongest}
+        for item in items:
+            thscode = item["thscode"]
+            leader = quote_by_index.get(thscode) or {}
             try:
                 members = get("/api/a-share-index/constituents/ths-stock-list", {
                     "thscode": thscode}).get("item") or []
                 winners = [up_codes[row["thscode"]] for row in members if row.get("thscode") in up_codes]
                 for winner in winners:
-                    if not winner.get("theme"):
-                        winner["theme"] = names[thscode]
+                    winner["industry"] = names[thscode]
+                    winner["industrySource"] = "ths_industry_index_membership"
+                    # Keep the legacy field until the page contract migrates;
+                    # its value is now explicitly the official industry.
+                    winner["theme"] = names[thscode]
                 heights = Counter(row["height"] for row in winners)
-                sectors.append({"code": thscode, "name": names[thscode],
+                sector = {"code": thscode, "name": names[thscode],
                                 "change_pct": leader.get("price_change_ratio_pct"),
                                 "turnover_cny": leader.get("turnover"),
                                 "member_count": len(members), "limit_up_count": len(winners),
                                 "board_counts": dict(heights),
                                 "limit_up_stocks": [{"code": row["code"], "name": row["name"],
                                                      "height": row["height"]} for row in winners],
-                                "source": "同花顺概念指数及当前成分股"})
+                                "source": "同花顺行业指数及当前成分股"}
+                if thscode in strongest_codes or winners:
+                    sectors.append(sector)
             except HithinkError as exc:
                 facts.setdefault("missing", []).append(f"sector_members {thscode}: {exc}")
-        facts["sectors"] = {"category": "cn_concept", "catalog_count": len(items),
+        sectors.sort(key=lambda row: (-(row.get("change_pct") if row.get("change_pct") is not None else float("-inf")),
+                                      -(row.get("limit_up_count") or 0), row.get("name") or ""))
+        facts["sectors"] = {"category": "industry", "classification": "ths_level_1_industry",
+                            "catalog_count": len(items),
                             "quotes_count": len(quotes), "top_by_change_pct": sectors,
-                            "matched_reason_concepts": len(reason_codes),
                             "strength_ready": True,
                             "missing": "跨日板块持续性仍需由每日快照累积。"}
         # Feed the verified sector/member intersection into the normal market
@@ -272,7 +279,7 @@ def enrich(date: str, market: dict, facts: dict) -> None:
             "leaders": row.get("limit_up_stocks", []),
         } for row in sectors]
     except HithinkError as exc:
-        facts.setdefault("missing", []).append(f"sector_catalog: {exc}")
+        facts.setdefault("missing", []).append(f"industry_catalog: {exc}")
 
 
 def main() -> None:

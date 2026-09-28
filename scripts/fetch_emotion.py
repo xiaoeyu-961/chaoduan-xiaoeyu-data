@@ -251,7 +251,7 @@ def theme_structure(sessions: list[dict]) -> list[dict]:
 
 
 def official_theme_structure(market: dict) -> list[dict]:
-    """Normalize verified concept/member intersections into cycle inputs."""
+    """Normalize verified THS industry/member intersections into cycle inputs."""
     result = []
     for theme in market.get("themes") or []:
         leaders = theme.get("leaders") or []
@@ -269,7 +269,7 @@ def official_theme_structure(market: dict) -> list[dict]:
             "max_height": theme.get("maxHeight") or 0,
             "active_days_3": None,
             "leaders": leaders[:4],
-            "source": "同花顺概念指数与成分股涨停交集",
+            "source": "同花顺一级行业指数与成分股涨停交集",
         })
     return result
 
@@ -313,9 +313,11 @@ def reason_theme_structure(market: dict) -> list[dict]:
 
 def merged_theme_structure(market: dict) -> list[dict]:
     official = official_theme_structure(market)
-    known = {row.get("name") for row in official}
-    fallback = [row for row in reason_theme_structure(market) if row.get("name") not in known]
-    return sorted(official + fallback,
+    # Never mix event/theme text from limit-up reasons into the official
+    # industry ranking.  Reasons remain available on each stock for separate
+    # short-term theme analysis, and are used only if industry data is absent.
+    rows = official or reason_theme_structure(market)
+    return sorted(rows,
                   key=lambda row: (-(row.get("limit_up_count") or 0),
                                    -(row.get("max_height") or 0), row.get("name") or ""))
 
@@ -518,12 +520,13 @@ def main() -> None:
     leaders = [
         {
             "code": row["code"], "name": row["name"],
-            "theme": row.get("theme") or max(
+            "theme": row.get("industry") or row.get("theme") or max(
                 reason_tokens(row.get("limitReason")),
                 key=lambda token: (reason_counts[token],
                                    -reason_tokens(row.get("limitReason")).index(token)),
                 default=None),
-            "theme_source": "concept_membership" if row.get("theme") else "limit_up_reason",
+            "theme_source": (row.get("industrySource") or "ths_industry_index_membership")
+                            if (row.get("industry") or row.get("theme")) else "limit_up_reason",
             "height": row["height"], "first_limit": row["firstLimit"],
             "last_limit": row["lastLimit"], "open_count": row["openCount"],
             "seal_amount": row["sealAmount"],

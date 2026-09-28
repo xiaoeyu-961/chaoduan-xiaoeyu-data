@@ -78,6 +78,7 @@ def build_ladder(market: dict, details: dict | None = None) -> dict:
         height = str(row.get("height") or 1)
         grouped.setdefault(height, []).append({
             "code": row.get("code"), "name": row.get("name"), "theme": row.get("theme"),
+            "industry": row.get("industry"), "industry_source": row.get("industrySource"),
             "height": row.get("height"), "first_limit": row.get("firstLimit"),
             "last_limit": row.get("lastLimit"), "open_count": row.get("openCount"),
             "amount": row.get("amount"), "seal_amount": row.get("sealAmount"),
@@ -143,6 +144,7 @@ def main() -> None:
         workbench["hithink_facts"] = details
     workbench["sector_strength"] = {
         "date": date,
+        "classification": "同花顺一级行业",
         "method": "龙头强度30% + 板块宽度25% + 梯队完整度25% + 资金持续性20%",
         "sectors": (cycle.get("medium_cycle") or {}).get("themes", []),
         "official_sector_facts": details.get("sectors") if details else None,
