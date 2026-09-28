@@ -1,23 +1,17 @@
 {
   "schema_version": "market_status_v1",
-  "market_date": "2026-09-24",
-  "latest_snapshot_id": "2026-09-24-160834-r0",
-  "latest_snapshot": "2026-09-24T16:08:34.220535+08:00",
-  "session": "manual",
+  "market_date": "2026-09-28",
+  "latest_snapshot_id": "2026-09-28-093650-r0",
+  "latest_snapshot": "2026-09-28T09:36:50.306947+08:00",
+  "session": "open_check",
   "source": "同花顺官方 Financial-API",
-  "status": "stale",
+  "status": "complete",
   "missing_fields": [],
-  "last_error": "HithinkError: /api/a-share/special-data/limit-break-pool: HithinkError: API retryable code 5003",
-  "last_attempt": {
-    "snapshot_id": "2026-09-28-091652-r0",
-    "market_date": "2026-09-28",
-    "captured_at": "2026-09-28T09:16:52.440156+08:00",
-    "status": "failed"
-  },
+  "last_error": null,
   "datasets": {
     "market": {
-      "status": "stale",
-      "updated_at": "2026-09-24T16:08:34.220535+08:00",
+      "status": "complete",
+      "updated_at": "2026-09-28T09:36:50.306947+08:00",
       "missing_fields": []
     }
   }
