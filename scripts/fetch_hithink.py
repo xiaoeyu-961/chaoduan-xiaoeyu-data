@@ -67,7 +67,15 @@ def normalize_stock(item: dict, kind: str = "limitUp") -> dict:
 
 def build_market(date: str) -> tuple[dict, dict]:
     up_raw = pool("limitUp", date)
-    broken_raw = pool("broken", date)
+    broken_error = None
+    try:
+        broken_raw = pool("broken", date)
+    except HithinkError as exc:
+        # The provider's limit-break pool is less stable than the core quote,
+        # limit-up and limit-down endpoints.  A temporary 5003 here must not
+        # discard an otherwise valid market snapshot.
+        broken_raw = []
+        broken_error = str(exc)
     down_raw = pool("limitDown", date)
     quotes, universe = all_quotes()
     indices_raw = get("/api/a-share-index/prices/snapshot", {
@@ -128,7 +136,7 @@ def build_market(date: str) -> tuple[dict, dict]:
     broken = [normalize_stock(r, "broken") for r in broken_raw]
     limit_down = [normalize_stock(r, "limitDown") for r in down_raw]
     generated = datetime.now(timezone.utc).isoformat()
-    denominator = len(up_raw) + len(broken_raw)
+    denominator = len(up_raw) + len(broken_raw) if broken_error is None else None
     market = {
         "schemaVersion": 1, "ok": True,
         "source": "同花顺官方 Financial-API", "sourceMode": "scheduled-snapshot",
@@ -147,25 +155,31 @@ def build_market(date: str) -> tuple[dict, dict]:
                     "totalAmount": index_total_amount,
                     "stockAmount": total_turnover if turnover_complete else None,
                     "source": "同花顺全市场行情快照"},
-        "limitUpCount": len(limit_ups), "brokenCount": len(broken),
+        "limitUpCount": len(limit_ups),
+        "brokenCount": len(broken) if broken_error is None else None,
         "limitDownCount": len(limit_down),
         "brokenRate": round(len(broken) / denominator * 100, 2) if denominator else None,
         "highest": limit_ups[0] if limit_ups else None,
         "limitUps": limit_ups, "broken": broken, "limitDown": limit_down,
         "themes": [],
-        "quality": {"complete": breadth_complete and turnover_complete,
-                    "errors": [], "collector": "hithink-finance",
+        "quality": {"complete": breadth_complete and turnover_complete and broken_error is None,
+                    "errors": ([f"broken_pool: {broken_error}"] if broken_error else []),
+                    "collector": "hithink-finance",
                     "notes": ["缺少有效涨跌幅的停牌、退市或未交易标的从涨跌家数统计母体中剔除，不计入平盘。",
                               "涨停原因不是概念板块归属；板块需单独使用成分股接口。"]},
     }
     facts = {"source": market["source"], "trade_date": date, "updated_at": generated,
              "market_quote_total": universe,
              "limit_up": {"count": len(up_raw), "complete": True},
-             "broken": {"count": len(broken_raw), "complete": True},
+             "broken": {"count": len(broken_raw) if broken_error is None else None,
+                        "complete": broken_error is None,
+                        "error": broken_error},
              "limit_down": {"count": len(down_raw), "complete": True},
              "auction": None, "sectors": None,
              "market_amount_cny": index_total_amount,
              "market_amount_scope": "上证指数成交额 + 深证成指成交额"}
+    if broken_error:
+        facts.setdefault("missing", []).append(f"broken_pool: {broken_error}")
     return market, facts
 
 
