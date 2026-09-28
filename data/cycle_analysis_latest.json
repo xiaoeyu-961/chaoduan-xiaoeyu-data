@@ -2,7 +2,7 @@
   "schema_version": 2,
   "ok": true,
   "trade_date": "2026-09-28",
-  "generated_at": "2026-09-28T07:28:51.260250+00:00",
+  "generated_at": "2026-09-28T07:50:28.505695+00:00",
   "principles": [
     "不使用5/10/20日均线判断情绪周期",
     "龙头强度与市场生态分开计算",
@@ -11,8 +11,8 @@
   ],
   "dashboard": {
     "market_composite": 0,
-    "leader_strength": 53,
-    "market_ecology": 23,
+    "leader_strength": 54,
+    "market_ecology": 24,
     "market_width": 0,
     "relay_ecology": 33,
     "mainline_strength": 33,
@@ -37,11 +37,11 @@
       "冰点"
     ],
     "supporting_factors": [
-      "最高板5板"
+      "最高板5板",
+      "炸板率23.91%可控"
     ],
     "pressure_factors": [
       "晋级率仅13.73%",
-      "炸板率25.53%偏高",
       "昨日涨停平均反馈-1.77%偏弱",
       "近端涨停数量未形成上升趋势"
     ],
@@ -2140,77 +2140,6 @@
             {
               "code": "301190",
               "name": "善水科技",
-              "height": 1
-            }
-          ],
-          "source": "同花顺一级行业指数与成分股涨停交集"
-        },
-        "explanation": {
-          "score": 8,
-          "coverage_pct": 80.0,
-          "components": [
-            {
-              "metric": "龙头强度",
-              "value": 1,
-              "weight": 30,
-              "normalized": 0,
-              "contribution": 0.0
-            },
-            {
-              "metric": "板块宽度",
-              "value": 1,
-              "weight": 25,
-              "normalized": 0,
-              "contribution": 0.0
-            },
-            {
-              "metric": "梯队完整度",
-              "value": 1,
-              "weight": 25,
-              "normalized": 25.0,
-              "contribution": 7.81
-            },
-            {
-              "metric": "资金持续性",
-              "value": null,
-              "weight": 20,
-              "normalized": null,
-              "contribution": null
-            }
-          ],
-          "missing_metrics": [
-            "资金持续性"
-          ]
-        }
-      },
-      {
-        "theme": "其他计算机设备",
-        "stage": "萌芽",
-        "score": 8,
-        "trend": "→",
-        "subscores": {
-          "leader_strength": 0,
-          "sector_width": 0,
-          "ladder_completeness": 25,
-          "capital_persistence": 0
-        },
-        "facts": {
-          "code": "884207.TI",
-          "name": "其他计算机设备",
-          "change_pct": -2.31855,
-          "turnover_cny": 18070543000,
-          "member_count": 58,
-          "limit_up_count": 1,
-          "first_board_count": 1,
-          "second_board_count": 0,
-          "third_board_count": 0,
-          "high_board_count": 0,
-          "max_height": 1,
-          "active_days_3": null,
-          "leaders": [
-            {
-              "code": "002912",
-              "name": "中新赛克",
               "height": 1
             }
           ],
@@ -5378,10 +5307,10 @@
         },
         {
           "metric": "封板质量",
-          "value": 74.47,
+          "value": 76.09,
           "weight": 10,
-          "normalized": 61.18,
-          "contribution": 6.8
+          "normalized": 65.23,
+          "contribution": 7.25
         }
       ],
       "missing_metrics": [
@@ -5447,7 +5376,7 @@
       "confidence": "medium"
     },
     "C": {
-      "score": 53,
+      "score": 54,
       "coverage_pct": 100.0,
       "components": [
         {
@@ -5459,12 +5388,12 @@
         },
         {
           "metric": "封板稳定性",
-          "value": 0.77,
+          "value": 23.9,
           "weight": 25,
-          "normalized": 0,
+          "normalized": 4.87,
           "basis": "当前封单额/峰值封单额",
           "proxy": false,
-          "contribution": 0.0
+          "contribution": 1.22
         },
         {
           "metric": "首次封板主动性",
@@ -5475,7 +5404,7 @@
         },
         {
           "metric": "封单/成交额",
-          "value": 178.81,
+          "value": 5551.07,
           "weight": 15,
           "normalized": 100,
           "contribution": 15.0
@@ -5555,22 +5484,22 @@
       "confidence": "high"
     },
     "S": {
-      "score": 61,
+      "score": 65,
       "coverage_pct": 100.0,
       "components": [
         {
           "metric": "封板率",
-          "value": 74.47,
+          "value": 76.09,
           "weight": 60,
-          "normalized": 61.18,
-          "contribution": 36.71
+          "normalized": 65.23,
+          "contribution": 39.14
         },
         {
           "metric": "炸板率",
-          "value": 25.53,
+          "value": 23.91,
           "weight": 40,
-          "normalized": 61.18,
-          "contribution": 24.47
+          "normalized": 65.22,
+          "contribution": 26.09
         }
       ],
       "missing_metrics": [],
@@ -5605,7 +5534,7 @@
   },
   "leader_ecology_matrix": {
     "leader_strength": {
-      "score": 53,
+      "score": 54,
       "coverage_pct": 100.0,
       "components": [
         {
@@ -5617,12 +5546,12 @@
         },
         {
           "metric": "封板稳定性",
-          "value": 0.77,
+          "value": 23.9,
           "weight": 25,
-          "normalized": 0,
+          "normalized": 4.87,
           "basis": "当前封单额/峰值封单额",
           "proxy": false,
-          "contribution": 0.0
+          "contribution": 1.22
         },
         {
           "metric": "首次封板主动性",
@@ -5633,7 +5562,7 @@
         },
         {
           "metric": "封单/成交额",
-          "value": 178.81,
+          "value": 5551.07,
           "weight": 15,
           "normalized": 100,
           "contribution": 15.0
@@ -5659,7 +5588,7 @@
       "confidence": "high"
     },
     "market_ecology": {
-      "score": 23,
+      "score": 24,
       "coverage_pct": 100.0,
       "components": [
         {
@@ -5671,10 +5600,10 @@
         },
         {
           "metric": "炸板率",
-          "value": 25.53,
+          "value": 23.91,
           "weight": 16,
-          "normalized": 61.18,
-          "contribution": 9.79
+          "normalized": 65.22,
+          "contribution": 10.44
         },
         {
           "metric": "连板晋级率",
