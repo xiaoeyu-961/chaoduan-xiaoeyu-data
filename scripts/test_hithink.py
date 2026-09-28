@@ -51,6 +51,23 @@ class SourceIntegrity(unittest.TestCase):
         self.assertEqual(market["limitUps"][0]["maxSealAmount"], 100)
         self.assertEqual(market["limitUps"][0]["amount"], 100)
 
+    def test_broken_pool_failure_keeps_core_market_snapshot(self):
+        index = [{"thscode": code, "ticker": code[:6], "turnover": 1}
+                 for code in ("000001.SH", "399001.SZ", "399006.SZ", "000688.SH")]
+        quote_rows = [{"thscode": "123456.SZ", "price_change_ratio_pct": 1, "turnover": 100}]
+        limit_up = [{"ticker": "123456", "thscode": "123456.SZ", "name": "甲",
+                     "continue_day_cnt": 1, "limit_up_reason": "测试", "limit_up_time": "09:35"}]
+        with patch("fetch_hithink.pool", side_effect=[limit_up, HithinkError("API retryable code 5003"), []]), \
+             patch("fetch_hithink.all_quotes", return_value=(quote_rows, 1)), \
+             patch("fetch_hithink.get", return_value={"item": index}):
+            market, facts = build_market("2026-09-28")
+        self.assertEqual(market["tradeDate"], "2026-09-28")
+        self.assertEqual(market["limitUpCount"], 1)
+        self.assertIsNone(market["brokenCount"])
+        self.assertIsNone(market["brokenRate"])
+        self.assertFalse(facts["broken"]["complete"])
+        self.assertIn("5003", facts["broken"]["error"])
+
     def test_leader_quality_uses_seal_retention_and_reason_breadth(self):
         market = {"themes": [], "limitUps": [
             {"code": "1", "name": "甲", "height": 4, "limitReason": "收购+机器人"},
