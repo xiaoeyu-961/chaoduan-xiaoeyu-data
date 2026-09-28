@@ -2,7 +2,7 @@
   "schema_version": 2,
   "ok": true,
   "trade_date": "2026-09-28",
-  "generated_at": "2026-09-28T03:20:41.230167+00:00",
+  "generated_at": "2026-09-28T03:41:53.361818+00:00",
   "principles": [
     "不使用5/10/20日均线判断情绪周期",
     "龙头强度与市场生态分开计算",
@@ -11,7 +11,7 @@
   ],
   "dashboard": {
     "market_composite": 0,
-    "leader_strength": 60,
+    "leader_strength": 59,
     "market_ecology": 14,
     "market_width": 0,
     "relay_ecology": 33,
@@ -42,7 +42,7 @@
     "pressure_factors": [
       "晋级率仅9.8%",
       "炸板率35.14%偏高",
-      "昨日涨停平均反馈-2.73%偏弱",
+      "昨日涨停平均反馈-2.48%偏弱",
       "近端涨停数量未形成上升趋势"
     ],
     "conclusion": "下降退潮·退潮加速"
@@ -702,8 +702,8 @@
         "facts": {
           "code": "885939.TI",
           "name": "海峡两岸",
-          "change_pct": -3.284561,
-          "turnover_cny": 100834676000,
+          "change_pct": -3.174149,
+          "turnover_cny": 103720446000,
           "member_count": 321,
           "limit_up_count": 1,
           "first_board_count": 0,
@@ -973,6 +973,92 @@
         }
       },
       {
+        "theme": "工业互联网",
+        "stage": "萌芽",
+        "score": 18,
+        "trend": "→",
+        "subscores": {
+          "leader_strength": 0,
+          "sector_width": 33,
+          "ladder_completeness": 25,
+          "capital_persistence": 0
+        },
+        "facts": {
+          "code": "885783.TI",
+          "name": "工业互联网",
+          "change_pct": -2.455171,
+          "turnover_cny": 115974449000,
+          "member_count": 442,
+          "limit_up_count": 4,
+          "first_board_count": 4,
+          "second_board_count": 0,
+          "third_board_count": 0,
+          "high_board_count": 0,
+          "max_height": 1,
+          "active_days_3": null,
+          "leaders": [
+            {
+              "code": "002232",
+              "name": "启明信息",
+              "height": 1
+            },
+            {
+              "code": "002347",
+              "name": "泰尔股份",
+              "height": 1
+            },
+            {
+              "code": "002912",
+              "name": "中新赛克",
+              "height": 1
+            },
+            {
+              "code": "600418",
+              "name": "江淮汽车",
+              "height": 1
+            }
+          ],
+          "source": "同花顺概念指数与成分股涨停交集"
+        },
+        "explanation": {
+          "score": 18,
+          "coverage_pct": 80.0,
+          "components": [
+            {
+              "metric": "龙头强度",
+              "value": 1,
+              "weight": 30,
+              "normalized": 0,
+              "contribution": 0.0
+            },
+            {
+              "metric": "板块宽度",
+              "value": 4,
+              "weight": 25,
+              "normalized": 33.33,
+              "contribution": 10.42
+            },
+            {
+              "metric": "梯队完整度",
+              "value": 1,
+              "weight": 25,
+              "normalized": 25.0,
+              "contribution": 7.81
+            },
+            {
+              "metric": "资金持续性",
+              "value": null,
+              "weight": 20,
+              "normalized": null,
+              "contribution": null
+            }
+          ],
+          "missing_metrics": [
+            "资金持续性"
+          ]
+        }
+      },
+      {
         "theme": "绿色电力",
         "stage": "萌芽",
         "score": 18,
@@ -986,8 +1072,8 @@
         "facts": {
           "code": "885936.TI",
           "name": "绿色电力",
-          "change_pct": -1.702924,
-          "turnover_cny": 76614099000,
+          "change_pct": -1.638463,
+          "turnover_cny": 78925321000,
           "member_count": 430,
           "limit_up_count": 4,
           "first_board_count": 4,
@@ -1072,8 +1158,8 @@
         "facts": {
           "code": "886078.TI",
           "name": "商业航天",
-          "change_pct": -3.59276,
-          "turnover_cny": 174001460000,
+          "change_pct": -3.517711,
+          "turnover_cny": 178607980000,
           "member_count": 508,
           "limit_up_count": 3,
           "first_board_count": 3,
@@ -1153,8 +1239,8 @@
         "facts": {
           "code": "885942.TI",
           "name": "数据安全",
-          "change_pct": -1.937121,
-          "turnover_cny": 47148454000,
+          "change_pct": -1.728139,
+          "turnover_cny": 48753918000,
           "member_count": 176,
           "limit_up_count": 3,
           "first_board_count": 3,
@@ -1234,8 +1320,8 @@
         "facts": {
           "code": "885459.TI",
           "name": "网络安全",
-          "change_pct": -2.245933,
-          "turnover_cny": 54202369000,
+          "change_pct": -2.04732,
+          "turnover_cny": 55616080000,
           "member_count": 195,
           "limit_up_count": 3,
           "first_board_count": 3,
@@ -1515,6 +1601,82 @@
         }
       },
       {
+        "theme": "AI安全",
+        "stage": "萌芽",
+        "score": 11,
+        "trend": "→",
+        "subscores": {
+          "leader_strength": 0,
+          "sector_width": 11,
+          "ladder_completeness": 25,
+          "capital_persistence": 0
+        },
+        "facts": {
+          "code": null,
+          "name": "AI安全",
+          "change_pct": null,
+          "turnover_cny": null,
+          "member_count": null,
+          "limit_up_count": 2,
+          "first_board_count": 2,
+          "second_board_count": 0,
+          "third_board_count": 0,
+          "high_board_count": 0,
+          "max_height": 1,
+          "active_days_3": null,
+          "leaders": [
+            {
+              "code": "002912",
+              "name": "中新赛克",
+              "height": 1
+            },
+            {
+              "code": "688244",
+              "name": "永信至诚",
+              "height": 1
+            }
+          ],
+          "source": "同花顺涨停原因聚合"
+        },
+        "explanation": {
+          "score": 11,
+          "coverage_pct": 80.0,
+          "components": [
+            {
+              "metric": "龙头强度",
+              "value": 1,
+              "weight": 30,
+              "normalized": 0,
+              "contribution": 0.0
+            },
+            {
+              "metric": "板块宽度",
+              "value": 2,
+              "weight": 25,
+              "normalized": 11.11,
+              "contribution": 3.47
+            },
+            {
+              "metric": "梯队完整度",
+              "value": 1,
+              "weight": 25,
+              "normalized": 25.0,
+              "contribution": 7.81
+            },
+            {
+              "metric": "资金持续性",
+              "value": null,
+              "weight": 20,
+              "normalized": null,
+              "contribution": null
+            }
+          ],
+          "missing_metrics": [
+            "资金持续性"
+          ]
+        }
+      },
+      {
         "theme": "深圳国企改革",
         "stage": "萌芽",
         "score": 11,
@@ -1528,8 +1690,8 @@
         "facts": {
           "code": "885697.TI",
           "name": "深圳国企改革",
-          "change_pct": -0.196148,
-          "turnover_cny": 5192527000,
+          "change_pct": 0.062578,
+          "turnover_cny": 5320548800,
           "member_count": 29,
           "limit_up_count": 2,
           "first_board_count": 2,
@@ -1604,8 +1766,8 @@
         "facts": {
           "code": "885915.TI",
           "name": "物业管理",
-          "change_pct": -1.696725,
-          "turnover_cny": 22706182000,
+          "change_pct": -1.574859,
+          "turnover_cny": 23375571000,
           "member_count": 183,
           "limit_up_count": 2,
           "first_board_count": 2,
@@ -1680,8 +1842,8 @@
         "facts": {
           "code": "885641.TI",
           "name": "风电",
-          "change_pct": -2.374087,
-          "turnover_cny": 108545233000,
+          "change_pct": -2.28141,
+          "turnover_cny": 111476437000,
           "member_count": 445,
           "limit_up_count": 2,
           "first_board_count": 2,
@@ -1885,77 +2047,6 @@
         }
       },
       {
-        "theme": "AI安全",
-        "stage": "萌芽",
-        "score": 8,
-        "trend": "→",
-        "subscores": {
-          "leader_strength": 0,
-          "sector_width": 0,
-          "ladder_completeness": 25,
-          "capital_persistence": 0
-        },
-        "facts": {
-          "code": null,
-          "name": "AI安全",
-          "change_pct": null,
-          "turnover_cny": null,
-          "member_count": null,
-          "limit_up_count": 1,
-          "first_board_count": 1,
-          "second_board_count": 0,
-          "third_board_count": 0,
-          "high_board_count": 0,
-          "max_height": 1,
-          "active_days_3": null,
-          "leaders": [
-            {
-              "code": "002912",
-              "name": "中新赛克",
-              "height": 1
-            }
-          ],
-          "source": "同花顺涨停原因聚合"
-        },
-        "explanation": {
-          "score": 8,
-          "coverage_pct": 80.0,
-          "components": [
-            {
-              "metric": "龙头强度",
-              "value": 1,
-              "weight": 30,
-              "normalized": 0,
-              "contribution": 0.0
-            },
-            {
-              "metric": "板块宽度",
-              "value": 1,
-              "weight": 25,
-              "normalized": 0,
-              "contribution": 0.0
-            },
-            {
-              "metric": "梯队完整度",
-              "value": 1,
-              "weight": 25,
-              "normalized": 25.0,
-              "contribution": 7.81
-            },
-            {
-              "metric": "资金持续性",
-              "value": null,
-              "weight": 20,
-              "normalized": null,
-              "contribution": null
-            }
-          ],
-          "missing_metrics": [
-            "资金持续性"
-          ]
-        }
-      },
-      {
         "theme": "AR/VR",
         "stage": "萌芽",
         "score": 8,
@@ -2111,8 +2202,8 @@
         "facts": {
           "code": "885947.TI",
           "name": "DRG/DIP",
-          "change_pct": -0.889836,
-          "turnover_cny": 2071631700,
+          "change_pct": -0.695163,
+          "turnover_cny": 2123645600,
           "member_count": 22,
           "limit_up_count": 1,
           "first_board_count": 1,
@@ -2466,8 +2557,8 @@
         "facts": {
           "code": "885856.TI",
           "name": "仿制药一致性评价",
-          "change_pct": -0.584185,
-          "turnover_cny": 17857211000,
+          "change_pct": -0.564213,
+          "turnover_cny": 18340499000,
           "member_count": 145,
           "limit_up_count": 1,
           "first_board_count": 1,
@@ -2595,77 +2686,6 @@
         }
       },
       {
-        "theme": "其它",
-        "stage": "萌芽",
-        "score": 8,
-        "trend": "→",
-        "subscores": {
-          "leader_strength": 0,
-          "sector_width": 0,
-          "ladder_completeness": 25,
-          "capital_persistence": 0
-        },
-        "facts": {
-          "code": null,
-          "name": "其它",
-          "change_pct": null,
-          "turnover_cny": null,
-          "member_count": null,
-          "limit_up_count": 1,
-          "first_board_count": 1,
-          "second_board_count": 0,
-          "third_board_count": 0,
-          "high_board_count": 0,
-          "max_height": 1,
-          "active_days_3": null,
-          "leaders": [
-            {
-              "code": "688244",
-              "name": "永信至诚",
-              "height": 1
-            }
-          ],
-          "source": "同花顺涨停原因聚合"
-        },
-        "explanation": {
-          "score": 8,
-          "coverage_pct": 80.0,
-          "components": [
-            {
-              "metric": "龙头强度",
-              "value": 1,
-              "weight": 30,
-              "normalized": 0,
-              "contribution": 0.0
-            },
-            {
-              "metric": "板块宽度",
-              "value": 1,
-              "weight": 25,
-              "normalized": 0,
-              "contribution": 0.0
-            },
-            {
-              "metric": "梯队完整度",
-              "value": 1,
-              "weight": 25,
-              "normalized": 25.0,
-              "contribution": 7.81
-            },
-            {
-              "metric": "资金持续性",
-              "value": null,
-              "weight": 20,
-              "normalized": null,
-              "contribution": null
-            }
-          ],
-          "missing_metrics": [
-            "资金持续性"
-          ]
-        }
-      },
-      {
         "theme": "冶金装备",
         "stage": "萌芽",
         "score": 8,
@@ -2737,77 +2757,6 @@
         }
       },
       {
-        "theme": "减肥药",
-        "stage": "萌芽",
-        "score": 8,
-        "trend": "→",
-        "subscores": {
-          "leader_strength": 0,
-          "sector_width": 0,
-          "ladder_completeness": 25,
-          "capital_persistence": 0
-        },
-        "facts": {
-          "code": "886051.TI",
-          "name": "减肥药",
-          "change_pct": -1.038574,
-          "turnover_cny": 13273509300,
-          "member_count": 67,
-          "limit_up_count": 1,
-          "first_board_count": 1,
-          "second_board_count": 0,
-          "third_board_count": 0,
-          "high_board_count": 0,
-          "max_height": 1,
-          "active_days_3": null,
-          "leaders": [
-            {
-              "code": "000513",
-              "name": "丽珠集团",
-              "height": 1
-            }
-          ],
-          "source": "同花顺概念指数与成分股涨停交集"
-        },
-        "explanation": {
-          "score": 8,
-          "coverage_pct": 80.0,
-          "components": [
-            {
-              "metric": "龙头强度",
-              "value": 1,
-              "weight": 30,
-              "normalized": 0,
-              "contribution": 0.0
-            },
-            {
-              "metric": "板块宽度",
-              "value": 1,
-              "weight": 25,
-              "normalized": 0,
-              "contribution": 0.0
-            },
-            {
-              "metric": "梯队完整度",
-              "value": 1,
-              "weight": 25,
-              "normalized": 25.0,
-              "contribution": 7.81
-            },
-            {
-              "metric": "资金持续性",
-              "value": null,
-              "weight": 20,
-              "normalized": null,
-              "contribution": null
-            }
-          ],
-          "missing_metrics": [
-            "资金持续性"
-          ]
-        }
-      },
-      {
         "theme": "创新药",
         "stage": "萌芽",
         "score": 8,
@@ -2821,8 +2770,8 @@
         "facts": {
           "code": "886015.TI",
           "name": "创新药",
-          "change_pct": -0.873943,
-          "turnover_cny": 43786711000,
+          "change_pct": -0.914198,
+          "turnover_cny": 45098062000,
           "member_count": 277,
           "limit_up_count": 1,
           "first_board_count": 1,
@@ -3389,8 +3338,8 @@
         "facts": {
           "code": "886012.TI",
           "name": "宠物经济",
-          "change_pct": -0.897973,
-          "turnover_cny": 13461007000,
+          "change_pct": -0.857245,
+          "turnover_cny": 13909697000,
           "member_count": 127,
           "limit_up_count": 1,
           "first_board_count": 1,
@@ -3460,8 +3409,8 @@
         "facts": {
           "code": "885981.TI",
           "name": "家庭医生",
-          "change_pct": -0.326494,
-          "turnover_cny": 6496272300,
+          "change_pct": -0.167928,
+          "turnover_cny": 6713559800,
           "member_count": 26,
           "limit_up_count": 1,
           "first_board_count": 1,
@@ -3758,6 +3707,77 @@
             {
               "code": "000011",
               "name": "深物业A",
+              "height": 1
+            }
+          ],
+          "source": "同花顺涨停原因聚合"
+        },
+        "explanation": {
+          "score": 8,
+          "coverage_pct": 80.0,
+          "components": [
+            {
+              "metric": "龙头强度",
+              "value": 1,
+              "weight": 30,
+              "normalized": 0,
+              "contribution": 0.0
+            },
+            {
+              "metric": "板块宽度",
+              "value": 1,
+              "weight": 25,
+              "normalized": 0,
+              "contribution": 0.0
+            },
+            {
+              "metric": "梯队完整度",
+              "value": 1,
+              "weight": 25,
+              "normalized": 25.0,
+              "contribution": 7.81
+            },
+            {
+              "metric": "资金持续性",
+              "value": null,
+              "weight": 20,
+              "normalized": null,
+              "contribution": null
+            }
+          ],
+          "missing_metrics": [
+            "资金持续性"
+          ]
+        }
+      },
+      {
+        "theme": "数字风洞",
+        "stage": "萌芽",
+        "score": 8,
+        "trend": "→",
+        "subscores": {
+          "leader_strength": 0,
+          "sector_width": 0,
+          "ladder_completeness": 25,
+          "capital_persistence": 0
+        },
+        "facts": {
+          "code": null,
+          "name": "数字风洞",
+          "change_pct": null,
+          "turnover_cny": null,
+          "member_count": null,
+          "limit_up_count": 1,
+          "first_board_count": 1,
+          "second_board_count": 0,
+          "third_board_count": 0,
+          "high_board_count": 0,
+          "max_height": 1,
+          "active_days_3": null,
+          "leaders": [
+            {
+              "code": "688244",
+              "name": "永信至诚",
               "height": 1
             }
           ],
@@ -4099,8 +4119,8 @@
         "facts": {
           "code": "885879.TI",
           "name": "流感",
-          "change_pct": -0.67156,
-          "turnover_cny": 21422971000,
+          "change_pct": -0.686735,
+          "turnover_cny": 21950536000,
           "member_count": 163,
           "limit_up_count": 1,
           "first_board_count": 1,
@@ -4738,8 +4758,8 @@
         "facts": {
           "code": "885573.TI",
           "name": "猪肉",
-          "change_pct": 0.393083,
-          "turnover_cny": 3960728000,
+          "change_pct": 0.366444,
+          "turnover_cny": 4175728300,
           "member_count": 32,
           "limit_up_count": 1,
           "first_board_count": 1,
@@ -4809,8 +4829,8 @@
         "facts": {
           "code": "885994.TI",
           "name": "猴痘概念",
-          "change_pct": -0.794205,
-          "turnover_cny": 12582878600,
+          "change_pct": -0.928511,
+          "turnover_cny": 12926950900,
           "member_count": 75,
           "limit_up_count": 1,
           "first_board_count": 1,
@@ -4951,8 +4971,8 @@
         "facts": {
           "code": "885845.TI",
           "name": "生物疫苗",
-          "change_pct": -0.367654,
-          "turnover_cny": 7956828000,
+          "change_pct": -0.429423,
+          "turnover_cny": 8223387700,
           "member_count": 62,
           "limit_up_count": 1,
           "first_board_count": 1,
@@ -5093,8 +5113,8 @@
         "facts": {
           "code": "885525.TI",
           "name": "白酒概念",
-          "change_pct": -0.749265,
-          "turnover_cny": 9841423400,
+          "change_pct": -0.737842,
+          "turnover_cny": 10286755300,
           "member_count": 48,
           "limit_up_count": 1,
           "first_board_count": 1,
@@ -5222,6 +5242,148 @@
         }
       },
       {
+        "theme": "网络靶场",
+        "stage": "萌芽",
+        "score": 8,
+        "trend": "→",
+        "subscores": {
+          "leader_strength": 0,
+          "sector_width": 0,
+          "ladder_completeness": 25,
+          "capital_persistence": 0
+        },
+        "facts": {
+          "code": null,
+          "name": "网络靶场",
+          "change_pct": null,
+          "turnover_cny": null,
+          "member_count": null,
+          "limit_up_count": 1,
+          "first_board_count": 1,
+          "second_board_count": 0,
+          "third_board_count": 0,
+          "high_board_count": 0,
+          "max_height": 1,
+          "active_days_3": null,
+          "leaders": [
+            {
+              "code": "688244",
+              "name": "永信至诚",
+              "height": 1
+            }
+          ],
+          "source": "同花顺涨停原因聚合"
+        },
+        "explanation": {
+          "score": 8,
+          "coverage_pct": 80.0,
+          "components": [
+            {
+              "metric": "龙头强度",
+              "value": 1,
+              "weight": 30,
+              "normalized": 0,
+              "contribution": 0.0
+            },
+            {
+              "metric": "板块宽度",
+              "value": 1,
+              "weight": 25,
+              "normalized": 0,
+              "contribution": 0.0
+            },
+            {
+              "metric": "梯队完整度",
+              "value": 1,
+              "weight": 25,
+              "normalized": 25.0,
+              "contribution": 7.81
+            },
+            {
+              "metric": "资金持续性",
+              "value": null,
+              "weight": 20,
+              "normalized": null,
+              "contribution": null
+            }
+          ],
+          "missing_metrics": [
+            "资金持续性"
+          ]
+        }
+      },
+      {
+        "theme": "足球概念",
+        "stage": "萌芽",
+        "score": 8,
+        "trend": "→",
+        "subscores": {
+          "leader_strength": 0,
+          "sector_width": 0,
+          "ladder_completeness": 25,
+          "capital_persistence": 0
+        },
+        "facts": {
+          "code": "885580.TI",
+          "name": "足球概念",
+          "change_pct": -1.023217,
+          "turnover_cny": 7536556700,
+          "member_count": 40,
+          "limit_up_count": 1,
+          "first_board_count": 1,
+          "second_board_count": 0,
+          "third_board_count": 0,
+          "high_board_count": 0,
+          "max_height": 1,
+          "active_days_3": null,
+          "leaders": [
+            {
+              "code": "002342",
+              "name": "巨力索具",
+              "height": 1
+            }
+          ],
+          "source": "同花顺概念指数与成分股涨停交集"
+        },
+        "explanation": {
+          "score": 8,
+          "coverage_pct": 80.0,
+          "components": [
+            {
+              "metric": "龙头强度",
+              "value": 1,
+              "weight": 30,
+              "normalized": 0,
+              "contribution": 0.0
+            },
+            {
+              "metric": "板块宽度",
+              "value": 1,
+              "weight": 25,
+              "normalized": 0,
+              "contribution": 0.0
+            },
+            {
+              "metric": "梯队完整度",
+              "value": 1,
+              "weight": 25,
+              "normalized": 25.0,
+              "contribution": 7.81
+            },
+            {
+              "metric": "资金持续性",
+              "value": null,
+              "weight": 20,
+              "normalized": null,
+              "contribution": null
+            }
+          ],
+          "missing_metrics": [
+            "资金持续性"
+          ]
+        }
+      },
+      {
         "theme": "跨境电商",
         "stage": "萌芽",
         "score": 8,
@@ -5235,8 +5397,8 @@
         "facts": {
           "code": "885642.TI",
           "name": "跨境电商",
-          "change_pct": -1.959428,
-          "turnover_cny": 46997390000,
+          "change_pct": -1.855103,
+          "turnover_cny": 48330885000,
           "member_count": 343,
           "limit_up_count": 1,
           "first_board_count": 1,
@@ -5293,6 +5455,148 @@
         }
       },
       {
+        "theme": "车联网",
+        "stage": "萌芽",
+        "score": 8,
+        "trend": "→",
+        "subscores": {
+          "leader_strength": 0,
+          "sector_width": 0,
+          "ladder_completeness": 25,
+          "capital_persistence": 0
+        },
+        "facts": {
+          "code": null,
+          "name": "车联网",
+          "change_pct": null,
+          "turnover_cny": null,
+          "member_count": null,
+          "limit_up_count": 1,
+          "first_board_count": 1,
+          "second_board_count": 0,
+          "third_board_count": 0,
+          "high_board_count": 0,
+          "max_height": 1,
+          "active_days_3": null,
+          "leaders": [
+            {
+              "code": "002232",
+              "name": "启明信息",
+              "height": 1
+            }
+          ],
+          "source": "同花顺涨停原因聚合"
+        },
+        "explanation": {
+          "score": 8,
+          "coverage_pct": 80.0,
+          "components": [
+            {
+              "metric": "龙头强度",
+              "value": 1,
+              "weight": 30,
+              "normalized": 0,
+              "contribution": 0.0
+            },
+            {
+              "metric": "板块宽度",
+              "value": 1,
+              "weight": 25,
+              "normalized": 0,
+              "contribution": 0.0
+            },
+            {
+              "metric": "梯队完整度",
+              "value": 1,
+              "weight": 25,
+              "normalized": 25.0,
+              "contribution": 7.81
+            },
+            {
+              "metric": "资金持续性",
+              "value": null,
+              "weight": 20,
+              "normalized": null,
+              "contribution": null
+            }
+          ],
+          "missing_metrics": [
+            "资金持续性"
+          ]
+        }
+      },
+      {
+        "theme": "车路云",
+        "stage": "萌芽",
+        "score": 8,
+        "trend": "→",
+        "subscores": {
+          "leader_strength": 0,
+          "sector_width": 0,
+          "ladder_completeness": 25,
+          "capital_persistence": 0
+        },
+        "facts": {
+          "code": null,
+          "name": "车路云",
+          "change_pct": null,
+          "turnover_cny": null,
+          "member_count": null,
+          "limit_up_count": 1,
+          "first_board_count": 1,
+          "second_board_count": 0,
+          "third_board_count": 0,
+          "high_board_count": 0,
+          "max_height": 1,
+          "active_days_3": null,
+          "leaders": [
+            {
+              "code": "002232",
+              "name": "启明信息",
+              "height": 1
+            }
+          ],
+          "source": "同花顺涨停原因聚合"
+        },
+        "explanation": {
+          "score": 8,
+          "coverage_pct": 80.0,
+          "components": [
+            {
+              "metric": "龙头强度",
+              "value": 1,
+              "weight": 30,
+              "normalized": 0,
+              "contribution": 0.0
+            },
+            {
+              "metric": "板块宽度",
+              "value": 1,
+              "weight": 25,
+              "normalized": 0,
+              "contribution": 0.0
+            },
+            {
+              "metric": "梯队完整度",
+              "value": 1,
+              "weight": 25,
+              "normalized": 25.0,
+              "contribution": 7.81
+            },
+            {
+              "metric": "资金持续性",
+              "value": null,
+              "weight": 20,
+              "normalized": null,
+              "contribution": null
+            }
+          ],
+          "missing_metrics": [
+            "资金持续性"
+          ]
+        }
+      },
+      {
         "theme": "辅助生殖",
         "stage": "萌芽",
         "score": 8,
@@ -5306,8 +5610,8 @@
         "facts": {
           "code": "885909.TI",
           "name": "辅助生殖",
-          "change_pct": -0.977662,
-          "turnover_cny": 10986060100,
+          "change_pct": -0.924871,
+          "turnover_cny": 11331122600,
           "member_count": 74,
           "limit_up_count": 1,
           "first_board_count": 1,
@@ -5519,8 +5823,8 @@
         "facts": {
           "code": "885955.TI",
           "name": "重组蛋白",
-          "change_pct": -0.663988,
-          "turnover_cny": 12514199800,
+          "change_pct": -0.71733,
+          "turnover_cny": 12869402700,
           "member_count": 64,
           "limit_up_count": 1,
           "first_board_count": 1,
@@ -5945,8 +6249,8 @@
         "facts": {
           "code": "885591.TI",
           "name": "中韩自贸区",
-          "change_pct": -1.020863,
-          "turnover_cny": 1916945000,
+          "change_pct": -0.897185,
+          "turnover_cny": 1964879500,
           "member_count": 17,
           "limit_up_count": 0,
           "first_board_count": 0,
@@ -6010,8 +6314,8 @@
         "facts": {
           "code": "885462.TI",
           "name": "乳业",
-          "change_pct": -0.984986,
-          "turnover_cny": 3302867400,
+          "change_pct": -0.845909,
+          "turnover_cny": 3393434800,
           "member_count": 36,
           "limit_up_count": 0,
           "first_board_count": 0,
@@ -6075,8 +6379,8 @@
         "facts": {
           "code": "886101.TI",
           "name": "兵装重组概念",
-          "change_pct": -0.873593,
-          "turnover_cny": 969083620,
+          "change_pct": -0.856443,
+          "turnover_cny": 989741930,
           "member_count": 7,
           "limit_up_count": 0,
           "first_board_count": 0,
@@ -6140,8 +6444,8 @@
         "facts": {
           "code": "885808.TI",
           "name": "养鸡",
-          "change_pct": -0.322422,
-          "turnover_cny": 2145460000,
+          "change_pct": -0.361727,
+          "turnover_cny": 2266689800,
           "member_count": 22,
           "limit_up_count": 0,
           "first_board_count": 0,
@@ -6205,8 +6509,8 @@
         "facts": {
           "code": "885661.TI",
           "name": "医药电商",
-          "change_pct": -0.803474,
-          "turnover_cny": 19227852000,
+          "change_pct": -0.763541,
+          "turnover_cny": 19751789000,
           "member_count": 186,
           "limit_up_count": 0,
           "first_board_count": 0,
@@ -6270,8 +6574,8 @@
         "facts": {
           "code": "886045.TI",
           "name": "同花顺中特估100",
-          "change_pct": -0.903546,
-          "turnover_cny": 48812311000,
+          "change_pct": -0.847817,
+          "turnover_cny": 50778287000,
           "member_count": 100,
           "limit_up_count": 0,
           "first_board_count": 0,
@@ -6335,8 +6639,8 @@
         "facts": {
           "code": "885952.TI",
           "name": "幽门螺杆菌概念",
-          "change_pct": -0.86641,
-          "turnover_cny": 6281522300,
+          "change_pct": -0.906091,
+          "turnover_cny": 6483748300,
           "member_count": 74,
           "limit_up_count": 0,
           "first_board_count": 0,
@@ -6400,8 +6704,8 @@
         "facts": {
           "code": "885508.TI",
           "name": "禽流感",
-          "change_pct": -0.757961,
-          "turnover_cny": 1537545900,
+          "change_pct": -0.825709,
+          "turnover_cny": 1586046400,
           "member_count": 23,
           "limit_up_count": 0,
           "first_board_count": 0,
@@ -6465,8 +6769,8 @@
         "facts": {
           "code": "886081.TI",
           "name": "维生素",
-          "change_pct": -0.997419,
-          "turnover_cny": 9714208900,
+          "change_pct": -0.945643,
+          "turnover_cny": 9928480400,
           "member_count": 77,
           "limit_up_count": 0,
           "first_board_count": 0,
@@ -6530,8 +6834,8 @@
         "facts": {
           "code": "885989.TI",
           "name": "肝炎概念",
-          "change_pct": -0.698844,
-          "turnover_cny": 18326584000,
+          "change_pct": -0.73319,
+          "turnover_cny": 18807833000,
           "member_count": 140,
           "limit_up_count": 0,
           "first_board_count": 0,
@@ -6595,8 +6899,8 @@
         "facts": {
           "code": "885805.TI",
           "name": "芬太尼",
-          "change_pct": -0.377002,
-          "turnover_cny": 404955230,
+          "change_pct": -0.478326,
+          "turnover_cny": 424406550,
           "member_count": 8,
           "limit_up_count": 0,
           "first_board_count": 0,
@@ -6660,8 +6964,8 @@
         "facts": {
           "code": "885663.TI",
           "name": "证金持股",
-          "change_pct": -0.319102,
-          "turnover_cny": 17335923000,
+          "change_pct": -0.261729,
+          "turnover_cny": 18119014000,
           "member_count": 33,
           "limit_up_count": 0,
           "first_board_count": 0,
@@ -6725,8 +7029,8 @@
         "facts": {
           "code": "885761.TI",
           "name": "超级品牌",
-          "change_pct": -0.836402,
-          "turnover_cny": 15502938000,
+          "change_pct": -0.793729,
+          "turnover_cny": 16085097000,
           "member_count": 49,
           "limit_up_count": 0,
           "first_board_count": 0,
@@ -6790,8 +7094,8 @@
         "facts": {
           "code": "886056.TI",
           "name": "阿尔茨海默概念",
-          "change_pct": -0.018006,
-          "turnover_cny": 7108921300,
+          "change_pct": 0.038651,
+          "turnover_cny": 7443492600,
           "member_count": 45,
           "limit_up_count": 0,
           "first_board_count": 0,
@@ -6855,8 +7159,8 @@
         "facts": {
           "code": "885852.TI",
           "name": "青蒿素",
-          "change_pct": -0.940598,
-          "turnover_cny": 2002302400,
+          "change_pct": -0.935003,
+          "turnover_cny": 2053615600,
           "member_count": 11,
           "limit_up_count": 0,
           "first_board_count": 0,
@@ -6920,8 +7224,8 @@
         "facts": {
           "code": "886072.TI",
           "name": "高股息精选",
-          "change_pct": -0.757975,
-          "turnover_cny": 48074056000,
+          "change_pct": -0.718149,
+          "turnover_cny": 50171831000,
           "member_count": 285,
           "limit_up_count": 0,
           "first_board_count": 0,
@@ -7062,12 +7366,12 @@
       "confidence": "high"
     },
     "P": {
-      "score": 13,
+      "score": 14,
       "coverage_pct": 90.0,
       "components": [
         {
           "metric": "昨日涨停中位收益",
-          "value": -4.32,
+          "value": -4.41,
           "weight": 20,
           "normalized": 0,
           "contribution": 0.0
@@ -7081,24 +7385,24 @@
         },
         {
           "metric": "昨日涨停平均收益",
-          "value": -2.73,
+          "value": -2.48,
           "weight": 10,
-          "normalized": 14.11,
-          "contribution": 1.57
+          "normalized": 16.89,
+          "contribution": 1.88
         },
         {
           "metric": "中位股中位收益",
-          "value": -5.5,
+          "value": -5.47,
           "weight": 20,
           "normalized": 0,
           "contribution": 0.0
         },
         {
           "metric": "高位核心反馈",
-          "value": -0.75,
+          "value": -0.38,
           "weight": 15,
-          "normalized": 35.42,
-          "contribution": 5.9
+          "normalized": 38.5,
+          "contribution": 6.42
         },
         {
           "metric": "炸板股次日修复",
@@ -7128,7 +7432,7 @@
       "components": [
         {
           "metric": "昨日涨停大亏率",
-          "value": 47.06,
+          "value": 45.1,
           "weight": 20,
           "normalized": 100,
           "contribution": 25.0
@@ -7149,7 +7453,7 @@
         },
         {
           "metric": "跌停数量",
-          "value": 45,
+          "value": 39,
           "weight": 15,
           "normalized": 100,
           "contribution": 18.75
@@ -7178,7 +7482,7 @@
       "confidence": "medium"
     },
     "C": {
-      "score": 60,
+      "score": 59,
       "coverage_pct": 100.0,
       "components": [
         {
@@ -7190,12 +7494,12 @@
         },
         {
           "metric": "封板稳定性",
-          "value": 41.09,
+          "value": 40.3,
           "weight": 25,
-          "normalized": 26.36,
+          "normalized": 25.37,
           "basis": "当前封单额/峰值封单额",
           "proxy": false,
-          "contribution": 6.59
+          "contribution": 6.34
         },
         {
           "metric": "首次封板主动性",
@@ -7206,7 +7510,7 @@
         },
         {
           "metric": "封单/成交额",
-          "value": 10524.16,
+          "value": 10244.93,
           "weight": 15,
           "normalized": 100,
           "contribution": 15.0
@@ -7277,7 +7581,7 @@
       "components": [
         {
           "metric": "上涨家数占比",
-          "value": 11.3599126160568
+          "value": 12.338017886475635
         }
       ],
       "missing_metrics": [],
@@ -7336,7 +7640,7 @@
   },
   "leader_ecology_matrix": {
     "leader_strength": {
-      "score": 60,
+      "score": 59,
       "coverage_pct": 100.0,
       "components": [
         {
@@ -7348,12 +7652,12 @@
         },
         {
           "metric": "封板稳定性",
-          "value": 41.09,
+          "value": 40.3,
           "weight": 25,
-          "normalized": 26.36,
+          "normalized": 25.37,
           "basis": "当前封单额/峰值封单额",
           "proxy": false,
-          "contribution": 6.59
+          "contribution": 6.34
         },
         {
           "metric": "首次封板主动性",
@@ -7364,7 +7668,7 @@
         },
         {
           "metric": "封单/成交额",
-          "value": 10524.16,
+          "value": 10244.93,
           "weight": 15,
           "normalized": 100,
           "contribution": 15.0
@@ -7416,17 +7720,17 @@
         },
         {
           "metric": "昨日涨停平均反馈",
-          "value": -2.73,
+          "value": -2.48,
           "weight": 14,
-          "normalized": 12.7,
-          "contribution": 1.78
+          "normalized": 15.2,
+          "contribution": 2.13
         },
         {
           "metric": "中位股平均反馈",
-          "value": -0.71,
+          "value": -0.54,
           "weight": 12,
-          "normalized": 42.9,
-          "contribution": 5.15
+          "normalized": 44.6,
+          "contribution": 5.35
         },
         {
           "metric": "中位股大亏比例",
@@ -7437,14 +7741,14 @@
         },
         {
           "metric": "跌停数量",
-          "value": 45,
+          "value": 39,
           "weight": 8,
           "normalized": 0,
           "contribution": 0.0
         },
         {
           "metric": "市场上涨宽度",
-          "value": 11.36,
+          "value": 12.34,
           "weight": 6,
           "normalized": 0,
           "contribution": 0.0
