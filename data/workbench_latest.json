@@ -3,7 +3,7 @@
     "product": "超短小鳄鱼｜V1.4.1 超短交易研究工作台",
     "bundle_version": "1.1",
     "schema_updated_at": "2026-09-21T23:00:00+08:00",
-    "generated_at": "2026-09-28T07:50:28.505695+00:00",
+    "generated_at": "2026-09-28T08:07:37.601491+00:00",
     "timezone": "Asia/Shanghai",
     "data_range": [
       "2026-09-16",
@@ -218,7 +218,7 @@
       "turnover_change_cny": 49441700000,
       "turnover_comparison": {
         "status": "ready",
-        "time": "15:40",
+        "time": "15:58",
         "previousTradeDate": "2026-09-24",
         "current": 1702799060000,
         "previous": 1653357360000,
@@ -700,6 +700,34 @@
         "amount_comparison": {
           "status": "ready",
           "time": "15:40",
+          "previousTradeDate": "2026-09-24",
+          "current": 1702799060000,
+          "previous": 1653357360000,
+          "difference": 49441700000,
+          "changePct": 2.99,
+          "direction": "增量",
+          "source": "同花顺历史快照同时间比较"
+        }
+      },
+      {
+        "time": "2026-09-28T07:58:26.431090+00:00",
+        "source": "同花顺官方 Financial-API",
+        "limit_up_count": 35,
+        "limit_down_count": 57,
+        "broken_count": 11,
+        "broken_rate_pct": 23.91,
+        "promotion_rate_pct": 13.73,
+        "highest_board": 5,
+        "leader": {
+          "code": "600825",
+          "name": "新华传媒"
+        },
+        "strongest_theme": "商用载货车",
+        "slot": null,
+        "turnover_cny": 1702799060000,
+        "amount_comparison": {
+          "status": "ready",
+          "time": "15:58",
           "previousTradeDate": "2026-09-24",
           "current": 1702799060000,
           "previous": 1653357360000,
@@ -6843,8 +6871,8 @@
         {
           "code": "002912",
           "name": "中新赛克",
-          "theme": "计算机设备",
-          "industry": "计算机设备",
+          "theme": "其他计算机设备",
+          "industry": "其他计算机设备",
           "industry_source": "ths_industry_index_membership",
           "height": 1,
           "first_limit": "09:30",
@@ -10002,6 +10030,77 @@
               {
                 "code": "301190",
                 "name": "善水科技",
+                "height": 1
+              }
+            ],
+            "source": "同花顺一级行业指数与成分股涨停交集"
+          },
+          "explanation": {
+            "score": 8,
+            "coverage_pct": 80.0,
+            "components": [
+              {
+                "metric": "龙头强度",
+                "value": 1,
+                "weight": 30,
+                "normalized": 0,
+                "contribution": 0.0
+              },
+              {
+                "metric": "板块宽度",
+                "value": 1,
+                "weight": 25,
+                "normalized": 0,
+                "contribution": 0.0
+              },
+              {
+                "metric": "梯队完整度",
+                "value": 1,
+                "weight": 25,
+                "normalized": 25.0,
+                "contribution": 7.81
+              },
+              {
+                "metric": "资金持续性",
+                "value": null,
+                "weight": 20,
+                "normalized": null,
+                "contribution": null
+              }
+            ],
+            "missing_metrics": [
+              "资金持续性"
+            ]
+          }
+        },
+        {
+          "theme": "其他计算机设备",
+          "stage": "萌芽",
+          "score": 8,
+          "trend": "→",
+          "subscores": {
+            "leader_strength": 0,
+            "sector_width": 0,
+            "ladder_completeness": 25,
+            "capital_persistence": 0
+          },
+          "facts": {
+            "code": "884207.TI",
+            "name": "其他计算机设备",
+            "change_pct": -2.31855,
+            "turnover_cny": 18070543000,
+            "member_count": 58,
+            "limit_up_count": 1,
+            "first_board_count": 1,
+            "second_board_count": 0,
+            "third_board_count": 0,
+            "high_board_count": 0,
+            "max_height": 1,
+            "active_days_3": null,
+            "leaders": [
+              {
+                "code": "002912",
+                "name": "中新赛克",
                 "height": 1
               }
             ],
@@ -15583,6 +15682,77 @@
         }
       },
       {
+        "theme": "其他计算机设备",
+        "stage": "萌芽",
+        "score": 8,
+        "trend": "→",
+        "subscores": {
+          "leader_strength": 0,
+          "sector_width": 0,
+          "ladder_completeness": 25,
+          "capital_persistence": 0
+        },
+        "facts": {
+          "code": "884207.TI",
+          "name": "其他计算机设备",
+          "change_pct": -2.31855,
+          "turnover_cny": 18070543000,
+          "member_count": 58,
+          "limit_up_count": 1,
+          "first_board_count": 1,
+          "second_board_count": 0,
+          "third_board_count": 0,
+          "high_board_count": 0,
+          "max_height": 1,
+          "active_days_3": null,
+          "leaders": [
+            {
+              "code": "002912",
+              "name": "中新赛克",
+              "height": 1
+            }
+          ],
+          "source": "同花顺一级行业指数与成分股涨停交集"
+        },
+        "explanation": {
+          "score": 8,
+          "coverage_pct": 80.0,
+          "components": [
+            {
+              "metric": "龙头强度",
+              "value": 1,
+              "weight": 30,
+              "normalized": 0,
+              "contribution": 0.0
+            },
+            {
+              "metric": "板块宽度",
+              "value": 1,
+              "weight": 25,
+              "normalized": 0,
+              "contribution": 0.0
+            },
+            {
+              "metric": "梯队完整度",
+              "value": 1,
+              "weight": 25,
+              "normalized": 25.0,
+              "contribution": 7.81
+            },
+            {
+              "metric": "资金持续性",
+              "value": null,
+              "weight": 20,
+              "normalized": null,
+              "contribution": null
+            }
+          ],
+          "missing_metrics": [
+            "资金持续性"
+          ]
+        }
+      },
+      {
         "theme": "其他酒类",
         "stage": "萌芽",
         "score": 8,
@@ -19115,6 +19285,25 @@
           "source": "同花顺行业指数及当前成分股"
         },
         {
+          "code": "884207.TI",
+          "name": "其他计算机设备",
+          "change_pct": -2.31855,
+          "turnover_cny": 18070543000,
+          "member_count": 58,
+          "limit_up_count": 1,
+          "board_counts": {
+            "1": 1
+          },
+          "limit_up_stocks": [
+            {
+              "code": "002912",
+              "name": "中新赛克",
+              "height": 1
+            }
+          ],
+          "source": "同花顺行业指数及当前成分股"
+        },
+        {
           "code": "881130.TI",
           "name": "计算机设备",
           "change_pct": -2.322243,
@@ -19390,7 +19579,7 @@
   "hithink_facts": {
     "source": "同花顺官方 Financial-API",
     "trade_date": "2026-09-28",
-    "updated_at": "2026-09-28T07:40:28.025091+00:00",
+    "updated_at": "2026-09-28T07:58:26.431090+00:00",
     "market_quote_total": 5578,
     "limit_up": {
       "count": 35,
@@ -20937,6 +21126,25 @@
               "code": "600802",
               "name": "福建水泥",
               "height": 3
+            }
+          ],
+          "source": "同花顺行业指数及当前成分股"
+        },
+        {
+          "code": "884207.TI",
+          "name": "其他计算机设备",
+          "change_pct": -2.31855,
+          "turnover_cny": 18070543000,
+          "member_count": 58,
+          "limit_up_count": 1,
+          "board_counts": {
+            "1": 1
+          },
+          "limit_up_stocks": [
+            {
+              "code": "002912",
+              "name": "中新赛克",
+              "height": 1
             }
           ],
           "source": "同花顺行业指数及当前成分股"
@@ -25083,11 +25291,6 @@
         "thscode": "688244.SH",
         "tag_name": "涨停"
       }
-    ],
-    "missing": [
-      "sector_members 884207.TI: /api/a-share-index/constituents/ths-stock-list: HithinkError: service HTTP 429",
-      "sector_members 881151.TI: /api/a-share-index/constituents/ths-stock-list: HithinkError: service HTTP 429",
-      "sector_members 881116.TI: /api/a-share-index/constituents/ths-stock-list: HithinkError: service HTTP 429"
     ]
   }
 }

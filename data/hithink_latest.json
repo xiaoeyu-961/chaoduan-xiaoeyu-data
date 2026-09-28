@@ -1,7 +1,7 @@
 {
   "source": "同花顺官方 Financial-API",
   "trade_date": "2026-09-28",
-  "updated_at": "2026-09-28T07:40:28.025091+00:00",
+  "updated_at": "2026-09-28T07:58:26.431090+00:00",
   "market_quote_total": 5578,
   "limit_up": {
     "count": 35,
@@ -1548,6 +1548,25 @@
             "code": "600802",
             "name": "福建水泥",
             "height": 3
+          }
+        ],
+        "source": "同花顺行业指数及当前成分股"
+      },
+      {
+        "code": "884207.TI",
+        "name": "其他计算机设备",
+        "change_pct": -2.31855,
+        "turnover_cny": 18070543000,
+        "member_count": 58,
+        "limit_up_count": 1,
+        "board_counts": {
+          "1": 1
+        },
+        "limit_up_stocks": [
+          {
+            "code": "002912",
+            "name": "中新赛克",
+            "height": 1
           }
         ],
         "source": "同花顺行业指数及当前成分股"
@@ -5694,10 +5713,5 @@
       "thscode": "688244.SH",
       "tag_name": "涨停"
     }
-  ],
-  "missing": [
-    "sector_members 884207.TI: /api/a-share-index/constituents/ths-stock-list: HithinkError: service HTTP 429",
-    "sector_members 881151.TI: /api/a-share-index/constituents/ths-stock-list: HithinkError: service HTTP 429",
-    "sector_members 881116.TI: /api/a-share-index/constituents/ths-stock-list: HithinkError: service HTTP 429"
   ]
 }

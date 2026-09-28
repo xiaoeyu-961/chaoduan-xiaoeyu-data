@@ -2,7 +2,7 @@
   "schema_version": 1,
   "ok": true,
   "trade_date": "2026-09-28",
-  "updated_at": "2026-09-28T07:40:28.025091+00:00",
+  "updated_at": "2026-09-28T07:58:26.431090+00:00",
   "source": "同花顺官方 Financial-API",
   "principle": "仅保存事实数据，不在采集层生成周期标签或主观评分。",
   "market_ecology": {
@@ -212,7 +212,7 @@
     {
       "code": "002912",
       "name": "中新赛克",
-      "theme": "计算机设备",
+      "theme": "其他计算机设备",
       "theme_source": "ths_industry_index_membership",
       "height": 1,
       "first_limit": "09:30",
@@ -911,6 +911,28 @@
         {
           "code": "301190",
           "name": "善水科技",
+          "height": 1
+        }
+      ],
+      "source": "同花顺一级行业指数与成分股涨停交集"
+    },
+    {
+      "code": "884207.TI",
+      "name": "其他计算机设备",
+      "change_pct": -2.31855,
+      "turnover_cny": 18070543000,
+      "member_count": 58,
+      "limit_up_count": 1,
+      "first_board_count": 1,
+      "second_board_count": 0,
+      "third_board_count": 0,
+      "high_board_count": 0,
+      "max_height": 1,
+      "active_days_3": null,
+      "leaders": [
+        {
+          "code": "002912",
+          "name": "中新赛克",
           "height": 1
         }
       ],
@@ -1652,7 +1674,7 @@
     }
   ],
   "intraday": {
-    "snapshot_count": 16,
+    "snapshot_count": 17,
     "timeline_ready": true
   },
   "data_quality": {
