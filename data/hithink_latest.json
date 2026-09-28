@@ -1,19 +1,19 @@
 {
   "source": "同花顺官方 Financial-API",
   "trade_date": "2026-09-28",
-  "updated_at": "2026-09-28T06:25:36.318881+00:00",
+  "updated_at": "2026-09-28T06:53:39.288527+00:00",
   "market_quote_total": 5578,
   "limit_up": {
-    "count": 30,
+    "count": 32,
     "complete": true
   },
   "broken": {
-    "count": 12,
+    "count": 13,
     "complete": true,
     "error": null
   },
   "limit_down": {
-    "count": 51,
+    "count": 60,
     "complete": true
   },
   "auction": {
@@ -55,23 +55,6 @@
         "float_market_cap": 3336048352
       },
       {
-        "thscode": "603396.SH",
-        "ticker": "603396",
-        "name": "金辰股份",
-        "auction_price": 39.2,
-        "auction_pct": 9.9888,
-        "auction_volume": 20487.0,
-        "auction_amount": 80309040.0,
-        "auction_unmatched": -4849.98,
-        "auction_turnover_pct": 1.4789,
-        "auction_yesterday_ratio_pct": 18.5641,
-        "auction_volume_ratio": 2.5744,
-        "pre_close_price": 35.64,
-        "open_price": 39.2,
-        "last_price": 39.2,
-        "float_market_cap": 5430277137.6
-      },
-      {
         "thscode": "603949.SH",
         "ticker": "603949",
         "name": "雪龙集团",
@@ -104,6 +87,23 @@
         "open_price": 10.45,
         "last_price": 10.65,
         "float_market_cap": 4894865638.05
+      },
+      {
+        "thscode": "601218.SH",
+        "ticker": "601218",
+        "name": "吉鑫科技",
+        "auction_price": 5.5,
+        "auction_pct": 0.0,
+        "auction_volume": 58111.0,
+        "auction_amount": 31961050.0,
+        "auction_unmatched": -8496.3,
+        "auction_turnover_pct": 0.5997,
+        "auction_yesterday_ratio_pct": 3.9357,
+        "auction_volume_ratio": 9.5624,
+        "pre_close_price": 5.5,
+        "open_price": 5.5,
+        "last_price": 6.05,
+        "float_market_cap": 5862652747.599999
       },
       {
         "thscode": "603278.SH",
@@ -514,6 +514,40 @@
         "float_market_cap": 6846129483.599999
       },
       {
+        "thscode": "603968.SH",
+        "ticker": "603968",
+        "name": "醋化股份",
+        "auction_price": 10.65,
+        "auction_pct": 0.7569,
+        "auction_volume": 193.0,
+        "auction_amount": 205545.0,
+        "auction_unmatched": 21.0,
+        "auction_turnover_pct": 0.0094,
+        "auction_yesterday_ratio_pct": 0.6086,
+        "auction_volume_ratio": 1.1287,
+        "pre_close_price": 10.57,
+        "open_price": 10.65,
+        "last_price": 11.63,
+        "float_market_cap": 2378102400
+      },
+      {
+        "thscode": "605366.SH",
+        "ticker": "605366",
+        "name": "宏柏新材",
+        "auction_price": 9.15,
+        "auction_pct": -0.7592,
+        "auction_volume": 8273.0,
+        "auction_amount": 7569795.0,
+        "auction_unmatched": -391.0,
+        "auction_turnover_pct": 0.107,
+        "auction_yesterday_ratio_pct": 1.1285,
+        "auction_volume_ratio": 2.9642,
+        "pre_close_price": 9.22,
+        "open_price": 9.15,
+        "last_price": 10.14,
+        "float_market_cap": 7836472878
+      },
+      {
         "thscode": "688244.SH",
         "ticker": "688244",
         "name": "永信至诚",
@@ -540,8 +574,8 @@
       {
         "code": "885879.TI",
         "name": "流感",
-        "change_pct": -0.061583,
-        "turnover_cny": 28036209000,
+        "change_pct": -0.382971,
+        "turnover_cny": 30752942000,
         "member_count": 163,
         "limit_up_count": 1,
         "board_counts": {
@@ -559,13 +593,14 @@
       {
         "code": "885939.TI",
         "name": "海峡两岸",
-        "change_pct": -2.570028,
-        "turnover_cny": 132000759000,
+        "change_pct": -3.039953,
+        "turnover_cny": 143683560000,
         "member_count": 321,
-        "limit_up_count": 2,
+        "limit_up_count": 3,
         "board_counts": {
           "3": 1,
-          "2": 1
+          "2": 1,
+          "1": 1
         },
         "limit_up_stocks": [
           {
@@ -577,6 +612,11 @@
             "code": "603278",
             "name": "大业股份",
             "height": 2
+          },
+          {
+            "code": "605366",
+            "name": "宏柏新材",
+            "height": 1
           }
         ],
         "source": "同花顺概念指数及当前成分股"
@@ -584,8 +624,8 @@
       {
         "code": "885508.TI",
         "name": "禽流感",
-        "change_pct": 0.083911,
-        "turnover_cny": 2272480300,
+        "change_pct": -0.227226,
+        "turnover_cny": 2556446000,
         "member_count": 23,
         "limit_up_count": 0,
         "board_counts": {},
@@ -595,8 +635,8 @@
       {
         "code": "885845.TI",
         "name": "生物疫苗",
-        "change_pct": 0.237769,
-        "turnover_cny": 10849291000,
+        "change_pct": -0.084132,
+        "turnover_cny": 12025697000,
         "member_count": 62,
         "limit_up_count": 2,
         "board_counts": {
@@ -619,13 +659,13 @@
       {
         "code": "885641.TI",
         "name": "风电",
-        "change_pct": -1.568271,
-        "turnover_cny": 142600520000,
+        "change_pct": -1.934768,
+        "turnover_cny": 155733090000,
         "member_count": 445,
-        "limit_up_count": 3,
+        "limit_up_count": 5,
         "board_counts": {
-          "1": 2,
-          "2": 1
+          "1": 3,
+          "2": 2
         },
         "limit_up_stocks": [
           {
@@ -639,9 +679,19 @@
             "height": 1
           },
           {
+            "code": "601218",
+            "name": "吉鑫科技",
+            "height": 2
+          },
+          {
             "code": "603278",
             "name": "大业股份",
             "height": 2
+          },
+          {
+            "code": "605366",
+            "name": "宏柏新材",
+            "height": 1
           }
         ],
         "source": "同花顺概念指数及当前成分股"
@@ -649,8 +699,8 @@
       {
         "code": "885573.TI",
         "name": "猪肉",
-        "change_pct": 1.252196,
-        "turnover_cny": 6047430700,
+        "change_pct": 0.908841,
+        "turnover_cny": 6805855800,
         "member_count": 32,
         "limit_up_count": 1,
         "board_counts": {
@@ -668,8 +718,8 @@
       {
         "code": "885459.TI",
         "name": "网络安全",
-        "change_pct": -1.570876,
-        "turnover_cny": 66454802000,
+        "change_pct": -2.080904,
+        "turnover_cny": 71291935000,
         "member_count": 195,
         "limit_up_count": 3,
         "board_counts": {
@@ -697,8 +747,8 @@
       {
         "code": "885462.TI",
         "name": "乳业",
-        "change_pct": -0.238941,
-        "turnover_cny": 4338603600,
+        "change_pct": -0.548827,
+        "turnover_cny": 4842400400,
         "member_count": 36,
         "limit_up_count": 0,
         "board_counts": {},
@@ -708,8 +758,8 @@
       {
         "code": "885697.TI",
         "name": "深圳国企改革",
-        "change_pct": 0.200932,
-        "turnover_cny": 6480863300,
+        "change_pct": 0.016772,
+        "turnover_cny": 6968305900,
         "member_count": 29,
         "limit_up_count": 2,
         "board_counts": {
@@ -732,17 +782,22 @@
       {
         "code": "885633.TI",
         "name": "染料",
-        "change_pct": -0.945024,
-        "turnover_cny": 5897589200,
+        "change_pct": -1.34275,
+        "turnover_cny": 6407456400,
         "member_count": 40,
-        "limit_up_count": 1,
+        "limit_up_count": 2,
         "board_counts": {
-          "1": 1
+          "1": 2
         },
         "limit_up_stocks": [
           {
             "code": "301190",
             "name": "善水科技",
+            "height": 1
+          },
+          {
+            "code": "603968",
+            "name": "醋化股份",
             "height": 1
           }
         ],
@@ -751,8 +806,8 @@
       {
         "code": "885525.TI",
         "name": "白酒概念",
-        "change_pct": -0.217477,
-        "turnover_cny": 13707953000,
+        "change_pct": -0.457152,
+        "turnover_cny": 14884095000,
         "member_count": 48,
         "limit_up_count": 1,
         "board_counts": {
@@ -770,20 +825,9 @@
       {
         "code": "885780.TI",
         "name": "啤酒概念",
-        "change_pct": -0.426398,
-        "turnover_cny": 3159895700,
+        "change_pct": -0.740762,
+        "turnover_cny": 3476102100,
         "member_count": 29,
-        "limit_up_count": 0,
-        "board_counts": {},
-        "limit_up_stocks": [],
-        "source": "同花顺概念指数及当前成分股"
-      },
-      {
-        "code": "885591.TI",
-        "name": "中韩自贸区",
-        "change_pct": -0.437938,
-        "turnover_cny": 2563615600,
-        "member_count": 17,
         "limit_up_count": 0,
         "board_counts": {},
         "limit_up_stocks": [],
@@ -792,8 +836,8 @@
       {
         "code": "885642.TI",
         "name": "跨境电商",
-        "change_pct": -1.3388,
-        "turnover_cny": 61969469000,
+        "change_pct": -1.726262,
+        "turnover_cny": 68007969000,
         "member_count": 343,
         "limit_up_count": 1,
         "board_counts": {
@@ -811,8 +855,8 @@
       {
         "code": "885661.TI",
         "name": "医药电商",
-        "change_pct": -0.224088,
-        "turnover_cny": 25670424000,
+        "change_pct": -0.520136,
+        "turnover_cny": 28177917000,
         "member_count": 186,
         "limit_up_count": 1,
         "board_counts": {
@@ -830,8 +874,8 @@
       {
         "code": "885808.TI",
         "name": "养鸡",
-        "change_pct": 0.528387,
-        "turnover_cny": 3250847000,
+        "change_pct": 0.218838,
+        "turnover_cny": 3648568600,
         "member_count": 22,
         "limit_up_count": 0,
         "board_counts": {},
@@ -841,8 +885,8 @@
       {
         "code": "885663.TI",
         "name": "证金持股",
-        "change_pct": -0.266308,
-        "turnover_cny": 26446628000,
+        "change_pct": -0.329967,
+        "turnover_cny": 30092304000,
         "member_count": 33,
         "limit_up_count": 0,
         "board_counts": {},
@@ -852,8 +896,8 @@
       {
         "code": "885852.TI",
         "name": "青蒿素",
-        "change_pct": -0.318422,
-        "turnover_cny": 2801217100,
+        "change_pct": -0.594502,
+        "turnover_cny": 3107056700,
         "member_count": 11,
         "limit_up_count": 0,
         "board_counts": {},
@@ -863,8 +907,8 @@
       {
         "code": "885761.TI",
         "name": "超级品牌",
-        "change_pct": -0.397812,
-        "turnover_cny": 21807086000,
+        "change_pct": -0.610404,
+        "turnover_cny": 24320751000,
         "member_count": 49,
         "limit_up_count": 0,
         "board_counts": {},
@@ -874,8 +918,8 @@
       {
         "code": "886015.TI",
         "name": "创新药",
-        "change_pct": -0.3518,
-        "turnover_cny": 59227030000,
+        "change_pct": -0.697538,
+        "turnover_cny": 65314270000,
         "member_count": 277,
         "limit_up_count": 2,
         "board_counts": {
@@ -898,8 +942,8 @@
       {
         "code": "885805.TI",
         "name": "芬太尼",
-        "change_pct": -0.296394,
-        "turnover_cny": 632046590,
+        "change_pct": -0.530354,
+        "turnover_cny": 704810290,
         "member_count": 8,
         "limit_up_count": 0,
         "board_counts": {},
@@ -909,8 +953,8 @@
       {
         "code": "885856.TI",
         "name": "仿制药一致性评价",
-        "change_pct": 0.04599,
-        "turnover_cny": 24265023000,
+        "change_pct": -0.2272,
+        "turnover_cny": 26689968000,
         "member_count": 145,
         "limit_up_count": 3,
         "board_counts": {
@@ -938,8 +982,8 @@
       {
         "code": "886012.TI",
         "name": "宠物经济",
-        "change_pct": -0.191533,
-        "turnover_cny": 18565921000,
+        "change_pct": -0.576209,
+        "turnover_cny": 20767688000,
         "member_count": 127,
         "limit_up_count": 1,
         "board_counts": {
@@ -957,8 +1001,8 @@
       {
         "code": "885909.TI",
         "name": "辅助生殖",
-        "change_pct": -0.193725,
-        "turnover_cny": 14894370000,
+        "change_pct": -0.575575,
+        "turnover_cny": 16400113000,
         "member_count": 74,
         "limit_up_count": 2,
         "board_counts": {
@@ -981,8 +1025,8 @@
       {
         "code": "885915.TI",
         "name": "物业管理",
-        "change_pct": -0.942644,
-        "turnover_cny": 30237817000,
+        "change_pct": -1.297057,
+        "turnover_cny": 33017082000,
         "member_count": 183,
         "limit_up_count": 2,
         "board_counts": {
@@ -1005,13 +1049,13 @@
       {
         "code": "885936.TI",
         "name": "绿色电力",
-        "change_pct": -1.09225,
-        "turnover_cny": 104141012000,
+        "change_pct": -1.44999,
+        "turnover_cny": 114727049000,
         "member_count": 430,
-        "limit_up_count": 5,
+        "limit_up_count": 6,
         "board_counts": {
           "1": 4,
-          "2": 1
+          "2": 2
         },
         "limit_up_stocks": [
           {
@@ -1035,6 +1079,11 @@
             "height": 1
           },
           {
+            "code": "601218",
+            "name": "吉鑫科技",
+            "height": 2
+          },
+          {
             "code": "603278",
             "name": "大业股份",
             "height": 2
@@ -1045,8 +1094,8 @@
       {
         "code": "885942.TI",
         "name": "数据安全",
-        "change_pct": -1.22954,
-        "turnover_cny": 60773116000,
+        "change_pct": -1.728229,
+        "turnover_cny": 65977775000,
         "member_count": 176,
         "limit_up_count": 3,
         "board_counts": {
@@ -1074,8 +1123,8 @@
       {
         "code": "885947.TI",
         "name": "DRG/DIP",
-        "change_pct": -0.219147,
-        "turnover_cny": 2722942000,
+        "change_pct": -0.572903,
+        "turnover_cny": 2948548600,
         "member_count": 22,
         "limit_up_count": 1,
         "board_counts": {
@@ -1093,8 +1142,8 @@
       {
         "code": "885951.TI",
         "name": "预制菜",
-        "change_pct": -0.408585,
-        "turnover_cny": 10678285400,
+        "change_pct": -0.722397,
+        "turnover_cny": 11966997300,
         "member_count": 101,
         "limit_up_count": 0,
         "board_counts": {},
@@ -1104,8 +1153,8 @@
       {
         "code": "885952.TI",
         "name": "幽门螺杆菌概念",
-        "change_pct": -0.122819,
-        "turnover_cny": 8844166900,
+        "change_pct": -0.449174,
+        "turnover_cny": 9826752500,
         "member_count": 74,
         "limit_up_count": 1,
         "board_counts": {
@@ -1123,8 +1172,8 @@
       {
         "code": "885955.TI",
         "name": "重组蛋白",
-        "change_pct": -0.22137,
-        "turnover_cny": 16469081000,
+        "change_pct": -0.628346,
+        "turnover_cny": 17969903000,
         "member_count": 64,
         "limit_up_count": 1,
         "board_counts": {
@@ -1142,8 +1191,8 @@
       {
         "code": "885981.TI",
         "name": "家庭医生",
-        "change_pct": 0.077623,
-        "turnover_cny": 8948685100,
+        "change_pct": -0.360114,
+        "turnover_cny": 10069796300,
         "member_count": 26,
         "limit_up_count": 1,
         "board_counts": {
@@ -1161,8 +1210,8 @@
       {
         "code": "885989.TI",
         "name": "肝炎概念",
-        "change_pct": -0.157163,
-        "turnover_cny": 24267099000,
+        "change_pct": -0.460628,
+        "turnover_cny": 26554279000,
         "member_count": 140,
         "limit_up_count": 1,
         "board_counts": {
@@ -1180,8 +1229,8 @@
       {
         "code": "885994.TI",
         "name": "猴痘概念",
-        "change_pct": -0.308004,
-        "turnover_cny": 16549111000,
+        "change_pct": -0.709934,
+        "turnover_cny": 18085409000,
         "member_count": 75,
         "limit_up_count": 1,
         "board_counts": {
@@ -1197,10 +1246,21 @@
         "source": "同花顺概念指数及当前成分股"
       },
       {
+        "code": "886045.TI",
+        "name": "同花顺中特估100",
+        "change_pct": -0.676641,
+        "turnover_cny": 78365687000,
+        "member_count": 100,
+        "limit_up_count": 0,
+        "board_counts": {},
+        "limit_up_stocks": [],
+        "source": "同花顺概念指数及当前成分股"
+      },
+      {
         "code": "886056.TI",
         "name": "阿尔茨海默概念",
-        "change_pct": 0.390389,
-        "turnover_cny": 10008297900,
+        "change_pct": 0.014203,
+        "turnover_cny": 11058742200,
         "member_count": 45,
         "limit_up_count": 1,
         "board_counts": {
@@ -1218,8 +1278,8 @@
       {
         "code": "886069.TI",
         "name": "人形机器人",
-        "change_pct": -2.497146,
-        "turnover_cny": 182416650000,
+        "change_pct": -2.986304,
+        "turnover_cny": 198838520000,
         "member_count": 469,
         "limit_up_count": 2,
         "board_counts": {
@@ -1243,8 +1303,8 @@
       {
         "code": "886072.TI",
         "name": "高股息精选",
-        "change_pct": -0.45145,
-        "turnover_cny": 71040868000,
+        "change_pct": -0.628912,
+        "turnover_cny": 80254530000,
         "member_count": 285,
         "limit_up_count": 0,
         "board_counts": {},
@@ -1254,8 +1314,8 @@
       {
         "code": "886078.TI",
         "name": "商业航天",
-        "change_pct": -2.85667,
-        "turnover_cny": 226143530000,
+        "change_pct": -3.3862,
+        "turnover_cny": 245236470000,
         "member_count": 508,
         "limit_up_count": 4,
         "board_counts": {
@@ -1289,19 +1349,27 @@
       {
         "code": "886081.TI",
         "name": "维生素",
-        "change_pct": -0.320389,
-        "turnover_cny": 12797964900,
+        "change_pct": -0.605494,
+        "turnover_cny": 13976419000,
         "member_count": 77,
-        "limit_up_count": 0,
-        "board_counts": {},
-        "limit_up_stocks": [],
+        "limit_up_count": 1,
+        "board_counts": {
+          "1": 1
+        },
+        "limit_up_stocks": [
+          {
+            "code": "603968",
+            "name": "醋化股份",
+            "height": 1
+          }
+        ],
         "source": "同花顺概念指数及当前成分股"
       },
       {
         "code": "886101.TI",
         "name": "兵装重组概念",
-        "change_pct": -0.422862,
-        "turnover_cny": 1281846290,
+        "change_pct": -0.623038,
+        "turnover_cny": 1432141900,
         "member_count": 7,
         "limit_up_count": 0,
         "board_counts": {},
@@ -1313,7 +1381,7 @@
     "strength_ready": true,
     "missing": "跨日板块持续性仍需由每日快照累积。"
   },
-  "market_amount_cny": 1504766410000,
+  "market_amount_cny": 1651218030000,
   "market_amount_scope": "上证指数成交额 + 深证成指成交额",
   "limit_up_ladder": {
     "window": {
@@ -1365,6 +1433,14 @@
         "boards": {
           "two_board": [
             {
+              "thscode": "601218.SH",
+              "ticker": "601218",
+              "name": "吉鑫科技",
+              "board_num": 2,
+              "seal_nextday": null,
+              "sign_level": 0
+            },
+            {
               "thscode": "603278.SH",
               "ticker": "603278",
               "name": "大业股份",
@@ -1386,14 +1462,6 @@
               "thscode": "600802.SH",
               "ticker": "600802",
               "name": "福建水泥",
-              "board_num": 3,
-              "seal_nextday": null,
-              "sign_level": 0
-            },
-            {
-              "thscode": "603396.SH",
-              "ticker": "603396",
-              "name": "金辰股份",
               "board_num": 3,
               "seal_nextday": null,
               "sign_level": 0
@@ -1435,14 +1503,6 @@
               "sign_level": 0
             },
             {
-              "thscode": "603396.SH",
-              "ticker": "603396",
-              "name": "金辰股份",
-              "board_num": 2,
-              "seal_nextday": true,
-              "sign_level": 0
-            },
-            {
               "thscode": "603949.SH",
               "ticker": "603949",
               "name": "雪龙集团",
@@ -1478,6 +1538,14 @@
               "thscode": "002119.SZ",
               "ticker": "002119",
               "name": "康强电子",
+              "board_num": 2,
+              "seal_nextday": false,
+              "sign_level": 0
+            },
+            {
+              "thscode": "603396.SH",
+              "ticker": "603396",
+              "name": "金辰股份",
               "board_num": 2,
               "seal_nextday": false,
               "sign_level": 0
@@ -4810,17 +4878,6 @@
       "tag_name": "涨停"
     },
     {
-      "stock_name": "金辰股份",
-      "analysis_content": "1、据2026年8月26日公告，公司拟投资约10亿元建设半导体装备研发及制造项目，聚焦TGV玻璃基封装设备研发制造。\n2、据2026年9月3日进展公告，公司全资子公司辰光微电完成注册，经营范围涵盖半导体专用设备制造与销售。\n3、据2026年5月14日股东会会议资料，光伏组件设备是公司核心基本盘，公司持续推进PERTOP、HJT、钙钛矿等技术路线装备。\n\n（免责声明：本内容由AI技术搜集公开信息总结生成，仅供参考，不构成投资建议，以上市公司公告为准）",
-      "keyword_list": [
-        "半导体装备",
-        "玻璃基封装",
-        "光伏设备"
-      ],
-      "thscode": "603396.SH",
-      "tag_name": "涨停"
-    },
-    {
       "stock_name": "雪龙集团",
       "analysis_content": "1、据2025年2月24日互动易，公司作为有限合伙人通过深创投中小企业发展基金（新疆）有限合伙企业间接持股杭州宇树科技有限公司。目前，深创投中小企业发展基金（新疆）有限合伙企业对杭州宇树科技有限公司的持股比例为1.3546%；公司对深创投中小企业发展基金（新疆）有限合伙企业的持股比例为0.7239%。\n2、据2026年9月15日业绩说明会，公司主营商用车热管理系统，冷却风扇总成、离合器风扇总成等产品应用于商用车及非道路移动机械，公司为国内最大的商用车冷却风扇总成研发与制造基地。 \n3、据2026年5月22日业绩说明会，低压电子风扇总成已实现多家客户小批量供货，高压电子风扇总成研发及产业化稳步推进，新能源商用车关键零部件基地加快建设。 \n\n（免责声明：本内容由AI技术搜集公开信息总结生成，仅供参考，不构成投资建议，以上市公司公告为准）",
       "keyword_list": [
@@ -4840,6 +4897,17 @@
         "湖北国资"
       ],
       "thscode": "000678.SZ",
+      "tag_name": "涨停"
+    },
+    {
+      "stock_name": "吉鑫科技",
+      "analysis_content": "1、据2026年8月25日半年度报告，公司主营大型风电机组零部件研发、生产与销售，产品覆盖750千瓦至15兆瓦风机轮毂、底座、轴及轴承座等。\n2、据2026年8月25日半年度报告，公司于2026年1月完成新能轴承收购，新增偏航、变桨及主轴轴承业务，完善风电零部件产品矩阵。\n3、据2026年8月25日半年度报告，公司上半年实现营收9.96亿元，同比增长39.33%；归母净利润1.19亿元，同比增长46.14%。\n\n（免责声明：本内容由AI技术搜集公开信息总结生成，仅供参考，不构成投资建议，以上市公司公告为准）",
+      "keyword_list": [
+        "风电铸件",
+        "风电轴承",
+        "半年报增长"
+      ],
+      "thscode": "601218.SH",
       "tag_name": "涨停"
     },
     {
@@ -5106,6 +5174,29 @@
         "国际化布局"
       ],
       "thscode": "600488.SH",
+      "tag_name": "涨停"
+    },
+    {
+      "stock_name": "醋化股份",
+      "analysis_content": "1、据2026年7月20日互动易，公司表示安赛蜜价格受原料成本上涨驱动而上行，报价随行就市；据2026年4月24日年报，公司食品饲料添加剂包括乙酰磺胺酸钾等产品。\n2、据2026年8月27日半年报，公司产品主要应用于食品饲料防腐、医药农药及颜染料生产，形成多品种精细化工业务布局。\n3、据2026年8月27日主要经营数据公告，公司上半年食品饲料添加剂销量20725.38吨，实现销售金额4.00亿元。\n\n（免责声明：本内容由AI技术搜集公开信息总结生成，仅供参考，不构成投资建议，以上市公司公告为准）",
+      "keyword_list": [
+        "染料",
+        "安赛蜜",
+        "精细化工",
+        "食品饲料添加剂"
+      ],
+      "thscode": "603968.SH",
+      "tag_name": "涨停"
+    },
+    {
+      "stock_name": "宏柏新材",
+      "analysis_content": "1、据2026年6月3日投资者关系活动记录表，公司规划建设2万吨光纤级高纯四氯化硅项目，力争2026年下半年开工、2027年投产。 \n2、据2026年8月31日半年报，公司形成多品类功能性硅烷产品矩阵，拥有6条气相法白炭黑产线，合计产能2.6万吨。 \n3、据2026年6月3日投资者关系活动记录表，公司规划5000吨电子级正硅酸乙酯项目，当前处于送样测试阶段，产品面向电子半导体产业。\n\n（免责声明：本内容由AI技术搜集公开信息总结生成，仅供参考，不构成投资建议，以上市公司公告为准）",
+      "keyword_list": [
+        "高纯四氯化硅",
+        "功能性硅烷",
+        "电子化学品"
+      ],
+      "thscode": "605366.SH",
       "tag_name": "涨停"
     },
     {
