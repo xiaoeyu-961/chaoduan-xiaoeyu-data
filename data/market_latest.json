@@ -3,64 +3,64 @@
   "ok": true,
   "source": "同花顺官方 Financial-API",
   "sourceMode": "scheduled-snapshot",
-  "tradeDate": "2026-09-28",
-  "updatedAt": "2026-09-28T07:58:26.431090+00:00",
+  "tradeDate": "2026-09-29",
+  "updatedAt": "2026-09-29T01:34:35.603775+00:00",
   "indices": [
     {
       "code": "1A0001",
       "name": "上证指数",
-      "price": 3823.62,
-      "change": -1.665222,
-      "amount": 804543700000,
+      "price": 3822.35,
+      "change": -0.033215,
+      "amount": 71072319000,
       "source": "同花顺指数行情"
     },
     {
       "code": "399001",
       "name": "深证成指",
-      "price": 12858.7532,
-      "change": -3.440841,
-      "amount": 898255360000,
+      "price": 12870.4767,
+      "change": 0.091171,
+      "amount": 75729116000,
       "source": "同花顺指数行情"
     },
     {
       "code": "399006",
       "name": "创业板指",
-      "price": 3139.8249,
-      "change": -4.534055,
-      "amount": 433230200000,
+      "price": 3141.893,
+      "change": 0.065867,
+      "amount": 34591255000,
       "source": "同花顺指数行情"
     },
     {
       "code": "1B0688",
       "name": "科创50",
-      "price": 1555.98,
-      "change": -4.062594,
-      "amount": 80586294000,
+      "price": 1567.57,
+      "change": 0.744868,
+      "amount": 6465340300,
       "source": "同花顺指数行情"
     }
   ],
   "breadth": {
-    "up": 898,
-    "down": 4554,
-    "flat": 105,
-    "known_up": 898,
-    "known_down": 4554,
-    "known_flat": 105,
-    "unknown": 21,
+    "up": 2864,
+    "down": 2379,
+    "flat": 316,
+    "known_up": 2864,
+    "known_down": 2379,
+    "known_flat": 316,
+    "unknown": 19,
     "universe": 5578,
-    "countedUniverse": 5557,
-    "excludedNoChange": 21,
+    "countedUniverse": 5559,
+    "excludedNoChange": 19,
     "complete": true,
-    "coverage_pct": 99.62,
+    "coverage_pct": 99.66,
     "usable": true,
-    "totalAmount": 1702799060000,
+    "totalAmount": 146801435000,
     "stockAmount": null,
     "source": "同花顺全市场行情快照"
   },
-  "limitUpCount": 35,
-  "brokenCount": 11,
-  "limitDownCount": 57,
-  "brokenRate": 23.91,
+  "limitUpCount": 14,
+  "brokenCount": 1,
+  "limitDownCount": 11,
+  "brokenRate": 6.67,
   "highest": {
     "code": "600825",
     "thscode": "600825.SH",
@@ -68,17 +68,17 @@
     "theme": "出版",
     "industry": "出版",
     "industrySource": "ths_industry_index_membership",
-    "height": 5,
+    "height": 6,
     "firstLimit": "09:25",
     "lastLimit": "09:25",
-    "amount": 42985476,
+    "amount": 93747181,
     "turnover": null,
-    "change": 10.0386,
-    "sealAmount": 2386155000,
-    "maxSealAmount": 9984555765.0,
+    "change": 10.0585,
+    "sealAmount": 4975847000,
+    "maxSealAmount": 7695476545.2,
     "openCount": null,
-    "limitReason": "拟收购界面财联社+上海国资+“华”字辈",
-    "price": 8.55
+    "limitReason": null,
+    "price": 9.41
   },
   "limitUps": [
     {
@@ -88,55 +88,17 @@
       "theme": "出版",
       "industry": "出版",
       "industrySource": "ths_industry_index_membership",
-      "height": 5,
+      "height": 6,
       "firstLimit": "09:25",
       "lastLimit": "09:25",
-      "amount": 42985476,
+      "amount": 93747181,
       "turnover": null,
-      "change": 10.0386,
-      "sealAmount": 2386155000,
-      "maxSealAmount": 9984555765.0,
+      "change": 10.0585,
+      "sealAmount": 4975847000,
+      "maxSealAmount": 7695476545.2,
       "openCount": null,
-      "limitReason": "拟收购界面财联社+上海国资+“华”字辈",
-      "price": 8.55
-    },
-    {
-      "code": "600802",
-      "thscode": "600802.SH",
-      "name": "福建水泥",
-      "theme": "水泥",
-      "industry": "水泥",
-      "industrySource": "ths_industry_index_membership",
-      "height": 3,
-      "firstLimit": "09:34",
-      "lastLimit": "09:34",
-      "amount": 604124690,
-      "turnover": null,
-      "change": 9.9698,
-      "sealAmount": 61089283,
-      "maxSealAmount": 309850129.68,
-      "openCount": null,
-      "limitReason": "海峡两岸+福建国资+水泥",
-      "price": 7.28
-    },
-    {
-      "code": "603396",
-      "thscode": "603396.SH",
-      "name": "金辰股份",
-      "theme": "光伏加工设备",
-      "industry": "光伏加工设备",
-      "industrySource": "ths_industry_index_membership",
-      "height": 3,
-      "firstLimit": "09:30",
-      "lastLimit": "09:30",
-      "amount": 910810360,
-      "turnover": null,
-      "change": 9.9888,
-      "sealAmount": 40203755,
-      "maxSealAmount": 374955918.4,
-      "openCount": null,
-      "limitReason": "半导体装备+玻璃基封装+光伏设备",
-      "price": 39.2
+      "limitReason": null,
+      "price": 9.41
     },
     {
       "code": "603949",
@@ -145,17 +107,17 @@
       "theme": "底盘与发动机系统",
       "industry": "底盘与发动机系统",
       "industrySource": "ths_industry_index_membership",
-      "height": 3,
-      "firstLimit": "09:30",
-      "lastLimit": "09:30",
-      "amount": 299115800,
+      "height": 4,
+      "firstLimit": "09:25",
+      "lastLimit": "09:25",
+      "amount": 51973716,
       "turnover": null,
-      "change": 10,
-      "sealAmount": 50842404,
-      "maxSealAmount": 148203198.0,
+      "change": 10.0054,
+      "sealAmount": 226387590,
+      "maxSealAmount": 229608898.55,
       "openCount": null,
-      "limitReason": "间接投资宇树科技+商用车热管理+新能源风扇",
-      "price": 18.59
+      "limitReason": null,
+      "price": 20.45
     },
     {
       "code": "000678",
@@ -164,55 +126,17 @@
       "theme": "底盘与发动机系统",
       "industry": "底盘与发动机系统",
       "industrySource": "ths_industry_index_membership",
-      "height": 2,
-      "firstLimit": "09:30",
-      "lastLimit": "09:30",
-      "amount": 369427230,
+      "height": 3,
+      "firstLimit": "09:25",
+      "lastLimit": "09:25",
+      "amount": 80369959,
       "turnover": null,
-      "change": 10.0207,
-      "sealAmount": 76187139,
-      "maxSealAmount": 175715415.0,
+      "change": 10.0469,
+      "sealAmount": 224914950,
+      "maxSealAmount": 236361869.4,
       "openCount": null,
-      "limitReason": "机器人轴承+汽车轴承+湖北国资",
-      "price": 10.65
-    },
-    {
-      "code": "601218",
-      "thscode": "601218.SH",
-      "name": "吉鑫科技",
-      "theme": "风电零部件",
-      "industry": "风电零部件",
-      "industrySource": "ths_industry_index_membership",
-      "height": 2,
-      "firstLimit": "14:26",
-      "lastLimit": "14:26",
-      "amount": 1514983800,
-      "turnover": null,
-      "change": 10,
-      "sealAmount": 26760360,
-      "maxSealAmount": 261356975.0,
-      "openCount": null,
-      "limitReason": "风电铸件+风电轴承+半年报增长",
-      "price": 6.05
-    },
-    {
-      "code": "603278",
-      "thscode": "603278.SH",
-      "name": "大业股份",
-      "theme": "金属制品",
-      "industry": "金属制品",
-      "industrySource": "ths_industry_index_membership",
-      "height": 2,
-      "firstLimit": "09:30",
-      "lastLimit": "09:30",
-      "amount": 664094600,
-      "turnover": null,
-      "change": 10,
-      "sealAmount": 44748858,
-      "maxSealAmount": 167689368.0,
-      "openCount": null,
-      "limitReason": "人形机器人+胎圈钢丝+全球销售",
-      "price": 10.78
+      "limitReason": null,
+      "price": 11.72
     },
     {
       "code": "000011",
@@ -221,17 +145,17 @@
       "theme": "房地产服务",
       "industry": "房地产服务",
       "industrySource": "ths_industry_index_membership",
-      "height": 1,
-      "firstLimit": "09:45",
-      "lastLimit": "09:45",
-      "amount": 185505270,
+      "height": 2,
+      "firstLimit": "09:25",
+      "lastLimit": "09:25",
+      "amount": 170277690,
       "turnover": null,
-      "change": 10,
-      "sealAmount": 113984697,
-      "maxSealAmount": 317890624.04,
+      "change": 9.9802,
+      "sealAmount": 179888800,
+      "maxSealAmount": 204954676.08,
       "openCount": null,
-      "limitReason": "房地产开发+物业管理+深圳国资",
-      "price": 10.12
+      "limitReason": null,
+      "price": 11.13
     },
     {
       "code": "000020",
@@ -240,169 +164,17 @@
       "theme": "面板",
       "industry": "面板",
       "industrySource": "ths_industry_index_membership",
-      "height": 1,
-      "firstLimit": "09:52",
-      "lastLimit": "09:52",
-      "amount": 201884850,
-      "turnover": null,
-      "change": 9.9925,
-      "sealAmount": 18494712,
-      "maxSealAmount": 216906240.0,
-      "openCount": null,
-      "limitReason": "深圳旧改+物业经营+定制显示器+注塑业务",
-      "price": 14.64
-    },
-    {
-      "code": "000503",
-      "thscode": "000503.SZ",
-      "name": "国新健康",
-      "theme": "垂直应用软件",
-      "industry": "垂直应用软件",
-      "industrySource": "ths_industry_index_membership",
-      "height": 1,
-      "firstLimit": "09:31",
-      "lastLimit": "09:31",
-      "amount": 362431750,
-      "turnover": null,
-      "change": 10.0592,
-      "sealAmount": 33735252,
-      "maxSealAmount": 310901232.0,
-      "openCount": null,
-      "limitReason": "AI医疗+个人医保云+医保支付改革",
-      "price": 7.44
-    },
-    {
-      "code": "000513",
-      "thscode": "000513.SZ",
-      "name": "丽珠集团",
-      "theme": "化学制剂",
-      "industry": "化学制剂",
-      "industrySource": "ths_industry_index_membership",
-      "height": 1,
+      "height": 2,
       "firstLimit": "09:32",
       "lastLimit": "09:32",
-      "amount": 842849420,
+      "amount": 163862730,
       "turnover": null,
-      "change": 10.0073,
-      "sealAmount": 66371784,
-      "maxSealAmount": 446476310.1,
+      "change": 9.9727,
+      "sealAmount": 101988396,
+      "maxSealAmount": 107777956.3,
       "openCount": null,
-      "limitReason": "创新药+海外拓展+高分红",
-      "price": 30.34
-    },
-    {
-      "code": "000980",
-      "thscode": "000980.SZ",
-      "name": "众泰汽车",
-      "theme": "乘用车",
-      "industry": "乘用车",
-      "industrySource": "ths_industry_index_membership",
-      "height": 1,
-      "firstLimit": "09:49",
-      "lastLimit": "09:49",
-      "amount": 1051055420,
-      "turnover": null,
-      "change": 9.8039,
-      "sealAmount": 51756320,
-      "maxSealAmount": 669906496.0,
-      "openCount": null,
-      "limitReason": "汽车整车+A0车型+海外布局",
-      "price": 2.24
-    },
-    {
-      "code": "001201",
-      "thscode": "001201.SZ",
-      "name": "东瑞股份",
-      "theme": "生猪养殖",
-      "industry": "生猪养殖",
-      "industrySource": "ths_industry_index_membership",
-      "height": 1,
-      "firstLimit": "10:54",
-      "lastLimit": "10:54",
-      "amount": 212005780,
-      "turnover": null,
-      "change": 10.0273,
-      "sealAmount": 17115478,
-      "maxSealAmount": 151731232.36,
-      "openCount": null,
-      "limitReason": "生猪养殖+供港活猪+降本增效",
-      "price": 16.13
-    },
-    {
-      "code": "001330",
-      "thscode": "001330.SZ",
-      "name": "博纳影业",
-      "theme": "影视院线",
-      "industry": "影视院线",
-      "industrySource": "ths_industry_index_membership",
-      "height": 1,
-      "firstLimit": "09:25",
-      "lastLimit": "09:25",
-      "amount": 261050020,
-      "turnover": null,
-      "change": 10.0346,
-      "sealAmount": 191121820,
-      "maxSealAmount": 805708968.0,
-      "openCount": null,
-      "limitReason": "首部AI电影上映+《三星堆：未来往事》",
-      "price": 6.36
-    },
-    {
-      "code": "001368",
-      "thscode": "001368.SZ",
-      "name": "通达创智",
-      "theme": "文娱用品",
-      "industry": "文娱用品",
-      "industrySource": "ths_industry_index_membership",
-      "height": 1,
-      "firstLimit": "14:56",
-      "lastLimit": "14:56",
-      "amount": 459326890,
-      "turnover": null,
-      "change": 10,
-      "sealAmount": 5103780,
-      "maxSealAmount": 5103780.0,
-      "openCount": null,
-      "limitReason": "体育户外+AI玩具+海外产能",
-      "price": 41.8
-    },
-    {
-      "code": "002082",
-      "thscode": "002082.SZ",
-      "name": "ST万邦",
-      "theme": "中药",
-      "industry": "中药",
-      "industrySource": "ths_industry_index_membership",
-      "height": 1,
-      "firstLimit": "09:58",
-      "lastLimit": "09:58",
-      "amount": 439360020,
-      "turnover": null,
-      "change": 10,
-      "sealAmount": 12086976,
-      "maxSealAmount": 33959640.0,
-      "openCount": null,
-      "limitReason": "股权转让+创新药+中报增长",
-      "price": 13.2
-    },
-    {
-      "code": "002232",
-      "thscode": "002232.SZ",
-      "name": "启明信息",
-      "theme": "IT服务",
-      "industry": "IT服务",
-      "industrySource": "ths_industry_index_membership",
-      "height": 1,
-      "firstLimit": "11:06",
-      "lastLimit": "11:06",
-      "amount": 393986980,
-      "turnover": null,
-      "change": 10,
-      "sealAmount": 106776059,
-      "maxSealAmount": 702651360.84,
-      "openCount": null,
-      "limitReason": "网络安全+车联网+一汽配套",
-      "price": 16.28
+      "limitReason": null,
+      "price": 16.1
     },
     {
       "code": "002242",
@@ -411,169 +183,17 @@
       "theme": "小家电",
       "industry": "小家电",
       "industrySource": "ths_industry_index_membership",
-      "height": 1,
-      "firstLimit": "09:31",
-      "lastLimit": "09:31",
-      "amount": 251850890,
-      "turnover": null,
-      "change": 10.0106,
-      "sealAmount": 50057992,
-      "maxSealAmount": 232288644.0,
-      "openCount": null,
-      "limitReason": "机器人+太空科技+厨房小家电",
-      "price": 10.33
-    },
-    {
-      "code": "002342",
-      "thscode": "002342.SZ",
-      "name": "巨力索具",
-      "theme": "金属制品",
-      "industry": "金属制品",
-      "industrySource": "ths_industry_index_membership",
-      "height": 1,
-      "firstLimit": "10:58",
-      "lastLimit": "10:58",
-      "amount": 2008963900,
-      "turnover": null,
-      "change": 10.0127,
-      "sealAmount": 78274504,
-      "maxSealAmount": 841472079.84,
-      "openCount": null,
-      "limitReason": "商业航天+索具龙头+深海系泊",
-      "price": 8.68
-    },
-    {
-      "code": "002347",
-      "thscode": "002347.SZ",
-      "name": "泰尔股份",
-      "theme": "金属制品",
-      "industry": "金属制品",
-      "industrySource": "ths_industry_index_membership",
-      "height": 1,
-      "firstLimit": "09:36",
-      "lastLimit": "09:36",
-      "amount": 311388250,
-      "turnover": null,
-      "change": 9.9315,
-      "sealAmount": 31608870,
-      "maxSealAmount": 173252688.0,
-      "openCount": null,
-      "limitReason": "工业机器人+激光装备+冶金装备",
-      "price": 6.42
-    },
-    {
-      "code": "002480",
-      "thscode": "002480.SZ",
-      "name": "新筑股份",
-      "theme": "新能源发电",
-      "industry": "新能源发电",
-      "industrySource": "ths_industry_index_membership",
-      "height": 1,
-      "firstLimit": "09:52",
-      "lastLimit": "09:52",
-      "amount": 162545730,
-      "turnover": null,
-      "change": 9.9222,
-      "sealAmount": 27684435,
-      "maxSealAmount": 168973985.0,
-      "openCount": null,
-      "limitReason": "重大重组+清洁能源+四川国资",
-      "price": 5.65
-    },
-    {
-      "code": "002640",
-      "thscode": "002640.SZ",
-      "name": "跨境通",
-      "theme": "互联网电商",
-      "industry": "互联网电商",
-      "industrySource": "ths_industry_index_membership",
-      "height": 1,
+      "height": 2,
       "firstLimit": "09:30",
       "lastLimit": "09:30",
-      "amount": 1049611660,
+      "amount": 174589840,
       "turnover": null,
-      "change": 10,
-      "sealAmount": 111994419,
-      "maxSealAmount": 718414963.2,
+      "change": 9.971,
+      "sealAmount": 170657180,
+      "maxSealAmount": 170858251.04,
       "openCount": null,
-      "limitReason": "跨境电商+品牌运营+中报扭亏",
-      "price": 3.96
-    },
-    {
-      "code": "002852",
-      "thscode": "002852.SZ",
-      "name": "道道全",
-      "theme": "粮油加工",
-      "industry": "粮油加工",
-      "industrySource": "ths_industry_index_membership",
-      "height": 1,
-      "firstLimit": "13:45",
-      "lastLimit": "13:45",
-      "amount": 237995170,
-      "turnover": null,
-      "change": 10.0124,
-      "sealAmount": 22116767,
-      "maxSealAmount": 163173490.0,
-      "openCount": null,
-      "limitReason": "菜籽油+渠道拓展+高端油品",
-      "price": 8.9
-    },
-    {
-      "code": "002912",
-      "thscode": "002912.SZ",
-      "name": "中新赛克",
-      "theme": "其他计算机设备",
-      "industry": "其他计算机设备",
-      "industrySource": "ths_industry_index_membership",
-      "height": 1,
-      "firstLimit": "09:30",
-      "lastLimit": "09:30",
-      "amount": 209587120,
-      "turnover": null,
-      "change": 10.0166,
-      "sealAmount": 126403197,
-      "maxSealAmount": 487952162.26,
-      "openCount": null,
-      "limitReason": "AI安全+网络安全+数据安全",
-      "price": 26.47
-    },
-    {
-      "code": "002962",
-      "thscode": "002962.SZ",
-      "name": "五方光电",
-      "theme": "光学元件",
-      "industry": "光学元件",
-      "industrySource": "ths_industry_index_membership",
-      "height": 1,
-      "firstLimit": "09:34",
-      "lastLimit": "09:34",
-      "amount": 457594980,
-      "turnover": null,
-      "change": 9.9851,
-      "sealAmount": 27318812,
-      "maxSealAmount": 226474488.0,
-      "openCount": null,
-      "limitReason": "TGV光学+微棱镜+AR/VR",
-      "price": 14.76
-    },
-    {
-      "code": "301190",
-      "thscode": "301190.SZ",
-      "name": "善水科技",
-      "theme": "其他化学原料",
-      "industry": "其他化学原料",
-      "industrySource": "ths_industry_index_membership",
-      "height": 1,
-      "firstLimit": "13:47",
-      "lastLimit": "13:47",
-      "amount": 382851180,
-      "turnover": null,
-      "change": 20.0096,
-      "sealAmount": 61148757,
-      "maxSealAmount": 326878408.05,
-      "openCount": null,
-      "limitReason": "染料+氯代吡啶+农药医药中间体",
-      "price": 24.95
+      "limitReason": null,
+      "price": 11.36
     },
     {
       "code": "600032",
@@ -582,17 +202,17 @@
       "theme": "新能源发电",
       "industry": "新能源发电",
       "industrySource": "ths_industry_index_membership",
-      "height": 1,
-      "firstLimit": "09:48",
-      "lastLimit": "09:48",
-      "amount": 441559890,
+      "height": 2,
+      "firstLimit": "09:31",
+      "lastLimit": "09:31",
+      "amount": 391356500,
       "turnover": null,
-      "change": 10.0741,
-      "sealAmount": 69763985,
-      "maxSealAmount": 241194889.0,
+      "change": 9.9596,
+      "sealAmount": 299741780,
+      "maxSealAmount": 300048969.0,
       "openCount": null,
-      "limitReason": "绿色电力+风电+智慧运维",
-      "price": 7.43
+      "limitReason": null,
+      "price": 8.17
     },
     {
       "code": "600241",
@@ -601,1299 +221,159 @@
       "theme": "锂电池",
       "industry": "锂电池",
       "industrySource": "ths_industry_index_membership",
-      "height": 1,
-      "firstLimit": "10:08",
-      "lastLimit": "10:08",
-      "amount": 144470310,
+      "height": 2,
+      "firstLimit": "09:25",
+      "lastLimit": "09:25",
+      "amount": 131067162,
       "turnover": null,
-      "change": 9.9863,
-      "sealAmount": 12433843.9,
-      "maxSealAmount": 171377424.0,
+      "change": 9.9502,
+      "sealAmount": 122948470,
+      "maxSealAmount": 124459226.32,
       "openCount": null,
-      "limitReason": "BBU备用电源+锂电池+镍氢电池+辽宁国资",
-      "price": 8.04
+      "limitReason": null,
+      "price": 8.84
     },
     {
-      "code": "600340",
-      "thscode": "600340.SH",
-      "name": "*ST华幸",
-      "theme": "产业地产",
-      "industry": "产业地产",
+      "code": "600189",
+      "thscode": "600189.SH",
+      "name": "泉阳泉",
+      "theme": "软饮料",
+      "industry": "软饮料",
       "industrySource": "ths_industry_index_membership",
       "height": 1,
-      "firstLimit": "14:14",
-      "lastLimit": "14:14",
-      "amount": 231359040,
+      "firstLimit": "09:32",
+      "lastLimit": "09:32",
+      "amount": 104981423,
       "turnover": null,
-      "change": 10.2564,
-      "sealAmount": 842266.8,
-      "maxSealAmount": 20898387.0,
+      "change": 10.0122,
+      "sealAmount": 628611850,
+      "maxSealAmount": 629150649.41,
       "openCount": null,
-      "limitReason": "债务重组+产业新城+预重整",
-      "price": 1.29
+      "limitReason": null,
+      "price": 9.01
     },
     {
-      "code": "600418",
-      "thscode": "600418.SH",
-      "name": "江淮汽车",
-      "theme": "商用载货车",
-      "industry": "商用载货车",
+      "code": "600657",
+      "thscode": "600657.SH",
+      "name": "信达地产",
+      "theme": "住宅开发",
+      "industry": "住宅开发",
       "industrySource": "ths_industry_index_membership",
       "height": 1,
-      "firstLimit": "10:22",
-      "lastLimit": "10:22",
-      "amount": 4392576700,
+      "firstLimit": "09:31",
+      "lastLimit": "09:31",
+      "amount": 76481276,
       "turnover": null,
-      "change": 9.9869,
-      "sealAmount": 177014140,
-      "maxSealAmount": 1209354484.0,
+      "change": 10.0977,
+      "sealAmount": 254402410,
+      "maxSealAmount": 343349475.3,
       "openCount": null,
-      "limitReason": "尊界+华为合作+玛莎拉蒂合作传闻",
-      "price": 25.22
+      "limitReason": null,
+      "price": 3.38
     },
     {
-      "code": "600488",
-      "thscode": "600488.SH",
-      "name": "津药药业",
-      "theme": "化学制剂",
-      "industry": "化学制剂",
+      "code": "600982",
+      "thscode": "600982.SH",
+      "name": "宁波能源",
+      "theme": "热力",
+      "industry": "热力",
       "industrySource": "ths_industry_index_membership",
       "height": 1,
-      "firstLimit": "13:02",
-      "lastLimit": "13:02",
-      "amount": 621351010,
+      "firstLimit": "09:31",
+      "lastLimit": "09:31",
+      "amount": 139883750,
       "turnover": null,
-      "change": 10,
-      "sealAmount": 30956558,
-      "maxSealAmount": 568736025.0,
+      "change": 10.02,
+      "sealAmount": 236827620,
+      "maxSealAmount": 238906134.0,
       "openCount": null,
-      "limitReason": "食欲素+药品注册+氨基酸制剂+国际化布局",
-      "price": 6.27
+      "limitReason": null,
+      "price": 5.49
     },
     {
-      "code": "601579",
-      "thscode": "601579.SH",
-      "name": "会稽山",
-      "theme": "其他酒类",
-      "industry": "其他酒类",
+      "code": "601238",
+      "thscode": "601238.SH",
+      "name": "广汽集团",
+      "theme": "乘用车",
+      "industry": "乘用车",
+      "industrySource": "ths_industry_index_membership",
+      "height": 1,
+      "firstLimit": "09:25",
+      "lastLimit": "09:25",
+      "amount": 20753040,
+      "turnover": null,
+      "change": 10.0196,
+      "sealAmount": 565177200,
+      "maxSealAmount": 656011440.0,
+      "openCount": null,
+      "limitReason": null,
+      "price": 5.6
+    },
+    {
+      "code": "603200",
+      "thscode": "603200.SH",
+      "name": "上海洗霸",
+      "theme": "水务及水治理",
+      "industry": "水务及水治理",
       "industrySource": "ths_industry_index_membership",
       "height": 1,
       "firstLimit": "09:30",
       "lastLimit": "09:30",
-      "amount": 2223607400,
+      "amount": 104179042,
       "turnover": null,
-      "change": 9.9895,
-      "sealAmount": 19359368,
-      "maxSealAmount": 425709573.52,
+      "change": 10.0081,
+      "sealAmount": 274030390,
+      "maxSealAmount": 275433508.0,
       "openCount": null,
-      "limitReason": "高端黄酒+全国化扩张+中高端增长",
-      "price": 41.84
+      "limitReason": null,
+      "price": 40.67
     },
     {
-      "code": "603968",
-      "thscode": "603968.SH",
-      "name": "醋化股份",
-      "theme": "食品及饲料添加剂",
-      "industry": "食品及饲料添加剂",
+      "code": "605303",
+      "thscode": "605303.SH",
+      "name": "园林股份",
+      "theme": "装饰园林",
+      "industry": "装饰园林",
       "industrySource": "ths_industry_index_membership",
       "height": 1,
-      "firstLimit": "14:48",
-      "lastLimit": "14:48",
-      "amount": 113396778,
+      "firstLimit": "09:25",
+      "lastLimit": "09:25",
+      "amount": 2378365,
       "turnover": null,
-      "change": 10.0284,
-      "sealAmount": 14352595,
-      "maxSealAmount": 75849697.0,
+      "change": 10.0084,
+      "sealAmount": 604862770,
+      "maxSealAmount": 1507469215.0,
       "openCount": null,
-      "limitReason": "染料+安赛蜜+精细化工+食品饲料添加剂",
-      "price": 11.63
-    },
-    {
-      "code": "605366",
-      "thscode": "605366.SH",
-      "name": "宏柏新材",
-      "theme": "有机硅",
-      "industry": "有机硅",
-      "industrySource": "ths_industry_index_membership",
-      "height": 1,
-      "firstLimit": "14:37",
-      "lastLimit": "14:37",
-      "amount": 999696290,
-      "turnover": null,
-      "change": 9.9783,
-      "sealAmount": 44892822,
-      "maxSealAmount": 234919555.26,
-      "openCount": null,
-      "limitReason": "高纯四氯化硅+功能性硅烷+电子化学品",
-      "price": 10.14
-    },
-    {
-      "code": "688244",
-      "thscode": "688244.SH",
-      "name": "永信至诚",
-      "theme": "横向通用软件",
-      "industry": "横向通用软件",
-      "industrySource": "ths_industry_index_membership",
-      "height": 1,
-      "firstLimit": "11:04",
-      "lastLimit": "11:04",
-      "amount": 270535530,
-      "turnover": null,
-      "change": 20,
-      "sealAmount": 29782705,
-      "maxSealAmount": 150199968.6,
-      "openCount": null,
-      "limitReason": "AI安全+数字风洞+网络靶场",
-      "price": 19.8
+      "limitReason": null,
+      "price": 26.05
     }
   ],
   "broken": [
     {
-      "code": "301004",
-      "thscode": "301004.SZ",
-      "name": "嘉益股份",
+      "code": "600488",
+      "thscode": "600488.SH",
+      "name": "津药药业",
       "theme": null,
       "industry": null,
       "industrySource": null,
       "height": null,
       "firstLimit": null,
       "lastLimit": null,
-      "amount": 177021160.0,
-      "turnover": 3.4981,
-      "change": 17.0642,
+      "amount": 547403160.0,
+      "turnover": 7.3605,
+      "change": 6.2201,
       "sealAmount": null,
       "maxSealAmount": null,
       "openCount": 1,
       "limitReason": null,
-      "price": 38.28
-    },
-    {
-      "code": "600707",
-      "thscode": "600707.SH",
-      "name": "彩虹股份",
-      "theme": null,
-      "industry": null,
-      "industrySource": null,
-      "height": null,
-      "firstLimit": null,
-      "lastLimit": null,
-      "amount": 3769898700.0,
-      "turnover": 10.1893,
-      "change": 9.3783,
-      "sealAmount": null,
-      "maxSealAmount": null,
-      "openCount": 3,
-      "limitReason": null,
-      "price": 10.38
-    },
-    {
-      "code": "603418",
-      "thscode": "603418.SH",
-      "name": "友升股份",
-      "theme": null,
-      "industry": null,
-      "industrySource": null,
-      "height": null,
-      "firstLimit": null,
-      "lastLimit": null,
-      "amount": 373160340.0,
-      "turnover": 8.6679,
-      "change": 8.0692,
-      "sealAmount": null,
-      "maxSealAmount": null,
-      "openCount": 1,
-      "limitReason": null,
-      "price": 48.75
-    },
-    {
-      "code": "600059",
-      "thscode": "600059.SH",
-      "name": "古越龙山",
-      "theme": null,
-      "industry": null,
-      "industrySource": null,
-      "height": null,
-      "firstLimit": null,
-      "lastLimit": null,
-      "amount": 1451543200.0,
-      "turnover": 13.4824,
-      "change": 6.6364,
-      "sealAmount": null,
-      "maxSealAmount": null,
-      "openCount": 4,
-      "limitReason": null,
-      "price": 11.73
-    },
-    {
-      "code": "600719",
-      "thscode": "600719.SH",
-      "name": "大连热电",
-      "theme": null,
-      "industry": null,
-      "industrySource": null,
-      "height": null,
-      "firstLimit": null,
-      "lastLimit": null,
-      "amount": 335334370.0,
-      "turnover": 10.5639,
-      "change": 6.0893,
-      "sealAmount": null,
-      "maxSealAmount": null,
-      "openCount": 2,
-      "limitReason": null,
-      "price": 7.84
-    },
-    {
-      "code": "002583",
-      "thscode": "002583.SZ",
-      "name": "海能达",
-      "theme": null,
-      "industry": null,
-      "industrySource": null,
-      "height": null,
-      "firstLimit": null,
-      "lastLimit": null,
-      "amount": 789627990.0,
-      "turnover": 7.1363,
-      "change": 5.3549,
-      "sealAmount": null,
-      "maxSealAmount": null,
-      "openCount": 1,
-      "limitReason": null,
-      "price": 8.46
-    },
-    {
-      "code": "600356",
-      "thscode": "600356.SH",
-      "name": "恒丰纸业",
-      "theme": null,
-      "industry": null,
-      "industrySource": null,
-      "height": null,
-      "firstLimit": null,
-      "lastLimit": null,
-      "amount": 542744870.0,
-      "turnover": 15.8604,
-      "change": 3.9474,
-      "sealAmount": null,
-      "maxSealAmount": null,
-      "openCount": 4,
-      "limitReason": null,
-      "price": 11.06
-    },
-    {
-      "code": "600540",
-      "thscode": "600540.SH",
-      "name": "新赛股份",
-      "theme": null,
-      "industry": null,
-      "industrySource": null,
-      "height": null,
-      "firstLimit": null,
-      "lastLimit": null,
-      "amount": 952020630.0,
-      "turnover": 28.2722,
-      "change": 3.8674,
-      "sealAmount": null,
-      "maxSealAmount": null,
-      "openCount": 1,
-      "limitReason": null,
-      "price": 5.64
-    },
-    {
-      "code": "000850",
-      "thscode": "000850.SZ",
-      "name": "华茂股份",
-      "theme": null,
-      "industry": null,
-      "industrySource": null,
-      "height": null,
-      "firstLimit": null,
-      "lastLimit": null,
-      "amount": 1130074770.0,
-      "turnover": 21.8585,
-      "change": 0.3906,
-      "sealAmount": null,
-      "maxSealAmount": null,
-      "openCount": 2,
-      "limitReason": null,
-      "price": 5.14
-    },
-    {
-      "code": "603970",
-      "thscode": "603970.SH",
-      "name": "中农立华",
-      "theme": null,
-      "industry": null,
-      "industrySource": null,
-      "height": null,
-      "firstLimit": null,
-      "lastLimit": null,
-      "amount": 309547930.0,
-      "turnover": 8.9782,
-      "change": -2.5472,
-      "sealAmount": null,
-      "maxSealAmount": null,
-      "openCount": 1,
-      "limitReason": null,
-      "price": 11.86
-    },
-    {
-      "code": "000790",
-      "thscode": "000790.SZ",
-      "name": "华神科技",
-      "theme": null,
-      "industry": null,
-      "industrySource": null,
-      "height": null,
-      "firstLimit": null,
-      "lastLimit": null,
-      "amount": 598560830.0,
-      "turnover": 20.3637,
-      "change": -5.5556,
-      "sealAmount": null,
-      "maxSealAmount": null,
-      "openCount": 1,
-      "limitReason": null,
-      "price": 4.42
+      "price": 6.66
     }
   ],
   "limitDown": [
     {
-      "code": "600522",
-      "thscode": "600522.SH",
-      "name": "中天科技",
-      "theme": null,
-      "industry": null,
-      "industrySource": null,
-      "height": null,
-      "firstLimit": "14:51",
-      "lastLimit": "15:00",
-      "amount": null,
-      "turnover": 6.8947,
-      "change": -10.0,
-      "sealAmount": null,
-      "maxSealAmount": null,
-      "openCount": null,
-      "limitReason": null,
-      "price": 31.32
-    },
-    {
-      "code": "600664",
-      "thscode": "600664.SH",
-      "name": "哈药股份",
-      "theme": null,
-      "industry": null,
-      "industrySource": null,
-      "height": null,
-      "firstLimit": "10:39",
-      "lastLimit": "14:56",
-      "amount": null,
-      "turnover": 18.1585,
-      "change": -9.9509,
-      "sealAmount": null,
-      "maxSealAmount": null,
-      "openCount": null,
-      "limitReason": null,
-      "price": 7.33
-    },
-    {
-      "code": "002897",
-      "thscode": "002897.SZ",
-      "name": "意华股份",
-      "theme": null,
-      "industry": null,
-      "industrySource": null,
-      "height": null,
-      "firstLimit": "13:39",
-      "lastLimit": "14:52",
-      "amount": null,
-      "turnover": 6.4091,
-      "change": -9.9985,
-      "sealAmount": null,
-      "maxSealAmount": null,
-      "openCount": null,
-      "limitReason": null,
-      "price": 59.14
-    },
-    {
-      "code": "000988",
-      "thscode": "000988.SZ",
-      "name": "华工科技",
-      "theme": null,
-      "industry": null,
-      "industrySource": null,
-      "height": null,
-      "firstLimit": "14:51",
-      "lastLimit": "14:51",
-      "amount": null,
-      "turnover": 5.9339,
-      "change": -10.0,
-      "sealAmount": null,
-      "maxSealAmount": null,
-      "openCount": null,
-      "limitReason": null,
-      "price": 92.61
-    },
-    {
-      "code": "603663",
-      "thscode": "603663.SH",
-      "name": "三祥新材",
-      "theme": null,
-      "industry": null,
-      "industrySource": null,
-      "height": null,
-      "firstLimit": "13:55",
-      "lastLimit": "14:48",
-      "amount": null,
-      "turnover": 4.697,
-      "change": -10.0,
-      "sealAmount": null,
-      "maxSealAmount": null,
-      "openCount": null,
-      "limitReason": null,
-      "price": 43.38
-    },
-    {
-      "code": "601567",
-      "thscode": "601567.SH",
-      "name": "三星电气",
-      "theme": null,
-      "industry": null,
-      "industrySource": null,
-      "height": null,
-      "firstLimit": "09:37",
-      "lastLimit": "14:47",
-      "amount": null,
-      "turnover": 4.0983,
-      "change": -9.9692,
-      "sealAmount": null,
-      "maxSealAmount": null,
-      "openCount": null,
-      "limitReason": null,
-      "price": 14.63
-    },
-    {
-      "code": "603115",
-      "thscode": "603115.SH",
-      "name": "海星股份",
-      "theme": null,
-      "industry": null,
-      "industrySource": null,
-      "height": null,
-      "firstLimit": "14:08",
-      "lastLimit": "14:45",
-      "amount": null,
-      "turnover": 3.2188,
-      "change": -10.0,
-      "sealAmount": null,
-      "maxSealAmount": null,
-      "openCount": null,
-      "limitReason": null,
-      "price": 71.46
-    },
-    {
-      "code": "600547",
-      "thscode": "600547.SH",
-      "name": "山东黄金",
-      "theme": null,
-      "industry": null,
-      "industrySource": null,
-      "height": null,
-      "firstLimit": "10:55",
-      "lastLimit": "14:43",
-      "amount": null,
-      "turnover": 3.8826,
-      "change": -10.0103,
-      "sealAmount": null,
-      "maxSealAmount": null,
-      "openCount": null,
-      "limitReason": null,
-      "price": 26.16
-    },
-    {
-      "code": "000636",
-      "thscode": "000636.SZ",
-      "name": "风华高科",
-      "theme": null,
-      "industry": null,
-      "industrySource": null,
-      "height": null,
-      "firstLimit": "13:31",
-      "lastLimit": "14:37",
-      "amount": null,
-      "turnover": 8.0609,
-      "change": -9.9964,
-      "sealAmount": null,
-      "maxSealAmount": null,
-      "openCount": null,
-      "limitReason": null,
-      "price": 50.42
-    },
-    {
-      "code": "600246",
-      "thscode": "600246.SH",
-      "name": "万通发展",
-      "theme": null,
-      "industry": null,
-      "industrySource": null,
-      "height": null,
-      "firstLimit": "11:18",
-      "lastLimit": "14:31",
-      "amount": null,
-      "turnover": 6.0865,
-      "change": -9.9721,
-      "sealAmount": null,
-      "maxSealAmount": null,
-      "openCount": null,
-      "limitReason": null,
-      "price": 12.91
-    },
-    {
-      "code": "600345",
-      "thscode": "600345.SH",
-      "name": "长江通信",
-      "theme": null,
-      "industry": null,
-      "industrySource": null,
-      "height": null,
-      "firstLimit": "10:35",
-      "lastLimit": "14:27",
-      "amount": null,
-      "turnover": 4.7405,
-      "change": -10.0019,
-      "sealAmount": null,
-      "maxSealAmount": null,
-      "openCount": null,
-      "limitReason": null,
-      "price": 46.7
-    },
-    {
-      "code": "002741",
-      "thscode": "002741.SZ",
-      "name": "光华科技",
-      "theme": null,
-      "industry": null,
-      "industrySource": null,
-      "height": null,
-      "firstLimit": "10:39",
-      "lastLimit": "14:26",
-      "amount": null,
-      "turnover": 10.5018,
-      "change": -10.0,
-      "sealAmount": null,
-      "maxSealAmount": null,
-      "openCount": null,
-      "limitReason": null,
-      "price": 25.74
-    },
-    {
-      "code": "002796",
-      "thscode": "002796.SZ",
-      "name": "世嘉科技",
-      "theme": null,
-      "industry": null,
-      "industrySource": null,
-      "height": null,
-      "firstLimit": "11:20",
-      "lastLimit": "14:26",
-      "amount": null,
-      "turnover": 4.9918,
-      "change": -10.0137,
-      "sealAmount": null,
-      "maxSealAmount": null,
-      "openCount": null,
-      "limitReason": null,
-      "price": 26.24
-    },
-    {
-      "code": "603738",
-      "thscode": "603738.SH",
-      "name": "泰晶科技",
-      "theme": null,
-      "industry": null,
-      "industrySource": null,
-      "height": null,
-      "firstLimit": "10:34",
-      "lastLimit": "14:26",
-      "amount": null,
-      "turnover": 6.8729,
-      "change": -10.0,
-      "sealAmount": null,
-      "maxSealAmount": null,
-      "openCount": null,
-      "limitReason": null,
-      "price": 34.02
-    },
-    {
-      "code": "002937",
-      "thscode": "002937.SZ",
-      "name": "兴瑞科技",
-      "theme": null,
-      "industry": null,
-      "industrySource": null,
-      "height": null,
-      "firstLimit": "10:44",
-      "lastLimit": "14:25",
-      "amount": null,
-      "turnover": 4.8172,
-      "change": -9.9835,
-      "sealAmount": null,
-      "maxSealAmount": null,
-      "openCount": null,
-      "limitReason": null,
-      "price": 27.23
-    },
-    {
-      "code": "002579",
-      "thscode": "002579.SZ",
-      "name": "中京电子",
-      "theme": null,
-      "industry": null,
-      "industrySource": null,
-      "height": null,
-      "firstLimit": "10:45",
-      "lastLimit": "14:22",
-      "amount": null,
-      "turnover": 18.9869,
-      "change": -9.9896,
-      "sealAmount": null,
-      "maxSealAmount": null,
-      "openCount": null,
-      "limitReason": null,
-      "price": 17.3
-    },
-    {
-      "code": "601208",
-      "thscode": "601208.SH",
-      "name": "东材科技",
-      "theme": null,
-      "industry": null,
-      "industrySource": null,
-      "height": null,
-      "firstLimit": "10:40",
-      "lastLimit": "14:21",
-      "amount": null,
-      "turnover": 7.0476,
-      "change": -9.9929,
-      "sealAmount": null,
-      "maxSealAmount": null,
-      "openCount": null,
-      "limitReason": null,
-      "price": 50.8
-    },
-    {
-      "code": "605589",
-      "thscode": "605589.SH",
-      "name": "圣泉集团",
-      "theme": null,
-      "industry": null,
-      "industrySource": null,
-      "height": null,
-      "firstLimit": "11:12",
-      "lastLimit": "14:19",
-      "amount": null,
-      "turnover": 3.8091,
-      "change": -10.005,
-      "sealAmount": null,
-      "maxSealAmount": null,
-      "openCount": null,
-      "limitReason": null,
-      "price": 36.07
-    },
-    {
-      "code": "002484",
-      "thscode": "002484.SZ",
-      "name": "江海股份",
-      "theme": null,
-      "industry": null,
-      "industrySource": null,
-      "height": null,
-      "firstLimit": "10:45",
-      "lastLimit": "14:18",
-      "amount": null,
-      "turnover": 4.7662,
-      "change": -10.0069,
-      "sealAmount": null,
-      "maxSealAmount": null,
-      "openCount": null,
-      "limitReason": null,
-      "price": 52.16
-    },
-    {
-      "code": "600105",
-      "thscode": "600105.SH",
-      "name": "永鼎股份",
-      "theme": null,
-      "industry": null,
-      "industrySource": null,
-      "height": null,
-      "firstLimit": "10:18",
-      "lastLimit": "14:18",
-      "amount": null,
-      "turnover": 6.5362,
-      "change": -9.9929,
-      "sealAmount": null,
-      "maxSealAmount": null,
-      "openCount": null,
-      "limitReason": null,
-      "price": 38.28
-    },
-    {
-      "code": "600353",
-      "thscode": "600353.SH",
-      "name": "旭光电子",
-      "theme": null,
-      "industry": null,
-      "industrySource": null,
-      "height": null,
-      "firstLimit": "10:44",
-      "lastLimit": "14:18",
-      "amount": null,
-      "turnover": 5.7987,
-      "change": -10.0092,
-      "sealAmount": null,
-      "maxSealAmount": null,
-      "openCount": null,
-      "limitReason": null,
-      "price": 29.31
-    },
-    {
-      "code": "002957",
-      "thscode": "002957.SZ",
-      "name": "科瑞技术",
-      "theme": null,
-      "industry": null,
-      "industrySource": null,
-      "height": null,
-      "firstLimit": "10:49",
-      "lastLimit": "14:17",
-      "amount": null,
-      "turnover": 4.9188,
-      "change": -10.0,
-      "sealAmount": null,
-      "maxSealAmount": null,
-      "openCount": null,
-      "limitReason": null,
-      "price": 37.26
-    },
-    {
-      "code": "002084",
-      "thscode": "002084.SZ",
-      "name": "海鸥住工",
-      "theme": null,
-      "industry": null,
-      "industrySource": null,
-      "height": null,
-      "firstLimit": "13:54",
-      "lastLimit": "13:54",
-      "amount": null,
-      "turnover": 13.3044,
-      "change": -9.9379,
-      "sealAmount": null,
-      "maxSealAmount": null,
-      "openCount": null,
-      "limitReason": null,
-      "price": 5.8
-    },
-    {
-      "code": "000993",
-      "thscode": "000993.SZ",
-      "name": "闽东电力",
-      "theme": null,
-      "industry": null,
-      "industrySource": null,
-      "height": null,
-      "firstLimit": "09:58",
-      "lastLimit": "13:37",
-      "amount": null,
-      "turnover": 14.791,
-      "change": -9.9896,
-      "sealAmount": null,
-      "maxSealAmount": null,
-      "openCount": null,
-      "limitReason": null,
-      "price": 17.39
-    },
-    {
-      "code": "002625",
-      "thscode": "002625.SZ",
-      "name": "光启技术",
-      "theme": null,
-      "industry": null,
-      "industrySource": null,
-      "height": null,
-      "firstLimit": "13:23",
-      "lastLimit": "13:33",
-      "amount": null,
-      "turnover": 2.1597,
-      "change": -10.012,
-      "sealAmount": null,
-      "maxSealAmount": null,
-      "openCount": null,
-      "limitReason": null,
-      "price": 22.47
-    },
-    {
-      "code": "603052",
-      "thscode": "603052.SH",
-      "name": "可川科技",
-      "theme": null,
-      "industry": null,
-      "industrySource": null,
-      "height": null,
-      "firstLimit": "10:18",
-      "lastLimit": "13:16",
-      "amount": null,
-      "turnover": 2.4162,
-      "change": -10.0068,
-      "sealAmount": null,
-      "maxSealAmount": null,
-      "openCount": null,
-      "limitReason": null,
-      "price": 52.61
-    },
-    {
-      "code": "603989",
-      "thscode": "603989.SH",
-      "name": "艾华集团",
-      "theme": null,
-      "industry": null,
-      "industrySource": null,
-      "height": null,
-      "firstLimit": "10:41",
-      "lastLimit": "13:14",
-      "amount": null,
-      "turnover": 4.6621,
-      "change": -9.9839,
-      "sealAmount": null,
-      "maxSealAmount": null,
-      "openCount": null,
-      "limitReason": null,
-      "price": 28.04
-    },
-    {
-      "code": "600498",
-      "thscode": "600498.SH",
-      "name": "烽火通信",
-      "theme": null,
-      "industry": null,
-      "industrySource": null,
-      "height": null,
-      "firstLimit": "10:09",
-      "lastLimit": "13:12",
-      "amount": null,
-      "turnover": 5.6701,
-      "change": -10.0049,
-      "sealAmount": null,
-      "maxSealAmount": null,
-      "openCount": null,
-      "limitReason": null,
-      "price": 36.97
-    },
-    {
-      "code": "002396",
-      "thscode": "002396.SZ",
-      "name": "星网锐捷",
-      "theme": null,
-      "industry": null,
-      "industrySource": null,
-      "height": null,
-      "firstLimit": "10:30",
-      "lastLimit": "13:11",
-      "amount": null,
-      "turnover": 7.9858,
-      "change": -9.9864,
-      "sealAmount": null,
-      "maxSealAmount": null,
-      "openCount": null,
-      "limitReason": null,
-      "price": 32.99
-    },
-    {
-      "code": "000070",
-      "thscode": "000070.SZ",
-      "name": "特发信息",
-      "theme": null,
-      "industry": null,
-      "industrySource": null,
-      "height": null,
-      "firstLimit": "09:56",
-      "lastLimit": "13:08",
-      "amount": null,
-      "turnover": 7.5789,
-      "change": -9.9777,
-      "sealAmount": null,
-      "maxSealAmount": null,
-      "openCount": null,
-      "limitReason": null,
-      "price": 16.15
-    },
-    {
-      "code": "000978",
-      "thscode": "000978.SZ",
-      "name": "桂林旅游",
-      "theme": null,
-      "industry": null,
-      "industrySource": null,
-      "height": null,
-      "firstLimit": "09:35",
-      "lastLimit": "13:04",
-      "amount": null,
-      "turnover": 14.2237,
-      "change": -9.9874,
-      "sealAmount": null,
-      "maxSealAmount": null,
-      "openCount": null,
-      "limitReason": null,
-      "price": 7.12
-    },
-    {
-      "code": "603636",
-      "thscode": "603636.SH",
-      "name": "南威软件",
-      "theme": null,
-      "industry": null,
-      "industrySource": null,
-      "height": null,
-      "firstLimit": "09:53",
-      "lastLimit": "13:03",
-      "amount": null,
-      "turnover": 9.2439,
-      "change": -9.9496,
-      "sealAmount": null,
-      "maxSealAmount": null,
-      "openCount": null,
-      "limitReason": null,
-      "price": 7.15
-    },
-    {
-      "code": "002849",
-      "thscode": "002849.SZ",
-      "name": "威星智能",
-      "theme": null,
-      "industry": null,
-      "industrySource": null,
-      "height": null,
-      "firstLimit": "10:06",
-      "lastLimit": "11:18",
-      "amount": null,
-      "turnover": 14.4887,
-      "change": -9.9798,
-      "sealAmount": null,
-      "maxSealAmount": null,
-      "openCount": null,
-      "limitReason": null,
-      "price": 22.28
-    },
-    {
-      "code": "603803",
-      "thscode": "603803.SH",
-      "name": "瑞斯康达",
-      "theme": null,
-      "industry": null,
-      "industrySource": null,
-      "height": null,
-      "firstLimit": "10:27",
-      "lastLimit": "11:10",
-      "amount": null,
-      "turnover": 8.8685,
-      "change": -9.9676,
-      "sealAmount": null,
-      "maxSealAmount": null,
-      "openCount": null,
-      "limitReason": null,
-      "price": 11.11
-    },
-    {
-      "code": "600743",
-      "thscode": "600743.SH",
-      "name": "华远控股",
-      "theme": null,
-      "industry": null,
-      "industrySource": null,
-      "height": null,
-      "firstLimit": "09:31",
-      "lastLimit": "11:09",
-      "amount": null,
-      "turnover": 6.4032,
-      "change": -10.1563,
-      "sealAmount": null,
-      "maxSealAmount": null,
-      "openCount": null,
-      "limitReason": null,
-      "price": 2.3
-    },
-    {
-      "code": "603124",
-      "thscode": "603124.SH",
-      "name": "江南新材",
-      "theme": null,
-      "industry": null,
-      "industrySource": null,
-      "height": null,
-      "firstLimit": "10:42",
-      "lastLimit": "10:42",
-      "amount": null,
-      "turnover": 7.0261,
-      "change": -9.9985,
-      "sealAmount": null,
-      "maxSealAmount": null,
-      "openCount": null,
-      "limitReason": null,
-      "price": 118.64
-    },
-    {
-      "code": "002827",
-      "thscode": "002827.SZ",
-      "name": "高争民爆",
-      "theme": null,
-      "industry": null,
-      "industrySource": null,
-      "height": null,
-      "firstLimit": "10:24",
-      "lastLimit": "10:24",
-      "amount": null,
-      "turnover": 3.7157,
-      "change": -10.0013,
-      "sealAmount": null,
-      "maxSealAmount": null,
-      "openCount": null,
-      "limitReason": null,
-      "price": 68.93
-    },
-    {
-      "code": "003036",
-      "thscode": "003036.SZ",
-      "name": "泰坦股份",
-      "theme": null,
-      "industry": null,
-      "industrySource": null,
-      "height": null,
-      "firstLimit": "10:00",
-      "lastLimit": "10:15",
-      "amount": null,
-      "turnover": 3.9908,
-      "change": -10.0071,
-      "sealAmount": null,
-      "maxSealAmount": null,
-      "openCount": null,
-      "limitReason": null,
-      "price": 50.9
-    },
-    {
-      "code": "002491",
-      "thscode": "002491.SZ",
-      "name": "通鼎互联",
-      "theme": null,
-      "industry": null,
-      "industrySource": null,
-      "height": null,
-      "firstLimit": "10:01",
-      "lastLimit": "10:12",
-      "amount": null,
-      "turnover": 9.5821,
-      "change": -10.0,
-      "sealAmount": null,
-      "maxSealAmount": null,
-      "openCount": null,
-      "limitReason": null,
-      "price": 21.42
-    },
-    {
-      "code": "002785",
-      "thscode": "002785.SZ",
-      "name": "万里石",
-      "theme": null,
-      "industry": null,
-      "industrySource": null,
-      "height": null,
-      "firstLimit": "09:34",
-      "lastLimit": "10:04",
-      "amount": null,
-      "turnover": 4.0932,
-      "change": -10.0,
-      "sealAmount": null,
-      "maxSealAmount": null,
-      "openCount": null,
-      "limitReason": null,
-      "price": 36.9
-    },
-    {
-      "code": "600857",
-      "thscode": "600857.SH",
-      "name": "宁波中百",
-      "theme": null,
-      "industry": null,
-      "industrySource": null,
-      "height": null,
-      "firstLimit": "09:40",
-      "lastLimit": "09:58",
-      "amount": null,
-      "turnover": 3.1938,
-      "change": -9.9952,
-      "sealAmount": null,
-      "maxSealAmount": null,
-      "openCount": null,
-      "limitReason": null,
-      "price": 18.64
-    },
-    {
-      "code": "002717",
-      "thscode": "002717.SZ",
-      "name": "*ST岭南",
-      "theme": null,
-      "industry": null,
-      "industrySource": null,
-      "height": null,
-      "firstLimit": "09:31",
-      "lastLimit": "09:57",
-      "amount": null,
-      "turnover": 5.7767,
-      "change": -9.4118,
-      "sealAmount": null,
-      "maxSealAmount": null,
-      "openCount": null,
-      "limitReason": null,
-      "price": 0.77
-    },
-    {
-      "code": "600487",
-      "thscode": "600487.SH",
-      "name": "亨通光电",
-      "theme": null,
-      "industry": null,
-      "industrySource": null,
-      "height": null,
-      "firstLimit": "09:49",
-      "lastLimit": "09:55",
-      "amount": null,
-      "turnover": 4.6992,
-      "change": -10.003,
-      "sealAmount": null,
-      "maxSealAmount": null,
-      "openCount": null,
-      "limitReason": null,
-      "price": 60.64
-    },
-    {
-      "code": "600371",
-      "thscode": "600371.SH",
-      "name": "万向德农",
-      "theme": null,
-      "industry": null,
-      "industrySource": null,
-      "height": null,
-      "firstLimit": "09:35",
-      "lastLimit": "09:48",
-      "amount": null,
-      "turnover": 10.8631,
-      "change": -9.9685,
-      "sealAmount": null,
-      "maxSealAmount": null,
-      "openCount": null,
-      "limitReason": null,
-      "price": 14.27
-    },
-    {
-      "code": "603125",
-      "thscode": "603125.SH",
-      "name": "常青科技",
-      "theme": null,
-      "industry": null,
-      "industrySource": null,
-      "height": null,
-      "firstLimit": "09:32",
-      "lastLimit": "09:46",
-      "amount": null,
-      "turnover": 0.9992,
-      "change": -9.9829,
-      "sealAmount": null,
-      "maxSealAmount": null,
-      "openCount": null,
-      "limitReason": null,
-      "price": 21.1
-    },
-    {
-      "code": "603042",
-      "thscode": "603042.SH",
-      "name": "华脉科技",
-      "theme": null,
-      "industry": null,
-      "industrySource": null,
-      "height": null,
-      "firstLimit": "09:40",
-      "lastLimit": "09:40",
-      "amount": null,
-      "turnover": 9.0378,
-      "change": -9.984,
-      "sealAmount": null,
-      "maxSealAmount": null,
-      "openCount": null,
-      "limitReason": null,
-      "price": 16.86
-    },
-    {
-      "code": "603221",
-      "thscode": "603221.SH",
-      "name": "爱丽家居",
-      "theme": null,
-      "industry": null,
-      "industrySource": null,
-      "height": null,
-      "firstLimit": "09:37",
-      "lastLimit": "09:37",
-      "amount": null,
-      "turnover": 1.9305,
-      "change": -10.0,
-      "sealAmount": null,
-      "maxSealAmount": null,
-      "openCount": null,
-      "limitReason": null,
-      "price": 27.72
-    },
-    {
-      "code": "600815",
-      "thscode": "600815.SH",
-      "name": "厦工股份",
-      "theme": null,
-      "industry": null,
-      "industrySource": null,
-      "height": null,
-      "firstLimit": "09:30",
-      "lastLimit": "09:35",
-      "amount": null,
-      "turnover": 3.586,
-      "change": -9.8925,
-      "sealAmount": null,
-      "maxSealAmount": null,
-      "openCount": null,
-      "limitReason": null,
-      "price": 4.19
-    },
-    {
-      "code": "605577",
-      "thscode": "605577.SH",
-      "name": "龙版传媒",
-      "theme": null,
-      "industry": null,
-      "industrySource": null,
-      "height": null,
-      "firstLimit": "09:32",
-      "lastLimit": "09:34",
-      "amount": null,
-      "turnover": 2.415,
-      "change": -9.9879,
-      "sealAmount": null,
-      "maxSealAmount": null,
-      "openCount": null,
-      "limitReason": null,
-      "price": 14.87
-    },
-    {
-      "code": "603230",
-      "thscode": "603230.SH",
-      "name": "内蒙新华",
+      "code": "001234",
+      "thscode": "001234.SZ",
+      "name": "泰慕士",
       "theme": null,
       "industry": null,
       "industrySource": null,
@@ -1901,32 +381,13 @@
       "firstLimit": "09:33",
       "lastLimit": "09:33",
       "amount": null,
-      "turnover": 4.2884,
-      "change": -10.0162,
+      "turnover": 3.8459,
+      "change": -10.0126,
       "sealAmount": null,
       "maxSealAmount": null,
       "openCount": null,
       "limitReason": null,
-      "price": 16.62
-    },
-    {
-      "code": "000910",
-      "thscode": "000910.SZ",
-      "name": "大亚圣象",
-      "theme": null,
-      "industry": null,
-      "industrySource": null,
-      "height": null,
-      "firstLimit": "09:31",
-      "lastLimit": "09:32",
-      "amount": null,
-      "turnover": 5.6543,
-      "change": -10.0,
-      "sealAmount": null,
-      "maxSealAmount": null,
-      "openCount": null,
-      "limitReason": null,
-      "price": 6.84
+      "price": 28.67
     },
     {
       "code": "600127",
@@ -1936,40 +397,21 @@
       "industry": null,
       "industrySource": null,
       "height": null,
-      "firstLimit": "09:32",
-      "lastLimit": "09:32",
+      "firstLimit": "09:33",
+      "lastLimit": "09:33",
       "amount": null,
-      "turnover": 5.6656,
-      "change": -10.0061,
+      "turnover": 8.5734,
+      "change": -9.973,
       "sealAmount": null,
       "maxSealAmount": null,
       "openCount": null,
       "limitReason": null,
-      "price": 14.84
+      "price": 13.36
     },
     {
-      "code": "605058",
-      "thscode": "605058.SH",
-      "name": "澳弘电子",
-      "theme": null,
-      "industry": null,
-      "industrySource": null,
-      "height": null,
-      "firstLimit": "09:32",
-      "lastLimit": "09:32",
-      "amount": null,
-      "turnover": 3.8052,
-      "change": -10.0,
-      "sealAmount": null,
-      "maxSealAmount": null,
-      "openCount": null,
-      "limitReason": null,
-      "price": 54.18
-    },
-    {
-      "code": "000504",
-      "thscode": "000504.SZ",
-      "name": "南华生物",
+      "code": "601579",
+      "thscode": "601579.SH",
+      "name": "会稽山",
       "theme": null,
       "industry": null,
       "industrySource": null,
@@ -1977,13 +419,89 @@
       "firstLimit": "09:31",
       "lastLimit": "09:31",
       "amount": null,
-      "turnover": 4.2637,
-      "change": -9.9782,
+      "turnover": 1.1061,
+      "change": -9.9904,
       "sealAmount": null,
       "maxSealAmount": null,
       "openCount": null,
       "limitReason": null,
-      "price": 12.36
+      "price": 37.66
+    },
+    {
+      "code": "001216",
+      "thscode": "001216.SZ",
+      "name": "华瓷股份",
+      "theme": null,
+      "industry": null,
+      "industrySource": null,
+      "height": null,
+      "firstLimit": "09:30",
+      "lastLimit": "09:30",
+      "amount": null,
+      "turnover": 1.2499,
+      "change": -9.9857,
+      "sealAmount": null,
+      "maxSealAmount": null,
+      "openCount": null,
+      "limitReason": null,
+      "price": 25.24
+    },
+    {
+      "code": "001368",
+      "thscode": "001368.SZ",
+      "name": "通达创智",
+      "theme": null,
+      "industry": null,
+      "industrySource": null,
+      "height": null,
+      "firstLimit": "09:30",
+      "lastLimit": "09:30",
+      "amount": null,
+      "turnover": 0.9751,
+      "change": -10.0,
+      "sealAmount": null,
+      "maxSealAmount": null,
+      "openCount": null,
+      "limitReason": null,
+      "price": 37.62
+    },
+    {
+      "code": "600371",
+      "thscode": "600371.SH",
+      "name": "万向德农",
+      "theme": null,
+      "industry": null,
+      "industrySource": null,
+      "height": null,
+      "firstLimit": "09:30",
+      "lastLimit": "09:30",
+      "amount": null,
+      "turnover": 3.1286,
+      "change": -10.021,
+      "sealAmount": null,
+      "maxSealAmount": null,
+      "openCount": null,
+      "limitReason": null,
+      "price": 12.84
+    },
+    {
+      "code": "000850",
+      "thscode": "000850.SZ",
+      "name": "华茂股份",
+      "theme": null,
+      "industry": null,
+      "industrySource": null,
+      "height": null,
+      "firstLimit": "09:25",
+      "lastLimit": "09:25",
+      "amount": null,
+      "turnover": 0.7417,
+      "change": -9.9222,
+      "sealAmount": null,
+      "maxSealAmount": null,
+      "openCount": null,
+      "limitReason": null,
+      "price": 4.63
     },
     {
       "code": "002238",
@@ -1993,16 +511,35 @@
       "industry": null,
       "industrySource": null,
       "height": null,
-      "firstLimit": "09:31",
-      "lastLimit": "09:31",
+      "firstLimit": "09:25",
+      "lastLimit": "09:25",
       "amount": null,
-      "turnover": 3.0172,
-      "change": -9.9644,
+      "turnover": 0.5062,
+      "change": -10.0132,
       "sealAmount": null,
       "maxSealAmount": null,
       "openCount": null,
       "limitReason": null,
-      "price": 7.59
+      "price": 6.83
+    },
+    {
+      "code": "002717",
+      "thscode": "002717.SZ",
+      "name": "*ST岭南",
+      "theme": null,
+      "industry": null,
+      "industrySource": null,
+      "height": null,
+      "firstLimit": "09:25",
+      "lastLimit": "09:25",
+      "amount": null,
+      "turnover": 0.2932,
+      "change": -10.3896,
+      "sealAmount": null,
+      "maxSealAmount": null,
+      "openCount": null,
+      "limitReason": null,
+      "price": 0.69
     },
     {
       "code": "002909",
@@ -2012,21 +549,21 @@
       "industry": null,
       "industrySource": null,
       "height": null,
-      "firstLimit": "09:30",
-      "lastLimit": "09:30",
+      "firstLimit": "09:25",
+      "lastLimit": "09:25",
       "amount": null,
-      "turnover": 4.2988,
-      "change": -10.0121,
+      "turnover": 0.4842,
+      "change": -10.0536,
       "sealAmount": null,
       "maxSealAmount": null,
       "openCount": null,
       "limitReason": null,
-      "price": 7.46
+      "price": 6.71
     },
     {
-      "code": "001234",
-      "thscode": "001234.SZ",
-      "name": "泰慕士",
+      "code": "603230",
+      "thscode": "603230.SH",
+      "name": "内蒙新华",
       "theme": null,
       "industry": null,
       "industrySource": null,
@@ -2034,1025 +571,68 @@
       "firstLimit": "09:25",
       "lastLimit": "09:25",
       "amount": null,
-      "turnover": 11.6434,
-      "change": -10.0,
+      "turnover": 0.5167,
+      "change": -9.988,
       "sealAmount": null,
       "maxSealAmount": null,
       "openCount": null,
       "limitReason": null,
-      "price": 31.86
+      "price": 14.96
     }
   ],
   "themes": [
     {
-      "code": "884100.TI",
-      "name": "商用载货车",
-      "change_pct": 2.135916,
-      "turnover_cny": 5475149900,
-      "member_count": 8,
-      "limitUpCount": 1,
-      "maxHeight": 1,
-      "leaders": [
-        {
-          "code": "600418",
-          "name": "江淮汽车",
-          "height": 1
-        }
-      ]
-    },
-    {
-      "code": "884119.TI",
-      "name": "其他酒类",
-      "change_pct": 1.855888,
-      "turnover_cny": 4604689600,
-      "member_count": 9,
-      "limitUpCount": 1,
-      "maxHeight": 1,
-      "leaders": [
-        {
-          "code": "601579",
-          "name": "会稽山",
-          "height": 1
-        }
-      ]
-    },
-    {
-      "code": "884099.TI",
-      "name": "乘用车",
-      "change_pct": 1.720516,
-      "turnover_cny": 6650808300,
-      "member_count": 10,
-      "limitUpCount": 1,
-      "maxHeight": 1,
-      "leaders": [
-        {
-          "code": "000980",
-          "name": "众泰汽车",
-          "height": 1
-        }
-      ]
-    },
-    {
-      "code": "881125.TI",
-      "name": "汽车整车",
-      "change_pct": 1.720277,
-      "turnover_cny": 13389570100,
-      "member_count": 23,
-      "limitUpCount": 2,
-      "maxHeight": 1,
-      "leaders": [
-        {
-          "code": "000980",
-          "name": "众泰汽车",
-          "height": 1
-        },
-        {
-          "code": "600418",
-          "name": "江淮汽车",
-          "height": 1
-        }
-      ]
-    },
-    {
-      "code": "884276.TI",
-      "name": "肉鸡养殖",
-      "change_pct": 1.237389,
-      "turnover_cny": 736533380,
-      "member_count": 7,
-      "limitUpCount": 0,
-      "maxHeight": 0,
-      "leaders": []
-    },
-    {
-      "code": "884308.TI",
-      "name": "风电零部件",
-      "change_pct": 1.234354,
-      "turnover_cny": 13192231500,
-      "member_count": 26,
-      "limitUpCount": 1,
-      "maxHeight": 2,
-      "leaders": [
-        {
-          "code": "601218",
-          "name": "吉鑫科技",
-          "height": 2
-        }
-      ]
-    },
-    {
-      "code": "881173.TI",
-      "name": "小家电",
-      "change_pct": 1.197904,
-      "turnover_cny": 4524819800,
-      "member_count": 26,
-      "limitUpCount": 1,
-      "maxHeight": 1,
-      "leaders": [
-        {
-          "code": "002242",
-          "name": "九阳股份",
-          "height": 1
-        }
-      ]
-    },
-    {
-      "code": "884238.TI",
-      "name": "血液制品",
-      "change_pct": 1.162517,
-      "turnover_cny": 1070173910,
-      "member_count": 9,
-      "limitUpCount": 0,
-      "maxHeight": 0,
-      "leaders": []
-    },
-    {
-      "code": "884275.TI",
-      "name": "生猪养殖",
-      "change_pct": 1.11942,
-      "turnover_cny": 4240255500,
-      "member_count": 11,
-      "limitUpCount": 1,
-      "maxHeight": 1,
-      "leaders": [
-        {
-          "code": "001201",
-          "name": "东瑞股份",
-          "height": 1
-        }
-      ]
-    },
-    {
-      "code": "884101.TI",
-      "name": "商用载客车",
-      "change_pct": 1.054951,
-      "turnover_cny": 1263611940,
-      "member_count": 5,
-      "limitUpCount": 0,
-      "maxHeight": 0,
-      "leaders": []
-    },
-    {
-      "code": "881280.TI",
-      "name": "风电设备",
-      "change_pct": 0.845298,
-      "turnover_cny": 15505856000,
-      "member_count": 32,
-      "limitUpCount": 1,
-      "maxHeight": 2,
-      "leaders": [
-        {
-          "code": "601218",
-          "name": "吉鑫科技",
-          "height": 2
-        }
-      ]
-    },
-    {
-      "code": "884123.TI",
-      "name": "肉制品",
-      "change_pct": 0.744377,
-      "turnover_cny": 1309085760,
-      "member_count": 9,
-      "limitUpCount": 0,
-      "maxHeight": 0,
-      "leaders": []
-    },
-    {
-      "code": "884189.TI",
-      "name": "啤酒",
-      "change_pct": 0.712435,
-      "turnover_cny": 649748680,
-      "member_count": 7,
-      "limitUpCount": 0,
-      "maxHeight": 0,
-      "leaders": []
-    },
-    {
-      "code": "884203.TI",
-      "name": "产业地产",
-      "change_pct": 0.634683,
-      "turnover_cny": 951642690,
-      "member_count": 11,
-      "limitUpCount": 1,
-      "maxHeight": 1,
-      "leaders": [
-        {
-          "code": "600340",
-          "name": "*ST华幸",
-          "height": 1
-        }
-      ]
-    },
-    {
-      "code": "884004.TI",
-      "name": "林业",
-      "change_pct": 0.445246,
-      "turnover_cny": 5724117300,
-      "member_count": 5,
-      "limitUpCount": 0,
-      "maxHeight": 0,
-      "leaders": []
-    },
-    {
-      "code": "884313.TI",
-      "name": "电信运营商",
-      "change_pct": 0.415366,
-      "turnover_cny": 1941747400,
-      "member_count": 3,
-      "limitUpCount": 0,
-      "maxHeight": 0,
-      "leaders": []
-    },
-    {
-      "code": "884296.TI",
-      "name": "横向通用软件",
-      "change_pct": 0.406448,
-      "turnover_cny": 15173205000,
-      "member_count": 41,
-      "limitUpCount": 1,
-      "maxHeight": 1,
-      "leaders": [
-        {
-          "code": "688244",
-          "name": "永信至诚",
-          "height": 1
-        }
-      ]
-    },
-    {
-      "code": "884018.TI",
-      "name": "油服工程",
-      "change_pct": 0.342049,
-      "turnover_cny": 1870440300,
-      "member_count": 11,
-      "limitUpCount": 0,
-      "maxHeight": 0,
-      "leaders": []
-    },
-    {
-      "code": "884278.TI",
-      "name": "畜禽饲料",
-      "change_pct": 0.3062,
-      "turnover_cny": 1118373420,
-      "member_count": 12,
-      "limitUpCount": 0,
-      "maxHeight": 0,
-      "leaders": []
-    },
-    {
-      "code": "884153.TI",
-      "name": "港口",
-      "change_pct": 0.225435,
-      "turnover_cny": 2539360000,
-      "member_count": 17,
-      "limitUpCount": 0,
-      "maxHeight": 0,
-      "leaders": []
-    },
-    {
-      "code": "881102.TI",
-      "name": "养殖业",
-      "change_pct": 0.198377,
-      "turnover_cny": 6464439800,
-      "member_count": 36,
-      "limitUpCount": 1,
-      "maxHeight": 1,
-      "leaders": [
-        {
-          "code": "001201",
-          "name": "东瑞股份",
-          "height": 1
-        }
-      ]
-    },
-    {
-      "code": "884125.TI",
-      "name": "乳品",
-      "change_pct": 0.187613,
-      "turnover_cny": 2532474700,
-      "member_count": 18,
-      "limitUpCount": 0,
-      "maxHeight": 0,
-      "leaders": []
-    },
-    {
-      "code": "884297.TI",
-      "name": "预加工食品",
-      "change_pct": 0.122014,
-      "turnover_cny": 802330910,
-      "member_count": 10,
-      "limitUpCount": 0,
-      "maxHeight": 0,
-      "leaders": []
-    },
-    {
-      "code": "884150.TI",
-      "name": "新能源发电",
-      "change_pct": 0.119203,
-      "turnover_cny": 7897665300,
-      "member_count": 35,
-      "limitUpCount": 2,
-      "maxHeight": 1,
-      "leaders": [
-        {
-          "code": "002480",
-          "name": "新筑股份",
-          "height": 1
-        },
-        {
-          "code": "600032",
-          "name": "浙江新能",
-          "height": 1
-        }
-      ]
-    },
-    {
-      "code": "884249.TI",
-      "name": "国有大型银行",
-      "change_pct": 0.107131,
-      "turnover_cny": 10016613400,
+      "code": "884227.TI",
+      "name": "集成电路制造",
+      "change_pct": 3.383675,
+      "turnover_cny": 1222649050,
       "member_count": 6,
       "limitUpCount": 0,
       "maxHeight": 0,
       "leaders": []
     },
     {
-      "code": "884300.TI",
-      "name": "药店",
-      "change_pct": 0.090243,
-      "turnover_cny": 657755910,
-      "member_count": 8,
-      "limitUpCount": 0,
-      "maxHeight": 0,
-      "leaders": []
-    },
-    {
-      "code": "884239.TI",
-      "name": "疫苗",
-      "change_pct": 0.075869,
-      "turnover_cny": 3336626300,
-      "member_count": 12,
-      "limitUpCount": 0,
-      "maxHeight": 0,
-      "leaders": []
-    },
-    {
-      "code": "884006.TI",
-      "name": "水产养殖",
-      "change_pct": 0.075352,
-      "turnover_cny": 219589110,
-      "member_count": 3,
-      "limitUpCount": 0,
-      "maxHeight": 0,
-      "leaders": []
-    },
-    {
-      "code": "884248.TI",
-      "name": "房地产服务",
-      "change_pct": 0.069035,
-      "turnover_cny": 4765755100,
-      "member_count": 14,
-      "limitUpCount": 1,
-      "maxHeight": 1,
-      "leaders": [
-        {
-          "code": "000011",
-          "name": "深物业A",
-          "height": 1
-        }
-      ]
-    },
-    {
-      "code": "884064.TI",
-      "name": "管材",
-      "change_pct": -0.00342182,
-      "turnover_cny": 836119140,
-      "member_count": 7,
-      "limitUpCount": 0,
-      "maxHeight": 0,
-      "leaders": []
-    },
-    {
-      "code": "881133.TI",
-      "name": "饮料制造",
-      "change_pct": -0.098647,
-      "turnover_cny": 10294999100,
-      "member_count": 47,
-      "limitUpCount": 1,
-      "maxHeight": 1,
-      "leaders": [
-        {
-          "code": "601579",
-          "name": "会稽山",
-          "height": 1
-        }
-      ]
-    },
-    {
-      "code": "881145.TI",
-      "name": "电力",
-      "change_pct": -0.135479,
-      "turnover_cny": 27634518000,
-      "member_count": 110,
-      "limitUpCount": 2,
-      "maxHeight": 1,
-      "leaders": [
-        {
-          "code": "002480",
-          "name": "新筑股份",
-          "height": 1
-        },
-        {
-          "code": "600032",
-          "name": "浙江新能",
-          "height": 1
-        }
-      ]
-    },
-    {
-      "code": "881141.TI",
-      "name": "中药",
-      "change_pct": -0.216692,
-      "turnover_cny": 8359457300,
-      "member_count": 68,
-      "limitUpCount": 1,
-      "maxHeight": 1,
-      "leaders": [
-        {
-          "code": "002082",
-          "name": "ST万邦",
-          "height": 1
-        }
-      ]
-    },
-    {
-      "code": "884025.TI",
-      "name": "其他化学原料",
-      "change_pct": -0.369378,
-      "turnover_cny": 1934612800,
-      "member_count": 17,
-      "limitUpCount": 1,
-      "maxHeight": 1,
-      "leaders": [
-        {
-          "code": "301190",
-          "name": "善水科技",
-          "height": 1
-        }
-      ]
-    },
-    {
-      "code": "881140.TI",
-      "name": "化学制药",
-      "change_pct": -0.485921,
-      "turnover_cny": 31848080000,
-      "member_count": 159,
-      "limitUpCount": 2,
-      "maxHeight": 1,
-      "leaders": [
-        {
-          "code": "000513",
-          "name": "丽珠集团",
-          "height": 1
-        },
-        {
-          "code": "600488",
-          "name": "津药药业",
-          "height": 1
-        }
-      ]
-    },
-    {
-      "code": "884144.TI",
-      "name": "化学制剂",
-      "change_pct": -0.549339,
-      "turnover_cny": 23027177000,
-      "member_count": 111,
-      "limitUpCount": 2,
-      "maxHeight": 1,
-      "leaders": [
-        {
-          "code": "000513",
-          "name": "丽珠集团",
-          "height": 1
-        },
-        {
-          "code": "600488",
-          "name": "津药药业",
-          "height": 1
-        }
-      ]
-    },
-    {
-      "code": "884142.TI",
-      "name": "文娱用品",
-      "change_pct": -0.814432,
-      "turnover_cny": 1914990400,
-      "member_count": 19,
-      "limitUpCount": 1,
-      "maxHeight": 1,
-      "leaders": [
-        {
-          "code": "001368",
-          "name": "通达创智",
-          "height": 1
-        }
-      ]
-    },
-    {
-      "code": "881103.TI",
-      "name": "农产品加工",
-      "change_pct": -0.817648,
-      "turnover_cny": 5572594300,
-      "member_count": 43,
-      "limitUpCount": 1,
-      "maxHeight": 1,
-      "leaders": [
-        {
-          "code": "002852",
-          "name": "道道全",
-          "height": 1
-        }
-      ]
-    },
-    {
-      "code": "881153.TI",
-      "name": "房地产",
-      "change_pct": -0.844915,
-      "turnover_cny": 18201268000,
-      "member_count": 88,
-      "limitUpCount": 2,
-      "maxHeight": 1,
-      "leaders": [
-        {
-          "code": "600340",
-          "name": "*ST华幸",
-          "height": 1
-        },
-        {
-          "code": "000011",
-          "name": "深物业A",
-          "height": 1
-        }
-      ]
-    },
-    {
-      "code": "884010.TI",
-      "name": "粮油加工",
-      "change_pct": -0.964357,
-      "turnover_cny": 1307206130,
-      "member_count": 7,
-      "limitUpCount": 1,
-      "maxHeight": 1,
-      "leaders": [
-        {
-          "code": "002852",
-          "name": "道道全",
-          "height": 1
-        }
-      ]
-    },
-    {
-      "code": "881177.TI",
-      "name": "互联网电商",
-      "change_pct": -1.197939,
-      "turnover_cny": 5938577100,
-      "member_count": 20,
-      "limitUpCount": 1,
-      "maxHeight": 1,
-      "leaders": [
-        {
-          "code": "002640",
-          "name": "跨境通",
-          "height": 1
-        }
-      ]
-    },
-    {
-      "code": "881272.TI",
-      "name": "软件开发",
-      "change_pct": -1.229216,
-      "turnover_cny": 28817368000,
-      "member_count": 138,
-      "limitUpCount": 2,
-      "maxHeight": 1,
-      "leaders": [
-        {
-          "code": "000503",
-          "name": "国新健康",
-          "height": 1
-        },
-        {
-          "code": "688244",
-          "name": "永信至诚",
-          "height": 1
-        }
-      ]
-    },
-    {
-      "code": "881108.TI",
-      "name": "化学原料",
-      "change_pct": -1.301189,
-      "turnover_cny": 11276698700,
-      "member_count": 59,
-      "limitUpCount": 1,
-      "maxHeight": 1,
-      "leaders": [
-        {
-          "code": "301190",
-          "name": "善水科技",
-          "height": 1
-        }
-      ]
-    },
-    {
-      "code": "884060.TI",
-      "name": "水泥",
-      "change_pct": -1.303407,
-      "turnover_cny": 2393701500,
+      "code": "884311.TI",
+      "name": "锂电专用设备",
+      "change_pct": 2.823684,
+      "turnover_cny": 724716310,
       "member_count": 21,
-      "limitUpCount": 1,
-      "maxHeight": 3,
-      "leaders": [
-        {
-          "code": "600802",
-          "name": "福建水泥",
-          "height": 3
-        }
-      ]
+      "limitUpCount": 0,
+      "maxHeight": 0,
+      "leaders": []
     },
     {
-      "code": "884306.TI",
-      "name": "光伏加工设备",
-      "change_pct": -1.553301,
-      "turnover_cny": 5960475700,
+      "code": "884312.TI",
+      "name": "其他电池",
+      "change_pct": 2.097037,
+      "turnover_cny": 283676690,
       "member_count": 11,
-      "limitUpCount": 1,
-      "maxHeight": 3,
-      "leaders": [
-        {
-          "code": "603396",
-          "name": "金辰股份",
-          "height": 3
-        }
-      ]
+      "limitUpCount": 0,
+      "maxHeight": 0,
+      "leaders": []
     },
     {
-      "code": "884290.TI",
-      "name": "底盘与发动机系统",
-      "change_pct": -1.674706,
-      "turnover_cny": 20983582000,
-      "member_count": 113,
-      "limitUpCount": 2,
-      "maxHeight": 3,
-      "leaders": [
-        {
-          "code": "000678",
-          "name": "襄阳轴承",
-          "height": 2
-        },
-        {
-          "code": "603949",
-          "name": "雪龙集团",
-          "height": 3
-        }
-      ]
+      "code": "884092.TI",
+      "name": "印制电路板",
+      "change_pct": 2.033006,
+      "turnover_cny": 6964207500,
+      "member_count": 47,
+      "limitUpCount": 0,
+      "maxHeight": 0,
+      "leaders": []
     },
     {
-      "code": "884210.TI",
-      "name": "食品及饲料添加剂",
-      "change_pct": -1.7138,
-      "turnover_cny": 3619985000,
-      "member_count": 25,
+      "code": "884202.TI",
+      "name": "住宅开发",
+      "change_pct": 2.008405,
+      "turnover_cny": 1898040500,
+      "member_count": 56,
       "limitUpCount": 1,
       "maxHeight": 1,
       "leaders": [
         {
-          "code": "603968",
-          "name": "醋化股份",
-          "height": 1
-        }
-      ]
-    },
-    {
-      "code": "881139.TI",
-      "name": "家居用品",
-      "change_pct": -1.814345,
-      "turnover_cny": 10659514000,
-      "member_count": 98,
-      "limitUpCount": 1,
-      "maxHeight": 1,
-      "leaders": [
-        {
-          "code": "001368",
-          "name": "通达创智",
-          "height": 1
-        }
-      ]
-    },
-    {
-      "code": "881126.TI",
-      "name": "汽车零部件",
-      "change_pct": -1.81952,
-      "turnover_cny": 43872098000,
-      "member_count": 276,
-      "limitUpCount": 2,
-      "maxHeight": 3,
-      "leaders": [
-        {
-          "code": "000678",
-          "name": "襄阳轴承",
-          "height": 2
-        },
-        {
-          "code": "603949",
-          "name": "雪龙集团",
-          "height": 3
-        }
-      ]
-    },
-    {
-      "code": "884295.TI",
-      "name": "垂直应用软件",
-      "change_pct": -1.920549,
-      "turnover_cny": 13644166000,
-      "member_count": 97,
-      "limitUpCount": 1,
-      "maxHeight": 1,
-      "leaders": [
-        {
-          "code": "000503",
-          "name": "国新健康",
-          "height": 1
-        }
-      ]
-    },
-    {
-      "code": "881274.TI",
-      "name": "影视院线",
-      "change_pct": -1.933651,
-      "turnover_cny": 4979635500,
-      "member_count": 20,
-      "limitUpCount": 1,
-      "maxHeight": 1,
-      "leaders": [
-        {
-          "code": "001330",
-          "name": "博纳影业",
-          "height": 1
-        }
-      ]
-    },
-    {
-      "code": "884075.TI",
-      "name": "金属制品",
-      "change_pct": -2.017338,
-      "turnover_cny": 15806388000,
-      "member_count": 75,
-      "limitUpCount": 3,
-      "maxHeight": 2,
-      "leaders": [
-        {
-          "code": "002342",
-          "name": "巨力索具",
-          "height": 1
-        },
-        {
-          "code": "002347",
-          "name": "泰尔股份",
-          "height": 1
-        },
-        {
-          "code": "603278",
-          "name": "大业股份",
-          "height": 2
-        }
-      ]
-    },
-    {
-      "code": "881115.TI",
-      "name": "建筑材料",
-      "change_pct": -2.105413,
-      "turnover_cny": 24087796000,
-      "member_count": 73,
-      "limitUpCount": 1,
-      "maxHeight": 3,
-      "leaders": [
-        {
-          "code": "600802",
-          "name": "福建水泥",
-          "height": 3
-        }
-      ]
-    },
-    {
-      "code": "884207.TI",
-      "name": "其他计算机设备",
-      "change_pct": -2.31855,
-      "turnover_cny": 18070543000,
-      "member_count": 58,
-      "limitUpCount": 1,
-      "maxHeight": 1,
-      "leaders": [
-        {
-          "code": "002912",
-          "name": "中新赛克",
-          "height": 1
-        }
-      ]
-    },
-    {
-      "code": "881130.TI",
-      "name": "计算机设备",
-      "change_pct": -2.322243,
-      "turnover_cny": 22153125000,
-      "member_count": 83,
-      "limitUpCount": 1,
-      "maxHeight": 1,
-      "leaders": [
-        {
-          "code": "002912",
-          "name": "中新赛克",
-          "height": 1
-        }
-      ]
-    },
-    {
-      "code": "881279.TI",
-      "name": "光伏设备",
-      "change_pct": -2.336917,
-      "turnover_cny": 21487925000,
-      "member_count": 73,
-      "limitUpCount": 1,
-      "maxHeight": 3,
-      "leaders": [
-        {
-          "code": "603396",
-          "name": "金辰股份",
-          "height": 3
-        }
-      ]
-    },
-    {
-      "code": "884094.TI",
-      "name": "面板",
-      "change_pct": -2.405159,
-      "turnover_cny": 27273604000,
-      "member_count": 41,
-      "limitUpCount": 1,
-      "maxHeight": 1,
-      "leaders": [
-        {
-          "code": "000020",
-          "name": "深华发Ａ",
-          "height": 1
-        }
-      ]
-    },
-    {
-      "code": "881271.TI",
-      "name": "IT服务",
-      "change_pct": -2.453707,
-      "turnover_cny": 30028720000,
-      "member_count": 129,
-      "limitUpCount": 1,
-      "maxHeight": 1,
-      "leaders": [
-        {
-          "code": "002232",
-          "name": "启明信息",
-          "height": 1
-        }
-      ]
-    },
-    {
-      "code": "881109.TI",
-      "name": "化学制品",
-      "change_pct": -2.601982,
-      "turnover_cny": 33287598000,
-      "member_count": 183,
-      "limitUpCount": 2,
-      "maxHeight": 1,
-      "leaders": [
-        {
-          "code": "603968",
-          "name": "醋化股份",
-          "height": 1
-        },
-        {
-          "code": "605366",
-          "name": "宏柏新材",
-          "height": 1
-        }
-      ]
-    },
-    {
-      "code": "884176.TI",
-      "name": "出版",
-      "change_pct": -2.689089,
-      "turnover_cny": 5488330300,
-      "member_count": 28,
-      "limitUpCount": 1,
-      "maxHeight": 5,
-      "leaders": [
-        {
-          "code": "600825",
-          "name": "新华传媒",
-          "height": 5
-        }
-      ]
-    },
-    {
-      "code": "881122.TI",
-      "name": "光学光电子",
-      "change_pct": -2.77018,
-      "turnover_cny": 50065274000,
-      "member_count": 107,
-      "limitUpCount": 2,
-      "maxHeight": 1,
-      "leaders": [
-        {
-          "code": "000020",
-          "name": "深华发Ａ",
-          "height": 1
-        },
-        {
-          "code": "002962",
-          "name": "五方光电",
-          "height": 1
-        }
-      ]
-    },
-    {
-      "code": "881164.TI",
-      "name": "文化传媒",
-      "change_pct": -2.77185,
-      "turnover_cny": 22302788000,
-      "member_count": 85,
-      "limitUpCount": 1,
-      "maxHeight": 5,
-      "leaders": [
-        {
-          "code": "600825",
-          "name": "新华传媒",
-          "height": 5
-        }
-      ]
-    },
-    {
-      "code": "884309.TI",
-      "name": "锂电池",
-      "change_pct": -2.804397,
-      "turnover_cny": 28466001000,
-      "member_count": 32,
-      "limitUpCount": 1,
-      "maxHeight": 1,
-      "leaders": [
-        {
-          "code": "600241",
-          "name": "时代万恒",
-          "height": 1
-        }
-      ]
-    },
-    {
-      "code": "881117.TI",
-      "name": "通用设备",
-      "change_pct": -2.889169,
-      "turnover_cny": 61834602000,
-      "member_count": 254,
-      "limitUpCount": 3,
-      "maxHeight": 2,
-      "leaders": [
-        {
-          "code": "002342",
-          "name": "巨力索具",
-          "height": 1
-        },
-        {
-          "code": "002347",
-          "name": "泰尔股份",
-          "height": 1
-        },
-        {
-          "code": "603278",
-          "name": "大业股份",
-          "height": 2
-        }
-      ]
-    },
-    {
-      "code": "884211.TI",
-      "name": "有机硅",
-      "change_pct": -3.029843,
-      "turnover_cny": 2721040600,
-      "member_count": 12,
-      "limitUpCount": 1,
-      "maxHeight": 1,
-      "leaders": [
-        {
-          "code": "605366",
-          "name": "宏柏新材",
+          "code": "600657",
+          "name": "信达地产",
           "height": 1
         }
       ]
@@ -3060,32 +640,582 @@
     {
       "code": "881281.TI",
       "name": "电池",
-      "change_pct": -3.125258,
-      "turnover_cny": 44336414000,
+      "change_pct": 1.962751,
+      "turnover_cny": 5488953700,
       "member_count": 107,
       "limitUpCount": 1,
-      "maxHeight": 1,
+      "maxHeight": 2,
       "leaders": [
         {
           "code": "600241",
           "name": "时代万恒",
+          "height": 2
+        }
+      ]
+    },
+    {
+      "code": "881153.TI",
+      "name": "房地产",
+      "change_pct": 1.82419,
+      "turnover_cny": 3462177200,
+      "member_count": 88,
+      "limitUpCount": 2,
+      "maxHeight": 2,
+      "leaders": [
+        {
+          "code": "600657",
+          "name": "信达地产",
+          "height": 1
+        },
+        {
+          "code": "000011",
+          "name": "深物业A",
+          "height": 2
+        }
+      ]
+    },
+    {
+      "code": "884309.TI",
+      "name": "锂电池",
+      "change_pct": 1.728169,
+      "turnover_cny": 3182670200,
+      "member_count": 32,
+      "limitUpCount": 1,
+      "maxHeight": 2,
+      "leaders": [
+        {
+          "code": "600241",
+          "name": "时代万恒",
+          "height": 2
+        }
+      ]
+    },
+    {
+      "code": "884228.TI",
+      "name": "集成电路封测",
+      "change_pct": 1.726029,
+      "turnover_cny": 1673370700,
+      "member_count": 14,
+      "limitUpCount": 0,
+      "maxHeight": 0,
+      "leaders": []
+    },
+    {
+      "code": "884247.TI",
+      "name": "商业地产",
+      "change_pct": 1.725879,
+      "turnover_cny": 198338290,
+      "member_count": 7,
+      "limitUpCount": 0,
+      "maxHeight": 0,
+      "leaders": []
+    },
+    {
+      "code": "884310.TI",
+      "name": "电池化学品",
+      "change_pct": 1.697587,
+      "turnover_cny": 1299896860,
+      "member_count": 43,
+      "limitUpCount": 0,
+      "maxHeight": 0,
+      "leaders": []
+    },
+    {
+      "code": "881270.TI",
+      "name": "元件",
+      "change_pct": 1.62576,
+      "turnover_cny": 8171478800,
+      "member_count": 63,
+      "limitUpCount": 0,
+      "maxHeight": 0,
+      "leaders": []
+    },
+    {
+      "code": "884248.TI",
+      "name": "房地产服务",
+      "change_pct": 1.538209,
+      "turnover_cny": 1207175860,
+      "member_count": 14,
+      "limitUpCount": 1,
+      "maxHeight": 2,
+      "leaders": [
+        {
+          "code": "000011",
+          "name": "深物业A",
+          "height": 2
+        }
+      ]
+    },
+    {
+      "code": "884286.TI",
+      "name": "锂",
+      "change_pct": 1.53259,
+      "turnover_cny": 475756710,
+      "member_count": 8,
+      "limitUpCount": 0,
+      "maxHeight": 0,
+      "leaders": []
+    },
+    {
+      "code": "884229.TI",
+      "name": "半导体设备",
+      "change_pct": 1.46675,
+      "turnover_cny": 3408652400,
+      "member_count": 26,
+      "limitUpCount": 0,
+      "maxHeight": 0,
+      "leaders": []
+    },
+    {
+      "code": "884163.TI",
+      "name": "人工景点",
+      "change_pct": 1.455696,
+      "turnover_cny": 151297120,
+      "member_count": 5,
+      "limitUpCount": 0,
+      "maxHeight": 0,
+      "leaders": []
+    },
+    {
+      "code": "884273.TI",
+      "name": "医疗美容",
+      "change_pct": 1.418493,
+      "turnover_cny": 124866363,
+      "member_count": 5,
+      "limitUpCount": 0,
+      "maxHeight": 0,
+      "leaders": []
+    },
+    {
+      "code": "884203.TI",
+      "name": "产业地产",
+      "change_pct": 1.416883,
+      "turnover_cny": 164717470,
+      "member_count": 11,
+      "limitUpCount": 0,
+      "maxHeight": 0,
+      "leaders": []
+    },
+    {
+      "code": "884165.TI",
+      "name": "旅游综合",
+      "change_pct": 1.292149,
+      "turnover_cny": 83752485,
+      "member_count": 8,
+      "limitUpCount": 0,
+      "maxHeight": 0,
+      "leaders": []
+    },
+    {
+      "code": "884066.TI",
+      "name": "房屋建设",
+      "change_pct": 1.280028,
+      "turnover_cny": 202607610,
+      "member_count": 8,
+      "limitUpCount": 0,
+      "maxHeight": 0,
+      "leaders": []
+    },
+    {
+      "code": "884090.TI",
+      "name": "分立器件",
+      "change_pct": 1.248558,
+      "turnover_cny": 1012197950,
+      "member_count": 17,
+      "limitUpCount": 0,
+      "maxHeight": 0,
+      "leaders": []
+    },
+    {
+      "code": "884302.TI",
+      "name": "硅料硅片",
+      "change_pct": 1.143614,
+      "turnover_cny": 172900120,
+      "member_count": 7,
+      "limitUpCount": 0,
+      "maxHeight": 0,
+      "leaders": []
+    },
+    {
+      "code": "881267.TI",
+      "name": "能源金属",
+      "change_pct": 1.098289,
+      "turnover_cny": 642950800,
+      "member_count": 14,
+      "limitUpCount": 0,
+      "maxHeight": 0,
+      "leaders": []
+    },
+    {
+      "code": "884261.TI",
+      "name": "数字媒体",
+      "change_pct": 1.049243,
+      "turnover_cny": 488305520,
+      "member_count": 16,
+      "limitUpCount": 0,
+      "maxHeight": 0,
+      "leaders": []
+    },
+    {
+      "code": "884063.TI",
+      "name": "耐火材料",
+      "change_pct": 1.008131,
+      "turnover_cny": 28892090,
+      "member_count": 9,
+      "limitUpCount": 0,
+      "maxHeight": 0,
+      "leaders": []
+    },
+    {
+      "code": "881160.TI",
+      "name": "旅游及酒店",
+      "change_pct": 0.99364,
+      "turnover_cny": 458933280,
+      "member_count": 35,
+      "limitUpCount": 0,
+      "maxHeight": 0,
+      "leaders": []
+    },
+    {
+      "code": "881121.TI",
+      "name": "半导体",
+      "change_pct": 0.961873,
+      "turnover_cny": 17660789000,
+      "member_count": 189,
+      "limitUpCount": 0,
+      "maxHeight": 0,
+      "leaders": []
+    },
+    {
+      "code": "884217.TI",
+      "name": "工程咨询服务",
+      "change_pct": 0.934104,
+      "turnover_cny": 634405940,
+      "member_count": 44,
+      "limitUpCount": 0,
+      "maxHeight": 0,
+      "leaders": []
+    },
+    {
+      "code": "884164.TI",
+      "name": "自然景点",
+      "change_pct": 0.90696,
+      "turnover_cny": 182602970,
+      "member_count": 13,
+      "limitUpCount": 0,
+      "maxHeight": 0,
+      "leaders": []
+    },
+    {
+      "code": "884052.TI",
+      "name": "普钢",
+      "change_pct": 0.862522,
+      "turnover_cny": 227775400,
+      "member_count": 22,
+      "limitUpCount": 0,
+      "maxHeight": 0,
+      "leaders": []
+    },
+    {
+      "code": "884065.TI",
+      "name": "装饰园林",
+      "change_pct": 0.799787,
+      "turnover_cny": 303156050,
+      "member_count": 32,
+      "limitUpCount": 1,
+      "maxHeight": 1,
+      "leaders": [
+        {
+          "code": "605303",
+          "name": "园林股份",
           "height": 1
         }
       ]
     },
     {
-      "code": "884096.TI",
-      "name": "光学元件",
-      "change_pct": -4.576863,
-      "turnover_cny": 14042760000,
-      "member_count": 24,
+      "code": "884150.TI",
+      "name": "新能源发电",
+      "change_pct": 0.771827,
+      "turnover_cny": 1092247640,
+      "member_count": 35,
+      "limitUpCount": 1,
+      "maxHeight": 2,
+      "leaders": [
+        {
+          "code": "600032",
+          "name": "浙江新能",
+          "height": 2
+        }
+      ]
+    },
+    {
+      "code": "881116.TI",
+      "name": "建筑装饰",
+      "change_pct": 0.762938,
+      "turnover_cny": 1735344600,
+      "member_count": 143,
       "limitUpCount": 1,
       "maxHeight": 1,
       "leaders": [
         {
-          "code": "002962",
-          "name": "五方光电",
+          "code": "605303",
+          "name": "园林股份",
           "height": 1
+        }
+      ]
+    },
+    {
+      "code": "884268.TI",
+      "name": "水务及水治理",
+      "change_pct": 0.721726,
+      "turnover_cny": 358166300,
+      "member_count": 47,
+      "limitUpCount": 1,
+      "maxHeight": 1,
+      "leaders": [
+        {
+          "code": "603200",
+          "name": "上海洗霸",
+          "height": 1
+        }
+      ]
+    },
+    {
+      "code": "884149.TI",
+      "name": "热力",
+      "change_pct": 0.70833,
+      "turnover_cny": 446716840,
+      "member_count": 18,
+      "limitUpCount": 1,
+      "maxHeight": 1,
+      "leaders": [
+        {
+          "code": "600982",
+          "name": "宁波能源",
+          "height": 1
+        }
+      ]
+    },
+    {
+      "code": "881145.TI",
+      "name": "电力",
+      "change_pct": 0.59777,
+      "turnover_cny": 2827725100,
+      "member_count": 110,
+      "limitUpCount": 2,
+      "maxHeight": 2,
+      "leaders": [
+        {
+          "code": "600982",
+          "name": "宁波能源",
+          "height": 1
+        },
+        {
+          "code": "600032",
+          "name": "浙江新能",
+          "height": 2
+        }
+      ]
+    },
+    {
+      "code": "881181.TI",
+      "name": "环境治理",
+      "change_pct": 0.545715,
+      "turnover_cny": 998511030,
+      "member_count": 111,
+      "limitUpCount": 1,
+      "maxHeight": 1,
+      "leaders": [
+        {
+          "code": "603200",
+          "name": "上海洗霸",
+          "height": 1
+        }
+      ]
+    },
+    {
+      "code": "884176.TI",
+      "name": "出版",
+      "change_pct": 0.54466,
+      "turnover_cny": 881130420,
+      "member_count": 28,
+      "limitUpCount": 1,
+      "maxHeight": 6,
+      "leaders": [
+        {
+          "code": "600825",
+          "name": "新华传媒",
+          "height": 6
+        }
+      ]
+    },
+    {
+      "code": "884120.TI",
+      "name": "软饮料",
+      "change_pct": 0.539517,
+      "turnover_cny": 243591290,
+      "member_count": 13,
+      "limitUpCount": 1,
+      "maxHeight": 1,
+      "leaders": [
+        {
+          "code": "600189",
+          "name": "泉阳泉",
+          "height": 1
+        }
+      ]
+    },
+    {
+      "code": "881164.TI",
+      "name": "文化传媒",
+      "change_pct": 0.539201,
+      "turnover_cny": 2167291400,
+      "member_count": 85,
+      "limitUpCount": 1,
+      "maxHeight": 6,
+      "leaders": [
+        {
+          "code": "600825",
+          "name": "新华传媒",
+          "height": 6
+        }
+      ]
+    },
+    {
+      "code": "884099.TI",
+      "name": "乘用车",
+      "change_pct": 0.467068,
+      "turnover_cny": 723082230,
+      "member_count": 10,
+      "limitUpCount": 1,
+      "maxHeight": 1,
+      "leaders": [
+        {
+          "code": "601238",
+          "name": "广汽集团",
+          "height": 1
+        }
+      ]
+    },
+    {
+      "code": "881122.TI",
+      "name": "光学光电子",
+      "change_pct": 0.058604,
+      "turnover_cny": 5377385500,
+      "member_count": 107,
+      "limitUpCount": 1,
+      "maxHeight": 2,
+      "leaders": [
+        {
+          "code": "000020",
+          "name": "深华发Ａ",
+          "height": 2
+        }
+      ]
+    },
+    {
+      "code": "884290.TI",
+      "name": "底盘与发动机系统",
+      "change_pct": 0.00893481,
+      "turnover_cny": 1808236700,
+      "member_count": 113,
+      "limitUpCount": 2,
+      "maxHeight": 4,
+      "leaders": [
+        {
+          "code": "000678",
+          "name": "襄阳轴承",
+          "height": 3
+        },
+        {
+          "code": "603949",
+          "name": "雪龙集团",
+          "height": 4
+        }
+      ]
+    },
+    {
+      "code": "884094.TI",
+      "name": "面板",
+      "change_pct": 0.00435648,
+      "turnover_cny": 3506386400,
+      "member_count": 41,
+      "limitUpCount": 1,
+      "maxHeight": 2,
+      "leaders": [
+        {
+          "code": "000020",
+          "name": "深华发Ａ",
+          "height": 2
+        }
+      ]
+    },
+    {
+      "code": "881126.TI",
+      "name": "汽车零部件",
+      "change_pct": -0.037153,
+      "turnover_cny": 3880928400,
+      "member_count": 276,
+      "limitUpCount": 2,
+      "maxHeight": 4,
+      "leaders": [
+        {
+          "code": "000678",
+          "name": "襄阳轴承",
+          "height": 3
+        },
+        {
+          "code": "603949",
+          "name": "雪龙集团",
+          "height": 4
+        }
+      ]
+    },
+    {
+      "code": "881125.TI",
+      "name": "汽车整车",
+      "change_pct": -0.149134,
+      "turnover_cny": 1793143800,
+      "member_count": 23,
+      "limitUpCount": 1,
+      "maxHeight": 1,
+      "leaders": [
+        {
+          "code": "601238",
+          "name": "广汽集团",
+          "height": 1
+        }
+      ]
+    },
+    {
+      "code": "881133.TI",
+      "name": "饮料制造",
+      "change_pct": -0.465835,
+      "turnover_cny": 1227287880,
+      "member_count": 47,
+      "limitUpCount": 1,
+      "maxHeight": 1,
+      "leaders": [
+        {
+          "code": "600189",
+          "name": "泉阳泉",
+          "height": 1
+        }
+      ]
+    },
+    {
+      "code": "881173.TI",
+      "name": "小家电",
+      "change_pct": -0.722016,
+      "turnover_cny": 736830020,
+      "member_count": 26,
+      "limitUpCount": 1,
+      "maxHeight": 2,
+      "leaders": [
+        {
+          "code": "002242",
+          "name": "九阳股份",
+          "height": 2
         }
       ]
     }
@@ -3101,13 +1231,13 @@
   },
   "amountComparison": {
     "status": "ready",
-    "time": "15:58",
-    "previousTradeDate": "2026-09-24",
-    "current": 1702799060000,
-    "previous": 1653357360000,
-    "difference": 49441700000,
-    "changePct": 2.99,
-    "direction": "增量",
+    "time": "09:35",
+    "previousTradeDate": "2026-09-28",
+    "current": 146801435000,
+    "previous": 219245238000,
+    "difference": -72443803000,
+    "changePct": -33.04,
+    "direction": "缩量",
     "source": "同花顺历史快照同时间比较"
   }
 }
