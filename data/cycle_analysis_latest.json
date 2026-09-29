@@ -2,7 +2,7 @@
   "schema_version": 2,
   "ok": true,
   "trade_date": "2026-09-29",
-  "generated_at": "2026-09-29T07:26:01.367650+00:00",
+  "generated_at": "2026-09-29T07:49:42.171141+00:00",
   "principles": [
     "不使用5/10/20日均线判断情绪周期",
     "龙头强度与市场生态分开计算",
@@ -10,8 +10,8 @@
     "缺失数据不补造、不按0分处理"
   ],
   "dashboard": {
-    "market_composite": 51,
-    "leader_strength": 60,
+    "market_composite": 81,
+    "leader_strength": 63,
     "market_ecology": 61,
     "market_width": 78,
     "relay_ecology": 60,
@@ -20,8 +20,8 @@
     "structure_label": "龙头弱 / 生态弱：退潮风险"
   },
   "large_cycle": {
-    "confirmed_large_cycle": "低位混沌",
-    "stage": "新周期试错",
+    "confirmed_large_cycle": "上升周期",
+    "stage": "发酵",
     "candidate_large_cycle": null,
     "candidate_stage": null,
     "confirmation_progress": {
@@ -30,12 +30,10 @@
       "stage": "confirmed"
     },
     "confidence": "high",
-    "trend": "→",
-    "score": 51,
+    "trend": "↑",
+    "score": 81,
     "method": "状态机 + 结构门槛 + 连续性；不使用均线",
-    "tags": [
-      "新周期试错"
-    ],
+    "tags": [],
     "supporting_factors": [
       "最高板6板",
       "炸板率12.5%可控",
@@ -45,7 +43,7 @@
       "晋级率仅28.57%",
       "近端涨停数量未形成上升趋势"
     ],
-    "conclusion": "低位混沌·新周期试错"
+    "conclusion": "上升周期·发酵"
   },
   "medium_cycle": {
     "mainline": {
@@ -5486,8 +5484,8 @@
     "note": "日内节点不直接改写大周期。"
   },
   "cycle": {
-    "confirmed_large_cycle": "低位混沌",
-    "stage": "新周期试错",
+    "confirmed_large_cycle": "上升周期",
+    "stage": "发酵",
     "candidate_large_cycle": null,
     "candidate_stage": null,
     "confirmation_progress": {
@@ -5496,7 +5494,7 @@
       "stage": "confirmed"
     },
     "confidence": "high",
-    "trend": "→",
+    "trend": "↑",
     "small_cycle_state": "回流",
     "small_cycle_path": [
       "观察起点",
@@ -5512,9 +5510,7 @@
       "震荡",
       "回流"
     ],
-    "tags": [
-      "新周期试错"
-    ]
+    "tags": []
   },
   "factors": {
     "R": {
@@ -5693,7 +5689,7 @@
       "confidence": "medium"
     },
     "C": {
-      "score": 60,
+      "score": 63,
       "coverage_pct": 100.0,
       "components": [
         {
@@ -5705,12 +5701,12 @@
         },
         {
           "metric": "封板稳定性",
-          "value": 0.86,
+          "value": 24.08,
           "weight": 25,
-          "normalized": 0,
+          "normalized": 5.1,
           "basis": "当前封单额/峰值封单额",
           "proxy": false,
-          "contribution": 0.0
+          "contribution": 1.27
         },
         {
           "metric": "首次封板主动性",
@@ -5721,10 +5717,10 @@
         },
         {
           "metric": "封单/成交额",
-          "value": 44.68,
+          "value": 1258.03,
           "weight": 15,
-          "normalized": 89.15,
-          "contribution": 13.37
+          "normalized": 100,
+          "contribution": 15.0
         },
         {
           "metric": "龙头所在题材涨停数",
@@ -5827,29 +5823,29 @@
   },
   "exposure": {
     "base_range": [
-      20,
-      35
+      50,
+      70
     ],
     "small_cycle_adjustment": 8,
     "structure_adjustment": 8,
     "risk_penalty": 0,
     "confidence_cap": 100,
     "final_range": [
-      20,
-      40
+      50,
+      75
     ],
-    "hard_cap": 40
+    "hard_cap": 75
   },
   "market_switch": {
-    "value": 51,
-    "level": "可参与",
+    "value": 81,
+    "level": "强势",
     "model_version": "cycle_switch_v1",
     "confidence": "high",
     "limiting_reasons": []
   },
   "leader_ecology_matrix": {
     "leader_strength": {
-      "score": 60,
+      "score": 63,
       "coverage_pct": 100.0,
       "components": [
         {
@@ -5861,12 +5857,12 @@
         },
         {
           "metric": "封板稳定性",
-          "value": 0.86,
+          "value": 24.08,
           "weight": 25,
-          "normalized": 0,
+          "normalized": 5.1,
           "basis": "当前封单额/峰值封单额",
           "proxy": false,
-          "contribution": 0.0
+          "contribution": 1.27
         },
         {
           "metric": "首次封板主动性",
@@ -5877,10 +5873,10 @@
         },
         {
           "metric": "封单/成交额",
-          "value": 44.68,
+          "value": 1258.03,
           "weight": 15,
-          "normalized": 89.15,
-          "contribution": 13.37
+          "normalized": 100,
+          "contribution": 15.0
         },
         {
           "metric": "龙头所在题材涨停数",
