@@ -1,0 +1,6008 @@
+{
+  "snapshot_id": "2026-09-30-094133-r0",
+  "market_date": "2026-09-30",
+  "captured_at": "2026-09-30T09:41:33.852210+08:00",
+  "session": "open_check",
+  "source": "同花顺官方 Financial-API",
+  "schema_version": "market_raw_v1",
+  "status": "success",
+  "checksum_algorithm": "sha256",
+  "payload_checksum": "2b1d8ffcad63d0e863e5e5e2356f63b3c148b1b1b2362ca20bebe1e4e9d37f4e",
+  "revision": 0,
+  "supersedes": null,
+  "revision_reason": null,
+  "original_frozen": true,
+  "payload": {
+    "collector": "hithink-finance",
+    "market": {
+      "schemaVersion": 1,
+      "ok": true,
+      "source": "同花顺官方 Financial-API",
+      "sourceMode": "scheduled-snapshot",
+      "tradeDate": "2026-09-30",
+      "updatedAt": "2026-09-30T01:36:24.597453+00:00",
+      "indices": [
+        {
+          "code": "1A0001",
+          "name": "上证指数",
+          "price": 3839.01,
+          "change": 0.223472,
+          "amount": 81350248000,
+          "source": "同花顺指数行情"
+        },
+        {
+          "code": "399001",
+          "name": "深证成指",
+          "price": 12925.3761,
+          "change": 0.18159,
+          "amount": 96674783000,
+          "source": "同花顺指数行情"
+        },
+        {
+          "code": "399006",
+          "name": "创业板指",
+          "price": 3161.0063,
+          "change": 0.586887,
+          "amount": 44727533000,
+          "source": "同花顺指数行情"
+        },
+        {
+          "code": "1B0688",
+          "name": "科创50",
+          "price": 1572.33,
+          "change": 0.190526,
+          "amount": 5942881000,
+          "source": "同花顺指数行情"
+        }
+      ],
+      "breadth": {
+        "up": 3165,
+        "down": 2071,
+        "flat": 323,
+        "known_up": 3165,
+        "known_down": 2071,
+        "known_flat": 323,
+        "unknown": 17,
+        "universe": 5576,
+        "countedUniverse": 5559,
+        "excludedNoChange": 17,
+        "complete": true,
+        "coverage_pct": 99.7,
+        "usable": true,
+        "totalAmount": 178025031000,
+        "stockAmount": null,
+        "source": "同花顺全市场行情快照"
+      },
+      "limitUpCount": 19,
+      "brokenCount": 2,
+      "limitDownCount": 5,
+      "brokenRate": 9.52,
+      "highest": {
+        "code": "600825",
+        "thscode": "600825.SH",
+        "name": "新华传媒",
+        "theme": "出版",
+        "industry": "出版",
+        "industrySource": "ths_industry_index_membership",
+        "height": 7,
+        "firstLimit": "09:25",
+        "lastLimit": "09:25",
+        "amount": 87348018,
+        "turnover": null,
+        "change": 9.9894,
+        "sealAmount": 6253954200,
+        "maxSealAmount": 8082889735.5,
+        "openCount": null,
+        "limitReason": null,
+        "price": 10.35
+      },
+      "limitUps": [
+        {
+          "code": "600825",
+          "thscode": "600825.SH",
+          "name": "新华传媒",
+          "theme": "出版",
+          "industry": "出版",
+          "industrySource": "ths_industry_index_membership",
+          "height": 7,
+          "firstLimit": "09:25",
+          "lastLimit": "09:25",
+          "amount": 87348018,
+          "turnover": null,
+          "change": 9.9894,
+          "sealAmount": 6253954200,
+          "maxSealAmount": 8082889735.5,
+          "openCount": null,
+          "limitReason": null,
+          "price": 10.35
+        },
+        {
+          "code": "002242",
+          "thscode": "002242.SZ",
+          "name": "九阳股份",
+          "theme": "小家电",
+          "industry": "小家电",
+          "industrySource": "ths_industry_index_membership",
+          "height": 3,
+          "firstLimit": "09:25",
+          "lastLimit": "09:25",
+          "amount": 136825280,
+          "turnover": null,
+          "change": 10.0352,
+          "sealAmount": 205502660,
+          "maxSealAmount": 216300175.0,
+          "openCount": null,
+          "limitReason": null,
+          "price": 12.5
+        },
+        {
+          "code": "301190",
+          "thscode": "301190.SZ",
+          "name": "善水科技",
+          "theme": "其他化学原料",
+          "industry": "其他化学原料",
+          "industrySource": "ths_industry_index_membership",
+          "height": 3,
+          "firstLimit": "09:31",
+          "lastLimit": "09:31",
+          "amount": 378233910,
+          "turnover": null,
+          "change": 20.0067,
+          "sealAmount": 185040690,
+          "maxSealAmount": 185040685.69,
+          "openCount": null,
+          "limitReason": null,
+          "price": 35.93
+        },
+        {
+          "code": "600241",
+          "thscode": "600241.SH",
+          "name": "时代万恒",
+          "theme": "锂电池",
+          "industry": "锂电池",
+          "industrySource": "ths_industry_index_membership",
+          "height": 3,
+          "firstLimit": "09:25",
+          "lastLimit": "09:25",
+          "amount": 35165988,
+          "turnover": null,
+          "change": 9.9548,
+          "sealAmount": 289481040,
+          "maxSealAmount": 323512704.0,
+          "openCount": null,
+          "limitReason": null,
+          "price": 9.72
+        },
+        {
+          "code": "002058",
+          "thscode": "002058.SZ",
+          "name": "紫竹高科",
+          "theme": "电池化学品",
+          "industry": "电池化学品",
+          "industrySource": "ths_industry_index_membership",
+          "height": 2,
+          "firstLimit": "09:25",
+          "lastLimit": "09:25",
+          "amount": 38091160,
+          "turnover": null,
+          "change": 10.0218,
+          "sealAmount": 130067780,
+          "maxSealAmount": 140557639.8,
+          "openCount": null,
+          "limitReason": null,
+          "price": 20.2
+        },
+        {
+          "code": "002799",
+          "thscode": "002799.SZ",
+          "name": "环球印务",
+          "theme": "包装",
+          "industry": "包装",
+          "industrySource": "ths_industry_index_membership",
+          "height": 2,
+          "firstLimit": "09:25",
+          "lastLimit": "09:25",
+          "amount": 50267057,
+          "turnover": null,
+          "change": 10.0662,
+          "sealAmount": 96141016,
+          "maxSealAmount": 115121055.96,
+          "openCount": null,
+          "limitReason": null,
+          "price": 8.31
+        },
+        {
+          "code": "002866",
+          "thscode": "002866.SZ",
+          "name": "传艺科技",
+          "theme": "消费电子零部件及组装",
+          "industry": "消费电子零部件及组装",
+          "industrySource": "ths_industry_index_membership",
+          "height": 2,
+          "firstLimit": "09:30",
+          "lastLimit": "09:30",
+          "amount": 238783920,
+          "turnover": null,
+          "change": 10.026,
+          "sealAmount": 142003940,
+          "maxSealAmount": 165971520.0,
+          "openCount": null,
+          "limitReason": null,
+          "price": 16.9
+        },
+        {
+          "code": "603188",
+          "thscode": "603188.SH",
+          "name": "亚邦股份",
+          "theme": "纺织化学用品",
+          "industry": "纺织化学用品",
+          "industrySource": "ths_industry_index_membership",
+          "height": 2,
+          "firstLimit": "09:32",
+          "lastLimit": "09:32",
+          "amount": 104411576,
+          "turnover": null,
+          "change": 9.9796,
+          "sealAmount": 189082080,
+          "maxSealAmount": 190088640.0,
+          "openCount": null,
+          "limitReason": null,
+          "price": 5.4
+        },
+        {
+          "code": "605303",
+          "thscode": "605303.SH",
+          "name": "园林股份",
+          "theme": "装饰园林",
+          "industry": "装饰园林",
+          "industrySource": "ths_industry_index_membership",
+          "height": 2,
+          "firstLimit": "09:25",
+          "lastLimit": "09:25",
+          "amount": 2742762,
+          "turnover": null,
+          "change": 10.0192,
+          "sealAmount": 410514380,
+          "maxSealAmount": 1268288114.0,
+          "openCount": null,
+          "limitReason": null,
+          "price": 28.66
+        },
+        {
+          "code": "605388",
+          "thscode": "605388.SH",
+          "name": "均瑶健康",
+          "theme": "软饮料",
+          "industry": "软饮料",
+          "industrySource": "ths_industry_index_membership",
+          "height": 2,
+          "firstLimit": "09:25",
+          "lastLimit": "09:25",
+          "amount": 57789504,
+          "turnover": null,
+          "change": 9.9702,
+          "sealAmount": 91420508,
+          "maxSealAmount": 130557799.8,
+          "openCount": null,
+          "limitReason": null,
+          "price": 7.39
+        },
+        {
+          "code": "000710",
+          "thscode": "000710.SZ",
+          "name": "贝瑞基因",
+          "theme": "其他医疗服务",
+          "industry": "其他医疗服务",
+          "industrySource": "ths_industry_index_membership",
+          "height": 1,
+          "firstLimit": "09:33",
+          "lastLimit": "09:33",
+          "amount": 184534660,
+          "turnover": null,
+          "change": 10.0202,
+          "sealAmount": 674328060,
+          "maxSealAmount": 676052041.0,
+          "openCount": null,
+          "limitReason": null,
+          "price": 10.87
+        },
+        {
+          "code": "001206",
+          "thscode": "001206.SZ",
+          "name": "依依股份",
+          "theme": "个护用品",
+          "industry": "个护用品",
+          "industrySource": "ths_industry_index_membership",
+          "height": 1,
+          "firstLimit": "09:30",
+          "lastLimit": "09:30",
+          "amount": 44233356,
+          "turnover": null,
+          "change": 9.9823,
+          "sealAmount": 82926106,
+          "maxSealAmount": 92524716.48,
+          "openCount": null,
+          "limitReason": null,
+          "price": 18.62
+        },
+        {
+          "code": "002316",
+          "thscode": "002316.SZ",
+          "name": "亚联发展",
+          "theme": "综合",
+          "industry": "综合",
+          "industrySource": "ths_industry_index_membership",
+          "height": 1,
+          "firstLimit": "09:33",
+          "lastLimit": "09:33",
+          "amount": 61082793,
+          "turnover": null,
+          "change": 10,
+          "sealAmount": 179568180,
+          "maxSealAmount": 191831310.0,
+          "openCount": null,
+          "limitReason": null,
+          "price": 4.95
+        },
+        {
+          "code": "002388",
+          "thscode": "002388.SZ",
+          "name": "新亚制程",
+          "theme": "其他电子",
+          "industry": "其他电子",
+          "industrySource": "ths_industry_index_membership",
+          "height": 1,
+          "firstLimit": "09:31",
+          "lastLimit": "09:31",
+          "amount": 215072470,
+          "turnover": null,
+          "change": 10.0363,
+          "sealAmount": 301572180,
+          "maxSealAmount": 324952810.0,
+          "openCount": null,
+          "limitReason": null,
+          "price": 9.1
+        },
+        {
+          "code": "600059",
+          "thscode": "600059.SH",
+          "name": "古越龙山",
+          "theme": "其他酒类",
+          "industry": "其他酒类",
+          "industrySource": "ths_industry_index_membership",
+          "height": 1,
+          "firstLimit": "09:31",
+          "lastLimit": "09:31",
+          "amount": 433249380,
+          "turnover": null,
+          "change": 10.0448,
+          "sealAmount": 425938930,
+          "maxSealAmount": 438250645.23,
+          "openCount": null,
+          "limitReason": null,
+          "price": 12.27
+        },
+        {
+          "code": "600356",
+          "thscode": "600356.SH",
+          "name": "恒丰纸业",
+          "theme": "造纸",
+          "industry": "造纸",
+          "industrySource": "ths_industry_index_membership",
+          "height": 1,
+          "firstLimit": "09:32",
+          "lastLimit": "09:32",
+          "amount": 104844889,
+          "turnover": null,
+          "change": 9.9808,
+          "sealAmount": 269018000,
+          "maxSealAmount": 278384028.0,
+          "openCount": null,
+          "limitReason": null,
+          "price": 11.46
+        },
+        {
+          "code": "601118",
+          "thscode": "601118.SH",
+          "name": "海南橡胶",
+          "theme": "其他种植业",
+          "industry": "其他种植业",
+          "industrySource": "ths_industry_index_membership",
+          "height": 1,
+          "firstLimit": "09:30",
+          "lastLimit": "09:30",
+          "amount": 206310920,
+          "turnover": null,
+          "change": 10.0173,
+          "sealAmount": 643949030,
+          "maxSealAmount": 698479418.0,
+          "openCount": null,
+          "limitReason": null,
+          "price": 6.37
+        },
+        {
+          "code": "603948",
+          "thscode": "603948.SH",
+          "name": "建业股份",
+          "theme": "其他化学制品",
+          "industry": "其他化学制品",
+          "industrySource": "ths_industry_index_membership",
+          "height": 1,
+          "firstLimit": "09:33",
+          "lastLimit": "09:33",
+          "amount": 22540549,
+          "turnover": null,
+          "change": 9.9897,
+          "sealAmount": 112065240,
+          "maxSealAmount": 112169904.0,
+          "openCount": null,
+          "limitReason": null,
+          "price": 21.36
+        },
+        {
+          "code": "605577",
+          "thscode": "605577.SH",
+          "name": "龙版传媒",
+          "theme": "出版",
+          "industry": "出版",
+          "industrySource": "ths_industry_index_membership",
+          "height": 1,
+          "firstLimit": "09:30",
+          "lastLimit": "09:30",
+          "amount": 109248030,
+          "turnover": null,
+          "change": 10,
+          "sealAmount": 625368520,
+          "maxSealAmount": 653869920.0,
+          "openCount": null,
+          "limitReason": null,
+          "price": 16.28
+        }
+      ],
+      "broken": [
+        {
+          "code": "002262",
+          "thscode": "002262.SZ",
+          "name": "恩华药业",
+          "theme": null,
+          "industry": null,
+          "industrySource": null,
+          "height": null,
+          "firstLimit": null,
+          "lastLimit": null,
+          "amount": 272682510.0,
+          "turnover": 1.321,
+          "change": 6.4651,
+          "sealAmount": null,
+          "maxSealAmount": null,
+          "openCount": 1,
+          "limitReason": null,
+          "price": 22.89
+        },
+        {
+          "code": "603400",
+          "thscode": "603400.SH",
+          "name": "华之杰",
+          "theme": null,
+          "industry": null,
+          "industrySource": null,
+          "height": null,
+          "firstLimit": null,
+          "lastLimit": null,
+          "amount": 249160900.0,
+          "turnover": 11.6256,
+          "change": 3.6949,
+          "sealAmount": null,
+          "maxSealAmount": null,
+          "openCount": 1,
+          "limitReason": null,
+          "price": 56.69
+        }
+      ],
+      "limitDown": [
+        {
+          "code": "000002",
+          "thscode": "000002.SZ",
+          "name": "万科A",
+          "theme": null,
+          "industry": null,
+          "industrySource": null,
+          "height": null,
+          "firstLimit": "09:32",
+          "lastLimit": "09:32",
+          "amount": null,
+          "turnover": 2.5285,
+          "change": -10.049,
+          "sealAmount": null,
+          "maxSealAmount": null,
+          "openCount": null,
+          "limitReason": null,
+          "price": 3.67
+        },
+        {
+          "code": "000011",
+          "thscode": "000011.SZ",
+          "name": "深物业A",
+          "theme": null,
+          "industry": null,
+          "industrySource": null,
+          "height": null,
+          "firstLimit": "09:31",
+          "lastLimit": "09:31",
+          "amount": null,
+          "turnover": 3.9911,
+          "change": -9.973,
+          "sealAmount": null,
+          "maxSealAmount": null,
+          "openCount": null,
+          "limitReason": null,
+          "price": 10.02
+        },
+        {
+          "code": "002285",
+          "thscode": "002285.SZ",
+          "name": "世联行",
+          "theme": null,
+          "industry": null,
+          "industrySource": null,
+          "height": null,
+          "firstLimit": "09:30",
+          "lastLimit": "09:30",
+          "amount": null,
+          "turnover": 3.4835,
+          "change": -9.9688,
+          "sealAmount": null,
+          "maxSealAmount": null,
+          "openCount": null,
+          "limitReason": null,
+          "price": 2.89
+        },
+        {
+          "code": "000560",
+          "thscode": "000560.SZ",
+          "name": "我爱我家",
+          "theme": null,
+          "industry": null,
+          "industrySource": null,
+          "height": null,
+          "firstLimit": "09:25",
+          "lastLimit": "09:25",
+          "amount": null,
+          "turnover": 2.978,
+          "change": -10.1064,
+          "sealAmount": null,
+          "maxSealAmount": null,
+          "openCount": null,
+          "limitReason": null,
+          "price": 3.38
+        },
+        {
+          "code": "002717",
+          "thscode": "002717.SZ",
+          "name": "*ST岭南",
+          "theme": null,
+          "industry": null,
+          "industrySource": null,
+          "height": null,
+          "firstLimit": "09:25",
+          "lastLimit": "09:25",
+          "amount": null,
+          "turnover": 0.332,
+          "change": -10.1449,
+          "sealAmount": null,
+          "maxSealAmount": null,
+          "openCount": null,
+          "limitReason": null,
+          "price": 0.62
+        }
+      ],
+      "themes": [
+        {
+          "code": "884239.TI",
+          "name": "疫苗",
+          "change_pct": 3.906624,
+          "turnover_cny": 973216940,
+          "member_count": 12,
+          "limitUpCount": 0,
+          "maxHeight": 0,
+          "leaders": []
+        },
+        {
+          "code": "884245.TI",
+          "name": "其他医疗服务",
+          "change_pct": 3.376251,
+          "turnover_cny": 713641180,
+          "member_count": 9,
+          "limitUpCount": 1,
+          "maxHeight": 1,
+          "leaders": [
+            {
+              "code": "000710",
+              "name": "贝瑞基因",
+              "height": 1
+            }
+          ]
+        },
+        {
+          "code": "884033.TI",
+          "name": "纺织化学用品",
+          "change_pct": 3.286898,
+          "turnover_cny": 656170090,
+          "member_count": 13,
+          "limitUpCount": 1,
+          "maxHeight": 2,
+          "leaders": [
+            {
+              "code": "603188",
+              "name": "亚邦股份",
+              "height": 2
+            }
+          ]
+        },
+        {
+          "code": "884119.TI",
+          "name": "其他酒类",
+          "change_pct": 2.784577,
+          "turnover_cny": 1255591360,
+          "member_count": 9,
+          "limitUpCount": 1,
+          "maxHeight": 1,
+          "leaders": [
+            {
+              "code": "600059",
+              "name": "古越龙山",
+              "height": 1
+            }
+          ]
+        },
+        {
+          "code": "881142.TI",
+          "name": "生物制品",
+          "change_pct": 2.398572,
+          "turnover_cny": 3298454400,
+          "member_count": 56,
+          "limitUpCount": 0,
+          "maxHeight": 0,
+          "leaders": []
+        },
+        {
+          "code": "884001.TI",
+          "name": "种子生产",
+          "change_pct": 2.249506,
+          "turnover_cny": 441753150,
+          "member_count": 10,
+          "limitUpCount": 0,
+          "maxHeight": 0,
+          "leaders": []
+        },
+        {
+          "code": "884240.TI",
+          "name": "其他生物制品",
+          "change_pct": 2.194376,
+          "turnover_cny": 2177821500,
+          "member_count": 35,
+          "limitUpCount": 0,
+          "maxHeight": 0,
+          "leaders": []
+        },
+        {
+          "code": "884025.TI",
+          "name": "其他化学原料",
+          "change_pct": 2.081774,
+          "turnover_cny": 510912120,
+          "member_count": 17,
+          "limitUpCount": 1,
+          "maxHeight": 3,
+          "leaders": [
+            {
+              "code": "301190",
+              "name": "善水科技",
+              "height": 3
+            }
+          ]
+        },
+        {
+          "code": "884003.TI",
+          "name": "其他种植业",
+          "change_pct": 1.841204,
+          "turnover_cny": 404301050,
+          "member_count": 9,
+          "limitUpCount": 1,
+          "maxHeight": 1,
+          "leaders": [
+            {
+              "code": "601118",
+              "name": "海南橡胶",
+              "height": 1
+            }
+          ]
+        },
+        {
+          "code": "884176.TI",
+          "name": "出版",
+          "change_pct": 1.788603,
+          "turnover_cny": 1558648500,
+          "member_count": 28,
+          "limitUpCount": 2,
+          "maxHeight": 7,
+          "leaders": [
+            {
+              "code": "600825",
+              "name": "新华传媒",
+              "height": 7
+            },
+            {
+              "code": "605577",
+              "name": "龙版传媒",
+              "height": 1
+            }
+          ]
+        },
+        {
+          "code": "884183.TI",
+          "name": "航海装备",
+          "change_pct": 1.774618,
+          "turnover_cny": 950606470,
+          "member_count": 10,
+          "limitUpCount": 0,
+          "maxHeight": 0,
+          "leaders": []
+        },
+        {
+          "code": "884271.TI",
+          "name": "个护用品",
+          "change_pct": 1.736849,
+          "turnover_cny": 346523720,
+          "member_count": 13,
+          "limitUpCount": 1,
+          "maxHeight": 1,
+          "leaders": [
+            {
+              "code": "001206",
+              "name": "依依股份",
+              "height": 1
+            }
+          ]
+        },
+        {
+          "code": "881137.TI",
+          "name": "造纸",
+          "change_pct": 1.680717,
+          "turnover_cny": 376045760,
+          "member_count": 24,
+          "limitUpCount": 1,
+          "maxHeight": 1,
+          "leaders": [
+            {
+              "code": "600356",
+              "name": "恒丰纸业",
+              "height": 1
+            }
+          ]
+        },
+        {
+          "code": "884307.TI",
+          "name": "风电整机",
+          "change_pct": 1.678029,
+          "turnover_cny": 257257670,
+          "member_count": 6,
+          "limitUpCount": 0,
+          "maxHeight": 0,
+          "leaders": []
+        },
+        {
+          "code": "884300.TI",
+          "name": "药店",
+          "change_pct": 1.657084,
+          "turnover_cny": 160502290,
+          "member_count": 8,
+          "limitUpCount": 0,
+          "maxHeight": 0,
+          "leaders": []
+        },
+        {
+          "code": "881167.TI",
+          "name": "非金属材料",
+          "change_pct": 1.61457,
+          "turnover_cny": 425906690,
+          "member_count": 17,
+          "limitUpCount": 0,
+          "maxHeight": 0,
+          "leaders": []
+        },
+        {
+          "code": "884244.TI",
+          "name": "医疗研发外包",
+          "change_pct": 1.575438,
+          "turnover_cny": 2841227600,
+          "member_count": 30,
+          "limitUpCount": 0,
+          "maxHeight": 0,
+          "leaders": []
+        },
+        {
+          "code": "881101.TI",
+          "name": "种植业与林业",
+          "change_pct": 1.526545,
+          "turnover_cny": 1335590620,
+          "member_count": 29,
+          "limitUpCount": 1,
+          "maxHeight": 1,
+          "leaders": [
+            {
+              "code": "601118",
+              "name": "海南橡胶",
+              "height": 1
+            }
+          ]
+        },
+        {
+          "code": "884238.TI",
+          "name": "血液制品",
+          "change_pct": 1.437634,
+          "turnover_cny": 113853931,
+          "member_count": 9,
+          "limitUpCount": 0,
+          "maxHeight": 0,
+          "leaders": []
+        },
+        {
+          "code": "881175.TI",
+          "name": "医疗服务",
+          "change_pct": 1.413273,
+          "turnover_cny": 4032460400,
+          "member_count": 56,
+          "limitUpCount": 1,
+          "maxHeight": 1,
+          "leaders": [
+            {
+              "code": "000710",
+              "name": "贝瑞基因",
+              "height": 1
+            }
+          ]
+        },
+        {
+          "code": "881182.TI",
+          "name": "美容护理",
+          "change_pct": 1.357827,
+          "turnover_cny": 771612290,
+          "member_count": 34,
+          "limitUpCount": 1,
+          "maxHeight": 1,
+          "leaders": [
+            {
+              "code": "001206",
+              "name": "依依股份",
+              "height": 1
+            }
+          ]
+        },
+        {
+          "code": "884012.TI",
+          "name": "农业综合",
+          "change_pct": 1.293997,
+          "turnover_cny": 11870906.5,
+          "member_count": 3,
+          "limitUpCount": 0,
+          "maxHeight": 0,
+          "leaders": []
+        },
+        {
+          "code": "884011.TI",
+          "name": "其他农产品加工",
+          "change_pct": 1.270434,
+          "turnover_cny": 209681530,
+          "member_count": 12,
+          "limitUpCount": 0,
+          "maxHeight": 0,
+          "leaders": []
+        },
+        {
+          "code": "881133.TI",
+          "name": "饮料制造",
+          "change_pct": 1.240385,
+          "turnover_cny": 1943744800,
+          "member_count": 47,
+          "limitUpCount": 2,
+          "maxHeight": 2,
+          "leaders": [
+            {
+              "code": "600059",
+              "name": "古越龙山",
+              "height": 1
+            },
+            {
+              "code": "605388",
+              "name": "均瑶健康",
+              "height": 2
+            }
+          ]
+        },
+        {
+          "code": "884243.TI",
+          "name": "体外诊断",
+          "change_pct": 1.237752,
+          "turnover_cny": 442672630,
+          "member_count": 40,
+          "limitUpCount": 0,
+          "maxHeight": 0,
+          "leaders": []
+        },
+        {
+          "code": "884147.TI",
+          "name": "水电",
+          "change_pct": 1.237737,
+          "turnover_cny": 585500240,
+          "member_count": 11,
+          "limitUpCount": 0,
+          "maxHeight": 0,
+          "leaders": []
+        },
+        {
+          "code": "884210.TI",
+          "name": "食品及饲料添加剂",
+          "change_pct": 1.21175,
+          "turnover_cny": 449205270,
+          "member_count": 25,
+          "limitUpCount": 0,
+          "maxHeight": 0,
+          "leaders": []
+        },
+        {
+          "code": "881143.TI",
+          "name": "医药商业",
+          "change_pct": 1.202345,
+          "turnover_cny": 544367400,
+          "member_count": 32,
+          "limitUpCount": 0,
+          "maxHeight": 0,
+          "leaders": []
+        },
+        {
+          "code": "884143.TI",
+          "name": "原料药",
+          "change_pct": 1.200825,
+          "turnover_cny": 1268931970,
+          "member_count": 48,
+          "limitUpCount": 0,
+          "maxHeight": 0,
+          "leaders": []
+        },
+        {
+          "code": "884144.TI",
+          "name": "化学制剂",
+          "change_pct": 1.182843,
+          "turnover_cny": 4161351300,
+          "member_count": 111,
+          "limitUpCount": 0,
+          "maxHeight": 0,
+          "leaders": []
+        },
+        {
+          "code": "884120.TI",
+          "name": "软饮料",
+          "change_pct": 1.035602,
+          "turnover_cny": 426436960,
+          "member_count": 13,
+          "limitUpCount": 1,
+          "maxHeight": 2,
+          "leaders": [
+            {
+              "code": "605388",
+              "name": "均瑶健康",
+              "height": 2
+            }
+          ]
+        },
+        {
+          "code": "881109.TI",
+          "name": "化学制品",
+          "change_pct": 1.011018,
+          "turnover_cny": 3765528100,
+          "member_count": 183,
+          "limitUpCount": 2,
+          "maxHeight": 2,
+          "leaders": [
+            {
+              "code": "603188",
+              "name": "亚邦股份",
+              "height": 2
+            },
+            {
+              "code": "603948",
+              "name": "建业股份",
+              "height": 1
+            }
+          ]
+        },
+        {
+          "code": "884034.TI",
+          "name": "其他化学制品",
+          "change_pct": 0.895885,
+          "turnover_cny": 1219530010,
+          "member_count": 82,
+          "limitUpCount": 1,
+          "maxHeight": 1,
+          "leaders": [
+            {
+              "code": "603948",
+              "name": "建业股份",
+              "height": 1
+            }
+          ]
+        },
+        {
+          "code": "881108.TI",
+          "name": "化学原料",
+          "change_pct": 0.886952,
+          "turnover_cny": 1320588900,
+          "member_count": 59,
+          "limitUpCount": 1,
+          "maxHeight": 3,
+          "leaders": [
+            {
+              "code": "301190",
+              "name": "善水科技",
+              "height": 3
+            }
+          ]
+        },
+        {
+          "code": "881173.TI",
+          "name": "小家电",
+          "change_pct": 0.883633,
+          "turnover_cny": 553782510,
+          "member_count": 26,
+          "limitUpCount": 1,
+          "maxHeight": 3,
+          "leaders": [
+            {
+              "code": "002242",
+              "name": "九阳股份",
+              "height": 3
+            }
+          ]
+        },
+        {
+          "code": "881123.TI",
+          "name": "其他电子",
+          "change_pct": 0.712451,
+          "turnover_cny": 1757633600,
+          "member_count": 34,
+          "limitUpCount": 1,
+          "maxHeight": 1,
+          "leaders": [
+            {
+              "code": "002388",
+              "name": "新亚制程",
+              "height": 1
+            }
+          ]
+        },
+        {
+          "code": "884236.TI",
+          "name": "包装",
+          "change_pct": 0.526507,
+          "turnover_cny": 689997480,
+          "member_count": 43,
+          "limitUpCount": 1,
+          "maxHeight": 2,
+          "leaders": [
+            {
+              "code": "002799",
+              "name": "环球印务",
+              "height": 2
+            }
+          ]
+        },
+        {
+          "code": "881138.TI",
+          "name": "包装印刷",
+          "change_pct": 0.480706,
+          "turnover_cny": 696220860,
+          "member_count": 46,
+          "limitUpCount": 1,
+          "maxHeight": 2,
+          "leaders": [
+            {
+              "code": "002799",
+              "name": "环球印务",
+              "height": 2
+            }
+          ]
+        },
+        {
+          "code": "881165.TI",
+          "name": "综合",
+          "change_pct": 0.460434,
+          "turnover_cny": 397870730,
+          "member_count": 18,
+          "limitUpCount": 1,
+          "maxHeight": 1,
+          "leaders": [
+            {
+              "code": "002316",
+              "name": "亚联发展",
+              "height": 1
+            }
+          ]
+        },
+        {
+          "code": "884065.TI",
+          "name": "装饰园林",
+          "change_pct": 0.310699,
+          "turnover_cny": 487162370,
+          "member_count": 32,
+          "limitUpCount": 1,
+          "maxHeight": 2,
+          "leaders": [
+            {
+              "code": "605303",
+              "name": "园林股份",
+              "height": 2
+            }
+          ]
+        },
+        {
+          "code": "881164.TI",
+          "name": "文化传媒",
+          "change_pct": 0.292495,
+          "turnover_cny": 4291115400,
+          "member_count": 85,
+          "limitUpCount": 2,
+          "maxHeight": 7,
+          "leaders": [
+            {
+              "code": "600825",
+              "name": "新华传媒",
+              "height": 7
+            },
+            {
+              "code": "605577",
+              "name": "龙版传媒",
+              "height": 1
+            }
+          ]
+        },
+        {
+          "code": "884098.TI",
+          "name": "消费电子零部件及组装",
+          "change_pct": 0.074712,
+          "turnover_cny": 3012253300,
+          "member_count": 85,
+          "limitUpCount": 1,
+          "maxHeight": 2,
+          "leaders": [
+            {
+              "code": "002866",
+              "name": "传艺科技",
+              "height": 2
+            }
+          ]
+        },
+        {
+          "code": "881124.TI",
+          "name": "消费电子",
+          "change_pct": 0.069573,
+          "turnover_cny": 3179330500,
+          "member_count": 96,
+          "limitUpCount": 1,
+          "maxHeight": 2,
+          "leaders": [
+            {
+              "code": "002866",
+              "name": "传艺科技",
+              "height": 2
+            }
+          ]
+        },
+        {
+          "code": "881116.TI",
+          "name": "建筑装饰",
+          "change_pct": -0.182234,
+          "turnover_cny": 1891006000,
+          "member_count": 143,
+          "limitUpCount": 1,
+          "maxHeight": 2,
+          "leaders": [
+            {
+              "code": "605303",
+              "name": "园林股份",
+              "height": 2
+            }
+          ]
+        },
+        {
+          "code": "884310.TI",
+          "name": "电池化学品",
+          "change_pct": -0.206035,
+          "turnover_cny": 1368424400,
+          "member_count": 43,
+          "limitUpCount": 1,
+          "maxHeight": 2,
+          "leaders": [
+            {
+              "code": "002058",
+              "name": "紫竹高科",
+              "height": 2
+            }
+          ]
+        },
+        {
+          "code": "884309.TI",
+          "name": "锂电池",
+          "change_pct": -0.220373,
+          "turnover_cny": 4306308900,
+          "member_count": 32,
+          "limitUpCount": 1,
+          "maxHeight": 3,
+          "leaders": [
+            {
+              "code": "600241",
+              "name": "时代万恒",
+              "height": 3
+            }
+          ]
+        },
+        {
+          "code": "881281.TI",
+          "name": "电池",
+          "change_pct": -0.221482,
+          "turnover_cny": 7263334400,
+          "member_count": 107,
+          "limitUpCount": 2,
+          "maxHeight": 3,
+          "leaders": [
+            {
+              "code": "600241",
+              "name": "时代万恒",
+              "height": 3
+            },
+            {
+              "code": "002058",
+              "name": "紫竹高科",
+              "height": 2
+            }
+          ]
+        }
+      ],
+      "quality": {
+        "complete": false,
+        "errors": [],
+        "collector": "hithink-finance",
+        "notes": [
+          "缺少有效涨跌幅的停牌、退市或未交易标的从涨跌家数统计母体中剔除，不计入平盘。",
+          "涨停原因不是行业归属；行业统一使用同花顺行业指数成分股接口。"
+        ]
+      }
+    },
+    "source_facts": {
+      "source": "同花顺官方 Financial-API",
+      "trade_date": "2026-09-30",
+      "updated_at": "2026-09-30T01:36:24.597453+00:00",
+      "market_quote_total": 5576,
+      "limit_up": {
+        "count": 19,
+        "complete": true
+      },
+      "broken": {
+        "count": 2,
+        "complete": true,
+        "error": null
+      },
+      "limit_down": {
+        "count": 5,
+        "complete": true
+      },
+      "auction": {
+        "data_status": "final",
+        "auction_phase": "closed",
+        "items": [
+          {
+            "thscode": "600825.SH",
+            "ticker": "600825",
+            "name": "新华传媒",
+            "auction_price": 10.35,
+            "auction_pct": 9.9894,
+            "auction_volume": 45920.72,
+            "auction_amount": 47527945,
+            "auction_unmatched": 7809555.3,
+            "auction_turnover_pct": 0.4395,
+            "auction_yesterday_ratio_pct": 29.3396,
+            "auction_volume_ratio": 1.02,
+            "pre_close_price": 9.41,
+            "open_price": 10.35,
+            "last_price": 10.35,
+            "float_market_cap": 10814589247.5
+          },
+          {
+            "thscode": "002242.SZ",
+            "ticker": "002242",
+            "name": "九阳股份",
+            "auction_price": 12.5,
+            "auction_pct": 10.0352,
+            "auction_volume": 52346.56,
+            "auction_amount": 65433200.0,
+            "auction_unmatched": 144228.44,
+            "auction_turnover_pct": 0.6872,
+            "auction_yesterday_ratio_pct": 27.3795,
+            "auction_volume_ratio": 1.7171,
+            "pre_close_price": 11.36,
+            "open_price": 12.5,
+            "last_price": 12.5,
+            "float_market_cap": 9522070312.5
+          },
+          {
+            "thscode": "301190.SZ",
+            "ticker": "301190",
+            "name": "善水科技",
+            "auction_price": 33.2,
+            "auction_pct": 10.8884,
+            "auction_volume": 18637.0,
+            "auction_amount": 61874840.0,
+            "auction_unmatched": 2600.0,
+            "auction_turnover_pct": 1.0248,
+            "auction_yesterday_ratio_pct": 8.9037,
+            "auction_volume_ratio": 2.2414,
+            "pre_close_price": 29.94,
+            "open_price": 33.2,
+            "last_price": 35.93,
+            "float_market_cap": 6534014220
+          },
+          {
+            "thscode": "600241.SH",
+            "ticker": "600241",
+            "name": "时代万恒",
+            "auction_price": 9.72,
+            "auction_pct": 9.9548,
+            "auction_volume": 18589.0,
+            "auction_amount": 18068508,
+            "auction_unmatched": 332832.0,
+            "auction_turnover_pct": 0.6316,
+            "auction_yesterday_ratio_pct": 10.8341,
+            "auction_volume_ratio": 0.8531,
+            "pre_close_price": 8.84,
+            "open_price": 9.72,
+            "last_price": 9.72,
+            "float_market_cap": 2860616557.8
+          },
+          {
+            "thscode": "002058.SZ",
+            "ticker": "002058",
+            "name": "紫竹高科",
+            "auction_price": 20.2,
+            "auction_pct": 10.0218,
+            "auction_volume": 10603.01,
+            "auction_amount": 21418080.0,
+            "auction_unmatched": 18917.99,
+            "auction_turnover_pct": 0.7396,
+            "auction_yesterday_ratio_pct": 20.7252,
+            "auction_volume_ratio": 258.61,
+            "pre_close_price": 18.36,
+            "open_price": 20.2,
+            "last_price": 20.2,
+            "float_market_cap": 2895989806.4
+          },
+          {
+            "thscode": "002799.SZ",
+            "ticker": "002799",
+            "name": "环球印务",
+            "auction_price": 8.31,
+            "auction_pct": 10.0662,
+            "auction_volume": 30577.84,
+            "auction_amount": 25410185,
+            "auction_unmatched": 132527.16,
+            "auction_turnover_pct": 0.9555,
+            "auction_yesterday_ratio_pct": 18.1956,
+            "auction_volume_ratio": 955.8562,
+            "pre_close_price": 7.55,
+            "open_price": 8.31,
+            "last_price": 8.31,
+            "float_market_cap": 2659497498
+          },
+          {
+            "thscode": "002866.SZ",
+            "ticker": "002866",
+            "name": "传艺科技",
+            "auction_price": 16.57,
+            "auction_pct": 7.8776,
+            "auction_volume": 20022.0,
+            "auction_amount": 33176454,
+            "auction_unmatched": -220.93,
+            "auction_turnover_pct": 1.0895,
+            "auction_yesterday_ratio_pct": 16.027,
+            "auction_volume_ratio": 19.105,
+            "pre_close_price": 15.36,
+            "open_price": 16.57,
+            "last_price": 16.9,
+            "float_market_cap": 3105694308.6
+          },
+          {
+            "thscode": "603188.SH",
+            "ticker": "603188",
+            "name": "亚邦股份",
+            "auction_price": 4.86,
+            "auction_pct": -1.0183,
+            "auction_volume": 18441.0,
+            "auction_amount": 8962326.0,
+            "auction_unmatched": 481.0,
+            "auction_turnover_pct": 0.3234,
+            "auction_yesterday_ratio_pct": 7.4445,
+            "auction_volume_ratio": 154.9664,
+            "pre_close_price": 4.91,
+            "open_price": 4.86,
+            "last_price": 5.4,
+            "float_market_cap": 3078918000
+          },
+          {
+            "thscode": "605303.SH",
+            "ticker": "605303",
+            "name": "园林股份",
+            "auction_price": 28.66,
+            "auction_pct": 10.0192,
+            "auction_volume": 305.0,
+            "auction_amount": 874130.0,
+            "auction_unmatched": 442529.0,
+            "auction_turnover_pct": 0.0189,
+            "auction_yesterday_ratio_pct": 12.0221,
+            "auction_volume_ratio": 1.0066,
+            "pre_close_price": 26.05,
+            "open_price": 28.66,
+            "last_price": 28.66,
+            "float_market_cap": 4621064113.28
+          },
+          {
+            "thscode": "605388.SH",
+            "ticker": "605388",
+            "name": "均瑶健康",
+            "auction_price": 7.39,
+            "auction_pct": 9.9702,
+            "auction_volume": 27417.2,
+            "auction_amount": 20261311,
+            "auction_unmatched": 118866.8,
+            "auction_turnover_pct": 0.4566,
+            "auction_yesterday_ratio_pct": 13.6192,
+            "auction_volume_ratio": 159.4023,
+            "pre_close_price": 6.72,
+            "open_price": 7.39,
+            "last_price": 7.39,
+            "float_market_cap": 4437576760
+          },
+          {
+            "thscode": "000710.SZ",
+            "ticker": "000710",
+            "name": "贝瑞基因",
+            "auction_price": 9.92,
+            "auction_pct": 0.4049,
+            "auction_volume": 4799.0,
+            "auction_amount": 4760608.0,
+            "auction_unmatched": 679.0,
+            "auction_turnover_pct": 0.143,
+            "auction_yesterday_ratio_pct": 1.162,
+            "auction_volume_ratio": 0.9017,
+            "pre_close_price": 9.88,
+            "open_price": 9.92,
+            "last_price": 10.87,
+            "float_market_cap": 3647182381.46
+          },
+          {
+            "thscode": "001206.SZ",
+            "ticker": "001206",
+            "name": "依依股份",
+            "auction_price": 18.31,
+            "auction_pct": 8.1512,
+            "auction_volume": 2959.01,
+            "auction_amount": 5417947.3,
+            "auction_unmatched": 62.99,
+            "auction_turnover_pct": 0.2769,
+            "auction_yesterday_ratio_pct": 17.9559,
+            "auction_volume_ratio": 95.4519,
+            "pre_close_price": 16.93,
+            "open_price": 18.31,
+            "last_price": 18.62,
+            "float_market_cap": 1989816207.96
+          },
+          {
+            "thscode": "002316.SZ",
+            "ticker": "002316",
+            "name": "亚联发展",
+            "auction_price": 4.53,
+            "auction_pct": 0.6667,
+            "auction_volume": 372.0,
+            "auction_amount": 168516.0,
+            "auction_unmatched": -46.0,
+            "auction_turnover_pct": 0.0109,
+            "auction_yesterday_ratio_pct": 0.1992,
+            "auction_volume_ratio": 0.2447,
+            "pre_close_price": 4.5,
+            "open_price": 4.53,
+            "last_price": 4.95,
+            "float_market_cap": 1686638250
+          },
+          {
+            "thscode": "002388.SZ",
+            "ticker": "002388",
+            "name": "新亚制程",
+            "auction_price": 8.61,
+            "auction_pct": 4.1112,
+            "auction_volume": 7493.0,
+            "auction_amount": 6451473.0,
+            "auction_unmatched": 729.0,
+            "auction_turnover_pct": 0.148,
+            "auction_yesterday_ratio_pct": 1.2145,
+            "auction_volume_ratio": 4.1744,
+            "pre_close_price": 8.27,
+            "open_price": 8.61,
+            "last_price": 9.1,
+            "float_market_cap": 4606633804.5
+          },
+          {
+            "thscode": "600059.SH",
+            "ticker": "600059",
+            "name": "古越龙山",
+            "auction_price": 11.37,
+            "auction_pct": 1.9731,
+            "auction_volume": 12381.03,
+            "auction_amount": 14077231,
+            "auction_unmatched": 2688.97,
+            "auction_turnover_pct": 0.1358,
+            "auction_yesterday_ratio_pct": 1.0953,
+            "auction_volume_ratio": 0.4364,
+            "pre_close_price": 11.15,
+            "open_price": 11.37,
+            "last_price": 12.27,
+            "float_market_cap": 11184625407.51
+          },
+          {
+            "thscode": "600356.SH",
+            "ticker": "600356",
+            "name": "恒丰纸业",
+            "auction_price": 10.84,
+            "auction_pct": 4.0307,
+            "auction_volume": 3686.0,
+            "auction_amount": 3995624.0,
+            "auction_unmatched": 499.0,
+            "auction_turnover_pct": 0.1234,
+            "auction_yesterday_ratio_pct": 1.237,
+            "auction_volume_ratio": 0.7132,
+            "pre_close_price": 10.42,
+            "open_price": 10.84,
+            "last_price": 11.46,
+            "float_market_cap": 3423461591.88
+          },
+          {
+            "thscode": "601118.SH",
+            "ticker": "601118",
+            "name": "海南橡胶",
+            "auction_price": 6.28,
+            "auction_pct": 8.4629,
+            "auction_volume": 42366.0,
+            "auction_amount": 26605848,
+            "auction_unmatched": 2758.0,
+            "auction_turnover_pct": 0.099,
+            "auction_yesterday_ratio_pct": 4.2878,
+            "auction_volume_ratio": 2.8801,
+            "pre_close_price": 5.79,
+            "open_price": 6.28,
+            "last_price": 6.37,
+            "float_market_cap": 27259955066.89
+          },
+          {
+            "thscode": "603948.SH",
+            "ticker": "603948",
+            "name": "建业股份",
+            "auction_price": 19.45,
+            "auction_pct": 0.1545,
+            "auction_volume": 13.0,
+            "auction_amount": 25285.0,
+            "auction_unmatched": -1.0,
+            "auction_turnover_pct": 0.0008,
+            "auction_yesterday_ratio_pct": 0.1007,
+            "auction_volume_ratio": 0.4194,
+            "pre_close_price": 19.42,
+            "open_price": 19.45,
+            "last_price": 21.36,
+            "float_market_cap": 3470768607.12
+          },
+          {
+            "thscode": "605577.SH",
+            "ticker": "605577",
+            "name": "龙版传媒",
+            "auction_price": 15.36,
+            "auction_pct": 3.7838,
+            "auction_volume": 6885.0,
+            "auction_amount": 10575360.0,
+            "auction_unmatched": 1271.0,
+            "auction_turnover_pct": 0.1549,
+            "auction_yesterday_ratio_pct": 1.7438,
+            "auction_volume_ratio": 0.4974,
+            "pre_close_price": 14.8,
+            "open_price": 15.36,
+            "last_price": 16.28,
+            "float_market_cap": 7235555564.6
+          }
+        ]
+      },
+      "sectors": {
+        "category": "industry",
+        "classification": "ths_level_1_industry",
+        "catalog_count": 320,
+        "quotes_count": 320,
+        "top_by_change_pct": [
+          {
+            "code": "884239.TI",
+            "name": "疫苗",
+            "change_pct": 3.906624,
+            "turnover_cny": 973216940,
+            "member_count": 12,
+            "limit_up_count": 0,
+            "board_counts": {},
+            "limit_up_stocks": [],
+            "source": "同花顺行业指数及当前成分股"
+          },
+          {
+            "code": "884245.TI",
+            "name": "其他医疗服务",
+            "change_pct": 3.376251,
+            "turnover_cny": 713641180,
+            "member_count": 9,
+            "limit_up_count": 1,
+            "board_counts": {
+              "1": 1
+            },
+            "limit_up_stocks": [
+              {
+                "code": "000710",
+                "name": "贝瑞基因",
+                "height": 1
+              }
+            ],
+            "source": "同花顺行业指数及当前成分股"
+          },
+          {
+            "code": "884033.TI",
+            "name": "纺织化学用品",
+            "change_pct": 3.286898,
+            "turnover_cny": 656170090,
+            "member_count": 13,
+            "limit_up_count": 1,
+            "board_counts": {
+              "2": 1
+            },
+            "limit_up_stocks": [
+              {
+                "code": "603188",
+                "name": "亚邦股份",
+                "height": 2
+              }
+            ],
+            "source": "同花顺行业指数及当前成分股"
+          },
+          {
+            "code": "884119.TI",
+            "name": "其他酒类",
+            "change_pct": 2.784577,
+            "turnover_cny": 1255591360,
+            "member_count": 9,
+            "limit_up_count": 1,
+            "board_counts": {
+              "1": 1
+            },
+            "limit_up_stocks": [
+              {
+                "code": "600059",
+                "name": "古越龙山",
+                "height": 1
+              }
+            ],
+            "source": "同花顺行业指数及当前成分股"
+          },
+          {
+            "code": "881142.TI",
+            "name": "生物制品",
+            "change_pct": 2.398572,
+            "turnover_cny": 3298454400,
+            "member_count": 56,
+            "limit_up_count": 0,
+            "board_counts": {},
+            "limit_up_stocks": [],
+            "source": "同花顺行业指数及当前成分股"
+          },
+          {
+            "code": "884001.TI",
+            "name": "种子生产",
+            "change_pct": 2.249506,
+            "turnover_cny": 441753150,
+            "member_count": 10,
+            "limit_up_count": 0,
+            "board_counts": {},
+            "limit_up_stocks": [],
+            "source": "同花顺行业指数及当前成分股"
+          },
+          {
+            "code": "884240.TI",
+            "name": "其他生物制品",
+            "change_pct": 2.194376,
+            "turnover_cny": 2177821500,
+            "member_count": 35,
+            "limit_up_count": 0,
+            "board_counts": {},
+            "limit_up_stocks": [],
+            "source": "同花顺行业指数及当前成分股"
+          },
+          {
+            "code": "884025.TI",
+            "name": "其他化学原料",
+            "change_pct": 2.081774,
+            "turnover_cny": 510912120,
+            "member_count": 17,
+            "limit_up_count": 1,
+            "board_counts": {
+              "3": 1
+            },
+            "limit_up_stocks": [
+              {
+                "code": "301190",
+                "name": "善水科技",
+                "height": 3
+              }
+            ],
+            "source": "同花顺行业指数及当前成分股"
+          },
+          {
+            "code": "884003.TI",
+            "name": "其他种植业",
+            "change_pct": 1.841204,
+            "turnover_cny": 404301050,
+            "member_count": 9,
+            "limit_up_count": 1,
+            "board_counts": {
+              "1": 1
+            },
+            "limit_up_stocks": [
+              {
+                "code": "601118",
+                "name": "海南橡胶",
+                "height": 1
+              }
+            ],
+            "source": "同花顺行业指数及当前成分股"
+          },
+          {
+            "code": "884176.TI",
+            "name": "出版",
+            "change_pct": 1.788603,
+            "turnover_cny": 1558648500,
+            "member_count": 28,
+            "limit_up_count": 2,
+            "board_counts": {
+              "7": 1,
+              "1": 1
+            },
+            "limit_up_stocks": [
+              {
+                "code": "600825",
+                "name": "新华传媒",
+                "height": 7
+              },
+              {
+                "code": "605577",
+                "name": "龙版传媒",
+                "height": 1
+              }
+            ],
+            "source": "同花顺行业指数及当前成分股"
+          },
+          {
+            "code": "884183.TI",
+            "name": "航海装备",
+            "change_pct": 1.774618,
+            "turnover_cny": 950606470,
+            "member_count": 10,
+            "limit_up_count": 0,
+            "board_counts": {},
+            "limit_up_stocks": [],
+            "source": "同花顺行业指数及当前成分股"
+          },
+          {
+            "code": "884271.TI",
+            "name": "个护用品",
+            "change_pct": 1.736849,
+            "turnover_cny": 346523720,
+            "member_count": 13,
+            "limit_up_count": 1,
+            "board_counts": {
+              "1": 1
+            },
+            "limit_up_stocks": [
+              {
+                "code": "001206",
+                "name": "依依股份",
+                "height": 1
+              }
+            ],
+            "source": "同花顺行业指数及当前成分股"
+          },
+          {
+            "code": "881137.TI",
+            "name": "造纸",
+            "change_pct": 1.680717,
+            "turnover_cny": 376045760,
+            "member_count": 24,
+            "limit_up_count": 1,
+            "board_counts": {
+              "1": 1
+            },
+            "limit_up_stocks": [
+              {
+                "code": "600356",
+                "name": "恒丰纸业",
+                "height": 1
+              }
+            ],
+            "source": "同花顺行业指数及当前成分股"
+          },
+          {
+            "code": "884307.TI",
+            "name": "风电整机",
+            "change_pct": 1.678029,
+            "turnover_cny": 257257670,
+            "member_count": 6,
+            "limit_up_count": 0,
+            "board_counts": {},
+            "limit_up_stocks": [],
+            "source": "同花顺行业指数及当前成分股"
+          },
+          {
+            "code": "884300.TI",
+            "name": "药店",
+            "change_pct": 1.657084,
+            "turnover_cny": 160502290,
+            "member_count": 8,
+            "limit_up_count": 0,
+            "board_counts": {},
+            "limit_up_stocks": [],
+            "source": "同花顺行业指数及当前成分股"
+          },
+          {
+            "code": "881167.TI",
+            "name": "非金属材料",
+            "change_pct": 1.61457,
+            "turnover_cny": 425906690,
+            "member_count": 17,
+            "limit_up_count": 0,
+            "board_counts": {},
+            "limit_up_stocks": [],
+            "source": "同花顺行业指数及当前成分股"
+          },
+          {
+            "code": "884244.TI",
+            "name": "医疗研发外包",
+            "change_pct": 1.575438,
+            "turnover_cny": 2841227600,
+            "member_count": 30,
+            "limit_up_count": 0,
+            "board_counts": {},
+            "limit_up_stocks": [],
+            "source": "同花顺行业指数及当前成分股"
+          },
+          {
+            "code": "881101.TI",
+            "name": "种植业与林业",
+            "change_pct": 1.526545,
+            "turnover_cny": 1335590620,
+            "member_count": 29,
+            "limit_up_count": 1,
+            "board_counts": {
+              "1": 1
+            },
+            "limit_up_stocks": [
+              {
+                "code": "601118",
+                "name": "海南橡胶",
+                "height": 1
+              }
+            ],
+            "source": "同花顺行业指数及当前成分股"
+          },
+          {
+            "code": "884238.TI",
+            "name": "血液制品",
+            "change_pct": 1.437634,
+            "turnover_cny": 113853931,
+            "member_count": 9,
+            "limit_up_count": 0,
+            "board_counts": {},
+            "limit_up_stocks": [],
+            "source": "同花顺行业指数及当前成分股"
+          },
+          {
+            "code": "881175.TI",
+            "name": "医疗服务",
+            "change_pct": 1.413273,
+            "turnover_cny": 4032460400,
+            "member_count": 56,
+            "limit_up_count": 1,
+            "board_counts": {
+              "1": 1
+            },
+            "limit_up_stocks": [
+              {
+                "code": "000710",
+                "name": "贝瑞基因",
+                "height": 1
+              }
+            ],
+            "source": "同花顺行业指数及当前成分股"
+          },
+          {
+            "code": "881182.TI",
+            "name": "美容护理",
+            "change_pct": 1.357827,
+            "turnover_cny": 771612290,
+            "member_count": 34,
+            "limit_up_count": 1,
+            "board_counts": {
+              "1": 1
+            },
+            "limit_up_stocks": [
+              {
+                "code": "001206",
+                "name": "依依股份",
+                "height": 1
+              }
+            ],
+            "source": "同花顺行业指数及当前成分股"
+          },
+          {
+            "code": "884012.TI",
+            "name": "农业综合",
+            "change_pct": 1.293997,
+            "turnover_cny": 11870906.5,
+            "member_count": 3,
+            "limit_up_count": 0,
+            "board_counts": {},
+            "limit_up_stocks": [],
+            "source": "同花顺行业指数及当前成分股"
+          },
+          {
+            "code": "884011.TI",
+            "name": "其他农产品加工",
+            "change_pct": 1.270434,
+            "turnover_cny": 209681530,
+            "member_count": 12,
+            "limit_up_count": 0,
+            "board_counts": {},
+            "limit_up_stocks": [],
+            "source": "同花顺行业指数及当前成分股"
+          },
+          {
+            "code": "881133.TI",
+            "name": "饮料制造",
+            "change_pct": 1.240385,
+            "turnover_cny": 1943744800,
+            "member_count": 47,
+            "limit_up_count": 2,
+            "board_counts": {
+              "1": 1,
+              "2": 1
+            },
+            "limit_up_stocks": [
+              {
+                "code": "600059",
+                "name": "古越龙山",
+                "height": 1
+              },
+              {
+                "code": "605388",
+                "name": "均瑶健康",
+                "height": 2
+              }
+            ],
+            "source": "同花顺行业指数及当前成分股"
+          },
+          {
+            "code": "884243.TI",
+            "name": "体外诊断",
+            "change_pct": 1.237752,
+            "turnover_cny": 442672630,
+            "member_count": 40,
+            "limit_up_count": 0,
+            "board_counts": {},
+            "limit_up_stocks": [],
+            "source": "同花顺行业指数及当前成分股"
+          },
+          {
+            "code": "884147.TI",
+            "name": "水电",
+            "change_pct": 1.237737,
+            "turnover_cny": 585500240,
+            "member_count": 11,
+            "limit_up_count": 0,
+            "board_counts": {},
+            "limit_up_stocks": [],
+            "source": "同花顺行业指数及当前成分股"
+          },
+          {
+            "code": "884210.TI",
+            "name": "食品及饲料添加剂",
+            "change_pct": 1.21175,
+            "turnover_cny": 449205270,
+            "member_count": 25,
+            "limit_up_count": 0,
+            "board_counts": {},
+            "limit_up_stocks": [],
+            "source": "同花顺行业指数及当前成分股"
+          },
+          {
+            "code": "881143.TI",
+            "name": "医药商业",
+            "change_pct": 1.202345,
+            "turnover_cny": 544367400,
+            "member_count": 32,
+            "limit_up_count": 0,
+            "board_counts": {},
+            "limit_up_stocks": [],
+            "source": "同花顺行业指数及当前成分股"
+          },
+          {
+            "code": "884143.TI",
+            "name": "原料药",
+            "change_pct": 1.200825,
+            "turnover_cny": 1268931970,
+            "member_count": 48,
+            "limit_up_count": 0,
+            "board_counts": {},
+            "limit_up_stocks": [],
+            "source": "同花顺行业指数及当前成分股"
+          },
+          {
+            "code": "884144.TI",
+            "name": "化学制剂",
+            "change_pct": 1.182843,
+            "turnover_cny": 4161351300,
+            "member_count": 111,
+            "limit_up_count": 0,
+            "board_counts": {},
+            "limit_up_stocks": [],
+            "source": "同花顺行业指数及当前成分股"
+          },
+          {
+            "code": "884120.TI",
+            "name": "软饮料",
+            "change_pct": 1.035602,
+            "turnover_cny": 426436960,
+            "member_count": 13,
+            "limit_up_count": 1,
+            "board_counts": {
+              "2": 1
+            },
+            "limit_up_stocks": [
+              {
+                "code": "605388",
+                "name": "均瑶健康",
+                "height": 2
+              }
+            ],
+            "source": "同花顺行业指数及当前成分股"
+          },
+          {
+            "code": "881109.TI",
+            "name": "化学制品",
+            "change_pct": 1.011018,
+            "turnover_cny": 3765528100,
+            "member_count": 183,
+            "limit_up_count": 2,
+            "board_counts": {
+              "2": 1,
+              "1": 1
+            },
+            "limit_up_stocks": [
+              {
+                "code": "603188",
+                "name": "亚邦股份",
+                "height": 2
+              },
+              {
+                "code": "603948",
+                "name": "建业股份",
+                "height": 1
+              }
+            ],
+            "source": "同花顺行业指数及当前成分股"
+          },
+          {
+            "code": "884034.TI",
+            "name": "其他化学制品",
+            "change_pct": 0.895885,
+            "turnover_cny": 1219530010,
+            "member_count": 82,
+            "limit_up_count": 1,
+            "board_counts": {
+              "1": 1
+            },
+            "limit_up_stocks": [
+              {
+                "code": "603948",
+                "name": "建业股份",
+                "height": 1
+              }
+            ],
+            "source": "同花顺行业指数及当前成分股"
+          },
+          {
+            "code": "881108.TI",
+            "name": "化学原料",
+            "change_pct": 0.886952,
+            "turnover_cny": 1320588900,
+            "member_count": 59,
+            "limit_up_count": 1,
+            "board_counts": {
+              "3": 1
+            },
+            "limit_up_stocks": [
+              {
+                "code": "301190",
+                "name": "善水科技",
+                "height": 3
+              }
+            ],
+            "source": "同花顺行业指数及当前成分股"
+          },
+          {
+            "code": "881173.TI",
+            "name": "小家电",
+            "change_pct": 0.883633,
+            "turnover_cny": 553782510,
+            "member_count": 26,
+            "limit_up_count": 1,
+            "board_counts": {
+              "3": 1
+            },
+            "limit_up_stocks": [
+              {
+                "code": "002242",
+                "name": "九阳股份",
+                "height": 3
+              }
+            ],
+            "source": "同花顺行业指数及当前成分股"
+          },
+          {
+            "code": "881123.TI",
+            "name": "其他电子",
+            "change_pct": 0.712451,
+            "turnover_cny": 1757633600,
+            "member_count": 34,
+            "limit_up_count": 1,
+            "board_counts": {
+              "1": 1
+            },
+            "limit_up_stocks": [
+              {
+                "code": "002388",
+                "name": "新亚制程",
+                "height": 1
+              }
+            ],
+            "source": "同花顺行业指数及当前成分股"
+          },
+          {
+            "code": "884236.TI",
+            "name": "包装",
+            "change_pct": 0.526507,
+            "turnover_cny": 689997480,
+            "member_count": 43,
+            "limit_up_count": 1,
+            "board_counts": {
+              "2": 1
+            },
+            "limit_up_stocks": [
+              {
+                "code": "002799",
+                "name": "环球印务",
+                "height": 2
+              }
+            ],
+            "source": "同花顺行业指数及当前成分股"
+          },
+          {
+            "code": "881138.TI",
+            "name": "包装印刷",
+            "change_pct": 0.480706,
+            "turnover_cny": 696220860,
+            "member_count": 46,
+            "limit_up_count": 1,
+            "board_counts": {
+              "2": 1
+            },
+            "limit_up_stocks": [
+              {
+                "code": "002799",
+                "name": "环球印务",
+                "height": 2
+              }
+            ],
+            "source": "同花顺行业指数及当前成分股"
+          },
+          {
+            "code": "881165.TI",
+            "name": "综合",
+            "change_pct": 0.460434,
+            "turnover_cny": 397870730,
+            "member_count": 18,
+            "limit_up_count": 1,
+            "board_counts": {
+              "1": 1
+            },
+            "limit_up_stocks": [
+              {
+                "code": "002316",
+                "name": "亚联发展",
+                "height": 1
+              }
+            ],
+            "source": "同花顺行业指数及当前成分股"
+          },
+          {
+            "code": "884065.TI",
+            "name": "装饰园林",
+            "change_pct": 0.310699,
+            "turnover_cny": 487162370,
+            "member_count": 32,
+            "limit_up_count": 1,
+            "board_counts": {
+              "2": 1
+            },
+            "limit_up_stocks": [
+              {
+                "code": "605303",
+                "name": "园林股份",
+                "height": 2
+              }
+            ],
+            "source": "同花顺行业指数及当前成分股"
+          },
+          {
+            "code": "881164.TI",
+            "name": "文化传媒",
+            "change_pct": 0.292495,
+            "turnover_cny": 4291115400,
+            "member_count": 85,
+            "limit_up_count": 2,
+            "board_counts": {
+              "7": 1,
+              "1": 1
+            },
+            "limit_up_stocks": [
+              {
+                "code": "600825",
+                "name": "新华传媒",
+                "height": 7
+              },
+              {
+                "code": "605577",
+                "name": "龙版传媒",
+                "height": 1
+              }
+            ],
+            "source": "同花顺行业指数及当前成分股"
+          },
+          {
+            "code": "884098.TI",
+            "name": "消费电子零部件及组装",
+            "change_pct": 0.074712,
+            "turnover_cny": 3012253300,
+            "member_count": 85,
+            "limit_up_count": 1,
+            "board_counts": {
+              "2": 1
+            },
+            "limit_up_stocks": [
+              {
+                "code": "002866",
+                "name": "传艺科技",
+                "height": 2
+              }
+            ],
+            "source": "同花顺行业指数及当前成分股"
+          },
+          {
+            "code": "881124.TI",
+            "name": "消费电子",
+            "change_pct": 0.069573,
+            "turnover_cny": 3179330500,
+            "member_count": 96,
+            "limit_up_count": 1,
+            "board_counts": {
+              "2": 1
+            },
+            "limit_up_stocks": [
+              {
+                "code": "002866",
+                "name": "传艺科技",
+                "height": 2
+              }
+            ],
+            "source": "同花顺行业指数及当前成分股"
+          },
+          {
+            "code": "881116.TI",
+            "name": "建筑装饰",
+            "change_pct": -0.182234,
+            "turnover_cny": 1891006000,
+            "member_count": 143,
+            "limit_up_count": 1,
+            "board_counts": {
+              "2": 1
+            },
+            "limit_up_stocks": [
+              {
+                "code": "605303",
+                "name": "园林股份",
+                "height": 2
+              }
+            ],
+            "source": "同花顺行业指数及当前成分股"
+          },
+          {
+            "code": "884310.TI",
+            "name": "电池化学品",
+            "change_pct": -0.206035,
+            "turnover_cny": 1368424400,
+            "member_count": 43,
+            "limit_up_count": 1,
+            "board_counts": {
+              "2": 1
+            },
+            "limit_up_stocks": [
+              {
+                "code": "002058",
+                "name": "紫竹高科",
+                "height": 2
+              }
+            ],
+            "source": "同花顺行业指数及当前成分股"
+          },
+          {
+            "code": "884309.TI",
+            "name": "锂电池",
+            "change_pct": -0.220373,
+            "turnover_cny": 4306308900,
+            "member_count": 32,
+            "limit_up_count": 1,
+            "board_counts": {
+              "3": 1
+            },
+            "limit_up_stocks": [
+              {
+                "code": "600241",
+                "name": "时代万恒",
+                "height": 3
+              }
+            ],
+            "source": "同花顺行业指数及当前成分股"
+          },
+          {
+            "code": "881281.TI",
+            "name": "电池",
+            "change_pct": -0.221482,
+            "turnover_cny": 7263334400,
+            "member_count": 107,
+            "limit_up_count": 2,
+            "board_counts": {
+              "3": 1,
+              "2": 1
+            },
+            "limit_up_stocks": [
+              {
+                "code": "600241",
+                "name": "时代万恒",
+                "height": 3
+              },
+              {
+                "code": "002058",
+                "name": "紫竹高科",
+                "height": 2
+              }
+            ],
+            "source": "同花顺行业指数及当前成分股"
+          }
+        ],
+        "strength_ready": true,
+        "missing": "跨日板块持续性仍需由每日快照累积。"
+      },
+      "market_amount_cny": 178025031000,
+      "market_amount_scope": "上证指数成交额 + 深证成指成交额",
+      "limit_up_ladder": {
+        "window": {
+          "length": 30,
+          "date_list": [
+            "2026-09-30",
+            "2026-09-29",
+            "2026-09-28",
+            "2026-09-24",
+            "2026-09-23",
+            "2026-09-22",
+            "2026-09-21",
+            "2026-09-18",
+            "2026-09-17",
+            "2026-09-16",
+            "2026-09-15",
+            "2026-09-14",
+            "2026-09-11",
+            "2026-09-10",
+            "2026-09-09",
+            "2026-09-08",
+            "2026-09-07",
+            "2026-09-04",
+            "2026-09-03",
+            "2026-09-02",
+            "2026-09-01",
+            "2026-08-31",
+            "2026-08-28",
+            "2026-08-27",
+            "2026-08-26",
+            "2026-08-25",
+            "2026-08-24",
+            "2026-08-21",
+            "2026-08-20",
+            "2026-08-19"
+          ],
+          "board_caps": {
+            "two_board": 4,
+            "three_board": 4,
+            "four_board": 3,
+            "five_board": 2,
+            "six_board": 2,
+            "seven_over": 1
+          }
+        },
+        "items": [
+          {
+            "date": "2026-09-30",
+            "boards": {
+              "two_board": [
+                {
+                  "thscode": "603188.SH",
+                  "ticker": "603188",
+                  "name": "亚邦股份",
+                  "board_num": 2,
+                  "seal_nextday": null,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "002866.SZ",
+                  "ticker": "002866",
+                  "name": "传艺科技",
+                  "board_num": 2,
+                  "seal_nextday": null,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "605303.SH",
+                  "ticker": "605303",
+                  "name": "园林股份",
+                  "board_num": 2,
+                  "seal_nextday": null,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "605388.SH",
+                  "ticker": "605388",
+                  "name": "均瑶健康",
+                  "board_num": 2,
+                  "seal_nextday": null,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "002799.SZ",
+                  "ticker": "002799",
+                  "name": "环球印务",
+                  "board_num": 2,
+                  "seal_nextday": null,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "002058.SZ",
+                  "ticker": "002058",
+                  "name": "紫竹高科",
+                  "board_num": 2,
+                  "seal_nextday": null,
+                  "sign_level": 0
+                }
+              ],
+              "three_board": [
+                {
+                  "thscode": "002242.SZ",
+                  "ticker": "002242",
+                  "name": "九阳股份",
+                  "board_num": 3,
+                  "seal_nextday": null,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "301190.SZ",
+                  "ticker": "301190",
+                  "name": "善水科技",
+                  "board_num": 3,
+                  "seal_nextday": null,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "600241.SH",
+                  "ticker": "600241",
+                  "name": "时代万恒",
+                  "board_num": 3,
+                  "seal_nextday": null,
+                  "sign_level": 0
+                }
+              ],
+              "four_board": [],
+              "five_board": [],
+              "six_board": [],
+              "seven_over": [
+                {
+                  "thscode": "600825.SH",
+                  "ticker": "600825",
+                  "name": "新华传媒",
+                  "board_num": 7,
+                  "seal_nextday": null,
+                  "sign_level": 0
+                }
+              ]
+            }
+          },
+          {
+            "date": "2026-09-29",
+            "boards": {
+              "two_board": [
+                {
+                  "thscode": "002242.SZ",
+                  "ticker": "002242",
+                  "name": "九阳股份",
+                  "board_num": 2,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "301190.SZ",
+                  "ticker": "301190",
+                  "name": "善水科技",
+                  "board_num": 2,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "600241.SH",
+                  "ticker": "600241",
+                  "name": "时代万恒",
+                  "board_num": 2,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "002912.SZ",
+                  "ticker": "002912",
+                  "name": "中新赛克",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "600488.SH",
+                  "ticker": "600488",
+                  "name": "津药药业",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "600032.SH",
+                  "ticker": "600032",
+                  "name": "浙江新能",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "000011.SZ",
+                  "ticker": "000011",
+                  "name": "深物业A",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                }
+              ],
+              "three_board": [
+                {
+                  "thscode": "000678.SZ",
+                  "ticker": "000678",
+                  "name": "襄阳轴承",
+                  "board_num": 3,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                }
+              ],
+              "four_board": [
+                {
+                  "thscode": "603949.SH",
+                  "ticker": "603949",
+                  "name": "雪龙集团",
+                  "board_num": 4,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                }
+              ],
+              "five_board": [],
+              "six_board": [
+                {
+                  "thscode": "600825.SH",
+                  "ticker": "600825",
+                  "name": "新华传媒",
+                  "board_num": 6,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                }
+              ],
+              "seven_over": []
+            }
+          },
+          {
+            "date": "2026-09-28",
+            "boards": {
+              "two_board": [
+                {
+                  "thscode": "000678.SZ",
+                  "ticker": "000678",
+                  "name": "襄阳轴承",
+                  "board_num": 2,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "601218.SH",
+                  "ticker": "601218",
+                  "name": "吉鑫科技",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "603278.SH",
+                  "ticker": "603278",
+                  "name": "大业股份",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                }
+              ],
+              "three_board": [
+                {
+                  "thscode": "603949.SH",
+                  "ticker": "603949",
+                  "name": "雪龙集团",
+                  "board_num": 3,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "600802.SH",
+                  "ticker": "600802",
+                  "name": "福建水泥",
+                  "board_num": 3,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "603396.SH",
+                  "ticker": "603396",
+                  "name": "金辰股份",
+                  "board_num": 3,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                }
+              ],
+              "four_board": [],
+              "five_board": [
+                {
+                  "thscode": "600825.SH",
+                  "ticker": "600825",
+                  "name": "新华传媒",
+                  "board_num": 5,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                }
+              ],
+              "six_board": [],
+              "seven_over": []
+            }
+          },
+          {
+            "date": "2026-09-24",
+            "boards": {
+              "two_board": [
+                {
+                  "thscode": "603949.SH",
+                  "ticker": "603949",
+                  "name": "雪龙集团",
+                  "board_num": 2,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "600802.SH",
+                  "ticker": "600802",
+                  "name": "福建水泥",
+                  "board_num": 2,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "603396.SH",
+                  "ticker": "603396",
+                  "name": "金辰股份",
+                  "board_num": 2,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "600843.SH",
+                  "ticker": "600843",
+                  "name": "上工申贝",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "002819.SZ",
+                  "ticker": "002819",
+                  "name": "东方中科",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "000850.SZ",
+                  "ticker": "000850",
+                  "name": "华茂股份",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "002119.SZ",
+                  "ticker": "002119",
+                  "name": "康强电子",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "002909.SZ",
+                  "ticker": "002909",
+                  "name": "集泰股份",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                }
+              ],
+              "three_board": [
+                {
+                  "thscode": "002238.SZ",
+                  "ticker": "002238",
+                  "name": "天威视讯",
+                  "board_num": 3,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                }
+              ],
+              "four_board": [
+                {
+                  "thscode": "600825.SH",
+                  "ticker": "600825",
+                  "name": "新华传媒",
+                  "board_num": 4,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "002614.SZ",
+                  "ticker": "002614",
+                  "name": "奥佳华",
+                  "board_num": 4,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "001234.SZ",
+                  "ticker": "001234",
+                  "name": "泰慕士",
+                  "board_num": 4,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                }
+              ],
+              "five_board": [
+                {
+                  "thscode": "601811.SH",
+                  "ticker": "601811",
+                  "name": "新华文轩",
+                  "board_num": 5,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                }
+              ],
+              "six_board": [],
+              "seven_over": []
+            }
+          },
+          {
+            "date": "2026-09-23",
+            "boards": {
+              "two_board": [
+                {
+                  "thscode": "002238.SZ",
+                  "ticker": "002238",
+                  "name": "天威视讯",
+                  "board_num": 2,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "600418.SH",
+                  "ticker": "600418",
+                  "name": "江淮汽车",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "605058.SH",
+                  "ticker": "605058",
+                  "name": "澳弘电子",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                }
+              ],
+              "three_board": [
+                {
+                  "thscode": "600825.SH",
+                  "ticker": "600825",
+                  "name": "新华传媒",
+                  "board_num": 3,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "002614.SZ",
+                  "ticker": "002614",
+                  "name": "奥佳华",
+                  "board_num": 3,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "001234.SZ",
+                  "ticker": "001234",
+                  "name": "泰慕士",
+                  "board_num": 3,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "600503.SH",
+                  "ticker": "600503",
+                  "name": "华丽家族",
+                  "board_num": 3,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "600743.SH",
+                  "ticker": "600743",
+                  "name": "华远控股",
+                  "board_num": 3,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "603636.SH",
+                  "ticker": "603636",
+                  "name": "南威软件",
+                  "board_num": 3,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "000560.SZ",
+                  "ticker": "000560",
+                  "name": "我爱我家",
+                  "board_num": 3,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                }
+              ],
+              "four_board": [
+                {
+                  "thscode": "601811.SH",
+                  "ticker": "601811",
+                  "name": "新华文轩",
+                  "board_num": 4,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "000910.SZ",
+                  "ticker": "000910",
+                  "name": "大亚圣象",
+                  "board_num": 4,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                }
+              ],
+              "five_board": [],
+              "six_board": [],
+              "seven_over": []
+            }
+          },
+          {
+            "date": "2026-09-22",
+            "boards": {
+              "two_board": [
+                {
+                  "thscode": "600825.SH",
+                  "ticker": "600825",
+                  "name": "新华传媒",
+                  "board_num": 2,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "002614.SZ",
+                  "ticker": "002614",
+                  "name": "奥佳华",
+                  "board_num": 2,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "001234.SZ",
+                  "ticker": "001234",
+                  "name": "泰慕士",
+                  "board_num": 2,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "600503.SH",
+                  "ticker": "600503",
+                  "name": "华丽家族",
+                  "board_num": 2,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "600743.SH",
+                  "ticker": "600743",
+                  "name": "华远控股",
+                  "board_num": 2,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "603636.SH",
+                  "ticker": "603636",
+                  "name": "南威软件",
+                  "board_num": 2,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "000560.SZ",
+                  "ticker": "000560",
+                  "name": "我爱我家",
+                  "board_num": 2,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "002259.SZ",
+                  "ticker": "002259",
+                  "name": "升达林业",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "300110.SZ",
+                  "ticker": "300110",
+                  "name": "华仁药业",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "000607.SZ",
+                  "ticker": "000607",
+                  "name": "华媒控股",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "600664.SH",
+                  "ticker": "600664",
+                  "name": "哈药股份",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "002178.SZ",
+                  "ticker": "002178",
+                  "name": "延华智能",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "000756.SZ",
+                  "ticker": "000756",
+                  "name": "新华制药",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "603020.SH",
+                  "ticker": "603020",
+                  "name": "爱普股份",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "600721.SH",
+                  "ticker": "600721",
+                  "name": "百花医药",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "002303.SZ",
+                  "ticker": "002303",
+                  "name": "美盈森",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "603580.SH",
+                  "ticker": "603580",
+                  "name": "艾艾精工",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                }
+              ],
+              "three_board": [
+                {
+                  "thscode": "601811.SH",
+                  "ticker": "601811",
+                  "name": "新华文轩",
+                  "board_num": 3,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "000910.SZ",
+                  "ticker": "000910",
+                  "name": "大亚圣象",
+                  "board_num": 3,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "001317.SZ",
+                  "ticker": "001317",
+                  "name": "三羊马",
+                  "board_num": 3,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "603068.SH",
+                  "ticker": "603068",
+                  "name": "博通集成",
+                  "board_num": 3,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                }
+              ],
+              "four_board": [
+                {
+                  "thscode": "000504.SZ",
+                  "ticker": "000504",
+                  "name": "南华生物",
+                  "board_num": 4,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                }
+              ],
+              "five_board": [
+                {
+                  "thscode": "603230.SH",
+                  "ticker": "603230",
+                  "name": "内蒙新华",
+                  "board_num": 5,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                }
+              ],
+              "six_board": [
+                {
+                  "thscode": "001216.SZ",
+                  "ticker": "001216",
+                  "name": "华瓷股份",
+                  "board_num": 6,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                }
+              ],
+              "seven_over": []
+            }
+          },
+          {
+            "date": "2026-09-21",
+            "boards": {
+              "two_board": [
+                {
+                  "thscode": "601811.SH",
+                  "ticker": "601811",
+                  "name": "新华文轩",
+                  "board_num": 2,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "000910.SZ",
+                  "ticker": "000910",
+                  "name": "大亚圣象",
+                  "board_num": 2,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "001317.SZ",
+                  "ticker": "001317",
+                  "name": "三羊马",
+                  "board_num": 2,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "603068.SH",
+                  "ticker": "603068",
+                  "name": "博通集成",
+                  "board_num": 2,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "601579.SH",
+                  "ticker": "601579",
+                  "name": "会稽山",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "000532.SZ",
+                  "ticker": "000532",
+                  "name": "华金资本",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "601086.SH",
+                  "ticker": "601086",
+                  "name": "国芳集团",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "603001.SH",
+                  "ticker": "603001",
+                  "name": "奥康国际",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "002589.SZ",
+                  "ticker": "002589",
+                  "name": "瑞康医药",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "001376.SZ",
+                  "ticker": "001376",
+                  "name": "百通能源",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "600606.SH",
+                  "ticker": "600606",
+                  "name": "绿地控股",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "603316.SH",
+                  "ticker": "603316",
+                  "name": "诚邦股份",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "601123.SH",
+                  "ticker": "601123",
+                  "name": "马矿股份",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                }
+              ],
+              "three_board": [
+                {
+                  "thscode": "000504.SZ",
+                  "ticker": "000504",
+                  "name": "南华生物",
+                  "board_num": 3,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "600448.SH",
+                  "ticker": "600448",
+                  "name": "华纺股份",
+                  "board_num": 3,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "002453.SZ",
+                  "ticker": "002453",
+                  "name": "华软科技",
+                  "board_num": 3,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "600127.SH",
+                  "ticker": "600127",
+                  "name": "金健米业",
+                  "board_num": 3,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "600630.SH",
+                  "ticker": "600630",
+                  "name": "龙头股份",
+                  "board_num": 3,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                }
+              ],
+              "four_board": [
+                {
+                  "thscode": "603230.SH",
+                  "ticker": "603230",
+                  "name": "内蒙新华",
+                  "board_num": 4,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "002285.SZ",
+                  "ticker": "002285",
+                  "name": "世联行",
+                  "board_num": 4,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                }
+              ],
+              "five_board": [
+                {
+                  "thscode": "001216.SZ",
+                  "ticker": "001216",
+                  "name": "华瓷股份",
+                  "board_num": 5,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                }
+              ],
+              "six_board": [],
+              "seven_over": []
+            }
+          },
+          {
+            "date": "2026-09-18",
+            "boards": {
+              "two_board": [
+                {
+                  "thscode": "000504.SZ",
+                  "ticker": "000504",
+                  "name": "南华生物",
+                  "board_num": 2,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "600448.SH",
+                  "ticker": "600448",
+                  "name": "华纺股份",
+                  "board_num": 2,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "002453.SZ",
+                  "ticker": "002453",
+                  "name": "华软科技",
+                  "board_num": 2,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "600127.SH",
+                  "ticker": "600127",
+                  "name": "金健米业",
+                  "board_num": 2,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "600630.SH",
+                  "ticker": "600630",
+                  "name": "龙头股份",
+                  "board_num": 2,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "002836.SZ",
+                  "ticker": "002836",
+                  "name": "新宏泽",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "603626.SH",
+                  "ticker": "603626",
+                  "name": "科森科技",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "301390.SZ",
+                  "ticker": "301390",
+                  "name": "经纬股份",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                }
+              ],
+              "three_board": [
+                {
+                  "thscode": "603230.SH",
+                  "ticker": "603230",
+                  "name": "内蒙新华",
+                  "board_num": 3,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "002285.SZ",
+                  "ticker": "002285",
+                  "name": "世联行",
+                  "board_num": 3,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                }
+              ],
+              "four_board": [
+                {
+                  "thscode": "001216.SZ",
+                  "ticker": "001216",
+                  "name": "华瓷股份",
+                  "board_num": 4,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "603248.SH",
+                  "ticker": "603248",
+                  "name": "锡华科技",
+                  "board_num": 4,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                }
+              ],
+              "five_board": [],
+              "six_board": [],
+              "seven_over": []
+            }
+          },
+          {
+            "date": "2026-09-17",
+            "boards": {
+              "two_board": [
+                {
+                  "thscode": "603230.SH",
+                  "ticker": "603230",
+                  "name": "内蒙新华",
+                  "board_num": 2,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "002285.SZ",
+                  "ticker": "002285",
+                  "name": "世联行",
+                  "board_num": 2,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "600371.SH",
+                  "ticker": "600371",
+                  "name": "万向德农",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "003001.SZ",
+                  "ticker": "003001",
+                  "name": "中岩大地",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "002655.SZ",
+                  "ticker": "002655",
+                  "name": "共达电声",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                }
+              ],
+              "three_board": [
+                {
+                  "thscode": "001216.SZ",
+                  "ticker": "001216",
+                  "name": "华瓷股份",
+                  "board_num": 3,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "603248.SH",
+                  "ticker": "603248",
+                  "name": "锡华科技",
+                  "board_num": 3,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "003026.SZ",
+                  "ticker": "003026",
+                  "name": "中晶科技",
+                  "board_num": 3,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                }
+              ],
+              "four_board": [],
+              "five_board": [
+                {
+                  "thscode": "605058.SH",
+                  "ticker": "605058",
+                  "name": "澳弘电子",
+                  "board_num": 5,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                }
+              ],
+              "six_board": [],
+              "seven_over": []
+            }
+          },
+          {
+            "date": "2026-09-16",
+            "boards": {
+              "two_board": [
+                {
+                  "thscode": "001216.SZ",
+                  "ticker": "001216",
+                  "name": "华瓷股份",
+                  "board_num": 2,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "603248.SH",
+                  "ticker": "603248",
+                  "name": "锡华科技",
+                  "board_num": 2,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "003026.SZ",
+                  "ticker": "003026",
+                  "name": "中晶科技",
+                  "board_num": 2,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "601579.SH",
+                  "ticker": "601579",
+                  "name": "会稽山",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "603082.SH",
+                  "ticker": "603082",
+                  "name": "北自科技",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "002631.SZ",
+                  "ticker": "002631",
+                  "name": "德尔未来",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "002846.SZ",
+                  "ticker": "002846",
+                  "name": "英联股份",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "002584.SZ",
+                  "ticker": "002584",
+                  "name": "西陇科学",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "002491.SZ",
+                  "ticker": "002491",
+                  "name": "通鼎互联",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                }
+              ],
+              "three_board": [
+                {
+                  "thscode": "688004.SH",
+                  "ticker": "688004",
+                  "name": "博汇科技",
+                  "board_num": 3,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                }
+              ],
+              "four_board": [
+                {
+                  "thscode": "605058.SH",
+                  "ticker": "605058",
+                  "name": "澳弘电子",
+                  "board_num": 4,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                }
+              ],
+              "five_board": [],
+              "six_board": [
+                {
+                  "thscode": "000993.SZ",
+                  "ticker": "000993",
+                  "name": "闽东电力",
+                  "board_num": 6,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                }
+              ],
+              "seven_over": []
+            }
+          },
+          {
+            "date": "2026-09-15",
+            "boards": {
+              "two_board": [
+                {
+                  "thscode": "688004.SH",
+                  "ticker": "688004",
+                  "name": "博汇科技",
+                  "board_num": 2,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "002232.SZ",
+                  "ticker": "002232",
+                  "name": "启明信息",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "603090.SH",
+                  "ticker": "603090",
+                  "name": "宏盛股份",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                }
+              ],
+              "three_board": [
+                {
+                  "thscode": "605058.SH",
+                  "ticker": "605058",
+                  "name": "澳弘电子",
+                  "board_num": 3,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "002585.SZ",
+                  "ticker": "002585",
+                  "name": "双星新材",
+                  "board_num": 3,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                }
+              ],
+              "four_board": [
+                {
+                  "thscode": "002912.SZ",
+                  "ticker": "002912",
+                  "name": "中新赛克",
+                  "board_num": 4,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                }
+              ],
+              "five_board": [
+                {
+                  "thscode": "000993.SZ",
+                  "ticker": "000993",
+                  "name": "闽东电力",
+                  "board_num": 5,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                }
+              ],
+              "six_board": [],
+              "seven_over": []
+            }
+          },
+          {
+            "date": "2026-09-14",
+            "boards": {
+              "two_board": [
+                {
+                  "thscode": "605058.SH",
+                  "ticker": "605058",
+                  "name": "澳弘电子",
+                  "board_num": 2,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "002585.SZ",
+                  "ticker": "002585",
+                  "name": "双星新材",
+                  "board_num": 2,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "603439.SH",
+                  "ticker": "603439",
+                  "name": "三力制药",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "600088.SH",
+                  "ticker": "600088",
+                  "name": "中视传媒",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "000980.SZ",
+                  "ticker": "000980",
+                  "name": "众泰汽车",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "605069.SH",
+                  "ticker": "605069",
+                  "name": "正和生态",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "002560.SZ",
+                  "ticker": "002560",
+                  "name": "通达股份",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                }
+              ],
+              "three_board": [
+                {
+                  "thscode": "002912.SZ",
+                  "ticker": "002912",
+                  "name": "中新赛克",
+                  "board_num": 3,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "600876.SH",
+                  "ticker": "600876",
+                  "name": "凯盛新能",
+                  "board_num": 3,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "000823.SZ",
+                  "ticker": "000823",
+                  "name": "超声电子",
+                  "board_num": 3,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                }
+              ],
+              "four_board": [
+                {
+                  "thscode": "000993.SZ",
+                  "ticker": "000993",
+                  "name": "闽东电力",
+                  "board_num": 4,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                }
+              ],
+              "five_board": [],
+              "six_board": [],
+              "seven_over": []
+            }
+          },
+          {
+            "date": "2026-09-11",
+            "boards": {
+              "two_board": [
+                {
+                  "thscode": "002912.SZ",
+                  "ticker": "002912",
+                  "name": "中新赛克",
+                  "board_num": 2,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "600876.SH",
+                  "ticker": "600876",
+                  "name": "凯盛新能",
+                  "board_num": 2,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "000823.SZ",
+                  "ticker": "000823",
+                  "name": "超声电子",
+                  "board_num": 2,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "002201.SZ",
+                  "ticker": "002201",
+                  "name": "九鼎新材",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                }
+              ],
+              "three_board": [
+                {
+                  "thscode": "000993.SZ",
+                  "ticker": "000993",
+                  "name": "闽东电力",
+                  "board_num": 3,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "603421.SH",
+                  "ticker": "603421",
+                  "name": "鼎信通讯",
+                  "board_num": 3,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                }
+              ],
+              "four_board": [
+                {
+                  "thscode": "002790.SZ",
+                  "ticker": "002790",
+                  "name": "瑞尔特",
+                  "board_num": 4,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                }
+              ],
+              "five_board": [],
+              "six_board": [],
+              "seven_over": []
+            }
+          },
+          {
+            "date": "2026-09-10",
+            "boards": {
+              "two_board": [
+                {
+                  "thscode": "000993.SZ",
+                  "ticker": "000993",
+                  "name": "闽东电力",
+                  "board_num": 2,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "603421.SH",
+                  "ticker": "603421",
+                  "name": "鼎信通讯",
+                  "board_num": 2,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "002377.SZ",
+                  "ticker": "002377",
+                  "name": "国创高新",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "600359.SH",
+                  "ticker": "600359",
+                  "name": "新农开发",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "000565.SZ",
+                  "ticker": "000565",
+                  "name": "渝三峡A",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "600192.SH",
+                  "ticker": "600192",
+                  "name": "长城电工",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                }
+              ],
+              "three_board": [
+                {
+                  "thscode": "002790.SZ",
+                  "ticker": "002790",
+                  "name": "瑞尔特",
+                  "board_num": 3,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "600792.SH",
+                  "ticker": "600792",
+                  "name": "云煤能源",
+                  "board_num": 3,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                }
+              ],
+              "four_board": [
+                {
+                  "thscode": "000978.SZ",
+                  "ticker": "000978",
+                  "name": "桂林旅游",
+                  "board_num": 4,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                }
+              ],
+              "five_board": [],
+              "six_board": [],
+              "seven_over": []
+            }
+          },
+          {
+            "date": "2026-09-09",
+            "boards": {
+              "two_board": [
+                {
+                  "thscode": "002790.SZ",
+                  "ticker": "002790",
+                  "name": "瑞尔特",
+                  "board_num": 2,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "600792.SH",
+                  "ticker": "600792",
+                  "name": "云煤能源",
+                  "board_num": 2,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "000930.SZ",
+                  "ticker": "000930",
+                  "name": "中粮科技",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "000980.SZ",
+                  "ticker": "000980",
+                  "name": "众泰汽车",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "605077.SH",
+                  "ticker": "605077",
+                  "name": "华康股份",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "000912.SZ",
+                  "ticker": "000912",
+                  "name": "泸天化",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "002349.SZ",
+                  "ticker": "002349",
+                  "name": "精华制药",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "002295.SZ",
+                  "ticker": "002295",
+                  "name": "精艺股份",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "000523.SZ",
+                  "ticker": "000523",
+                  "name": "红棉股份",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "002068.SZ",
+                  "ticker": "002068",
+                  "name": "黑猫股份",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                }
+              ],
+              "three_board": [
+                {
+                  "thscode": "000978.SZ",
+                  "ticker": "000978",
+                  "name": "桂林旅游",
+                  "board_num": 3,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "000759.SZ",
+                  "ticker": "000759",
+                  "name": "中百集团",
+                  "board_num": 3,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "603042.SH",
+                  "ticker": "603042",
+                  "name": "华脉科技",
+                  "board_num": 3,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "002470.SZ",
+                  "ticker": "002470",
+                  "name": "金正大",
+                  "board_num": 3,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                }
+              ],
+              "four_board": [],
+              "five_board": [
+                {
+                  "thscode": "600865.SH",
+                  "ticker": "600865",
+                  "name": "百大集团",
+                  "board_num": 5,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                }
+              ],
+              "six_board": [],
+              "seven_over": []
+            }
+          },
+          {
+            "date": "2026-09-08",
+            "boards": {
+              "two_board": [
+                {
+                  "thscode": "000978.SZ",
+                  "ticker": "000978",
+                  "name": "桂林旅游",
+                  "board_num": 2,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "000759.SZ",
+                  "ticker": "000759",
+                  "name": "中百集团",
+                  "board_num": 2,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "603042.SH",
+                  "ticker": "603042",
+                  "name": "华脉科技",
+                  "board_num": 2,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "002470.SZ",
+                  "ticker": "002470",
+                  "name": "金正大",
+                  "board_num": 2,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "601595.SH",
+                  "ticker": "601595",
+                  "name": "上海电影",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "002579.SZ",
+                  "ticker": "002579",
+                  "name": "中京电子",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "603679.SH",
+                  "ticker": "603679",
+                  "name": "华体科技",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "002980.SZ",
+                  "ticker": "002980",
+                  "name": "华盛昌",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "002172.SZ",
+                  "ticker": "002172",
+                  "name": "澳洋健康",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "603823.SH",
+                  "ticker": "603823",
+                  "name": "百合花",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "603999.SH",
+                  "ticker": "603999",
+                  "name": "读者传媒",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "002909.SZ",
+                  "ticker": "002909",
+                  "name": "集泰股份",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                }
+              ],
+              "three_board": [
+                {
+                  "thscode": "601949.SH",
+                  "ticker": "601949",
+                  "name": "中国出版",
+                  "board_num": 3,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "600354.SH",
+                  "ticker": "600354",
+                  "name": "敦煌种业",
+                  "board_num": 3,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "002702.SZ",
+                  "ticker": "002702",
+                  "name": "海欣食品",
+                  "board_num": 3,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                }
+              ],
+              "four_board": [
+                {
+                  "thscode": "600865.SH",
+                  "ticker": "600865",
+                  "name": "百大集团",
+                  "board_num": 4,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "600108.SH",
+                  "ticker": "600108",
+                  "name": "亚盛集团",
+                  "board_num": 4,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "002403.SZ",
+                  "ticker": "002403",
+                  "name": "爱仕达",
+                  "board_num": 4,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                }
+              ],
+              "five_board": [],
+              "six_board": [],
+              "seven_over": []
+            }
+          },
+          {
+            "date": "2026-09-07",
+            "boards": {
+              "two_board": [
+                {
+                  "thscode": "601949.SH",
+                  "ticker": "601949",
+                  "name": "中国出版",
+                  "board_num": 2,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "600354.SH",
+                  "ticker": "600354",
+                  "name": "敦煌种业",
+                  "board_num": 2,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "002702.SZ",
+                  "ticker": "002702",
+                  "name": "海欣食品",
+                  "board_num": 2,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "000798.SZ",
+                  "ticker": "000798",
+                  "name": "中水渔业",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "000428.SZ",
+                  "ticker": "000428",
+                  "name": "华天酒店",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "002564.SZ",
+                  "ticker": "002564",
+                  "name": "天沃科技",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "603696.SH",
+                  "ticker": "603696",
+                  "name": "安记食品",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "001366.SZ",
+                  "ticker": "001366",
+                  "name": "播恩集团",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "000735.SZ",
+                  "ticker": "000735",
+                  "name": "罗牛山",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                }
+              ],
+              "three_board": [
+                {
+                  "thscode": "600865.SH",
+                  "ticker": "600865",
+                  "name": "百大集团",
+                  "board_num": 3,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "600108.SH",
+                  "ticker": "600108",
+                  "name": "亚盛集团",
+                  "board_num": 3,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "002403.SZ",
+                  "ticker": "002403",
+                  "name": "爱仕达",
+                  "board_num": 3,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                }
+              ],
+              "four_board": [],
+              "five_board": [],
+              "six_board": [
+                {
+                  "thscode": "605577.SH",
+                  "ticker": "605577",
+                  "name": "龙版传媒",
+                  "board_num": 6,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                }
+              ],
+              "seven_over": []
+            }
+          },
+          {
+            "date": "2026-09-04",
+            "boards": {
+              "two_board": [
+                {
+                  "thscode": "600865.SH",
+                  "ticker": "600865",
+                  "name": "百大集团",
+                  "board_num": 2,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "600108.SH",
+                  "ticker": "600108",
+                  "name": "亚盛集团",
+                  "board_num": 2,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "002403.SZ",
+                  "ticker": "002403",
+                  "name": "爱仕达",
+                  "board_num": 2,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "605580.SH",
+                  "ticker": "605580",
+                  "name": "恒盛能源",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "605398.SH",
+                  "ticker": "605398",
+                  "name": "新炬网络",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "603162.SH",
+                  "ticker": "603162",
+                  "name": "海通发展",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                }
+              ],
+              "three_board": [],
+              "four_board": [],
+              "five_board": [
+                {
+                  "thscode": "605577.SH",
+                  "ticker": "605577",
+                  "name": "龙版传媒",
+                  "board_num": 5,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                }
+              ],
+              "six_board": [],
+              "seven_over": []
+            }
+          },
+          {
+            "date": "2026-09-03",
+            "boards": {
+              "two_board": [
+                {
+                  "thscode": "002059.SZ",
+                  "ticker": "002059",
+                  "name": "云南旅游",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "600657.SH",
+                  "ticker": "600657",
+                  "name": "信达地产",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "002708.SZ",
+                  "ticker": "002708",
+                  "name": "光洋股份",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "002297.SZ",
+                  "ticker": "002297",
+                  "name": "博云新材",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "002300.SZ",
+                  "ticker": "002300",
+                  "name": "太阳电缆",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "603270.SH",
+                  "ticker": "603270",
+                  "name": "金帝股份",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                }
+              ],
+              "three_board": [],
+              "four_board": [
+                {
+                  "thscode": "605577.SH",
+                  "ticker": "605577",
+                  "name": "龙版传媒",
+                  "board_num": 4,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "002909.SZ",
+                  "ticker": "002909",
+                  "name": "集泰股份",
+                  "board_num": 4,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                }
+              ],
+              "five_board": [
+                {
+                  "thscode": "601086.SH",
+                  "ticker": "601086",
+                  "name": "国芳集团",
+                  "board_num": 5,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                }
+              ],
+              "six_board": [],
+              "seven_over": []
+            }
+          },
+          {
+            "date": "2026-09-02",
+            "boards": {
+              "two_board": [
+                {
+                  "thscode": "601566.SH",
+                  "ticker": "601566",
+                  "name": "九牧王",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "600967.SH",
+                  "ticker": "600967",
+                  "name": "内蒙一机",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "603207.SH",
+                  "ticker": "603207",
+                  "name": "小方制药",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "002104.SZ",
+                  "ticker": "002104",
+                  "name": "恒宝股份",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "000635.SZ",
+                  "ticker": "000635",
+                  "name": "英力特",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "600828.SH",
+                  "ticker": "600828",
+                  "name": "茂业商业",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "600830.SH",
+                  "ticker": "600830",
+                  "name": "香溢融通",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                }
+              ],
+              "three_board": [
+                {
+                  "thscode": "605577.SH",
+                  "ticker": "605577",
+                  "name": "龙版传媒",
+                  "board_num": 3,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "002909.SZ",
+                  "ticker": "002909",
+                  "name": "集泰股份",
+                  "board_num": 3,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "600892.SH",
+                  "ticker": "600892",
+                  "name": "大晟文化",
+                  "board_num": 3,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "000892.SZ",
+                  "ticker": "000892",
+                  "name": "欢瑞世纪",
+                  "board_num": 3,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                }
+              ],
+              "four_board": [
+                {
+                  "thscode": "601086.SH",
+                  "ticker": "601086",
+                  "name": "国芳集团",
+                  "board_num": 4,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "003005.SZ",
+                  "ticker": "003005",
+                  "name": "竞业达",
+                  "board_num": 4,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                }
+              ],
+              "five_board": [],
+              "six_board": [],
+              "seven_over": []
+            }
+          },
+          {
+            "date": "2026-09-01",
+            "boards": {
+              "two_board": [
+                {
+                  "thscode": "605577.SH",
+                  "ticker": "605577",
+                  "name": "龙版传媒",
+                  "board_num": 2,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "002909.SZ",
+                  "ticker": "002909",
+                  "name": "集泰股份",
+                  "board_num": 2,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "600892.SH",
+                  "ticker": "600892",
+                  "name": "大晟文化",
+                  "board_num": 2,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "000892.SZ",
+                  "ticker": "000892",
+                  "name": "欢瑞世纪",
+                  "board_num": 2,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "603721.SH",
+                  "ticker": "603721",
+                  "name": "中广天择",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "001330.SZ",
+                  "ticker": "001330",
+                  "name": "博纳影业",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "603533.SH",
+                  "ticker": "603533",
+                  "name": "掌阅科技",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "300413.SZ",
+                  "ticker": "300413",
+                  "name": "芒果超媒",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "600121.SH",
+                  "ticker": "600121",
+                  "name": "郑州煤电",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                }
+              ],
+              "three_board": [
+                {
+                  "thscode": "601086.SH",
+                  "ticker": "601086",
+                  "name": "国芳集团",
+                  "board_num": 3,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "003005.SZ",
+                  "ticker": "003005",
+                  "name": "竞业达",
+                  "board_num": 3,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "000560.SZ",
+                  "ticker": "000560",
+                  "name": "我爱我家",
+                  "board_num": 3,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "600551.SH",
+                  "ticker": "600551",
+                  "name": "时代出版",
+                  "board_num": 3,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "002679.SZ",
+                  "ticker": "002679",
+                  "name": "福建金森",
+                  "board_num": 3,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                }
+              ],
+              "four_board": [
+                {
+                  "thscode": "600540.SH",
+                  "ticker": "600540",
+                  "name": "新赛股份",
+                  "board_num": 4,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                }
+              ],
+              "five_board": [],
+              "six_board": [
+                {
+                  "thscode": "600371.SH",
+                  "ticker": "600371",
+                  "name": "万向德农",
+                  "board_num": 6,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "002855.SZ",
+                  "ticker": "002855",
+                  "name": "捷荣技术",
+                  "board_num": 6,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                }
+              ],
+              "seven_over": [
+                {
+                  "thscode": "002084.SZ",
+                  "ticker": "002084",
+                  "name": "海鸥住工",
+                  "board_num": 7,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                }
+              ]
+            }
+          },
+          {
+            "date": "2026-08-31",
+            "boards": {
+              "two_board": [
+                {
+                  "thscode": "601086.SH",
+                  "ticker": "601086",
+                  "name": "国芳集团",
+                  "board_num": 2,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "003005.SZ",
+                  "ticker": "003005",
+                  "name": "竞业达",
+                  "board_num": 2,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "000560.SZ",
+                  "ticker": "000560",
+                  "name": "我爱我家",
+                  "board_num": 2,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "600551.SH",
+                  "ticker": "600551",
+                  "name": "时代出版",
+                  "board_num": 2,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "002679.SZ",
+                  "ticker": "002679",
+                  "name": "福建金森",
+                  "board_num": 2,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "603559.SH",
+                  "ticker": "603559",
+                  "name": "中通国脉",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "000011.SZ",
+                  "ticker": "000011",
+                  "name": "深物业A",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "600691.SH",
+                  "ticker": "600691",
+                  "name": "潞化科技",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "600227.SH",
+                  "ticker": "600227",
+                  "name": "赤天化",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "600722.SH",
+                  "ticker": "600722",
+                  "name": "金牛化工",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                }
+              ],
+              "three_board": [
+                {
+                  "thscode": "600540.SH",
+                  "ticker": "600540",
+                  "name": "新赛股份",
+                  "board_num": 3,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "002396.SZ",
+                  "ticker": "002396",
+                  "name": "星网锐捷",
+                  "board_num": 3,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "002886.SZ",
+                  "ticker": "002886",
+                  "name": "沃特股份",
+                  "board_num": 3,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "603269.SH",
+                  "ticker": "603269",
+                  "name": "海鸥股份",
+                  "board_num": 3,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                }
+              ],
+              "four_board": [
+                {
+                  "thscode": "000712.SZ",
+                  "ticker": "000712",
+                  "name": "锦龙股份",
+                  "board_num": 4,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                }
+              ],
+              "five_board": [
+                {
+                  "thscode": "600371.SH",
+                  "ticker": "600371",
+                  "name": "万向德农",
+                  "board_num": 5,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "002855.SZ",
+                  "ticker": "002855",
+                  "name": "捷荣技术",
+                  "board_num": 5,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                }
+              ],
+              "six_board": [
+                {
+                  "thscode": "002084.SZ",
+                  "ticker": "002084",
+                  "name": "海鸥住工",
+                  "board_num": 6,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                }
+              ],
+              "seven_over": []
+            }
+          },
+          {
+            "date": "2026-08-28",
+            "boards": {
+              "two_board": [
+                {
+                  "thscode": "600540.SH",
+                  "ticker": "600540",
+                  "name": "新赛股份",
+                  "board_num": 2,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "002396.SZ",
+                  "ticker": "002396",
+                  "name": "星网锐捷",
+                  "board_num": 2,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "002886.SZ",
+                  "ticker": "002886",
+                  "name": "沃特股份",
+                  "board_num": 2,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "603269.SH",
+                  "ticker": "603269",
+                  "name": "海鸥股份",
+                  "board_num": 2,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "600654.SH",
+                  "ticker": "600654",
+                  "name": "中安科",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "603011.SH",
+                  "ticker": "603011",
+                  "name": "合锻智能",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "600378.SH",
+                  "ticker": "600378",
+                  "name": "昊华科技",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "603900.SH",
+                  "ticker": "603900",
+                  "name": "莱绅通灵",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "600162.SH",
+                  "ticker": "600162",
+                  "name": "香江控股",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                }
+              ],
+              "three_board": [
+                {
+                  "thscode": "000712.SZ",
+                  "ticker": "000712",
+                  "name": "锦龙股份",
+                  "board_num": 3,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "600479.SH",
+                  "ticker": "600479",
+                  "name": "千金药业",
+                  "board_num": 3,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "002942.SZ",
+                  "ticker": "002942",
+                  "name": "新农股份",
+                  "board_num": 3,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                }
+              ],
+              "four_board": [
+                {
+                  "thscode": "600371.SH",
+                  "ticker": "600371",
+                  "name": "万向德农",
+                  "board_num": 4,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "002855.SZ",
+                  "ticker": "002855",
+                  "name": "捷荣技术",
+                  "board_num": 4,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "002742.SZ",
+                  "ticker": "002742",
+                  "name": "冀衡医药",
+                  "board_num": 4,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                }
+              ],
+              "five_board": [
+                {
+                  "thscode": "002084.SZ",
+                  "ticker": "002084",
+                  "name": "海鸥住工",
+                  "board_num": 5,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                }
+              ],
+              "six_board": [],
+              "seven_over": [
+                {
+                  "thscode": "000017.SZ",
+                  "ticker": "000017",
+                  "name": "深中华A",
+                  "board_num": 7,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                }
+              ]
+            }
+          },
+          {
+            "date": "2026-08-27",
+            "boards": {
+              "two_board": [
+                {
+                  "thscode": "000712.SZ",
+                  "ticker": "000712",
+                  "name": "锦龙股份",
+                  "board_num": 2,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "600479.SH",
+                  "ticker": "600479",
+                  "name": "千金药业",
+                  "board_num": 2,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "002942.SZ",
+                  "ticker": "002942",
+                  "name": "新农股份",
+                  "board_num": 2,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "002072.SZ",
+                  "ticker": "002072",
+                  "name": "凯瑞德",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "603618.SH",
+                  "ticker": "603618",
+                  "name": "杭电股份",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "000890.SZ",
+                  "ticker": "000890",
+                  "name": "法尔胜",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "600095.SH",
+                  "ticker": "600095",
+                  "name": "湘财股份",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "600969.SH",
+                  "ticker": "600969",
+                  "name": "郴电国际",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                }
+              ],
+              "three_board": [
+                {
+                  "thscode": "600371.SH",
+                  "ticker": "600371",
+                  "name": "万向德农",
+                  "board_num": 3,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "002855.SZ",
+                  "ticker": "002855",
+                  "name": "捷荣技术",
+                  "board_num": 3,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "002742.SZ",
+                  "ticker": "002742",
+                  "name": "冀衡医药",
+                  "board_num": 3,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "002418.SZ",
+                  "ticker": "002418",
+                  "name": "康盛股份",
+                  "board_num": 3,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "600103.SH",
+                  "ticker": "600103",
+                  "name": "青山纸业",
+                  "board_num": 3,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                }
+              ],
+              "four_board": [
+                {
+                  "thscode": "002084.SZ",
+                  "ticker": "002084",
+                  "name": "海鸥住工",
+                  "board_num": 4,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                }
+              ],
+              "five_board": [
+                {
+                  "thscode": "003040.SZ",
+                  "ticker": "003040",
+                  "name": "楚天龙",
+                  "board_num": 5,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                }
+              ],
+              "six_board": [
+                {
+                  "thscode": "000017.SZ",
+                  "ticker": "000017",
+                  "name": "深中华A",
+                  "board_num": 6,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                }
+              ],
+              "seven_over": []
+            }
+          },
+          {
+            "date": "2026-08-26",
+            "boards": {
+              "two_board": [
+                {
+                  "thscode": "600371.SH",
+                  "ticker": "600371",
+                  "name": "万向德农",
+                  "board_num": 2,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "002855.SZ",
+                  "ticker": "002855",
+                  "name": "捷荣技术",
+                  "board_num": 2,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "002742.SZ",
+                  "ticker": "002742",
+                  "name": "冀衡医药",
+                  "board_num": 2,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "002418.SZ",
+                  "ticker": "002418",
+                  "name": "康盛股份",
+                  "board_num": 2,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "600103.SH",
+                  "ticker": "600103",
+                  "name": "青山纸业",
+                  "board_num": 2,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "000428.SZ",
+                  "ticker": "000428",
+                  "name": "华天酒店",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "002949.SZ",
+                  "ticker": "002949",
+                  "name": "华阳国际",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "002703.SZ",
+                  "ticker": "002703",
+                  "name": "浙江世宝",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "002963.SZ",
+                  "ticker": "002963",
+                  "name": "豪尔赛",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "002094.SZ",
+                  "ticker": "002094",
+                  "name": "青岛金王",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                }
+              ],
+              "three_board": [
+                {
+                  "thscode": "002084.SZ",
+                  "ticker": "002084",
+                  "name": "海鸥住工",
+                  "board_num": 3,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                }
+              ],
+              "four_board": [
+                {
+                  "thscode": "003040.SZ",
+                  "ticker": "003040",
+                  "name": "楚天龙",
+                  "board_num": 4,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                }
+              ],
+              "five_board": [
+                {
+                  "thscode": "000017.SZ",
+                  "ticker": "000017",
+                  "name": "深中华A",
+                  "board_num": 5,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                }
+              ],
+              "six_board": [],
+              "seven_over": []
+            }
+          },
+          {
+            "date": "2026-08-25",
+            "boards": {
+              "two_board": [
+                {
+                  "thscode": "002084.SZ",
+                  "ticker": "002084",
+                  "name": "海鸥住工",
+                  "board_num": 2,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "600508.SH",
+                  "ticker": "600508",
+                  "name": "上海能源",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "002445.SZ",
+                  "ticker": "002445",
+                  "name": "中南文化",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "600984.SH",
+                  "ticker": "600984",
+                  "name": "建设机械",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "002041.SZ",
+                  "ticker": "002041",
+                  "name": "登海种业",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                }
+              ],
+              "three_board": [
+                {
+                  "thscode": "003040.SZ",
+                  "ticker": "003040",
+                  "name": "楚天龙",
+                  "board_num": 3,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "600785.SH",
+                  "ticker": "600785",
+                  "name": "新华百货",
+                  "board_num": 3,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                }
+              ],
+              "four_board": [
+                {
+                  "thscode": "000017.SZ",
+                  "ticker": "000017",
+                  "name": "深中华A",
+                  "board_num": 4,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                }
+              ],
+              "five_board": [
+                {
+                  "thscode": "002412.SZ",
+                  "ticker": "002412",
+                  "name": "汉森制药",
+                  "board_num": 5,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                }
+              ],
+              "six_board": [],
+              "seven_over": []
+            }
+          },
+          {
+            "date": "2026-08-24",
+            "boards": {
+              "two_board": [
+                {
+                  "thscode": "003040.SZ",
+                  "ticker": "003040",
+                  "name": "楚天龙",
+                  "board_num": 2,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "600785.SH",
+                  "ticker": "600785",
+                  "name": "新华百货",
+                  "board_num": 2,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "002017.SZ",
+                  "ticker": "002017",
+                  "name": "东信和平",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "603330.SH",
+                  "ticker": "603330",
+                  "name": "天洋新材",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "002716.SZ",
+                  "ticker": "002716",
+                  "name": "湖南白银",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "601212.SH",
+                  "ticker": "601212",
+                  "name": "白银有色",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                }
+              ],
+              "three_board": [
+                {
+                  "thscode": "000017.SZ",
+                  "ticker": "000017",
+                  "name": "深中华A",
+                  "board_num": 3,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "000931.SZ",
+                  "ticker": "000931",
+                  "name": "中关村",
+                  "board_num": 3,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "603958.SH",
+                  "ticker": "603958",
+                  "name": "哈森股份",
+                  "board_num": 3,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                }
+              ],
+              "four_board": [
+                {
+                  "thscode": "002412.SZ",
+                  "ticker": "002412",
+                  "name": "汉森制药",
+                  "board_num": 4,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                }
+              ],
+              "five_board": [],
+              "six_board": [],
+              "seven_over": []
+            }
+          },
+          {
+            "date": "2026-08-21",
+            "boards": {
+              "two_board": [
+                {
+                  "thscode": "000017.SZ",
+                  "ticker": "000017",
+                  "name": "深中华A",
+                  "board_num": 2,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "000931.SZ",
+                  "ticker": "000931",
+                  "name": "中关村",
+                  "board_num": 2,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "603958.SH",
+                  "ticker": "603958",
+                  "name": "哈森股份",
+                  "board_num": 2,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "002038.SZ",
+                  "ticker": "002038",
+                  "name": "双鹭药业",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "002903.SZ",
+                  "ticker": "002903",
+                  "name": "宇环数控",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "603626.SH",
+                  "ticker": "603626",
+                  "name": "科森科技",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "000710.SZ",
+                  "ticker": "000710",
+                  "name": "贝瑞基因",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "688137.SH",
+                  "ticker": "688137",
+                  "name": "近岸蛋白",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "002491.SZ",
+                  "ticker": "002491",
+                  "name": "通鼎互联",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "688356.SH",
+                  "ticker": "688356",
+                  "name": "键凯科技",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                }
+              ],
+              "three_board": [
+                {
+                  "thscode": "002412.SZ",
+                  "ticker": "002412",
+                  "name": "汉森制药",
+                  "board_num": 3,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                }
+              ],
+              "four_board": [],
+              "five_board": [],
+              "six_board": [],
+              "seven_over": []
+            }
+          },
+          {
+            "date": "2026-08-20",
+            "boards": {
+              "two_board": [
+                {
+                  "thscode": "002412.SZ",
+                  "ticker": "002412",
+                  "name": "汉森制药",
+                  "board_num": 2,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "603801.SH",
+                  "ticker": "603801",
+                  "name": "志邦家居",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "001277.SZ",
+                  "ticker": "001277",
+                  "name": "速达股份",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                }
+              ],
+              "three_board": [],
+              "four_board": [
+                {
+                  "thscode": "600127.SH",
+                  "ticker": "600127",
+                  "name": "金健米业",
+                  "board_num": 4,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                }
+              ],
+              "five_board": [],
+              "six_board": [],
+              "seven_over": []
+            }
+          },
+          {
+            "date": "2026-08-19",
+            "boards": {
+              "two_board": [
+                {
+                  "thscode": "600371.SH",
+                  "ticker": "600371",
+                  "name": "万向德农",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "000526.SZ",
+                  "ticker": "000526",
+                  "name": "学大教育",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "002953.SZ",
+                  "ticker": "002953",
+                  "name": "日丰股份",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "000020.SZ",
+                  "ticker": "000020",
+                  "name": "深华发A",
+                  "board_num": 2,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                }
+              ],
+              "three_board": [
+                {
+                  "thscode": "600127.SH",
+                  "ticker": "600127",
+                  "name": "金健米业",
+                  "board_num": 3,
+                  "seal_nextday": true,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "000505.SZ",
+                  "ticker": "000505",
+                  "name": "京粮控股",
+                  "board_num": 3,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                },
+                {
+                  "thscode": "603395.SH",
+                  "ticker": "603395",
+                  "name": "红四方",
+                  "board_num": 3,
+                  "seal_nextday": false,
+                  "sign_level": 0
+                }
+              ],
+              "four_board": [],
+              "five_board": [],
+              "six_board": [],
+              "seven_over": []
+            }
+          }
+        ]
+      },
+      "anomaly_analysis": [
+        {
+          "stock_name": "新华传媒",
+          "analysis_content": "1、据2026年9月19日公告，公司拟发行股份购买界面财联社100%股权，预计构成重大资产重组及关联交易。\n2、据2026年9月8日公告，标的公司经营范围包括互联网新闻信息服务、商务信息咨询、电子商务及广告发布等业务。\n3、据2026年9月19日公告，交易完成后公司控股股东仍为上海报业集团，实际控制人仍为上海市国资委；据2026年8月27日半年报，公司主营图书发行、报刊经营，拥有教材发行资源及连锁渠道优势。\n\n（免责声明：本内容由AI技术搜集公开信息总结生成，仅供参考，不构成投资建议，以上市公司公告为准）",
+          "keyword_list": [
+            "拟收购界面财联社",
+            "财经新媒体",
+            "上海国资"
+          ],
+          "thscode": "600825.SH",
+          "tag_name": "涨停"
+        },
+        {
+          "stock_name": "九阳股份",
+          "analysis_content": "1、据2025年年报，公司主营厨房小家电、水家电及炊具等产品，持续做强家庭厨房、公益厨房与太空厨房品牌资产。\n2、据2026年9月30日股票交易异常波动公告，公司持有深思考人工智能机器人科技7.92%股权，并参股享刻智能，涉及类脑人工智能及机器人领域，但相关投资处于早期阶段，对当期收入及利润无重大影响。\n3、据2026年9月29日华兴证券研报，公司将太空同源技术应用于加热净水器、不粘零涂层电饭煲及低嘌呤豆浆机等产品。\n\n（免责声明：本内容由AI技术搜集公开信息总结生成，仅供参考，不构成投资建议，以上市公司公告为准）",
+          "keyword_list": [
+            "厨房小家电",
+            "机器人投资",
+            "太空科技"
+          ],
+          "thscode": "002242.SZ",
+          "tag_name": "涨停"
+        },
+        {
+          "stock_name": "善水科技",
+          "analysis_content": "行业原因：\n据证券日报9月30日报道，分散染料价格较6月上涨超30%、活性染料上涨55%，叠加纺织行业“金九银十”备货旺季，需求复苏推动产业链景气上行。H酸价格较本轮起点上涨138%；落后产能出清、主力装置检修限产，导致现货库存低位、供需趋紧。\n公司原因：\n1、据中证网2026年9月28日报道，分散染料价格维持高位；据2026年8月25日半年报，公司主营染料中间体、农药及医药中间体业务。\n2、据2026年5月12日投资者关系管理信息，公司氯代吡啶连续化生产工艺可制取2-氯吡啶等产品，并通过副产物循环利用提升原材料使用效率、降低生产成本。\n3、据2026年8月25日半年报，公司上半年营收4.77亿元，同比增长56.35%；归母净利润8515.98万元，同比增长78.25%。\n\n（免责声明：本内容由AI技术搜集公开信息总结生成，仅供参考，不构成投资建议，以上市公司公告为准）",
+          "keyword_list": [
+            "染料中间体",
+            "氯代吡啶",
+            "业绩增长"
+          ],
+          "thscode": "301190.SZ",
+          "tag_name": "涨停"
+        },
+        {
+          "stock_name": "时代万恒",
+          "analysis_content": "1、据2026年8月22日半年报，公司主营新能源电池研发、生产和销售，涉及锂离子电池和镍氢电池，产品应用于电动工具、园林工具、个人护理等领域。\n2、据2026年4月9日年报，公司深耕圆柱锂离子电池，国内外重点客户销售数量同比增长，并完成多个型号产品试验与量产。\n3、据公司亮点，公司控股股东为辽宁时代万恒控股集团有限公司，最终控制人为辽宁省人民政府国有资产监督管理委员会。\n\n（免责声明：本内容由AI技术搜集公开信息总结生成，仅供参考，不构成投资建议，以上市公司公告为准）",
+          "keyword_list": [
+            "锂电池",
+            "镍氢电池",
+            "辽宁国资"
+          ],
+          "thscode": "600241.SH",
+          "tag_name": "涨停"
+        },
+        {
+          "stock_name": "紫竹高科",
+          "analysis_content": "1、据2026年9月7日投资者关系管理信息，紫江新材布局固态电池用铝塑膜，并与主要电池厂商持续保持研发合作。\n2、据2026年9月7日投资者关系管理信息，紫江新材2025年国内铝塑膜市场占有率达24%，销量排名国内第一，全球市场占有率达16%。\n3、据2026年9月7日投资者关系管理信息，紫江新材主要客户包括比亚迪、欣旺达、鹏辉能源等，上半年营收3.51亿元、净利润4518万元，韩国客户已实现小批量供货。\n\n（免责声明：本内容由AI技术搜集公开信息总结生成，仅供参考，不构成投资建议，以上市公司公告为准）",
+          "keyword_list": [
+            "固态电池",
+            "铝塑膜",
+            "龙头客户"
+          ],
+          "thscode": "002058.SZ",
+          "tag_name": "涨停"
+        },
+        {
+          "stock_name": "环球印务",
+          "analysis_content": "1、据2026年8月13日互动易，公司AI及智能化已应用于包装工艺设计、计划排产、质量视觉检验、智能立库和自动物流等环节。\n2、据2026年8月12日半年报，公司主营药用包装盒、铝管、说明书及消费品包装；据2026年5月20日业绩说明会，扩产暨绿色包装智能制造工业园一期已建成投产，产能利用情况良好。\n3、据2026年8月12日半年报，公司上半年归母净利润1072.70万元，同比扭亏为盈。\n\n（免责声明：本内容由AI技术搜集公开信息总结生成，仅供参考，不构成投资建议，以上市公司公告为准）",
+          "keyword_list": [
+            "医药包装",
+            "AI智能制造",
+            "业绩扭亏"
+          ],
+          "thscode": "002799.SZ",
+          "tag_name": "涨停"
+        },
+        {
+          "stock_name": "传艺科技",
+          "analysis_content": "1、据2026年3月31日年报，公司将固态电池研发和产业化作为未来发展战略，研发覆盖电芯及正负极材料。\n2、据2026年9月14日公告，公司新能源板块聚焦钠离子电池，涵盖电芯、正负极材料和电解液，产品应用于低速电动车、储能及AIDC等领域。\n3、据2026年4月15日业绩说明会，公司与客户积极配合，研发并生产适用于各类AI PC的输入类设备产品。\n\n（免责声明：本内容由AI技术搜集公开信息总结生成，仅供参考，不构成投资建议，以上市公司公告为准）",
+          "keyword_list": [
+            "固态电池",
+            "钠离子电池",
+            "AI PC键盘"
+          ],
+          "thscode": "002866.SZ",
+          "tag_name": "涨停"
+        },
+        {
+          "stock_name": "亚邦股份",
+          "analysis_content": "行业原因：\n据证券日报9月30日报道，分散染料价格较6月上涨超30%、活性染料上涨55%，叠加纺织行业“金九银十”备货旺季，需求复苏推动产业链景气上行。H酸价格较本轮起点上涨138%；落后产能出清、主力装置检修限产，导致现货库存低位、供需趋紧。\n公司原因：\n1、据证券日报2026年9月30日报道，分散染料及活性染料价格持续上涨；据2025年年报，公司主营蒽醌结构分散染料和还原染料，形成原材料、中间体及商品纵向一体化产业链。\n2、据2026年8月31日主要经营数据公告，公司上半年染料中间体平均售价同比上涨14.93%。\n3、据2026年8月31日提质增效重回报行动方案，公司上半年营业收入同比增长17.23%，扣非净利润同比增长1605.36%，主要受销售收入增长及降本节支推动。\n\n（免责声明：本内容由AI技术搜集公开信息总结生成，仅供参考，不构成投资建议，以上市公司公告为准）",
+          "keyword_list": [
+            "染料产业链",
+            "中间体涨价",
+            "业绩增长"
+          ],
+          "thscode": "603188.SH",
+          "tag_name": "涨停"
+        },
+        {
+          "stock_name": "园林股份",
+          "analysis_content": "1、据新华财经2026年9月28日报道，公司拟收购华澜微93.5031%股份并募集配套资金，交易预计构成重大资产重组，股票于9月29日复牌。 \n2、据新华财经2026年9月28日报道，华澜微主营存储控制器芯片及模组、阵列控制器芯片及模组的研发、设计及销售。 \n3、据2026年8月31日半年报，公司主营市政园林工程，具备园林景观设计与工程施工一体化能力。\n\n（免责声明：本内容由AI技术搜集公开信息总结生成，仅供参考，不构成投资建议，以上市公司公告为准）",
+          "keyword_list": [
+            "复牌",
+            "重大资产重组",
+            "存储芯片",
+            "园林工程"
+          ],
+          "thscode": "605303.SH",
+          "tag_name": "涨停"
+        },
+        {
+          "stock_name": "均瑶健康",
+          "analysis_content": "1、据2026年7月9日互动易，公司益生菌食品业务同比增长51.63%，持续向益生菌健康食饮赛道转型，布局益生菌饮品及食品。\n2、据2026年9月9日投资者关系活动记录表，公司上半年电商渠道收入1.77亿元，同比增长91.88%，覆盖综合电商、内容电商和社交电商。\n3、据2026年4月29日年报，公司常温乳酸菌饮料市场份额近20%，并重点布局益生菌健康饮品、健康食品及海外原料与产品市场。\n\n（免责声明：本内容由AI技术搜集公开信息总结生成，仅供参考，不构成投资建议，以上市公司公告为准）",
+          "keyword_list": [
+            "益生菌",
+            "乳酸菌饮料",
+            "电商增长"
+          ],
+          "thscode": "605388.SH",
+          "tag_name": "涨停"
+        },
+        {
+          "stock_name": "贝瑞基因",
+          "analysis_content": "1、据2026年8月24日半年报，GENOisi™智能平台持续推进医疗人工智能场景延伸，AI技术应用于检测服务及临床辅助诊疗。\n2、据2026年8月24日半年报，公司聚焦出生缺陷防控及罕见病诊断，布局生育健康和遗传病精准检测业务。\n3、据2026年8月24日半年报，公司已构建涵盖20余种单病种检测、两大专项检测及全基因组检测的三代HiFi测序临床产品矩阵。\n\n（免责声明：本内容由AI技术搜集公开信息总结生成，仅供参考，不构成投资建议，以上市公司公告为准）",
+          "keyword_list": [
+            "AI医疗",
+            "基因检测",
+            "三代测序"
+          ],
+          "thscode": "000710.SZ",
+          "tag_name": "涨停"
+        },
+        {
+          "stock_name": "依依股份",
+          "analysis_content": "1、据2026年9月30日公告，公司控股股东、实际控制人等拟以17元/股协议转让合计7.00%股份，受让方完成交割后将成为持股5%以上股东，但不导致公司控股股东、实际控制人变化。\n2、据2026年9月3日公告/互动易，公司参与制定宠物用品及宠物尿垫行业标准，相关技术积累可用于产品研发、质量管控及客户拓展。\n3、据2026年9月3日投资者关系活动记录表，柬埔寨一期年产能2.7亿片宠物垫，2026年上半年产能利用率较高且实现盈利，二期规划年产8亿片宠物垫及1亿片宠物尿裤。\n\n（免责声明：本内容由AI技术搜集公开信息总结生成，仅供参考，不构成投资建议，以上市公司公告为准）",
+          "keyword_list": [
+            "协议转让",
+            "宠物护理",
+            "海外产能"
+          ],
+          "thscode": "001206.SZ",
+          "tag_name": "涨停"
+        },
+        {
+          "stock_name": "亚联发展",
+          "analysis_content": "1、据2026年9月29日公告，控股子公司涉案金额1812.32万元，若中铁九局按二审判决履行付款义务，公司存在转回已计提坏账准备的可能，对本期利润产生一定影响。\n2、据2026年8月28日半年报，公司为国家电网及下辖电力公司提供通信信息技术解决方案，并服务于光伏电站、风电场等新能源场站。\n3、据2026年3月11日年报，公司还开展生物纤维素基材研发、生产及销售，相关子公司已取得医疗器械及化妆品生产资质。\n\n（免责声明：本内容由AI技术搜集公开信息总结生成，仅供参考，不构成投资建议，以上市公司公告为准）",
+          "keyword_list": [
+            "诉讼进展",
+            "智慧电网",
+            "生物纤维素"
+          ],
+          "thscode": "002316.SZ",
+          "tag_name": "涨停"
+        },
+        {
+          "stock_name": "新亚制程",
+          "analysis_content": "1、据2025年11月21日互动易，公司向清陶能源供应多体系电解液，并在高镍硅碳、半固态电池电解液等领域开展研发合作。\n2、据2026年6月25日投资者关系活动记录表，公司胶粘剂重点布局AI服务器电源热管理，可用于高功率电源粘接固定、导热散热，客户包括光宝、中达电子、天宝电子等。\n3、据2026年8月27日半年报，公司主营电子胶粘剂及锂离子电池材料，应用覆盖消费电子、新能源、储能及AI服务器等领域。\n\n（免责声明：本内容由AI技术搜集公开信息总结生成，仅供参考，不构成投资建议，以上市公司公告为准）",
+          "keyword_list": [
+            "固态电池",
+            "AI服务器电源",
+            "锂电材料"
+          ],
+          "thscode": "002388.SZ",
+          "tag_name": "涨停"
+        },
+        {
+          "stock_name": "古越龙山",
+          "analysis_content": "行业原因：\n中银证券9月22日研报指出，在商务场景大幅萎缩的背景下，“低度微醺、松弛健康”的新饮酒习惯逐渐成为未来行业的潜在增量。会稽山、古越龙山近期密集签约白酒大商，借助其渠道资源推进黄酒高端化与全国化，对股价形成一定催化。\n公司原因：\n1、据2026年9月2日互动易，公司聚焦国酿、青花醉等高端产品，持续精简产品线、控量稳价，2026年上半年毛利率提升至40.62%。\n2、据2026年8月4日互动易，公司加快全国化布局，2026年第一季度江浙沪以外市场收入占比超过45%，并拓展华润啤酒、中石化、盒马等跨界渠道。\n3、据2026年9月10日互动易，公司“无高低”产品上市以来销量突破500万瓶，持续拓展黄酒佐餐及年轻化消费场景。\n\n（免责声明：本内容由AI技术搜集公开信息总结生成，仅供参考，不构成投资建议，以上市公司公告为准）",
+          "keyword_list": [
+            "高端黄酒",
+            "全国化",
+            "年轻化"
+          ],
+          "thscode": "600059.SH",
+          "tag_name": "涨停"
+        },
+        {
+          "stock_name": "恒丰纸业",
+          "analysis_content": "1、据2026年8月26日半年报，公司已形成专用片基用纸、封口纸、成形纸、接装纸原纸及卷烟纸等新型烟草用纸系列产品。\n2、据2026年4月15日可持续发展报告，公司产品覆盖国内全部中烟工业公司，国内市场覆盖率100%，份额占中国烟草三分之一以上。\n3、据2026年8月26日半年报，公司上半年实现营业收入13.86亿元，同比增长2.42%；归母净利润1.12亿元，同比增长17.95%。\n\n（免责声明：本内容由AI技术搜集公开信息总结生成，仅供参考，不构成投资建议，以上市公司公告为准）",
+          "keyword_list": [
+            "新型烟草",
+            "卷烟纸",
+            "业绩增长"
+          ],
+          "thscode": "600356.SH",
+          "tag_name": "涨停"
+        },
+        {
+          "stock_name": "海南橡胶",
+          "analysis_content": "1、据2026年8月28日半年报，公司是全球最大的天然橡胶种植、加工、贸易企业，2025年加工量超131万吨、年销售贸易量337万吨。\n2、据2026年5月13日互动易，公司持续优化全球购销网络，强化与国内国际头部轮胎厂商合作，提升终端客户销售占比。\n3、据2026年4月29日年报，公司推进标准化胶园、特种胶生产及海外资源布局，持续完善天然橡胶全产业链。\n\n（免责声明：本内容由AI技术搜集公开信息总结生成，仅供参考，不构成投资建议，以上市公司公告为准）",
+          "keyword_list": [
+            "天然橡胶",
+            "全球龙头",
+            "全产业链"
+          ],
+          "thscode": "601118.SH",
+          "tag_name": "涨停"
+        },
+        {
+          "stock_name": "建业股份",
+          "analysis_content": "1、据2026年7月7日互动易，公司全资子公司生产7N级超纯氨，现有产能2.1万吨，产品应用于半导体等领域。\n2、据2026年9月10日投资者关系活动记录表，公司11万吨/年环保增塑剂项目处于施工图设计阶段，项目有序推进。\n3、据2025年年报，公司主营低碳脂肪胺、超纯氨等产品，在相关市场具有较高影响力，部分产品产能在同行业中占比较高。\n\n（免责声明：本内容由AI技术搜集公开信息总结生成，仅供参考，不构成投资建议，以上市公司公告为准）",
+          "keyword_list": [
+            "电子化学品",
+            "超纯氨",
+            "环保增塑剂"
+          ],
+          "thscode": "603948.SH",
+          "tag_name": "涨停"
+        },
+        {
+          "stock_name": "龙版传媒",
+          "analysis_content": "1、据2026年8月26日半年度报告，公司首部AI漫剧《穿越1988》完成170集制作上线，全网播放量突破1.2亿；据2026年9月8日股票交易异常波动暨风险提示公告，AI视频业务目前对公司业绩无显著影响。\n2、据2026年8月26日半年度主要经营数据公告，一般图书出版业务销售码洋同比增长23.79%，营业收入同比增长9.58%；公司主营图书、期刊及电子出版物出版、发行及印刷服务。\n3、据2026年8月26日半年度报告，公司控股股东为黑龙江出版集团有限公司，最终控制人为黑龙江省财政厅。\n\n（免责声明：本内容由AI技术搜集公开信息总结生成，仅供参考，不构成投资建议，以上市公司公告为准）",
+          "keyword_list": [
+            "AI漫剧",
+            "出版发行",
+            "黑龙江国资"
+          ],
+          "thscode": "605577.SH",
+          "tag_name": "涨停"
+        }
+      ]
+    }
+  }
+}
