@@ -2,15 +2,15 @@
   "schema_version": 1,
   "ok": true,
   "trade_date": "2026-09-30",
-  "updated_at": "2026-09-30T06:24:37.454642+00:00",
+  "updated_at": "2026-09-30T06:52:06.108167+00:00",
   "source": "同花顺官方 Financial-API",
   "principle": "仅保存事实数据，不在采集层生成周期标签或主观评分。",
   "market_ecology": {
-    "limit_up_count": 55,
+    "limit_up_count": 56,
     "limit_down_count": 11,
-    "broken_count": 10,
-    "broken_rate_pct": 15.38,
-    "seal_rate_pct": 84.62,
+    "broken_count": 11,
+    "broken_rate_pct": 16.42,
+    "seal_rate_pct": 83.58,
     "highest_board": 7,
     "promotion": {
       "eligible": 56,
@@ -46,10 +46,10 @@
     },
     "previous_limit_up_feedback": {
       "sample": 55,
-      "avg_change_pct": 1.46,
+      "avg_change_pct": 1.33,
       "median_change_pct": -0.68,
       "positive_rate_pct": 49.09,
-      "loss_below_minus_5_rate_pct": 12.73
+      "loss_below_minus_5_rate_pct": 16.36
     },
     "high_position_feedback": {
       "sample": 2,
@@ -60,25 +60,25 @@
     },
     "middle_position_feedback": {
       "sample": 8,
-      "avg_change_pct": 5.57,
+      "avg_change_pct": 5.37,
       "median_change_pct": 9.96,
       "positive_rate_pct": 62.5,
-      "loss_below_minus_5_rate_pct": 12.5
+      "loss_below_minus_5_rate_pct": 25.0
     },
     "first_board_feedback": {
       "sample": 45,
-      "avg_change_pct": 0.79,
-      "median_change_pct": -0.89,
+      "avg_change_pct": 0.68,
+      "median_change_pct": -0.78,
       "positive_rate_pct": 46.67,
-      "loss_below_minus_5_rate_pct": 11.11
+      "loss_below_minus_5_rate_pct": 13.33
     },
     "market_width": {
       "available": true,
       "complete": true,
       "coverage_pct": 99.68,
-      "up": 2761,
-      "down": 2637,
-      "flat": 162,
+      "up": 2581,
+      "down": 2823,
+      "flat": 156,
       "sample": 5560
     }
   },
@@ -92,10 +92,10 @@
       "first_limit": "09:25",
       "last_limit": "09:25",
       "open_count": null,
-      "seal_amount": 3427042500,
+      "seal_amount": 2806986700,
       "max_seal_amount": 8082889735.5,
-      "seal_retention_pct": 42.4,
-      "amount": 132217907
+      "seal_retention_pct": 34.73,
+      "amount": 139630370
     },
     {
       "code": "000678",
@@ -106,10 +106,10 @@
       "first_limit": "10:03",
       "last_limit": "10:03",
       "open_count": null,
-      "seal_amount": 147453870,
+      "seal_amount": 126409652,
       "max_seal_amount": 415219705.05,
-      "seal_retention_pct": 35.51,
-      "amount": 1050880100
+      "seal_retention_pct": 30.44,
+      "amount": 1062826550
     },
     {
       "code": "002242",
@@ -120,10 +120,10 @@
       "first_limit": "09:25",
       "last_limit": "09:25",
       "open_count": null,
-      "seal_amount": 177552500,
+      "seal_amount": 189063750,
       "max_seal_amount": 283191575.0,
-      "seal_retention_pct": 62.7,
-      "amount": 429190340
+      "seal_retention_pct": 66.76,
+      "amount": 435057840
     },
     {
       "code": "600241",
@@ -134,10 +134,10 @@
       "first_limit": "09:25",
       "last_limit": "09:25",
       "open_count": null,
-      "seal_amount": 197867120,
+      "seal_amount": 168996780,
       "max_seal_amount": 323512704.0,
-      "seal_retention_pct": 61.16,
-      "amount": 67720212
+      "seal_retention_pct": 52.24,
+      "amount": 71753040
     },
     {
       "code": "301190",
@@ -148,10 +148,10 @@
       "first_limit": "09:31",
       "last_limit": "09:31",
       "open_count": null,
-      "seal_amount": 136241490,
+      "seal_amount": 119138814,
       "max_seal_amount": 185267044.69,
-      "seal_retention_pct": 73.54,
-      "amount": 501997460
+      "seal_retention_pct": 64.31,
+      "amount": 506406070
     },
     {
       "code": "000011",
@@ -162,10 +162,10 @@
       "first_limit": "11:25",
       "last_limit": "11:25",
       "open_count": null,
-      "seal_amount": 79977360,
+      "seal_amount": 66400960,
       "max_seal_amount": 178292723.76,
-      "seal_retention_pct": 44.86,
-      "amount": 957084410
+      "seal_retention_pct": 37.24,
+      "amount": 962326590
     },
     {
       "code": "002058",
@@ -176,10 +176,10 @@
       "first_limit": "09:25",
       "last_limit": "09:25",
       "open_count": null,
-      "seal_amount": 80145500,
+      "seal_amount": 75707560,
       "max_seal_amount": 140557639.8,
-      "seal_retention_pct": 57.02,
-      "amount": 49203180
+      "seal_retention_pct": 53.86,
+      "amount": 50748480
     },
     {
       "code": "605303",
@@ -190,10 +190,10 @@
       "first_limit": "09:25",
       "last_limit": "09:25",
       "open_count": null,
-      "seal_amount": 253148050,
+      "seal_amount": 235954910,
       "max_seal_amount": 1268288114.0,
-      "seal_retention_pct": 19.96,
-      "amount": 4376382
+      "seal_retention_pct": 18.6,
+      "amount": 4760426
     },
     {
       "code": "605388",
@@ -204,10 +204,10 @@
       "first_limit": "09:25",
       "last_limit": "09:25",
       "open_count": null,
-      "seal_amount": 80202340,
+      "seal_amount": 72555168,
       "max_seal_amount": 130557799.8,
-      "seal_retention_pct": 61.43,
-      "amount": 83677561
+      "seal_retention_pct": 55.57,
+      "amount": 84411388
     },
     {
       "code": "002866",
@@ -218,18 +218,18 @@
       "first_limit": "09:30",
       "last_limit": "09:30",
       "open_count": null,
-      "seal_amount": 53823120,
+      "seal_amount": 49148580,
       "max_seal_amount": 165971520.0,
-      "seal_retention_pct": 32.43,
-      "amount": 569538390
+      "seal_retention_pct": 29.61,
+      "amount": 573028240
     }
   ],
   "themes": [
     {
       "code": "881126.TI",
       "name": "汽车零部件",
-      "change_pct": 0.0582,
-      "turnover_cny": 32053248000,
+      "change_pct": -0.077342,
+      "turnover_cny": 35404761000,
       "member_count": 276,
       "limit_up_count": 4,
       "first_board_count": 3,
@@ -265,8 +265,8 @@
     {
       "code": "881153.TI",
       "name": "房地产",
-      "change_pct": 0.896808,
-      "turnover_cny": 33404721000,
+      "change_pct": 0.897871,
+      "turnover_cny": 35780758000,
       "member_count": 88,
       "limit_up_count": 4,
       "first_board_count": 3,
@@ -302,8 +302,8 @@
     {
       "code": "881109.TI",
       "name": "化学制品",
-      "change_pct": 0.480072,
-      "turnover_cny": 24200030000,
+      "change_pct": 0.293607,
+      "turnover_cny": 27120226000,
       "member_count": 183,
       "limit_up_count": 4,
       "first_board_count": 3,
@@ -339,8 +339,8 @@
     {
       "code": "881281.TI",
       "name": "电池",
-      "change_pct": 0.969875,
-      "turnover_cny": 45232729000,
+      "change_pct": 0.785075,
+      "turnover_cny": 49752332000,
       "member_count": 107,
       "limit_up_count": 3,
       "first_board_count": 1,
@@ -369,10 +369,74 @@
       "source": "同花顺一级行业指数与成分股涨停交集"
     },
     {
+      "code": "881116.TI",
+      "name": "建筑装饰",
+      "change_pct": 0.30953,
+      "turnover_cny": 15748049000,
+      "member_count": 143,
+      "limit_up_count": 3,
+      "first_board_count": 2,
+      "second_board_count": 1,
+      "third_board_count": 0,
+      "high_board_count": 0,
+      "max_height": 2,
+      "active_days_3": null,
+      "leaders": [
+        {
+          "code": "002856",
+          "name": "*ST美芝",
+          "height": 1
+        },
+        {
+          "code": "605287",
+          "name": "德才股份",
+          "height": 1
+        },
+        {
+          "code": "605303",
+          "name": "园林股份",
+          "height": 2
+        }
+      ],
+      "source": "同花顺一级行业指数与成分股涨停交集"
+    },
+    {
+      "code": "884065.TI",
+      "name": "装饰园林",
+      "change_pct": 1.004858,
+      "turnover_cny": 3276067800,
+      "member_count": 32,
+      "limit_up_count": 3,
+      "first_board_count": 2,
+      "second_board_count": 1,
+      "third_board_count": 0,
+      "high_board_count": 0,
+      "max_height": 2,
+      "active_days_3": null,
+      "leaders": [
+        {
+          "code": "002856",
+          "name": "*ST美芝",
+          "height": 1
+        },
+        {
+          "code": "605287",
+          "name": "德才股份",
+          "height": 1
+        },
+        {
+          "code": "605303",
+          "name": "园林股份",
+          "height": 2
+        }
+      ],
+      "source": "同花顺一级行业指数与成分股涨停交集"
+    },
+    {
       "code": "881133.TI",
       "name": "饮料制造",
-      "change_pct": 2.034439,
-      "turnover_cny": 8049536800,
+      "change_pct": 1.929477,
+      "turnover_cny": 8875488300,
       "member_count": 47,
       "limit_up_count": 3,
       "first_board_count": 2,
@@ -403,8 +467,8 @@
     {
       "code": "881175.TI",
       "name": "医疗服务",
-      "change_pct": 3.256916,
-      "turnover_cny": 33730827000,
+      "change_pct": 2.946971,
+      "turnover_cny": 36360196000,
       "member_count": 56,
       "limit_up_count": 3,
       "first_board_count": 3,
@@ -435,8 +499,8 @@
     {
       "code": "881142.TI",
       "name": "生物制品",
-      "change_pct": 4.745714,
-      "turnover_cny": 21030309000,
+      "change_pct": 4.51939,
+      "turnover_cny": 22789657000,
       "member_count": 56,
       "limit_up_count": 3,
       "first_board_count": 3,
@@ -467,8 +531,8 @@
     {
       "code": "884176.TI",
       "name": "出版",
-      "change_pct": 0.592203,
-      "turnover_cny": 5011832000,
+      "change_pct": 0.229423,
+      "turnover_cny": 5526543700,
       "member_count": 28,
       "limit_up_count": 2,
       "first_board_count": 1,
@@ -494,8 +558,8 @@
     {
       "code": "881164.TI",
       "name": "文化传媒",
-      "change_pct": -0.567121,
-      "turnover_cny": 20208261000,
+      "change_pct": -0.866603,
+      "turnover_cny": 22585813000,
       "member_count": 85,
       "limit_up_count": 2,
       "first_board_count": 1,
@@ -521,8 +585,8 @@
     {
       "code": "884248.TI",
       "name": "房地产服务",
-      "change_pct": 1.029343,
-      "turnover_cny": 6388716100,
+      "change_pct": 0.775718,
+      "turnover_cny": 6833965200,
       "member_count": 14,
       "limit_up_count": 2,
       "first_board_count": 1,
@@ -546,37 +610,10 @@
       "source": "同花顺一级行业指数与成分股涨停交集"
     },
     {
-      "code": "881116.TI",
-      "name": "建筑装饰",
-      "change_pct": 0.404656,
-      "turnover_cny": 13976308000,
-      "member_count": 143,
-      "limit_up_count": 2,
-      "first_board_count": 1,
-      "second_board_count": 1,
-      "third_board_count": 0,
-      "high_board_count": 0,
-      "max_height": 2,
-      "active_days_3": null,
-      "leaders": [
-        {
-          "code": "605287",
-          "name": "德才股份",
-          "height": 1
-        },
-        {
-          "code": "605303",
-          "name": "园林股份",
-          "height": 2
-        }
-      ],
-      "source": "同花顺一级行业指数与成分股涨停交集"
-    },
-    {
       "code": "884310.TI",
       "name": "电池化学品",
-      "change_pct": 1.543947,
-      "turnover_cny": 11678025200,
+      "change_pct": 1.385831,
+      "turnover_cny": 12776915800,
       "member_count": 43,
       "limit_up_count": 2,
       "first_board_count": 1,
@@ -600,37 +637,10 @@
       "source": "同花顺一级行业指数与成分股涨停交集"
     },
     {
-      "code": "884065.TI",
-      "name": "装饰园林",
-      "change_pct": 0.984909,
-      "turnover_cny": 2990400000,
-      "member_count": 32,
-      "limit_up_count": 2,
-      "first_board_count": 1,
-      "second_board_count": 1,
-      "third_board_count": 0,
-      "high_board_count": 0,
-      "max_height": 2,
-      "active_days_3": null,
-      "leaders": [
-        {
-          "code": "605287",
-          "name": "德才股份",
-          "height": 1
-        },
-        {
-          "code": "605303",
-          "name": "园林股份",
-          "height": 2
-        }
-      ],
-      "source": "同花顺一级行业指数与成分股涨停交集"
-    },
-    {
       "code": "884245.TI",
       "name": "其他医疗服务",
-      "change_pct": 3.819529,
-      "turnover_cny": 3447941500,
+      "change_pct": 3.536899,
+      "turnover_cny": 3676555000,
       "member_count": 9,
       "limit_up_count": 2,
       "first_board_count": 2,
@@ -656,8 +666,8 @@
     {
       "code": "884240.TI",
       "name": "其他生物制品",
-      "change_pct": 5.11829,
-      "turnover_cny": 14709072000,
+      "change_pct": 4.884557,
+      "turnover_cny": 15863629000,
       "member_count": 35,
       "limit_up_count": 2,
       "first_board_count": 2,
@@ -683,8 +693,8 @@
     {
       "code": "881140.TI",
       "name": "化学制药",
-      "change_pct": 2.285671,
-      "turnover_cny": 41783266000,
+      "change_pct": 2.081004,
+      "turnover_cny": 45679060000,
       "member_count": 159,
       "limit_up_count": 2,
       "first_board_count": 2,
@@ -710,8 +720,8 @@
     {
       "code": "884219.TI",
       "name": "工控设备",
-      "change_pct": -0.032431,
-      "turnover_cny": 5338463200,
+      "change_pct": -0.15958,
+      "turnover_cny": 5914801800,
       "member_count": 34,
       "limit_up_count": 2,
       "first_board_count": 2,
@@ -737,8 +747,8 @@
     {
       "code": "884149.TI",
       "name": "热力",
-      "change_pct": 0.769098,
-      "turnover_cny": 2887532000,
+      "change_pct": 0.731458,
+      "turnover_cny": 3125875300,
       "member_count": 18,
       "limit_up_count": 2,
       "first_board_count": 2,
@@ -764,8 +774,8 @@
     {
       "code": "881145.TI",
       "name": "电力",
-      "change_pct": 0.682084,
-      "turnover_cny": 19380215000,
+      "change_pct": 0.686451,
+      "turnover_cny": 21998927000,
       "member_count": 110,
       "limit_up_count": 2,
       "first_board_count": 2,
@@ -791,8 +801,8 @@
     {
       "code": "881101.TI",
       "name": "种植业与林业",
-      "change_pct": 2.606665,
-      "turnover_cny": 8088134200,
+      "change_pct": 2.399458,
+      "turnover_cny": 8848249800,
       "member_count": 29,
       "limit_up_count": 2,
       "first_board_count": 2,
@@ -818,8 +828,8 @@
     {
       "code": "881171.TI",
       "name": "自动化设备",
-      "change_pct": -0.576003,
-      "turnover_cny": 21476088000,
+      "change_pct": -0.703763,
+      "turnover_cny": 24053799000,
       "member_count": 99,
       "limit_up_count": 2,
       "first_board_count": 2,
@@ -845,8 +855,8 @@
     {
       "code": "884289.TI",
       "name": "车身附件及饰件",
-      "change_pct": 0.928711,
-      "turnover_cny": 4807673800,
+      "change_pct": 0.879303,
+      "turnover_cny": 5279798300,
       "member_count": 46,
       "limit_up_count": 2,
       "first_board_count": 2,
@@ -872,8 +882,8 @@
     {
       "code": "881117.TI",
       "name": "通用设备",
-      "change_pct": -0.894195,
-      "turnover_cny": 37195582000,
+      "change_pct": -1.090459,
+      "turnover_cny": 41667081000,
       "member_count": 254,
       "limit_up_count": 2,
       "first_board_count": 2,
@@ -899,8 +909,8 @@
     {
       "code": "884075.TI",
       "name": "金属制品",
-      "change_pct": -0.401571,
-      "turnover_cny": 9954405100,
+      "change_pct": -0.568288,
+      "turnover_cny": 11033540200,
       "member_count": 75,
       "limit_up_count": 2,
       "first_board_count": 2,
@@ -926,8 +936,8 @@
     {
       "code": "884290.TI",
       "name": "底盘与发动机系统",
-      "change_pct": 0.025271,
-      "turnover_cny": 16237301000,
+      "change_pct": -0.174341,
+      "turnover_cny": 17841902000,
       "member_count": 113,
       "limit_up_count": 1,
       "first_board_count": 0,
@@ -948,8 +958,8 @@
     {
       "code": "884025.TI",
       "name": "其他化学原料",
-      "change_pct": 1.939,
-      "turnover_cny": 1582346000,
+      "change_pct": 1.853679,
+      "turnover_cny": 1722258000,
       "member_count": 17,
       "limit_up_count": 1,
       "first_board_count": 0,
@@ -970,8 +980,8 @@
     {
       "code": "881108.TI",
       "name": "化学原料",
-      "change_pct": 1.04537,
-      "turnover_cny": 7382402000,
+      "change_pct": 0.901648,
+      "turnover_cny": 8232980900,
       "member_count": 59,
       "limit_up_count": 1,
       "first_board_count": 0,
@@ -992,8 +1002,8 @@
     {
       "code": "881173.TI",
       "name": "小家电",
-      "change_pct": 0.391431,
-      "turnover_cny": 2783279800,
+      "change_pct": 0.203875,
+      "turnover_cny": 3100223000,
       "member_count": 26,
       "limit_up_count": 1,
       "first_board_count": 0,
@@ -1014,8 +1024,8 @@
     {
       "code": "884309.TI",
       "name": "锂电池",
-      "change_pct": 0.752591,
-      "turnover_cny": 24238992000,
+      "change_pct": 0.555347,
+      "turnover_cny": 26917784000,
       "member_count": 32,
       "limit_up_count": 1,
       "first_board_count": 0,
@@ -1036,8 +1046,8 @@
     {
       "code": "884268.TI",
       "name": "水务及水治理",
-      "change_pct": -0.00271491,
-      "turnover_cny": 3068404300,
+      "change_pct": -0.080436,
+      "turnover_cny": 3324087400,
       "member_count": 47,
       "limit_up_count": 1,
       "first_board_count": 0,
@@ -1058,8 +1068,8 @@
     {
       "code": "881124.TI",
       "name": "消费电子",
-      "change_pct": -1.262817,
-      "turnover_cny": 25376713000,
+      "change_pct": -1.408257,
+      "turnover_cny": 28522834000,
       "member_count": 96,
       "limit_up_count": 1,
       "first_board_count": 0,
@@ -1080,8 +1090,8 @@
     {
       "code": "884098.TI",
       "name": "消费电子零部件及组装",
-      "change_pct": -1.40846,
-      "turnover_cny": 23837558000,
+      "change_pct": -1.536363,
+      "turnover_cny": 26794516000,
       "member_count": 85,
       "limit_up_count": 1,
       "first_board_count": 0,
@@ -1102,8 +1112,8 @@
     {
       "code": "881181.TI",
       "name": "环境治理",
-      "change_pct": -0.267513,
-      "turnover_cny": 8017037900,
+      "change_pct": -0.358621,
+      "turnover_cny": 8914469200,
       "member_count": 111,
       "limit_up_count": 1,
       "first_board_count": 0,
@@ -1124,8 +1134,8 @@
     {
       "code": "884033.TI",
       "name": "纺织化学用品",
-      "change_pct": 2.432914,
-      "turnover_cny": 2658601300,
+      "change_pct": 2.195658,
+      "turnover_cny": 2943884200,
       "member_count": 13,
       "limit_up_count": 1,
       "first_board_count": 0,
@@ -1146,8 +1156,8 @@
     {
       "code": "884120.TI",
       "name": "软饮料",
-      "change_pct": 1.761811,
-      "turnover_cny": 2071926000,
+      "change_pct": 1.830155,
+      "turnover_cny": 2389566400,
       "member_count": 13,
       "limit_up_count": 1,
       "first_board_count": 0,
@@ -1168,8 +1178,8 @@
     {
       "code": "881271.TI",
       "name": "IT服务",
-      "change_pct": -0.79106,
-      "turnover_cny": 21167475000,
+      "change_pct": -0.934115,
+      "turnover_cny": 24016710000,
       "member_count": 129,
       "limit_up_count": 1,
       "first_board_count": 1,
@@ -1190,8 +1200,8 @@
     {
       "code": "884271.TI",
       "name": "个护用品",
-      "change_pct": 1.428583,
-      "turnover_cny": 1732123300,
+      "change_pct": 1.175994,
+      "turnover_cny": 1887947200,
       "member_count": 13,
       "limit_up_count": 1,
       "first_board_count": 1,
@@ -1212,8 +1222,8 @@
     {
       "code": "884125.TI",
       "name": "乳品",
-      "change_pct": 2.320695,
-      "turnover_cny": 2077278800,
+      "change_pct": 2.082323,
+      "turnover_cny": 2322376700,
       "member_count": 18,
       "limit_up_count": 1,
       "first_board_count": 1,
@@ -1234,8 +1244,8 @@
     {
       "code": "884202.TI",
       "name": "住宅开发",
-      "change_pct": 0.909617,
-      "turnover_cny": 22344524000,
+      "change_pct": 0.991433,
+      "turnover_cny": 23921504000,
       "member_count": 56,
       "limit_up_count": 1,
       "first_board_count": 1,
@@ -1256,8 +1266,8 @@
     {
       "code": "881279.TI",
       "name": "光伏设备",
-      "change_pct": 0.353325,
-      "turnover_cny": 14996713000,
+      "change_pct": 0.176248,
+      "turnover_cny": 16703994000,
       "member_count": 73,
       "limit_up_count": 1,
       "first_board_count": 1,
@@ -1278,8 +1288,8 @@
     {
       "code": "884096.TI",
       "name": "光学元件",
-      "change_pct": -0.604183,
-      "turnover_cny": 11086104000,
+      "change_pct": -0.735637,
+      "turnover_cny": 12062753800,
       "member_count": 24,
       "limit_up_count": 1,
       "first_board_count": 1,
@@ -1300,8 +1310,8 @@
     {
       "code": "881122.TI",
       "name": "光学光电子",
-      "change_pct": -0.805345,
-      "turnover_cny": 32137532000,
+      "change_pct": -0.995442,
+      "turnover_cny": 35369094000,
       "member_count": 107,
       "limit_up_count": 1,
       "first_board_count": 1,
@@ -1322,8 +1332,8 @@
     {
       "code": "884011.TI",
       "name": "其他农产品加工",
-      "change_pct": 2.312241,
-      "turnover_cny": 1431005300,
+      "change_pct": 2.167771,
+      "turnover_cny": 1595860800,
       "member_count": 12,
       "limit_up_count": 1,
       "first_board_count": 1,
@@ -1344,8 +1354,8 @@
     {
       "code": "884034.TI",
       "name": "其他化学制品",
-      "change_pct": 0.045063,
-      "turnover_cny": 7865416100,
+      "change_pct": -0.167807,
+      "turnover_cny": 8862015800,
       "member_count": 82,
       "limit_up_count": 1,
       "first_board_count": 1,
@@ -1364,32 +1374,10 @@
       "source": "同花顺一级行业指数与成分股涨停交集"
     },
     {
-      "code": "884062.TI",
-      "name": "其他建材",
-      "change_pct": 0.633985,
-      "turnover_cny": 3214808100,
-      "member_count": 24,
-      "limit_up_count": 1,
-      "first_board_count": 1,
-      "second_board_count": 0,
-      "third_board_count": 0,
-      "high_board_count": 0,
-      "max_height": 1,
-      "active_days_3": null,
-      "leaders": [
-        {
-          "code": "002043",
-          "name": "兔 宝 宝",
-          "height": 1
-        }
-      ],
-      "source": "同花顺一级行业指数与成分股涨停交集"
-    },
-    {
       "code": "881123.TI",
       "name": "其他电子",
-      "change_pct": -1.550735,
-      "turnover_cny": 10321899800,
+      "change_pct": -1.769195,
+      "turnover_cny": 11507710800,
       "member_count": 34,
       "limit_up_count": 1,
       "first_board_count": 1,
@@ -1410,8 +1398,8 @@
     {
       "code": "884003.TI",
       "name": "其他种植业",
-      "change_pct": 2.147783,
-      "turnover_cny": 1713810600,
+      "change_pct": 2.077541,
+      "turnover_cny": 1864193700,
       "member_count": 9,
       "limit_up_count": 1,
       "first_board_count": 1,
@@ -1432,8 +1420,8 @@
     {
       "code": "884119.TI",
       "name": "其他酒类",
-      "change_pct": 2.43174,
-      "turnover_cny": 3440320600,
+      "change_pct": 2.343584,
+      "turnover_cny": 3633766700,
       "member_count": 9,
       "limit_up_count": 1,
       "first_board_count": 1,
@@ -1454,8 +1442,8 @@
     {
       "code": "881103.TI",
       "name": "农产品加工",
-      "change_pct": 1.174247,
-      "turnover_cny": 5980103600,
+      "change_pct": 0.952816,
+      "turnover_cny": 6608382400,
       "member_count": 43,
       "limit_up_count": 1,
       "first_board_count": 1,
@@ -1476,8 +1464,8 @@
     {
       "code": "884144.TI",
       "name": "化学制剂",
-      "change_pct": 2.278232,
-      "turnover_cny": 31186205000,
+      "change_pct": 2.099589,
+      "turnover_cny": 34054963000,
       "member_count": 111,
       "limit_up_count": 1,
       "first_board_count": 1,
@@ -1498,8 +1486,8 @@
     {
       "code": "884244.TI",
       "name": "医疗研发外包",
-      "change_pct": 4.506957,
-      "turnover_cny": 27652076000,
+      "change_pct": 4.072463,
+      "turnover_cny": 29723380000,
       "member_count": 30,
       "limit_up_count": 1,
       "first_board_count": 1,
@@ -1520,8 +1508,8 @@
     {
       "code": "884143.TI",
       "name": "原料药",
-      "change_pct": 2.305785,
-      "turnover_cny": 10597308600,
+      "change_pct": 2.053245,
+      "turnover_cny": 11627458700,
       "member_count": 48,
       "limit_up_count": 1,
       "first_board_count": 1,
@@ -1542,8 +1530,8 @@
     {
       "code": "884212.TI",
       "name": "合成树脂",
-      "change_pct": -0.264086,
-      "turnover_cny": 1883667200,
+      "change_pct": -0.580839,
+      "turnover_cny": 2090451400,
       "member_count": 14,
       "limit_up_count": 1,
       "first_board_count": 1,
@@ -1564,8 +1552,8 @@
     {
       "code": "884247.TI",
       "name": "商业地产",
-      "change_pct": 1.351408,
-      "turnover_cny": 3468490400,
+      "change_pct": 1.339655,
+      "turnover_cny": 3706209200,
       "member_count": 7,
       "limit_up_count": 1,
       "first_board_count": 1,
@@ -1586,8 +1574,8 @@
     {
       "code": "881265.TI",
       "name": "塑料制品",
-      "change_pct": -0.973373,
-      "turnover_cny": 11491218700,
+      "change_pct": -1.195684,
+      "turnover_cny": 12995595700,
       "member_count": 78,
       "limit_up_count": 1,
       "first_board_count": 1,
@@ -1608,8 +1596,8 @@
     {
       "code": "881115.TI",
       "name": "建筑材料",
-      "change_pct": 0.622027,
-      "turnover_cny": 14104046000,
+      "change_pct": 0.487705,
+      "turnover_cny": 15952954000,
       "member_count": 73,
       "limit_up_count": 1,
       "first_board_count": 1,
@@ -1620,8 +1608,8 @@
       "active_days_3": null,
       "leaders": [
         {
-          "code": "002043",
-          "name": "兔 宝 宝",
+          "code": "002694",
+          "name": "*ST顾地",
           "height": 1
         }
       ],
@@ -1630,8 +1618,8 @@
     {
       "code": "884032.TI",
       "name": "民爆用品",
-      "change_pct": 0.789602,
-      "turnover_cny": 2751324600,
+      "change_pct": 0.653118,
+      "turnover_cny": 3007923900,
       "member_count": 13,
       "limit_up_count": 1,
       "first_board_count": 1,
@@ -1652,8 +1640,8 @@
     {
       "code": "884293.TI",
       "name": "汽车电子电气系统",
-      "change_pct": -0.520101,
-      "turnover_cny": 6229607600,
+      "change_pct": -0.642945,
+      "turnover_cny": 6847082200,
       "member_count": 43,
       "limit_up_count": 1,
       "first_board_count": 1,
@@ -1674,8 +1662,8 @@
     {
       "code": "884239.TI",
       "name": "疫苗",
-      "change_pct": 5.034182,
-      "turnover_cny": 5047304800,
+      "change_pct": 4.770239,
+      "turnover_cny": 5511780700,
       "member_count": 12,
       "limit_up_count": 1,
       "first_board_count": 1,
@@ -1696,8 +1684,8 @@
     {
       "code": "881273.TI",
       "name": "白酒",
-      "change_pct": 3.312788,
-      "turnover_cny": 9176610700,
+      "change_pct": 2.88453,
+      "turnover_cny": 10311956800,
       "member_count": 19,
       "limit_up_count": 1,
       "first_board_count": 1,
@@ -1718,8 +1706,8 @@
     {
       "code": "884160.TI",
       "name": "百货零售",
-      "change_pct": 0.973351,
-      "turnover_cny": 3932559100,
+      "change_pct": 0.809961,
+      "turnover_cny": 4509230700,
       "member_count": 41,
       "limit_up_count": 1,
       "first_board_count": 1,
@@ -1740,8 +1728,8 @@
     {
       "code": "884302.TI",
       "name": "硅料硅片",
-      "change_pct": 3.162915,
-      "turnover_cny": 1745680400,
+      "change_pct": 3.028767,
+      "turnover_cny": 1936036100,
       "member_count": 7,
       "limit_up_count": 1,
       "first_board_count": 1,
@@ -1762,8 +1750,8 @@
     {
       "code": "884001.TI",
       "name": "种子生产",
-      "change_pct": 4.921631,
-      "turnover_cny": 3327287100,
+      "change_pct": 4.430265,
+      "turnover_cny": 3648839700,
       "member_count": 10,
       "limit_up_count": 1,
       "first_board_count": 1,
@@ -1782,10 +1770,32 @@
       "source": "同花顺一级行业指数与成分股涨停交集"
     },
     {
+      "code": "884064.TI",
+      "name": "管材",
+      "change_pct": 2.863516,
+      "turnover_cny": 747393080,
+      "member_count": 7,
+      "limit_up_count": 1,
+      "first_board_count": 1,
+      "second_board_count": 0,
+      "third_board_count": 0,
+      "high_board_count": 0,
+      "max_height": 1,
+      "active_days_3": null,
+      "leaders": [
+        {
+          "code": "002694",
+          "name": "*ST顾地",
+          "height": 1
+        }
+      ],
+      "source": "同花顺一级行业指数与成分股涨停交集"
+    },
+    {
       "code": "881165.TI",
       "name": "综合",
-      "change_pct": 1.084809,
-      "turnover_cny": 2411801800,
+      "change_pct": 1.073109,
+      "turnover_cny": 2733190100,
       "member_count": 18,
       "limit_up_count": 1,
       "first_board_count": 1,
@@ -1806,8 +1816,8 @@
     {
       "code": "881182.TI",
       "name": "美容护理",
-      "change_pct": 1.567103,
-      "turnover_cny": 4427080200,
+      "change_pct": 1.332097,
+      "turnover_cny": 4866160600,
       "member_count": 34,
       "limit_up_count": 1,
       "first_board_count": 1,
@@ -1828,8 +1838,8 @@
     {
       "code": "881137.TI",
       "name": "造纸",
-      "change_pct": 1.127428,
-      "turnover_cny": 1583716800,
+      "change_pct": 0.981915,
+      "turnover_cny": 1772757900,
       "member_count": 24,
       "limit_up_count": 1,
       "first_board_count": 1,
@@ -1850,8 +1860,8 @@
     {
       "code": "881158.TI",
       "name": "零售",
-      "change_pct": 0.822722,
-      "turnover_cny": 7197071200,
+      "change_pct": 0.709299,
+      "turnover_cny": 8155339100,
       "member_count": 71,
       "limit_up_count": 1,
       "first_board_count": 1,
@@ -1872,8 +1882,8 @@
     {
       "code": "884307.TI",
       "name": "风电整机",
-      "change_pct": 2.579041,
-      "turnover_cny": 1886335200,
+      "change_pct": 2.280305,
+      "turnover_cny": 2085989300,
       "member_count": 6,
       "limit_up_count": 1,
       "first_board_count": 1,
@@ -1894,8 +1904,8 @@
     {
       "code": "881280.TI",
       "name": "风电设备",
-      "change_pct": 1.063499,
-      "turnover_cny": 12801509900,
+      "change_pct": 0.643498,
+      "turnover_cny": 14687861000,
       "member_count": 32,
       "limit_up_count": 1,
       "first_board_count": 1,
@@ -1916,8 +1926,8 @@
     {
       "code": "884210.TI",
       "name": "食品及饲料添加剂",
-      "change_pct": 2.115108,
-      "turnover_cny": 2850982800,
+      "change_pct": 1.95771,
+      "turnover_cny": 3219239300,
       "member_count": 25,
       "limit_up_count": 1,
       "first_board_count": 1,
@@ -1938,8 +1948,8 @@
     {
       "code": "884243.TI",
       "name": "体外诊断",
-      "change_pct": 2.537033,
-      "turnover_cny": 3670905600,
+      "change_pct": 2.269747,
+      "turnover_cny": 4044834900,
       "member_count": 40,
       "limit_up_count": 0,
       "first_board_count": 0,
@@ -1954,8 +1964,8 @@
     {
       "code": "884273.TI",
       "name": "医疗美容",
-      "change_pct": 3.148621,
-      "turnover_cny": 1017719690,
+      "change_pct": 2.670245,
+      "turnover_cny": 1123695740,
       "member_count": 5,
       "limit_up_count": 0,
       "first_board_count": 0,
@@ -1970,8 +1980,8 @@
     {
       "code": "884100.TI",
       "name": "商用载货车",
-      "change_pct": 2.091473,
-      "turnover_cny": 7837242100,
+      "change_pct": 2.147258,
+      "turnover_cny": 8235700500,
       "member_count": 8,
       "limit_up_count": 0,
       "first_board_count": 0,
@@ -1984,11 +1994,27 @@
       "source": "同花顺一级行业指数与成分股涨停交集"
     },
     {
-      "code": "884064.TI",
-      "name": "管材",
-      "change_pct": 2.526396,
-      "turnover_cny": 646765820,
-      "member_count": 7,
+      "code": "884251.TI",
+      "name": "城商行",
+      "change_pct": 1.865517,
+      "turnover_cny": 6365724200,
+      "member_count": 17,
+      "limit_up_count": 0,
+      "first_board_count": 0,
+      "second_board_count": 0,
+      "third_board_count": 0,
+      "high_board_count": 0,
+      "max_height": 0,
+      "active_days_3": null,
+      "leaders": [],
+      "source": "同花顺一级行业指数与成分股涨停交集"
+    },
+    {
+      "code": "881151.TI",
+      "name": "机场航运",
+      "change_pct": 1.89531,
+      "turnover_cny": 2574920500,
+      "member_count": 13,
       "limit_up_count": 0,
       "first_board_count": 0,
       "second_board_count": 0,
@@ -2002,8 +2028,8 @@
     {
       "code": "884002.TI",
       "name": "粮食种植",
-      "change_pct": 2.359424,
-      "turnover_cny": 295920010,
+      "change_pct": 2.181266,
+      "turnover_cny": 327309200,
       "member_count": 2,
       "limit_up_count": 0,
       "first_board_count": 0,
@@ -2016,26 +2042,10 @@
       "source": "同花顺一级行业指数与成分股涨停交集"
     },
     {
-      "code": "884022.TI",
-      "name": "纯碱",
-      "change_pct": 2.007574,
-      "turnover_cny": 462398650,
-      "member_count": 5,
-      "limit_up_count": 0,
-      "first_board_count": 0,
-      "second_board_count": 0,
-      "third_board_count": 0,
-      "high_board_count": 0,
-      "max_height": 0,
-      "active_days_3": null,
-      "leaders": [],
-      "source": "同花顺一级行业指数与成分股涨停交集"
-    },
-    {
-      "code": "884300.TI",
-      "name": "药店",
-      "change_pct": 1.862239,
-      "turnover_cny": 959130150,
+      "code": "884157.TI",
+      "name": "航空运输",
+      "change_pct": 2.305905,
+      "turnover_cny": 1968637300,
       "member_count": 8,
       "limit_up_count": 0,
       "first_board_count": 0,
@@ -2050,8 +2060,8 @@
     {
       "code": "884238.TI",
       "name": "血液制品",
-      "change_pct": 2.912128,
-      "turnover_cny": 1273928870,
+      "change_pct": 2.757739,
+      "turnover_cny": 1415231000,
       "member_count": 9,
       "limit_up_count": 0,
       "first_board_count": 0,
@@ -2065,8 +2075,8 @@
     }
   ],
   "intraday": {
-    "snapshot_count": 11,
-    "timeline_ready": false
+    "snapshot_count": 12,
+    "timeline_ready": true
   },
   "data_quality": {
     "daily_sessions": 20,
@@ -2099,10 +2109,8 @@
       "failed_dates": {},
       "complete": true
     },
-    "complete": false,
-    "missing": [
-      "完整日内情绪时间轴"
-    ],
-    "confidence": "medium"
+    "complete": true,
+    "missing": [],
+    "confidence": "high"
   }
 }
