@@ -5,12 +5,18 @@
   "latest_snapshot": "2026-09-30T09:41:33.852210+08:00",
   "session": "open_check",
   "source": "同花顺官方 Financial-API",
-  "status": "complete",
+  "status": "stale",
   "missing_fields": [],
-  "last_error": null,
+  "last_error": "HithinkError: /api/a-share/special-data/limit-up-pool: ReadTimeout: HTTPSConnectionPool(host='fuyao.aicubes.cn', port=443): Read timed out. (read timeout=18)",
+  "last_attempt": {
+    "snapshot_id": "2026-09-30-095514-r0",
+    "market_date": "2026-09-30",
+    "captured_at": "2026-09-30T09:55:14.017690+08:00",
+    "status": "failed"
+  },
   "datasets": {
     "market": {
-      "status": "complete",
+      "status": "stale",
       "updated_at": "2026-09-30T09:41:33.852210+08:00",
       "missing_fields": []
     }
