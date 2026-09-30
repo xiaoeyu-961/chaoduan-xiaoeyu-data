@@ -1,23 +1,17 @@
 {
   "schema_version": "market_status_v1",
   "market_date": "2026-09-30",
-  "latest_snapshot_id": "2026-09-30-094133-r0",
-  "latest_snapshot": "2026-09-30T09:41:33.852210+08:00",
-  "session": "open_check",
+  "latest_snapshot_id": "2026-09-30-102242-r0",
+  "latest_snapshot": "2026-09-30T10:22:42.146878+08:00",
+  "session": "morning_confirm",
   "source": "同花顺官方 Financial-API",
-  "status": "stale",
+  "status": "complete",
   "missing_fields": [],
-  "last_error": "HithinkError: /api/a-share/special-data/limit-up-pool: ReadTimeout: HTTPSConnectionPool(host='fuyao.aicubes.cn', port=443): Read timed out. (read timeout=18)",
-  "last_attempt": {
-    "snapshot_id": "2026-09-30-095514-r0",
-    "market_date": "2026-09-30",
-    "captured_at": "2026-09-30T09:55:14.017690+08:00",
-    "status": "failed"
-  },
+  "last_error": null,
   "datasets": {
     "market": {
-      "status": "stale",
-      "updated_at": "2026-09-30T09:41:33.852210+08:00",
+      "status": "complete",
+      "updated_at": "2026-09-30T10:22:42.146878+08:00",
       "missing_fields": []
     }
   }
