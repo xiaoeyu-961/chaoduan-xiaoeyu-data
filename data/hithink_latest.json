@@ -1,25 +1,42 @@
 {
   "source": "同花顺官方 Financial-API",
   "trade_date": "2026-10-08",
-  "updated_at": "2026-10-08T03:52:19.701531+00:00",
+  "updated_at": "2026-10-08T05:19:00.874744+00:00",
   "market_quote_total": 5578,
   "limit_up": {
-    "count": 21,
+    "count": 41,
     "complete": true
   },
   "broken": {
-    "count": 27,
+    "count": 30,
     "complete": true,
     "error": null
   },
   "limit_down": {
-    "count": 9,
+    "count": 10,
     "complete": true
   },
   "auction": {
     "data_status": "final",
     "auction_phase": "closed",
     "items": [
+      {
+        "thscode": "600825.SH",
+        "ticker": "600825",
+        "name": "新华传媒",
+        "auction_price": 11.39,
+        "auction_pct": 10.0483,
+        "auction_volume": 17761.01,
+        "auction_amount": 20229790.0,
+        "auction_unmatched": 5770798.0,
+        "auction_turnover_pct": 0.17,
+        "auction_yesterday_ratio_pct": 12.6996,
+        "auction_volume_ratio": 0.3868,
+        "pre_close_price": 10.35,
+        "open_price": 11.39,
+        "last_price": 11.39,
+        "float_market_cap": 11901272611.5
+      },
       {
         "thscode": "002242.SZ",
         "ticker": "002242",
@@ -36,6 +53,23 @@
         "open_price": 13.75,
         "last_price": 13.75,
         "float_market_cap": 10474277343.75
+      },
+      {
+        "thscode": "600241.SH",
+        "ticker": "600241",
+        "name": "时代万恒",
+        "auction_price": 9.72,
+        "auction_pct": 0.0,
+        "auction_volume": 58217.0,
+        "auction_amount": 56586924,
+        "auction_unmatched": -1896.0,
+        "auction_turnover_pct": 1.9781,
+        "auction_yesterday_ratio_pct": 75.7915,
+        "auction_volume_ratio": 3.1318,
+        "pre_close_price": 9.72,
+        "open_price": 9.72,
+        "last_price": 10.69,
+        "float_market_cap": 3146089609.35
       },
       {
         "thscode": "002058.SZ",
@@ -70,6 +104,74 @@
         "open_price": 16.76,
         "last_price": 18.59,
         "float_market_cap": 3416263739.46
+      },
+      {
+        "thscode": "605303.SH",
+        "ticker": "605303",
+        "name": "园林股份",
+        "auction_price": 31.53,
+        "auction_pct": 10.014,
+        "auction_volume": 383.0,
+        "auction_amount": 1207599.0,
+        "auction_unmatched": 340343.0,
+        "auction_turnover_pct": 0.0238,
+        "auction_yesterday_ratio_pct": 22.2158,
+        "auction_volume_ratio": 1.2557,
+        "pre_close_price": 28.66,
+        "open_price": 31.53,
+        "last_price": 31.53,
+        "float_market_cap": 5083815474.24
+      },
+      {
+        "thscode": "600663.SH",
+        "ticker": "600663",
+        "name": "陆家嘴",
+        "auction_price": 10.61,
+        "auction_pct": 4.9456,
+        "auction_volume": 19272.78,
+        "auction_amount": 20448420.0,
+        "auction_unmatched": 837.22,
+        "auction_turnover_pct": 0.049,
+        "auction_yesterday_ratio_pct": 5.2781,
+        "auction_volume_ratio": 2.4034,
+        "pre_close_price": 10.11,
+        "open_price": 10.61,
+        "last_price": 11.12,
+        "float_market_cap": 43750724590.479996
+      },
+      {
+        "thscode": "603906.SH",
+        "ticker": "603906",
+        "name": "龙蟠科技",
+        "auction_price": 19.3,
+        "auction_pct": 1.3655,
+        "auction_volume": 16460.0,
+        "auction_amount": 31767800.0,
+        "auction_unmatched": 232.0,
+        "auction_turnover_pct": 0.2924,
+        "auction_yesterday_ratio_pct": 4.4495,
+        "auction_volume_ratio": 15.7061,
+        "pre_close_price": 19.04,
+        "open_price": 19.3,
+        "last_price": 20.94,
+        "float_market_cap": 11789146772.820002
+      },
+      {
+        "thscode": "603928.SH",
+        "ticker": "603928",
+        "name": "兴业股份",
+        "auction_price": 13.43,
+        "auction_pct": 2.7544,
+        "auction_volume": 11491.0,
+        "auction_amount": 15432413,
+        "auction_unmatched": -6322.3,
+        "auction_turnover_pct": 0.3373,
+        "auction_yesterday_ratio_pct": 11.2198,
+        "auction_volume_ratio": 201.5965,
+        "pre_close_price": 13.07,
+        "open_price": 13.43,
+        "last_price": 14.38,
+        "float_market_cap": 4899323520
       },
       {
         "thscode": "000869.SZ",
@@ -276,23 +378,6 @@
         "float_market_cap": 3032834040.06
       },
       {
-        "thscode": "002923.SZ",
-        "ticker": "002923",
-        "name": "润都股份",
-        "auction_price": 12.13,
-        "auction_pct": 9.9728,
-        "auction_volume": 41323.0,
-        "auction_amount": 50124799,
-        "auction_unmatched": -456.0,
-        "auction_turnover_pct": 1.6013,
-        "auction_yesterday_ratio_pct": 61.3341,
-        "auction_volume_ratio": 24.5095,
-        "pre_close_price": 11.03,
-        "open_price": 12.13,
-        "last_price": 12.13,
-        "float_market_cap": 3130317326.79
-      },
-      {
         "thscode": "002951.SZ",
         "ticker": "002951",
         "name": "金时科技",
@@ -376,6 +461,261 @@
         "open_price": 26.81,
         "last_price": 31.51,
         "float_market_cap": 1386157481.34
+      },
+      {
+        "thscode": "600026.SH",
+        "ticker": "600026",
+        "name": "中远海能",
+        "auction_price": 21.94,
+        "auction_pct": 6.7121,
+        "auction_volume": 13665.0,
+        "auction_amount": 29981010.0,
+        "auction_unmatched": -718.1,
+        "auction_turnover_pct": 0.0357,
+        "auction_yesterday_ratio_pct": 3.0592,
+        "auction_volume_ratio": 4.4715,
+        "pre_close_price": 20.56,
+        "open_price": 21.94,
+        "last_price": 22.62,
+        "float_market_cap": 86590020051.6
+      },
+      {
+        "thscode": "600310.SH",
+        "ticker": "600310",
+        "name": "广西能源",
+        "auction_price": 4.54,
+        "auction_pct": 0.4425,
+        "auction_volume": 2516.0,
+        "auction_amount": 1142264.0,
+        "auction_unmatched": -683.4,
+        "auction_turnover_pct": 0.0172,
+        "auction_yesterday_ratio_pct": 0.6485,
+        "auction_volume_ratio": 0.4678,
+        "pre_close_price": 4.52,
+        "open_price": 4.54,
+        "last_price": 4.97,
+        "float_market_cap": 7284582288.339999
+      },
+      {
+        "thscode": "600400.SH",
+        "ticker": "600400",
+        "name": "红豆股份",
+        "auction_price": 3.32,
+        "auction_pct": 0.9119,
+        "auction_volume": 597.0,
+        "auction_amount": 198204.0,
+        "auction_unmatched": -8.0,
+        "auction_turnover_pct": 0.0026,
+        "auction_yesterday_ratio_pct": 0.179,
+        "auction_volume_ratio": 0.4072,
+        "pre_close_price": 3.29,
+        "open_price": 3.32,
+        "last_price": 3.62,
+        "float_market_cap": 8294766104.24
+      },
+      {
+        "thscode": "600408.SH",
+        "ticker": "600408",
+        "name": "安泰集团",
+        "auction_price": 3.15,
+        "auction_pct": 0.639,
+        "auction_volume": 1236.0,
+        "auction_amount": 389340.0,
+        "auction_unmatched": 345.0,
+        "auction_turnover_pct": 0.0123,
+        "auction_yesterday_ratio_pct": 0.2903,
+        "auction_volume_ratio": 1.2299,
+        "pre_close_price": 3.13,
+        "open_price": 3.15,
+        "last_price": 3.44,
+        "float_market_cap": 3463392000
+      },
+      {
+        "thscode": "600617.SH",
+        "ticker": "600617",
+        "name": "国新能源",
+        "auction_price": 3.45,
+        "auction_pct": 1.4706,
+        "auction_volume": 3287.6,
+        "auction_amount": 1134222.0,
+        "auction_unmatched": 1216.4,
+        "auction_turnover_pct": 0.0185,
+        "auction_yesterday_ratio_pct": 0.8889,
+        "auction_volume_ratio": 1.9651,
+        "pre_close_price": 3.4,
+        "open_price": 3.45,
+        "last_price": 3.74,
+        "float_market_cap": 6640529656.860001
+      },
+      {
+        "thscode": "600722.SH",
+        "ticker": "600722",
+        "name": "金牛化工",
+        "auction_price": 15.4,
+        "auction_pct": 4.6196,
+        "auction_volume": 9996.97,
+        "auction_amount": 15395334,
+        "auction_unmatched": 79.03,
+        "auction_turnover_pct": 0.1469,
+        "auction_yesterday_ratio_pct": 1.5426,
+        "auction_volume_ratio": 1.5663,
+        "pre_close_price": 14.72,
+        "open_price": 15.4,
+        "last_price": 16.19,
+        "float_market_cap": 11014375554.44
+      },
+      {
+        "thscode": "600812.SH",
+        "ticker": "600812",
+        "name": "华北制药",
+        "auction_price": 5.48,
+        "auction_pct": 10.0402,
+        "auction_volume": 55049.0,
+        "auction_amount": 30166852,
+        "auction_unmatched": 1132398.0,
+        "auction_turnover_pct": 0.3208,
+        "auction_yesterday_ratio_pct": 15.2826,
+        "auction_volume_ratio": 26.8794,
+        "pre_close_price": 4.98,
+        "open_price": 5.48,
+        "last_price": 5.48,
+        "float_market_cap": 9402202427.6
+      },
+      {
+        "thscode": "601956.SH",
+        "ticker": "601956",
+        "name": "东贝集团",
+        "auction_price": 5.02,
+        "auction_pct": 0.0,
+        "auction_volume": 75.0,
+        "auction_amount": 37650.0,
+        "auction_unmatched": -13.0,
+        "auction_turnover_pct": 0.0012,
+        "auction_yesterday_ratio_pct": 0.1144,
+        "auction_volume_ratio": 0.2083,
+        "pre_close_price": 5.02,
+        "open_price": 5.02,
+        "last_price": 5.52,
+        "float_market_cap": 3431323576.8
+      },
+      {
+        "thscode": "601975.SH",
+        "ticker": "601975",
+        "name": "招商南油",
+        "auction_price": 4.7,
+        "auction_pct": 3.9823,
+        "auction_volume": 33928.0,
+        "auction_amount": 15946160.0,
+        "auction_unmatched": -1588.2,
+        "auction_turnover_pct": 0.0725,
+        "auction_yesterday_ratio_pct": 2.4574,
+        "auction_volume_ratio": 8.366,
+        "pre_close_price": 4.52,
+        "open_price": 4.7,
+        "last_price": 4.97,
+        "float_market_cap": 23261313049.66
+      },
+      {
+        "thscode": "603137.SH",
+        "ticker": "603137",
+        "name": "恒尚节能",
+        "auction_price": 18.01,
+        "auction_pct": 1.2936,
+        "auction_volume": 552.0,
+        "auction_amount": 994152.0,
+        "auction_unmatched": 6.0,
+        "auction_turnover_pct": 0.0302,
+        "auction_yesterday_ratio_pct": 1.0873,
+        "auction_volume_ratio": 3.7808,
+        "pre_close_price": 17.78,
+        "open_price": 18.01,
+        "last_price": 19.56,
+        "float_market_cap": 3578176013.04
+      },
+      {
+        "thscode": "603788.SH",
+        "ticker": "603788",
+        "name": "宁波高发",
+        "auction_price": 13.69,
+        "auction_pct": 0.3666,
+        "auction_volume": 54.0,
+        "auction_amount": 73926.0,
+        "auction_unmatched": -29.0,
+        "auction_turnover_pct": 0.0024,
+        "auction_yesterday_ratio_pct": 0.5647,
+        "auction_volume_ratio": 1.6364,
+        "pre_close_price": 13.64,
+        "open_price": 13.69,
+        "last_price": 15.0,
+        "float_market_cap": 3345976020
+      },
+      {
+        "thscode": "603863.SH",
+        "ticker": "603863",
+        "name": "松炀资源",
+        "auction_price": 12.0,
+        "auction_pct": -3.0695,
+        "auction_volume": 2201.0,
+        "auction_amount": 2641200.0,
+        "auction_unmatched": 228.0,
+        "auction_turnover_pct": 0.1075,
+        "auction_yesterday_ratio_pct": 1.9718,
+        "auction_volume_ratio": 4.7538,
+        "pre_close_price": 12.38,
+        "open_price": 12.0,
+        "last_price": 13.62,
+        "float_market_cap": 2787333000
+      },
+      {
+        "thscode": "605298.SH",
+        "ticker": "605298",
+        "name": "必得科技",
+        "auction_price": 40.63,
+        "auction_pct": -0.6115,
+        "auction_volume": 43.0,
+        "auction_amount": 174709.0,
+        "auction_unmatched": -10.0,
+        "auction_turnover_pct": 0.0023,
+        "auction_yesterday_ratio_pct": 0.9305,
+        "auction_volume_ratio": 2.6875,
+        "pre_close_price": 40.88,
+        "open_price": 40.63,
+        "last_price": 44.97,
+        "float_market_cap": 8375707470
+      },
+      {
+        "thscode": "605378.SH",
+        "ticker": "605378",
+        "name": "野马电池",
+        "auction_price": 15.17,
+        "auction_pct": -3.3758,
+        "auction_volume": 1234.0,
+        "auction_amount": 1871978.0,
+        "auction_unmatched": 1.0,
+        "auction_turnover_pct": 0.0472,
+        "auction_yesterday_ratio_pct": 0.9341,
+        "auction_volume_ratio": 0.3663,
+        "pre_close_price": 15.7,
+        "open_price": 15.17,
+        "last_price": 17.27,
+        "float_market_cap": 4513452328
+      },
+      {
+        "thscode": "688196.SH",
+        "ticker": "688196",
+        "name": "卓越新能",
+        "auction_price": 30.35,
+        "auction_pct": 0.8306,
+        "auction_volume": 66.54,
+        "auction_amount": 201948.9,
+        "auction_unmatched": -21.6,
+        "auction_turnover_pct": 0.0052,
+        "auction_yesterday_ratio_pct": 0.3182,
+        "auction_volume_ratio": 1.4953,
+        "pre_close_price": 30.1,
+        "open_price": 30.35,
+        "last_price": 36.12,
+        "float_market_cap": 4594131515.4
       }
     ]
   },
@@ -388,8 +728,8 @@
       {
         "code": "884311.TI",
         "name": "锂电专用设备",
-        "change_pct": 5.646818,
-        "turnover_cny": 8457782600,
+        "change_pct": 5.15031,
+        "turnover_cny": 8835421700,
         "member_count": 21,
         "limit_up_count": 0,
         "board_counts": {},
@@ -399,17 +739,22 @@
       {
         "code": "884312.TI",
         "name": "其他电池",
-        "change_pct": 5.132013,
-        "turnover_cny": 3271567800,
+        "change_pct": 5.078043,
+        "turnover_cny": 3402011200,
         "member_count": 11,
-        "limit_up_count": 1,
+        "limit_up_count": 2,
         "board_counts": {
-          "1": 1
+          "1": 2
         },
         "limit_up_stocks": [
           {
             "code": "002733",
             "name": "雄韬股份",
+            "height": 1
+          },
+          {
+            "code": "605378",
+            "name": "野马电池",
             "height": 1
           }
         ],
@@ -418,30 +763,45 @@
       {
         "code": "884015.TI",
         "name": "焦炭加工",
-        "change_pct": 4.572615,
-        "turnover_cny": 1175681230,
+        "change_pct": 4.344501,
+        "turnover_cny": 1232270560,
         "member_count": 5,
-        "limit_up_count": 0,
-        "board_counts": {},
-        "limit_up_stocks": [],
+        "limit_up_count": 1,
+        "board_counts": {
+          "1": 1
+        },
+        "limit_up_stocks": [
+          {
+            "code": "600408",
+            "name": "安泰集团",
+            "height": 1
+          }
+        ],
         "source": "同花顺行业指数及当前成分股"
       },
       {
         "code": "881281.TI",
         "name": "电池",
-        "change_pct": 3.943934,
-        "turnover_cny": 52155259000,
+        "change_pct": 3.700775,
+        "turnover_cny": 55474908000,
         "member_count": 107,
-        "limit_up_count": 4,
+        "limit_up_count": 7,
         "board_counts": {
-          "1": 3,
-          "3": 1
+          "1": 4,
+          "4": 1,
+          "3": 1,
+          "2": 1
         },
         "limit_up_stocks": [
           {
             "code": "300530",
             "name": "领湃科技",
             "height": 1
+          },
+          {
+            "code": "600241",
+            "name": "时代万恒",
+            "height": 4
           },
           {
             "code": "002058",
@@ -454,8 +814,18 @@
             "height": 1
           },
           {
+            "code": "603906",
+            "name": "龙蟠科技",
+            "height": 2
+          },
+          {
             "code": "002733",
             "name": "雄韬股份",
+            "height": 1
+          },
+          {
+            "code": "605378",
+            "name": "野马电池",
             "height": 1
           }
         ],
@@ -464,8 +834,8 @@
       {
         "code": "884016.TI",
         "name": "油气开采",
-        "change_pct": 3.733517,
-        "turnover_cny": 2271534000,
+        "change_pct": 3.542024,
+        "turnover_cny": 2531466200,
         "member_count": 8,
         "limit_up_count": 0,
         "board_counts": {},
@@ -475,46 +845,33 @@
       {
         "code": "884281.TI",
         "name": "煤化工",
-        "change_pct": 3.693888,
-        "turnover_cny": 2835316400,
+        "change_pct": 3.396843,
+        "turnover_cny": 2986492700,
         "member_count": 8,
-        "limit_up_count": 0,
-        "board_counts": {},
-        "limit_up_stocks": [],
-        "source": "同花顺行业指数及当前成分股"
-      },
-      {
-        "code": "881107.TI",
-        "name": "油气开采及服务",
-        "change_pct": 3.581854,
-        "turnover_cny": 4202125800,
-        "member_count": 19,
-        "limit_up_count": 0,
-        "board_counts": {},
-        "limit_up_stocks": [],
-        "source": "同花顺行业指数及当前成分股"
-      },
-      {
-        "code": "884018.TI",
-        "name": "油服工程",
-        "change_pct": 3.471504,
-        "turnover_cny": 1930591700,
-        "member_count": 11,
-        "limit_up_count": 0,
-        "board_counts": {},
-        "limit_up_stocks": [],
+        "limit_up_count": 1,
+        "board_counts": {
+          "1": 1
+        },
+        "limit_up_stocks": [
+          {
+            "code": "600722",
+            "name": "金牛化工",
+            "height": 1
+          }
+        ],
         "source": "同花顺行业指数及当前成分股"
       },
       {
         "code": "884310.TI",
         "name": "电池化学品",
-        "change_pct": 3.39253,
-        "turnover_cny": 16847463000,
+        "change_pct": 3.386005,
+        "turnover_cny": 18146241000,
         "member_count": 43,
-        "limit_up_count": 2,
+        "limit_up_count": 3,
         "board_counts": {
           "3": 1,
-          "1": 1
+          "1": 1,
+          "2": 1
         },
         "limit_up_stocks": [
           {
@@ -526,16 +883,67 @@
             "code": "002805",
             "name": "丰元股份",
             "height": 1
+          },
+          {
+            "code": "603906",
+            "name": "龙蟠科技",
+            "height": 2
           }
         ],
         "source": "同花顺行业指数及当前成分股"
       },
       {
+        "code": "881107.TI",
+        "name": "油气开采及服务",
+        "change_pct": 3.368198,
+        "turnover_cny": 4655463200,
+        "member_count": 19,
+        "limit_up_count": 0,
+        "board_counts": {},
+        "limit_up_stocks": [],
+        "source": "同花顺行业指数及当前成分股"
+      },
+      {
+        "code": "884018.TI",
+        "name": "油服工程",
+        "change_pct": 3.241771,
+        "turnover_cny": 2123999400,
+        "member_count": 11,
+        "limit_up_count": 0,
+        "board_counts": {},
+        "limit_up_stocks": [],
+        "source": "同花顺行业指数及当前成分股"
+      },
+      {
         "code": "884191.TI",
         "name": "航运",
-        "change_pct": 3.342158,
-        "turnover_cny": 7508524900,
+        "change_pct": 3.12797,
+        "turnover_cny": 7857734300,
         "member_count": 19,
+        "limit_up_count": 2,
+        "board_counts": {
+          "1": 2
+        },
+        "limit_up_stocks": [
+          {
+            "code": "600026",
+            "name": "中远海能",
+            "height": 1
+          },
+          {
+            "code": "601975",
+            "name": "招商南油",
+            "height": 1
+          }
+        ],
+        "source": "同花顺行业指数及当前成分股"
+      },
+      {
+        "code": "884045.TI",
+        "name": "氨纶",
+        "change_pct": 2.977104,
+        "turnover_cny": 578970720,
+        "member_count": 2,
         "limit_up_count": 0,
         "board_counts": {},
         "limit_up_stocks": [],
@@ -544,49 +952,95 @@
       {
         "code": "884309.TI",
         "name": "锂电池",
-        "change_pct": 3.158954,
-        "turnover_cny": 23578445000,
+        "change_pct": 2.704461,
+        "turnover_cny": 25091681000,
         "member_count": 32,
-        "limit_up_count": 1,
+        "limit_up_count": 2,
         "board_counts": {
-          "1": 1
+          "1": 1,
+          "4": 1
         },
         "limit_up_stocks": [
           {
             "code": "300530",
             "name": "领湃科技",
             "height": 1
+          },
+          {
+            "code": "600241",
+            "name": "时代万恒",
+            "height": 4
           }
         ],
         "source": "同花顺行业指数及当前成分股"
       },
       {
-        "code": "884026.TI",
-        "name": "氮肥",
-        "change_pct": 2.695045,
-        "turnover_cny": 1126549570,
-        "member_count": 5,
-        "limit_up_count": 0,
-        "board_counts": {},
-        "limit_up_stocks": [],
+        "code": "881148.TI",
+        "name": "港口航运",
+        "change_pct": 2.276874,
+        "turnover_cny": 9464948600,
+        "member_count": 36,
+        "limit_up_count": 2,
+        "board_counts": {
+          "1": 2
+        },
+        "limit_up_stocks": [
+          {
+            "code": "600026",
+            "name": "中远海能",
+            "height": 1
+          },
+          {
+            "code": "601975",
+            "name": "招商南油",
+            "height": 1
+          }
+        ],
         "source": "同花顺行业指数及当前成分股"
       },
       {
-        "code": "881148.TI",
-        "name": "港口航运",
-        "change_pct": 2.476563,
-        "turnover_cny": 8985723600,
-        "member_count": 36,
-        "limit_up_count": 0,
-        "board_counts": {},
-        "limit_up_stocks": [],
+        "code": "881105.TI",
+        "name": "煤炭开采加工",
+        "change_pct": 2.089678,
+        "turnover_cny": 9916933400,
+        "member_count": 34,
+        "limit_up_count": 1,
+        "board_counts": {
+          "1": 1
+        },
+        "limit_up_stocks": [
+          {
+            "code": "600408",
+            "name": "安泰集团",
+            "height": 1
+          }
+        ],
+        "source": "同花顺行业指数及当前成分股"
+      },
+      {
+        "code": "881146.TI",
+        "name": "燃气",
+        "change_pct": 1.990359,
+        "turnover_cny": 2654688300,
+        "member_count": 27,
+        "limit_up_count": 1,
+        "board_counts": {
+          "1": 1
+        },
+        "limit_up_stocks": [
+          {
+            "code": "600617",
+            "name": "国新能源",
+            "height": 1
+          }
+        ],
         "source": "同花顺行业指数及当前成分股"
       },
       {
         "code": "884030.TI",
         "name": "涂料油墨",
-        "change_pct": 2.425599,
-        "turnover_cny": 2513086100,
+        "change_pct": 1.922792,
+        "turnover_cny": 2739112100,
         "member_count": 20,
         "limit_up_count": 1,
         "board_counts": {
@@ -602,22 +1056,33 @@
         "source": "同花顺行业指数及当前成分股"
       },
       {
-        "code": "881146.TI",
-        "name": "燃气",
-        "change_pct": 2.313187,
-        "turnover_cny": 2494692600,
-        "member_count": 27,
+        "code": "884026.TI",
+        "name": "氮肥",
+        "change_pct": 1.868459,
+        "turnover_cny": 1201174610,
+        "member_count": 5,
         "limit_up_count": 0,
         "board_counts": {},
         "limit_up_stocks": [],
         "source": "同花顺行业指数及当前成分股"
       },
       {
-        "code": "884277.TI",
-        "name": "其他养殖",
-        "change_pct": 2.298592,
-        "turnover_cny": 418360320,
-        "member_count": 3,
+        "code": "884286.TI",
+        "name": "锂",
+        "change_pct": 1.843846,
+        "turnover_cny": 4034472100,
+        "member_count": 8,
+        "limit_up_count": 0,
+        "board_counts": {},
+        "limit_up_stocks": [],
+        "source": "同花顺行业指数及当前成分股"
+      },
+      {
+        "code": "884147.TI",
+        "name": "水电",
+        "change_pct": 1.800419,
+        "turnover_cny": 4895070200,
+        "member_count": 11,
         "limit_up_count": 0,
         "board_counts": {},
         "limit_up_stocks": [],
@@ -626,8 +1091,8 @@
       {
         "code": "884119.TI",
         "name": "其他酒类",
-        "change_pct": 2.264792,
-        "turnover_cny": 3930667600,
+        "change_pct": 1.750315,
+        "turnover_cny": 4093472800,
         "member_count": 9,
         "limit_up_count": 1,
         "board_counts": {
@@ -643,121 +1108,11 @@
         "source": "同花顺行业指数及当前成分股"
       },
       {
-        "code": "881105.TI",
-        "name": "煤炭开采加工",
-        "change_pct": 2.18083,
-        "turnover_cny": 8917237800,
-        "member_count": 34,
-        "limit_up_count": 0,
-        "board_counts": {},
-        "limit_up_stocks": [],
-        "source": "同花顺行业指数及当前成分股"
-      },
-      {
-        "code": "884180.TI",
-        "name": "航天装备",
-        "change_pct": 2.012243,
-        "turnover_cny": 3024641300,
-        "member_count": 10,
-        "limit_up_count": 0,
-        "board_counts": {},
-        "limit_up_stocks": [],
-        "source": "同花顺行业指数及当前成分股"
-      },
-      {
-        "code": "884147.TI",
-        "name": "水电",
-        "change_pct": 2.009691,
-        "turnover_cny": 4548771400,
-        "member_count": 11,
-        "limit_up_count": 0,
-        "board_counts": {},
-        "limit_up_stocks": [],
-        "source": "同花顺行业指数及当前成分股"
-      },
-      {
-        "code": "884286.TI",
-        "name": "锂",
-        "change_pct": 1.89394,
-        "turnover_cny": 3781338300,
-        "member_count": 8,
-        "limit_up_count": 0,
-        "board_counts": {},
-        "limit_up_stocks": [],
-        "source": "同花顺行业指数及当前成分股"
-      },
-      {
-        "code": "884045.TI",
-        "name": "氨纶",
-        "change_pct": 1.890475,
-        "turnover_cny": 405088820,
-        "member_count": 2,
-        "limit_up_count": 0,
-        "board_counts": {},
-        "limit_up_stocks": [],
-        "source": "同花顺行业指数及当前成分股"
-      },
-      {
-        "code": "884031.TI",
-        "name": "钾肥",
-        "change_pct": 1.852988,
-        "turnover_cny": 1474184600,
-        "member_count": 4,
-        "limit_up_count": 0,
-        "board_counts": {},
-        "limit_up_stocks": [],
-        "source": "同花顺行业指数及当前成分股"
-      },
-      {
-        "code": "884212.TI",
-        "name": "合成树脂",
-        "change_pct": 1.791477,
-        "turnover_cny": 3793312000,
-        "member_count": 14,
-        "limit_up_count": 0,
-        "board_counts": {},
-        "limit_up_stocks": [],
-        "source": "同花顺行业指数及当前成分股"
-      },
-      {
         "code": "884014.TI",
         "name": "煤炭开采",
-        "change_pct": 1.768449,
-        "turnover_cny": 7741556500,
+        "change_pct": 1.700895,
+        "turnover_cny": 8684747800,
         "member_count": 29,
-        "limit_up_count": 0,
-        "board_counts": {},
-        "limit_up_stocks": [],
-        "source": "同花顺行业指数及当前成分股"
-      },
-      {
-        "code": "884146.TI",
-        "name": "火电",
-        "change_pct": 1.749049,
-        "turnover_cny": 6141829500,
-        "member_count": 31,
-        "limit_up_count": 0,
-        "board_counts": {},
-        "limit_up_stocks": [],
-        "source": "同花顺行业指数及当前成分股"
-      },
-      {
-        "code": "884039.TI",
-        "name": "聚氨酯",
-        "change_pct": 1.66111,
-        "turnover_cny": 1657657700,
-        "member_count": 8,
-        "limit_up_count": 0,
-        "board_counts": {},
-        "limit_up_stocks": [],
-        "source": "同花顺行业指数及当前成分股"
-      },
-      {
-        "code": "884020.TI",
-        "name": "石油加工",
-        "change_pct": 1.555775,
-        "turnover_cny": 4542848600,
-        "member_count": 22,
         "limit_up_count": 0,
         "board_counts": {},
         "limit_up_stocks": [],
@@ -766,8 +1121,8 @@
       {
         "code": "884313.TI",
         "name": "电信运营商",
-        "change_pct": 1.54417,
-        "turnover_cny": 1579364300,
+        "change_pct": 1.699032,
+        "turnover_cny": 1739369100,
         "member_count": 3,
         "limit_up_count": 0,
         "board_counts": {},
@@ -775,11 +1130,55 @@
         "source": "同花顺行业指数及当前成分股"
       },
       {
-        "code": "884247.TI",
-        "name": "商业地产",
-        "change_pct": 1.516735,
-        "turnover_cny": 2105003100,
+        "code": "884146.TI",
+        "name": "火电",
+        "change_pct": 1.64066,
+        "turnover_cny": 6810694800,
+        "member_count": 31,
+        "limit_up_count": 0,
+        "board_counts": {},
+        "limit_up_stocks": [],
+        "source": "同花顺行业指数及当前成分股"
+      },
+      {
+        "code": "884031.TI",
+        "name": "钾肥",
+        "change_pct": 1.540723,
+        "turnover_cny": 1596556600,
+        "member_count": 4,
+        "limit_up_count": 0,
+        "board_counts": {},
+        "limit_up_stocks": [],
+        "source": "同花顺行业指数及当前成分股"
+      },
+      {
+        "code": "884180.TI",
+        "name": "航天装备",
+        "change_pct": 1.457029,
+        "turnover_cny": 3170863500,
+        "member_count": 10,
+        "limit_up_count": 0,
+        "board_counts": {},
+        "limit_up_stocks": [],
+        "source": "同花顺行业指数及当前成分股"
+      },
+      {
+        "code": "884189.TI",
+        "name": "啤酒",
+        "change_pct": 1.435066,
+        "turnover_cny": 604271720,
         "member_count": 7,
+        "limit_up_count": 0,
+        "board_counts": {},
+        "limit_up_stocks": [],
+        "source": "同花顺行业指数及当前成分股"
+      },
+      {
+        "code": "884277.TI",
+        "name": "其他养殖",
+        "change_pct": 1.344602,
+        "turnover_cny": 427424780,
+        "member_count": 3,
         "limit_up_count": 0,
         "board_counts": {},
         "limit_up_stocks": [],
@@ -788,8 +1187,8 @@
       {
         "code": "884269.TI",
         "name": "固废治理",
-        "change_pct": 1.412005,
-        "turnover_cny": 2939014900,
+        "change_pct": 1.333352,
+        "turnover_cny": 3257449100,
         "member_count": 36,
         "limit_up_count": 1,
         "board_counts": {
@@ -805,10 +1204,116 @@
         "source": "同花顺行业指数及当前成分股"
       },
       {
+        "code": "884212.TI",
+        "name": "合成树脂",
+        "change_pct": 1.270595,
+        "turnover_cny": 3957841200,
+        "member_count": 14,
+        "limit_up_count": 1,
+        "board_counts": {
+          "2": 1
+        },
+        "limit_up_stocks": [
+          {
+            "code": "603928",
+            "name": "兴业股份",
+            "height": 2
+          }
+        ],
+        "source": "同花顺行业指数及当前成分股"
+      },
+      {
+        "code": "884153.TI",
+        "name": "港口",
+        "change_pct": 1.269955,
+        "turnover_cny": 1607397800,
+        "member_count": 17,
+        "limit_up_count": 0,
+        "board_counts": {},
+        "limit_up_stocks": [],
+        "source": "同花顺行业指数及当前成分股"
+      },
+      {
+        "code": "884247.TI",
+        "name": "商业地产",
+        "change_pct": 1.246797,
+        "turnover_cny": 2231718600,
+        "member_count": 7,
+        "limit_up_count": 1,
+        "board_counts": {
+          "2": 1
+        },
+        "limit_up_stocks": [
+          {
+            "code": "600663",
+            "name": "陆家嘴",
+            "height": 2
+          }
+        ],
+        "source": "同花顺行业指数及当前成分股"
+      },
+      {
+        "code": "884246.TI",
+        "name": "电能综合服务",
+        "change_pct": 1.13016,
+        "turnover_cny": 1493097900,
+        "member_count": 15,
+        "limit_up_count": 1,
+        "board_counts": {
+          "1": 1
+        },
+        "limit_up_stocks": [
+          {
+            "code": "600310",
+            "name": "广西能源",
+            "height": 1
+          }
+        ],
+        "source": "同花顺行业指数及当前成分股"
+      },
+      {
+        "code": "881145.TI",
+        "name": "电力",
+        "change_pct": 0.942914,
+        "turnover_cny": 21247778000,
+        "member_count": 110,
+        "limit_up_count": 1,
+        "board_counts": {
+          "1": 1
+        },
+        "limit_up_stocks": [
+          {
+            "code": "600310",
+            "name": "广西能源",
+            "height": 1
+          }
+        ],
+        "source": "同花顺行业指数及当前成分股"
+      },
+      {
+        "code": "881108.TI",
+        "name": "化学原料",
+        "change_pct": 0.860961,
+        "turnover_cny": 8674824800,
+        "member_count": 59,
+        "limit_up_count": 1,
+        "board_counts": {
+          "1": 1
+        },
+        "limit_up_stocks": [
+          {
+            "code": "600722",
+            "name": "金牛化工",
+            "height": 1
+          }
+        ],
+        "source": "同花顺行业指数及当前成分股"
+      },
+      {
         "code": "884083.TI",
         "name": "楼宇设备",
-        "change_pct": 0.965669,
-        "turnover_cny": 668237720,
+        "change_pct": 0.829739,
+        "turnover_cny": 715299270,
         "member_count": 12,
         "limit_up_count": 1,
         "board_counts": {
@@ -826,8 +1331,8 @@
       {
         "code": "884186.TI",
         "name": "其他小金属",
-        "change_pct": 0.795154,
-        "turnover_cny": 6901539300,
+        "change_pct": 0.603117,
+        "turnover_cny": 7388062800,
         "member_count": 19,
         "limit_up_count": 1,
         "board_counts": {
@@ -843,24 +1348,19 @@
         "source": "同花顺行业指数及当前成分股"
       },
       {
-        "code": "881109.TI",
-        "name": "化学制品",
-        "change_pct": 0.638968,
-        "turnover_cny": 23506584000,
-        "member_count": 183,
-        "limit_up_count": 2,
+        "code": "881137.TI",
+        "name": "造纸",
+        "change_pct": 0.54852,
+        "turnover_cny": 1510716400,
+        "member_count": 24,
+        "limit_up_count": 1,
         "board_counts": {
-          "1": 2
+          "1": 1
         },
         "limit_up_stocks": [
           {
-            "code": "300522",
-            "name": "世名科技",
-            "height": 1
-          },
-          {
-            "code": "002669",
-            "name": "康达新材",
+            "code": "603863",
+            "name": "松炀资源",
             "height": 1
           }
         ],
@@ -869,8 +1369,8 @@
       {
         "code": "881133.TI",
         "name": "饮料制造",
-        "change_pct": 0.577782,
-        "turnover_cny": 8624451900,
+        "change_pct": 0.43543,
+        "turnover_cny": 9245681100,
         "member_count": 47,
         "limit_up_count": 1,
         "board_counts": {
@@ -886,58 +1386,30 @@
         "source": "同花顺行业指数及当前成分股"
       },
       {
-        "code": "884034.TI",
-        "name": "其他化学制品",
-        "change_pct": 0.558124,
-        "turnover_cny": 7996214900,
-        "member_count": 82,
-        "limit_up_count": 1,
+        "code": "881109.TI",
+        "name": "化学制品",
+        "change_pct": 0.298023,
+        "turnover_cny": 25118235000,
+        "member_count": 183,
+        "limit_up_count": 3,
         "board_counts": {
-          "1": 1
+          "1": 3
         },
         "limit_up_stocks": [
+          {
+            "code": "300522",
+            "name": "世名科技",
+            "height": 1
+          },
           {
             "code": "002669",
             "name": "康达新材",
             "height": 1
-          }
-        ],
-        "source": "同花顺行业指数及当前成分股"
-      },
-      {
-        "code": "884305.TI",
-        "name": "光伏辅材",
-        "change_pct": 0.535042,
-        "turnover_cny": 2211905600,
-        "member_count": 23,
-        "limit_up_count": 1,
-        "board_counts": {
-          "1": 1
-        },
-        "limit_up_stocks": [
+          },
           {
-            "code": "301697",
-            "name": "贝特利",
+            "code": "688196",
+            "name": "卓越新能",
             "height": 1
-          }
-        ],
-        "source": "同花顺行业指数及当前成分股"
-      },
-      {
-        "code": "881173.TI",
-        "name": "小家电",
-        "change_pct": 0.516229,
-        "turnover_cny": 2738602400,
-        "member_count": 26,
-        "limit_up_count": 1,
-        "board_counts": {
-          "4": 1
-        },
-        "limit_up_stocks": [
-          {
-            "code": "002242",
-            "name": "九阳股份",
-            "height": 4
           }
         ],
         "source": "同花顺行业指数及当前成分股"
@@ -945,8 +1417,8 @@
       {
         "code": "881181.TI",
         "name": "环境治理",
-        "change_pct": 0.501944,
-        "turnover_cny": 7799147200,
+        "change_pct": 0.295795,
+        "turnover_cny": 8440457100,
         "member_count": 111,
         "limit_up_count": 1,
         "board_counts": {
@@ -962,20 +1434,106 @@
         "source": "同花顺行业指数及当前成分股"
       },
       {
+        "code": "884034.TI",
+        "name": "其他化学制品",
+        "change_pct": 0.267357,
+        "turnover_cny": 8582259400,
+        "member_count": 82,
+        "limit_up_count": 2,
+        "board_counts": {
+          "1": 2
+        },
+        "limit_up_stocks": [
+          {
+            "code": "002669",
+            "name": "康达新材",
+            "height": 1
+          },
+          {
+            "code": "688196",
+            "name": "卓越新能",
+            "height": 1
+          }
+        ],
+        "source": "同花顺行业指数及当前成分股"
+      },
+      {
         "code": "884234.TI",
         "name": "服装",
-        "change_pct": 0.459623,
-        "turnover_cny": 2858452000,
+        "change_pct": 0.249704,
+        "turnover_cny": 3099786800,
         "member_count": 41,
-        "limit_up_count": 1,
+        "limit_up_count": 2,
         "board_counts": {
-          "1": 1
+          "1": 2
         },
         "limit_up_stocks": [
           {
             "code": "002687",
             "name": "乔治白",
             "height": 1
+          },
+          {
+            "code": "600400",
+            "name": "红豆股份",
+            "height": 1
+          }
+        ],
+        "source": "同花顺行业指数及当前成分股"
+      },
+      {
+        "code": "884305.TI",
+        "name": "光伏辅材",
+        "change_pct": 0.23232,
+        "turnover_cny": 2395371100,
+        "member_count": 23,
+        "limit_up_count": 1,
+        "board_counts": {
+          "1": 1
+        },
+        "limit_up_stocks": [
+          {
+            "code": "301697",
+            "name": "贝特利",
+            "height": 1
+          }
+        ],
+        "source": "同花顺行业指数及当前成分股"
+      },
+      {
+        "code": "881269.TI",
+        "name": "轨交设备",
+        "change_pct": 0.131802,
+        "turnover_cny": 1372293800,
+        "member_count": 30,
+        "limit_up_count": 1,
+        "board_counts": {
+          "1": 1
+        },
+        "limit_up_stocks": [
+          {
+            "code": "605298",
+            "name": "必得科技",
+            "height": 1
+          }
+        ],
+        "source": "同花顺行业指数及当前成分股"
+      },
+      {
+        "code": "881173.TI",
+        "name": "小家电",
+        "change_pct": 0.074428,
+        "turnover_cny": 2916631300,
+        "member_count": 26,
+        "limit_up_count": 1,
+        "board_counts": {
+          "4": 1
+        },
+        "limit_up_stocks": [
+          {
+            "code": "002242",
+            "name": "九阳股份",
+            "height": 4
           }
         ],
         "source": "同花顺行业指数及当前成分股"
@@ -983,17 +1541,79 @@
       {
         "code": "881136.TI",
         "name": "服装家纺",
-        "change_pct": 0.246316,
-        "turnover_cny": 4148127700,
+        "change_pct": 0.013401,
+        "turnover_cny": 4511620800,
         "member_count": 75,
+        "limit_up_count": 2,
+        "board_counts": {
+          "1": 2
+        },
+        "limit_up_stocks": [
+          {
+            "code": "002687",
+            "name": "乔治白",
+            "height": 1
+          },
+          {
+            "code": "600400",
+            "name": "红豆股份",
+            "height": 1
+          }
+        ],
+        "source": "同花顺行业指数及当前成分股"
+      },
+      {
+        "code": "881265.TI",
+        "name": "塑料制品",
+        "change_pct": -0.088536,
+        "turnover_cny": 16890552000,
+        "member_count": 78,
+        "limit_up_count": 1,
+        "board_counts": {
+          "2": 1
+        },
+        "limit_up_stocks": [
+          {
+            "code": "603928",
+            "name": "兴业股份",
+            "height": 2
+          }
+        ],
+        "source": "同花顺行业指数及当前成分股"
+      },
+      {
+        "code": "881284.TI",
+        "name": "环保设备",
+        "change_pct": -0.223237,
+        "turnover_cny": 2062244600,
+        "member_count": 30,
         "limit_up_count": 1,
         "board_counts": {
           "1": 1
         },
         "limit_up_stocks": [
           {
-            "code": "002687",
-            "name": "乔治白",
+            "code": "001336",
+            "name": "楚环科技",
+            "height": 1
+          }
+        ],
+        "source": "同花顺行业指数及当前成分股"
+      },
+      {
+        "code": "881170.TI",
+        "name": "小金属",
+        "change_pct": -0.287949,
+        "turnover_cny": 12666850000,
+        "member_count": 30,
+        "limit_up_count": 1,
+        "board_counts": {
+          "1": 1
+        },
+        "limit_up_stocks": [
+          {
+            "code": "002149",
+            "name": "西部材料",
             "height": 1
           }
         ],
@@ -1002,8 +1622,8 @@
       {
         "code": "881282.TI",
         "name": "其他电源设备",
-        "change_pct": 0.119082,
-        "turnover_cny": 7346536600,
+        "change_pct": -0.341657,
+        "turnover_cny": 7979376200,
         "member_count": 35,
         "limit_up_count": 2,
         "board_counts": {
@@ -1024,58 +1644,26 @@
         "source": "同花顺行业指数及当前成分股"
       },
       {
-        "code": "881284.TI",
-        "name": "环保设备",
-        "change_pct": -0.036368,
-        "turnover_cny": 1914194000,
-        "member_count": 30,
-        "limit_up_count": 1,
+        "code": "881116.TI",
+        "name": "建筑装饰",
+        "change_pct": -0.576188,
+        "turnover_cny": 12827932400,
+        "member_count": 143,
+        "limit_up_count": 2,
         "board_counts": {
-          "1": 1
+          "1": 1,
+          "3": 1
         },
         "limit_up_stocks": [
           {
-            "code": "001336",
-            "name": "楚环科技",
+            "code": "603137",
+            "name": "恒尚节能",
             "height": 1
-          }
-        ],
-        "source": "同花顺行业指数及当前成分股"
-      },
-      {
-        "code": "881170.TI",
-        "name": "小金属",
-        "change_pct": -0.062383,
-        "turnover_cny": 11823202900,
-        "member_count": 30,
-        "limit_up_count": 1,
-        "board_counts": {
-          "1": 1
-        },
-        "limit_up_stocks": [
+          },
           {
-            "code": "002149",
-            "name": "西部材料",
-            "height": 1
-          }
-        ],
-        "source": "同花顺行业指数及当前成分股"
-      },
-      {
-        "code": "884142.TI",
-        "name": "文娱用品",
-        "change_pct": -0.118888,
-        "turnover_cny": 1011555550,
-        "member_count": 19,
-        "limit_up_count": 1,
-        "board_counts": {
-          "1": 1
-        },
-        "limit_up_stocks": [
-          {
-            "code": "001300",
-            "name": "三柏硕",
-            "height": 1
+            "code": "605303",
+            "name": "园林股份",
+            "height": 3
           }
         ],
         "source": "同花顺行业指数及当前成分股"
@@ -1083,28 +1671,9 @@
       {
         "code": "881138.TI",
         "name": "包装印刷",
-        "change_pct": -0.294924,
-        "turnover_cny": 4816285400,
+        "change_pct": -0.617686,
+        "turnover_cny": 5119728900,
         "member_count": 46,
-        "limit_up_count": 1,
-        "board_counts": {
-          "1": 1
-        },
-        "limit_up_stocks": [
-          {
-            "code": "002565",
-            "name": "顺灏股份",
-            "height": 1
-          }
-        ],
-        "source": "同花顺行业指数及当前成分股"
-      },
-      {
-        "code": "884236.TI",
-        "name": "包装",
-        "change_pct": -0.318562,
-        "turnover_cny": 4774190800,
-        "member_count": 43,
         "limit_up_count": 1,
         "board_counts": {
           "1": 1
@@ -1121,8 +1690,8 @@
       {
         "code": "881118.TI",
         "name": "专用设备",
-        "change_pct": -0.393261,
-        "turnover_cny": 17975204000,
+        "change_pct": -0.620906,
+        "turnover_cny": 19604577000,
         "member_count": 204,
         "limit_up_count": 1,
         "board_counts": {
@@ -1138,10 +1707,48 @@
         "source": "同花顺行业指数及当前成分股"
       },
       {
+        "code": "884142.TI",
+        "name": "文娱用品",
+        "change_pct": -0.627619,
+        "turnover_cny": 1084214290,
+        "member_count": 19,
+        "limit_up_count": 1,
+        "board_counts": {
+          "1": 1
+        },
+        "limit_up_stocks": [
+          {
+            "code": "001300",
+            "name": "三柏硕",
+            "height": 1
+          }
+        ],
+        "source": "同花顺行业指数及当前成分股"
+      },
+      {
+        "code": "884236.TI",
+        "name": "包装",
+        "change_pct": -0.642293,
+        "turnover_cny": 5069082600,
+        "member_count": 43,
+        "limit_up_count": 1,
+        "board_counts": {
+          "1": 1
+        },
+        "limit_up_stocks": [
+          {
+            "code": "002565",
+            "name": "顺灏股份",
+            "height": 1
+          }
+        ],
+        "source": "同花顺行业指数及当前成分股"
+      },
+      {
         "code": "881279.TI",
         "name": "光伏设备",
-        "change_pct": -0.566412,
-        "turnover_cny": 13543261000,
+        "change_pct": -0.818212,
+        "turnover_cny": 14590185000,
         "member_count": 73,
         "limit_up_count": 1,
         "board_counts": {
@@ -1157,10 +1764,48 @@
         "source": "同花顺行业指数及当前成分股"
       },
       {
+        "code": "881153.TI",
+        "name": "房地产",
+        "change_pct": -0.827824,
+        "turnover_cny": 20460623000,
+        "member_count": 88,
+        "limit_up_count": 1,
+        "board_counts": {
+          "2": 1
+        },
+        "limit_up_stocks": [
+          {
+            "code": "600663",
+            "name": "陆家嘴",
+            "height": 2
+          }
+        ],
+        "source": "同花顺行业指数及当前成分股"
+      },
+      {
+        "code": "881131.TI",
+        "name": "白色家电",
+        "change_pct": -1.001508,
+        "turnover_cny": 7280077600,
+        "member_count": 44,
+        "limit_up_count": 1,
+        "board_counts": {
+          "1": 1
+        },
+        "limit_up_stocks": [
+          {
+            "code": "601956",
+            "name": "东贝集团",
+            "height": 1
+          }
+        ],
+        "source": "同花顺行业指数及当前成分股"
+      },
+      {
         "code": "881139.TI",
         "name": "家居用品",
-        "change_pct": -0.64759,
-        "turnover_cny": 5549758900,
+        "change_pct": -1.051948,
+        "turnover_cny": 5955390300,
         "member_count": 98,
         "limit_up_count": 1,
         "board_counts": {
@@ -1176,10 +1821,35 @@
         "source": "同花顺行业指数及当前成分股"
       },
       {
+        "code": "884065.TI",
+        "name": "装饰园林",
+        "change_pct": -1.137908,
+        "turnover_cny": 2729955400,
+        "member_count": 32,
+        "limit_up_count": 2,
+        "board_counts": {
+          "1": 1,
+          "3": 1
+        },
+        "limit_up_stocks": [
+          {
+            "code": "603137",
+            "name": "恒尚节能",
+            "height": 1
+          },
+          {
+            "code": "605303",
+            "name": "园林股份",
+            "height": 3
+          }
+        ],
+        "source": "同花顺行业指数及当前成分股"
+      },
+      {
         "code": "884207.TI",
         "name": "其他计算机设备",
-        "change_pct": -1.022244,
-        "turnover_cny": 9533935400,
+        "change_pct": -1.203645,
+        "turnover_cny": 10494027600,
         "member_count": 58,
         "limit_up_count": 1,
         "board_counts": {
@@ -1195,10 +1865,67 @@
         "source": "同花顺行业指数及当前成分股"
       },
       {
+        "code": "884116.TI",
+        "name": "家电零部件",
+        "change_pct": -1.268945,
+        "turnover_cny": 3994681100,
+        "member_count": 33,
+        "limit_up_count": 1,
+        "board_counts": {
+          "1": 1
+        },
+        "limit_up_stocks": [
+          {
+            "code": "601956",
+            "name": "东贝集团",
+            "height": 1
+          }
+        ],
+        "source": "同花顺行业指数及当前成分股"
+      },
+      {
+        "code": "881126.TI",
+        "name": "汽车零部件",
+        "change_pct": -1.329307,
+        "turnover_cny": 31209897000,
+        "member_count": 276,
+        "limit_up_count": 1,
+        "board_counts": {
+          "1": 1
+        },
+        "limit_up_stocks": [
+          {
+            "code": "603788",
+            "name": "宁波高发",
+            "height": 1
+          }
+        ],
+        "source": "同花顺行业指数及当前成分股"
+      },
+      {
+        "code": "884290.TI",
+        "name": "底盘与发动机系统",
+        "change_pct": -1.402384,
+        "turnover_cny": 15741212000,
+        "member_count": 113,
+        "limit_up_count": 1,
+        "board_counts": {
+          "1": 1
+        },
+        "limit_up_stocks": [
+          {
+            "code": "603788",
+            "name": "宁波高发",
+            "height": 1
+          }
+        ],
+        "source": "同花顺行业指数及当前成分股"
+      },
+      {
         "code": "881140.TI",
         "name": "化学制药",
-        "change_pct": -1.078988,
-        "turnover_cny": 34502105000,
+        "change_pct": -1.44752,
+        "turnover_cny": 36716712000,
         "member_count": 159,
         "limit_up_count": 1,
         "board_counts": {
@@ -1206,8 +1933,8 @@
         },
         "limit_up_stocks": [
           {
-            "code": "002923",
-            "name": "润都股份",
+            "code": "600812",
+            "name": "华北制药",
             "height": 1
           }
         ],
@@ -1216,8 +1943,8 @@
       {
         "code": "881130.TI",
         "name": "计算机设备",
-        "change_pct": -1.307385,
-        "turnover_cny": 12038301100,
+        "change_pct": -1.541312,
+        "turnover_cny": 13249984100,
         "member_count": 83,
         "limit_up_count": 1,
         "board_counts": {
@@ -1235,8 +1962,8 @@
       {
         "code": "884144.TI",
         "name": "化学制剂",
-        "change_pct": -1.442296,
-        "turnover_cny": 24634799000,
+        "change_pct": -1.785647,
+        "turnover_cny": 26194764000,
         "member_count": 111,
         "limit_up_count": 1,
         "board_counts": {
@@ -1244,9 +1971,47 @@
         },
         "limit_up_stocks": [
           {
-            "code": "002923",
-            "name": "润都股份",
+            "code": "600812",
+            "name": "华北制药",
             "height": 1
+          }
+        ],
+        "source": "同花顺行业指数及当前成分股"
+      },
+      {
+        "code": "884176.TI",
+        "name": "出版",
+        "change_pct": -1.848255,
+        "turnover_cny": 3376281300,
+        "member_count": 28,
+        "limit_up_count": 1,
+        "board_counts": {
+          "8": 1
+        },
+        "limit_up_stocks": [
+          {
+            "code": "600825",
+            "name": "新华传媒",
+            "height": 8
+          }
+        ],
+        "source": "同花顺行业指数及当前成分股"
+      },
+      {
+        "code": "881164.TI",
+        "name": "文化传媒",
+        "change_pct": -1.995546,
+        "turnover_cny": 14531275000,
+        "member_count": 85,
+        "limit_up_count": 1,
+        "board_counts": {
+          "8": 1
+        },
+        "limit_up_stocks": [
+          {
+            "code": "600825",
+            "name": "新华传媒",
+            "height": 8
           }
         ],
         "source": "同花顺行业指数及当前成分股"
@@ -1254,8 +2019,8 @@
       {
         "code": "884098.TI",
         "name": "消费电子零部件及组装",
-        "change_pct": -1.947588,
-        "turnover_cny": 21375561000,
+        "change_pct": -2.257213,
+        "turnover_cny": 22956717000,
         "member_count": 85,
         "limit_up_count": 1,
         "board_counts": {
@@ -1273,8 +2038,8 @@
       {
         "code": "881124.TI",
         "name": "消费电子",
-        "change_pct": -2.173494,
-        "turnover_cny": 23738331000,
+        "change_pct": -2.473979,
+        "turnover_cny": 25523250000,
         "member_count": 96,
         "limit_up_count": 1,
         "board_counts": {
@@ -1293,7 +2058,7 @@
     "strength_ready": true,
     "missing": "跨日板块持续性仍需由每日快照累积。"
   },
-  "market_amount_cny": 1105772040000,
+  "market_amount_cny": 1189515780000,
   "market_amount_scope": "上证指数成交额 + 深证成指成交额",
   "limit_up_ladder": {
     "window": {
@@ -1356,6 +2121,14 @@
               "thscode": "600663.SH",
               "ticker": "600663",
               "name": "陆家嘴",
+              "board_num": 2,
+              "seal_nextday": null,
+              "sign_level": 0
+            },
+            {
+              "thscode": "603906.SH",
+              "ticker": "603906",
+              "name": "龙蟠科技",
               "board_num": 2,
               "seal_nextday": null,
               "sign_level": 0
@@ -4700,6 +5473,17 @@
   },
   "anomaly_analysis": [
     {
+      "stock_name": "新华传媒",
+      "analysis_content": "1、据2026年9月19日公告，公司拟发行股份购买界面财联社100%股权，预计构成重大资产重组及关联交易。\n2、据2026年9月8日公告，标的公司经营范围包括互联网新闻信息服务、商务信息咨询、电子商务及广告发布等业务。\n3、据2026年9月19日公告，交易完成后公司控股股东仍为上海报业集团，实际控制人仍为上海市国资委；据2026年8月27日半年报，公司主营图书发行、报刊经营，拥有教材发行资源及连锁渠道优势。\n\n（免责声明：本内容由AI技术搜集公开信息总结生成，仅供参考，不构成投资建议，以上市公司公告为准）",
+      "keyword_list": [
+        "拟收购界面财联社",
+        "财经新媒体",
+        "上海国资"
+      ],
+      "thscode": "600825.SH",
+      "tag_name": "涨停"
+    },
+    {
       "stock_name": "九阳股份",
       "analysis_content": "1、据2025年年报，公司主营厨房小家电、水家电及炊具等产品，持续做强家庭厨房、公益厨房与太空厨房品牌资产。\n2、据2026年9月30日股票交易异常波动公告，公司持有深思考人工智能机器人科技7.92%股权，并参股享刻智能，涉及类脑人工智能及机器人领域，但相关投资处于早期阶段，对当期收入及利润无重大影响。\n3、据2026年9月29日华兴证券研报，公司将太空同源技术应用于加热净水器、不粘零涂层电饭煲及低嘌呤豆浆机等产品。\n\n（免责声明：本内容由AI技术搜集公开信息总结生成，仅供参考，不构成投资建议，以上市公司公告为准）",
       "keyword_list": [
@@ -4708,6 +5492,17 @@
         "太空科技"
       ],
       "thscode": "002242.SZ",
+      "tag_name": "涨停"
+    },
+    {
+      "stock_name": "时代万恒",
+      "analysis_content": "行业原因：\n9月28日，工信部等七部门对外发布《新型电池产业发展“十五五”规划》，提出到2030年，我国新型电池产业规模实现稳步增长。全链条创新能力持续增强，先进电极材料、新型电解质、高端辅材等取得新突破，新体系电池研发取得重大进展，全固态电池初步实现规模化应用。\n公司原因：\n1、据2026年10月8日风险提示公告，公司主营锂离子电池和镍氢电池研发、生产及销售，生产经营正常，按订单组织生产。\n2、据2026年8月22日半年报，公司拥有圆柱形锂电池生产线，产品主要应用于电动工具、园林工具、个人护理等领域。\n3、据2026年4月9日年报，公司国内外重点客户销售数量同比增长，并完成多个型号产品试验与量产。\n\n（免责声明：本内容由AI技术搜集公开信息总结生成，仅供参考，不构成投资建议，以上市公司公告为准）",
+      "keyword_list": [
+        "新能源电池",
+        "圆柱锂电",
+        "镍氢电池"
+      ],
+      "thscode": "600241.SH",
       "tag_name": "涨停"
     },
     {
@@ -4730,6 +5525,52 @@
         "AI PC键盘"
       ],
       "thscode": "002866.SZ",
+      "tag_name": "涨停"
+    },
+    {
+      "stock_name": "园林股份",
+      "analysis_content": "1、据2026年9月29日公告，公司拟发行股份及支付现金收购华澜微93.5031%股份并募集配套资金，股票于9月29日复牌。\n2、据2026年9月29日公告，华澜微主营存储控制器芯片及阵列存储控制器芯片的研发、设计与销售。\n3、据2026年8月31日半年报，公司主营市政园林工程，具备园林景观设计与工程施工一体化能力。\n\n（免责声明：本内容由AI技术搜集公开信息总结生成，仅供参考，不构成投资建议，以上市公司公告为准）",
+      "keyword_list": [
+        "重大重组",
+        "复牌",
+        "存储芯片",
+        "园林工程"
+      ],
+      "thscode": "605303.SH",
+      "tag_name": "涨停"
+    },
+    {
+      "stock_name": "陆家嘴",
+      "analysis_content": "1、据2026年7月30日半年报，公司主营城市综合开发与服务，持有主要在营物业386万平方米，覆盖陆家嘴、前滩、张江等区域。\n2、据2026年7月30日经营数据公告，公司上半年住宅类物业合同销售金额57.78亿元，同比增长21%；办公项目星展银行大厦合同销售金额37.63亿元。\n3、据2026年9月4日公告，公司国有股份无偿划转完成，实际控制人为浦东新区国资委，控股股东及实际控制人未发生变化。\n\n（免责声明：本内容由AI技术搜集公开信息总结生成，仅供参考，不构成投资建议，以上市公司公告为准）",
+      "keyword_list": [
+        "房地产开发",
+        "商办物业",
+        "浦东国资"
+      ],
+      "thscode": "600663.SH",
+      "tag_name": "涨停"
+    },
+    {
+      "stock_name": "龙蟠科技",
+      "analysis_content": "行业原因：\n9月28日，工信部等七部门对外发布《新型电池产业发展“十五五”规划》，提出到2030年，我国新型电池产业规模实现稳步增长，全固态电池初步实现规模化应用。\n公司原因：\n1、据2026年5月25日互动易，公司固态电池前驱体D392已与客户开展验证及送样测试。\n2、据2026年8月27日半年报，公司主营磷酸铁锂正极材料和车用环保精细化学品，磷酸铁锂正极材料为行业主要产品。\n3、据2026年6月8日互动易及2026年7月13日互动易，公司控股孙公司迪克化学的数据中心冷却液产品已获得华为技术认证，并被列入其《计算集群硬件液冷可部署要求》认证名录，相关产品已实际出货。\n4、据2026年8月27日半年报，公司上半年实现营业收入71.98亿元，同比增长98.75%，归母净利润4.21亿元，同比扭亏为盈。\n\n（免责声明：本内容由AI技术搜集公开信息总结生成，仅供参考，不构成投资建议，以上市公司公告为准）",
+      "keyword_list": [
+        "磷酸铁锂",
+        "固态电池材料",
+        "液冷",
+        "半年报扭亏"
+      ],
+      "thscode": "603906.SH",
+      "tag_name": "大涨"
+    },
+    {
+      "stock_name": "兴业股份",
+      "analysis_content": "1、据2026年9月22日半年度业绩说明会公告，公司半导体光刻胶用酚醛树脂已向少量潜在客户送样，仍处于性能参数研发和试验匹配阶段。\n2、据2026年8月26日半年报，公司主营有机合成树脂为主的功能新材料，涵盖铸造用树脂、特种酚醛树脂等研发生产销售。\n3、据2026年9月22日半年度业绩说明会公告，公司上半年营收9.27亿元，同比增长21.09%；归母净利润6452.67万元，同比增长42.92%，主要系产品销量与售价上涨带动毛利率提升。\n\n（免责声明：本内容由AI技术搜集公开信息总结生成，仅供参考，不构成投资建议，以上市公司公告为准）",
+      "keyword_list": [
+        "光刻胶树脂",
+        "合成树脂",
+        "业绩增长"
+      ],
+      "thscode": "603928.SH",
       "tag_name": "涨停"
     },
     {
@@ -4866,18 +5707,6 @@
       "tag_name": "涨停"
     },
     {
-      "stock_name": "润都股份",
-      "analysis_content": "1、据2026年8月21日半年报，公司产品盐酸莫西沙星片适应症包括鼠疫，包括成人因鼠疫耶尔森氏杆菌（Y.pestis）引起的肺鼠疫和败血性鼠疫，也可预防鼠疫。\n2、据2026年8月21日半年报，公司全球首创1类新药盐酸去甲乌药碱注射液已获批上市，纳入广东省创新药械产品目录，并进入国家医保谈判环节，正推进商业化布局。\n3、据2025年年报，公司主营化学药制剂、化学原料药及医药中间体，多项产品已形成原料药到制剂一体化生产能力。\n4、据2026年7月16日互动易，公司预计2026年上半年归母净利润为3500万至4200万元，同比增长196.70%至216.04%，实现扭亏为盈，主要受产品销量增加及荆门公司产能利用率提升影响。\n\n（免责声明：本内容由AI技术搜集公开信息总结生成，仅供参考，不构成投资建议，以上市公司公告为准）",
-      "keyword_list": [
-        "鼠疫",
-        "创新药",
-        "化学制药",
-        "业绩扭亏"
-      ],
-      "thscode": "002923.SZ",
-      "tag_name": "涨停"
-    },
-    {
       "stock_name": "金时科技",
       "analysis_content": "1、据2026年9月22日互动易，公司超级电容业务已有小批量订单，多孔炭产线投建工作正有序推进。\n2、据2026年8月24日半年报，公司布局集装箱式液冷储能系统及锂电加超级电容复合式储能装置，应用于新能源发电、电网调频等场景。\n3、据2026年8月24日半年报，公司拟投建200MW/400MWh独立储能电站，并推进千吨级多孔炭产线建设项目。\n\n（免责声明：本内容由AI技术搜集公开信息总结生成，仅供参考，不构成投资建议，以上市公司公告为准）",
       "keyword_list": [
@@ -4931,6 +5760,171 @@
         "三季报预增"
       ],
       "thscode": "301697.SZ",
+      "tag_name": "涨停"
+    },
+    {
+      "stock_name": "中远海能",
+      "analysis_content": "行业原因：\n10月7日霍尔木兹海峡通行受扰、卡塔尔附近油轮遇袭，航线绕行及安全风险上升，市场关注油运有效运力收缩与运价上行。\n公司原因：\n1、据2026年7月11日业绩预增公告，2026年上半年VLCC主要航线平均TCE同比上涨约170%至180%，油运业务景气度提升。\n2、据2026年8月29日半年报，油轮运输为公司基础和核心业务，油轮船队及参与投资的LNG船队规模均位居全球前列。\n3、据2026年9月29日公告，公司拟向全资子公司上海LNG增资17亿元，提升绿色低碳专业运输能力。\n\n（免责声明：本内容由AI技术搜集公开信息总结生成，仅供参考，不构成投资建议，以上市公司公告为准）",
+      "keyword_list": [
+        "油运景气",
+        "LNG运输",
+        "上海LNG增资"
+      ],
+      "thscode": "600026.SH",
+      "tag_name": "涨停"
+    },
+    {
+      "stock_name": "广西能源",
+      "analysis_content": "1、据2025年年报，公司电力主业收入占比超98%，构建水火风光协同发电体系，控制电源总装机243.37万千瓦。\n2、据2026年半年报，公司上半年营业收入19.21亿元，同比增长17.40%，归母净利润1.24亿元，同比扭亏。\n3、据2026年7月18日公告，公司拟投资83.34亿元建设贺州抽水蓄能电站，总装机容量140万千瓦。\n\n（免责声明：本内容由AI技术搜集公开信息总结生成，仅供参考，不构成投资建议，以上市公司公告为准）",
+      "keyword_list": [
+        "电力主业",
+        "业绩扭亏",
+        "抽水蓄能"
+      ],
+      "thscode": "600310.SH",
+      "tag_name": "涨停"
+    },
+    {
+      "stock_name": "红豆股份",
+      "analysis_content": "1、据2026年4月30日年报，公司主营男装生产与销售，以“舒适红豆”为品牌理念，0感舒适衬衫获沙利文认证“全国全网中高端衬衫销量领先”。\n2、根据2025年2月20日红豆集团官微：1月16日红豆股份在智能机器人领域又迈出重要一步，与艾雨文承机器人公司达成合作，股权投资智能养老机器人“大头阿亮”，这不仅是对“人工智能+居家养老”新兴产业模式的前瞻性布局，更是对当下蓬勃发展的“银发经济”的积极响应。\n\n（免责声明：本内容由AI技术搜集公开信息总结生成，仅供参考，不构成投资建议，以上市公司公告为准）",
+      "keyword_list": [
+        "服装",
+        "养老机器人"
+      ],
+      "thscode": "600400.SH",
+      "tag_name": "涨停"
+    },
+    {
+      "stock_name": "安泰集团",
+      "analysis_content": "行业原因：\n1、伊朗革命卫队称将关闭霍尔木兹海峡“非法航道”，能源运输风险上升，布伦特原油突破100美元/桶，提升煤炭替代能源及煤化工品种价格预期。\n2、据中国经济网10月8日报道，煤炭龙头股息率普遍处于4%至5%，稳定现金流与持续分红提升板块防御价值。\n公司原因：\n1、据2026年8月22日公告，公司二季度为第三方代加工焦炭44.37万吨，实现收入0.91亿元；生产H型钢33.43万吨、销售32.78万吨，实现收入10.17亿元。\n2、据2026年4月25日年报，公司主要从事焦炭和型钢生产销售，具备240万吨焦炭及120万吨大型H型钢年产能。\n3、据2026年5月22日互动易，公司焦炭业务采取受托加工模式，合作对方为两家客户，定价机制相对稳定。\n\n（免责声明：本内容由AI技术搜集公开信息总结生成，仅供参考，不构成投资建议，以上市公司公告为准）",
+      "keyword_list": [
+        "焦炭",
+        "型钢",
+        "受托加工"
+      ],
+      "thscode": "600408.SH",
+      "tag_name": "涨停"
+    },
+    {
+      "stock_name": "国新能源",
+      "analysis_content": "行业原因：\n据新华社援引伊朗法尔斯通讯社7日报道，伊朗伊斯兰革命卫队总司令高级顾问穆罕默德·礼萨·纳格迪表示，霍尔木兹海峡内的少数“非法航道”即将被关闭。\n公司原因：\n1、据2026年8月22日半年报，公司是山西省规模最大的天然气管网运营企业，省级输气管网约5000公里，覆盖11个市、104个县市区，城市管网累计建成8000余公里。\n2、据2026年5月22日互动易，公司业务涵盖长输管网、燃气销售、城市燃气、液电调峰，并积极拓展新能源业务。\n3、据2026年8月22日半年报，公司上半年归母净利润1.08亿元，同比增长44.26%，扣非归母净利润同比增长200.83%。\n\n（免责声明：本内容由AI技术搜集公开信息总结生成，仅供参考，不构成投资建议，以上市公司公告为准）",
+      "keyword_list": [
+        "天然气管网",
+        "新能源",
+        "业绩增长"
+      ],
+      "thscode": "600617.SH",
+      "tag_name": "涨停"
+    },
+    {
+      "stock_name": "金牛化工",
+      "analysis_content": "1、据2026年9月16日互动易，公司主要业务为甲醇生产和销售，生产能力20万吨每年，采用焦炉气制甲醇。\n2、据2026年8月27日半年度主要经营数据公告，上半年甲醇平均售价2532.52元每吨，同比增长7.80%。\n3、据2026年8月27日公告，公司已签订总金额4.36亿元的风力发电机组设备采购合同，涉及承德隆化200MW风电项目。\n\n（免责声明：本内容由AI技术搜集公开信息总结生成，仅供参考，不构成投资建议，以上市公司公告为准）",
+      "keyword_list": [
+        "甲醇",
+        "甲醇价格",
+        "风电项目"
+      ],
+      "thscode": "600722.SH",
+      "tag_name": "涨停"
+    },
+    {
+      "stock_name": "华北制药",
+      "analysis_content": "1、据此前2016年6月28日关于全资子公司原料药通过WHO的PQ认证的公告，其中提到硫酸链霉素可单用于治疗土拉菌病，或与其他抗菌药物联合用于鼠疫、腹股沟肉芽肿、布鲁菌病、鼠咬热等的治疗。\n2、据2026年8月22日半年报及2026年9月18日互动易，公司青霉素、头孢系列覆盖原料药到制剂药，青霉素类产品30多种，相关产品出口海外。\n3、据2026年9月16日互动易，公司上半年获批10个新产品，六价重组诺如病毒疫苗申报临床试验获受理，奥木替韦单抗高浓度注射液等项目持续推进。\n4、据2026年8月4日公告，公司环孢素软胶囊、他克莫司胶囊、注射用替考拉宁及注射用盐酸万古霉素拟中选全国药品集中采购。\n\n（免责声明：本内容由AI技术搜集公开信息总结生成，仅供参考，不构成投资建议，以上市公司公告为准）",
+      "keyword_list": [
+        "鼠疫",
+        "抗生素",
+        "创新药",
+        "集采"
+      ],
+      "thscode": "600812.SH",
+      "tag_name": "涨停"
+    },
+    {
+      "stock_name": "东贝集团",
+      "analysis_content": "1、据2026年4月18日年报，公司主营制冷压缩机，产品覆盖15大系列400余个品种，远销60多个国家和地区，并为海尔、海信、美的等国内外品牌供应产品。\n2、据2025年9月16日互动易，公司在机器人关节电机方面具备相关技术储备，目前处于产品研发测试阶段。\n3、据2026年8月22日半年报，公司持续推进高效、节能、智能化和小型化技术研发，行业首创高效智能扁平化压缩机。\n\n（免责声明：本内容由AI技术搜集公开信息总结生成，仅供参考，不构成投资建议，以上市公司公告为准）",
+      "keyword_list": [
+        "制冷压缩机",
+        "机器人电机",
+        "高效变频"
+      ],
+      "thscode": "601956.SH",
+      "tag_name": "涨停"
+    },
+    {
+      "stock_name": "招商南油",
+      "analysis_content": "行业原因：\n10月7日霍尔木兹海峡通行受扰、卡塔尔附近油轮遇袭，航线绕行及安全风险上升，市场关注油运有效运力收缩与运价上行。\n公司原因：\n1、据2025年年报，公司主营成品油、原油、化学品和气体运输，MR船队在国内及苏伊士运河以东区域规模占优，国际成品油运输处于远东领先地位。\n2、据2026年7月18日公告，公司拟投资不超过1.828亿美元新建四艘5万吨级MR油品及化学品船，预计于2028年至2029年陆续交付。\n3、据2026年8月28日半年报，公司上半年营业收入33.09亿元，同比增长19.37%，归母净利润8.12亿元，同比增长42.41%。\n\n（免责声明：本内容由AI技术搜集公开信息总结生成，仅供参考，不构成投资建议，以上市公司公告为准）",
+      "keyword_list": [
+        "成品油运输",
+        "MR船队",
+        "业绩增长"
+      ],
+      "thscode": "601975.SH",
+      "tag_name": "涨停"
+    },
+    {
+      "stock_name": "恒尚节能",
+      "analysis_content": "1、据2026年9月25日进展公告，公司推进收购金胜电子100%股权；据2026年7月14日重组预案修订稿，标的具备工业级存储模组及存储测试设备业务。\n2、据2026年8月28日半年报，公司聚焦中高端公共建筑幕墙装饰工程，业务涵盖高科技产业园区、写字楼、商业综合体及大型公共建筑。\n3、据2026年4月23日提质增效重回报行动方案公告，公司持续研发低能耗系统门窗及光伏幕墙产品，推进相关示范项目落地。\n\n（免责声明：本内容由AI技术搜集公开信息总结生成，仅供参考，不构成投资建议，以上市公司公告为准）",
+      "keyword_list": [
+        "存储模组",
+        "建筑幕墙",
+        "光伏幕墙"
+      ],
+      "thscode": "603137.SH",
+      "tag_name": "涨停"
+    },
+    {
+      "stock_name": "宁波高发",
+      "analysis_content": "1、据2026年7月25日公告，公司已完成摩洛哥全资孙公司注册，经营范围涵盖汽车操纵和加速控制系统、汽车电子操纵控制系统等设计、制造和销售。\n2、据2026年7月23日公告，公司电子油门踏板总成等产品成功配套一汽大众、上汽大众、吉利汽车、比亚迪等主机厂。\n3、据2026年4月21日公告，公司电子换挡器切入组合开关并量产，电子加速踏板2025年销量突破一千万套，制动踏板持续放量。\n\n（免责声明：本内容由AI技术搜集公开信息总结生成，仅供参考，不构成投资建议，以上市公司公告为准）",
+      "keyword_list": [
+        "汽车控制系统",
+        "新能源车配套",
+        "摩洛哥基地"
+      ],
+      "thscode": "603788.SH",
+      "tag_name": "涨停"
+    },
+    {
+      "stock_name": "松炀资源",
+      "analysis_content": "1、据2026年8月29日半年报，公司聚焦高强瓦楞纸主营业务，拥有年产18万吨高强瓦楞原纸生产线。\n2、据2026年9月18日业绩说明会，公司下半年将优化采购模式、降低生产成本、拓宽销售渠道，力争推动主业扭亏为盈。\n3、据2026年9月15日投资者关系活动记录表，公司协议转让事项仍在推进，尚未办理完毕。\n\n（免责声明：本内容由AI技术搜集公开信息总结生成，仅供参考，不构成投资建议，以上市公司公告为准）",
+      "keyword_list": [
+        "高强瓦楞纸",
+        "主业调整",
+        "业绩减亏"
+      ],
+      "thscode": "603863.SH",
+      "tag_name": "涨停"
+    },
+    {
+      "stock_name": "必得科技",
+      "analysis_content": "1、据2026年8月27日半年报，公司主营轨道交通车辆配套产品，客户覆盖中车青岛、中车长春、中车唐山等整车制造商，产品应用于动车组及城市地铁车辆，并获国家专精特新“小巨人”企业认定。\n2、据2025年8月8日公告及2025年10月24日公告，控股股东向扬州鼎龙启顺协议转让29.90%股份已完成过户，后者由半导体投资人吴叶楠控制，市场猜测后续或有半导体资产注入；据2026年8月11日公告，公司股东协议转让股份已完成过户，实际控制人变更为王坚群，控股股东保持不变。\n3、据2026年4月10日年报，公司2026年将深化与头部客户合作，拓展产业链延伸业务，推进业务拓展和技术创新。\n\n（免责声明：本内容由AI技术搜集公开信息总结生成，仅供参考，不构成投资建议，以上市公司公告为准）",
+      "keyword_list": [
+        "轨道交通",
+        "半导体注入猜测",
+        "股份转让"
+      ],
+      "thscode": "605298.SH",
+      "tag_name": "涨停"
+    },
+    {
+      "stock_name": "野马电池",
+      "analysis_content": "行业原因：\n9月28日，工信部等七部门对外发布《新型电池产业发展“十五五”规划》，提出到2030年，我国新型电池产业规模实现稳步增长。全链条创新能力持续增强，先进电极材料、新型电解质、高端辅材等取得新突破，新体系电池研发取得重大进展，全固态电池初步实现规模化应用。\n公司原因：\n1、据2026年8月27日半年报，公司主营碱性电池和碳性电池，年产能突破40亿只，生产规模和市场占有率位居行业前列。\n2、据2026年4月28日年报，公司新增锂锰扣式电池线，可充锂电池项目进入小批量试制阶段。\n3、据2026年6月22日业绩说明会，公司越南生产基地已于2026年3月底建成投产，形成国内未来工厂与海外生产基地双轮驱动。\n\n（免责声明：本内容由AI技术搜集公开信息总结生成，仅供参考，不构成投资建议，以上市公司公告为准）",
+      "keyword_list": [
+        "锌锰电池",
+        "锂电池",
+        "海外基地"
+      ],
+      "thscode": "605378.SH",
+      "tag_name": "涨停"
+    },
+    {
+      "stock_name": "卓越新能",
+      "analysis_content": "1、据2026年10月8日财闻报道，消息面上，泰国政府正考虑下调生物燃料消费税，压低价格并拉动消费。\n2、据2026年8月26日半年度报告，公司以废弃油脂资源化利用为基础，主营生物柴油及生物基材料，生物柴油产量连续多年位居行业前列。\n3、据2025年年报，公司年产10万吨烃基生物柴油生产线已完成建设并通过验收，2026年第二季度进入试生产阶段。\n4、据2026年8月26日半年度报告，公司泰国、新加坡生物柴油项目及东南亚废弃油脂回收项目稳步推进，海外产能与原料网络持续完善。\n\n（免责声明：本内容由AI技术搜集公开信息总结生成，仅供参考，不构成投资建议，以上市公司公告为准）",
+      "keyword_list": [
+        "生物柴油",
+        "绿色燃料",
+        "海外扩产"
+      ],
+      "thscode": "688196.SH",
       "tag_name": "涨停"
     }
   ]
