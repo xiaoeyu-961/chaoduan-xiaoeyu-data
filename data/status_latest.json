@@ -5,12 +5,18 @@
   "latest_snapshot": "2026-09-30T16:08:10.691883+08:00",
   "session": "manual",
   "source": "同花顺官方 Financial-API",
-  "status": "complete",
+  "status": "stale",
   "missing_fields": [],
-  "last_error": null,
+  "last_error": "HithinkError: /api/a-share/special-data/limit-down-pool: HithinkError: API retryable code 5003",
+  "last_attempt": {
+    "snapshot_id": "2026-10-08-091913-r0",
+    "market_date": "2026-10-08",
+    "captured_at": "2026-10-08T09:19:13.756214+08:00",
+    "status": "failed"
+  },
   "datasets": {
     "market": {
-      "status": "complete",
+      "status": "stale",
       "updated_at": "2026-09-30T16:08:10.691883+08:00",
       "missing_fields": []
     }
