@@ -77,11 +77,39 @@
       "slot": null,
       "turnover_cny": 610408390000,
       "amount_comparison": null
+    },
+    {
+      "time": "2026-10-08T02:26:41.173120+00:00",
+      "source": "同花顺官方 Financial-API",
+      "limit_up_count": 44,
+      "limit_down_count": 8,
+      "broken_count": 20,
+      "broken_rate_pct": 31.25,
+      "promotion_rate_pct": 16.07,
+      "highest_board": 8,
+      "leader": {
+        "code": "600825",
+        "name": "新华传媒"
+      },
+      "strongest_theme": "锂电专用设备",
+      "slot": "10:30",
+      "turnover_cny": 797010910000,
+      "amount_comparison": {
+        "status": "ready",
+        "time": "10:30",
+        "previousTradeDate": "2026-09-30",
+        "current": 797010910000,
+        "previous": 597455470000,
+        "difference": 199555440000,
+        "changePct": 33.4,
+        "direction": "增量",
+        "source": "同花顺历史快照同时间比较"
+      }
     }
   ],
   "data_quality": {
-    "snapshot_count": 3,
-    "valid_snapshot_count": 3,
+    "snapshot_count": 4,
+    "valid_snapshot_count": 4,
     "excluded_snapshot_count": 0,
     "timeline_ready": false,
     "note": "仅接受同日北京时间交易时段的有效分钟快照；需覆盖09:35、午前、13:45附近及14:45后的尾盘。"
