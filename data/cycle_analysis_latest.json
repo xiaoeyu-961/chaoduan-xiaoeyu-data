@@ -2,7 +2,7 @@
   "schema_version": 2,
   "ok": true,
   "trade_date": "2026-10-08",
-  "generated_at": "2026-10-08T07:23:14.621545+00:00",
+  "generated_at": "2026-10-08T07:57:21.999938+00:00",
   "principles": [
     "不使用5/10/20日均线判断情绪周期",
     "龙头强度与市场生态分开计算",
@@ -11,12 +11,12 @@
   ],
   "dashboard": {
     "market_composite": 20,
-    "leader_strength": 65,
+    "leader_strength": 67,
     "market_ecology": 37,
     "market_width": 12,
     "relay_ecology": 77,
     "mainline_strength": 71,
-    "loss_effect": 66,
+    "loss_effect": 67,
     "structure_label": "龙头强 / 生态弱：龙头抱团 / 生态分歧"
   },
   "large_cycle": {
@@ -6051,7 +6051,7 @@
       "confidence": "high"
     },
     "L": {
-      "score": 66,
+      "score": 67,
       "coverage_pct": 80.0,
       "components": [
         {
@@ -6077,10 +6077,10 @@
         },
         {
           "metric": "跌停数量",
-          "value": 14,
+          "value": 15,
           "weight": 15,
-          "normalized": 70.0,
-          "contribution": 13.12
+          "normalized": 75.0,
+          "contribution": 14.06
         },
         {
           "metric": "天地板及严重亏损",
@@ -6106,7 +6106,7 @@
       "confidence": "medium"
     },
     "C": {
-      "score": 65,
+      "score": 67,
       "coverage_pct": 100.0,
       "components": [
         {
@@ -6118,12 +6118,12 @@
         },
         {
           "metric": "封板稳定性",
-          "value": 1.05,
+          "value": 27.02,
           "weight": 25,
-          "normalized": 0,
+          "normalized": 8.77,
           "basis": "当前封单额/峰值封单额",
           "proxy": false,
-          "contribution": 0.0
+          "contribution": 2.19
         },
         {
           "metric": "首次封板主动性",
@@ -6134,7 +6134,7 @@
         },
         {
           "metric": "封单/成交额",
-          "value": 107.11,
+          "value": 2760.62,
           "weight": 15,
           "normalized": 100,
           "contribution": 15.0
@@ -6264,7 +6264,7 @@
   },
   "leader_ecology_matrix": {
     "leader_strength": {
-      "score": 65,
+      "score": 67,
       "coverage_pct": 100.0,
       "components": [
         {
@@ -6276,12 +6276,12 @@
         },
         {
           "metric": "封板稳定性",
-          "value": 1.05,
+          "value": 27.02,
           "weight": 25,
-          "normalized": 0,
+          "normalized": 8.77,
           "basis": "当前封单额/峰值封单额",
           "proxy": false,
-          "contribution": 0.0
+          "contribution": 2.19
         },
         {
           "metric": "首次封板主动性",
@@ -6292,7 +6292,7 @@
         },
         {
           "metric": "封单/成交额",
-          "value": 107.11,
+          "value": 2760.62,
           "weight": 15,
           "normalized": 100,
           "contribution": 15.0
@@ -6365,10 +6365,10 @@
         },
         {
           "metric": "跌停数量",
-          "value": 14,
+          "value": 15,
           "weight": 8,
-          "normalized": 30.0,
-          "contribution": 2.4
+          "normalized": 25.0,
+          "contribution": 2.0
         },
         {
           "metric": "市场上涨宽度",
