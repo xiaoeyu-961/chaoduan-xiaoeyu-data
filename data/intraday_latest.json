@@ -227,12 +227,40 @@
         "direction": "增量",
         "source": "同花顺历史快照同时间比较"
       }
+    },
+    {
+      "time": "2026-10-09T03:52:40.580085+00:00",
+      "source": "同花顺官方 Financial-API",
+      "limit_up_count": 26,
+      "limit_down_count": 18,
+      "broken_count": 15,
+      "broken_rate_pct": 36.59,
+      "promotion_rate_pct": 22.73,
+      "highest_board": 9,
+      "leader": {
+        "code": "600825",
+        "name": "新华传媒"
+      },
+      "strongest_theme": "其他电池",
+      "slot": null,
+      "turnover_cny": 1168591450000,
+      "amount_comparison": {
+        "status": "ready",
+        "time": "11:52",
+        "previousTradeDate": "2026-10-08",
+        "current": 1168591450000,
+        "previous": 1105772040000,
+        "difference": 62819410000,
+        "changePct": 5.68,
+        "direction": "增量",
+        "source": "同花顺历史快照同时间比较"
+      }
     }
   ],
   "data_quality": {
-    "snapshot_count": 8,
+    "snapshot_count": 9,
     "valid_snapshot_count": 7,
-    "excluded_snapshot_count": 1,
+    "excluded_snapshot_count": 2,
     "timeline_ready": false,
     "note": "仅接受同日北京时间交易时段的有效分钟快照；需覆盖09:35、午前、13:45附近及14:45后的尾盘。"
   }
