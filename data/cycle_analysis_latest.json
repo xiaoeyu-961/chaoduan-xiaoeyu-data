@@ -2,7 +2,7 @@
   "schema_version": 2,
   "ok": true,
   "trade_date": "2026-10-09",
-  "generated_at": "2026-10-09T07:32:23.604152+00:00",
+  "generated_at": "2026-10-09T07:59:10.571997+00:00",
   "principles": [
     "不使用5/10/20日均线判断情绪周期",
     "龙头强度与市场生态分开计算",
@@ -10,18 +10,18 @@
     "缺失数据不补造、不按0分处理"
   ],
   "dashboard": {
-    "market_composite": 37,
-    "leader_strength": 58,
+    "market_composite": 57,
+    "leader_strength": 78,
     "market_ecology": 64,
     "market_width": 71,
     "relay_ecology": 45,
     "mainline_strength": 84,
     "loss_effect": 22,
-    "structure_label": "龙头弱 / 生态弱：退潮风险"
+    "structure_label": "龙头强 / 生态弱：龙头抱团 / 生态分歧"
   },
   "large_cycle": {
-    "confirmed_large_cycle": "低位混沌",
-    "stage": "新周期试错",
+    "confirmed_large_cycle": "高位震荡",
+    "stage": "首次分歧",
     "candidate_large_cycle": null,
     "candidate_stage": null,
     "confirmation_progress": {
@@ -30,11 +30,11 @@
       "stage": "confirmed"
     },
     "confidence": "high",
-    "trend": "→",
-    "score": 37,
+    "trend": "↓",
+    "score": 57,
     "method": "状态机 + 结构门槛 + 连续性；不使用均线",
     "tags": [
-      "新周期试错"
+      "核心抱团"
     ],
     "supporting_factors": [
       "最高板9板",
@@ -45,7 +45,7 @@
       "晋级率仅27.27%",
       "近端涨停数量未形成上升趋势"
     ],
-    "conclusion": "低位混沌·新周期试错"
+    "conclusion": "高位震荡·首次分歧"
   },
   "medium_cycle": {
     "mainline": {
@@ -6376,8 +6376,8 @@
     "note": "日内节点不直接改写大周期。"
   },
   "cycle": {
-    "confirmed_large_cycle": "低位混沌",
-    "stage": "新周期试错",
+    "confirmed_large_cycle": "高位震荡",
+    "stage": "首次分歧",
     "candidate_large_cycle": null,
     "candidate_stage": null,
     "confirmation_progress": {
@@ -6386,7 +6386,7 @@
       "stage": "confirmed"
     },
     "confidence": "high",
-    "trend": "→",
+    "trend": "↓",
     "small_cycle_state": "震荡",
     "small_cycle_path": [
       "观察起点",
@@ -6404,7 +6404,7 @@
       "震荡"
     ],
     "tags": [
-      "新周期试错"
+      "核心抱团"
     ]
   },
   "factors": {
@@ -6584,7 +6584,7 @@
       "confidence": "medium"
     },
     "C": {
-      "score": 58,
+      "score": 78,
       "coverage_pct": 100.0,
       "components": [
         {
@@ -6596,12 +6596,12 @@
         },
         {
           "metric": "封板稳定性",
-          "value": 1.31,
+          "value": 42.16,
           "weight": 25,
-          "normalized": 0,
+          "normalized": 27.7,
           "basis": "当前封单额/峰值封单额",
           "proxy": false,
-          "contribution": 0.0
+          "contribution": 6.92
         },
         {
           "metric": "首次封板主动性",
@@ -6612,10 +6612,10 @@
         },
         {
           "metric": "封单/成交额",
-          "value": 7.08,
+          "value": 227.17,
           "weight": 15,
-          "normalized": 12.42,
-          "contribution": 1.86
+          "normalized": 100,
+          "contribution": 15.0
         },
         {
           "metric": "龙头所在题材涨停数",
@@ -6632,7 +6632,7 @@
         "theme": "出版",
         "height": 9
       },
-      "label": "弱",
+      "label": "强",
       "name": "龙头状态",
       "valid": true,
       "confidence": "high"
@@ -6718,29 +6718,29 @@
   },
   "exposure": {
     "base_range": [
-      20,
-      35
+      40,
+      60
     ],
     "small_cycle_adjustment": 0,
-    "structure_adjustment": 2,
+    "structure_adjustment": 5,
     "risk_penalty": 0,
     "confidence_cap": 100,
     "final_range": [
-      20,
-      35
+      40,
+      60
     ],
-    "hard_cap": 40
+    "hard_cap": 65
   },
   "market_switch": {
-    "value": 37,
-    "level": "试错",
+    "value": 57,
+    "level": "可参与",
     "model_version": "cycle_switch_v1",
     "confidence": "high",
     "limiting_reasons": []
   },
   "leader_ecology_matrix": {
     "leader_strength": {
-      "score": 58,
+      "score": 78,
       "coverage_pct": 100.0,
       "components": [
         {
@@ -6752,12 +6752,12 @@
         },
         {
           "metric": "封板稳定性",
-          "value": 1.31,
+          "value": 42.16,
           "weight": 25,
-          "normalized": 0,
+          "normalized": 27.7,
           "basis": "当前封单额/峰值封单额",
           "proxy": false,
-          "contribution": 0.0
+          "contribution": 6.92
         },
         {
           "metric": "首次封板主动性",
@@ -6768,10 +6768,10 @@
         },
         {
           "metric": "封单/成交额",
-          "value": 7.08,
+          "value": 227.17,
           "weight": 15,
-          "normalized": 12.42,
-          "contribution": 1.86
+          "normalized": 100,
+          "contribution": 15.0
         },
         {
           "metric": "龙头所在题材涨停数",
@@ -6788,7 +6788,7 @@
         "theme": "出版",
         "height": 9
       },
-      "label": "弱",
+      "label": "强",
       "name": "龙头状态",
       "valid": true,
       "confidence": "high"
@@ -6857,7 +6857,7 @@
       "missing_metrics": [],
       "label": "弱"
     },
-    "label": "龙头弱 / 生态弱：退潮风险"
+    "label": "龙头强 / 生态弱：龙头抱团 / 生态分歧"
   },
   "data_quality": {
     "missing": [],

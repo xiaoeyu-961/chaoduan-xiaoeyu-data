@@ -1,7 +1,7 @@
 {
   "source": "同花顺官方 Financial-API",
   "trade_date": "2026-10-09",
-  "updated_at": "2026-10-09T07:24:30.205173+00:00",
+  "updated_at": "2026-10-09T07:50:32.550546+00:00",
   "market_quote_total": 5579,
   "limit_up": {
     "count": 72,
@@ -7057,5 +7057,9 @@
       "thscode": "601519.SH",
       "tag_name": "涨停"
     }
+  ],
+  "missing": [
+    "sector_members 884032.TI: /api/a-share-index/constituents/ths-stock-list: HithinkError: service HTTP 429",
+    "sector_members 884290.TI: /api/a-share-index/constituents/ths-stock-list: HithinkError: service HTTP 429"
   ]
 }
