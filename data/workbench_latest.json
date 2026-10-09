@@ -3,7 +3,7 @@
     "product": "超短小鳄鱼｜V1.4.1 超短交易研究工作台",
     "bundle_version": "1.1",
     "schema_updated_at": "2026-09-21T23:00:00+08:00",
-    "generated_at": "2026-10-09T07:59:10.571997+00:00",
+    "generated_at": "2026-10-09T08:14:09.715884+00:00",
     "timezone": "Asia/Shanghai",
     "data_range": [
       "2026-09-16",
@@ -374,7 +374,7 @@
       "turnover_change_cny": 218428510000,
       "turnover_comparison": {
         "status": "ready",
-        "time": "15:50",
+        "time": "16:08",
         "previousTradeDate": "2026-10-08",
         "current": 1900555420000,
         "previous": 1682126910000,
@@ -978,6 +978,34 @@
         "amount_comparison": {
           "status": "ready",
           "time": "15:50",
+          "previousTradeDate": "2026-10-08",
+          "current": 1900555420000,
+          "previous": 1682126910000,
+          "difference": 218428510000,
+          "changePct": 12.99,
+          "direction": "增量",
+          "source": "同花顺历史快照同时间比较"
+        }
+      },
+      {
+        "time": "2026-10-09T08:08:34.268523+00:00",
+        "source": "同花顺官方 Financial-API",
+        "limit_up_count": 72,
+        "limit_down_count": 10,
+        "broken_count": 13,
+        "broken_rate_pct": 15.29,
+        "promotion_rate_pct": 27.27,
+        "highest_board": 9,
+        "leader": {
+          "code": "600825",
+          "name": "新华传媒"
+        },
+        "strongest_theme": "种子生产",
+        "slot": null,
+        "turnover_cny": 1900555420000,
+        "amount_comparison": {
+          "status": "ready",
+          "time": "16:08",
           "previousTradeDate": "2026-10-08",
           "current": 1900555420000,
           "previous": 1682126910000,
@@ -32352,7 +32380,7 @@
   "hithink_facts": {
     "source": "同花顺官方 Financial-API",
     "trade_date": "2026-10-09",
-    "updated_at": "2026-10-09T07:50:32.550546+00:00",
+    "updated_at": "2026-10-09T08:08:34.268523+00:00",
     "market_quote_total": 5579,
     "limit_up": {
       "count": 72,
@@ -39408,10 +39436,6 @@
         "thscode": "601519.SH",
         "tag_name": "涨停"
       }
-    ],
-    "missing": [
-      "sector_members 884032.TI: /api/a-share-index/constituents/ths-stock-list: HithinkError: service HTTP 429",
-      "sector_members 884290.TI: /api/a-share-index/constituents/ths-stock-list: HithinkError: service HTTP 429"
     ]
   }
 }
